@@ -1,0 +1,542 @@
+{
+  "sections": [
+    {
+      "title": {
+        "pi": "Majjhimanikāye"
+      },
+      "span": {
+        "start": 46,
+        "end": 814146
+      },
+      "subsections": [
+        {
+          "title": {
+            "pi": "Majjhimapaṇṇāsapāḷi"
+          },
+          "span": {
+            "start": 46,
+            "end": 814146
+          },
+          "subsections": [
+            {
+              "title": {
+                "pi": "Gahapativaggo"
+              },
+              "span": {
+                "start": 46,
+                "end": 143525
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Kandarakasuttaṃ"
+                  },
+                  "span": {
+                    "start": 46,
+                    "end": 20500
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Aṭṭhakanāgarasuttaṃ"
+                  },
+                  "span": {
+                    "start": 20500,
+                    "end": 27588
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Sekhasuttaṃ"
+                  },
+                  "span": {
+                    "start": 27588,
+                    "end": 38458
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Potaliyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 38458,
+                    "end": 56455
+                  },
+                  "subsections": [
+                    {
+                      "title": {
+                        "pi": "Kāmādīnavakathā"
+                      },
+                      "span": {
+                        "start": 48169,
+                        "end": 56455
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": {
+                    "pi": "Jīvakasuttaṃ"
+                  },
+                  "span": {
+                    "start": 56455,
+                    "end": 62571
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Upālisuttaṃ"
+                  },
+                  "span": {
+                    "start": 62571,
+                    "end": 91642
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Kukkuravatikasuttaṃ"
+                  },
+                  "span": {
+                    "start": 91642,
+                    "end": 100873
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Abhayarājakumārasuttaṃ"
+                  },
+                  "span": {
+                    "start": 100873,
+                    "end": 108754
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Bahuvedanīyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 108754,
+                    "end": 116154
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Apaṇṇakasuttaṃ"
+                  },
+                  "span": {
+                    "start": 116154,
+                    "end": 143525
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Bhikkhuvaggo"
+              },
+              "span": {
+                "start": 143525,
+                "end": 277337
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Ambalaṭṭhikarāhulovādasuttaṃ"
+                  },
+                  "span": {
+                    "start": 143525,
+                    "end": 156998
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mahārāhulovādasuttaṃ"
+                  },
+                  "span": {
+                    "start": 156998,
+                    "end": 167538
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Cūḷamālukyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 167538,
+                    "end": 178971
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mahāmālukyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 178971,
+                    "end": 188469
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Bhaddālisuttaṃ"
+                  },
+                  "span": {
+                    "start": 188469,
+                    "end": 208150
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Laṭukikopamasuttaṃ"
+                  },
+                  "span": {
+                    "start": 208150,
+                    "end": 225948
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Cātumasuttaṃ"
+                  },
+                  "span": {
+                    "start": 225948,
+                    "end": 237594
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Naḷakapānasuttaṃ"
+                  },
+                  "span": {
+                    "start": 237594,
+                    "end": 251022
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Goliyānisuttaṃ"
+                  },
+                  "span": {
+                    "start": 251022,
+                    "end": 259298
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Kīṭāgirisuttaṃ"
+                  },
+                  "span": {
+                    "start": 259298,
+                    "end": 277337
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Paribbājakavaggo"
+              },
+              "span": {
+                "start": 277337,
+                "end": 441933
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Tevijjavacchasuttaṃ"
+                  },
+                  "span": {
+                    "start": 277337,
+                    "end": 281596
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Aggivacchasuttaṃ"
+                  },
+                  "span": {
+                    "start": 281596,
+                    "end": 293393
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mahāvacchasuttaṃ"
+                  },
+                  "span": {
+                    "start": 293393,
+                    "end": 309045
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Dīghanakhasuttaṃ"
+                  },
+                  "span": {
+                    "start": 309045,
+                    "end": 316590
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Māgaṇḍiyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 316590,
+                    "end": 338491
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Sandakasuttaṃ"
+                  },
+                  "span": {
+                    "start": 338491,
+                    "end": 364833
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mahāsakuludāyisuttaṃ"
+                  },
+                  "span": {
+                    "start": 364833,
+                    "end": 403827
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Samaṇamuṇḍikasuttaṃ"
+                  },
+                  "span": {
+                    "start": 403827,
+                    "end": 415867
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Cūḷasakuludāyisuttaṃ"
+                  },
+                  "span": {
+                    "start": 415867,
+                    "end": 433872
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Vekhanasasuttaṃ"
+                  },
+                  "span": {
+                    "start": 433872,
+                    "end": 441933
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Rājavaggo"
+              },
+              "span": {
+                "start": 441933,
+                "end": 623767
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Ghaṭikārasuttaṃ"
+                  },
+                  "span": {
+                    "start": 441933,
+                    "end": 459227
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Raṭṭhapālasuttaṃ"
+                  },
+                  "span": {
+                    "start": 459227,
+                    "end": 491133
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Maghadevasuttaṃ"
+                  },
+                  "span": {
+                    "start": 491133,
+                    "end": 507762
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Madhurasuttaṃ"
+                  },
+                  "span": {
+                    "start": 507762,
+                    "end": 520142
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Bodhirājakumārasuttaṃ"
+                  },
+                  "span": {
+                    "start": 520142,
+                    "end": 564876
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Aṅgulimālasuttaṃ"
+                  },
+                  "span": {
+                    "start": 564876,
+                    "end": 577673
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Piyajātikasuttaṃ"
+                  },
+                  "span": {
+                    "start": 577673,
+                    "end": 588224
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Bāhitikasuttaṃ"
+                  },
+                  "span": {
+                    "start": 588224,
+                    "end": 597679
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Dhammacetiyasuttaṃ"
+                  },
+                  "span": {
+                    "start": 597679,
+                    "end": 610364
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Kaṇṇakatthalasuttaṃ"
+                  },
+                  "span": {
+                    "start": 610364,
+                    "end": 623767
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Brāhmaṇavaggo"
+              },
+              "span": {
+                "start": 623767,
+                "end": 814146
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Brahmāyusuttaṃ"
+                  },
+                  "span": {
+                    "start": 623767,
+                    "end": 646968
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Selasuttaṃ"
+                  },
+                  "span": {
+                    "start": 646968,
+                    "end": 658269
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Assalāyanasuttaṃ"
+                  },
+                  "span": {
+                    "start": 658269,
+                    "end": 676263
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Ghoṭamukhasuttaṃ"
+                  },
+                  "span": {
+                    "start": 676263,
+                    "end": 697701
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Caṅkīsuttaṃ"
+                  },
+                  "span": {
+                    "start": 697701,
+                    "end": 721500
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Esukārīsuttaṃ"
+                  },
+                  "span": {
+                    "start": 721500,
+                    "end": 734979
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Dhanañjānisuttaṃ"
+                  },
+                  "span": {
+                    "start": 734979,
+                    "end": 755829
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Vāseṭṭhasuttaṃ"
+                  },
+                  "span": {
+                    "start": 755829,
+                    "end": 764693
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Subhasuttaṃ"
+                  },
+                  "span": {
+                    "start": 764693,
+                    "end": 786443
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Saṅgāravasuttaṃ"
+                  },
+                  "span": {
+                    "start": 786443,
+                    "end": 814146
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
