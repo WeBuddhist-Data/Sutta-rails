@@ -14,6 +14,9 @@ file against the CSCD XML volume(s) it came from.
    it cites (ranges expanded, truncated tails "65-6" = 65–66), except
    citations listed in <file>.unresolved.json, which must have no links.
    Every link points at an existing block of the root file.
+4. Bold: every <hi rend="bold"> is a **…** span, in order, with exactly the
+   same text; every ** pairs up (cscd-root-text-intake/scripts/bold_check.py). Words are compared with
+   the ** removed.
 Exit status 1 on any problem.
 Usage: python3 -I verify_commentary.py <file.md> <root.md> <xml> [<xml> …] [--unresolved <log.json>]
        (default log: <file>.unresolved.json next to the file)
@@ -24,6 +27,9 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "cscd-root-text-intake" / "scripts"))
+import bold_check  # noqa: E402
 
 args = sys.argv[1:]
 unres_arg = None
@@ -55,9 +61,10 @@ def render(el, out, top=True):
         out.append(el.tail)
 
 
-xml_words, xml_cits = [], []
+xml_words, xml_cits, xml_bodies = [], [], []
 for x in xmls:
     body = ET.parse(x).getroot().find(".//body")
+    xml_bodies.append(body)
     for el in body.iter():
         if el.tag not in ("p", "head", "trailer"):
             continue
@@ -89,7 +96,11 @@ for ln in lines:
     if ln.startswith("# "):
         ln = re.sub(r"\s*\([^)]*\)\s*$", "", ln)   # editorial layer label
     ln = re.sub(r"^#+\s+", "", ln)
-    md_words += ln.split()
+    md_words += bold_check.strip_bold(ln).split()
+md_bold, unpaired = bold_check.md_spans(lines, exact=True)
+for u in unpaired[:5]:
+    problems.append(f"unpaired ** on line: {u!r}")
+problems += bold_check.compare(bold_check.xml_spans(xml_bodies, exact=True), md_bold, "xml")
 
 # blocks
 blocks, cur = [], []
@@ -206,7 +217,7 @@ for rest in xml_linkable[xi:]:
         problems.append(f"XML citation {rest} has no matching cited block")
 
 print(f"== {Path(md_path).name}: content ^{book}-1…^{book}-{len(content_n)}, headings {len(heads)}, "
-      f"words md {len(md_words)} / xml {len(xml_words)}, citations xml {len(xml_cits)}: "
+      f"words md {len(md_words)} / xml {len(xml_words)}, bold spans {len(md_bold)}, citations xml {len(xml_cits)}: "
       f"linked right {ok}, wrong {bad}, unresolved (unlinked, logged) {skipped}")
 print("   PASS" if not problems else "   PROBLEMS (%d):\n   - " % len(problems) + "\n   - ".join(problems[:20]))
 sys.exit(1 if problems else 0)

@@ -49,7 +49,7 @@ verse_id_format: book-verse
 pitaka: sutta
 nikaya: <e.g. Dīghanikāya>
 layer: mula
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, <stem>.mul.xml (<nikāya>, <volume label>). Converted … via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, <stem>.mul.xml (<nikāya>, <volume label>). Converted … via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
 source_filename: <stem>.mul.xml
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/<stem>.mul.xml"
 other_ids:
@@ -80,7 +80,7 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
 ## Rules
 
-1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped. `verify.py` must show an identical word stream.
+1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
 2. **N is the printed paragraph number.** Never renumber, recompute, pad or invent. If the XML skips or repeats a number, the IDs do too (`x` suffix for a repeat, as `apply.py` assigns it).
 3. **One volume, one file, one run.** If `apply.py audit` reports more than one numbering run, an anomaly, or a reset, stop and show it to the human — do not pick zones on your own.
 4. **Unsupported XML shape stops the run.** `cscd_xml_to_json.py` supports book → chapter `<div>`s, and volumes with no `<div>`s whose chapters are `<p rend="chapter">`. It prints `STOP: …`, exits non-zero and writes nothing if the volume nests divisions deeper (e.g. saṃyutta/vagga divs in SN or AN). Extend the script and this skill for that shape first; never flatten silently.
@@ -138,7 +138,7 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 - [ ] `apply.py audit` showed one run, no anomaly, correct book number
 - [ ] Every content ID is `^<book>-<N>` or `^<book>-U<k>`, equal to the XML's printed paragraph numbers, contiguous wherever the source is
 - [ ] Every heading ends `-0`; `#` is `^0`, `##` is `^<book>-0`, homage is `^T-1`
-- [ ] `verify.py` prints `PASS` (IDs, `###`/`####` structure, identical word stream)
+- [ ] `verify.py` prints `PASS` (IDs, `###`/`####` structure, identical word stream, bold spans equal to the XML's)
 - [ ] `compare_site.py` prints `PASS` against tipitaka.app (text, paragraph numbers, contents tree)
 - [ ] Every split / `U` block reported to the human
 - [ ] File moved into `1-SOURCES/Text/` only after approval, and re-verified there

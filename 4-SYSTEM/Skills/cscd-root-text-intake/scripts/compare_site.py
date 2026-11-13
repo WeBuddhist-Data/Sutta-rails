@@ -8,9 +8,15 @@ Paragraph numbers: every site paragraph that starts with a printed N. must sit
 in the md block whose ID is ^<book>-N.
 Tree: md '###'+ headings vs site nodes: same titles (leading numbers ignored),
 same order, md level == site depth.
+Bold: the md's **…** spans equal the site's, in order (bold_check.py), compared
+with edge spaces/punctuation trimmed. Text is compared with
+the ** removed on both sides.
 Usage: python3 -I compare_site.py <book> <file.md> <key.text.json> <key.toc.json>"""
 import difflib, json, re, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import bold_check  # noqa: E402
 
 book, md, textp, tocp = sys.argv[1:5]
 LEAD = re.compile(r"^\s*(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
@@ -33,7 +39,7 @@ for ln in lines:
         continue
     h = re.match(r"^(#+) (.*?) \^[\w-]+$", ln)
     bid = re.search(r"\s\^([\w-]+)$", ln)
-    txt = h.group(2) if h else re.sub(r"\s\^[\w-]+$", "", ln)
+    txt = bold_check.strip_bold(h.group(2) if h else re.sub(r"\s\^[\w-]+$", "", ln))
     items.append({"text": txt, "head": bool(h), "level": len(h.group(1)) if h else None,
                   "id": bid.group(1) if bid else None})
 blk = None
@@ -46,6 +52,11 @@ for it in reversed(items):          # block ID of each text line = ID at end of 
 
 paras = json.loads(Path(textp).read_text(encoding="utf-8"))["paras"]
 problems = []
+site_merges = []
+problems += bold_check.compare(bold_check.site_spans(paras), bold_check.md_spans(lines)[0], "site", site_merges)
+if site_merges:
+    print(f"   note: {len(site_merges)} bold group(s) the site joins into one span (XML and md keep them apart), e.g. "
+          f"site {site_merges[0][0]} vs md {site_merges[0][1]}")
 a = [LEAD.sub("", site_norm(p["t"])) for p in paras]
 b = [LEAD.sub("", it["text"]) for it in items]
 sm = difflib.SequenceMatcher(None, a, b, autojunk=False)

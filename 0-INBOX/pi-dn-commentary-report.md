@@ -117,3 +117,24 @@ The site differences these cause (1 aṭṭhakathā link and 3 ṭīkā pairs) a
 - Skill: `4-SYSTEM/Skills/cscd-commentary-intake/SKILL.md`
 - Root texts: `0-INBOX/pi-dn-hierarchy-report.md`
 - ID scheme: `4-SYSTEM/Guidelines/vault-annex.md` §2
+
+---
+
+## Update 2026-11-13 — bold kept
+
+The XML's `<hi rend="bold">` (the word being explained) was being dropped. It is now kept as `**…**`, copied tag for tag from the XML, which is the data tipitaka.app displays.
+
+| File | Bold spans (= XML) |
+|---|---:|
+| `pi-dn-1-atthakatha` | 2,519 |
+| `pi-dn-2-atthakatha` | 2,852 |
+| `pi-dn-3-atthakatha` | 2,892 |
+| `pi-dn-1-tiika` | 5,614 |
+| `pi-dn-2-tiika` | 6,845 |
+| `pi-dn-3-tiika` | 5,783 |
+| `pi-dn-1-abhinavatiika` | 13,418 |
+
+- **Exact copy.** Each `**` sits where the XML has a bold tag; spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`). Nothing is moved, merged or dropped, so a few thousand spans that start or end with punctuation or a space will not render as bold in Obsidian. `verify_commentary.py` compares every span's exact text with the XML: PASS for all seven.
+- **Text unchanged.** IDs, headings, links and line count are as before. With `**` removed, the only difference from the earlier build is spacing at the 283 tags that hold a space at their edge.
+- **vs tipitaka.app.** About 95% of the lines with bold are character-for-character identical to the site (after its own display forms: page markers, `{ }`, `‘‘ ’’`, numbers). The rest differ only where the site departs from the XML: it drops a space next to a bold marker, joins two spans the XML keeps apart (144 cases, e.g. XML `<hi>Āyasmato</hi> <hi>mahākassapassa</hi>` → site `**Āyasmatomahākassapassa**`), or drops a bold tag that holds only a space (2 cases) together with the space. Here the XML is followed.
+- The unresolved-citation logs in `0-INBOX/temp/dn-comm/` were refreshed (their text excerpts now show bold).

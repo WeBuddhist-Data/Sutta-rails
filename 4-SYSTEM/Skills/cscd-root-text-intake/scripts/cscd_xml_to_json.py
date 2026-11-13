@@ -20,6 +20,12 @@ Mapping:
     <note>x</note>          -> " [x]"    (variant readings kept inline)
     ‘‘ / ’’                 -> "         (as in the tipitaka.org exports)
     <pb .../>               -> dropped   (page markers)
+    <hi rend="bold">x</hi>  -> **x**     exactly where the XML's tags are, as on
+                               tipitaka.app (spaces and punctuation inside the tag
+                               stay inside: **‘jātaka’**nti, **passatā. ** Sabba).
+                               Nothing is moved, merged or dropped, so deleting
+                               every ** gives back the text unchanged. In the
+                               commentaries it marks the word being explained.
     other <hi>              -> plain text
 chapter = 1-based index of the enclosing chapter-level <div> (0 before the first).
 
@@ -57,6 +63,13 @@ def render(el, out, top=True):
         out.append("".join(el.itertext()).strip())
     elif el.tag == "hi" and el.get("rend") == "dot":
         out.append(".")
+    elif el.tag == "hi" and el.get("rend") == "bold":
+        out.append(B_OPEN)
+        if el.text:
+            out.append(el.text)
+        for child in el:
+            render(child, out, top=False)
+        out.append(B_CLOSE)
     else:
         if el.text:
             out.append(el.text)
@@ -64,6 +77,12 @@ def render(el, out, top=True):
             render(child, out, top=False)
     if not top and el.tail:
         out.append(el.tail)
+
+
+B_OPEN, B_CLOSE = "\ue000", "\ue001"   # bold tag positions; clean() writes them as **
+
+
+BOLD_STATS = collections.Counter()
 
 
 def clean(s):
@@ -75,6 +94,8 @@ def clean(s):
     s = re.sub(r"\[\s+", "[", s)
     s = re.sub(r"\s+\]", "]", s)
     s = s.strip()
+    BOLD_STATS["spans"] += s.count(B_OPEN)
+    s = s.replace(B_OPEN, "**").replace(B_CLOSE, "**")
     # The converter recognises a numbered paragraph only as "N. text". CSCD
     # sometimes prints no space after the dot (DN Mahāvagga 335–342, 354, 370:
     # '370."Apariyositasaṅkappo'); the prefix is stripped later, so this adds
@@ -184,6 +205,7 @@ def main(src, dst):
     Path(dst).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{src.name}: {len(segs)} segments, {chap} '{chapter_type}' chapters, "
           f"book '{title}' -> {dst}")
+    print(f"  bold spans: {BOLD_STATS['spans']}")
 
 
 if __name__ == "__main__":

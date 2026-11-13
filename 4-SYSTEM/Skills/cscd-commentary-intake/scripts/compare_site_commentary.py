@@ -18,11 +18,16 @@ Links  aṭṭhakathā (kind mula-atta, src paranum): for each site link from
        A link's scope runs from the paragraph after it to the next link group
        or heading. The site's "gloss" links are its own word matches and are
        not a reference.
+Bold   the file's **…** spans equal the site's, in order (bold_check.py in
+       cscd-root-text-intake), compared with edge spaces/punctuation trimmed. Text is compared with the ** removed on both sides.
 Usage:
   python3 -I compare_site_commentary.py <file.md> <site-dir> <key> <root-key> [<atthakatha.md> <atta-key>]
 """
 import difflib, json, re, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "cscd-root-text-intake" / "scripts"))
+import bold_check  # noqa: E402
 
 md, sdir, key, root_key = sys.argv[1:5]
 atta_md, atta_key = (sys.argv[5], sys.argv[6]) if len(sys.argv) > 6 else (None, None)
@@ -61,7 +66,7 @@ def md_items(path):
             items.append({"text": title, "head": True, "level": len(h.group(1)), "scope": []})
             scope, group = [], []
         else:
-            items.append({"text": re.sub(r"\s\^[\w-]+$", "", ln), "head": False, "scope": list(scope)})
+            items.append({"text": bold_check.strip_bold(re.sub(r"\s\^[\w-]+$", "", ln)), "head": False, "scope": list(scope)})
         blockstart = False
     return items
 
@@ -85,6 +90,12 @@ items = md_items(md)
 paras = json.loads((S / f"{key}.text.json").read_text(encoding="utf-8"))["paras"]
 pairs, diffs = align(items, paras)
 problems += diffs
+md_lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+site_merges = []
+problems += bold_check.compare(bold_check.site_spans(paras), bold_check.md_spans(md_lines)[0], "site", site_merges)
+if site_merges:
+    print(f"   note: {len(site_merges)} bold group(s) the site joins into one span (XML and md keep them apart), e.g. "
+          f"site {site_merges[0][0]} vs md {site_merges[0][1]}")
 
 # tree
 toc = json.loads((S / f"{key}.toc.json").read_text(encoding="utf-8"))

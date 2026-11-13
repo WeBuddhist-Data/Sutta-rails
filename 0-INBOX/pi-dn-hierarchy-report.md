@@ -95,3 +95,9 @@ Both were found by the tipitaka.app check. The XML check found the second, but n
 
 - Skill: `4-SYSTEM/Skills/cscd-root-text-intake/SKILL.md`
 - ID scheme and registered deviations: `4-SYSTEM/Guidelines/vault-annex.md` §2
+
+---
+
+## Update 2026-11-13 — bold kept
+
+The XML's `<hi rend="bold">` was being dropped. It is now kept as `**…**`, as in the source and on tipitaka.app: `pi-dn-1` 0 spans, `pi-dn-2` 4, `pi-dn-3` 239. No other text changed: with every `**` removed, each body is byte-identical to the earlier build, and block IDs, headings and lines are unchanged. `verify.py` and `compare_site.py` now also compare the bold spans (shared helper `scripts/bold_check.py`); all three files PASS both. The `**` sit exactly where the XML's bold tags are (one span in `pi-dn-3`, paragraph 342, has a space inside the tag: `**…brahmacariyavāsāya. ** Idhāvuso`), as on tipitaka.app.

@@ -96,7 +96,7 @@ Tattha evanti … ^1-38                 ← in the scope of the link above until
 
 ## Rules
 
-1. **Never edit wording or a printed number.** Mechanical changes only: page markers dropped, `<note>` as `[…]`, `‘‘ ’’` as `"`, the chapter number stripped from `###` headings, and the h1 layer label added. `verify_commentary.py` must show an identical word stream.
+1. **Never edit wording or a printed number.** Mechanical changes only: page markers dropped, `<note>` as `[…]`, `‘‘ ’’` as `"`, the chapter number stripped from `###` headings, and the h1 layer label added. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. In the commentaries the bold marks the word being explained. `verify_commentary.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML (`cscd-root-text-intake/scripts/bold_check.py`).
 2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed.
 3. **Links only before cited paragraphs.** A transclusion group sits directly before the paragraph that opens with the citation, and it never sits before a heading.
 4. **One work, one file.** A work that CSCD splits over volumes is joined (`merge_parts.py`). Every line is kept; a later volume's opening lines become plain text blocks, as tipitaka.app shows them.
@@ -168,7 +168,7 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 - [ ] Download approved before it ran
 - [ ] Segment counts equal tipitaka.app's paragraph counts (joined works included)
 - [ ] `verify_commentary.py` prints `PASS` for every file
-- [ ] `compare_site_commentary.py`: text matches every site paragraph; every tree or link difference explained in the report
+- [ ] `compare_site_commentary.py`: text matches every site paragraph; bold spans match the site's (the site's habit of joining two bold spans the XML keeps apart, and of dropping a bold tag that holds only a space, is printed as a note or ignored, not a problem; the XML is followed); every tree or link difference explained in the report
 - [ ] Every unresolved citation reported with its evidence, unlinked, with the text as printed
 - [ ] Front-matter heading choices confirmed and recorded
 - [ ] `registered_id`s added to annex §3 before the move; files moved only after approval and re-verified there
@@ -181,6 +181,7 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 First run: Dīghanikāya, 2026-11-13. Seven works: aṭṭhakathā ×3, ṭīkā ×3, and the abhinavaṭīkā joined from s0104t + s0105t. All pass against the XML. On tipitaka.app the text matches line for line, and the only differences are the explained cases above.
 
 CSCD shapes handled:
+- Bold copied tag for tag: 40,166 spans in the DN, including 283 with a space inside the tag and 2 that hold only a space (`sāvaṇamāsassa** **kāḷapakkha`).
 - A volume with no `<div>`s, where chapters are `<p rend="chapter">` (the abhinavaṭīkā).
 - A heading after the last sutta `<div>` has closed (Nigamanakathā), which becomes its own `###`.
 - No space after a printed range (`32-33.Text`).

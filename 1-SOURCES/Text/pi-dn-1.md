@@ -8,7 +8,7 @@ verse_id_format: book-verse
 pitaka: sutta
 nikaya: Dīghanikāya
 layer: mula
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, s0101m.mul.xml (Dīghanikāya, vagga 1 of 3). Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py) → block IDs, via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, s0101m.mul.xml (Dīghanikāya, vagga 1 of 3). Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py) → block IDs, via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
 source_filename: s0101m.mul.xml
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0101m.mul.xml"
 other_ids:

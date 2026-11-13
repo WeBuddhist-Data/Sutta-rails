@@ -9,14 +9,20 @@ Checks
      on its last line; no line carries two IDs; content IDs <= 3 segments.
   2. Structure: '###' titles == every <head rend="chapter"> (number stripped);
      '####' count == <p rend="subhead"> count.
-  3. Text: word stream of the md (IDs, '#' markers removed) == word stream of
-     the XML (notes as [..], paranum removed, page breaks dropped), allowing
-     only the documented heading-number strip.
+  3. Text: word stream of the md (IDs, '#' markers and ** removed) == word
+     stream of the XML (notes as [..], paranum removed, page breaks dropped),
+     allowing only the documented heading-number strip.
+  4. Bold: every <hi rend="bold"> is a **…** span at the same place, in order,
+     with exactly the same text; every ** pairs up (bold_check.py).
 Usage: python3 -I verify.py <book> <file.md> <file.xml>
 """
 import re
 import sys
 import xml.etree.ElementTree as ET
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import bold_check  # noqa: E402
 
 book, md_path, xml_path = sys.argv[1:4]
 problems = []
@@ -137,7 +143,7 @@ def md_words():
     for ln in lines:
         ln = ID_RE.sub("", ln)
         ln = re.sub(r"^#+\s+", "", ln)
-        out.append(ln)
+        out.append(bold_check.strip_bold(ln))
     return " ".join(out).split()
 
 
@@ -150,8 +156,13 @@ if xw != mw:
     for tag, a0, a1, b0, b1 in diffs[:10]:
         problems.append(f"   {tag}: xml {' '.join(xw[a0:a1])[:80]!r} | md {' '.join(mw[b0:b1])[:80]!r}")
 
+md_bold, unpaired = bold_check.md_spans(lines, exact=True)
+for u in unpaired[:5]:
+    problems.append(f"unpaired ** on line: {u!r}")
+problems += bold_check.compare(bold_check.xml_spans([xbody], exact=True), md_bold, "xml")
+
 print(f"== {md_path}")
 print(f"   content ids {len(nums)} (^{book}-{min(nums)} .. ^{book}-{max(nums)}), U-blocks {u_ids}, headings {len(heading_ids)}, chapters {len(md_sutta_titles)}, subheads {md_sub}")
-print(f"   words md {len(mw)} / xml {len(xw)}")
+print(f"   words md {len(mw)} / xml {len(xw)}, bold spans {len(md_bold)}")
 print("   PASS" if not problems else "   PROBLEMS:\n   - " + "\n   - ".join(problems))
 sys.exit(1 if problems else 0)
