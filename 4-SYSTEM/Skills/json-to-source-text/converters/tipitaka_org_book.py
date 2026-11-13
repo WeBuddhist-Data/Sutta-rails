@@ -103,6 +103,9 @@ ROLE_VERSE = "verse"
 CATEGORY_TO_ROLE = {
     "chapter":    ROLE_CHAPTER,
     "title":      ROLE_TITLE,
+    # A sutta heading in a vagga <div> (CSCD Majjhimanikāya; css_class written
+    # by cscd-root-text-intake's cscd_xml_to_json.py): h4, its subheads h5.
+    "sutta":      ROLE_TITLE,
     "subhead":    ROLE_SUBHEAD,
     "bodytext":   ROLE_VERSE,
     "unindented": ROLE_VERSE,

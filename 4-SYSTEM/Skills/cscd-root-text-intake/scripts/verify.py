@@ -8,10 +8,14 @@ Checks
      U-blocks listed; headings end -0; every non-blank block has exactly one ID
      on its last line; no line carries two IDs; content IDs <= 3 segments.
   2. Structure: '###' titles == every <head rend="chapter"> (number stripped);
-     '####' count == <p rend="subhead"> count.
+     '####'-and-deeper heading count == <p rend="subhead"> count. In a volume
+     whose suttas are numbered subheads in vagga divs (Majjhimanikāya,
+     cscd_shape.py), '####' titles == those sutta headings (number stripped)
+     and every other subhead is a '#####'.
   3. Text: word stream of the md (IDs, '#' markers and ** removed) == word
      stream of the XML (notes as [..], paranum removed, page breaks dropped),
-     allowing only the documented heading-number strip.
+     allowing only the documented heading-number strip (chapter and sutta
+     headings).
   4. Bold: every <hi rend="bold"> is a **…** span at the same place, in order,
      with exactly the same text; every ** pairs up (bold_check.py).
 Usage: python3 -I verify.py <book> <file.md> <file.xml>
@@ -23,6 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bold_check  # noqa: E402
+import cscd_shape  # noqa: E402
 
 book, md_path, xml_path = sys.argv[1:4]
 problems = []
@@ -96,15 +101,25 @@ if nums != paranums:
 if nums != list(range(1, max(nums) + 1)):
     problems.append("content ids not contiguous 1..N")
 
+book_div = next((d for d in xbody.iter("div") if d.get("type") == "book"), None)
+vagga_shape = book_div is not None and any(d.get("type") == "vagga" for d in book_div.iter("div"))
+sutta_ids = cscd_shape.sutta_heads(book_div) if vagga_shape else set()
 chapter_heads = [h for h in xbody.iter("head") if h.get("rend") == "chapter"]
 xml_sutta_titles = [re.sub(r"^\d+\.\s*", "", "".join(h.itertext()).strip()) for h in chapter_heads]
 md_sutta_titles = [ID_RE.sub("", l)[4:].strip() for l in lines if l.startswith("### ")]
 if xml_sutta_titles != md_sutta_titles:
     problems.append("chapter (###) headings differ from XML")
 xml_sub = sum(1 for p in xbody.iter("p") if p.get("rend") == "subhead")
-md_sub = sum(1 for l in lines if l.startswith("#### "))
+md_sub = sum(1 for l in lines if re.match(r"^#{4,} ", l))
 if xml_sub != md_sub:
     problems.append(f"subhead count md {md_sub} vs xml {xml_sub}")
+if vagga_shape:
+    xml_suttas = [re.sub(r"^\d+\.\s*", "", cscd_shape.text_with_notes(p)) for p in xbody.iter("p") if id(p) in sutta_ids]
+    md_suttas = [ID_RE.sub("", l)[5:].strip() for l in lines if l.startswith("#### ")]
+    if xml_suttas != md_suttas:
+        problems.append(f"sutta (####) headings differ from XML (md {len(md_suttas)}, xml {len(xml_suttas)})")
+    if any(l.startswith("###### ") for l in lines):
+        problems.append("heading deeper than ##### in a vagga volume")
 
 
 def xml_words():
@@ -129,7 +144,7 @@ def xml_words():
         if el.tag in ("p", "head", "trailer"):
             start = len(out)
             rend(el)
-            if el.tag == "head" and el.get("rend") == "chapter":
+            if (el.tag == "head" and el.get("rend") == "chapter") or id(el) in sutta_ids:
                 seg = "".join(out[start:])
                 del out[start:]
                 out.append(re.sub(r"^\s*\d+\.\s*", "", seg))
@@ -162,7 +177,8 @@ for u in unpaired[:5]:
 problems += bold_check.compare(bold_check.xml_spans([xbody], exact=True), md_bold, "xml")
 
 print(f"== {md_path}")
-print(f"   content ids {len(nums)} (^{book}-{min(nums)} .. ^{book}-{max(nums)}), U-blocks {u_ids}, headings {len(heading_ids)}, chapters {len(md_sutta_titles)}, subheads {md_sub}")
+print(f"   content ids {len(nums)} (^{book}-{min(nums)} .. ^{book}-{max(nums)}), U-blocks {u_ids}, headings {len(heading_ids)}, chapters {len(md_sutta_titles)}, "
+      f"{'suttas ' + str(len(sutta_ids)) + ', ' if vagga_shape else ''}subheads {md_sub}")
 print(f"   words md {len(mw)} / xml {len(xw)}, bold spans {len(md_bold)}")
 print("   PASS" if not problems else "   PROBLEMS:\n   - " + "\n   - ".join(problems))
 sys.exit(1 if problems else 0)

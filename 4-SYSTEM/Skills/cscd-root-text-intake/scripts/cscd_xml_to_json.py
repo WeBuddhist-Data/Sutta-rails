@@ -29,13 +29,30 @@ Mapping:
     other <hi>              -> plain text
 chapter = 1-based index of the enclosing chapter-level <div> (0 before the first).
 
-Supported shapes: <div type="book"> containing chapter-level <div>s of ONE type
-(e.g. "sutta"), each opening with a <head>; or a volume with no <div>s at all,
-where each <p rend="chapter"> opens the next chapter. Any other nesting
-(vagga/saṃyutta/paṇṇāsa divs inside the book) stops the script (non-zero exit,
-"STOP: …" message, nothing written) —
-the converter downstream only knows book > chapter > subhead, so a deeper
-volume needs this script extended first, not silently flattened.
+Supported shapes:
+  - <div type="book"> containing chapter-level <div>s of ONE type (e.g. "sutta"),
+    each opening with a <head> (Dīghanikāya);
+  - <div type="book"> containing <div type="vagga">s whose suttas are numbered
+    <p rend="subhead">s (Majjhimanikāya). Those sutta headings get css_class
+    "sutta" (one level above the other subheads); the rule is cscd_shape.py's,
+    and a vagga whose suttas cannot be found that way stops the script;
+  - a volume with no <div>s at all, where each <p rend="chapter"> opens the next
+    chapter.
+Any other nesting (saṃyutta > vagga, nested divs of one type …) stops the script
+(non-zero exit, "STOP: …" message, nothing written): a deeper volume needs this
+script extended first, never silently flattened.
+
+Line-level rules (each one printed in the run summary, for the report):
+  - <p rend="hangnum">N.</p> holds only a paragraph number; its text is the next
+    paragraph (a gāthā). The two are joined into one segment "N. <text>", as
+    tipitaka.app shows them, so the paragraph keeps its number. A hangnum not
+    followed by a text paragraph of the same chapter stops the script.
+  - "(Paṭhamo bhāgo)", "(Dutiyo bhāgo)": the part of a volume printed in two parts.
+    Kept as plain text (css "centered"), never a heading. The nikāya and book
+    lines a later part reprints in the same file are kept as plain text too.
+  - Plain text before the first chapter with no heading of its own (e.g. the
+    "(Paṭhamo bhāgo)" line) is put in the first chapter, so it is not a section
+    of its own.
 
 Usage: python3 -I cscd_xml_to_json.py <in.xml> <out.json>
 """
@@ -45,6 +62,11 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import cscd_shape  # noqa: E402
+
+HEADING_CSS = ("chapter", "subhead", "subsubhead", "title", "sutta")
 
 LAYER = {"mul": ("mula", "mul"), "att": ("atthakatha", "att"),
          "tik": ("tika", "tik"), "nrf": ("other", "nrf")}
@@ -135,6 +157,15 @@ def main(src, dst):
     root = ET.parse(src).getroot()
     body = root.find(".//body")
     chapter_type = check_shape(body)
+    suttas = set()
+    if chapter_type == "vagga":
+        book_div = next(d for d in body.iter("div") if d.get("type") == "book")
+        try:
+            suttas = cscd_shape.sutta_heads(book_div)
+        except cscd_shape.ShapeError as e:
+            sys.exit(f"STOP: {e} — the sutta level cannot be read; decide it with a human.")
+    notes = {"hangnum joined": [], "part labels as text": [], "reprinted title lines as text": [],
+             "moved into the first chapter": []}
     stem = src.name.split(".")[0]
     kind = src.name.split(".")[1]
     layer, layer_type = LAYER.get(kind, (kind, kind))
@@ -165,8 +196,16 @@ def main(src, dst):
                 css = "centered"
             else:
                 css = "centered" if rend == "centre" else rend
+            if id(child) in suttas:
+                css = "sutta"
             if chapter_type is None and css == "chapter":
                 chap += 1        # div-less volume: a chapter paragraph opens a chapter
+            if css in ("subhead", "subsubhead", "title") and cscd_shape.part_label(cscd_shape.text_of(child)):
+                notes["part labels as text"].append(cscd_shape.text_of(child))
+                css = "centered"
+            if css in ("nikaya", "book") and child.tag == "p" and title is not None:
+                notes["reprinted title lines as text"].append(cscd_shape.text_of(child))
+                css = "centered"
             if after_chapter and css in ("subhead", "subsubhead", "title"):
                 # A heading after the last chapter <div> has closed (e.g. a
                 # commentary's Nigamanakathā) opens a section of its own;
@@ -189,6 +228,42 @@ def main(src, dst):
             })
 
     walk(body)
+
+    # hangnum: a number-only paragraph opens the paragraph after it.
+    joined = []
+    k = 0
+    while k < len(segs):
+        g = segs[k]
+        if g["css_class"] == "hangnum":
+            nxt = segs[k + 1] if k + 1 < len(segs) else None
+            if not re.fullmatch(r"\d+\.", g["content"]) or nxt is None \
+                    or nxt["chapter"] != g["chapter"] or nxt["css_class"] in HEADING_CSS:
+                sys.exit(f"STOP: hangnum {g['content']!r} is not followed by a text paragraph of its chapter")
+            notes["hangnum joined"].append(g["content"])
+            joined.append(dict(nxt, content=g["content"] + " " + nxt["content"],
+                               paragraph=g["paragraph"] or nxt["paragraph"]))
+            k += 2
+            continue
+        joined.append(g)
+        k += 1
+    segs[:] = joined
+
+    # Plain text before the first chapter, with no heading of its own, belongs
+    # to the first chapter (else the downstream converters open a section for it).
+    # Only for <div> volumes: in a div-less later part (DN s0105t) these lines are
+    # a second volume's opening, which merge_parts.py keeps with the chapter before.
+    book_at = next((k for k, g in enumerate(segs) if g["css_class"] == "book"), None)
+    if book_at is not None and chapter_type is not None:
+        pre = [g for g in segs[book_at + 1:] if g["chapter"] == 0]
+        later = [g["chapter"] for g in segs if g["chapter"] > 0]
+        if pre and later and not any(g["css_class"] in HEADING_CSS for g in pre):
+            for g in pre:
+                g["chapter"] = min(later)
+                notes["moved into the first chapter"].append(g["content"][:60])
+
+    for k, g in enumerate(segs):
+        g["id"] = f"{stem}_ch{g['chapter']}_k{k + 1}"
+
     data = {
         "id": stem,
         "title_pali": title,
@@ -206,6 +281,11 @@ def main(src, dst):
     print(f"{src.name}: {len(segs)} segments, {chap} '{chapter_type}' chapters, "
           f"book '{title}' -> {dst}")
     print(f"  bold spans: {BOLD_STATS['spans']}")
+    if suttas:
+        print(f"  sutta headings (numbered subheads in vagga divs): {len(suttas)}")
+    for what, items in notes.items():
+        if items:
+            print(f"  {what} ({len(items)}): {', '.join(items[:12])}{' …' if len(items) > 12 else ''}")
 
 
 if __name__ == "__main__":

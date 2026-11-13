@@ -6,7 +6,8 @@ after normalising site display markup (page markers |X0.0000|, **bold**,
 {notes} -> [notes], ‘‘ ’’ -> ") and dropping printed leading numbers on both sides.
 Paragraph numbers: every site paragraph that starts with a printed N. must sit
 in the md block whose ID is ^<book>-N.
-Tree: md '###'+ headings vs site nodes: same titles (leading numbers ignored),
+Tree: md '###'+ headings vs site nodes: same titles (leading numbers and
+[variant readings] ignored, as the site's contents titles omit them),
 same order, md level == site depth.
 Bold: the md's **…** spans equal the site's, in order (bold_check.py), compared
 with edge spaces/punctuation trimmed. Text is compared with
@@ -84,7 +85,10 @@ for i, p in enumerate(paras):
 # contents tree
 toc = json.loads(Path(tocp).read_text(encoding="utf-8"))
 site_h = [(LEAD.sub("", n["title"]).strip(), n["depth"]) for n in toc]
-md_h = [(LEAD.sub("", it["text"]).strip(), it["level"]) for it in items if it["head"] and it["level"] >= 3]
+# The site's contents titles leave out variant readings (`Pañcattayasuttaṃ`
+# for the md's `Pañcattayasuttaṃ [pañcāyatanasutta (ka.)]`), so [..] is dropped here.
+md_h = [(re.sub(r"\s*\[[^\]]*\]", "", LEAD.sub("", it["text"])).strip(), it["level"])
+        for it in items if it["head"] and it["level"] >= 3]
 if [t for t, _ in site_h] != [t for t, _ in md_h]:
     problems.append("tree titles/order differ")
 # The site counts the piṭaka as a level the source text does not print, so its

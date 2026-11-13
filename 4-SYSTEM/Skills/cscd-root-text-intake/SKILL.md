@@ -6,7 +6,7 @@ profile: rails-vault
 
 # cscd-root-text-intake
 
-Produces one root-text file per CSCD volume in `1-SOURCES/Text/` (e.g. `pi-dn-1.md`), in this shape: `^T-1` homage, `# <nikāya> ^0`, `## <volume> ^<book>-0`, sibling-numbered headings ending `-0`, and content IDs `^<book>-<N>` where **N is the paragraph number printed in the source, copied verbatim**. It exists so every volume goes through the identical chain — CSCD XML → segment JSON → `json-to-source-text` → block IDs → heading IDs — and is proven identical to its XML before anything cites it. A correct output has exactly one content ID per printed paragraph number, every heading of the XML, and the XML's word stream unchanged.
+Produces one root-text file per CSCD volume in `1-SOURCES/Text/` (e.g. `pi-dn-1.md`, `pi-mn-1.md`), in this shape: `^T-1` homage, `# <nikāya> ^0`, `## <volume> ^<book>-0`, sibling-numbered headings ending `-0`, and content IDs `^<book>-<N>` where **N is the paragraph number printed in the source, copied verbatim**. It exists so every volume goes through the identical chain — CSCD XML → segment JSON → `json-to-source-text` → block IDs → heading IDs — and is proven identical to its XML before anything cites it. A correct output has exactly one content ID per printed paragraph number, every heading of the XML, and the XML's word stream unchanged.
 
 This skill does **root text (mūla) only**. Commentaries (`.att`, `.tik`, `.nrf`) are a separate intake (`json-to-commentary`).
 
@@ -74,19 +74,38 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
 - Content ID on the **last** line of each block; the printed `N.` prefix is stripped from the text.
 - An unnumbered paragraph that the source sets apart (e.g. directly after a sub-heading) is its own block with `^<book>-U<k>`.
+
+**Volumes whose suttas sit inside vaggas** (Majjhimanikāya: `<div type="vagga">`, each sutta a numbered `<p rend="subhead">`) get one more heading level. `####` is the sutta, so a commentary's sutta *k* of vagga *v* is `^<book>-<v>-<k>-0`, the same as in the root:
+
+```markdown
+## Mūlapaṇṇāsapāḷi ^1-0
+### Mūlapariyāyavaggo ^1-1-0
+#### Sabbāsavasuttaṃ ^1-1-2-0
+##### Dassanā pahātabbāsavā ^1-1-2-1-0
+```
 - Library fields (`license`, `category_id`, `text_id`, `edition_id`, `toc_id`, `tag_ids`) are **not** written here — they are added at upload.
 
 ---
 
 ## Rules
 
-1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
+1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped (and, in a vagga volume, the sutta number on `####` headings). A `<p rend="hangnum">` holds only a paragraph number (`456.`) and its text is the next paragraph, a gāthā; the two are joined into one line, as tipitaka.app shows them, so the gāthā block gets `^<book>-456`. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
 2. **N is the printed paragraph number.** Never renumber, recompute, pad or invent. If the XML skips or repeats a number, the IDs do too (`x` suffix for a repeat, as `apply.py` assigns it).
 3. **One volume, one file, one run.** If `apply.py audit` reports more than one numbering run, an anomaly, or a reset, stop and show it to the human — do not pick zones on your own.
-4. **Unsupported XML shape stops the run.** `cscd_xml_to_json.py` supports book → chapter `<div>`s, and volumes with no `<div>`s whose chapters are `<p rend="chapter">`. It prints `STOP: …`, exits non-zero and writes nothing if the volume nests divisions deeper (e.g. saṃyutta/vagga divs in SN or AN). Extend the script and this skill for that shape first; never flatten silently.
+4. **Unsupported XML shape stops the run.** `cscd_xml_to_json.py` supports three shapes:
+   - book → chapter `<div>`s, one div type (DN: sutta divs);
+   - book → `<div type="vagga">`, where each sutta is a numbered `<p rend="subhead">` (MN). The rule lives in `cscd_shape.py`: number = next in the vagga, title contains "sutta". Those headings become css `sutta`, i.e. `####`;
+   - volumes with no `<div>`s, whose chapters are `<p rend="chapter">`.
+
+   It prints `STOP: …`, exits non-zero and writes nothing if:
+   - the volume nests divisions deeper (e.g. saṃyutta > vagga divs in SN);
+   - a vagga's suttas cannot be read that way (a vagga with no sutta heading, or a sutta number out of sequence);
+   - a `hangnum` is not followed by a text paragraph.
+
+   Extend the script and this skill for that shape first; never flatten silently.
 5. **Download only with approval.** State the file names, the source (`github.com/VipassanaTech/tipitaka-xml`) and sizes in chat and wait for a yes. Put downloads in their own `0-INBOX/raw-data/<collection>/` folder; parse them only as data (`python3 -I`).
 6. **`1-SOURCES/` is written once, by a move, after human approval** — never edited in place by this skill afterwards. Re-running means regenerating in `0-INBOX/temp/` and asking again.
-7. **Record every judgment call** (each split reported by `prepare_ids.py`, each `U` block) in the report to the human.
+7. **Record every judgment call** in the report to the human: each split reported by `prepare_ids.py`, each `U` block, and each `hangnum` join `cscd_xml_to_json.py` prints.
 8. **No commit, push, translation or upload** as part of this skill.
 
 ---
@@ -107,7 +126,7 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
    ```bash
    python3 -I $S/cscd_xml_to_json.py 0-INBOX/raw-data/$C/<stem>.mul.xml 0-INBOX/temp/$C/<stem>.json
    ```
-   Then profile it with `python3 -I 4-SYSTEM/Skills/json-to-source-text/json_inspector.py 0-INBOX/temp/$C/<stem>.json` and confirm the `css_class` set is only `centered, nikaya, book, chapter, subhead, bodytext, gatha1–3, gathalast` (plus `unindented`/`indent`). Any other class: stop and decide its role with the human.
+   The script prints the sutta-heading count (vagga volumes) and every `hangnum` it joined; record them (Rule 7). Then profile it with `python3 -I 4-SYSTEM/Skills/json-to-source-text/json_inspector.py 0-INBOX/temp/$C/<stem>.json` and confirm the `css_class` set is only `centered, nikaya, book, chapter, subhead, bodytext, gatha1–3, gathalast` (plus `unindented`/`indent`, and `sutta` in a vagga volume). Any other class: stop and decide its role with the human.
 4. **Segment JSON → markdown** (json-to-source-text's existing converter), then make the working copy:
    ```bash
    python3 4-SYSTEM/Skills/json-to-source-text/converters/tipitaka_org_book.py 0-INBOX/temp/$C/<stem>.json 0-INBOX/temp/$C/<stem>.md
@@ -120,13 +139,13 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
    b. `python3 -I $S/apply.py apply 0-INBOX/temp/$C/pi-$C-<book>.md --zones "1=@<line of the ## heading>"` — the empty label gives `^<book>-<N>`; the heading ID it sets is temporary.
 6. **Heading IDs and pre-title**: `python3 -I $S/heading_ids.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md`.
 7. **Frontmatter**: `python3 -I $S/set_frontmatter.py 0-INBOX/temp/$C/pi-$C-<book>.md <stem> "<Nikāya>" "<volume label>"`.
-8. **Verify**: `python3 -I $S/verify.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md 0-INBOX/raw-data/$C/<stem>.mul.xml` — must print `PASS`. On any problem, fix the cause (script or source handling), regenerate from step 3, and verify again; never hand-patch the draft.
+8. **Verify**: `python3 -I $S/verify.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md 0-INBOX/raw-data/$C/<stem>.mul.xml` — must print `PASS` (in a vagga volume it also checks that the `####` headings are exactly the sutta headings). On any problem, fix the cause (script or source handling), regenerate from step 3, and verify again; never hand-patch the draft.
 9. **Check against tipitaka.app** (the website reading of the same CSCD edition):
    ```bash
    python3 -I $S/fetch_site.py 0-INBOX/tipitaka-app <key> [<key> …]
    python3 -I $S/compare_site.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md 0-INBOX/tipitaka-app/<key>.text.json 0-INBOX/tipitaka-app/<key>.toc.json
    ```
-   Must print `PASS`: every md line matches one site paragraph in order, every site paragraph number (`n`) sits in block `^<book>-<n>`, and every contents-tree node matches in title, order and nesting. The site counts the piṭaka as a level the source does not print, so a **constant** depth offset (e.g. `site depth = md level + 1`) is expected; anything else is a problem. On a mismatch, find the cause in the scripts, regenerate from step 3, and rerun steps 8–9.
+   Must print `PASS`: every md line matches one site paragraph in order, every site paragraph number (`n`) sits in block `^<book>-<n>`, and every contents-tree node matches in title, order and nesting. Contents titles are compared without `[variant readings]`, which the site leaves out of them. The site counts the piṭaka as a level the source does not print, so a **constant** depth offset (e.g. `site depth = md level + 1`) is expected; anything else is a problem. On a mismatch, find the cause in the scripts, regenerate from step 3, and rerun steps 8–9.
 10. **Report** to the human: per file — content-ID range, `U` blocks, heading count, chapter count, word count, the site match counts, every split from step 4. Ask for approval to move into `1-SOURCES/Text/`.
 11. **Move on approval**: `mv -n 0-INBOX/temp/$C/pi-$C-<book>.md 1-SOURCES/Text/`, then rerun steps 8–9 on the moved file. (Replacing an existing `1-SOURCES/` file needs the human's explicit approval for that file.)
 
@@ -148,4 +167,16 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 
 ## Notes
 
-`apply.py` reads the book number from the `##` line's `^<book>-0`, which step 4 sets. The scripts were first run on the Dīgha Nikāya (s0101m–s0103m, 2026-11-13, all PASS against the XML and tipitaka.app). CSCD quirks already handled: an untagged dot after a paragraph number (DN Mahāvagga 389) and no space after the dot (DN Mahāvagga 335–342, 354, 370). The skill is generic to any CSCD Pāli vault and should be contributed to the shared skill library.
+`apply.py` reads the book number from the `##` line's `^<book>-0`, which step 4 sets. The scripts were first run on the Dīgha Nikāya (s0101m–s0103m, 2026-11-13, all PASS against the XML and tipitaka.app).
+
+**Majjhimanikāya** (s0201m–s0203m) dry run, 2026-11-13, in a scratch folder: all three PASS `verify.py` and `compare_site.py`.
+- 513 / 486 / 463 content IDs and 50 / 50 / 52 suttas.
+- Segment counts equal the site's: 1796 / 1684 / 1460.
+- The 10 `hangnum` paragraphs were joined: ¶513; ¶76, 456–460; ¶135, 237, 382.
+- After the MN changes, the DN files regenerate byte-identical and still PASS.
+
+CSCD quirks already handled:
+- an untagged dot after a paragraph number (DN Mahāvagga 389);
+- no space after the dot (DN Mahāvagga 335–342, 354, 370);
+- number-only `hangnum` paragraphs (MN);
+- `<note>`s inside sutta headings (MN Uparipaṇṇāsa 2, 5). The skill is generic to any CSCD Pāli vault and should be contributed to the shared skill library.

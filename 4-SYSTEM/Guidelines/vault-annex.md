@@ -17,10 +17,19 @@ Source-text files in `1-SOURCES/Text/` are **one file per CSCD volume**. Ingeste
 | Dīghanikāya | Sīlakkhandhavaggapāḷi | 1 | `s0101m.mul.xml` | `dn-1` | `pi-dn-1.md` |
 | Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dn-2.md` |
 | Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dn-3.md` |
+| Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-mn-1.md` |
+| Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-mn-2.md` |
+| Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-mn-3.md` |
 
-Only volumes that have been ingested are present in the folder. The Dīghanikāya is the text currently being worked on, in Pāli: root text and commentaries (§3), no translations yet.
+Only volumes that have been ingested are present in the folder. The Dīghanikāya and the Majjhimanikāya are in, in Pāli: root text and commentaries (§3), no translations yet. MN registered 2026-11-13.
 
-**Other nikāyas** (Majjhima, Saṃyutta, Aṅguttara, Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names. Saṃyutta and Aṅguttara volumes nest deeper than book → sutta, which `cscd-root-text-intake` does not yet support (it stops rather than flattening).
+**Other nikāyas** (Saṃyutta, Aṅguttara, Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names.
+
+`cscd-root-text-intake` supports two shapes:
+- book → sutta `<div>`s (Dīgha);
+- book → vagga `<div>`s whose suttas are numbered sub-headings (Majjhima).
+
+Saṃyutta and Aṅguttara volumes nest deeper (saṃyutta/nipāta → vagga → sutta). For those the skill stops rather than flattening; it must be extended first.
 
 ---
 
@@ -30,8 +39,8 @@ Only volumes that have been ingested are present in the folder. The Dīghanikāy
 
 **Format example:** `^1-149` (Sīlakkhandhavagga, printed paragraph 149)
 
-- **Nikāya collection:** the abbreviation in the file name, `dn` for Dīghanikāya. The collection is given by the file, not by the ID.
-- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas).
+- **Nikāya collection:** the abbreviation in the file name: `dn` for Dīghanikāya, `mn` for Majjhimanikāya. The collection is given by the file, not by the ID.
+- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas, `1`–`3` for the Majjhimanikāya's three paṇṇāsas).
 
 Block IDs always resolve as `file#^id`, so the same `^1-149` in two different files names two different blocks.
 
@@ -45,14 +54,26 @@ Block IDs always resolve as `file#^id`, so the same `^1-149` in two different fi
 | `###` | Sutta | `^<book>-<n>-0` | `### Brahmajālasuttaṃ ^1-1-0` |
 | `####` | Sub-heading within the sutta | `^<book>-<n>-<m>-0` | `#### Paribbājakakathā ^1-1-1-0` |
 
-Each heading segment is the heading's **sibling position** under its parent. It is not the number printed in the source. Printed sutta numbers are stripped from the heading text (`1. Brahmajālasuttaṃ` → `Brahmajālasuttaṃ`).
+**Majjhimanikāya:** each paṇṇāsa holds vaggas, and the sutta is one level deeper:
+
+| Markdown | Role | Anchor | Example |
+| -------- | ---- | ------ | ------- |
+| `##` | Volume (paṇṇāsa) | `^<book>-0` | `## Mūlapaṇṇāsapāḷi ^1-0` |
+| `###` | Vagga | `^<book>-<v>-0` | `### Mūlapariyāyavaggo ^1-1-0` |
+| `####` | Sutta | `^<book>-<v>-<n>-0` | `#### Sabbāsavasuttaṃ ^1-1-2-0` |
+| `#####` | Sub-heading within the sutta | `^<book>-<v>-<n>-<m>-0` | `##### Dassanā pahātabbāsavā ^1-1-2-1-0` |
+
+A commentary's vagga and sutta headings carry the same IDs as the root's (`#### Sabbāsavasuttavaṇṇanā ^1-1-2-0`). A ṭīkā's own numbered list under a `title` heading is one level deeper again (`###### Desanāhāravaṇṇanā`, the 16 hāras of the Mūlapaṇṇāsa-ṭīkā).
+
+Each heading segment is the heading's **sibling position** under its parent. It is not the number printed in the source. Printed sutta and vagga numbers are stripped from the heading text (`1. Brahmajālasuttaṃ` → `Brahmajālasuttaṃ`).
 
 ### Verse numbering rule
 
 - The content ID is the **paragraph number printed in CSCD**, copied verbatim: never renumbered, padded or invented.
-- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360. One file per volume therefore gives each file a single unbroken run, and content IDs need no zone segment.
+- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360; Mūlapaṇṇāsa 1–513, Majjhimapaṇṇāsa 1–486, Uparipaṇṇāsa 1–463. One file per volume therefore gives each file a single unbroken run, and content IDs need no zone segment.
 - The number does **not** restart at sutta or sub-heading boundaries.
 - A paragraph's unnumbered continuation lines, gāthā lines and closing lines (`… niṭṭhitaṃ`) stay in its block. The ID goes on the block's last line.
+- CSCD sometimes prints a paragraph number on a line of its own (`<p rend="hangnum">`), with the paragraph's gāthā on the next line. The number is joined to that gāthā line, as tipitaka.app shows it. This happens in 10 MN paragraphs: MN 1 ¶513; MN 2 ¶76, 456–460; MN 3 ¶135, 237, 382.
 
 ### Text form
 
@@ -89,7 +110,7 @@ Currently used:
 - `^2-U1`: Mahāsudassanasutta.
 - `^3-U1`: Pāsādikasutta, before paragraph 165.
 
-No duplicates occur in the Dīghanikāya.
+No duplicates occur in the Dīghanikāya or the Majjhimanikāya, and the Majjhimanikāya has no `U` blocks.
 
 **Why:** this keeps the invariant that every `^<book>-<N>` is a real printed number.
 
@@ -108,6 +129,7 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `dn-2-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-dn-2.md` | `1-SOURCES/Commentaries/pi-dn-2-tiika.md` |
 | `dn-3-tiika` | Pāthikavaggaṭīkā | sub-commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-tiika.md` |
 | `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
+
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 
