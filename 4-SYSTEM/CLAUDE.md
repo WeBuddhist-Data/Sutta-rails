@@ -46,7 +46,7 @@ When this file and a folder README disagree, the folder README wins.
 
 Authority comes from the human commentary tradition, never from the LLM's parametric knowledge.
 
-**One vault per text.** This vault is for **[name of text]**. For vault-specific conventions (addressing scheme, registered commentary IDs, language tracks), see [`Guidelines/vault-annex.md`](Guidelines/vault-annex.md).
+**One vault per text.** This vault is for the **Pāli Sutta Piṭaka**. For vault-specific conventions (Pāli book-verse addressing, registered commentary IDs, language tracks), see [`Guidelines/vault-annex.md`](Guidelines/vault-annex.md).
 
 ---
 
@@ -430,6 +430,7 @@ Skills are reusable, step-by-step procedures stored in `4-SYSTEM/Skills/`. Each 
 | **Intake** | |
 | Ingest EPUB as markdown | `epub-to-markdown` |
 | Ingest JSON (root text / commentary) | `json-to-source-text` · `json-to-commentary` |
+| Ingest a Pāli root-text volume from CSCD XML | `cscd-root-text-intake` |
 | Bring one raw file into `1-SOURCES/` | `raw-to-sources` |
 | Repair mechanical OCR / page damage | `clean-raw-text` |
 | Score OCR quality before trusting a file | `tibetan-ocr-quality` |
