@@ -1,1 +1,30 @@
-{}
+{
+  "pi-dn-1": {
+    "edition_id": "4lUEgD4qPFWodyyqlhICx",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "mQNCKJ7TpegM8rl0cyxOZ",
+        "ts": "2026-11-13T14:55:45"
+      },
+      {
+        "chars": 393820,
+        "edition_id": "4lUEgD4qPFWodyyqlhICx",
+        "segments": 560,
+        "step": "edition",
+        "ts": "2026-11-13T14:55:46"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "3DPULBrMuHey77LndNZEh",
+        "ts": "2026-11-13T14:55:47"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-dn-1.md",
+    "text_id": "mQNCKJ7TpegM8rl0cyxOZ",
+    "toc_id": "3DPULBrMuHey77LndNZEh"
+  }
+}

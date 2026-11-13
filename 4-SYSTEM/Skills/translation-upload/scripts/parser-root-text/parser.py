@@ -26,6 +26,23 @@ _WYLIE_RE = re.compile(r"'[a-zA-Z]")
 SMALL_TAG_RE = re.compile(r'</?small>', re.IGNORECASE)
 
 
+def _strip_bold(text):
+    """Drop Markdown bold markers (**) from a line for the edition content.
+
+    The library has no bold annotation yet, so bold would reach the reader as
+    literal asterisks. The source file keeps its **…** (e.g. copied from the
+    CSCD XML's <hi rend="bold">); only what is uploaded is plain. A space that
+    sat inside a bold tag next to one outside it ("passatā. ** Sabba") would
+    leave two spaces once the markers go: those collapse to one, and a line
+    never gains leading space it did not have."""
+    if "**" not in text:
+        return text
+    out = re.sub(r" {2,}", " ", text.replace("**", ""))
+    if not text[:1].isspace():
+        out = out.lstrip(" ")
+    return out
+
+
 def _ref_part_count(ref):
     """Count hyphen-separated parts in a ^ref (caret stripped)."""
     return len(ref.lstrip("^").split("-")) if ref else 0
@@ -271,7 +288,7 @@ def _build_content_and_segmentation(blocks, doc_default):
         ref_no_caret = ref[1:] if ref.startswith("^") else ref
 
         if is_header:
-            text = SMALL_TAG_RE.sub("", raw_lines[0]).strip().lstrip('#').strip()
+            text = _strip_bold(SMALL_TAG_RE.sub("", raw_lines[0]).strip().lstrip('#').strip())
             ref_idx = text.rfind(ref)
             if ref_idx != -1:
                 text = text[:ref_idx].rstrip()
@@ -299,7 +316,7 @@ def _build_content_and_segmentation(blocks, doc_default):
                 break
         line_spans = []
         for i, raw_line in enumerate(content_lines):
-            text = SMALL_TAG_RE.sub("", raw_line).rstrip()
+            text = _strip_bold(SMALL_TAG_RE.sub("", raw_line)).rstrip()
             if i == last_nonempty_idx:
                 ref_idx = text.rfind(ref)
                 if ref_idx != -1:

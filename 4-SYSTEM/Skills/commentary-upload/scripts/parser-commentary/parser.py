@@ -157,10 +157,27 @@ def _is_verse_shape(content_lines):
 INLINE_TAG_RE = re.compile(r"</?small>", re.IGNORECASE)
 
 
+def _strip_bold(text):
+    """Drop Markdown bold markers (**) from a line for the edition content.
+
+    The library has no bold annotation yet, so bold would reach the reader as
+    literal asterisks. The source file keeps its **\u2026** (copied from the CSCD
+    XML's <hi rend="bold">); only what is uploaded is plain. A space that sat
+    inside a bold tag next to one outside it ("passat\u0101. ** Sabba") would leave
+    two spaces once the markers go: those collapse to one, and a line never
+    gains leading space it did not have."""
+    if "**" not in text:
+        return text
+    out = re.sub(r" {2,}", " ", text.replace("**", ""))
+    if not text[:1].isspace():
+        out = out.lstrip(" ")
+    return out
+
+
 def _strip_inline_tags(text):
-    """Clean a line for the edition content: drop inline gloss tags, and turn
-    non-breaking spaces (U+00A0) into ordinary spaces."""
-    return INLINE_TAG_RE.sub("", text).replace("\u00a0", " ")
+    """Clean a line for the edition content: drop inline gloss tags and bold
+    markers, and turn non-breaking spaces (U+00A0) into ordinary spaces."""
+    return _strip_bold(INLINE_TAG_RE.sub("", text)).replace("\u00a0", " ")
 
 
 def _heading_level(line):

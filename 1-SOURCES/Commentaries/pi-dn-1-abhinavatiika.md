@@ -13,7 +13,8 @@ root_text: 1-SOURCES/Text/pi-dn-1.md
 commentary: 1-SOURCES/Commentaries/pi-dn-1-atthakatha.md
 source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, s0104t.nrf.xml + s0105t.nrf.xml. Converted XML → segment JSON → volumes joined → commentary converter → block IDs, via the cscd-commentary-intake skill. Each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions); the printed number is kept. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
 source_filename: [s0104t.nrf.xml, s0105t.nrf.xml]
-source:
+source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0104t.nrf.xml"
+source_volumes:
   - "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0104t.nrf.xml"
   - "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0105t.nrf.xml"
 other_ids:
@@ -22,6 +23,11 @@ other_ids:
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
 category_id: MZUUxphQ0yFwLBon3Vng8
+commentary_of: mQNCKJ7TpegM8rl0cyxOZ
+text_id: BmWw2fJ0aRGfqQkHI3NxJ
+edition_id: mIYWTEFBtbJYur04hBsfE
+toc_id: MSeQiJsMviXKf0iocvSfc
+aligned_to_edition_id: 4lUEgD4qPFWodyyqlhICx
 ---
 
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
