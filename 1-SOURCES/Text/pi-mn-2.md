@@ -13,6 +13,9 @@ source_filename: s0202m.mul.xml
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0202m.mul.xml"
 other_ids:
   - tipitaka.org: s0202m
+license: cc0
+tag_ids: [296WZOr8MXWteSqBBI7pl]
+category_id: MZUUxphQ0yFwLBon3Vng8
 ---
 
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1

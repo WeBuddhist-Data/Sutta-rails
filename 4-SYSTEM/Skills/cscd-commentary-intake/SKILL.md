@@ -29,6 +29,7 @@ The skill exists so that every work goes through the same chain and is proven, b
 | Layer and label | `layer:` value and the h1 label | `atthakatha` / `aṭṭhakathā`, `tiika` / `ṭīkā`, `abhinavatiika` / `abhinavaṭīkā` |
 | Aṭṭhakathā file | For a ṭīkā: the aṭṭhakathā it explains (`commentary:` field) | `1-SOURCES/Commentaries/pi-dn-1-atthakatha.md` |
 | Front-matter heading | Only if the work opens with a section that stands apart from the commentary on the first sutta (a human judgment) | `Ganthārambhakathā` |
+| Unlinked heading(s) | Only if a section numbers its own paragraphs, so that its leading numbers are **not** root citations (a human judgment) | `Ganthārambhakathāvaṇṇanā` (Mūlapaṇṇāsa-ṭīkā, 1.–16.) |
 | tipitaka.app keys | The commentary's key, and the root's | `atta-dn-1`, `tika-dn-1`, `tika2-dn-1`; root `dn-1` |
 | Human approval | Download (names, source, sizes), and the move into `1-SOURCES/` | — |
 
@@ -91,16 +92,21 @@ Tattha evanti … ^1-38                 ← in the scope of the link above until
 - `# <nikāya> (<layer label>) ^0` carries the layer label; it is the one editorial addition to the text.
 - Content IDs `^<book>-<k>` count every content block in document order. Transclusion lines carry no ID.
 - Headings: sibling position, Arabic; Roman only inside the named front-matter subtree.
+- **Volumes whose suttas sit inside vaggas** (Majjhimanikāya) nest one level deeper:
+  - `### <vagga> ^<book>-<v>-0`
+  - `#### <sutta>vaṇṇanā ^<book>-<v>-<k>-0`, the same IDs as the root's suttas
+  - `#####` sub-headings
+  - `######` for a numbered list a ṭīkā gives under a `title` (e.g. the 16 hāras under `Soḷasahāravaṇṇanā`), until the next unnumbered heading.
 
 ---
 
 ## Rules
 
 1. **Never edit wording or a printed number.** Mechanical changes only: page markers dropped, `<note>` as `[…]`, `‘‘ ’’` as `"`, the chapter number stripped from `###` headings, and the h1 layer label added. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. In the commentaries the bold marks the word being explained. `verify_commentary.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML (`cscd-root-text-intake/scripts/bold_check.py`).
-2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed.
+2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`, `01` printed with no dot), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed. Numbers in a section named with `--unlinked` are the section's own numbering. They are not linked and are logged under `unlinked_section_numbers`.
 3. **Links only before cited paragraphs.** A transclusion group sits directly before the paragraph that opens with the citation, and it never sits before a heading.
-4. **One work, one file.** A work that CSCD splits over volumes is joined (`merge_parts.py`). Every line is kept; a later volume's opening lines become plain text blocks, as tipitaka.app shows them.
-5. **Front matter is a human decision.** `--frontmatter` is used only for an opening section that precedes the commentary on the first sutta. It must be confirmed with the human and recorded in the report.
+4. **One work, one file.** A work that CSCD splits over volumes is joined (`merge_parts.py`). Every line is kept; a later volume's opening lines become plain text blocks, as tipitaka.app shows them. The same holds inside one file. Some files reprint homage, nikāya and book title partway through, with `(Paṭhamo bhāgo)` / `(Dutiyo bhāgo)` (MN Mūlapaṇṇāsa aṭṭhakathā and ṭīkā). `cscd_xml_to_json.py` keeps those lines as plain text, never as headings, so the vagga IDs stay equal to the root's.
+5. **Front matter is a human decision.** `--frontmatter` is used only for an opening section that precedes the commentary on the first sutta. It must be confirmed with the human and recorded in the report. The heading text can differ per layer: MN uses `Ganthārambhakathā` in the aṭṭhakathā and `Ganthārambhakathāvaṇṇanā` in the ṭīkā. `--frontmatter` changes heading IDs only, not links. If that section numbers its own paragraphs, also pass `--unlinked "<heading>"`, which is confirmed and recorded the same way. The run stops if the heading is not found.
 6. **Unsupported XML shape stops the run.** If `cscd_xml_to_json.py` stops, extend it; never flatten.
 7. **Every difference from tipitaka.app is explained in the report,** or the cause is fixed and the run repeated.
 8. **Download, and move into `1-SOURCES/`, only with approval.** `registered_id`s go into annex §3 before the files move.
@@ -128,7 +134,7 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
    ```bash
    python3 -I $S/build_commentary.py $T/<json> 1-SOURCES/Text/pi-$C-<book>.md $T/pi-$C-<book>-<layer>.md \
      --registered-id <id> --layer <layer> --layer-label <label> --nikaya "<Nikāya>" \
-     [--commentary 1-SOURCES/Commentaries/pi-$C-<book>-atthakatha.md] [--frontmatter "<heading>"]
+     [--commentary 1-SOURCES/Commentaries/pi-$C-<book>-atthakatha.md] [--frontmatter "<heading>"] [--unlinked "<heading>"]
    ```
    Read the printed summary: transclusions, content blocks, unresolved, abbreviated ranges.
 5. **(in step 4)** IDs come from `apply_commentary_ids.py`. To preview the heading tree without writing, run it on its own with `audit`.
@@ -137,7 +143,7 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
    ```bash
    python3 -I $S/verify_commentary.py $T/pi-$C-<book>-<layer>.md 1-SOURCES/Text/pi-$C-<book>.md 0-INBOX/raw-data/$C/<stem>.xml [<stem2>.xml]
    ```
-   It must print `PASS`: IDs contiguous, words identical, and every printed citation linked right or logged as unresolved.
+   It must print `PASS`: IDs contiguous, words identical, and every printed citation linked right or logged as unresolved. The log is matched occurrence by occurrence, so a logged `1.` exempts one unlinked `1.`, not every `1.` in the file.
 8. **Check against tipitaka.app**:
    ```bash
    python3 -I $R/fetch_site.py 0-INBOX/tipitaka-app <key> [<key> …] --links
@@ -148,7 +154,11 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
    - For each listed difference (tree, links), find the cause:
      - a source misprint that is logged as unresolved;
      - a printed single number against a printed range of the same paragraph;
-     - a site artefact, such as a synthetic contents node or a book-level section with no contents node.
+     - a site artefact. Examples:
+       - a synthetic contents node: MN atta-mn-1 lists `Ganthārambhakathā` twice;
+       - a section with no contents node: atta-mn-3 has no `Saḷāyatanavaggo`;
+       - a printed number the site does not show (`01`);
+       - nesting the site gets wrong after a ṭīkā's `title` groups: tika-mn-1 puts `Sabbāsavasuttavaṇṇanā` one level too deep.
    - Fix anything else in the scripts, and rerun from step 3.
 9. **Report** (`0-INBOX/pi-$C-commentary-report.md`):
    - per file: content-ID range, headings, words, citations linked / unresolved, and site matches;
@@ -180,9 +190,21 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 
 First run: Dīghanikāya, 2026-11-13. Seven works: aṭṭhakathā ×3, ṭīkā ×3, and the abhinavaṭīkā joined from s0104t + s0105t. All pass against the XML. On tipitaka.app the text matches line for line, and the only differences are the explained cases above.
 
+**Majjhimanikāya** dry run, 2026-11-13, in a scratch folder, against MN root drafts that pass. Six works: s0201a–s0203a, s0201t–s0203t. There is no abhinavaṭīkā.
+- All six PASS `verify_commentary.py`.
+- Links: 438 / 354 / 306 citations linked in the aṭṭhakathā, 427 / 333 / 307 in the ṭīkā.
+- Every vagga and sutta heading ID equals the root's.
+- MN 1 needed `--frontmatter`: `Ganthārambhakathā` for the aṭṭhakathā; `Ganthārambhakathāvaṇṇanā` for the ṭīkā, plus `--unlinked` for the same heading (16 self-numbers, 1.–16.).
+- Each MN 1 file logs one `01` as unresolved.
+- Site differences are only the explained artefacts above.
+- After the MN changes, the seven DN files regenerate byte-identical. They still PASS, and the site check prints the same output as before.
+
 CSCD shapes handled:
 - Bold copied tag for tag: 40,166 spans in the DN, including 283 with a space inside the tag and 2 that hold only a space (`sāvaṇamāsassa** **kāḷapakkha`).
 - A volume with no `<div>`s, where chapters are `<p rend="chapter">` (the abhinavaṭīkā).
 - A heading after the last sutta `<div>` has closed (Nigamanakathā), which becomes its own `###`.
+- Suttas as numbered subheads inside vagga `<div>`s, and a ṭīkā's own numbered sub-heads that are not suttas (MN).
+- A front-matter `<div>` with no head, and a part label `(Paṭhamo bhāgo)` before it (MN).
+- A volume printed in two parts inside one file (MN Mūlapaṇṇāsa aṭṭhakathā and ṭīkā).
 - No space after a printed range (`32-33.Text`).
 - Truncated-tail ranges.

@@ -154,7 +154,7 @@ else:
         else:
             cat = "different root paragraphs"
             problems.append(f"ṭīkā para {l['i']} vs aṭṭhakathā para {l['t']}: {ts[:3]} vs {as_[:3]}")
-        notes.append(f"[{cat}] ṭīkā para {l['i']} vs aṭṭhakathā para {l['t']}: {ts[:3]} vs {as_[:3]}")
+        notes.append(f"[{cat}] ṭīkā para {l['i']} vs aṭṭhakathā para {l['t']}: {(ts or [])[:3]} vs {(as_ or [])[:3]}")
 
 print(f"== {Path(md).name} vs {key}: site paras {len(paras)}, md lines {len(items)}, matched {len(pairs)}; "
       f"tree site {len(site_h)} / md {len(md_h)} (site depth = md level + {main_off}); "

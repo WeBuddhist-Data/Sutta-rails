@@ -11,8 +11,11 @@ file against the CSCD XML volume(s) it came from.
    stripped).
 3. Citations: every XML paragraph with a printed number (@n) is, in order, a
    block that opens with that number and is preceded by exactly the root links
-   it cites (ranges expanded, truncated tails "65-6" = 65–66), except
-   citations listed in <file>.unresolved.json, which must have no links.
+   it cites (ranges expanded, truncated tails "65-6" = 65–66), except the
+   citations listed in <file>.unresolved.json ("unresolved", and the section
+   numbers under an --unlinked heading, "unlinked_section_numbers"), which
+   must have no links. The log is matched occurrence by occurrence, in order,
+   so a logged "1." exempts one unlinked "1." — not every "1." in the file.
    Every link points at an existing block of the root file.
 4. Bold: every <hi rend="bold"> is a **…** span, in order, with exactly the
    same text; every ** pairs up (cscd-root-text-intake/scripts/bold_check.py). Words are compared with
@@ -169,7 +172,9 @@ if xml_words != md_words:
 
 # citations
 unres_path = Path(unres_arg) if unres_arg else Path(md_path[:-3] + ".unresolved.json")
-unresolved = {u[0].rstrip(".") for u in json.loads(unres_path.read_text(encoding="utf-8"))["unresolved"]} if unres_path.exists() else set()
+from collections import Counter
+log = json.loads(unres_path.read_text(encoding="utf-8")) if unres_path.exists() else {}
+remaining = Counter(u[0].rstrip(".") for u in log.get("unresolved", []) + log.get("unlinked_section_numbers", []))
 
 
 def expand(n):
@@ -191,17 +196,21 @@ md_by_order = [c for c in md_cits]
 xi = 0
 for printed, links, head in md_by_order:
     while xi < len(xml_linkable) and xml_linkable[xi] != printed:
-        if xml_linkable[xi] in unresolved and not CIT.match(xml_linkable[xi] + ". "):
-            skipped += 1; xi += 1; continue
+        if remaining[xml_linkable[xi]] > 0:   # logged, and not a cited block in the md
+            remaining[xml_linkable[xi]] -= 1; skipped += 1; xi += 1; continue
         problems.append(f"XML citation {xml_linkable[xi]} has no matching cited block (next md block cites {printed})")
         xi += 1
     if xi >= len(xml_linkable):
         problems.append(f"md block cites {printed} beyond the XML's citations"); break
     xi += 1
     exp = expand(printed)
-    if printed in unresolved or exp is None:
+    if not links and remaining[printed] > 0:
+        remaining[printed] -= 1
+        skipped += 1
+        continue
+    if exp is None:
         if links:
-            problems.append(f"unresolved citation {printed} has links {links[:3]}")
+            problems.append(f"unreadable citation {printed} has links {links[:3]}")
         skipped += 1
         continue
     exp = [e for e in exp if e in root_ids]
@@ -211,7 +220,8 @@ for printed, links, head in md_by_order:
         bad += 1
         problems.append(f"citation {printed}: links {links[:4]}… expected {exp[:4]}…")
 for rest in xml_linkable[xi:]:
-    if rest in unresolved:
+    if remaining[rest] > 0:
+        remaining[rest] -= 1
         skipped += 1
     else:
         problems.append(f"XML citation {rest} has no matching cited block")

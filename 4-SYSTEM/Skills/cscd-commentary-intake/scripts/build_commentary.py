@@ -12,11 +12,15 @@ expanded truncated-tail ranges) for the report.
 Usage:
   python3 -I build_commentary.py <segments.json> <root.md> <out.md>
       --registered-id ID --layer LAYER --layer-label LABEL --nikaya NAME
-      [--commentary PATH] [--frontmatter "<heading text>"]
+      [--commentary PATH] [--frontmatter "<heading text>"] [--unlinked "<heading text>" …]
 
   LAYER        atthakatha | tiika | abhinavatiika   (frontmatter `layer:`)
   LABEL        shown in the h1, e.g. aṭṭhakathā, ṭīkā, abhinavaṭīkā
   --commentary the aṭṭhakathā file a ṭīkā explains (frontmatter `commentary:`)
+  --unlinked   (repeatable) a heading whose own text numbers its paragraphs for
+               itself — those numbers are not root citations and get no links
+               (e.g. the Mūlapaṇṇāsa-ṭīkā's "Ganthārambhakathāvaṇṇanā", 1.–16.).
+               A human decision; the run stops if the heading is not found.
 """
 import argparse
 import json
@@ -37,6 +41,7 @@ ap.add_argument("--layer-label", required=True)
 ap.add_argument("--nikaya", required=True)
 ap.add_argument("--commentary")
 ap.add_argument("--frontmatter")
+ap.add_argument("--unlinked", action="append", default=[])
 a = ap.parse_args()
 
 root = Path(a.root_md)
@@ -52,11 +57,16 @@ exec(compile((HERE / "commentary_converter.py").read_text(encoding="utf-8"), "co
 conv.ROOT_TEXT_PATH = root.as_posix()
 conv.BOOK_ID = book
 conv.ROOT_IDS = root_ids
+conv.UNLINKED_HEADINGS = set(a.unlinked)
 data = json.loads(Path(a.json_path).read_text(encoding="utf-8"))
 conv.LAYER_DISPLAY_MAP = {k: a.layer_label for k in ("atthakatha", "tika", "other", data.get("layer", ""))}
 out = Path(a.out_md)
 conv.convert_json_to_commentary(a.json_path, out,
                                 chapter_context={s["chapter"]: "main" for s in data["segments"]})
+
+missing = set(a.unlinked) - conv.UNLINKED_MATCHED
+if missing:
+    sys.exit(f"STOP: --unlinked heading(s) not found: {sorted(missing)} — check the exact heading text")
 
 # 5. frontmatter (before IDs: apply_commentary_ids.py reads root_text from it)
 text = out.read_text(encoding="utf-8")
@@ -111,9 +121,12 @@ for ln in r.stdout.splitlines():
         print("   " + ln.strip())
 
 log = {"unresolved": conv.UNRESOLVED, "abbreviated_ranges": conv.ABBREVIATED}
+if a.unlinked:
+    log["unlinked_section_numbers"] = conv.UNLINKED
 Path(str(out)[:-3] + ".unresolved.json").write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")
 txt = out.read_text(encoding="utf-8")
 n_content = len(re.findall(r"\s\^" + str(book) + r"-(?!0\s*$)\d+\s*$", txt, re.M))
 print(f"{out.name}: book {book}, title '{title}', transclusions {txt.count('![[')}, "
       f"content blocks {n_content}, "
-      f"unresolved {len(conv.UNRESOLVED)}, abbreviated ranges {len(conv.ABBREVIATED)}")
+      f"unresolved {len(conv.UNRESOLVED)}, abbreviated ranges {len(conv.ABBREVIATED)}"
+      + (f", section numbers left unlinked {len(conv.UNLINKED)} (under {sorted(a.unlinked)})" if a.unlinked else ""))

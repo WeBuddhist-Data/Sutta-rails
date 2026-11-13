@@ -28,6 +28,24 @@ root file are linked; anything else is logged in UNRESOLVED, as is a paragraph
 that opens with a number-like prefix the citation pattern cannot read
 (e.g. "292-3-6."). Nothing unresolved is silently dropped.
 
+SUTTAS IN VAGGAS (Majjhimanikāya)
+=================================
+Where a sutta is a numbered subhead inside a vagga <div>, cscd_xml_to_json.py
+types its heading "sutta". Such a chapter is emitted as
+  ### <vagga>  >  #### <sutta>  >  ##### <subhead / subsubhead / title>
+and a numbered subhead directly after a "title" (a ṭīkā's own list, e.g. the
+16 hāras under Soḷasahāravaṇṇanā) is a ###### under that title, until the
+next unnumbered heading or sutta. Chapters without "sutta" headings
+(Dīghanikāya) are emitted exactly as before.
+
+SECTIONS WITHOUT ROOT LINKS
+===========================
+UNLINKED_HEADINGS (set by the build script from --unlinked, a human decision):
+in the text directly under one of these headings (up to the next heading), a
+leading number is the section's own numbering, not a citation — e.g. the
+Mūlapaṇṇāsa-ṭīkā numbers its Ganthārambhakathāvaṇṇanā paragraphs 1.–16.
+Nothing there is linked; each number is logged in UNLINKED for the report.
+
 GĀTHĀ
 =====
 gatha1 / gatha2 / gatha3 lines accumulate until gathalast; the stanza is one block.
@@ -64,6 +82,11 @@ H3_FIRST_HEADING = True
 # emitted only for IDs in it; unresolved citations go to UNRESOLVED.
 ROOT_IDS: set[str] | None = None
 UNRESOLVED: list[tuple[str, list[str], str]] = []
+# Headings whose own text carries section numbering, not root citations, and
+# the numbers found there: (as printed, heading, paragraph start).
+UNLINKED_HEADINGS: set[str] = set()
+UNLINKED: list[tuple[str, str, str]] = []
+UNLINKED_MATCHED: set[str] = set()
 # Truncated-tail ranges expanded for linking: (as printed, start, end).
 ABBREVIATED: list[tuple[str, int, int]] = []
 
@@ -139,6 +162,7 @@ ROLE_CHAPTER    = "chapter"
 ROLE_TITLE      = "title"
 ROLE_SUBHEAD    = "subhead"
 ROLE_SUBSUBHEAD = "subsubhead"
+ROLE_SUTTA      = "sutta"
 ROLE_VERSE      = "verse"
 ROLE_GATHA      = "gatha"
 ROLE_GATHALAST  = "gathalast"
@@ -149,6 +173,7 @@ CATEGORY_TO_ROLE: dict[str, str] = {
     "title":      ROLE_TITLE,
     "subhead":    ROLE_SUBHEAD,
     "subsubhead": ROLE_SUBSUBHEAD,
+    "sutta":      ROLE_SUTTA,
     "bodytext":   ROLE_VERSE,
     "indent":     ROLE_VERSE,
     "unindented": ROLE_VERSE,
@@ -286,6 +311,13 @@ def convert_json_to_commentary(
         role = CATEGORY_TO_ROLE.get(css, ROLE_VERSE)
         if role == ROLE_CHAPTER:
             saw_chapter = True
+        # A paragraph the XML numbers (@n) whose printed number the citation
+        # pattern cannot read (e.g. MN s0201a "01 Bahinagareti", no dot) is
+        # logged as unresolved, never linked and never dropped silently.
+        n_attr = str(seg.get("paragraph") or "")
+        if n_attr and role in (ROLE_VERSE, ROLE_GATHA, ROLE_GATHALAST) \
+                and not _verse_ref_re.match(content) and not _numberlike_re.match(content):
+            UNRESOLVED.append((n_attr, [], content[:80]))
         if role == ROLE_SKIP:
             continue
         chapters.setdefault(src_ch, []).append((role, content))
@@ -346,18 +378,28 @@ def convert_json_to_commentary(
             h3_title = strip_leading_number(h3_title)
 
         h3_line = f"### {h3_title} ^{BOOK_ID}-{src_ch}-0\n\n"
+        unlinked = [False]   # True while the text sits directly under an UNLINKED heading
+
+        def heading(line: str, text: str) -> None:
+            out.append(line)
+            unlinked[0] = text in UNLINKED_HEADINGS
+            if unlinked[0]:
+                UNLINKED_MATCHED.add(text)
         # With H3_FIRST_HEADING, text that precedes the chapter's first
         # heading in the source (e.g. a second volume's homage line) is
         # emitted before the ### line instead of after it.
         h3_pending = H3_FIRST_HEADING and not h3_title.startswith("Section ")
         if not h3_pending:
-            out.append(h3_line)
+            heading(h3_line, h3_title)
 
         # Per-chapter sub-section state
         h4_counter  = 0
         h5_counter  = 0
         seen_title  = False
         consumed_h3 = False   # True once chapter-level title is consumed
+        in_sutta    = False   # a "sutta" heading has opened (vagga chapters)
+        title_group = False   # numbered subheads now belong to a title (h6)
+        h6_counter  = 0
 
         # Gatha (verse stanza) accumulator
         gatha_buffer: list[str] = []
@@ -373,6 +415,13 @@ def convert_json_to_commentary(
         def emit_verse(content: str, root_ctx: str | None) -> None:
             """Detect inline root-text ref, emit transclusions, then paragraph."""
             m = _verse_ref_re.match(content)
+            if unlinked[0]:
+                if m or _numberlike_re.match(content):
+                    printed = (m.group(0) if m else _numberlike_re.match(content).group(0)).strip()
+                    UNLINKED.append((printed, h_text[0], content[:80]))
+                if content:
+                    out.append(f"{content} {next_verse_id()}\n\n")
+                return
             if not m and root_ctx and _numberlike_re.match(content):
                 UNRESOLVED.append((_numberlike_re.match(content).group(0).strip(), [], content[:80]))
             if m and root_ctx:
@@ -406,11 +455,15 @@ def convert_json_to_commentary(
             vid = next_verse_id()
             out.append(f"{content} {vid}\n\n")
 
+        h_text = [h3_title]   # text of the heading the current text sits under
+
         for role, content in items:
+            if role in (ROLE_TITLE, ROLE_SUBHEAD, ROLE_SUBSUBHEAD, ROLE_SUTTA):
+                h_text[0] = strip_leading_number(content)
             if h3_pending and role in (ROLE_CHAPTER, ROLE_TITLE,
-                                       ROLE_SUBHEAD, ROLE_SUBSUBHEAD):
+                                       ROLE_SUBHEAD, ROLE_SUBSUBHEAD, ROLE_SUTTA):
                 flush_gatha()
-                out.append(h3_line)
+                heading(h3_line, h3_title)
                 h3_pending = False
             if role == ROLE_CHAPTER:
                 if not consumed_h3:
@@ -419,6 +472,28 @@ def convert_json_to_commentary(
                 # A second chapter-class segment inside the same source
                 # chapter is treated as an h4 (rare edge case)
                 role = ROLE_TITLE
+
+            if role == ROLE_SUTTA:
+                flush_gatha()
+                text = strip_leading_number(content)
+                in_sutta, title_group, seen_title = True, False, True
+                h4_counter += 1
+                h5_counter  = 0
+                heading(f"#### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-0\n\n", text)
+                continue
+
+            if in_sutta and role in (ROLE_TITLE, ROLE_SUBHEAD, ROLE_SUBSUBHEAD):
+                flush_gatha()
+                text = strip_leading_number(content)
+                if role != ROLE_TITLE and title_group and _leading_num_re.match(content):
+                    h6_counter += 1
+                    heading(f"###### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-{h6_counter}-0\n\n", text)
+                    continue
+                title_group = role == ROLE_TITLE
+                h5_counter += 1
+                h6_counter  = 0
+                heading(f"##### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-0\n\n", text)
+                continue
 
             if role == ROLE_TITLE:
                 flush_gatha()
@@ -430,9 +505,8 @@ def convert_json_to_commentary(
                 h4_counter += 1
                 h5_counter  = 0
                 heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-0"
-                out.append(
-                    f"#### {strip_leading_number(content)} {heading_id}\n\n"
-                )
+                heading(f"#### {strip_leading_number(content)} {heading_id}\n\n",
+                        strip_leading_number(content))
                 continue
 
             if role in (ROLE_SUBHEAD, ROLE_SUBSUBHEAD):
@@ -448,13 +522,13 @@ def convert_json_to_commentary(
                     # h5: deeper sub-section under an h4 title
                     h5_counter += 1
                     heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-0"
-                    out.append(f"##### {text} {heading_id}\n\n")
+                    heading(f"##### {text} {heading_id}\n\n", text)
                 else:
                     # h4: sub-section before any h4 title in this chapter
                     h4_counter += 1
                     h5_counter  = 0
                     heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-0"
-                    out.append(f"#### {text} {heading_id}\n\n")
+                    heading(f"#### {text} {heading_id}\n\n", text)
                 continue
 
             if role == ROLE_GATHA:
@@ -472,7 +546,7 @@ def convert_json_to_commentary(
 
         flush_gatha()  # safety flush at chapter end
         if h3_pending:
-            out.append(h3_line)
+            heading(h3_line, h3_title)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text("".join(out), encoding="utf-8")

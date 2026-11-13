@@ -130,8 +130,18 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `dn-3-tiika` | Pāthikavaggaṭīkā | sub-commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-tiika.md` |
 | `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
 
+| `mn-1-atthakatha` | Mūlapaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-1.md` | `1-SOURCES/Commentaries/pi-mn-1-atthakatha.md` |
+| `mn-2-atthakatha` | Majjhimapaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-2.md` | `1-SOURCES/Commentaries/pi-mn-2-atthakatha.md` |
+| `mn-3-atthakatha` | Uparipaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-3.md` | `1-SOURCES/Commentaries/pi-mn-3-atthakatha.md` |
+| `mn-1-tiika` | Mūlapaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-1.md` | `1-SOURCES/Commentaries/pi-mn-1-tiika.md` |
+| `mn-2-tiika` | Majjhimapaṇṇāsaṭīkā | sub-commentary | Pāli | `pi-mn-2.md` | `1-SOURCES/Commentaries/pi-mn-2-tiika.md` |
+| `mn-3-tiika` | Uparipaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-3.md` | `1-SOURCES/Commentaries/pi-mn-3-tiika.md` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
+
+MN registered 2026-11-13. Sources: CSCD `s0201a`–`s0203a.att`, `s0201t`–`s0203t.tik`. CSCD has no abhinavaṭīkā on the Majjhimanikāya.
+
+MN 1 front matter (`--frontmatter`): `Ganthārambhakathā` in the aṭṭhakathā, `Ganthārambhakathāvaṇṇanā` in the ṭīkā. The ṭīkā numbers its Ganthārambhakathāvaṇṇanā paragraphs 1.–16. for itself. Those numbers are not root citations, so they are left unlinked (`--unlinked`).
 
 Tier labels: **commentary** (aṭṭhakathā) and **sub-commentary** (ṭīkā). The abhinavaṭīkā is a second sub-commentary on the same aṭṭhakathā: tipitaka.app pairs its paragraphs with the aṭṭhakathā's, as it does for the ṭīkā. A ṭīkā names the aṭṭhakathā it explains in its `commentary:` frontmatter. The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā, then the abhinavaṭīkā.
 
