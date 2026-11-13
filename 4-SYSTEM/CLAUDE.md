@@ -431,6 +431,7 @@ Skills are reusable, step-by-step procedures stored in `4-SYSTEM/Skills/`. Each 
 | Ingest EPUB as markdown | `epub-to-markdown` |
 | Ingest JSON (root text / commentary) | `json-to-source-text` · `json-to-commentary` |
 | Ingest a Pāli root-text volume from CSCD XML | `cscd-root-text-intake` |
+| Ingest a Pāli commentary from CSCD XML, linked to its root | `cscd-commentary-intake` |
 | Bring one raw file into `1-SOURCES/` | `raw-to-sources` |
 | Repair mechanical OCR / page damage | `clean-raw-text` |
 | Score OCR quality before trusting a file | `tibetan-ocr-quality` |

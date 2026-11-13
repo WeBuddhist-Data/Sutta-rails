@@ -23,8 +23,9 @@ Mapping:
     other <hi>              -> plain text
 chapter = 1-based index of the enclosing chapter-level <div> (0 before the first).
 
-Supported shape: <div type="book"> containing chapter-level <div>s of ONE type
-(e.g. "sutta"), each opening with <head rend="chapter">. Any other nesting
+Supported shapes: <div type="book"> containing chapter-level <div>s of ONE type
+(e.g. "sutta"), each opening with a <head>; or a volume with no <div>s at all,
+where each <p rend="chapter"> opens the next chapter. Any other nesting
 (vagga/saṃyutta/paṇṇāsa divs inside the book) stops the script (non-zero exit,
 "STOP: …" message, nothing written) —
 the converter downstream only knows book > chapter > subhead, so a deeper
@@ -78,11 +79,17 @@ def clean(s):
     # sometimes prints no space after the dot (DN Mahāvagga 335–342, 354, 370:
     # '370."Apariyositasaṅkappo'); the prefix is stripped later, so this adds
     # nothing to the text.
-    return re.sub(r"^(\d+)\.(?=\S)", r"\1. ", s)
+    return re.sub(r"^(\d+(?:-\d+)*)\.(?=\S)", r"\1. ", s)
 
 
 def check_shape(body):
-    """Stop (non-zero exit) unless the volume is book > one chapter-level div type."""
+    """Stop (non-zero exit) unless the volume is book > one chapter-level div
+    type. Returns that div type, or None for a volume with no <div>s at all
+    whose chapters are marked by <p rend="chapter"> (some CSCD ṭīkā volumes)."""
+    if not any(True for _ in body.iter("div")):
+        if not any(p.get("rend") == "chapter" for p in body.iter("p")):
+            sys.exit("STOP: no <div>s and no <p rend='chapter'> — unsupported shape.")
+        return None
     books = [d for d in body.iter("div") if d.get("type") == "book"]
     if len(books) != 1:
         sys.exit(f"STOP: expected exactly one <div type='book'>, found {len(books)}")
@@ -114,13 +121,19 @@ def main(src, dst):
     chap = 0
     title = None
 
+    after_chapter = False   # True once a chapter <div> has closed
+
     def walk(el):
-        nonlocal chap, title
+        nonlocal chap, title, after_chapter
         for child in el:
             if child.tag == "div":
                 if child.get("type") == chapter_type:
                     chap += 1
-                walk(child)
+                    after_chapter = False
+                    walk(child)
+                    after_chapter = True
+                else:
+                    walk(child)
                 continue
             if child.tag not in ("p", "head", "trailer"):
                 continue
@@ -131,6 +144,14 @@ def main(src, dst):
                 css = "centered"
             else:
                 css = "centered" if rend == "centre" else rend
+            if chapter_type is None and css == "chapter":
+                chap += 1        # div-less volume: a chapter paragraph opens a chapter
+            if after_chapter and css in ("subhead", "subsubhead", "title"):
+                # A heading after the last chapter <div> has closed (e.g. a
+                # commentary's Nigamanakathā) opens a section of its own;
+                # closing lines with no heading stay with the chapter before.
+                chap += 1
+                after_chapter = False
             buf = []
             render(child, buf)
             content = clean("".join(buf))

@@ -18,7 +18,7 @@ Source-text files in `1-SOURCES/Text/` are **one file per CSCD volume**. Ingeste
 | Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dn-2.md` |
 | Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dn-3.md` |
 
-Only volumes that have been ingested are present in the folder. The Dīghanikāya is the text currently being worked on, as Pāli root text only (no commentaries or translations yet).
+Only volumes that have been ingested are present in the folder. The Dīghanikāya is the text currently being worked on, in Pāli: root text and commentaries (§3), no translations yet.
 
 **Other nikāyas** (Majjhima, Saṃyutta, Aṅguttara, Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names. Saṃyutta and Aṅguttara volumes nest deeper than book → sutta, which `cscd-root-text-intake` does not yet support (it stops rather than flattening).
 
@@ -97,13 +97,21 @@ No duplicates occur in the Dīghanikāya.
 
 ## 3. Registered commentary IDs
 
-**None ingested yet.** No `registered_id` may be used in any rail until it is added to this roster.
+No `registered_id` may be used in any rail until it is added to this roster.
 
-| `registered_id` | Title | Tier | Language | File |
-| --------------- | ----- | ---- | -------- | ---- |
-| — | — | — | — | — |
+| `registered_id` | Title | Tier | Language | Root text | File |
+| --------------- | ----- | ---- | -------- | --------- | ---- |
+| `dn-1-atthakatha` | Sīlakkhandhavaggaṭṭhakathā | commentary | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-atthakatha.md` |
+| `dn-2-atthakatha` | Mahāvaggaṭṭhakathā | commentary | Pāli | `pi-dn-2.md` | `1-SOURCES/Commentaries/pi-dn-2-atthakatha.md` |
+| `dn-3-atthakatha` | Pāthikavaggaṭṭhakathā | commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-atthakatha.md` |
+| `dn-1-tiika` | Sīlakkhandhavaggaṭīkā | sub-commentary | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-tiika.md` |
+| `dn-2-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-dn-2.md` | `1-SOURCES/Commentaries/pi-dn-2-tiika.md` |
+| `dn-3-tiika` | Pāthikavaggaṭīkā | sub-commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-tiika.md` |
+| `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
 
-When commentaries are ingested, the tiers are **commentary** (aṭṭhakathā), **sub-commentary** (ṭīkā), **sub-sub-commentary** (anuṭīkā / abhinavaṭīkā). The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā tiers in order.
+Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
+
+Tier labels: **commentary** (aṭṭhakathā) and **sub-commentary** (ṭīkā). The abhinavaṭīkā is a second sub-commentary on the same aṭṭhakathā: tipitaka.app pairs its paragraphs with the aṭṭhakathā's, as it does for the ṭīkā. A ṭīkā names the aṭṭhakathā it explains in its `commentary:` frontmatter. The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā, then the abhinavaṭīkā.
 
 Once assigned, a `registered_id` never changes.
 

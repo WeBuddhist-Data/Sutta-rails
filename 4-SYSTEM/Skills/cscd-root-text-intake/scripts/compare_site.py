@@ -1,6 +1,5 @@
 """compare_site.py — step 9 of cscd-root-text-intake.
-Compare a converted root-text .md with tipitaka.app (text + contents tree),
-the way Vinaya-rails' compare_md_site.py / compare_toc.py do.
+Compare a converted root-text .md with tipitaka.app (text + contents tree).
 
 Text: every md line (heading or text) is matched in order to one site paragraph,
 after normalising site display markup (page markers |X0.0000|, **bold**,

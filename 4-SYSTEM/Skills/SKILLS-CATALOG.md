@@ -64,6 +64,12 @@ Scores a Tibetan OCR file's perplexity against a language model, so a bad scan i
 **Outputs:** `1-SOURCES/Text/pi-<collection>-<book>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and intermediates in `0-INBOX/temp/<collection>/`.
 → [`cscd-root-text-intake/SKILL.md`](cscd-root-text-intake/SKILL.md)
 
+### `cscd-commentary-intake` **[exists]**
+**Purpose:** Bring a Pāli commentary work from VRI's CSCD XML into `1-SOURCES/Commentaries/` with block IDs and links to the root paragraphs it cites, verified against the XML and tipitaka.app.
+**Inputs:** CSCD `.att`/`.tik`/`.nrf` stem(s), the root file already in `1-SOURCES/Text/`, the file name and `registered_id` from the annex, and approval to download.
+**Outputs:** `1-SOURCES/Commentaries/pi-<collection>-<book>-<layer>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and drafts, logs and site data in `0-INBOX/`.
+→ [`cscd-commentary-intake/SKILL.md`](cscd-commentary-intake/SKILL.md)
+
 ---
 
 ## 2. Formatting
