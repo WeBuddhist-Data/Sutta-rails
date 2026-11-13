@@ -87,7 +87,30 @@ Explained differences from tipitaka.app. Each is a site artefact; the files foll
   - mn-3 aṭṭhakathā: 1
   - mn-3 ṭīkā: 1
 
+## Uploaded to library-prod.webuddhist.com (2026-11-13)
+
+Run with `0-INBOX/temp/mn/upload-mn.sh`. For each file: dry run with live checks, `--execute`, `--verify`; the log is in `0-INBOX/temp/mn/upload-mn.log`. The library IDs are in each file's frontmatter and in the two upload ledgers. The library fields are the same as for the DN: `license: cc0`, `tag_ids: [296WZOr8MXWteSqBBI7pl]`, `category_id: MZUUxphQ0yFwLBon3Vng8`.
+
+| File | text_id | edition_id | toc_id | Live segments | TOC nodes | Alignment pairs → root edition |
+|---|---|---|---|---|---|---|
+| pi-mn-1 | `ueaCpKSILFcgtJA3zp13X` | `aIXWlhR2vxkSUwyqXqAnU` | `x6dwLsBb1kge00FYyuwAf` | 514 | 82 headings | — |
+| pi-mn-2 | `cw3QYWhLrtIU8jetxrDee` | `68MEFcllavnajd7qASNqk` | `rN3ppPClLrviz2PLeUq0q` | 487 | 58 headings | — |
+| pi-mn-3 | `a16eguWjXslgsEZhMFjl0` | `rkEFE9YLpfHvBHgNvuqce` | `FHYhpcqRsrgwagkwmEw5N` | 464 | 59 headings | — |
+| pi-mn-1-atthakatha | `Mj9cj3d5W5ktwlHkRAfSO` | `bHOTCntkTvuSAIoRhEuCg` | `o7tb3f1r4gsidK5Ke5EJk` | 2512 | 143 | 2508 → `aIXWlhR2vxkSUwyqXqAnU` |
+| pi-mn-1-tiika | `GS4wMUiDBQjJMEjTAoCss` | `d6bCxrZFwvPCYF1oRLLpt` | `sk1XKBmYNSmAFZOtcFY27` | 2135 | 170 | 2084 → `aIXWlhR2vxkSUwyqXqAnU` |
+| pi-mn-2-atthakatha | `euqbubzMlDaKQp5IJAWEH` | `UWkXUKDWDLCFOgXXYUUNd` | `o2XAjwMIVbH2wNbofRXRO` | 1164 | 58 | 1187 → `68MEFcllavnajd7qASNqk` |
+| pi-mn-2-tiika | `sf0zN5sjqk2ar3jgKzfxy` | `FT11ObI0eH2tQlICtKvV8` | `tqGTm5kNl18Q2dOnoTShX` | 832 | 58 | 855 → `68MEFcllavnajd7qASNqk` |
+| pi-mn-3-atthakatha | `6yFc3ln7NQDkWjVwjFN08` | `8rxq510IzxDwAVIuHlC9a` | `fVOuXRNdsmXqsewguUouq` | 989 | 67 | 990 → `rkEFE9YLpfHvBHgNvuqce` |
+| pi-mn-3-tiika | `GEPIm3uxAuISZRlht4OfR` | `0ivKf5QtTznqR8sT0x2YM` | `fxcpIM0T4NFXLJKgJxF4K` | 787 | 66 | 788 → `rkEFE9YLpfHvBHgNvuqce` |
+
+What was checked:
+- **Segments:** live segments = the file's content blocks + the homage `T-1`.
+- **TOC nodes:** live TOC nodes = the file's headings.
+- **Alignment pairs:** the live pairs equal the parser's pairs, built from the file's transclusions. Every target was present in the live root segmentation before the upload.
+- **Commentary links:** each commentary's live `commentary_of` is its root's `text_id`, and it is aligned to its root's edition.
+- **Ledgers:** the IDs in the files equal the ledgers.
+
 ## Not done
 
-- No commit, upload or translation.
+- No commit or push, at your request; no translation.
 - The skill fixes in `4-SYSTEM/Skills/` are vault copies. Per CLAUDE.md §14 they should also go to the shared skill library.

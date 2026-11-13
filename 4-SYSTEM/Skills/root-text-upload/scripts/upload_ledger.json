@@ -82,5 +82,33 @@
     "source_file": "1-SOURCES/Text/pi-mn-2.md",
     "text_id": "cw3QYWhLrtIU8jetxrDee",
     "toc_id": "rN3ppPClLrviz2PLeUq0q"
+  },
+  "pi-mn-3": {
+    "edition_id": "rkEFE9YLpfHvBHgNvuqce",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "a16eguWjXslgsEZhMFjl0",
+        "ts": "2026-11-13T16:51:25"
+      },
+      {
+        "chars": 652816,
+        "edition_id": "rkEFE9YLpfHvBHgNvuqce",
+        "segments": 464,
+        "step": "edition",
+        "ts": "2026-11-13T16:51:26"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "FHYhpcqRsrgwagkwmEw5N",
+        "ts": "2026-11-13T16:51:27"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-mn-3.md",
+    "text_id": "a16eguWjXslgsEZhMFjl0",
+    "toc_id": "FHYhpcqRsrgwagkwmEw5N"
   }
 }
