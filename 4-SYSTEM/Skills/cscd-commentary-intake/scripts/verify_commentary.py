@@ -40,6 +40,8 @@ args = sys.argv[1:]
 unres_arg = None
 if "--unresolved" in args:
     k = args.index("--unresolved"); unres_arg = args[k + 1]; del args[k:k + 2]
+PER_SECTION = "--per-section" in args          # root IDs ^<book>-<section>-<N>
+args = [a for a in args if a != "--per-section"]
 book_k = None
 if "--book" in args:
     k = args.index("--book"); book_k = int(args[k + 1]); del args[k:k + 2]
@@ -70,6 +72,8 @@ def render(el, out, top=True):
 
 
 xml_words, xml_cits, xml_bodies = [], [], []
+xml_secs = []          # per citation: the printed number of the section heading it sits under
+cur_sec = None
 for x in xmls:
     body = ET.parse(x).getroot().find(".//body")
     if book_k is not None:
@@ -91,14 +95,19 @@ for x in xmls:
         s = "".join(buf).replace("‘‘", '"').replace("’’", '"')
         s = re.sub(r"\s+", " ", s)
         s = re.sub(r"\s+\]", "]", re.sub(r"\[\s+", "[", s)).strip()
+        s = re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)   # "8 ." = the number's two tags (as the converter)
         s = NUM_FIX.sub(r"\1. ", s)
         rend = el.get("rend") or ""
         if el.tag == "head" or rend in HEADING_RENDS:
             s = LEAD.sub("", s)
         xml_words += s.split()
         # a printed citation; an @n alone (the AN homage, n="0") prints nothing
+        if rend == "chapter":                      # a section heading: "6. Ratanasuttavaṇṇanā"
+            msec = re.match(r"^\s*(\d+)\.", "".join(el.itertext()))
+            cur_sec = msec.group(1) if msec else None
         if el.tag == "p" and el.get("n") and any(h.get("rend") == "paranum" for h in el.iter("hi")):
             xml_cits.append(el.get("n"))
+            xml_secs.append(cur_sec)
 
 # ---------------- md side
 root_ids = set(re.findall(r"\s\^([\w-]+)\s*$", Path(root_path).read_text(encoding="utf-8"), re.M))
@@ -240,6 +249,7 @@ for printed, links, head in md_by_order:
         xi += 1
     if xi >= len(xml_linkable):
         problems.append(f"md block cites {printed} beyond the XML's citations"); break
+    sec_here = xml_secs[xi]
     xi += 1
     exp = expand(printed)
     if not links and remaining[printed] > 0:
@@ -251,7 +261,7 @@ for printed, links, head in md_by_order:
             problems.append(f"unreadable citation {printed} has links {links[:3]}")
         skipped += 1
         continue
-    exp = covering(exp)
+    exp = [f"{book}-{sec_here}-{k}" for k in exp if f"{book}-{sec_here}-{k}" in root_ids] if PER_SECTION else covering(exp)
     if links == exp:
         ok += 1
     else:

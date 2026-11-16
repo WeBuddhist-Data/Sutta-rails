@@ -29,8 +29,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "cscd-root-text-intake" / "scripts"))
 import bold_check  # noqa: E402
 
-md, sdir, key, root_key = sys.argv[1:5]
-atta_md, atta_key = (sys.argv[5], sys.argv[6]) if len(sys.argv) > 6 else (None, None)
+PER_SECTION = "--per-section" in sys.argv     # root IDs ^<book>-<section>-<N> (Khuddakapāṭha)
+argv = [a for a in sys.argv if a != "--per-section"]
+md, sdir, key, root_key = argv[1:5]
+atta_md, atta_key = (argv[5], argv[6]) if len(argv) > 6 else (None, None)
 S = Path(sdir)
 # printed numbers dropped before comparing: "1. ", "1-10. ", "(6) 1. " (AN vaggas)
 LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
@@ -125,13 +127,19 @@ links = [l for l in json.loads((S / f"{key}.links.json").read_text(encoding="utf
 lk_ok = lk_bad = 0
 if atta_md is None:
     root_paras = {p.get("i", k): p for k, p in enumerate(json.loads((S / f"{root_key}.text.json").read_text(encoding="utf-8"))["paras"])}
-    book = re.search(r"-(\d+)$", root_key).group(1)
+    # the book number from the file's root_text (…-<book>.md); a site key need
+    # not carry one (Khuddaka: "kn-khp")
+    book = re.search(r"^root_text:.*-(\d+)\.md\s*$", Path(md).read_text(encoding="utf-8"), re.M).group(1)
     for l in links:
         if l["kind"] != "mula-atta":
             continue
         n = root_paras.get(l["t"], {}).get("n")
         j = pairs.get(l["i"])
-        if j is not None and n and f"{book}-{n}" in items[j]["scope"]:
+        want = f"{book}-{n}"
+        if PER_SECTION:                 # root node key "<root-key>-<section>[-…]"
+            rest = root_paras.get(l["t"], {}).get("k", "")[len(root_key):].strip("-").split("-")
+            want = f"{book}-{rest[0]}-{n}" if rest and rest[0].isdigit() else want
+        if j is not None and n and want in items[j]["scope"]:
             lk_ok += 1
         else:
             lk_bad += 1

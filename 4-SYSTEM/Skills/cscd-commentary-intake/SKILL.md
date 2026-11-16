@@ -32,6 +32,7 @@ The skill exists so that every work goes through the same chain and is proven, b
 | Unlinked heading(s) | Only if a section numbers its own paragraphs, so that its leading numbers are **not** root citations (a human judgment) | `Ganthārambhakathāvaṇṇanā` (Mūlapaṇṇāsa-ṭīkā, 1.–16.) |
 | Book in the volume | Only for a CSCD volume that holds several works as separate `<div type="book">`s (AN: `s0402a` = Duka-, Tika-, Catukkanipāta): `--book K` to `cscd_xml_to_json.py` and `verify_commentary.py`, one vault file per book | `--book 2` |
 | Tree mode | When the root was converted with `--tree`: pass `--tree` to `cscd_xml_to_json.py` for the commentary too | AN |
+| Per-section | When the root has per-section IDs `^<book>-<section>-<N>`: `--per-section` to `build_commentary.py`, `verify_commentary.py` and `compare_site_commentary.py`. A citation links within the section that the last numbered `###` heading names (`6. Ratanasuttavaṇṇanā` → `^1-6-…`). | Khuddakapāṭha |
 | tipitaka.app keys | The commentary's key, and the root's | `atta-dn-1`, `tika-dn-1`, `tika2-dn-1`; root `dn-1` |
 | Human approval | Download (names, source, sizes), and the move into `1-SOURCES/` | — |
 
@@ -189,6 +190,13 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 ---
 
 ## Notes
+
+**Khuddakanikāya**, first two books, dry run 2026-11-16, tree mode. The two aṭṭhakathās have no `<div>`s at all.
+- Khuddakapāṭha-aṭṭhakathā (per-section; `--frontmatter "Ganthārambhakathā"`) and Dhammapada-aṭṭhakathā (printed in two parts, kept as text) both PASS `verify_commentary.py` and `check_headings.py`.
+- Citations: 67 and 436 linked right, 0 wrong.
+- One citation is unresolved: the Khuddakapāṭha-aṭṭhakathā's `13.` on the Tirokuṭṭasutta, whose root prints only 12 verses. tipitaka.app links it to Maṅgalasutta v. 13 by number alone.
+- In tree mode, a gāthā that opens with a real citation (a number-only line with `@n` joined to it) links to the root like prose.
+- A paragraph number and its dot written as two tags with a space between them (`8 .`) are rendered `8.`.
 
 **Aṅguttaranikāya** dry run, 2026-11-16. 22 works: an aṭṭhakathā and a ṭīkā per nipāta, cut from the four commentary volumes per layer with `--book K`, in tree mode.
 - All 22 PASS `verify_commentary.py --book K` and `check_headings.py --book K`.

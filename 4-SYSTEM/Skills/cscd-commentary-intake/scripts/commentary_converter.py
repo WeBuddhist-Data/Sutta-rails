@@ -87,6 +87,10 @@ UNRESOLVED: list[tuple[str, list[str], str]] = []
 UNLINKED_HEADINGS: set[str] = set()
 UNLINKED: list[tuple[str, str, str]] = []
 UNLINKED_MATCHED: set[str] = set()
+# A root that numbers each section from 1 (CSCD Khuddakapāṭha) has IDs
+# ^<book>-<section>-<N>; a citation N links within the commentary's current
+# section, the printed number of its last level-3 heading (tree mode only).
+PER_SECTION = False
 # Truncated-tail ranges expanded for linking: (as printed, start, end).
 ABBREVIATED: list[tuple[str, int, int]] = []
 
@@ -598,6 +602,7 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
     layer_label = LAYER_DISPLAY_MAP.get(raw_layer, raw_layer)
     out: list[str] = [format_frontmatter(meta), "\n"]
     counter = [0]
+    section = [None]
     unlinked = [False]
     h_text = [""]
     gatha: list[str] = []
@@ -638,7 +643,13 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
                 else:
                     UNRESOLVED.append((m.group(0).strip(), [], content[:80]))
             rt_ids = resolve_root_text_ids(BOOK_ID, "main", n_start, n_end)
-            if ROOT_IDS is not None and rt_ids:
+            if PER_SECTION:
+                want = [f"{BOOK_ID}-{section[0]}-{k}" for k in range(n_start, n_end + 1)] if section[0] else []
+                rt_ids = [r for r in want if ROOT_IDS is None or r in ROOT_IDS]
+                missing = [r for r in want if ROOT_IDS is not None and r not in ROOT_IDS] or ([] if want else [f"(no section) {n_start}"])
+                if missing:
+                    UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
+            elif ROOT_IDS is not None and rt_ids:
                 rt_ids, missing = covering_blocks(ROOT_IDS, BOOK_ID, n_start, n_end)
                 if missing:
                     UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
@@ -667,6 +678,9 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
             flush_gatha()
             text = _tree_lead_re.sub("", content).strip()
             h_text[0] = text
+            if seg["level"] == 3:
+                mnum = re.match(r"^\s*(\d+)\.", content)
+                section[0] = mnum.group(1) if mnum else None
             unlinked[0] = text in UNLINKED_HEADINGS
             if unlinked[0]:
                 UNLINKED_MATCHED.add(text)
@@ -679,7 +693,15 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
         if n_attr and role in (ROLE_VERSE, ROLE_GATHA, ROLE_GATHALAST) \
                 and not _verse_ref_re.match(content) and not _numberlike_re.match(content):
             UNRESOLVED.append((n_attr, [], content[:80]))
-        if role in (ROLE_GATHA, ROLE_GATHALAST) and not n_attr and _verse_ref_re.match(content) \
+        if role in (ROLE_GATHA, ROLE_GATHALAST) and n_attr and _verse_ref_re.match(content) \
+                and not gatha and not unlinked[0]:
+            # a gāthā that opens with a printed citation (a number-only line joined
+            # to it, KN Khuddakapāṭha-aṭṭhakathā "10.") links to the root like prose
+            before = len(out)
+            emit(content, n_attr)
+            out[before + 1 if len(out) > before + 1 and out[before].startswith("![[") else before:] = []
+            counter[0] -= 1
+        elif role in (ROLE_GATHA, ROLE_GATHALAST) and not n_attr and _verse_ref_re.match(content) \
                 and not gatha:
             # a verse the text numbers for itself (a number-only line joined to it):
             # never linked, logged so the checker knows it is not a missing citation

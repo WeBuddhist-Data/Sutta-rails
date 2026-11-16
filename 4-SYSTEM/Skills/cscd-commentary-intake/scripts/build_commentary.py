@@ -42,6 +42,7 @@ ap.add_argument("--nikaya", required=True)
 ap.add_argument("--commentary")
 ap.add_argument("--frontmatter", action="append", default=[])   # repeatable
 ap.add_argument("--unlinked", action="append", default=[])
+ap.add_argument("--per-section", action="store_true")   # root IDs ^<book>-<section>-<N> (Khuddakapāṭha)
 a = ap.parse_args()
 
 root = Path(a.root_md)
@@ -58,6 +59,7 @@ conv.ROOT_TEXT_PATH = root.as_posix()
 conv.BOOK_ID = book
 conv.ROOT_IDS = root_ids
 conv.UNLINKED_HEADINGS = set(a.unlinked)
+conv.PER_SECTION = a.per_section
 data = json.loads(Path(a.json_path).read_text(encoding="utf-8"))
 conv.LAYER_DISPLAY_MAP = {k: a.layer_label for k in ("atthakatha", "tika", "other", data.get("layer", ""))}
 out = Path(a.out_md)

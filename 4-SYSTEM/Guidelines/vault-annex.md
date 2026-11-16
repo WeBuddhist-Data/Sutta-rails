@@ -232,6 +232,8 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `an-9-tiika` | Navakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-9.md` | `1-SOURCES/Commentaries/pi-an-9-tiika.md` |
 | `an-10-tiika` | Dasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-10.md` | `1-SOURCES/Commentaries/pi-an-10-tiika.md` |
 | `an-11-tiika` | Ekādasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-11.md` | `1-SOURCES/Commentaries/pi-an-11-tiika.md` |
+| `kn-1-atthakatha` | Khuddakapāṭha-aṭṭhakathā | commentary | Pāli | `pi-kn-1.md` | `1-SOURCES/Commentaries/pi-kn-1-atthakatha.md` |
+| `kn-2-atthakatha` | Dhammapada-aṭṭhakathā | commentary | Pāli | `pi-kn-2.md` | `1-SOURCES/Commentaries/pi-kn-2-atthakatha.md` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 
@@ -242,6 +244,8 @@ MN 1 front matter (`--frontmatter`): `Ganthārambhakathā` in the aṭṭhakath�
 SN registered 2026-11-14. Sources: CSCD `s0301a`–`s0305a.att`, `s0301t`–`s0305t.tik`. CSCD has no abhinavaṭīkā on the Saṃyuttanikāya. SN 1 front matter is handled as in the MN: `--frontmatter "Ganthārambhakathā"` (aṭṭhakathā), and `--frontmatter` plus `--unlinked "Ganthārambhakathāvaṇṇanā"` (ṭīkā, its own numbers 1.–19.).
 
 AN registered 2026-11-16. Sources: CSCD `s0401a`–`s0404a.att` and `s0401t`–`s0404t.tik`, four volumes per layer, cut into one file per nipāta with `--book K` (tree mode). CSCD has no abhinavaṭīkā on the Aṅguttaranikāya. AN 1 front matter: `--frontmatter "Ganthārambhakathā"` (aṭṭhakathā → `^1-I-0`). For the ṭīkā, `--frontmatter "Ganthārambhakathā"` and `--frontmatter "Ganthārambhakathāvaṇṇanā"` (→ `^1-I-0`, `^1-II-0`), plus `--unlinked "Ganthārambhakathāvaṇṇanā"` (its own numbers 1.–19.). The Dasaka-ṭīkā's own verse list `1.`–`12.` carries no `@n` in the XML; it is not linked to the root.
+
+KN books 1–2 registered 2026-11-16. Sources: CSCD `s0501a.att` (Khuddakapāṭha-aṭṭhakathā, `--frontmatter "Ganthārambhakathā"` → `^1-I-0`, `--per-section`: its citations link within their own section) and `s0502a.att` (Dhammapada-aṭṭhakathā, one file printed in two parts; every verse it quotes links to the root verse). Both are div-less files, converted in tree mode. These two books have no ṭīkā in CSCD. One Khuddakapāṭha-aṭṭhakathā citation stays unlinked and logged: its `13.` in the Tirokuṭṭasutta, whose root prints only verses 1–12.
 
 Tier labels: **commentary** (aṭṭhakathā) and **sub-commentary** (ṭīkā). The abhinavaṭīkā is a second sub-commentary on the same aṭṭhakathā: tipitaka.app pairs its paragraphs with the aṭṭhakathā's, as it does for the ṭīkā. A ṭīkā names the aṭṭhakathā it explains in its `commentary:` frontmatter. The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā, then the abhinavaṭīkā.
 
