@@ -27,6 +27,34 @@
     "text_id": "OzMkZ0SL8PTrPcoXdpS9a",
     "toc_id": "Arxh4s7sKwjRalFJSh0hq"
   },
+  "pi-an-2": {
+    "edition_id": "46AtxFI9d8nErnZHXOhuU",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "HXEj10ht3p5nATUuVDXkd",
+        "ts": "2026-11-16T10:54:14"
+      },
+      {
+        "chars": 82644,
+        "edition_id": "46AtxFI9d8nErnZHXOhuU",
+        "segments": 196,
+        "step": "edition",
+        "ts": "2026-11-16T10:54:14"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "mwbpvu8Szfn2fh4IiXCBb",
+        "ts": "2026-11-16T10:54:15"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-an-2.md",
+    "text_id": "HXEj10ht3p5nATUuVDXkd",
+    "toc_id": "mwbpvu8Szfn2fh4IiXCBb"
+  },
   "pi-dn-1": {
     "edition_id": "4lUEgD4qPFWodyyqlhICx",
     "file_type": "root-text",
