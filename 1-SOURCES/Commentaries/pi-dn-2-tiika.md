@@ -1,5 +1,5 @@
 ---
-title: Mahāvaggaṭīkā
+title: Mahāvaggaṭīkā (Dīghanikāya)
 language: Pali
 script: Roman (PTS diacritics)
 file_type: commentary
@@ -19,6 +19,11 @@ other_ids:
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
 category_id: MZUUxphQ0yFwLBon3Vng8
+commentary_of: VLrppRA33akV8uSiRUkum
+text_id: gaGMZ6yd2k0KIJvepyeuj
+edition_id: t8Ksci3T2AIibNvUcp6Hm
+toc_id: g2YLPM3MF0JJYIX4wL3Hk
+aligned_to_edition_id: v2pN8xOpbBxpr23aZ6bMp
 ---
 
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1

@@ -27,6 +27,44 @@
     "text_id": "mQNCKJ7TpegM8rl0cyxOZ",
     "toc_id": "3DPULBrMuHey77LndNZEh"
   },
+  "pi-dn-2": {
+    "edition_id": "v2pN8xOpbBxpr23aZ6bMp",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "error": "network error POST https://library-prod.webuddhist.com/v2/texts: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)",
+        "step": "error",
+        "ts": "2026-11-16T09:57:52"
+      },
+      {
+        "error": "HTTP 422 POST https://library-prod.webuddhist.com/v2/texts\n         {\"error\":\"Text with title 'Mahāvaggapāḷi' in language 'pi' already exists\"}",
+        "step": "error",
+        "ts": "2026-11-16T09:58:39"
+      },
+      {
+        "step": "text",
+        "text_id": "VLrppRA33akV8uSiRUkum",
+        "ts": "2026-11-16T10:03:04"
+      },
+      {
+        "chars": 481366,
+        "edition_id": "v2pN8xOpbBxpr23aZ6bMp",
+        "segments": 443,
+        "step": "edition",
+        "ts": "2026-11-16T10:03:04"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "Ob7iZQmIittxUSNPoYvui",
+        "ts": "2026-11-16T10:03:05"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-dn-2.md",
+    "text_id": "VLrppRA33akV8uSiRUkum",
+    "toc_id": "Ob7iZQmIittxUSNPoYvui"
+  },
   "pi-mn-1": {
     "edition_id": "aIXWlhR2vxkSUwyqXqAnU",
     "file_type": "root-text",
