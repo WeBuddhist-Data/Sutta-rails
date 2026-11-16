@@ -16,6 +16,9 @@ other_ids:
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
 category_id: XfCwZpoJMtfO7s0laQkdK
+text_id: DXM9m4bgTjB6dgK3wofpb
+edition_id: HKK8bv5u542EYQ12WboAe
+toc_id: DLgYRWmVTKTOYqLckoUL3
 ---
 
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
