@@ -1,5 +1,5 @@
 ---
-title: Mahāvagga-aṭṭhakathā
+title: Mahāvagga-aṭṭhakathā (Saṃyuttanikāya)
 language: Pali
 script: Roman (PTS diacritics)
 file_type: commentary
@@ -18,6 +18,11 @@ other_ids:
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
 category_id: MZUUxphQ0yFwLBon3Vng8
+commentary_of: b2JsBPaz7NdwPn2gmoCxI
+text_id: BSnbTY8ub0cqssPCzwAPT
+edition_id: 6Loc3FMKaSQmbF2sFM8Zq
+toc_id: j7SrSSaC7xtZccL6t3I9X
+aligned_to_edition_id: a5fF7CygDzI4dI5hZ6qda
 ---
 
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1

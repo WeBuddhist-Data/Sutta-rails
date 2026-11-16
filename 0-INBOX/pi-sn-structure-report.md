@@ -5,7 +5,7 @@
 - VipassanaTech/tipitaka-xml `romn/`: 15 files in `0-INBOX/raw-data/sn/`, byte-identical to the repo by git blob SHA.
 - tipitaka.app: `sn-1..5`, `atta-sn-1..5`, `tika-sn-1..5` (text, contents tree, links) in `0-INBOX/tipitaka-app/`.
 
-**Status:** ingested 2026-11-14 (§7). Nothing is committed, pushed or uploaded.
+**Status:** ingested 2026-11-14 (§7), uploaded to library-prod 2026-11-16 (§8). Not committed or pushed.
 
 ---
 
@@ -139,3 +139,31 @@ Shared by the DN and MN intake:
 - **Unresolved logs:** they stay in `0-INBOX/temp/sn-comm/*.unresolved.json`.
 - **Library fields:** `license: cc0`, `tag_ids: [296WZOr8MXWteSqBBI7pl]` and `category_id: MZUUxphQ0yFwLBon3Vng8`, the same as the DN and MN. They are not uploaded; confirm the category before any upload.
 - **Decisions §5.1–5.2:** kept as built. The Bojjhaṅga headings are at sutta level, and commentary heading IDs are sibling positions.
+
+## 8. Uploaded to library-prod.webuddhist.com (2026-11-16)
+
+Uploaded 2026-11-16 to library-prod.webuddhist.com with `0-INBOX/temp/upload-dn23-sn.sh`. For each file: lint, parse, dry run with live checks, `--execute`, `--verify`; the logs are `0-INBOX/temp/upload-dn23-sn-batch1.log` and `upload-dn23-sn.log`. The library IDs are in each file's frontmatter and in both upload ledgers.
+
+What was checked: the IDs in the files equal the ledgers; each commentary's live `commentary_of` is its root's `text_id`, and it is aligned to its root's edition; live segments equal the file's blocks.
+
+**Library titles.** The library allows each title once per language, and "Mahāvagga" is a book name in all three piṭakas. Five titles were taken: by the Vinaya vault's uploaded `Mahāvaggapāḷi` and `Mahāvagga-aṭṭhakathā`, and by each other (`Mahāvaggaṭīkā` twice). They got the nikāya in brackets: `Mahāvaggapāḷi (Dīghanikāya)`, `Mahāvaggaṭṭhakathā (Dīghanikāya)`, `Mahāvaggaṭīkā (Dīghanikāya)`, `Mahāvagga-aṭṭhakathā (Saṃyuttanikāya)` and `Mahāvaggaṭīkā (Saṃyuttanikāya)`. Only the frontmatter `title` changed; the text and its printed headings are as in the source.
+
+The upload ran with `SSL_CERT_FILE` set to certifi's bundle, because this Python (python.org 3.13) has no CA file of its own.
+
+| File | Library title | text_id | edition_id | toc_id | Segments | Alignment pairs → root edition |
+|---|---|---|---|---|---|---|
+| pi-sn-1 | Sagāthāvaggo | `27iSZQ2XEEw9iZfgYqHTU` | `SxPJdoL6EYy69LzgosNl4` | `DCavYXa7s8nNZCQUPzmT7` | 273 | — |
+| pi-sn-1-atthakatha | Sagāthāvagga-aṭṭhakathā | `KZTgptTudglEbV9dpo3AI` | `Ve7j7X1ooyXaW6Bl2sG8F` | `nv4t3f7cBwKbuHRQEPbGx` | 1077 | 1055 → `SxPJdoL6EYy69LzgosNl4` |
+| pi-sn-1-tiika | Sagāthāvaggaṭīkā | `GZ0WUO1QJkBdFtspoNspw` | `83Nr7uuL1ELPuVZE7TMN8` | `071SUrtxO1ANlLfMFp9aB` | 1349 | 1284 → `SxPJdoL6EYy69LzgosNl4` |
+| pi-sn-2 | Nidānavaggo | `DgA6j95JeMKK42tNQiGEc` | `YoJWvxGo8kWCHTlOVSowG` | `PtTs0dstXAoXFuygVykWw` | 249 | — |
+| pi-sn-2-atthakatha | Nidānavagga-aṭṭhakathā | `kWsKgKlpZw4FwNF6EfEmS` | `nNeRVPtTCvRpVtDtDYWAz` | `fOywSoxrztCoO5SuXI9rh` | 719 | 872 → `YoJWvxGo8kWCHTlOVSowG` |
+| pi-sn-2-tiika | Nidānavaggaṭīkā | `TcfuW82WDl0itrJxnok6Z` | `lVLQYi4TnEEaGOykJxyRJ` | `X1uQ4TekX5SGXHdGUcjCy` | 793 | 1003 → `YoJWvxGo8kWCHTlOVSowG` |
+| pi-sn-3 | Khandhavaggo | `J2ZsEPJjQFrfo2CCDuNeP` | `vHMiuor2liUwl2rnB489Z` | `mowrLTLJhI7vqxQDJkqh9` | 363 | — |
+| pi-sn-3-atthakatha | Khandhavagga-aṭṭhakathā | `4qJueCPxEzQYBzUgwVgVy` | `ystx56iHMcOBklV8Ouucg` | `6tY7c3bm6Fm1pjBbaHPfH` | 325 | 936 → `vHMiuor2liUwl2rnB489Z` |
+| pi-sn-3-tiika | Khandhavaggaṭīkā | `P4NP58LfF0OTNbbtzjOkQ` | `937KiS1eArKQSR3XsmHFh` | `ej3ox6NIjvF6clBLKQOqM` | 382 | 1230 → `vHMiuor2liUwl2rnB489Z` |
+| pi-sn-4 | Saḷāyatanavaggo | `RSvOaRm9QIE61XrVd5tiE` | `12ENMdnweU9YYf34m8ggh` | `GTcj4QEc4U7oukYSacCv2` | 362 | — |
+| pi-sn-4-atthakatha | Saḷāyatanavagga-aṭṭhakathā | `Lx5BPtbdlcPfNMB61RSMG` | `YIImAHf7JPj4sDr2Gr4Gb` | `67CmwlXlXsuyaxCn63eCq` | 565 | 986 → `12ENMdnweU9YYf34m8ggh` |
+| pi-sn-4-tiika | Saḷāyatanavaggaṭīkā | `5BkHu8zNjwH9BRQk6OFDw` | `7mPluYBnqPoRziahy6cW0` | `FHK2Xx9mCcEdLH7hOzNYW` | 544 | 1077 → `12ENMdnweU9YYf34m8ggh` |
+| pi-sn-5 | Mahāvaggo | `b2JsBPaz7NdwPn2gmoCxI` | `a5fF7CygDzI4dI5hZ6qda` | `5GRtbTXvpWYAsxUH09e4G` | 634 | — |
+| pi-sn-5-atthakatha | Mahāvagga-aṭṭhakathā (Saṃyuttanikāya) | `BSnbTY8ub0cqssPCzwAPT` | `6Loc3FMKaSQmbF2sFM8Zq` | `j7SrSSaC7xtZccL6t3I9X` | 691 | 1095 → `a5fF7CygDzI4dI5hZ6qda` |
+| pi-sn-5-tiika | Mahāvaggaṭīkā (Saṃyuttanikāya) | `QSgUbNyjbrqsuYXZS84gz` | `fwvCHC4E47Q7tMKO6XnEf` | `m6ClCynLmn8GXaUIaSEe9` | 580 | 1085 → `a5fF7CygDzI4dI5hZ6qda` |
