@@ -1072,6 +1072,43 @@
     "text_id": "eUNzoSBJ59RDfcGbALjiC",
     "toc_id": "TQuwxzyOEJOtmPVMEmisA"
   },
+  "pi-kn-1-atthakatha": {
+    "aligned_to_edition_id": "yULAowUT247bjf8KSJ77D",
+    "edition_id": "Rc6AC2Gudf3v88PwwELYU",
+    "file_type": "commentary",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "34v6YtfpXUmphlvsbwkK0",
+        "ts": "2026-11-16T12:30:37"
+      },
+      {
+        "chars": 364392,
+        "edition_id": "Rc6AC2Gudf3v88PwwELYU",
+        "segments": 970,
+        "step": "edition",
+        "ts": "2026-11-16T12:30:38"
+      },
+      {
+        "nodes": 112,
+        "step": "toc",
+        "toc_id": "mc0902hGLsD6zqdfTauHv",
+        "ts": "2026-11-16T12:30:39"
+      },
+      {
+        "pairs": 616,
+        "root_edition_id": "yULAowUT247bjf8KSJ77D",
+        "step": "alignment",
+        "ts": "2026-11-16T12:30:41"
+      }
+    ],
+    "root_edition_id": "yULAowUT247bjf8KSJ77D",
+    "root_text_id": "MuwKRemR27jr6NkqjLnyl",
+    "source_file": "1-SOURCES/Commentaries/pi-kn-1-atthakatha.md",
+    "text_id": "34v6YtfpXUmphlvsbwkK0",
+    "toc_id": "mc0902hGLsD6zqdfTauHv"
+  },
   "pi-mn-1-atthakatha": {
     "aligned_to_edition_id": "aIXWlhR2vxkSUwyqXqAnU",
     "edition_id": "bHOTCntkTvuSAIoRhEuCg",
