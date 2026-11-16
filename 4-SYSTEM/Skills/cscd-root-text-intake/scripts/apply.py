@@ -344,6 +344,25 @@ def content_id(book: int, zone: str, n, occurrence: int = 0) -> str:
     return f"{base}x{occurrence}"
 
 
+def zones_per_section(lines, runs) -> str:
+    """--zone-per-section: a book that numbers each section from 1 (CSCD
+    Khuddakapāṭha). Each run's zone label is the position of the '###' section it
+    opens in, so the IDs are ^<book>-<section>-<N> (section + printed number)."""
+    h3 = [i for i, l in enumerate(lines) if l.startswith("### ")]
+    parts, used = [], set()
+    for idx, r in enumerate(runs, 1):
+        start = r["items"][0][0]
+        before = [i for i in h3 if i < start]
+        if not before:
+            sys.exit(f"STOP: run {idx} starts before any '###' section")
+        sec = len(before)
+        if sec in used:
+            sys.exit(f"STOP: two numbering runs in section {sec} — not a per-section numbering")
+        used.add(sec)
+        parts.append(f"{idx}={sec}@{before[-1] + 1}")
+    return ",".join(parts)
+
+
 def cmd_apply(path: Path, zones_spec: str):
     lines = read_file(path)
     book = detect_book(lines)
@@ -353,6 +372,9 @@ def cmd_apply(path: Path, zones_spec: str):
         print("No numbered paragraphs found — nothing to do.")
         return
 
+    if zones_spec == "PER_SECTION":
+        zones_spec = zones_per_section(lines, runs)
+        print(f"zones per section: {zones_spec}")
     zone_map = parse_zones(zones_spec, len(runs))
 
     heading_ids = {}     # line_idx -> temporary heading id (Step 4 replaces)
@@ -386,13 +408,19 @@ def cmd_apply(path: Path, zones_spec: str):
 
     # Standalone unnumbered body blocks inside runs → ^{book}-U{k} (document order).
     # Stray blocks before the first run are left for ^T-N in the LLM heading pass.
+    # Also a stray block after the first heading (a section that prints no
+    # numbers, before the first run: Khuddakapāṭha's Saraṇattaya) is a U block.
+    first_heading = next((i for i, l in enumerate(lines) if is_heading(l) and not l.startswith("# ")
+                          and not l.startswith("## ")), None)
+    cands = [(start, end) for r in runs for (start, end) in r.get("unnumbered", [])]
+    if first_heading is not None:
+        cands += [(start, end) for (start, end) in _stray if start > first_heading]
     u_k = 0
-    for r in runs:
-        for (start, end) in r.get("unnumbered", []):
-            if end in id_target:
-                continue
-            u_k += 1
-            id_target[end] = f"{book}-U{u_k}"
+    for (start, end) in sorted(cands):
+        if end in id_target:
+            continue
+        u_k += 1
+        id_target[end] = f"{book}-U{u_k}"
 
     result = []
     for i, line in enumerate(lines):
@@ -430,7 +458,10 @@ def main():
     parser.add_argument("mode", choices=["audit", "apply"])
     parser.add_argument("file")
     parser.add_argument("--zones", default=None)
+    parser.add_argument("--zone-per-section", action="store_true")
     args = parser.parse_args()
+    if args.zone_per_section:
+        args.zones = "PER_SECTION"
 
     p = Path(args.file)
     if not p.exists():

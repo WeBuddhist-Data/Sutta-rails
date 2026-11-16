@@ -141,6 +141,9 @@ def clean(s):
     # sometimes prints no space after the dot (DN Mahāvagga 335–342, 354, 370:
     # '370."Apariyositasaṅkappo'); the prefix is stripped later, so this adds
     # nothing to the text.
+    # The number and its dot are two tags; a space CSCD leaves between them
+    # (KN s0502a: <hi rend="paranum">8</hi> <hi rend="dot">.</hi>) is markup, not text.
+    s = re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)
     return re.sub(r"^(\d+(?:-\d+)*)\.(?=\S)", r"\1. ", s)
 
 
@@ -178,10 +181,16 @@ def main(src, dst, book=None, tree=False):
     levels = {}
     if book is not None or tree:
         books = [d for d in body.iter("div") if d.get("type") == "book"]
-        if book is None and len(books) != 1:
+        if tree and book is None and not books and not any(True for _ in body.iter("div")):
+            # a volume with no <div>s at all (CSCD KN aṭṭhakathās): the body is the book
+            books = None
+        if books is None:
+            levels = cscd_shape.tree_levels(body)
+        elif book is None and len(books) != 1:
             sys.exit(f"STOP: {len(books)} books in this file — give --book K (1..{len(books)})")
         if book is not None and not 1 <= book <= len(books):
             sys.exit(f"STOP: --book {book}: the file has {len(books)} book(s)")
+    if (book is not None or tree) and books is not None:
         book_div = books[(book or 1) - 1]
         # Lines outside the book <div>s: before the first book they belong to the
         # first (homage, nikāya); after the last, to the last (s0402t's closing

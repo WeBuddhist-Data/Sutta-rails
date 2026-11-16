@@ -106,7 +106,8 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
      So AN nests `## nipāta → ### paṇṇāsaka → #### vagga → ##### sutta`, and a vagga outside a paṇṇāsaka is a `###`. The md converter is then `tree_to_md.py` instead of `tipitaka_org_book.py`, and `verify.py` runs with `--tree`.
 
-   Tree mode is chosen explicitly, per collection, by whoever runs the skill (record it in the annex); it is never a silent fallback.
+   Tree mode is chosen explicitly, per collection, by whoever runs the skill (record it in the annex); it is never a silent fallback. A file with no `<div>`s at all (KN aṭṭhakathās) works in tree mode too: its `<p rend="book">` is the book's `##`.
+   - **Per-section numbering** (Khuddakapāṭha): a book that numbers each section from 1. This is a human decision, recorded in the annex. Run `apply.py apply … --zone-per-section` instead of `--zones`, and the IDs become `^<book>-<section>-<N>` (Ratanasutta v. 3 = `^1-6-3`). A section that prints no numbers becomes a `U` block. Then run `verify.py --tree --per-section` and `compare_site.py … --per-section`.
 
    It prints `STOP: …`, exits non-zero and writes nothing if:
    - the volume nests divisions deeper (e.g. saṃyutta > vagga divs in SN);
@@ -180,6 +181,12 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 ## Notes
 
 `apply.py` reads the book number from the `##` line's `^<book>-0`, which step 4 sets. The scripts were first run on the Dīgha Nikāya (s0101m–s0103m, 2026-11-13, all PASS against the XML and tipitaka.app).
+
+**Khuddakanikāya** (books by CSCD number, `pi-kn-<n>`), first two books, dry run 2026-11-16, tree mode.
+- Khuddakapāṭha (s0501m) uses per-section IDs: 89 printed verse numbers in 7 numbered sections; Saraṇattaya and Dvattiṃsākāra become `U` blocks.
+- Dhammapada (s0502m) keeps its verse numbers 1–423 as `^2-1` … `^2-423`; 423 `hangnum`s are joined to their gāthās.
+- Both PASS `verify.py`, `check_headings.py` and `compare_site.py`.
+- `s0501t.nrf` is the Nettivibhāvinī (Nettippakaraṇa ṭīkā), not a Khuddakapāṭha commentary.
 
 **Aṅguttaranikāya** (11 nipātas, s0401m … s0404m4, one file per nipāta) dry run, 2026-11-16, in a scratch folder, in tree mode.
 - All 11 PASS `verify.py --tree` and `check_headings.py`; all 11 PASS `compare_site.py`.

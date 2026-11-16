@@ -36,10 +36,12 @@ Source-text files in `1-SOURCES/Text/` are **one file per CSCD volume**. Ingeste
 | Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-an-9.md` |
 | Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-an-10.md` |
 | Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-an-11.md` |
+| Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-kn-1.md` |
+| Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-kn-2.md` |
 
-Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16.
+Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya is being added book by book. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16.
 
-**Other nikāyas** (Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names.
+**Khuddakanikāya:** one file per book, `pi-kn-<book>`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
 
 `cscd-root-text-intake` supports four shapes:
 - book → sutta `<div>`s (Dīgha);
@@ -57,8 +59,8 @@ Only volumes that have been ingested are present in the folder. The Dīgha-, Maj
 
 **Format example:** `^1-149` (Sīlakkhandhavagga, printed paragraph 149)
 
-- **Nikāya collection:** the abbreviation in the file name: `dn` for Dīghanikāya, `mn` for Majjhimanikāya, `sn` for Saṃyuttanikāya, `an` for Aṅguttaranikāya. The collection is given by the file, not by the ID.
-- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas, `1`–`3` for the Majjhimanikāya's three paṇṇāsas, `1`–`5` for the Saṃyuttanikāya's five vaggas, `1`–`11` for the Aṅguttaranikāya's eleven nipātas).
+- **Nikāya collection:** the abbreviation in the file name: `dn` for Dīghanikāya, `mn` for Majjhimanikāya, `sn` for Saṃyuttanikāya, `an` for Aṅguttaranikāya, `kn` for Khuddakanikāya. The collection is given by the file, not by the ID.
+- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas, `1`–`3` for the Majjhimanikāya's three paṇṇāsas, `1`–`5` for the Saṃyuttanikāya's five vaggas, `1`–`11` for the Aṅguttaranikāya's eleven nipātas, `1`–`20` for the Khuddakanikāya's books).
 
 Block IDs always resolve as `file#^id`, so the same `^1-149` in two different files names two different blocks.
 
@@ -107,6 +109,8 @@ A section after the last saṃyutta (`Sagāthāvaggo paṭhamo.` with its uddān
 
 The ṭīkās have no divisions inside a book, so nothing marks where a paṇṇāsaka ends. A ṭīkā vagga printed after the last paṇṇāsaka therefore nests under it (`#### Acelakavaggavaṇṇanā ^3-3-5-0`), as the XML gives it. The transclusions carry the alignment.
 
+**Khuddakanikāya (tree mode):** the levels come from each book's own XML. Dhammapada: `## Dhammapadapāḷi ^2-0` → `### Yamakavaggo ^2-1-0`, with the verses under the vagga. Khuddakapāṭha: `## Khuddakapāṭhapāḷi ^1-0` → `### Ratanasuttaṃ ^1-6-0`, the nine sections.
+
 Each heading segment is the heading's **sibling position** under its parent. It is not the number printed in the source. Printed sutta and vagga numbers, and printed ranges, are stripped from the heading text (`1. Brahmajālasuttaṃ` → `Brahmajālasuttaṃ`, `1-10. Tathāgatādisuttaṃ` → `Tathāgatādisuttaṃ`, `(6) 1. Puggalavaggo` → `Puggalavaggo`).
 
 ### Verse numbering rule
@@ -118,6 +122,8 @@ Each heading segment is the heading's **sibling position** under its parent. It 
 - CSCD sometimes prints a paragraph number on a line of its own (`<p rend="hangnum">`), with the paragraph's gāthā on the next line. The number is joined to that gāthā line, as tipitaka.app shows it. This happens in 10 MN paragraphs (MN 1 ¶513; MN 2 ¶76, 456–460; MN 3 ¶135, 237, 382) and 48 in SN 1, and in AN 8 ¶32.
 - **Printed ranges** (Saṃyuttanikāya): a paragraph printed as `225-240.` is one block, and its ID is the range as printed, `^3-225-240`. There are 27 in SN 3, 16 in SN 4 and 50 in SN 5, and 90 across the AN (long peyyāla ranges such as `^4-304-783`). A commentary citation of any number in the range links to that block.
 - **Gaps as printed** (SN Mahāvagga): one paragraph number can cover a run of abbreviated suttas, so the next printed number jumps (`270.` → `280.`). The IDs keep the gap. The 11 gaps are 270→280, 280→292, 292→302, 302→311, 552→587-596, 608→641-650, 662→673-684, 716→749-758, 770→792-802, 856→889-898 and 934→967-976.
+- **KN Dhammapada:** verses 1–423 as printed, `^2-1` … `^2-423`. Each verse number is a line of its own (`hangnum`), joined to its gāthā (423).
+- **KN Khuddakapāṭha: section + verse.** See the deviation below.
 - **AN gap:** Catukkanipāta 105 → 107. Sutta 6 of the Ambavagga (Dutiyaambasutta) prints no text, only an editorial note (`^4-U1`).
 - **Homage with `n="0"`** (four AN files): an attribute only, with no printed number. The homage stays the pre-title `^T-1`, with its text as printed (`. Namo tassa…`).
 - **Number-only paragraphs before a heading** (SN Mahāvagga `312-323`, `324-333`, `334-345`, `346-356`, `357-366`): a vagga of fully abbreviated suttas prints only the number and a heading. The number stays where it is printed, as a block holding just the number (`312-323 ^5-312-323`).
@@ -140,6 +146,14 @@ These are mechanical changes only; no wording changes. `verify.py` and `compare_
 **This vault:** `^<book>-<N>`, with `N` the source's printed paragraph number and one run per volume. It applies to every file in `1-SOURCES/Text/`.
 
 **Why:** the canon is cited by its printed paragraph numbers, and CSCD numbers paragraphs per volume, not per sutta. This is the recognised `book-verse` deviation (`annotation-conventions.md` §7).
+
+#### ⚑ Section + verse `^<book>-<section>-<N>` for the Khuddakapāṭha — overrides the one-run-per-volume rule above (registered 2026-11-16)
+
+**Default here:** `^<book>-<N>`, one run of printed numbers per file.
+
+**Khuddakapāṭha (`pi-kn-1`):** the book numbers each of its 9 sections from 1, so `N` alone would repeat. Its IDs are `^1-<section>-<N>`, where `section` is the section's position (1–9) and `N` the printed verse number (Ratanasutta v. 3 = `^1-6-3`). All 89 printed numbers are kept. Saraṇattaya and Dvattiṃsākāra print no numbers and are `^1-U1`, `^1-U2`. The aṭṭhakathā's citations link within their own section (`6. Ratanasuttavaṇṇanā` → `^1-6-…`).
+
+**Why:** the printed numbers stay the IDs, as everywhere else, and every ID is unique in the file. Built with `apply.py --zone-per-section`; checked with `--per-section`.
 
 #### ⚑ Pre-title `^T-N` and collection heading `^0` — overrides `annotation-conventions.md` §2 (registered 2026-11-13)
 

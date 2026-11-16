@@ -19,7 +19,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bold_check  # noqa: E402
 
-book, md, textp, tocp = sys.argv[1:5]
+PER_SECTION = "--per-section" in sys.argv   # IDs ^<book>-<section>-<N> (Khuddakapāṭha)
+book, md, textp, tocp = [x for x in sys.argv[1:] if x != "--per-section"][:4]
 # printed numbers dropped before comparing: "1. ", "1-10. ", "(6) 1. " (AN vaggas)
 LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
 
@@ -79,7 +80,11 @@ for i, p in enumerate(paras):
     if not n:
         continue
     j = pairs.get(i)
-    if j is not None and items[j].get("block") == f"{book}-{n}":
+    want = f"{book}-{n}"
+    if PER_SECTION:                     # the site's node key "<book-key>-<section>[-…]" gives the section
+        rest = p.get("k", "")[len(json.loads(Path(textp).read_text(encoding="utf-8"))["book"]["root"]):].strip("-").split("-")
+        want = f"{book}-{rest[0]}-{n}" if rest and rest[0].isdigit() else want
+    if j is not None and items[j].get("block") == want:
         num_ok += 1
     else:
         num_bad += 1

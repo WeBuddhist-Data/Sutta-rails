@@ -1,0 +1,74 @@
+[
+{
+"key": "kn-khp-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 14,
+"title": "1. Saraṇattayaṃ"
+},
+{
+"key": "kn-khp-2",
+"depth": 4,
+"rend": "chapter",
+"start": 14,
+"end": 26,
+"title": "2. Dasasikkhāpadaṃ"
+},
+{
+"key": "kn-khp-3",
+"depth": 4,
+"rend": "chapter",
+"start": 26,
+"end": 35,
+"title": "3. Dvattiṃsākāro"
+},
+{
+"key": "kn-khp-4",
+"depth": 4,
+"rend": "chapter",
+"start": 35,
+"end": 47,
+"title": "4. Kumārapañhā"
+},
+{
+"key": "kn-khp-5",
+"depth": 4,
+"rend": "chapter",
+"start": 47,
+"end": 74,
+"title": "5. Maṅgalasuttaṃ"
+},
+{
+"key": "kn-khp-6",
+"depth": 4,
+"rend": "chapter",
+"start": 74,
+"end": 122,
+"title": "6. Ratanasuttaṃ"
+},
+{
+"key": "kn-khp-7",
+"depth": 4,
+"rend": "chapter",
+"start": 122,
+"end": 150,
+"title": "7. Tirokuṭṭasuttaṃ"
+},
+{
+"key": "kn-khp-8",
+"depth": 4,
+"rend": "chapter",
+"start": 150,
+"end": 185,
+"title": "8. Nidhikaṇḍasuttaṃ"
+},
+{
+"key": "kn-khp-9",
+"depth": 4,
+"rend": "chapter",
+"start": 185,
+"end": 207,
+"title": "9. Mettasuttaṃ"
+}
+]

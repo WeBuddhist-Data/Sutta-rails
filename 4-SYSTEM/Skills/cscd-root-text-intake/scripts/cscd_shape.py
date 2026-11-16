@@ -104,12 +104,15 @@ def strip_heading_number(text):
 
 
 def tree_levels(book_div):
-    """{id(element): level} for every heading element in the book <div>, in tree mode."""
+    """{id(element): level} for every heading element in the book <div>, in tree mode.
+    A file with no book <div> at all (CSCD KN aṭṭhakathās) passes its <body>: its
+    <p rend="book"> is then the book's heading (##), and the rest nests under it."""
     levels = {}
+    divless_book = book_div.tag == "body"
 
     def walk(container, level):
         # level = the '#' count of this container's own heading (book: 2).
-        has_head = container.find("head") is not None
+        has_head = container.find("head") is not None or (divless_book and container is book_div)
         open_ranks = []                     # ranks of heading paragraphs open in this container
         own_head_seen = False
         for c in container:

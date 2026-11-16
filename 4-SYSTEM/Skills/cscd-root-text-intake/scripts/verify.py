@@ -35,7 +35,10 @@ import bold_check  # noqa: E402
 import cscd_shape  # noqa: E402
 
 TREE = "--tree" in sys.argv
-book, md_path, xml_path = [a for a in sys.argv[1:] if a != "--tree"][:3]
+# --per-section: the book numbers each section (top-level division) from 1 (CSCD
+# Khuddakapāṭha); content IDs are ^<book>-<section>-<N>, section = its position.
+PER_SECTION = "--per-section" in sys.argv
+book, md_path, xml_path = [a for a in sys.argv[1:] if a not in ("--tree", "--per-section")][:3]
 problems = []
 
 # ---------- md side ----------
@@ -88,7 +91,7 @@ for b in blocks:
 
 nums = []
 for cid in content_ids:
-    m = re.fullmatch(rf"{book}-(\d+(?:-\d+)?)", cid)
+    m = re.fullmatch(rf"{book}-(\d+-\d+(?:-\d+)?)" if PER_SECTION else rf"{book}-(\d+(?:-\d+)?)", cid)
     if not m:
         problems.append(f"unexpected content id shape: {cid}")
         continue
@@ -108,20 +111,29 @@ root = ET.parse(xml_path).getroot()
 xbody = root.find(".//body")
 # a paragraph with a printed number (<hi rend="paranum">); an @n alone is not printed
 # (CSCD AN: the homage has n="0")
-paranums = [p.get("n") for p in xbody.iter("p") if re.fullmatch(r"\d+(?:-\d+)?", p.get("n") or "")
-            and any(h.get("rend") == "paranum" for h in p.iter("hi"))]
+def printed(p):
+    return re.fullmatch(r"\d+(?:-\d+)?", p.get("n") or "") and any(h.get("rend") == "paranum" for h in p.iter("hi"))
+paranums = [p.get("n") for p in xbody.iter("p") if printed(p)]
+if PER_SECTION:
+    _book = next(d for d in xbody.iter("div") if d.get("type") == "book")
+    _secs = [d for d in _book if d.tag == "div"]
+    paranums = [f"{k}-{p.get('n')}" for k, d in enumerate(_secs, 1) for p in d.iter("p") if printed(p)]
 if nums != paranums:
     problems.append(f"content ids != XML paranums (md {len(nums)}, xml {len(paranums)})")
 gaps = []   # printed-number jumps; allowed only because nums == the XML's own numbers
-prev = 0
+prev, prev_sec = 0, None
 for x in nums:
+    if PER_SECTION:
+        sec, x = x.split("-", 1)
+        if sec != prev_sec:
+            prev, prev_sec = 0, sec
     a, b = span(x)
     if a <= prev:
         problems.append(f"content ids out of order at {x}")
     elif a != prev + 1:
         gaps.append(f"{prev}->{x}")
     prev = b
-if nums and span(nums[0])[0] != 1:
+if nums and span(nums[0].split("-", 1)[1] if PER_SECTION else nums[0])[0] != 1:
     problems.append("content ids do not start at 1")
 
 book_div = next((d for d in xbody.iter("div") if d.get("type") == "book"), None)

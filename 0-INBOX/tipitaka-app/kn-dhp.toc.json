@@ -1,0 +1,210 @@
+[
+{
+"key": "kn-dhp-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 50,
+"title": "1. Yamakavaggo"
+},
+{
+"key": "kn-dhp-2",
+"depth": 4,
+"rend": "chapter",
+"start": 50,
+"end": 77,
+"title": "2. Appamādavaggo"
+},
+{
+"key": "kn-dhp-3",
+"depth": 4,
+"rend": "chapter",
+"start": 77,
+"end": 101,
+"title": "3. Cittavaggo"
+},
+{
+"key": "kn-dhp-4",
+"depth": 4,
+"rend": "chapter",
+"start": 101,
+"end": 135,
+"title": "4. Pupphavaggo"
+},
+{
+"key": "kn-dhp-5",
+"depth": 4,
+"rend": "chapter",
+"start": 135,
+"end": 171,
+"title": "5. Bālavaggo"
+},
+{
+"key": "kn-dhp-6",
+"depth": 4,
+"rend": "chapter",
+"start": 171,
+"end": 203,
+"title": "6. Paṇḍitavaggo"
+},
+{
+"key": "kn-dhp-7",
+"depth": 4,
+"rend": "chapter",
+"start": 203,
+"end": 227,
+"title": "7. Arahantavaggo"
+},
+{
+"key": "kn-dhp-8",
+"depth": 4,
+"rend": "chapter",
+"start": 227,
+"end": 263,
+"title": "8. Sahassavaggo"
+},
+{
+"key": "kn-dhp-9",
+"depth": 4,
+"rend": "chapter",
+"start": 263,
+"end": 293,
+"title": "9. Pāpavaggo"
+},
+{
+"key": "kn-dhp-10",
+"depth": 4,
+"rend": "chapter",
+"start": 293,
+"end": 330,
+"title": "10. Daṇḍavaggo"
+},
+{
+"key": "kn-dhp-11",
+"depth": 4,
+"rend": "chapter",
+"start": 330,
+"end": 355,
+"title": "11. Jarāvaggo"
+},
+{
+"key": "kn-dhp-12",
+"depth": 4,
+"rend": "chapter",
+"start": 355,
+"end": 379,
+"title": "12. Attavaggo"
+},
+{
+"key": "kn-dhp-13",
+"depth": 4,
+"rend": "chapter",
+"start": 379,
+"end": 405,
+"title": "13. Lokavaggo"
+},
+{
+"key": "kn-dhp-14",
+"depth": 4,
+"rend": "chapter",
+"start": 405,
+"end": 444,
+"title": "14. Buddhavaggo"
+},
+{
+"key": "kn-dhp-15",
+"depth": 4,
+"rend": "chapter",
+"start": 444,
+"end": 472,
+"title": "15. Sukhavaggo"
+},
+{
+"key": "kn-dhp-16",
+"depth": 4,
+"rend": "chapter",
+"start": 472,
+"end": 498,
+"title": "16. Piyavaggo"
+},
+{
+"key": "kn-dhp-17",
+"depth": 4,
+"rend": "chapter",
+"start": 498,
+"end": 529,
+"title": "17. Kodhavaggo"
+},
+{
+"key": "kn-dhp-18",
+"depth": 4,
+"rend": "chapter",
+"start": 529,
+"end": 575,
+"title": "18. Malavaggo"
+},
+{
+"key": "kn-dhp-19",
+"depth": 4,
+"rend": "chapter",
+"start": 575,
+"end": 612,
+"title": "19. Dhammaṭṭhavaggo"
+},
+{
+"key": "kn-dhp-20",
+"depth": 4,
+"rend": "chapter",
+"start": 612,
+"end": 649,
+"title": "20. Maggavaggo"
+},
+{
+"key": "kn-dhp-21",
+"depth": 4,
+"rend": "chapter",
+"start": 649,
+"end": 685,
+"title": "21. Pakiṇṇakavaggo"
+},
+{
+"key": "kn-dhp-22",
+"depth": 4,
+"rend": "chapter",
+"start": 685,
+"end": 716,
+"title": "22. Nirayavaggo"
+},
+{
+"key": "kn-dhp-23",
+"depth": 4,
+"rend": "chapter",
+"start": 716,
+"end": 746,
+"title": "23. Nāgavaggo"
+},
+{
+"key": "kn-dhp-24",
+"depth": 4,
+"rend": "chapter",
+"start": 746,
+"end": 804,
+"title": "24. Taṇhāvaggo"
+},
+{
+"key": "kn-dhp-25",
+"depth": 4,
+"rend": "chapter",
+"start": 804,
+"end": 855,
+"title": "25. Bhikkhuvaggo"
+},
+{
+"key": "kn-dhp-26",
+"depth": 4,
+"rend": "chapter",
+"start": 855,
+"end": 943,
+"title": "26. Brāhmaṇavaggo"
+}
+]
