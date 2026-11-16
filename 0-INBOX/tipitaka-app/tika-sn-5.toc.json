@@ -1,0 +1,2138 @@
+[
+{
+"key": "tika-sn-5-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 126,
+"title": "1. Maggasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-1-1",
+"depth": 5,
+"rend": "title",
+"start": 4,
+"end": 49,
+"title": "1. Avijjāvaggo"
+},
+{
+"key": "tika-sn-5-1-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 5,
+"end": 13,
+"title": "1-2. Avijjāsuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 13,
+"end": 16,
+"title": "3. Sāriputtasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 16,
+"end": 25,
+"title": "4. Jāṇussoṇibrāhmaṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 25,
+"end": 28,
+"title": "5-6. Kimatthiyasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 28,
+"end": 31,
+"title": "7. Dutiyaaññatarabhikkhusuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 31,
+"end": 43,
+"title": "8. Vibhaṅgasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 43,
+"end": 46,
+"title": "9. Sūkasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 46,
+"end": 49,
+"title": "10. Nandiyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-2",
+"depth": 5,
+"rend": "title",
+"start": 49,
+"end": 65,
+"title": "2. Vihāravaggo"
+},
+{
+"key": "tika-sn-5-1-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 50,
+"end": 58,
+"title": "1. Paṭhamavihārasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 58,
+"end": 61,
+"title": "2. Dutiyavihārasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 61,
+"end": 65,
+"title": "3-7. Sekkhasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-3",
+"depth": 5,
+"rend": "title",
+"start": 65,
+"end": 68,
+"title": "3. Micchattavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-4",
+"depth": 5,
+"rend": "title",
+"start": 68,
+"end": 73,
+"title": "4. Paṭipattivaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-5",
+"depth": 5,
+"rend": "title",
+"start": 73,
+"end": 76,
+"title": "5. Aññatitthiyapeyyālavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-6",
+"depth": 5,
+"rend": "title",
+"start": 76,
+"end": 79,
+"title": "6. Sūriyapeyyālavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-7",
+"depth": 5,
+"rend": "title",
+"start": 79,
+"end": 82,
+"title": "7. Ekadhammapeyyālavaggādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-8",
+"depth": 5,
+"rend": "title",
+"start": 82,
+"end": 93,
+"title": "8. Appamādapeyyālavaggo"
+},
+{
+"key": "tika-sn-5-1-8-1",
+"depth": 6,
+"rend": "subhead",
+"start": 83,
+"end": 86,
+"title": "1. Tathāgatasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-8-2",
+"depth": 6,
+"rend": "subhead",
+"start": 86,
+"end": 89,
+"title": "2. Padasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-8-3",
+"depth": 6,
+"rend": "subhead",
+"start": 89,
+"end": 93,
+"title": "3-10. Kūṭasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9",
+"depth": 5,
+"rend": "title",
+"start": 93,
+"end": 109,
+"title": "9. Balakaraṇīyavaggo"
+},
+{
+"key": "tika-sn-5-1-9-1",
+"depth": 6,
+"rend": "subhead",
+"start": 94,
+"end": 96,
+"title": "1. Balasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-2",
+"depth": 6,
+"rend": "subhead",
+"start": 96,
+"end": 98,
+"title": "2. Bījasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-3",
+"depth": 6,
+"rend": "subhead",
+"start": 98,
+"end": 100,
+"title": "3. Nāgasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-5",
+"depth": 6,
+"rend": "subhead",
+"start": 100,
+"end": 102,
+"title": "5. Kumbhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-7",
+"depth": 6,
+"rend": "subhead",
+"start": 102,
+"end": 104,
+"title": "7. Ākāsasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-8",
+"depth": 6,
+"rend": "subhead",
+"start": 104,
+"end": 106,
+"title": "8-9-10. Paṭhamameghasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-9-11",
+"depth": 6,
+"rend": "subhead",
+"start": 106,
+"end": 109,
+"title": "11-12. Āgantukasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-10",
+"depth": 5,
+"rend": "title",
+"start": 109,
+"end": 115,
+"title": "10. Esanāvaggo"
+},
+{
+"key": "tika-sn-5-1-10-1",
+"depth": 6,
+"rend": "subhead",
+"start": 110,
+"end": 112,
+"title": "1. Esanāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-10-2",
+"depth": 6,
+"rend": "subhead",
+"start": 112,
+"end": 115,
+"title": "2-11. Vidhāsuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-11",
+"depth": 5,
+"rend": "title",
+"start": 115,
+"end": 126,
+"title": "11. Oghavaggo"
+},
+{
+"key": "tika-sn-5-1-11-1",
+"depth": 6,
+"rend": "subhead",
+"start": 116,
+"end": 118,
+"title": "1-2. Oghasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-11-3",
+"depth": 6,
+"rend": "subhead",
+"start": 118,
+"end": 121,
+"title": "3-4. Upādānasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-1-11-5",
+"depth": 6,
+"rend": "subhead",
+"start": 121,
+"end": 126,
+"title": "5-10. Anusayasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2",
+"depth": 4,
+"rend": "chapter",
+"start": 126,
+"end": 301,
+"title": "2. Bojjhaṅgasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-2-1",
+"depth": 5,
+"rend": "title",
+"start": 127,
+"end": 179,
+"title": "1. Pabbatavaggo"
+},
+{
+"key": "tika-sn-5-2-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 128,
+"end": 135,
+"title": "1.Himavantasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 135,
+"end": 150,
+"title": "2. Kāyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 150,
+"end": 160,
+"title": "3. Sīlasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 160,
+"end": 164,
+"title": "4. Vatthasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 164,
+"end": 167,
+"title": "5. Bhikkhusuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 167,
+"end": 174,
+"title": "6-7. Kuṇḍaliyasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 174,
+"end": 176,
+"title": "8. Upavānasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 176,
+"end": 179,
+"title": "9. Paṭhamauppannasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-2",
+"depth": 5,
+"rend": "title",
+"start": 179,
+"end": 185,
+"title": "2. Gilānavaggo"
+},
+{
+"key": "tika-sn-5-2-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 180,
+"end": 182,
+"title": "1-3. Pāṇasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 182,
+"end": 185,
+"title": "4-10. Paṭhamagilānasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3",
+"depth": 5,
+"rend": "title",
+"start": 185,
+"end": 199,
+"title": "3. Udāyivaggo"
+},
+{
+"key": "tika-sn-5-2-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 186,
+"end": 188,
+"title": "1-2. Bodhāyasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 188,
+"end": 190,
+"title": "3-5. Ṭhāniyasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 190,
+"end": 192,
+"title": "6-7. Taṇhakkhayasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 192,
+"end": 194,
+"title": "8. Nibbedhabhāgiyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3-9",
+"depth": 6,
+"rend": "subhead",
+"start": 194,
+"end": 196,
+"title": "9. Ekadhammasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 196,
+"end": 199,
+"title": "10. Udāyisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-4",
+"depth": 5,
+"rend": "title",
+"start": 199,
+"end": 210,
+"title": "4. Nīvaraṇavaggo"
+},
+{
+"key": "tika-sn-5-2-4-3",
+"depth": 6,
+"rend": "subhead",
+"start": 200,
+"end": 202,
+"title": "3-4. Upakkilesasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-4-8",
+"depth": 6,
+"rend": "subhead",
+"start": 202,
+"end": 205,
+"title": "8. Āvaraṇanīvaraṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 205,
+"end": 207,
+"title": "9. Rukkhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 207,
+"end": 210,
+"title": "10. Nīvaraṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-5",
+"depth": 5,
+"rend": "title",
+"start": 210,
+"end": 221,
+"title": "5. Cakkavattivaggo"
+},
+{
+"key": "tika-sn-5-2-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 211,
+"end": 213,
+"title": "1. Vidhāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 213,
+"end": 218,
+"title": "2. Cakkavattisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 218,
+"end": 221,
+"title": "4-10. Duppaññasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6",
+"depth": 5,
+"rend": "title",
+"start": 221,
+"end": 292,
+"title": "6. Sākacchavaggo"
+},
+{
+"key": "tika-sn-5-2-6-1",
+"depth": 6,
+"rend": "subhead",
+"start": 222,
+"end": 263,
+"title": "1. Āhārasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6-2",
+"depth": 6,
+"rend": "subhead",
+"start": 263,
+"end": 270,
+"title": "2. Pariyāyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6-3",
+"depth": 6,
+"rend": "subhead",
+"start": 270,
+"end": 273,
+"title": "3. Aggisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6-4",
+"depth": 6,
+"rend": "subhead",
+"start": 273,
+"end": 283,
+"title": "4. Mettāsahagatasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6-5",
+"depth": 6,
+"rend": "subhead",
+"start": 283,
+"end": 288,
+"title": "5. Saṅgāravasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-6-6",
+"depth": 6,
+"rend": "subhead",
+"start": 288,
+"end": 292,
+"title": "6. Abhayasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-7",
+"depth": 5,
+"rend": "title",
+"start": 292,
+"end": 296,
+"title": "7. Ānāpānavaggo"
+},
+{
+"key": "tika-sn-5-2-7-1",
+"depth": 6,
+"rend": "subhead",
+"start": 293,
+"end": 296,
+"title": "1. Aṭṭhikamahapphalasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-2-8",
+"depth": 5,
+"rend": "title",
+"start": 296,
+"end": 301,
+"title": "8. Nirodhavaggo"
+},
+{
+"key": "tika-sn-5-2-8-1",
+"depth": 6,
+"rend": "subhead",
+"start": 297,
+"end": 301,
+"title": "1-10. Asubhasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-3",
+"depth": 4,
+"rend": "chapter",
+"start": 301,
+"end": 450,
+"title": "3. Satipaṭṭhānasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-3-1",
+"depth": 5,
+"rend": "title",
+"start": 302,
+"end": 386,
+"title": "1. Ambapālivaggo"
+},
+{
+"key": "tika-sn-5-3-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 303,
+"end": 323,
+"title": "1. Ambapālisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 323,
+"end": 361,
+"title": "2. Satisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 361,
+"end": 363,
+"title": "3. Bhikkhusuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 363,
+"end": 365,
+"title": "4. Sālasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 365,
+"end": 367,
+"title": "5. Akusalarāsisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 367,
+"end": 369,
+"title": "6. Sakuṇagghisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 369,
+"end": 371,
+"title": "7. Makkaṭasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 371,
+"end": 373,
+"title": "8. Sūdasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 373,
+"end": 380,
+"title": "9. Gilānasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 380,
+"end": 386,
+"title": "10. Bhikkhunupassayasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2",
+"depth": 5,
+"rend": "title",
+"start": 386,
+"end": 423,
+"title": "2. Nālandavaggo"
+},
+{
+"key": "tika-sn-5-3-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 387,
+"end": 401,
+"title": "2. Nālandasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 401,
+"end": 410,
+"title": "3. Cundasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 410,
+"end": 412,
+"title": "4-5. Ukkacelasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 412,
+"end": 414,
+"title": "6. Uttiyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 414,
+"end": 416,
+"title": "8. Brahmasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 416,
+"end": 419,
+"title": "9. Sedakasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-2-10",
+"depth": 6,
+"rend": "subhead",
+"start": 419,
+"end": 423,
+"title": "10. Janapadakalyāṇīsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-3",
+"depth": 5,
+"rend": "title",
+"start": 423,
+"end": 435,
+"title": "3. Sīlaṭṭhitivaggo"
+},
+{
+"key": "tika-sn-5-3-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 424,
+"end": 426,
+"title": "1-2. Sīlasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 426,
+"end": 428,
+"title": "3-5. Parihānasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 428,
+"end": 430,
+"title": "6. Padesasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 430,
+"end": 432,
+"title": "7. Samattasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 432,
+"end": 435,
+"title": "8-10. Lokasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-4",
+"depth": 5,
+"rend": "title",
+"start": 435,
+"end": 438,
+"title": "4. Ananussutavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-5",
+"depth": 5,
+"rend": "title",
+"start": 438,
+"end": 450,
+"title": "5. Amatavaggo"
+},
+{
+"key": "tika-sn-5-3-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 439,
+"end": 441,
+"title": "2. Samudayasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 441,
+"end": 443,
+"title": "4. Satisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-5-6",
+"depth": 6,
+"rend": "subhead",
+"start": 443,
+"end": 446,
+"title": "6. Pātimokkhasaṃvarasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-3-5-7",
+"depth": 6,
+"rend": "subhead",
+"start": 446,
+"end": 450,
+"title": "7. Duccaritasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4",
+"depth": 4,
+"rend": "chapter",
+"start": 450,
+"end": 542,
+"title": "4. Indriyasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-4-1",
+"depth": 5,
+"rend": "title",
+"start": 451,
+"end": 462,
+"title": "1. Suddhikavaggo"
+},
+{
+"key": "tika-sn-5-4-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 452,
+"end": 457,
+"title": "1. Suddhikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-1-1-1",
+"depth": 7,
+"rend": "subhead",
+"start": 454,
+"end": 457,
+"title": "Dutiyasamaṇabrāhmaṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 457,
+"end": 459,
+"title": "8. Dabbasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 459,
+"end": 462,
+"title": "9-10. Paṭhamavibhaṅgasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2",
+"depth": 5,
+"rend": "title",
+"start": 462,
+"end": 483,
+"title": "2. Mudutaravaggo"
+},
+{
+"key": "tika-sn-5-4-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 463,
+"end": 465,
+"title": "1. Paṭilābhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 465,
+"end": 470,
+"title": "2. Paṭhamasaṃkhittasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 470,
+"end": 472,
+"title": "3. Dutiyasaṃkhittasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 472,
+"end": 474,
+"title": "4. Tatiyasaṃkhittasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 474,
+"end": 478,
+"title": "5-7. Paṭhamavitthārasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 478,
+"end": 480,
+"title": "8. Paṭipannasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 480,
+"end": 483,
+"title": "9-10. Sampannasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-3",
+"depth": 5,
+"rend": "title",
+"start": 483,
+"end": 499,
+"title": "3. Chaḷindriyavaggo"
+},
+{
+"key": "tika-sn-5-4-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 484,
+"end": 486,
+"title": "2. Jīvitindriyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 486,
+"end": 488,
+"title": "3. Aññindriyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 488,
+"end": 496,
+"title": "4. Ekabījisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 496,
+"end": 499,
+"title": "5-10. Suddhakasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-4",
+"depth": 5,
+"rend": "title",
+"start": 499,
+"end": 512,
+"title": "4. Sukhindriyavaggo"
+},
+{
+"key": "tika-sn-5-4-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 500,
+"end": 502,
+"title": "1-5. Suddhikasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-4-6",
+"depth": 6,
+"rend": "subhead",
+"start": 502,
+"end": 504,
+"title": "6. Paṭhamavibhaṅgasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 504,
+"end": 506,
+"title": "9. Kaṭṭhopamasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 506,
+"end": 512,
+"title": "10. Uppaṭipāṭikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-5",
+"depth": 5,
+"rend": "title",
+"start": 512,
+"end": 527,
+"title": "5. Jarāvaggo"
+},
+{
+"key": "tika-sn-5-4-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 513,
+"end": 516,
+"title": "1. Jarādhammasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 516,
+"end": 522,
+"title": "2. Uṇṇābhabrāhmaṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-5-5",
+"depth": 6,
+"rend": "subhead",
+"start": 522,
+"end": 524,
+"title": "5. Paṭhamapubbārāmasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-5-10",
+"depth": 6,
+"rend": "subhead",
+"start": 524,
+"end": 527,
+"title": "10. Āpaṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-6",
+"depth": 5,
+"rend": "title",
+"start": 527,
+"end": 539,
+"title": "6. Sūkarakhatavaggo"
+},
+{
+"key": "tika-sn-5-4-6-1",
+"depth": 6,
+"rend": "subhead",
+"start": 528,
+"end": 530,
+"title": "1. Sālasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-6-2",
+"depth": 6,
+"rend": "subhead",
+"start": 530,
+"end": 532,
+"title": "2. Mallikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-6-3",
+"depth": 6,
+"rend": "subhead",
+"start": 532,
+"end": 534,
+"title": "3. Sekhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-6-6",
+"depth": 6,
+"rend": "subhead",
+"start": 534,
+"end": 536,
+"title": "6. Patiṭṭhitasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-6-8",
+"depth": 6,
+"rend": "subhead",
+"start": 536,
+"end": 539,
+"title": "8. Sūkarakhatasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-4-7",
+"depth": 5,
+"rend": "title",
+"start": 539,
+"end": 542,
+"title": "7. Bodhipakkhiyavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-5",
+"depth": 4,
+"rend": "chapter",
+"start": 542,
+"end": 545,
+"title": "5. Sammappadhānasaṃyuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-6",
+"depth": 4,
+"rend": "chapter",
+"start": 545,
+"end": 548,
+"title": "6. Balasaṃyuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7",
+"depth": 4,
+"rend": "chapter",
+"start": 548,
+"end": 602,
+"title": "7. Iddhipādasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-7-1",
+"depth": 5,
+"rend": "title",
+"start": 549,
+"end": 573,
+"title": "1. Cāpālavaggo"
+},
+{
+"key": "tika-sn-5-7-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 550,
+"end": 552,
+"title": "1. Apārasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 552,
+"end": 554,
+"title": "5. Iddhipadesasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 554,
+"end": 556,
+"title": "6. Samattasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 556,
+"end": 573,
+"title": "10. Cetiyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2",
+"depth": 5,
+"rend": "title",
+"start": 573,
+"end": 594,
+"title": "2. Pāsādakampanavaggo"
+},
+{
+"key": "tika-sn-5-7-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 574,
+"end": 576,
+"title": "1-2. Pubbasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 576,
+"end": 582,
+"title": "3. Chandasamādhisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 582,
+"end": 584,
+"title": "4. Moggallānasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 584,
+"end": 586,
+"title": "5. Uṇṇābhabrāhmaṇasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 586,
+"end": 588,
+"title": "9. Iddhādidesanāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-2-10",
+"depth": 6,
+"rend": "subhead",
+"start": 588,
+"end": 594,
+"title": "10. Vibhaṅgasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-3",
+"depth": 5,
+"rend": "title",
+"start": 594,
+"end": 602,
+"title": "3. Ayoguḷavaggo"
+},
+{
+"key": "tika-sn-5-7-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 595,
+"end": 598,
+"title": "2. Ayoguḷasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-7-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 598,
+"end": 602,
+"title": "3-10. Bhikkhusuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-8",
+"depth": 4,
+"rend": "chapter",
+"start": 602,
+"end": 617,
+"title": "8. Anuruddhasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-8-1",
+"depth": 5,
+"rend": "title",
+"start": 603,
+"end": 613,
+"title": "1. Rahogatavaggo"
+},
+{
+"key": "tika-sn-5-8-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 604,
+"end": 606,
+"title": "1-2. Paṭhamarahogatasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-8-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 606,
+"end": 608,
+"title": "3. Sutanusuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-8-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 608,
+"end": 610,
+"title": "4-7. Paṭhamakaṇḍakīsuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-8-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 610,
+"end": 613,
+"title": "9. Ambapālivanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-8-2",
+"depth": 5,
+"rend": "title",
+"start": 613,
+"end": 617,
+"title": "2. Dutiyavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-9",
+"depth": 4,
+"rend": "chapter",
+"start": 617,
+"end": 620,
+"title": "9. Jhānasaṃyuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10",
+"depth": 4,
+"rend": "chapter",
+"start": 620,
+"end": 660,
+"title": "10. Ānāpānasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-10-1",
+"depth": 5,
+"rend": "title",
+"start": 621,
+"end": 650,
+"title": "1. Ekadhammavaggo"
+},
+{
+"key": "tika-sn-5-10-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 622,
+"end": 624,
+"title": "1. Ekadhammasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 624,
+"end": 626,
+"title": "6. Ariṭṭhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 626,
+"end": 629,
+"title": "8. Padīpopamasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 629,
+"end": 639,
+"title": "9. Vesālīsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 639,
+"end": 650,
+"title": "10. Kimilasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-2",
+"depth": 5,
+"rend": "title",
+"start": 650,
+"end": 660,
+"title": "2. Dutiyavaggo"
+},
+{
+"key": "tika-sn-5-10-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 651,
+"end": 654,
+"title": "1-2. Icchānaṅgalasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-10-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 654,
+"end": 660,
+"title": "3-10. Paṭhamaānandasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-11",
+"depth": 4,
+"rend": "chapter",
+"start": 660,
+"end": 750,
+"title": "11. Sotāpattisaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-11-1",
+"depth": 5,
+"rend": "title",
+"start": 661,
+"end": 686,
+"title": "1. Veḷudvāravaggo"
+},
+{
+"key": "tika-sn-5-11-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 662,
+"end": 666,
+"title": "1. Cakkavattirājasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 666,
+"end": 668,
+"title": "2. Brahmacariyogadhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 668,
+"end": 670,
+"title": "3. Dīghāvuupāsakasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 670,
+"end": 672,
+"title": "4-5. Paṭhamasāriputtasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 672,
+"end": 677,
+"title": "6. Thapatisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 677,
+"end": 679,
+"title": "7. Veḷudvāreyyasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 679,
+"end": 686,
+"title": "8-9. Paṭhamagiñjakāvasathasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-2",
+"depth": 5,
+"rend": "title",
+"start": 686,
+"end": 701,
+"title": "2. Rājakārāmavaggo"
+},
+{
+"key": "tika-sn-5-11-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 687,
+"end": 692,
+"title": "1. Sahassabhikkhunisaṅghasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 692,
+"end": 694,
+"title": "2-3. Brāhmaṇasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 694,
+"end": 696,
+"title": "4. Duggatibhayasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 696,
+"end": 698,
+"title": "6. Paṭhamamittāmaccasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-2-7",
+"depth": 6,
+"rend": "subhead",
+"start": 698,
+"end": 701,
+"title": "7. Dutiyamittāmaccasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3",
+"depth": 5,
+"rend": "title",
+"start": 701,
+"end": 715,
+"title": "3. Saraṇānivaggo"
+},
+{
+"key": "tika-sn-5-11-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 702,
+"end": 704,
+"title": "1-2. Paṭhamamahānāmasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 704,
+"end": 706,
+"title": "3. Godhasakkasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 706,
+"end": 708,
+"title": "4. Paṭhamasaraṇānisakkasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 708,
+"end": 710,
+"title": "5. Dutiyasaraṇānisakkasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 710,
+"end": 712,
+"title": "6. Paṭhamaanāthapiṇḍikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 712,
+"end": 715,
+"title": "7. Dutiyaanāthapiṇḍikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-4",
+"depth": 5,
+"rend": "title",
+"start": 715,
+"end": 725,
+"title": "4. Puññābhisandavaggo"
+},
+{
+"key": "tika-sn-5-11-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 716,
+"end": 718,
+"title": "1. Paṭhamapuññābhisandasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-4-4",
+"depth": 6,
+"rend": "subhead",
+"start": 718,
+"end": 720,
+"title": "4. Paṭhamadevapadasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-4-8",
+"depth": 6,
+"rend": "subhead",
+"start": 720,
+"end": 722,
+"title": "8. Vassasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 722,
+"end": 725,
+"title": "10. Nandiyasakkasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-5",
+"depth": 5,
+"rend": "title",
+"start": 725,
+"end": 735,
+"title": "5. Sagāthakapuññābhisandavaggo"
+},
+{
+"key": "tika-sn-5-11-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 726,
+"end": 728,
+"title": "1. Paṭhamaabhisandasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 728,
+"end": 730,
+"title": "2. Dutiyaabhisandasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-5-3",
+"depth": 6,
+"rend": "subhead",
+"start": 730,
+"end": 732,
+"title": "3. Tatiyaabhisandasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 732,
+"end": 735,
+"title": "4. Paṭhamamahaddhanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-6",
+"depth": 5,
+"rend": "title",
+"start": 735,
+"end": 745,
+"title": "6. Sappaññavaggo"
+},
+{
+"key": "tika-sn-5-11-6-2",
+"depth": 6,
+"rend": "subhead",
+"start": 736,
+"end": 738,
+"title": "2. Vassaṃvutthasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-6-3",
+"depth": 6,
+"rend": "subhead",
+"start": 738,
+"end": 740,
+"title": "3. Dhammadinnasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-6-4",
+"depth": 6,
+"rend": "subhead",
+"start": 740,
+"end": 742,
+"title": "4. Gilānasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-6-9",
+"depth": 6,
+"rend": "subhead",
+"start": 742,
+"end": 745,
+"title": "9. Paññāpaṭilābhasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-11-7",
+"depth": 5,
+"rend": "title",
+"start": 745,
+"end": 750,
+"title": "7. Mahāpaññavaggo"
+},
+{
+"key": "tika-sn-5-11-7-1",
+"depth": 6,
+"rend": "subhead",
+"start": 746,
+"end": 750,
+"title": "1. Mahāpaññasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12",
+"depth": 4,
+"rend": "chapter",
+"start": 750,
+"end": 850,
+"title": "12. Saccasaṃyuttaṃ"
+},
+{
+"key": "tika-sn-5-12-1",
+"depth": 5,
+"rend": "title",
+"start": 751,
+"end": 760,
+"title": "1. Samādhivaggo"
+},
+{
+"key": "tika-sn-5-12-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 752,
+"end": 754,
+"title": "1. Samādhisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 754,
+"end": 756,
+"title": "3. Paṭhamakulaputtasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 756,
+"end": 760,
+"title": "10. Tiracchānakathāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-2",
+"depth": 5,
+"rend": "title",
+"start": 760,
+"end": 773,
+"title": "2. Dhammacakkappavattanavaggo"
+},
+{
+"key": "tika-sn-5-12-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 761,
+"end": 768,
+"title": "1. Dhammacakkappavattanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 768,
+"end": 770,
+"title": "9. Saṅkāsanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-2-10",
+"depth": 6,
+"rend": "subhead",
+"start": 770,
+"end": 773,
+"title": "10. Tathasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-3",
+"depth": 5,
+"rend": "title",
+"start": 773,
+"end": 785,
+"title": "3. Koṭigāmavaggo"
+},
+{
+"key": "tika-sn-5-12-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 774,
+"end": 776,
+"title": "1. Koṭigāmasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 776,
+"end": 778,
+"title": "2. Dutiyakoṭigāmasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 778,
+"end": 780,
+"title": "7. Tathasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 780,
+"end": 782,
+"title": "8. Lokasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 782,
+"end": 785,
+"title": "10. Gavampatisuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-4",
+"depth": 5,
+"rend": "title",
+"start": 785,
+"end": 795,
+"title": "4. Sīsapāvanavaggo"
+},
+{
+"key": "tika-sn-5-12-4-3",
+"depth": 6,
+"rend": "subhead",
+"start": 786,
+"end": 788,
+"title": "3. Daṇḍasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-4-5",
+"depth": 6,
+"rend": "subhead",
+"start": 788,
+"end": 790,
+"title": "5. Sattisatasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 790,
+"end": 792,
+"title": "9. Indakhīlasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 792,
+"end": 795,
+"title": "10. Vādatthikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-5",
+"depth": 5,
+"rend": "title",
+"start": 795,
+"end": 806,
+"title": "5. Papātavaggo"
+},
+{
+"key": "tika-sn-5-12-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 796,
+"end": 799,
+"title": "1. Lokacintāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 799,
+"end": 801,
+"title": "2-3. Papātasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-5-5",
+"depth": 6,
+"rend": "subhead",
+"start": 801,
+"end": 803,
+"title": "5. Vālasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-5-8",
+"depth": 6,
+"rend": "subhead",
+"start": 803,
+"end": 806,
+"title": "8. Dutiyachiggaḷayugasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-6",
+"depth": 5,
+"rend": "title",
+"start": 806,
+"end": 808,
+"title": "6. Abhisamayavaggavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-7",
+"depth": 5,
+"rend": "title",
+"start": 808,
+"end": 815,
+"title": "7. Paṭhamaāmakadhaññapeyyālavaggo"
+},
+{
+"key": "tika-sn-5-12-7-3",
+"depth": 6,
+"rend": "subhead",
+"start": 809,
+"end": 811,
+"title": "3. Paññāsuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-7-4",
+"depth": 6,
+"rend": "subhead",
+"start": 811,
+"end": 813,
+"title": "4. Surāmerayasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-7-10",
+"depth": 6,
+"rend": "subhead",
+"start": 813,
+"end": 815,
+"title": "10. Pacāyikasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-8",
+"depth": 5,
+"rend": "title",
+"start": 815,
+"end": 822,
+"title": "8. Dutiyaāmakadhaññapeyyālavaggo"
+},
+{
+"key": "tika-sn-5-12-8-8",
+"depth": 6,
+"rend": "subhead",
+"start": 816,
+"end": 818,
+"title": "8. Bījagāmasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-8-9",
+"depth": 6,
+"rend": "subhead",
+"start": 818,
+"end": 820,
+"title": "9. Vikālabhojanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-8-10",
+"depth": 6,
+"rend": "subhead",
+"start": 820,
+"end": 822,
+"title": "10. Gandhavilepanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-9",
+"depth": 5,
+"rend": "title",
+"start": 822,
+"end": 833,
+"title": "9. Tatiyaāmakadhaññapeyyālavaggo"
+},
+{
+"key": "tika-sn-5-12-9-1",
+"depth": 6,
+"rend": "subhead",
+"start": 823,
+"end": 825,
+"title": "1. Naccagītasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-9-2",
+"depth": 6,
+"rend": "subhead",
+"start": 825,
+"end": 827,
+"title": "2. Uccāsayanasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-9-3",
+"depth": 6,
+"rend": "subhead",
+"start": 827,
+"end": 829,
+"title": "3. Jātarūpasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-9-4",
+"depth": 6,
+"rend": "subhead",
+"start": 829,
+"end": 831,
+"title": "4. Āmakadhaññasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-9-5",
+"depth": 6,
+"rend": "subhead",
+"start": 831,
+"end": 833,
+"title": "5. Āmakamaṃsasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-10",
+"depth": 5,
+"rend": "title",
+"start": 833,
+"end": 850,
+"title": "10. Catutthaāmakadhaññapeyyālavaggo"
+},
+{
+"key": "tika-sn-5-12-10-2",
+"depth": 6,
+"rend": "subhead",
+"start": 834,
+"end": 836,
+"title": "2-3. Kayavikkayasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-10-4",
+"depth": 6,
+"rend": "subhead",
+"start": 836,
+"end": 839,
+"title": "4. Tulākūṭasuttavaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-10-6",
+"depth": 6,
+"rend": "subhead",
+"start": 839,
+"end": 850,
+"title": "6-11. Chedanasuttādivaṇṇanā"
+},
+{
+"key": "tika-sn-5-12-10-6-1",
+"depth": 7,
+"rend": "subhead",
+"start": 842,
+"end": 844,
+"title": "Sāratthappakāsiniyā saṃyuttanikāya-aṭṭhakathāya"
+},
+{
+"key": "tika-sn-5-12-10-6-2",
+"depth": 7,
+"rend": "subhead",
+"start": 844,
+"end": 850,
+"title": "Nigamanakathāvaṇṇanā"
+}
+]

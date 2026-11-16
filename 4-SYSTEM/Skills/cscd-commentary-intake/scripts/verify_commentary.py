@@ -42,7 +42,7 @@ md_path, root_path, xmls = args[0], args[1], args[2:]
 problems = []
 HEADING_RENDS = {"chapter", "title", "subhead", "subsubhead"}
 NUM_FIX = re.compile(r"^(\d+(?:-\d+)*)\.(?=\S)")
-LEAD = re.compile(r"^\s*\d+(?:-\d+)?\.\s*")
+LEAD = re.compile(r"^\s*\d+(?:-\d+)*\.\s*")
 CIT = re.compile(r"^(\d+)(?:-(\d+))?\.(?:\s|$)")
 ID_RE = re.compile(r"\s\^([\w-]+)\s*$")
 TRANS = re.compile(r"^!\[\[([^#\]]+)#\^([\w-]+)\]\]$")
@@ -177,6 +177,23 @@ log = json.loads(unres_path.read_text(encoding="utf-8")) if unres_path.exists() 
 remaining = Counter(u[0].rstrip(".") for u in log.get("unresolved", []) + log.get("unlinked_section_numbers", []))
 
 
+COVER = {}   # printed root number -> the root block that holds it (^b-N, or a range ^b-A-B)
+for rid in sorted(root_ids):
+    mm = re.fullmatch(rf"{book}-(\d+)(?:-(\d+))?", rid)
+    if mm:
+        for k in range(int(mm.group(1)), int(mm.group(2) or mm.group(1)) + 1):
+            COVER.setdefault(k, rid)
+
+
+def covering(nums):
+    out = []
+    for k in nums:
+        rid = COVER.get(k)
+        if rid and rid not in out:
+            out.append(rid)
+    return out
+
+
 def expand(n):
     m = re.fullmatch(r"(\d+)(?:-(\d+))?", n)
     if not m:
@@ -186,7 +203,7 @@ def expand(n):
         b = int(m.group(1)[: -len(m.group(2))] + m.group(2))
     if b < a:
         return None
-    return [f"{book}-{k}" for k in range(a, b + 1)]
+    return list(range(a, b + 1))
 
 
 xml_linkable = [n for n in xml_cits]
@@ -213,7 +230,7 @@ for printed, links, head in md_by_order:
             problems.append(f"unreadable citation {printed} has links {links[:3]}")
         skipped += 1
         continue
-    exp = [e for e in exp if e in root_ids]
+    exp = covering(exp)
     if links == exp:
         ok += 1
     else:

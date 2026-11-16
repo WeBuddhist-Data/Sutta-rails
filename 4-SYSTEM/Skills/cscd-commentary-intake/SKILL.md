@@ -103,7 +103,7 @@ Tattha evanti … ^1-38                 ← in the scope of the link above until
 ## Rules
 
 1. **Never edit wording or a printed number.** Mechanical changes only: page markers dropped, `<note>` as `[…]`, `‘‘ ’’` as `"`, the chapter number stripped from `###` headings, and the h1 layer label added. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. In the commentaries the bold marks the word being explained. `verify_commentary.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML (`cscd-root-text-intake/scripts/bold_check.py`).
-2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`, `01` printed with no dot), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed. Numbers in a section named with `--unlinked` are the section's own numbering. They are not linked and are logged under `unlinked_section_numbers`.
+2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. Each cited number links to the root block that holds it. That is `^b-N`, or a root range block `^b-A-B` that holds A–B (SN). Each block is linked once, in order. A cited number no root block holds is logged as unresolved. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`, `01` printed with no dot), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed. Numbers in a section named with `--unlinked` are the section's own numbering. They are not linked and are logged under `unlinked_section_numbers`.
 3. **Links only before cited paragraphs.** A transclusion group sits directly before the paragraph that opens with the citation, and it never sits before a heading.
 4. **One work, one file.** A work that CSCD splits over volumes is joined (`merge_parts.py`). Every line is kept; a later volume's opening lines become plain text blocks, as tipitaka.app shows them. The same holds inside one file. Some files reprint homage, nikāya and book title partway through, with `(Paṭhamo bhāgo)` / `(Dutiyo bhāgo)` (MN Mūlapaṇṇāsa aṭṭhakathā and ṭīkā). `cscd_xml_to_json.py` keeps those lines as plain text, never as headings, so the vagga IDs stay equal to the root's.
 5. **Front matter is a human decision.** `--frontmatter` is used only for an opening section that precedes the commentary on the first sutta. It must be confirmed with the human and recorded in the report. The heading text can differ per layer: MN uses `Ganthārambhakathā` in the aṭṭhakathā and `Ganthārambhakathāvaṇṇanā` in the ṭīkā. `--frontmatter` changes heading IDs only, not links. If that section numbers its own paragraphs, also pass `--unlinked "<heading>"`, which is confirmed and recorded the same way. The run stops if the heading is not found.
@@ -187,6 +187,14 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 ---
 
 ## Notes
+
+**Saṃyuttanikāya** dry run, 2026-11-14. Ten works: s0301a–s0305a, s0301t–s0305t.
+- All ten PASS `verify_commentary.py`, with every heading present in order.
+- Every citation is linked right or logged: 2,162, 0 wrong. That includes 256 cited ranges, linked to the root's range blocks.
+- SN 1 needed `--frontmatter`: `Ganthārambhakathā` for the aṭṭhakathā; `Ganthārambhakathāvaṇṇanā` for the ṭīkā, plus `--unlinked` for the same heading (its own numbers 1.–19.).
+- All five aṭṭhakathās PASS `compare_site_commentary.py`.
+- One XML bold tag is empty (`<hi rend="bold"></hi>`, s0301a); it is copied as `****` and counted by `bold_check.py`.
+- The commentaries skip suttas and vaggas they do not comment on, so their vagga and sutta heading IDs (sibling positions) often differ from the root's; saṃyutta IDs always match. The transclusions carry the alignment.
 
 First run: Dīghanikāya, 2026-11-13. Seven works: aṭṭhakathā ×3, ṭīkā ×3, and the abhinavaṭīkā joined from s0104t + s0105t. All pass against the XML. On tipitaka.app the text matches line for line, and the only differences are the explained cases above.
 

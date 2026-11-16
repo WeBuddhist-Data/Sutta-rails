@@ -158,12 +158,24 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `mn-1-tiika` | Mūlapaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-1.md` | `1-SOURCES/Commentaries/pi-mn-1-tiika.md` |
 | `mn-2-tiika` | Majjhimapaṇṇāsaṭīkā | sub-commentary | Pāli | `pi-mn-2.md` | `1-SOURCES/Commentaries/pi-mn-2-tiika.md` |
 | `mn-3-tiika` | Uparipaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-3.md` | `1-SOURCES/Commentaries/pi-mn-3-tiika.md` |
+| `sn-1-atthakatha` | Sagāthāvagga-aṭṭhakathā | commentary | Pāli | `pi-sn-1.md` | `1-SOURCES/Commentaries/pi-sn-1-atthakatha.md` |
+| `sn-2-atthakatha` | Nidānavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-2.md` | `1-SOURCES/Commentaries/pi-sn-2-atthakatha.md` |
+| `sn-3-atthakatha` | Khandhavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-3.md` | `1-SOURCES/Commentaries/pi-sn-3-atthakatha.md` |
+| `sn-4-atthakatha` | Saḷāyatanavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-4.md` | `1-SOURCES/Commentaries/pi-sn-4-atthakatha.md` |
+| `sn-5-atthakatha` | Mahāvagga-aṭṭhakathā | commentary | Pāli | `pi-sn-5.md` | `1-SOURCES/Commentaries/pi-sn-5-atthakatha.md` |
+| `sn-1-tiika` | Sagāthāvaggaṭīkā | sub-commentary | Pāli | `pi-sn-1.md` | `1-SOURCES/Commentaries/pi-sn-1-tiika.md` |
+| `sn-2-tiika` | Nidānavaggaṭīkā | sub-commentary | Pāli | `pi-sn-2.md` | `1-SOURCES/Commentaries/pi-sn-2-tiika.md` |
+| `sn-3-tiika` | Khandhavaggaṭīkā | sub-commentary | Pāli | `pi-sn-3.md` | `1-SOURCES/Commentaries/pi-sn-3-tiika.md` |
+| `sn-4-tiika` | Saḷāyatanavaggaṭīkā | sub-commentary | Pāli | `pi-sn-4.md` | `1-SOURCES/Commentaries/pi-sn-4-tiika.md` |
+| `sn-5-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-sn-5.md` | `1-SOURCES/Commentaries/pi-sn-5-tiika.md` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 
 MN registered 2026-11-13. Sources: CSCD `s0201a`–`s0203a.att`, `s0201t`–`s0203t.tik`. CSCD has no abhinavaṭīkā on the Majjhimanikāya.
 
 MN 1 front matter (`--frontmatter`): `Ganthārambhakathā` in the aṭṭhakathā, `Ganthārambhakathāvaṇṇanā` in the ṭīkā. The ṭīkā numbers its Ganthārambhakathāvaṇṇanā paragraphs 1.–16. for itself. Those numbers are not root citations, so they are left unlinked (`--unlinked`).
+
+SN registered 2026-11-14. Sources: CSCD `s0301a`–`s0305a.att`, `s0301t`–`s0305t.tik`. CSCD has no abhinavaṭīkā on the Saṃyuttanikāya. SN 1 front matter is handled as in the MN: `--frontmatter "Ganthārambhakathā"` (aṭṭhakathā), and `--frontmatter` plus `--unlinked "Ganthārambhakathāvaṇṇanā"` (ṭīkā, its own numbers 1.–19.).
 
 Tier labels: **commentary** (aṭṭhakathā) and **sub-commentary** (ṭīkā). The abhinavaṭīkā is a second sub-commentary on the same aṭṭhakathā: tipitaka.app pairs its paragraphs with the aṭṭhakathā's, as it does for the ṭīkā. A ṭīkā names the aṭṭhakathā it explains in its `commentary:` frontmatter. The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā, then the abhinavaṭīkā.
 

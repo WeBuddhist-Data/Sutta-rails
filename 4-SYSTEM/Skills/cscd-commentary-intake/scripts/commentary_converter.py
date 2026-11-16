@@ -109,7 +109,7 @@ LAYER_DISPLAY_MAP = {
 # HELPERS
 # ---------------------------------------------------------------------------
 
-_leading_num_re   = re.compile(r"^\s*\d+(?:-\d+)?\.\s*")
+_leading_num_re   = re.compile(r"^\s*\d+(?:-\d+)*\.\s*")   # heading numbers: "1. ", "1-10. ", "4-5-6. "
 _verse_ref_re     = re.compile(r"^\s*(\d+)(?:-(\d+))?\.(?:\s|$)")
 _leading_strip_re = re.compile(r"^\s*\d+(?:-\d+)?\.\s*")
 _numberlike_re    = re.compile(r"^\s*\d+(?:-\d+)+\.")
@@ -148,6 +148,27 @@ def resolve_root_text_ids(book_id: int, context: str,
     if context != "main":
         return []
     return [f"{book_id}-{n}" for n in range(n_start, n_end + 1)]
+
+
+def covering_blocks(root_ids: set[str], book_id: int, n_start: int, n_end: int):
+    """Root blocks that hold the printed paragraph numbers n_start..n_end, in
+    order, each once, and the numbers no block holds. A root block is ^b-N or a
+    printed range ^b-A-B (CSCD Saṃyuttanikāya), which holds A..B."""
+    cover = {}
+    for rid in root_ids:
+        m = re.fullmatch(rf"{book_id}-(\d+)(?:-(\d+))?", rid)
+        if m:
+            a = int(m.group(1)); b = int(m.group(2) or a)
+            for k in range(a, b + 1):
+                cover.setdefault(k, rid)
+    found, missing = [], []
+    for k in range(n_start, n_end + 1):
+        rid = cover.get(k)
+        if rid is None:
+            missing.append(f"{book_id}-{k}")
+        elif rid not in found:
+            found.append(rid)
+    return found, missing
 
 
 def make_transclusions(root_ids: list[str], root_text_path: str) -> str:
@@ -438,13 +459,13 @@ def convert_json_to_commentary(
                     else:
                         UNRESOLVED.append((m.group(0).strip(), [], content[:80]))
                 rt_ids  = resolve_root_text_ids(BOOK_ID, root_ctx, n_start, n_end)
-                if ROOT_IDS is not None:
-                    # Link only to blocks that exist in the root text; log
-                    # the rest for the citation-irregularities report.
-                    missing = [r for r in rt_ids if r not in ROOT_IDS]
+                if ROOT_IDS is not None and rt_ids:
+                    # Link to the root blocks that hold the cited numbers (a
+                    # root range block ^b-A-B holds A..B); log the numbers no
+                    # block holds, for the citation-irregularities report.
+                    rt_ids, missing = covering_blocks(ROOT_IDS, BOOK_ID, n_start, n_end)
                     if missing:
                         UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
-                    rt_ids = [r for r in rt_ids if r in ROOT_IDS]
                 if rt_ids:
                     out.append(make_transclusions(rt_ids, ROOT_TEXT_PATH) + "\n\n")
                 if not KEEP_REF_NUMBER:
