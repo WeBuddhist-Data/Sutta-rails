@@ -277,6 +277,8 @@ def convert_json_to_commentary(
 
     with json_path.open(encoding="utf-8") as fh:
         data = json.load(fh)
+    if data.get("tree"):
+        return convert_tree(data, json_path, output_path)
 
     segments = data.get("segments", [])
     meta     = extract_metadata(data, json_path, BOOK_ID)
@@ -575,6 +577,126 @@ def convert_json_to_commentary(
         f"Wrote {output_path}  ({verse_counter[0]} verses)",
         file=sys.stderr,
     )
+
+
+# ---------------------------------------------------------------------------
+# TREE MODE (cscd_xml_to_json.py --tree: Aṅguttaranikāya)
+# ---------------------------------------------------------------------------
+# Every heading segment carries its level ('#' count); the commentary is emitted
+# in document order with headings at those levels. Paragraphs, root links,
+# gāthā grouping, unlinked sections and logging are exactly as in the chapter
+# path above (same rules, same logs).
+
+_tree_lead_re = re.compile(r"^\s*(?:\(\d+\)\s*)?\d+(?:-\d+)*\.\s*")   # "1. ", "1-10. ", "(6) 1. "
+
+
+def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
+    segments = data.get("segments", [])
+    meta = extract_metadata(data, json_path, BOOK_ID)
+    raw_layer = str(meta.get("layer", "")).lower()
+    layer_slug = LAYER_SLUG_MAP.get(raw_layer, raw_layer or "commentary")
+    layer_label = LAYER_DISPLAY_MAP.get(raw_layer, raw_layer)
+    out: list[str] = [format_frontmatter(meta), "\n"]
+    counter = [0]
+    unlinked = [False]
+    h_text = [""]
+    gatha: list[str] = []
+
+    def next_id() -> str:
+        counter[0] += 1
+        return f"^{BOOK_ID}-{counter[0]}"
+
+    def flush_gatha() -> None:
+        if gatha:
+            out.append("\n".join(gatha) + f" {next_id()}\n\n")
+            gatha.clear()
+
+    def emit(content: str, n_attr: str) -> None:
+        m = _verse_ref_re.match(content)
+        if m and not n_attr:
+            # a number the XML does not mark as a paragraph number (@n): the
+            # text's own numbering (AN Dasaka-ṭīkā "1. ‘‘Munāḷi…" … "12."), not a citation
+            UNLINKED.append((m.group(0).strip(), "no @n: own numbering, not a citation", content[:80]))
+            out.append(f"{content} {next_id()}\n\n")
+            return
+        if unlinked[0]:
+            if m or _numberlike_re.match(content):
+                printed = (m.group(0) if m else _numberlike_re.match(content).group(0)).strip()
+                UNLINKED.append((printed, h_text[0], content[:80]))
+            out.append(f"{content} {next_id()}\n\n")
+            return
+        if not m and _numberlike_re.match(content):
+            UNRESOLVED.append((_numberlike_re.match(content).group(0).strip(), [], content[:80]))
+        if m:
+            n_start = int(m.group(1))
+            n_end = int(m.group(2)) if m.group(2) else n_start
+            if n_end < n_start:
+                tail = m.group(2)
+                n_end = int(m.group(1)[:-len(tail)] + tail) if len(tail) < len(m.group(1)) else n_end
+                if n_end >= n_start:
+                    ABBREVIATED.append((m.group(0).strip(), n_start, n_end))
+                else:
+                    UNRESOLVED.append((m.group(0).strip(), [], content[:80]))
+            rt_ids = resolve_root_text_ids(BOOK_ID, "main", n_start, n_end)
+            if ROOT_IDS is not None and rt_ids:
+                rt_ids, missing = covering_blocks(ROOT_IDS, BOOK_ID, n_start, n_end)
+                if missing:
+                    UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
+            if rt_ids:
+                out.append(make_transclusions(rt_ids, ROOT_TEXT_PATH) + "\n\n")
+        out.append(f"{content} {next_id()}\n\n")
+
+    seen_book = False
+    for seg in segments:
+        css = seg.get("css_class", "")
+        content = clean_text(seg.get("content", ""))
+        if not content:
+            continue
+        if not seen_book:
+            if css == "centered":
+                out.append(content + "\n\n")
+                continue
+            if css == "nikaya":
+                out.append(f"# {content} ({layer_label}) ^{layer_slug}-0\n\n")
+                continue
+            if css == "book":
+                out.append(f"## {content} ^{BOOK_ID}-0\n\n")
+                seen_book = True
+                continue
+        if css == "heading":
+            flush_gatha()
+            text = _tree_lead_re.sub("", content).strip()
+            h_text[0] = text
+            unlinked[0] = text in UNLINKED_HEADINGS
+            if unlinked[0]:
+                UNLINKED_MATCHED.add(text)
+            out.append(f"{'#' * seg['level']} {text} ^{BOOK_ID}-h-0\n\n")
+            continue
+        role = CATEGORY_TO_ROLE.get(css, ROLE_VERSE)
+        if role == ROLE_SKIP:
+            continue
+        n_attr = str(seg.get("paragraph") or "")
+        if n_attr and role in (ROLE_VERSE, ROLE_GATHA, ROLE_GATHALAST) \
+                and not _verse_ref_re.match(content) and not _numberlike_re.match(content):
+            UNRESOLVED.append((n_attr, [], content[:80]))
+        if role in (ROLE_GATHA, ROLE_GATHALAST) and not n_attr and _verse_ref_re.match(content) \
+                and not gatha:
+            # a verse the text numbers for itself (a number-only line joined to it):
+            # never linked, logged so the checker knows it is not a missing citation
+            UNLINKED.append((_verse_ref_re.match(content).group(0).strip(), "no @n: own numbering, not a citation", content[:80]))
+        if role == ROLE_GATHA:
+            gatha.append(content)
+            continue
+        if role == ROLE_GATHALAST:
+            gatha.append(content)
+            flush_gatha()
+            continue
+        flush_gatha()
+        emit(content, n_attr)
+    flush_gatha()
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text("".join(out), encoding="utf-8")
+    print(f"Wrote {output_path}  ({counter[0]} verses, tree mode)", file=sys.stderr)
 
 
 # ---------------------------------------------------------------------------

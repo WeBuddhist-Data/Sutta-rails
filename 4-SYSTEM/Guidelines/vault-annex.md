@@ -196,6 +196,28 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `sn-3-tiika` | Khandhavaggaṭīkā | sub-commentary | Pāli | `pi-sn-3.md` | `1-SOURCES/Commentaries/pi-sn-3-tiika.md` |
 | `sn-4-tiika` | Saḷāyatanavaggaṭīkā | sub-commentary | Pāli | `pi-sn-4.md` | `1-SOURCES/Commentaries/pi-sn-4-tiika.md` |
 | `sn-5-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-sn-5.md` | `1-SOURCES/Commentaries/pi-sn-5-tiika.md` |
+| `an-1-atthakatha` | Ekakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-1.md` | `1-SOURCES/Commentaries/pi-an-1-atthakatha.md` |
+| `an-2-atthakatha` | Dukanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-2.md` | `1-SOURCES/Commentaries/pi-an-2-atthakatha.md` |
+| `an-3-atthakatha` | Tikanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-3.md` | `1-SOURCES/Commentaries/pi-an-3-atthakatha.md` |
+| `an-4-atthakatha` | Catukkanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-4.md` | `1-SOURCES/Commentaries/pi-an-4-atthakatha.md` |
+| `an-5-atthakatha` | Pañcakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-5.md` | `1-SOURCES/Commentaries/pi-an-5-atthakatha.md` |
+| `an-6-atthakatha` | Chakkanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-6.md` | `1-SOURCES/Commentaries/pi-an-6-atthakatha.md` |
+| `an-7-atthakatha` | Sattakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-7.md` | `1-SOURCES/Commentaries/pi-an-7-atthakatha.md` |
+| `an-8-atthakatha` | Aṭṭhakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-8.md` | `1-SOURCES/Commentaries/pi-an-8-atthakatha.md` |
+| `an-9-atthakatha` | Navakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-9.md` | `1-SOURCES/Commentaries/pi-an-9-atthakatha.md` |
+| `an-10-atthakatha` | Dasakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-10.md` | `1-SOURCES/Commentaries/pi-an-10-atthakatha.md` |
+| `an-11-atthakatha` | Ekādasakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-11.md` | `1-SOURCES/Commentaries/pi-an-11-atthakatha.md` |
+| `an-1-tiika` | Ekakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-1.md` | `1-SOURCES/Commentaries/pi-an-1-tiika.md` |
+| `an-2-tiika` | Dukanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-2.md` | `1-SOURCES/Commentaries/pi-an-2-tiika.md` |
+| `an-3-tiika` | Tikanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-3.md` | `1-SOURCES/Commentaries/pi-an-3-tiika.md` |
+| `an-4-tiika` | Catukkanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-4.md` | `1-SOURCES/Commentaries/pi-an-4-tiika.md` |
+| `an-5-tiika` | Pañcakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-5.md` | `1-SOURCES/Commentaries/pi-an-5-tiika.md` |
+| `an-6-tiika` | Chakkanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-6.md` | `1-SOURCES/Commentaries/pi-an-6-tiika.md` |
+| `an-7-tiika` | Sattakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-7.md` | `1-SOURCES/Commentaries/pi-an-7-tiika.md` |
+| `an-8-tiika` | Aṭṭhakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-8.md` | `1-SOURCES/Commentaries/pi-an-8-tiika.md` |
+| `an-9-tiika` | Navakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-9.md` | `1-SOURCES/Commentaries/pi-an-9-tiika.md` |
+| `an-10-tiika` | Dasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-10.md` | `1-SOURCES/Commentaries/pi-an-10-tiika.md` |
+| `an-11-tiika` | Ekādasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-11.md` | `1-SOURCES/Commentaries/pi-an-11-tiika.md` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 
@@ -204,6 +226,8 @@ MN registered 2026-11-13. Sources: CSCD `s0201a`–`s0203a.att`, `s0201t`–`s02
 MN 1 front matter (`--frontmatter`): `Ganthārambhakathā` in the aṭṭhakathā, `Ganthārambhakathāvaṇṇanā` in the ṭīkā. The ṭīkā numbers its Ganthārambhakathāvaṇṇanā paragraphs 1.–16. for itself. Those numbers are not root citations, so they are left unlinked (`--unlinked`).
 
 SN registered 2026-11-14. Sources: CSCD `s0301a`–`s0305a.att`, `s0301t`–`s0305t.tik`. CSCD has no abhinavaṭīkā on the Saṃyuttanikāya. SN 1 front matter is handled as in the MN: `--frontmatter "Ganthārambhakathā"` (aṭṭhakathā), and `--frontmatter` plus `--unlinked "Ganthārambhakathāvaṇṇanā"` (ṭīkā, its own numbers 1.–19.).
+
+AN registered 2026-11-16. Sources: CSCD `s0401a`–`s0404a.att` and `s0401t`–`s0404t.tik`, four volumes per layer, cut into one file per nipāta with `--book K` (tree mode). CSCD has no abhinavaṭīkā on the Aṅguttaranikāya. AN 1 front matter: `--frontmatter "Ganthārambhakathā"` (aṭṭhakathā → `^1-I-0`). For the ṭīkā, `--frontmatter "Ganthārambhakathā"` and `--frontmatter "Ganthārambhakathāvaṇṇanā"` (→ `^1-I-0`, `^1-II-0`), plus `--unlinked "Ganthārambhakathāvaṇṇanā"` (its own numbers 1.–19.). The Dasaka-ṭīkā's own verse list `1.`–`12.` carries no `@n` in the XML; it is not linked to the root.
 
 Tier labels: **commentary** (aṭṭhakathā) and **sub-commentary** (ṭīkā). The abhinavaṭīkā is a second sub-commentary on the same aṭṭhakathā: tipitaka.app pairs its paragraphs with the aṭṭhakathā's, as it does for the ṭīkā. A ṭīkā names the aṭṭhakathā it explains in its `commentary:` frontmatter. The tier order sets the order of the Traditional Interpretation sections in a verse package: aṭṭhakathā first, then the ṭīkā, then the abhinavaṭīkā.
 

@@ -142,15 +142,15 @@ def segment_blocks(lines):
 def parse_frontmatter_arg(argv):
     """Pulls --frontmatter "<text>" out of the tail args, if present."""
     args = list(argv)
-    fm_text = None
-    if "--frontmatter" in args:
+    fm_texts = []          # repeatable: a work can open with two front-matter sections
+    while "--frontmatter" in args:   # (AN Ekaka-ṭīkā: Ganthārambhakathā, Ganthārambhakathāvaṇṇanā)
         i = args.index("--frontmatter")
         if i + 1 >= len(args):
             print('Usage: --frontmatter requires a heading-text argument')
             sys.exit(1)
-        fm_text = args[i + 1].strip()
+        fm_texts.append(args[i + 1].strip())
         del args[i:i + 2]
-    return fm_text, args
+    return (fm_texts or None), args
 
 
 def bold_heading_warnings(lines):
@@ -197,7 +197,7 @@ def cmd_audit(path: Path, frontmatter_text=None):
             text = strip_id(lines[start]).strip()
             bare_text = strip_id(hm.group(2)).strip()
             flag = ""
-            if frontmatter_text and bare_text == frontmatter_text:
+            if frontmatter_text and bare_text in frontmatter_text:
                 flag = "  <-- front-matter root (Roman numerals from here down)"
                 fm_matched = True
             print(f"  {'#' * level} L{start + 1}: \"{text[:70]}\"{flag}")
@@ -217,7 +217,7 @@ def cmd_audit(path: Path, frontmatter_text=None):
     print(f"Pre-title blocks (→ ^T-1, ^T-2, …): {pre_title}")
     if frontmatter_text:
         status = "found above" if fm_matched else "NOT FOUND — check exact heading text"
-        print(f"Front-matter heading requested: \"{frontmatter_text}\" ({status})")
+        print(f"Front-matter heading requested: {' / '.join(frontmatter_text)} ({status})")
         print(f"Heading blocks (→ Roman inside front matter, Arabic elsewhere, hierarchical ^{book}-…-0): {heading_blocks}")
     else:
         print(f"Heading blocks (→ hierarchical ^{book}-…-0, plain Arabic — no --frontmatter given): {heading_blocks}")
@@ -230,7 +230,7 @@ def cmd_audit(path: Path, frontmatter_text=None):
               "and ends up in the TOC title:")
         print_bold_heading_warnings(lines)
     print()
-    print(f'>>> python apply.py apply "{path}"' + (f' --frontmatter "{frontmatter_text}"' if frontmatter_text else ""))
+    print(f'>>> python apply.py apply "{path}"' + "".join(f' --frontmatter "{t}"' for t in (frontmatter_text or [])))
 
 
 def _next_sibling(path_stack, sibling_counters, level, depth, numeral_fn):
@@ -301,7 +301,7 @@ def cmd_apply(path: Path, frontmatter_text=None):
                 # ordinary Arabic body content again.
                 fm_active = False
 
-            if not fm_active and frontmatter_text and text == frontmatter_text:
+            if not fm_active and frontmatter_text and text in frontmatter_text:
                 # Opens the front-matter subtree. It gets its own Roman
                 # counter namespace and does NOT consume a slot in the
                 # Arabic body counter.
@@ -342,7 +342,7 @@ def cmd_apply(path: Path, frontmatter_text=None):
             ids[end] = f"{book}-{n}"  # always Arabic, front matter or not
 
     if frontmatter_text and not fm_matched:
-        print(f'WARNING: --frontmatter "{frontmatter_text}" did not match any heading text — '
+        print(f'WARNING: --frontmatter {" / ".join(frontmatter_text)} did not match any heading text — '
               f'no Roman numerals were assigned. Check exact spelling/diacritics.\n')
 
     result = []
@@ -359,7 +359,7 @@ def cmd_apply(path: Path, frontmatter_text=None):
     text = re.sub(r"\n{3,}", "\n\n", text)
 
     path.write_text(text, encoding="utf-8", newline="\n")
-    fm_note = f'; front matter "{frontmatter_text}" -> Roman' if frontmatter_text else "; no front matter (all headings Arabic)"
+    fm_note = f'; front matter {" / ".join(frontmatter_text)} -> Roman' if frontmatter_text else "; no front matter (all headings Arabic)"
     print(f"Applied block IDs to {path.name} (book {book}{fm_note})\n")
     cmd_audit(path, frontmatter_text)
 

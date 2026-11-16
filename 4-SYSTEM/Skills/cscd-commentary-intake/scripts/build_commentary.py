@@ -40,7 +40,7 @@ ap.add_argument("--layer", required=True)
 ap.add_argument("--layer-label", required=True)
 ap.add_argument("--nikaya", required=True)
 ap.add_argument("--commentary")
-ap.add_argument("--frontmatter")
+ap.add_argument("--frontmatter", action="append", default=[])   # repeatable
 ap.add_argument("--unlinked", action="append", default=[])
 a = ap.parse_args()
 
@@ -111,8 +111,8 @@ out.write_text("\n".join(lines) + "\n" + body, encoding="utf-8")
 
 # 6. block IDs
 cmd = ["python3", "-I", str(HERE / "apply_commentary_ids.py"), "apply", str(out)]
-if a.frontmatter:
-    cmd += ["--frontmatter", a.frontmatter]
+for fm_heading in a.frontmatter:
+    cmd += ["--frontmatter", fm_heading]
 r = subprocess.run(cmd, capture_output=True, text=True)
 if r.returncode:
     sys.exit(r.stdout + r.stderr)
@@ -121,7 +121,7 @@ for ln in r.stdout.splitlines():
         print("   " + ln.strip())
 
 log = {"unresolved": conv.UNRESOLVED, "abbreviated_ranges": conv.ABBREVIATED}
-if a.unlinked:
+if a.unlinked or conv.UNLINKED:
     log["unlinked_section_numbers"] = conv.UNLINKED
 Path(str(out)[:-3] + ".unresolved.json").write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")
 txt = out.read_text(encoding="utf-8")
@@ -129,4 +129,4 @@ n_content = len(re.findall(r"\s\^" + str(book) + r"-(?!0\s*$)\d+\s*$", txt, re.M
 print(f"{out.name}: book {book}, title '{title}', transclusions {txt.count('![[')}, "
       f"content blocks {n_content}, "
       f"unresolved {len(conv.UNRESOLVED)}, abbreviated ranges {len(conv.ABBREVIATED)}"
-      + (f", section numbers left unlinked {len(conv.UNLINKED)} (under {sorted(a.unlinked)})" if a.unlinked else ""))
+      + (f", numbers left unlinked {len(conv.UNLINKED)}" + (f" (under {sorted(a.unlinked)})" if a.unlinked else "") if conv.UNLINKED else ""))

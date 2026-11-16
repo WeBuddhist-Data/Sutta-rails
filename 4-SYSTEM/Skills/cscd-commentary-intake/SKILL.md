@@ -30,6 +30,8 @@ The skill exists so that every work goes through the same chain and is proven, b
 | Aṭṭhakathā file | For a ṭīkā: the aṭṭhakathā it explains (`commentary:` field) | `1-SOURCES/Commentaries/pi-dn-1-atthakatha.md` |
 | Front-matter heading | Only if the work opens with a section that stands apart from the commentary on the first sutta (a human judgment) | `Ganthārambhakathā` |
 | Unlinked heading(s) | Only if a section numbers its own paragraphs, so that its leading numbers are **not** root citations (a human judgment) | `Ganthārambhakathāvaṇṇanā` (Mūlapaṇṇāsa-ṭīkā, 1.–16.) |
+| Book in the volume | Only for a CSCD volume that holds several works as separate `<div type="book">`s (AN: `s0402a` = Duka-, Tika-, Catukkanipāta): `--book K` to `cscd_xml_to_json.py` and `verify_commentary.py`, one vault file per book | `--book 2` |
+| Tree mode | When the root was converted with `--tree`: pass `--tree` to `cscd_xml_to_json.py` for the commentary too | AN |
 | tipitaka.app keys | The commentary's key, and the root's | `atta-dn-1`, `tika-dn-1`, `tika2-dn-1`; root `dn-1` |
 | Human approval | Download (names, source, sizes), and the move into `1-SOURCES/` | — |
 
@@ -106,7 +108,7 @@ Tattha evanti … ^1-38                 ← in the scope of the link above until
 2. **Link exactly what is printed.** A printed range is expanded, and a truncated tail (`65-6.` = 65–66) is completed for linking only, with the text kept as printed. Each cited number links to the root block that holds it. That is `^b-N`, or a root range block `^b-A-B` that holds A–B (SN). Each block is linked once, in order. A cited number no root block holds is logged as unresolved. A citation that cannot be read, or that names no existing root block (`504-407.`, `292-3-6.`, `01` printed with no dot), is **not** linked: it is logged in `….unresolved.json` and reported for a reviewer, never guessed. Numbers in a section named with `--unlinked` are the section's own numbering. They are not linked and are logged under `unlinked_section_numbers`.
 3. **Links only before cited paragraphs.** A transclusion group sits directly before the paragraph that opens with the citation, and it never sits before a heading.
 4. **One work, one file.** A work that CSCD splits over volumes is joined (`merge_parts.py`). Every line is kept; a later volume's opening lines become plain text blocks, as tipitaka.app shows them. The same holds inside one file. Some files reprint homage, nikāya and book title partway through, with `(Paṭhamo bhāgo)` / `(Dutiyo bhāgo)` (MN Mūlapaṇṇāsa aṭṭhakathā and ṭīkā). `cscd_xml_to_json.py` keeps those lines as plain text, never as headings, so the vagga IDs stay equal to the root's.
-5. **Front matter is a human decision.** `--frontmatter` is used only for an opening section that precedes the commentary on the first sutta. It must be confirmed with the human and recorded in the report. The heading text can differ per layer: MN uses `Ganthārambhakathā` in the aṭṭhakathā and `Ganthārambhakathāvaṇṇanā` in the ṭīkā. `--frontmatter` changes heading IDs only, not links. If that section numbers its own paragraphs, also pass `--unlinked "<heading>"`, which is confirmed and recorded the same way. The run stops if the heading is not found.
+5. **Front matter is a human decision.** `--frontmatter` is repeatable, for a work that opens with two front-matter sections (AN Ekaka-ṭīkā: `Ganthārambhakathā`, `Ganthārambhakathāvaṇṇanā` → `^1-I-0`, `^1-II-0`). A number that the XML does not mark as a paragraph number (no `@n`, e.g. the Dasaka-ṭīkā's own verse list `1.`–`12.`) is never a citation: it is not linked and is logged under `unlinked_section_numbers`. **The rest of this rule:** `--frontmatter` is used only for an opening section that precedes the commentary on the first sutta. It must be confirmed with the human and recorded in the report. The heading text can differ per layer: MN uses `Ganthārambhakathā` in the aṭṭhakathā and `Ganthārambhakathāvaṇṇanā` in the ṭīkā. `--frontmatter` changes heading IDs only, not links. If that section numbers its own paragraphs, also pass `--unlinked "<heading>"`, which is confirmed and recorded the same way. The run stops if the heading is not found.
 6. **Unsupported XML shape stops the run.** If `cscd_xml_to_json.py` stops, extend it; never flatten.
 7. **Every difference from tipitaka.app is explained in the report,** or the cause is fixed and the run repeated.
 8. **Download, and move into `1-SOURCES/`, only with approval.** `registered_id`s go into annex §3 before the files move.
@@ -187,6 +189,13 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
 ---
 
 ## Notes
+
+**Aṅguttaranikāya** dry run, 2026-11-16. 22 works: an aṭṭhakathā and a ṭīkā per nipāta, cut from the four commentary volumes per layer with `--book K`, in tree mode.
+- All 22 PASS `verify_commentary.py --book K` and `check_headings.py --book K`.
+- Every citation is linked right or logged: 2,103 linked, 0 wrong, and 30 own section or verse numbers left unlinked.
+- Lines outside a volume's books belong to the first book (before it) or the last (after it), as tipitaka.app has them. An example is `s0402t`'s closing `Dutiyo bhāgo niṭṭhito.`, which belongs to the Catukka-ṭīkā.
+- tipitaka.app: 18 PASS; the other 4 differ only by site artefacts (no contents node for vaggas the XML gives as `<head>`s straight in the book; a ṭīkā verse number paired by number).
+- tipitaka.app's commentary books are slices of their volume, so `compare_site_commentary.py` matches site paragraphs by their index `i`.
 
 **Saṃyuttanikāya** dry run, 2026-11-14. Ten works: s0301a–s0305a, s0301t–s0305t.
 - All ten PASS `verify_commentary.py`, with every heading present in order.

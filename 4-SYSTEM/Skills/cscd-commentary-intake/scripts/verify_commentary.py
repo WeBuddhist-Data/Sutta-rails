@@ -21,7 +21,9 @@ file against the CSCD XML volume(s) it came from.
    same text; every ** pairs up (cscd-root-text-intake/scripts/bold_check.py). Words are compared with
    the ** removed.
 Exit status 1 on any problem.
-Usage: python3 -I verify_commentary.py <file.md> <root.md> <xml> [<xml> …] [--unresolved <log.json>]
+With --book K, only the K-th <div type="book"> of the (single) XML is checked: a CSCD
+commentary volume can hold several nipātas, each its own vault file (AN).
+Usage: python3 -I verify_commentary.py <file.md> <root.md> <xml> [<xml> …] [--unresolved <log.json>] [--book K]
        (default log: <file>.unresolved.json next to the file)
 """
 import difflib
@@ -38,11 +40,14 @@ args = sys.argv[1:]
 unres_arg = None
 if "--unresolved" in args:
     k = args.index("--unresolved"); unres_arg = args[k + 1]; del args[k:k + 2]
+book_k = None
+if "--book" in args:
+    k = args.index("--book"); book_k = int(args[k + 1]); del args[k:k + 2]
 md_path, root_path, xmls = args[0], args[1], args[2:]
 problems = []
 HEADING_RENDS = {"chapter", "title", "subhead", "subsubhead"}
 NUM_FIX = re.compile(r"^(\d+(?:-\d+)*)\.(?=\S)")
-LEAD = re.compile(r"^\s*\d+(?:-\d+)*\.\s*")
+LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?\d+(?:-\d+)*\.\s*")   # "1. ", "1-10. ", "(6) 1. "
 CIT = re.compile(r"^(\d+)(?:-(\d+))?\.(?:\s|$)")
 ID_RE = re.compile(r"\s\^([\w-]+)\s*$")
 TRANS = re.compile(r"^!\[\[([^#\]]+)#\^([\w-]+)\]\]$")
@@ -67,6 +72,16 @@ def render(el, out, top=True):
 xml_words, xml_cits, xml_bodies = [], [], []
 for x in xmls:
     body = ET.parse(x).getroot().find(".//body")
+    if book_k is not None:
+        # the K-th book, plus lines outside the books: before the first book they
+        # belong to the first, after the last to the last (as cscd_xml_to_json.py)
+        books = [d for d in body if d.tag == "div" and d.get("type") == "book"]
+        kids = list(body); pos = [k for k, c in enumerate(kids) if c in books]
+        sel = ET.Element("body")
+        for k, c in enumerate(kids):
+            if c is books[book_k - 1] or (c not in books and ((k < pos[0] and book_k == 1) or (k > pos[-1] and book_k == len(books)))):
+                sel.append(c)
+        body = sel
     xml_bodies.append(body)
     for el in body.iter():
         if el.tag not in ("p", "head", "trailer"):
@@ -81,7 +96,8 @@ for x in xmls:
         if el.tag == "head" or rend in HEADING_RENDS:
             s = LEAD.sub("", s)
         xml_words += s.split()
-        if el.tag == "p" and el.get("n"):
+        # a printed citation; an @n alone (the AN homage, n="0") prints nothing
+        if el.tag == "p" and el.get("n") and any(h.get("rend") == "paranum" for h in el.iter("hi")):
             xml_cits.append(el.get("n"))
 
 # ---------------- md side
@@ -212,6 +228,11 @@ md_by_order = [c for c in md_cits]
 # every XML citation must appear, in order, as a cited block
 xi = 0
 for printed, links, head in md_by_order:
+    if not links and remaining[printed] > 0 and (xi >= len(xml_linkable) or xml_linkable[xi] != printed):
+        # logged, unlinked, and not the XML's next citation: the text's own
+        # numbering, which the XML does not mark as a paragraph number (no @n)
+        remaining[printed] -= 1; skipped += 1
+        continue
     while xi < len(xml_linkable) and xml_linkable[xi] != printed:
         if remaining[xml_linkable[xi]] > 0:   # logged, and not a cited block in the md
             remaining[xml_linkable[xi]] -= 1; skipped += 1; xi += 1; continue

@@ -32,7 +32,8 @@ import bold_check  # noqa: E402
 md, sdir, key, root_key = sys.argv[1:5]
 atta_md, atta_key = (sys.argv[5], sys.argv[6]) if len(sys.argv) > 6 else (None, None)
 S = Path(sdir)
-LEAD = re.compile(r"^\s*(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
+# printed numbers dropped before comparing: "1. ", "1-10. ", "(6) 1. " (AN vaggas)
+LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
 TRANS = re.compile(r"^!\[\[[^#\]]+#\^([\w-]+)\]\]$")
 
 
@@ -72,6 +73,8 @@ def md_items(path):
 
 
 def align(items, paras):
+    """pairs: site paragraph index `i` -> md item. A book can be a slice of its
+    volume (CSCD AN commentaries), so `i` is not the list position."""
     a = [re.sub(r"\s+", "", site_norm(p["t"])) for p in paras]
     b = [re.sub(r"\s+", "", LEAD.sub("", it["text"])) for it in items]
     sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
@@ -79,7 +82,7 @@ def align(items, paras):
     for op, i1, i2, j1, j2 in sm.get_opcodes():
         if op == "equal":
             for k in range(i2 - i1):
-                pairs[i1 + k] = j1 + k
+                pairs[paras[i1 + k].get("i", i1 + k)] = j1 + k
         else:
             diffs.append(f"text {op}: site {[paras[i]['t'][:60] for i in range(i1, i2)][:2]} | md {[items[j]['text'][:60] for j in range(j1, j2)][:2]}")
     return pairs, diffs
@@ -121,12 +124,12 @@ for off, titles in offsets.items():
 links = [l for l in json.loads((S / f"{key}.links.json").read_text(encoding="utf-8")) if l["src"] == "paranum"]
 lk_ok = lk_bad = 0
 if atta_md is None:
-    root_paras = json.loads((S / f"{root_key}.text.json").read_text(encoding="utf-8"))["paras"]
+    root_paras = {p.get("i", k): p for k, p in enumerate(json.loads((S / f"{root_key}.text.json").read_text(encoding="utf-8"))["paras"])}
     book = re.search(r"-(\d+)$", root_key).group(1)
     for l in links:
         if l["kind"] != "mula-atta":
             continue
-        n = root_paras[l["t"]].get("n")
+        n = root_paras.get(l["t"], {}).get("n")
         j = pairs.get(l["i"])
         if j is not None and n and f"{book}-{n}" in items[j]["scope"]:
             lk_ok += 1
