@@ -553,5 +553,79 @@
     "source_file": "1-SOURCES/Commentaries/pi-sn-1-tiika.md",
     "text_id": "GZ0WUO1QJkBdFtspoNspw",
     "toc_id": "071SUrtxO1ANlLfMFp9aB"
+  },
+  "pi-sn-2-atthakatha": {
+    "aligned_to_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+    "edition_id": "nNeRVPtTCvRpVtDtDYWAz",
+    "file_type": "commentary",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "kWsKgKlpZw4FwNF6EfEmS",
+        "ts": "2026-11-16T10:01:20"
+      },
+      {
+        "chars": 378280,
+        "edition_id": "nNeRVPtTCvRpVtDtDYWAz",
+        "segments": 719,
+        "step": "edition",
+        "ts": "2026-11-16T10:01:21"
+      },
+      {
+        "nodes": 223,
+        "step": "toc",
+        "toc_id": "fOywSoxrztCoO5SuXI9rh",
+        "ts": "2026-11-16T10:01:22"
+      },
+      {
+        "pairs": 872,
+        "root_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+        "step": "alignment",
+        "ts": "2026-11-16T10:01:24"
+      }
+    ],
+    "root_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+    "root_text_id": "DgA6j95JeMKK42tNQiGEc",
+    "source_file": "1-SOURCES/Commentaries/pi-sn-2-atthakatha.md",
+    "text_id": "kWsKgKlpZw4FwNF6EfEmS",
+    "toc_id": "fOywSoxrztCoO5SuXI9rh"
+  },
+  "pi-sn-2-tiika": {
+    "aligned_to_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+    "edition_id": "lVLQYi4TnEEaGOykJxyRJ",
+    "file_type": "commentary",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "TcfuW82WDl0itrJxnok6Z",
+        "ts": "2026-11-16T10:01:32"
+      },
+      {
+        "chars": 318958,
+        "edition_id": "lVLQYi4TnEEaGOykJxyRJ",
+        "segments": 793,
+        "step": "edition",
+        "ts": "2026-11-16T10:01:33"
+      },
+      {
+        "nodes": 226,
+        "step": "toc",
+        "toc_id": "X1uQ4TekX5SGXHdGUcjCy",
+        "ts": "2026-11-16T10:01:34"
+      },
+      {
+        "pairs": 1003,
+        "root_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+        "step": "alignment",
+        "ts": "2026-11-16T10:01:36"
+      }
+    ],
+    "root_edition_id": "YoJWvxGo8kWCHTlOVSowG",
+    "root_text_id": "DgA6j95JeMKK42tNQiGEc",
+    "source_file": "1-SOURCES/Commentaries/pi-sn-2-tiika.md",
+    "text_id": "TcfuW82WDl0itrJxnok6Z",
+    "toc_id": "X1uQ4TekX5SGXHdGUcjCy"
   }
 }
