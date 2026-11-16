@@ -1,0 +1,102 @@
+{
+  "sections": [
+    {
+      "title": {
+        "pi": "Aṅguttaranikāye (ṭīkā)"
+      },
+      "span": {
+        "start": 49,
+        "end": 23757
+      },
+      "subsections": [
+        {
+          "title": {
+            "pi": "Ekādasakanipāta-ṭīkā"
+          },
+          "span": {
+            "start": 49,
+            "end": 23757
+          },
+          "subsections": [
+            {
+              "title": {
+                "pi": "Nissayavaggo"
+              },
+              "span": {
+                "start": 49,
+                "end": 705
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Kimatthiyasuttādivaṇṇanā"
+                  },
+                  "span": {
+                    "start": 49,
+                    "end": 705
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Anussativaggo"
+              },
+              "span": {
+                "start": 705,
+                "end": 23757
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Paṭhamamahānāmasuttādivaṇṇanā"
+                  },
+                  "span": {
+                    "start": 705,
+                    "end": 1720
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mettāsuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 1720,
+                    "end": 6316
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Aṭṭhakanāgarasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 6316,
+                    "end": 10340
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Gopālasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 10340,
+                    "end": 21951
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Nigamanakathāvaṇṇanā"
+                  },
+                  "span": {
+                    "start": 21951,
+                    "end": 23757
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

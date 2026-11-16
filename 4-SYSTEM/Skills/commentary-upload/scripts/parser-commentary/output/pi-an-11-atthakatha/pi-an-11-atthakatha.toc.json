@@ -1,0 +1,147 @@
+{
+  "sections": [
+    {
+      "title": {
+        "pi": "Aṅguttaranikāye (aṭṭhakathā)"
+      },
+      "span": {
+        "start": 49,
+        "end": 23856
+      },
+      "subsections": [
+        {
+          "title": {
+            "pi": "Ekādasakanipāta-aṭṭhakathā"
+          },
+          "span": {
+            "start": 49,
+            "end": 23856
+          },
+          "subsections": [
+            {
+              "title": {
+                "pi": "Nissayavaggo"
+              },
+              "span": {
+                "start": 49,
+                "end": 2298
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Kimatthiyasuttādivaṇṇanā"
+                  },
+                  "span": {
+                    "start": 49,
+                    "end": 223
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Paṭhamasaññāsuttādivaṇṇanā"
+                  },
+                  "span": {
+                    "start": 223,
+                    "end": 483
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Saddhasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 483,
+                    "end": 1846
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Moranivāpasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 1846,
+                    "end": 2298
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "pi": "Anussativaggo"
+              },
+              "span": {
+                "start": 2298,
+                "end": 23856
+              },
+              "subsections": [
+                {
+                  "title": {
+                    "pi": "Mahānāmasuttadvayavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 2298,
+                    "end": 2672
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Nandiyasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 2672,
+                    "end": 2857
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Subhūtisuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 2857,
+                    "end": 3180
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Mettasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 3180,
+                    "end": 5155
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Aṭṭhakanāgarasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 5155,
+                    "end": 9325
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Gopālasuttavaṇṇanā"
+                  },
+                  "span": {
+                    "start": 9325,
+                    "end": 22015
+                  }
+                },
+                {
+                  "title": {
+                    "pi": "Nigamanakathā"
+                  },
+                  "span": {
+                    "start": 22015,
+                    "end": 23856
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

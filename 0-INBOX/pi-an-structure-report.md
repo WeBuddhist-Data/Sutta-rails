@@ -6,7 +6,7 @@
 - VipassanaTech/tipitaka-xml `romn/`: 19 files in `0-INBOX/raw-data/an/`, byte-identical to the repo (git blob SHA).
 - tipitaka.app: `an-1..11`, `atta-an-1..11`, `tika-an-1..11` (text, contents tree, links), in `0-INBOX/tipitaka-app/`.
 
-**Status:** ingested 2026-11-16 (§7). Nothing is committed, pushed or uploaded.
+**Status:** ingested 2026-11-16 (§7); intake committed and pushed (`d398506`, `fc3a38c`); uploaded to library-prod 2026-11-16 (§8).
 
 ---
 
@@ -145,3 +145,49 @@ Explained differences from tipitaka.app (site artefacts; the files follow the XM
 - **Unresolved logs:** they stay in `0-INBOX/temp/an-comm/*.unresolved.json`.
 - **Library fields:** `license: cc0`, `tag_ids: [296WZOr8MXWteSqBBI7pl]` and `category_id: MZUUxphQ0yFwLBon3Vng8`, as for the DN, MN and SN. They are not uploaded; check the titles against the library before any upload.
 - **Decisions §5.1–5.2:** kept as built. Ṭīkā vaggas after the last paṇṇāsaka stay nested under it, and commentary heading IDs are sibling positions.
+
+## 8. Uploaded to library-prod.webuddhist.com (2026-11-16)
+
+Run with `0-INBOX/temp/upload-an.sh`. For each file: lint, parse, dry run with live checks, `--execute`, `--verify`; the log is `0-INBOX/temp/upload-an.log`. The library IDs are in each file's frontmatter and in both upload ledgers.
+
+**Titles:** none of the 33 clashes with a title in the Sutta, Vinaya or Abhidhamma vaults, and the library accepted all of them unchanged.
+
+**Category:** every text is under **Discourses** (`XfCwZpoJMtfO7s0laQkdK`), the category fixed for the Sutta texts the same day, with tag Theravāda (`296WZOr8MXWteSqBBI7pl`). Read back on every root.
+
+**Checked:** the IDs in the files equal the ledgers; each commentary's `commentary_of` is its root's `text_id`, and it is aligned to its root's edition; live segments equal the file's blocks.
+
+| File | Library title | text_id | edition_id | toc_id | Segments | Alignment pairs → root edition |
+|---|---|---|---|---|---|---|
+| pi-an-1 | Ekakanipātapāḷi | `OzMkZ0SL8PTrPcoXdpS9a` | `UopigfzoTevjdwKcC00E7` | `Arxh4s7sKwjRalFJSh0hq` | 324 | — |
+| pi-an-1-atthakatha | Ekakanipāta-aṭṭhakathā | `oRgGDx3qzIZrcir1j8wUD` | `wozxMmpIez2ypdBEX60LQ` | `iv1qYn45AlzP59UrIsFus` | 1320 | 1567 → `UopigfzoTevjdwKcC00E7` |
+| pi-an-1-tiika | Ekakanipāta-ṭīkā | `3QeNbLO0blZkbeOPHhAy0` | `fxpXr8al20MDNf0UVu19j` | `bDsSduLICTdeSdrqE7Do3` | 921 | 1002 → `UopigfzoTevjdwKcC00E7` |
+| pi-an-2 | Dukanipātapāḷi | `HXEj10ht3p5nATUuVDXkd` | `46AtxFI9d8nErnZHXOhuU` | `mwbpvu8Szfn2fh4IiXCBb` | 196 | — |
+| pi-an-2-atthakatha | Dukanipāta-aṭṭhakathā | `zFTn4XRZh1Omqam772uKi` | `UFQXqHYVhyddmEdAtVUos` | `e6mwrHygQ82xxxM3bHiHa` | 271 | 271 → `46AtxFI9d8nErnZHXOhuU` |
+| pi-an-2-tiika | Dukanipāta-ṭīkā | `tL4kgystH0OIt2XZ0LnPP` | `560GUHZjukbZOiiPAFgAN` | `yIP3vEOhxp3bbgOXjoml8` | 283 | 333 → `46AtxFI9d8nErnZHXOhuU` |
+| pi-an-3 | Tikanipātapāḷi | `mE59gFTdeVZCfvsz3orEQ` | `O4QZlFUTwWqxBZfACNWQ4` | `ZVSifYzb9zkcfu0X3hLsh` | 160 | — |
+| pi-an-3-atthakatha | Tikanipāta-aṭṭhakathā | `rJlmwQPTqR8oluok2cwtA` | `oMNgKUiiwzpFyH73kTWnq` | `N4S37ktSlplz3UAQQMUjU` | 504 | 519 → `O4QZlFUTwWqxBZfACNWQ4` |
+| pi-an-3-tiika | Tikanipāta-ṭīkā | `xfxf31ISazEfdVfX9knVE` | `GsJwdTkrklAcl9ze6V1FT` | `RYTXCsVevGnmSINfKB9A6` | 565 | 717 → `O4QZlFUTwWqxBZfACNWQ4` |
+| pi-an-4 | Catukkanipātapāḷi | `0mndr3Abu9iP0o6s9RU0e` | `umEBNmV2sng5zHjOT6Vgo` | `mfQf6wuvRvKUy2u3HUUM0` | 279 | — |
+| pi-an-4-atthakatha | Catukkanipāta-aṭṭhakathā | `PcTOQ8CBYEwFLYpsH0cgW` | `HSlWiDWtygULLAdlTlUkw` | `A2PBE5108ZpMuYv2jDXZs` | 486 | 583 → `umEBNmV2sng5zHjOT6Vgo` |
+| pi-an-4-tiika | Catukkanipāta-ṭīkā | `GQsHVsNT0iEhlbmOn9KS9` | `JCkVmx09MbqyBazXV40tS` | `lHFndrZk4G6meTHPn3n6Y` | 685 | 1041 → `umEBNmV2sng5zHjOT6Vgo` |
+| pi-an-5 | Pañcakanipātapāḷi | `AbzuxZ1DTUcSvJdL42Xwk` | `7WeTyxp8yonAxsutbpazz` | `yibQ3GJJlaZrmA4WX58Qw` | 272 | — |
+| pi-an-5-atthakatha | Pañcakanipāta-aṭṭhakathā | `W5C33S1nA6wS9MqWbHLqo` | `dVwsFl0qCIfFiqp96ZOb4` | `aScXIBuuKDlAFhA6EXEQf` | 293 | 326 → `7WeTyxp8yonAxsutbpazz` |
+| pi-an-5-tiika | Pañcakanipāta-ṭīkā | `tV3TZvv1uZXbOwf1kdczY` | `yTFtrgUMi8JYdgTj7NTyt` | `MnaGcZAYDc3BCqnLjbfZh` | 334 | 804 → `7WeTyxp8yonAxsutbpazz` |
+| pi-an-6 | Chakkanipātapāḷi | `3Dbr1UAVES5MkCdgjQIMB` | `4puW81Zi3uV9n04uCyf3E` | `XIGJoIBvNLo7y3XopdWrm` | 126 | — |
+| pi-an-6-atthakatha | Chakkanipāta-aṭṭhakathā | `gIfCpoXnsThUrdnLFBmrz` | `0ExaQSzwctYWuqjLwA3sM` | `PL7odjvjQtyBI2TAXOjND` | 190 | 215 → `4puW81Zi3uV9n04uCyf3E` |
+| pi-an-6-tiika | Chakkanipāta-ṭīkā | `U3JEgJJDFQn7CTNrHfRmN` | `devZnN7BmkuazUuHvMLec` | `toafTz1NqFf6xOjd3iAAZ` | 244 | 453 → `4puW81Zi3uV9n04uCyf3E` |
+| pi-an-7 | Sattakanipātapāḷi | `DXM9m4bgTjB6dgK3wofpb` | `HKK8bv5u542EYQ12WboAe` | `DLgYRWmVTKTOYqLckoUL3` | 102 | — |
+| pi-an-7-atthakatha | Sattakanipāta-aṭṭhakathā | `NewiyH4D6WO7g1w3dlnSs` | `f6VF9pHSJbuwVZFCVJl5y` | `UzIS60YgJCEF7a0Gz7rgs` | 134 | 147 → `HKK8bv5u542EYQ12WboAe` |
+| pi-an-7-tiika | Sattakanipāta-ṭīkā | `a47iqPDr32dqXzlVsl1gS` | `WKxCphDefr1oBlEzR2N7q` | `V6dZ0vGwLbZQYcX5Hl25h` | 181 | 290 → `HKK8bv5u542EYQ12WboAe` |
+| pi-an-8 | Aṭṭhakanipātapāḷi | `wzL4TQ6yPiU4EGfsmmfB0` | `ALrSAUIaVNeXPxO5rcnBX` | `iQQIc1kS9iTXRdAR3dEG5` | 97 | — |
+| pi-an-8-atthakatha | Aṭṭhakanipāta-aṭṭhakathā | `2T1M0DFSnKQaoRDO2ncbb` | `Lh3f4vIiyybW6Z5R3HTZH` | `Hb24h4sJ7eRbh8I3urKfW` | 188 | 204 → `ALrSAUIaVNeXPxO5rcnBX` |
+| pi-an-8-tiika | Aṭṭhakanipāta-ṭīkā | `twFt7NwwFCuY7a9vbWU60` | `Ynbvd0HkiAO1JfFYlUiUS` | `37CoFerj5dYfEESoyd2am` | 220 | 441 → `ALrSAUIaVNeXPxO5rcnBX` |
+| pi-an-9 | Navakanipātapāḷi | `3lYAlAzmWa087hlGQJs0V` | `kQhhrP0whHnRCGRFrbhFp` | `Uz0RbwL8gUu0QtMSNVvYD` | 83 | — |
+| pi-an-9-atthakatha | Navakanipāta-aṭṭhakathā | `n1Z4wAbdoBbTb7dJV4ObO` | `6NRooeGD0mSy12mX2bR15` | `IGIF9fDTig8eRaHNT8uFd` | 85 | 109 → `kQhhrP0whHnRCGRFrbhFp` |
+| pi-an-9-tiika | Navakanipāta-ṭīkā | `5K8sF0xq4LzoDKtATrFRX` | `dBNeVwOLRDcJjuMhSNMYi` | `oaxty9r8pZNtHLIVf6TNR` | 144 | 209 → `kQhhrP0whHnRCGRFrbhFp` |
+| pi-an-10 | Dasakanipātapāḷi | `je4Dvq2GBC6I3kI26pbYa` | `D3lxPOnirS5hYHLRznEMq` | `Jmlk2lvWoykyC6SOxJlHB` | 214 | — |
+| pi-an-10-atthakatha | Dasakanipāta-aṭṭhakathā | `0nLTvITx8FdZK0nyHx8f0` | `JLGOEjKYHJGAZN1gzXvgO` | `mLb4JlIl5cdZSUXfTYnHn` | 186 | 221 → `D3lxPOnirS5hYHLRznEMq` |
+| pi-an-10-tiika | Dasakanipāta-ṭīkā | `rcSvwctV4NOWYtbBZbYby` | `e1T0WXh4xYsMhd71qgahh` | `zPauA4uVynSl2D0nXzaf9` | 205 | 1107 → `D3lxPOnirS5hYHLRznEMq` |
+| pi-an-11 | Ekādasakanipātapāḷi | `w6JEwfcPqkMpYMhPJga2V` | `56FsZ0Q64WTgDPNmEv2t1` | `JxKYjPuttcePNSOB0XyQc` | 36 | — |
+| pi-an-11-atthakatha | Ekādasakanipāta-aṭṭhakathā | `peTE18nU7Zzar5NElAFIP` | `wzfADJAiFF1xW4ykjS767` | `93QcQ7jdQ5EmElrToau2b` | 66 | 72 → `56FsZ0Q64WTgDPNmEv2t1` |
+| pi-an-11-tiika | Ekādasakanipāta-ṭīkā | `22ENMzxJH19wHWorIzPhr` | `JxmJLUh7YTAR4rpsVcR5v` | `ACG1oVQxIDMT2bS5ZP2rw` | 69 | 101 → `56FsZ0Q64WTgDPNmEv2t1` |

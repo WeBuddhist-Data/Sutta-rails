@@ -1,0 +1,408 @@
+{
+  "alignments": [
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-1"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-2"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-3"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-4"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-5"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-6"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-7"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-8"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-9"
+    },
+    {
+      "source_segment_reference": "11-1",
+      "target_segment_reference": "11-10"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-1"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-2"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-3"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-4"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-5"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-6"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-7"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-8"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-9"
+    },
+    {
+      "source_segment_reference": "11-2",
+      "target_segment_reference": "11-10"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-1"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-2"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-3"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-4"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-5"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-6"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-7"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-8"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-9"
+    },
+    {
+      "source_segment_reference": "11-3",
+      "target_segment_reference": "11-10"
+    },
+    {
+      "source_segment_reference": "11-4",
+      "target_segment_reference": "11-11"
+    },
+    {
+      "source_segment_reference": "11-4",
+      "target_segment_reference": "11-12"
+    },
+    {
+      "source_segment_reference": "11-4",
+      "target_segment_reference": "11-13"
+    },
+    {
+      "source_segment_reference": "11-4",
+      "target_segment_reference": "11-14"
+    },
+    {
+      "source_segment_reference": "11-5",
+      "target_segment_reference": "11-11"
+    },
+    {
+      "source_segment_reference": "11-5",
+      "target_segment_reference": "11-12"
+    },
+    {
+      "source_segment_reference": "11-5",
+      "target_segment_reference": "11-13"
+    },
+    {
+      "source_segment_reference": "11-5",
+      "target_segment_reference": "11-14"
+    },
+    {
+      "source_segment_reference": "11-6",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-7",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-8",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-9",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-10",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-11",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-12",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-13",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-14",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-15",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-16",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-17",
+      "target_segment_reference": "11-15"
+    },
+    {
+      "source_segment_reference": "11-18",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-19",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-20",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-21",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-22",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-23",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-24",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-25",
+      "target_segment_reference": "11-16"
+    },
+    {
+      "source_segment_reference": "11-26",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-27",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-28",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-29",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-30",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-31",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-32",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-33",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-34",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-35",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-36",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-37",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-38",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-39",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-40",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-41",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-42",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-43",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-44",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-45",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-46",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-47",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-48",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-49",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-50",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-51",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-52",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-53",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-54",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-55",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-56",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-57",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-58",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-59",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-60",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-61",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-62",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-63",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-64",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-65",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-66",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-67",
+      "target_segment_reference": "11-17"
+    },
+    {
+      "source_segment_reference": "11-68",
+      "target_segment_reference": "11-17"
+    }
+  ]
+}
