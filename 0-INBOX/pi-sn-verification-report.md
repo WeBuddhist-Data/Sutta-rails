@@ -197,3 +197,30 @@ Two expected results:
   - The alignment content is already checked: every transclusion target exists in its root (§3.2). These targets become the alignment pairs.
 - **Upload:** `--execute` and `--verify` for 5 roots then 10 commentaries, like `0-INBOX/temp/mn/upload-mn.sh` (host `library-prod.webuddhist.com`). Not run; needs your explicit go-ahead.
 - **The WeBuddhist reader** was not looked at, as in the Abhidhamma reports.
+
+---
+
+## 6. Library tag and category (checked and fixed 2026-11-16)
+
+**Checked live on library-prod.** I read every uploaded text of the Sutta, Vinaya and Abhidhamma vaults (90 texts, and the DN 1 abhinavaṭīkā). I also read the library's own tag and category lists.
+- **Tag:** `296WZOr8MXWteSqBBI7pl` is **Theravāda**, a tradition tag ("Pāli scriptures"). It is correct on every text.
+- **Categories:**
+  - Vinaya is under **Monastic Rules** (`4wuvGxIgXNZ5mb0bDWvkC`), which is correct.
+  - Abhidhamma is under **Systematic Treatises** (`MZUUxphQ0yFwLBon3Vng8`, མངོན་པ།), which is correct.
+  - All 34 Sutta texts (DN, MN, SN, roots and commentaries) were also under Systematic Treatises, which is wrong.
+- **How it happened:** the DN intake copied both IDs from the Abhidhamma vault. No script sets or checks these fields; the linter only checks that they are non-empty strings.
+
+**Fixed:**
+- **Library:** `category_id` → **Discourses** `XfCwZpoJMtfO7s0laQkdK` (མདོ་སྡེ།) on all 34 live Sutta texts.
+  - Method: `PATCH /v2/texts/{id}` with `{"category_id": …}`, one text at a time.
+  - Each text was read back: new category set; title, tags, licence and `commentary_of` unchanged.
+  - Log, with the old value for each text: `0-INBOX/temp/category-fix/category-fix.log.jsonl`.
+- **Files:** the same one-line change in the 34 matching files in `1-SOURCES/`.
+  - The upload ledgers and the parser payloads still show the old ID, because they record what was sent.
+- **Abhidhamma vault:** `tag_ids: [296WZOr8MXWteSqBBI7pl]` added to `pi-4.md`…`pi-7.md`, to match their live texts and `pi-1`…`pi-3`.
+
+**Re-audit after the fix:**
+- Every file matches its live text for tag, category and licence.
+- **Still open:**
+  - **Titles:** three Abhidhamma Dhātukathā commentary titles in the files are older than the live ones. This is not a tag issue.
+  - **AN files: done the same day, with the user's approval.** The 33 Aṅguttaranikāya files (not uploaded; uncommitted work from another session, untouched since 10:34) were changed to `category_id: XfCwZpoJMtfO7s0laQkdK`. No file in the Sutta vault's `1-SOURCES/` carries `MZUUxphQ0yFwLBon3Vng8` any more.

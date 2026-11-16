@@ -15,7 +15,7 @@ other_ids:
   - tipitaka.org: s0201m
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
-category_id: MZUUxphQ0yFwLBon3Vng8
+category_id: XfCwZpoJMtfO7s0laQkdK
 text_id: ueaCpKSILFcgtJA3zp13X
 edition_id: aIXWlhR2vxkSUwyqXqAnU
 toc_id: x6dwLsBb1kge00FYyuwAf

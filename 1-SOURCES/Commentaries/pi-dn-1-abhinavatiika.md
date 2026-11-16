@@ -22,7 +22,7 @@ other_ids:
   - tipitaka.org: s0105t
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
-category_id: MZUUxphQ0yFwLBon3Vng8
+category_id: XfCwZpoJMtfO7s0laQkdK
 commentary_of: mQNCKJ7TpegM8rl0cyxOZ
 text_id: BmWw2fJ0aRGfqQkHI3NxJ
 edition_id: mIYWTEFBtbJYur04hBsfE

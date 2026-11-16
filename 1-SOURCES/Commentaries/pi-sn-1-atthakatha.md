@@ -17,7 +17,7 @@ other_ids:
   - tipitaka.org: s0301a
 license: cc0
 tag_ids: [296WZOr8MXWteSqBBI7pl]
-category_id: MZUUxphQ0yFwLBon3Vng8
+category_id: XfCwZpoJMtfO7s0laQkdK
 commentary_of: 27iSZQ2XEEw9iZfgYqHTU
 text_id: KZTgptTudglEbV9dpo3AI
 edition_id: Ve7j7X1ooyXaW6Bl2sG8F
