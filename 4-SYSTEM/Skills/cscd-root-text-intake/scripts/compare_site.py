@@ -20,7 +20,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bold_check  # noqa: E402
 
 book, md, textp, tocp = sys.argv[1:5]
-LEAD = re.compile(r"^\s*(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
+# printed numbers dropped before comparing: "1. ", "1-10. ", "(6) 1. " (AN vaggas)
+LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
 
 
 def site_norm(s):
@@ -58,8 +59,10 @@ problems += bold_check.compare(bold_check.site_spans(paras), bold_check.md_spans
 if site_merges:
     print(f"   note: {len(site_merges)} bold group(s) the site joins into one span (XML and md keep them apart), e.g. "
           f"site {site_merges[0][0]} vs md {site_merges[0][1]}")
-a = [LEAD.sub("", site_norm(p["t"])) for p in paras]
-b = [LEAD.sub("", it["text"]) for it in items]
+# compared without whitespace (the site drops spaces next to some marks, e.g. its
+# ".Namo" for the XML's ". Namo"); exact spacing is verify.py's check against the XML
+a = [re.sub(r"\s+", "", LEAD.sub("", site_norm(p["t"]))) for p in paras]
+b = [re.sub(r"\s+", "", LEAD.sub("", it["text"])) for it in items]
 sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
 pairs = {}
 for op, i1, i2, j1, j2 in sm.get_opcodes():

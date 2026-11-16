@@ -99,7 +99,14 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
    - book → chapter `<div>`s, one div type (DN: sutta divs);
    - book → `<div type="vagga">`, where each sutta is a numbered `<p rend="subhead">` (MN). The rule lives in `cscd_shape.py`: number = next in the vagga, title contains "sutta". Those headings become css `sutta`, i.e. `####`;
    - book → `<div type="samyutta">` (SN), where a vagga is a `<p rend="title">` and a sutta a `<p rend="subhead">`. A saṃyutta with vaggas nests `### saṃyutta → #### vagga → ##### sutta`. One without vaggas nests `### saṃyutta → #### sutta`. A heading after the last saṃyutta (`Sagāthāvaggo paṭhamo.` + uddāna) is a `###` section of its own;
-   - volumes with no `<div>`s, whose chapters are `<p rend="chapter">`.
+   - volumes with no `<div>`s, whose chapters are `<p rend="chapter">`;
+   - **tree mode** (`--tree`, Aṅguttaranikāya and any other shape where divisions nest in more than one way). The XML's own nesting sets the heading levels (`cscd_shape.tree_levels`):
+     - a `<div>`'s head sits one level under its parent's;
+     - a heading paragraph, or a further `<head>` in the same container, sits under the innermost open heading of a higher rank (title > chapter > subhead > subsubhead).
+
+     So AN nests `## nipāta → ### paṇṇāsaka → #### vagga → ##### sutta`, and a vagga outside a paṇṇāsaka is a `###`. The md converter is then `tree_to_md.py` instead of `tipitaka_org_book.py`, and `verify.py` runs with `--tree`.
+
+   Tree mode is chosen explicitly, per collection, by whoever runs the skill (record it in the annex); it is never a silent fallback.
 
    It prints `STOP: …`, exits non-zero and writes nothing if:
    - the volume nests divisions deeper (e.g. saṃyutta > vagga divs in SN);
@@ -131,7 +138,7 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
    python3 -I $S/cscd_xml_to_json.py 0-INBOX/raw-data/$C/<stem>.mul.xml 0-INBOX/temp/$C/<stem>.json
    ```
    The script prints the sutta-heading count (vagga volumes) and every `hangnum` it joined; record them (Rule 7). Then profile it with `python3 -I 4-SYSTEM/Skills/json-to-source-text/json_inspector.py 0-INBOX/temp/$C/<stem>.json` and confirm the `css_class` set is only `centered, nikaya, book, chapter, subhead, bodytext, gatha1–3, gathalast` (plus `unindented`/`indent`, and `sutta` in a vagga volume). Any other class: stop and decide its role with the human.
-4. **Segment JSON → markdown** (json-to-source-text's existing converter), then make the working copy:
+4. **Segment JSON → markdown** (json-to-source-text's existing converter; in tree mode `python3 -I $S/tree_to_md.py <stem>.json <stem>.md` instead), then make the working copy:
    ```bash
    python3 4-SYSTEM/Skills/json-to-source-text/converters/tipitaka_org_book.py 0-INBOX/temp/$C/<stem>.json 0-INBOX/temp/$C/<stem>.md
    cp 0-INBOX/temp/$C/<stem>.md 0-INBOX/temp/$C/pi-$C-<book>.md
@@ -144,6 +151,7 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 6. **Heading IDs and pre-title**: `python3 -I $S/heading_ids.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md`.
 7. **Frontmatter**: `python3 -I $S/set_frontmatter.py 0-INBOX/temp/$C/pi-$C-<book>.md <stem> "<Nikāya>" "<volume label>"`.
 8. **Verify**: `python3 -I $S/verify.py <book> 0-INBOX/temp/$C/pi-$C-<book>.md 0-INBOX/raw-data/$C/<stem>.mul.xml` — must print `PASS` (in a vagga volume it also checks that the `####` headings are exactly the sutta headings). On any problem, fix the cause (script or source handling), regenerate from step 3, and verify again; never hand-patch the draft.
+   Then the independent heading check: `python3 -I $S/check_headings.py 0-INBOX/temp/$C/pi-$C-<book>.md 0-INBOX/raw-data/$C/<stem>.mul.xml` must print `ALL MATCH` (every XML heading, in order, with the same text).
 9. **Check against tipitaka.app** (the website reading of the same CSCD edition):
    ```bash
    python3 -I $S/fetch_site.py 0-INBOX/tipitaka-app <key> [<key> …]
@@ -172,6 +180,13 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 ## Notes
 
 `apply.py` reads the book number from the `##` line's `^<book>-0`, which step 4 sets. The scripts were first run on the Dīgha Nikāya (s0101m–s0103m, 2026-11-13, all PASS against the XML and tipitaka.app).
+
+**Aṅguttaranikāya** (11 nipātas, s0401m … s0404m4, one file per nipāta) dry run, 2026-11-16, in a scratch folder, in tree mode.
+- All 11 PASS `verify.py --tree` and `check_headings.py`; all 11 PASS `compare_site.py`.
+- 1,877 content IDs, including 90 printed ranges. Catukkanipāta's gap 105 → 107 is as printed.
+- The homage carries `n="0"` in four files; it is not a printed number and stays `^T-1`.
+- `fetch_site.py` pages over a book's own slice of its volume (`start`/`end` from the parent listing) and retries HTTP 5xx.
+- After the AN changes, the DN, MN and SN files regenerate byte-identical (except `pi-sn-5-tiika`'s hand-made `[Ed:]` note).
 
 **Saṃyuttanikāya** (s0301m–s0305m) dry run, 2026-11-14, in a scratch folder.
 - All five PASS `verify.py`: 271 / 246 / 362 / 361 / 621 content IDs, including 93 printed ranges; the Mahāvagga's 11 gaps are as printed.

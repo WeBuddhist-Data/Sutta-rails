@@ -81,3 +81,55 @@ def sutta_heads(book_div, vagga_type="vagga"):
             # div (no head, or a subsubhead head: Ganthārambhakathā) need not.
             raise ShapeError(f"vagga {v.get('id')} ('{text_of(head)[:40]}') has no numbered sutta heading")
     return found
+
+
+# ---------------------------------------------------------------------------
+# Tree mode (CSCD Aṅguttaranikāya and other nested shapes)
+# ---------------------------------------------------------------------------
+# Heading level = markdown '#' count, read from the XML's own nesting:
+#   <head rend="book">                     -> 2   (##)
+#   the <head> of a <div> at depth d        -> 2 + d   (a div directly in the book: ###)
+#   a heading paragraph (title > chapter > subhead > subsubhead, by rank) sits one
+#   level under the innermost open heading of a higher rank in the same <div>,
+#   or under the <div>'s own head: paṇṇāsaka (title) > vagga (chapter) > sutta
+#   (subhead) in a ṭīkā that has no <div>s inside its book.
+# A part label "(Dutiyo bhāgo)" is text, not a heading.
+
+P_HEAD_RANK = {"title": 1, "chapter": 2, "subhead": 3, "subsubhead": 4}
+LEAD_NUM = re.compile(r"^\s*(?:\(\d+\)\s*)?\d+(?:-\d+)*\.\s*")   # "1. ", "1-10. ", "(6) 1. "
+
+
+def strip_heading_number(text):
+    return LEAD_NUM.sub("", text).strip()
+
+
+def tree_levels(book_div):
+    """{id(element): level} for every heading element in the book <div>, in tree mode."""
+    levels = {}
+
+    def walk(container, level):
+        # level = the '#' count of this container's own heading (book: 2).
+        has_head = container.find("head") is not None
+        open_ranks = []                     # ranks of heading paragraphs open in this container
+        own_head_seen = False
+        for c in container:
+            if c.tag == "div":
+                walk(c, level + 1)
+                continue
+            if c.tag == "head" and not own_head_seen:
+                levels[id(c)] = level        # the container's own heading
+                own_head_seen = True
+                open_ranks = []
+                continue
+            # a heading paragraph, or a further <head> in the same container (CSCD
+            # s0404a: <head rend="chapter"> vaggas straight inside the book) ranks
+            # by its rend: title > chapter > subhead > subsubhead
+            r = P_HEAD_RANK.get(c.get("rend")) if c.tag in ("p", "head") else None
+            if r is None or part_label(text_of(c)):
+                continue
+            open_ranks = [x for x in open_ranks if x < r]
+            # under the container's head; a <div> without a head lends its own slot
+            levels[id(c)] = (level + 1 if has_head else level) + len(open_ranks)
+            open_ranks.append(r)
+    walk(book_div, 2)
+    return levels

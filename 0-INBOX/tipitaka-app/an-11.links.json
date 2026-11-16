@@ -1,0 +1,686 @@
+[
+{
+"i": 5,
+"b": 78,
+"t": 708,
+"k": "atta-an-11-1-1",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 50,
+"b": 78,
+"t": 710,
+"k": "atta-an-11-1-2",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 59,
+"b": 78,
+"t": 710,
+"k": "atta-an-11-1-2",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 67,
+"b": 78,
+"t": 712,
+"k": "atta-an-11-1-3",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 68,
+"b": 78,
+"t": 712,
+"k": "atta-an-11-1-3",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 69,
+"b": 78,
+"t": 712,
+"k": "atta-an-11-1-3",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 69,
+"b": 78,
+"t": 713,
+"k": "atta-an-11-1-3",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 75,
+"b": 78,
+"t": 713,
+"k": "atta-an-11-1-3",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 79,
+"b": 78,
+"t": 715,
+"k": "atta-an-11-1-4",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 80,
+"b": 78,
+"t": 715,
+"k": "atta-an-11-1-4",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 84,
+"b": 78,
+"t": 715,
+"k": "atta-an-11-1-4",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 86,
+"b": 78,
+"t": 715,
+"k": "atta-an-11-1-4",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 86,
+"b": 78,
+"t": 716,
+"k": "atta-an-11-1-4",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 95,
+"b": 78,
+"t": 719,
+"k": "atta-an-11-1-5",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 96,
+"b": 78,
+"t": 719,
+"k": "atta-an-11-1-5",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 97,
+"b": 78,
+"t": 719,
+"k": "atta-an-11-1-5",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 104,
+"b": 78,
+"t": 719,
+"k": "atta-an-11-1-5",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 110,
+"b": 78,
+"t": 721,
+"k": "atta-an-11-1-6",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 117,
+"b": 78,
+"t": 721,
+"k": "atta-an-11-1-6",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 119,
+"b": 78,
+"t": 721,
+"k": "atta-an-11-1-6",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 122,
+"b": 78,
+"t": 723,
+"k": "atta-an-11-1-7",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 123,
+"b": 78,
+"t": 723,
+"k": "atta-an-11-1-7",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 150,
+"b": 78,
+"t": 725,
+"k": "atta-an-11-1-8",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 151,
+"b": 78,
+"t": 725,
+"k": "atta-an-11-1-8",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 151,
+"b": 78,
+"t": 726,
+"k": "atta-an-11-1-8",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 151,
+"b": 78,
+"t": 727,
+"k": "atta-an-11-1-8",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 153,
+"b": 78,
+"t": 729,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 153,
+"b": 126,
+"t": 790,
+"k": "tika-an-11-2-6",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 154,
+"b": 78,
+"t": 729,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 155,
+"b": 78,
+"t": 730,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 156,
+"b": 78,
+"t": 731,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 156,
+"b": 78,
+"t": 732,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 156,
+"b": 78,
+"t": 733,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 156,
+"b": 78,
+"t": 734,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 156,
+"b": 126,
+"t": 793,
+"k": "tika-an-11-2-6",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 158,
+"b": 78,
+"t": 735,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 162,
+"b": 78,
+"t": 736,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 162,
+"b": 78,
+"t": 737,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 162,
+"b": 78,
+"t": 738,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 163,
+"b": 78,
+"t": 738,
+"k": "atta-an-11-1-9",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 740,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "paranum",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 741,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 742,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 743,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 744,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 745,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 746,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 747,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 748,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 749,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 750,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 165,
+"b": 78,
+"t": 751,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 752,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 753,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 754,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 755,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 756,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 757,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 78,
+"t": 758,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 166,
+"b": 126,
+"t": 481,
+"k": "tika-an-10-3-1",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 78,
+"t": 758,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 126,
+"t": 481,
+"k": "tika-an-10-3-1",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 126,
+"t": 482,
+"k": "tika-an-10-3-1",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 126,
+"t": 483,
+"k": "tika-an-10-3-1",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 126,
+"t": 816,
+"k": "tika-an-11-2-7",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 172,
+"b": 126,
+"t": 817,
+"k": "tika-an-11-2-7",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 173,
+"b": 78,
+"t": 759,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 174,
+"b": 78,
+"t": 760,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 174,
+"b": 126,
+"t": 822,
+"k": "tika-an-11-2-7",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 175,
+"b": 78,
+"t": 761,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 175,
+"b": 126,
+"t": 823,
+"k": "tika-an-11-2-7",
+"kind": "mula-tika",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 176,
+"b": 78,
+"t": 762,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 177,
+"b": 78,
+"t": 763,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 177,
+"b": 78,
+"t": 764,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 177,
+"b": 78,
+"t": 765,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+},
+{
+"i": 177,
+"b": 78,
+"t": 766,
+"k": "atta-an-11-1-10",
+"kind": "mula-atta",
+"src": "gloss",
+"fwd": false
+}
+]

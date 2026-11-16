@@ -1,0 +1,274 @@
+[
+{
+"key": "an-1-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 16,
+"title": "1. Rūpādivaggo"
+},
+{
+"key": "an-1-2",
+"depth": 4,
+"rend": "chapter",
+"start": 16,
+"end": 28,
+"title": "2. Nīvaraṇappahānavaggo"
+},
+{
+"key": "an-1-3",
+"depth": 4,
+"rend": "chapter",
+"start": 28,
+"end": 40,
+"title": "3. Akammaniyavaggo"
+},
+{
+"key": "an-1-4",
+"depth": 4,
+"rend": "chapter",
+"start": 40,
+"end": 52,
+"title": "4. Adantavaggo"
+},
+{
+"key": "an-1-5",
+"depth": 4,
+"rend": "chapter",
+"start": 52,
+"end": 64,
+"title": "5. Paṇihitaacchavaggo"
+},
+{
+"key": "an-1-6",
+"depth": 4,
+"rend": "chapter",
+"start": 64,
+"end": 76,
+"title": "6. Accharāsaṅghātavaggo"
+},
+{
+"key": "an-1-7",
+"depth": 4,
+"rend": "chapter",
+"start": 76,
+"end": 88,
+"title": "7. Vīriyārambhādivaggo"
+},
+{
+"key": "an-1-8",
+"depth": 4,
+"rend": "chapter",
+"start": 88,
+"end": 100,
+"title": "8. Kalyāṇamittādivaggo"
+},
+{
+"key": "an-1-9",
+"depth": 4,
+"rend": "chapter",
+"start": 100,
+"end": 119,
+"title": "9. Pamādādivaggo"
+},
+{
+"key": "an-1-10",
+"depth": 4,
+"rend": "chapter",
+"start": 119,
+"end": 139,
+"title": "10. Dutiyapamādādivaggo"
+},
+{
+"key": "an-1-11",
+"depth": 4,
+"rend": "chapter",
+"start": 139,
+"end": 144,
+"title": "11. Adhammavaggo"
+},
+{
+"key": "an-1-12",
+"depth": 4,
+"rend": "chapter",
+"start": 144,
+"end": 152,
+"title": "12. Anāpattivaggo"
+},
+{
+"key": "an-1-13",
+"depth": 4,
+"rend": "chapter",
+"start": 152,
+"end": 161,
+"title": "13. Ekapuggalavaggo"
+},
+{
+"key": "an-1-14",
+"depth": 4,
+"rend": "chapter",
+"start": 161,
+"end": 257,
+"title": "14. Etadaggavaggo"
+},
+{
+"key": "an-1-14-1",
+"depth": 5,
+"rend": "subhead",
+"start": 162,
+"end": 174,
+"title": "1. Paṭhamavaggo"
+},
+{
+"key": "an-1-14-2",
+"depth": 5,
+"rend": "subhead",
+"start": 174,
+"end": 187,
+"title": "2. Dutiyavaggo"
+},
+{
+"key": "an-1-14-3",
+"depth": 5,
+"rend": "subhead",
+"start": 187,
+"end": 199,
+"title": "3. Tatiyavaggo"
+},
+{
+"key": "an-1-14-4",
+"depth": 5,
+"rend": "subhead",
+"start": 199,
+"end": 217,
+"title": "4. Catutthavaggo"
+},
+{
+"key": "an-1-14-5",
+"depth": 5,
+"rend": "subhead",
+"start": 217,
+"end": 232,
+"title": "5. Pañcamavaggo"
+},
+{
+"key": "an-1-14-6",
+"depth": 5,
+"rend": "subhead",
+"start": 232,
+"end": 244,
+"title": "6. Chaṭṭhavaggo"
+},
+{
+"key": "an-1-14-7",
+"depth": 5,
+"rend": "subhead",
+"start": 244,
+"end": 257,
+"title": "7. Sattamavaggo"
+},
+{
+"key": "an-1-15",
+"depth": 4,
+"rend": "chapter",
+"start": 257,
+"end": 287,
+"title": "15. Aṭṭhānapāḷi"
+},
+{
+"key": "an-1-15-1",
+"depth": 5,
+"rend": "subhead",
+"start": 258,
+"end": 270,
+"title": "1. Paṭhamavaggo"
+},
+{
+"key": "an-1-15-2",
+"depth": 5,
+"rend": "subhead",
+"start": 270,
+"end": 278,
+"title": "2. Dutiyavaggo"
+},
+{
+"key": "an-1-15-3",
+"depth": 5,
+"rend": "subhead",
+"start": 278,
+"end": 287,
+"title": "3. Tatiyavaggo"
+},
+{
+"key": "an-1-16",
+"depth": 4,
+"rend": "chapter",
+"start": 287,
+"end": 349,
+"title": "16. Ekadhammapāḷi"
+},
+{
+"key": "an-1-16-1",
+"depth": 5,
+"rend": "subhead",
+"start": 288,
+"end": 292,
+"title": "1. Paṭhamavaggo"
+},
+{
+"key": "an-1-16-2",
+"depth": 5,
+"rend": "subhead",
+"start": 292,
+"end": 304,
+"title": "2. Dutiyavaggo"
+},
+{
+"key": "an-1-16-3",
+"depth": 5,
+"rend": "subhead",
+"start": 304,
+"end": 320,
+"title": "3. Tatiyavaggo"
+},
+{
+"key": "an-1-16-4",
+"depth": 5,
+"rend": "subhead",
+"start": 320,
+"end": 349,
+"title": "4. Catutthavaggo"
+},
+{
+"key": "an-1-17",
+"depth": 4,
+"rend": "chapter",
+"start": 349,
+"end": 353,
+"title": "17. Pasādakaradhammavaggo"
+},
+{
+"key": "an-1-18",
+"depth": 4,
+"rend": "chapter",
+"start": 353,
+"end": 372,
+"title": "18. Aparaaccharāsaṅghātavaggo"
+},
+{
+"key": "an-1-19",
+"depth": 4,
+"rend": "chapter",
+"start": 372,
+"end": 384,
+"title": "19. Kāyagatāsativaggo"
+},
+{
+"key": "an-1-20",
+"depth": 4,
+"rend": "chapter",
+"start": 384,
+"end": 399,
+"title": "20. Amatavaggo"
+}
+]

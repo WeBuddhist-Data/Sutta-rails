@@ -59,7 +59,7 @@ Scores a Tibetan OCR file's perplexity against a language model, so a bad scan i
 → [`tibetan-ocr-quality/SKILL.md`](tibetan-ocr-quality/SKILL.md)
 
 ### `cscd-root-text-intake` **[exists]**
-**Purpose:** Bring a Pāli root-text volume from VRI's CSCD XML into `1-SOURCES/Text/` with block IDs (printed paragraph number = ID), verified word for word against the XML and line for line against tipitaka.app. Handles sutta-`<div>` volumes (Dīgha), suttas inside vagga `<div>`s (Majjhima) and saṃyutta `<div>`s with vagga and sutta headings, printed paragraph ranges and gaps (Saṃyutta); any other nesting stops the run.
+**Purpose:** Bring a Pāli root-text volume from VRI's CSCD XML into `1-SOURCES/Text/` with block IDs (printed paragraph number = ID), verified word for word against the XML and line for line against tipitaka.app. Handles sutta-`<div>` volumes (Dīgha), suttas inside vagga `<div>`s (Majjhima) and saṃyutta `<div>`s with vagga and sutta headings, printed paragraph ranges and gaps (Saṃyutta), and a tree mode that reads heading levels from the XML's own nesting (Aṅguttara); anything else stops the run.
 **Inputs:** CSCD `.mul.xml` stem(s), the book number and file name per volume from the annex, and approval to download.
 **Outputs:** `1-SOURCES/Text/pi-<collection>-<book>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and intermediates in `0-INBOX/temp/<collection>/`.
 → [`cscd-root-text-intake/SKILL.md`](cscd-root-text-intake/SKILL.md)

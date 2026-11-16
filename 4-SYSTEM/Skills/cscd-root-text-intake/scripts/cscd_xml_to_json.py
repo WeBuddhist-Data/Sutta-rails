@@ -57,7 +57,23 @@ Line-level rules (each one printed in the run summary, for the report):
     "(Paṭhamo bhāgo)" line) is put in the first chapter, so it is not a section
     of its own.
 
-Usage: python3 -I cscd_xml_to_json.py <in.xml> <out.json>
+Options (Aṅguttaranikāya and other nested shapes):
+  --book K   take only the K-th <div type="book"> of the file. A CSCD commentary
+             volume can hold several nipātas as separate books (s0402a.att =
+             Duka-, Tika-, Catukkanipāta), and tipitaka.app shows each as its own
+             book; one vault file per book. A file with several books and no
+             --book stops the run.
+  --tree     tree mode: every heading segment gets css_class "heading" and a
+             "level" ('#' count) read from the XML's nesting (cscd_shape.tree_levels):
+             a <div>'s head is one level under its parent's; a heading paragraph
+             (title > chapter > subhead > subsubhead) sits under the innermost
+             open heading of a higher rank. Used where divisions nest in more
+             than one way (nipāta > paṇṇāsaka > vagga > sutta; vaggas outside a
+             paṇṇāsaka; peyyāla sections), or a book has no inner <div>s but
+             heading paragraphs of several ranks (AN ṭīkā). The md converters are
+             tree_to_md.py (root) and commentary_converter.py's tree branch.
+
+Usage: python3 -I cscd_xml_to_json.py <in.xml> <out.json> [--book K] [--tree]
 """
 import collections
 import json
@@ -69,7 +85,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cscd_shape  # noqa: E402
 
-HEADING_CSS = ("chapter", "subhead", "subsubhead", "title", "sutta")
+HEADING_CSS = ("chapter", "subhead", "subsubhead", "title", "sutta", "heading")
 
 LAYER = {"mul": ("mula", "mul"), "att": ("atthakatha", "att"),
          "tik": ("tika", "tik"), "nrf": ("other", "nrf")}
@@ -155,11 +171,36 @@ def check_shape(body):
     return chapter_type
 
 
-def main(src, dst):
+def main(src, dst, book=None, tree=False):
     src = Path(src)
     root = ET.parse(src).getroot()
     body = root.find(".//body")
-    chapter_type = check_shape(body)
+    levels = {}
+    if book is not None or tree:
+        books = [d for d in body.iter("div") if d.get("type") == "book"]
+        if book is None and len(books) != 1:
+            sys.exit(f"STOP: {len(books)} books in this file — give --book K (1..{len(books)})")
+        if book is not None and not 1 <= book <= len(books):
+            sys.exit(f"STOP: --book {book}: the file has {len(books)} book(s)")
+        book_div = books[(book or 1) - 1]
+        # Lines outside the book <div>s: before the first book they belong to the
+        # first (homage, nikāya); after the last, to the last (s0402t's closing
+        # "Dutiyo bhāgo niṭṭhito.", which tipitaka.app puts in tika-an-4). A line
+        # between two books stops the run.
+        kids = list(body)
+        pos = [k for k, c in enumerate(kids) if c in books]
+        between = [c for k, c in enumerate(kids) if c not in books and pos[0] < k < pos[-1]]
+        if between:
+            sys.exit("STOP: text between two book <div>s — which book does it belong to?")
+        new_body = ET.Element("body")
+        for k, c in enumerate(kids):
+            if c is book_div or (c not in books and ((k < pos[0] and book_div is books[0])
+                                                    or (k > pos[-1] and book_div is books[-1]))):
+                new_body.append(c)
+        body = new_body
+        if tree:
+            levels = cscd_shape.tree_levels(book_div)
+    chapter_type = None if tree else check_shape(body)
     suttas = set()
     if chapter_type == "vagga":
         book_div = next(d for d in body.iter("div") if d.get("type") == "book")
@@ -201,7 +242,12 @@ def main(src, dst):
                 css = "centered" if rend == "centre" else rend
             if id(child) in suttas:
                 css = "sutta"
-            if chapter_type is None and css == "chapter":
+            if tree:
+                if id(child) in levels and not (child.tag == "head" and rend == "book"):
+                    css = "heading"
+                elif css == "chapter":       # a p rend="chapter" that is not a heading here
+                    css = "bodytext"
+            if chapter_type is None and css == "chapter" and not tree:
                 chap += 1        # div-less volume: a chapter paragraph opens a chapter
             if css in ("subhead", "subsubhead", "title") and cscd_shape.part_label(cscd_shape.text_of(child)):
                 notes["part labels as text"].append(cscd_shape.text_of(child))
@@ -222,13 +268,16 @@ def main(src, dst):
                 continue
             if css == "book" and title is None:
                 title = content
-            segs.append({
+            seg = {
                 "id": f"{stem}_ch{chap}_k{len(segs) + 1}",
                 "chapter": chap,
                 "paragraph": child.get("n") or "",
                 "content": content,
                 "css_class": css,
-            })
+            }
+            if css == "heading":
+                seg["level"] = levels[id(child)]
+            segs.append(seg)
 
     walk(body)
 
@@ -262,7 +311,7 @@ def main(src, dst):
     # Only for <div> volumes: in a div-less later part (DN s0105t) these lines are
     # a second volume's opening, which merge_parts.py keeps with the chapter before.
     book_at = next((k for k, g in enumerate(segs) if g["css_class"] == "book"), None)
-    if book_at is not None and chapter_type is not None:
+    if book_at is not None and chapter_type is not None and not tree:
         pre = [g for g in segs[book_at + 1:] if g["chapter"] == 0]
         later = [g["chapter"] for g in segs if g["chapter"] > 0]
         if pre and later and not any(g["css_class"] in HEADING_CSS for g in pre):
@@ -285,10 +334,15 @@ def main(src, dst):
         "total_segments": len(segs),
         "segments": segs,
     }
+    if book is not None:
+        data["book_in_file"] = book
+    if tree:
+        data["tree"] = True
     Path(dst).parent.mkdir(parents=True, exist_ok=True)
     Path(dst).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{src.name}: {len(segs)} segments, {chap} '{chapter_type}' chapters, "
-          f"book '{title}' -> {dst}")
+    shape = f"tree mode, {sum(1 for g in segs if g['css_class'] == 'heading')} headings" if tree \
+        else f"{chap} '{chapter_type}' chapters"
+    print(f"{src.name}{f' book {book}' if book else ''}: {len(segs)} segments, {shape}, book '{title}' -> {dst}")
     print(f"  bold spans: {BOLD_STATS['spans']}")
     if suttas:
         print(f"  sutta headings (numbered subheads in vagga divs): {len(suttas)}")
@@ -298,6 +352,14 @@ def main(src, dst):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    args = sys.argv[1:]
+    tree_mode = "--tree" in args
+    args = [a for a in args if a != "--tree"]
+    book_k = None
+    if "--book" in args:
+        i = args.index("--book")
+        book_k = int(args[i + 1])
+        del args[i:i + 2]
+    if len(args) != 2:
         sys.exit(__doc__)
-    main(sys.argv[1], sys.argv[2])
+    main(args[0], args[1], book=book_k, tree=tree_mode)

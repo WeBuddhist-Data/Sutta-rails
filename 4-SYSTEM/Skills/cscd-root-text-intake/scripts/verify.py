@@ -20,7 +20,10 @@ Checks
      headings).
   4. Bold: every <hi rend="bold"> is a **…** span at the same place, in order,
      with exactly the same text; every ** pairs up (bold_check.py).
-Usage: python3 -I verify.py <book> <file.md> <file.xml>
+  With --tree (a volume converted with cscd_xml_to_json.py --tree), check 2 is:
+     every heading of the XML, at its tree level (cscd_shape.tree_levels) and with
+     the same text (number stripped), equals the md headings, in order.
+Usage: python3 -I verify.py <book> <file.md> <file.xml> [--tree]
 """
 import re
 import sys
@@ -31,7 +34,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bold_check  # noqa: E402
 import cscd_shape  # noqa: E402
 
-book, md_path, xml_path = sys.argv[1:4]
+TREE = "--tree" in sys.argv
+book, md_path, xml_path = [a for a in sys.argv[1:] if a != "--tree"][:3]
 problems = []
 
 # ---------- md side ----------
@@ -102,7 +106,10 @@ if len(set(nums)) != len(nums):
 # ---------- xml side ----------
 root = ET.parse(xml_path).getroot()
 xbody = root.find(".//body")
-paranums = [p.get("n") for p in xbody.iter("p") if re.fullmatch(r"\d+(?:-\d+)?", p.get("n") or "")]
+# a paragraph with a printed number (<hi rend="paranum">); an @n alone is not printed
+# (CSCD AN: the homage has n="0")
+paranums = [p.get("n") for p in xbody.iter("p") if re.fullmatch(r"\d+(?:-\d+)?", p.get("n") or "")
+            and any(h.get("rend") == "paranum" for h in p.iter("hi"))]
 if nums != paranums:
     problems.append(f"content ids != XML paranums (md {len(nums)}, xml {len(paranums)})")
 gaps = []   # printed-number jumps; allowed only because nums == the XML's own numbers
@@ -118,7 +125,8 @@ if nums and span(nums[0])[0] != 1:
     problems.append("content ids do not start at 1")
 
 book_div = next((d for d in xbody.iter("div") if d.get("type") == "book"), None)
-vagga_shape = book_div is not None and any(d.get("type") == "vagga" for d in book_div.iter("div"))
+vagga_shape = not TREE and book_div is not None and any(d.get("type") == "vagga" for d in book_div.iter("div"))
+tree_lv = cscd_shape.tree_levels(book_div) if TREE else {}
 sutta_ids = cscd_shape.sutta_heads(book_div) if vagga_shape else set()
 chapter_heads = [h for h in xbody.iter("head") if h.get("rend") == "chapter"]
 # A heading directly in the book <div> after a chapter <div> has closed opens a
@@ -138,14 +146,25 @@ if book_div is not None:
 promoted = {id(h) for h in section_heads if h.tag == "p"}
 xml_sutta_titles = [re.sub(r"^\d+\.\s*", "", "".join(h.itertext()).strip()) for h in (section_heads or chapter_heads)]
 md_sutta_titles = [ID_RE.sub("", l)[4:].strip() for l in lines if l.startswith("### ")]
-if xml_sutta_titles != md_sutta_titles:
+if TREE:
+    xml_tree = [(tree_lv[id(e)], cscd_shape.strip_heading_number(cscd_shape.text_with_notes(e)))
+                for e in book_div.iter() if id(e) in tree_lv]
+    md_tree = [(len(m.group(1)), m.group(2).strip()) for m in
+               (re.match(r"^(#{2,}) (.*?)(?:\s+\^[\w-]+)?\s*$", l) for l in lines) if m]
+    if xml_tree != md_tree:
+        import difflib
+        ops = [o for o in difflib.SequenceMatcher(None, xml_tree, md_tree, autojunk=False).get_opcodes() if o[0] != "equal"]
+        problems.append(f"headings (level, title) differ from the XML tree in {len(ops)} place(s) (md {len(md_tree)}, xml {len(xml_tree)})")
+        for op, a0, a1, b0, b1 in ops[:5]:
+            problems.append(f"   {op}: xml {xml_tree[a0:a1][:2]} | md {md_tree[b0:b1][:2]}")
+elif xml_sutta_titles != md_sutta_titles:
     problems.append("chapter (###) headings differ from XML")
 # every subhead and title paragraph is a '####' or deeper heading (SN: vagga =
 # title, sutta = subhead), except one promoted to a '###' section above
 xml_sub = sum(1 for p in xbody.iter("p") if p.get("rend") in ("subhead", "title") and id(p) not in promoted
               and not cscd_shape.part_label(cscd_shape.text_of(p)))
 md_sub = sum(1 for l in lines if re.match(r"^#{4,} ", l))
-if xml_sub != md_sub:
+if xml_sub != md_sub and not TREE:
     problems.append(f"subhead count md {md_sub} vs xml {xml_sub}")
 if vagga_shape:
     xml_suttas = [re.sub(r"^\d+\.\s*", "", cscd_shape.text_with_notes(p)) for p in xbody.iter("p") if id(p) in sutta_ids]
@@ -186,10 +205,10 @@ def xml_words():
                 continue
             rend(el)
             if (el.tag == "head" and el.get("rend") == "chapter") or id(el) in sutta_ids \
-                    or (el.tag == "p" and el.get("rend") in ("subhead", "title")):
+                    or (el.tag == "p" and el.get("rend") in ("subhead", "title")) or id(el) in tree_lv:
                 seg = "".join(out[start:])
                 del out[start:]
-                out.append(re.sub(r"^\s*\d+(?:-\d+)*\.\s*", "", seg))
+                out.append(cscd_shape.LEAD_NUM.sub("", seg) if TREE else re.sub(r"^\s*\d+(?:-\d+)*\.\s*", "", seg))
             out.append("\n")
     joined = "".join(out).replace("‘‘", '"').replace("’’", '"')  # same as step 1
     return re.sub(r"\[\s+", "[", re.sub(r"\s+\]", "]", joined)).split()

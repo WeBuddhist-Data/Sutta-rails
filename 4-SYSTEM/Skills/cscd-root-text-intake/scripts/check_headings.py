@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+"""check_headings.py — an independent heading check for cscd-root-text-intake and
+cscd-commentary-intake (it does not use the converters' level rules).
+
+Every heading element of the XML (<head> other than the book's, and <p> with rend
+subhead / subsubhead / title / chapter), in order and with the same text (printed
+number or range stripped, notes as [..]), must be a markdown heading (### or
+deeper) of the file, and the file must have no heading the XML lacks. Part labels
+("(Dutiyo bhāgo)") are text, not headings.
+
+Usage: python3 -I check_headings.py <file.md> <xml> [<xml> …] [--book K]
+"""
+import difflib, re, sys, xml.etree.ElementTree as ET
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import cscd_shape as cs  # noqa: E402
+
+args = sys.argv[1:]
+book_k = None
+if "--book" in args:
+    i = args.index("--book"); book_k = int(args[i + 1]); del args[i:i + 2]
+md, xmls = args[0], args[1:]
+xh = []
+for x in xmls:
+    body = ET.parse(x).getroot().find(".//body")
+    if book_k is not None:
+        body = [d for d in body.iter("div") if d.get("type") == "book"][book_k - 1]
+    for e in body.iter():
+        if (e.tag == "head" and e.get("rend") != "book") or (
+                e.tag == "p" and e.get("rend") in ("subhead", "subsubhead", "title", "chapter")):
+            t = cs.text_with_notes(e).replace("‘‘", '"').replace("’’", '"')
+            if cs.part_label(t):
+                continue
+            xh.append(cs.strip_heading_number(t))
+lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+mh = [cs.strip_heading_number(re.sub(r"\s+\^[\w-]+$", "", l[l.index(" ") + 1:])).replace("**", "")
+      for l in lines if re.match(r"^#{3,} ", l)]
+ops = [o for o in difflib.SequenceMatcher(None, xh, mh, autojunk=False).get_opcodes() if o[0] != "equal"]
+print(f"{Path(md).name}: xml headings {len(xh)}, md headings {len(mh)}, "
+      + ("ALL MATCH" if not ops else f"{len(ops)} difference(s)"))
+for op, a, b, c, d in ops[:5]:
+    print("   ", op, xh[a:b][:3], "|", mh[c:d][:3])
+sys.exit(1 if ops else 0)
