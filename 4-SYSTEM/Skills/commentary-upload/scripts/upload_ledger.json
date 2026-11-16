@@ -517,6 +517,80 @@
     "text_id": "a47iqPDr32dqXzlVsl1gS",
     "toc_id": "V6dZ0vGwLbZQYcX5Hl25h"
   },
+  "pi-an-8-atthakatha": {
+    "aligned_to_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+    "edition_id": "Lh3f4vIiyybW6Z5R3HTZH",
+    "file_type": "commentary",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "2T1M0DFSnKQaoRDO2ncbb",
+        "ts": "2026-11-16T10:56:19"
+      },
+      {
+        "chars": 106081,
+        "edition_id": "Lh3f4vIiyybW6Z5R3HTZH",
+        "segments": 188,
+        "step": "edition",
+        "ts": "2026-11-16T10:56:19"
+      },
+      {
+        "nodes": 81,
+        "step": "toc",
+        "toc_id": "Hb24h4sJ7eRbh8I3urKfW",
+        "ts": "2026-11-16T10:56:20"
+      },
+      {
+        "pairs": 204,
+        "root_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+        "step": "alignment",
+        "ts": "2026-11-16T10:56:20"
+      }
+    ],
+    "root_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+    "root_text_id": "wzL4TQ6yPiU4EGfsmmfB0",
+    "source_file": "1-SOURCES/Commentaries/pi-an-8-atthakatha.md",
+    "text_id": "2T1M0DFSnKQaoRDO2ncbb",
+    "toc_id": "Hb24h4sJ7eRbh8I3urKfW"
+  },
+  "pi-an-8-tiika": {
+    "aligned_to_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+    "edition_id": "Ynbvd0HkiAO1JfFYlUiUS",
+    "file_type": "commentary",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "twFt7NwwFCuY7a9vbWU60",
+        "ts": "2026-11-16T10:56:25"
+      },
+      {
+        "chars": 108130,
+        "edition_id": "Ynbvd0HkiAO1JfFYlUiUS",
+        "segments": 220,
+        "step": "edition",
+        "ts": "2026-11-16T10:56:25"
+      },
+      {
+        "nodes": 45,
+        "step": "toc",
+        "toc_id": "37CoFerj5dYfEESoyd2am",
+        "ts": "2026-11-16T10:56:26"
+      },
+      {
+        "pairs": 441,
+        "root_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+        "step": "alignment",
+        "ts": "2026-11-16T10:56:26"
+      }
+    ],
+    "root_edition_id": "ALrSAUIaVNeXPxO5rcnBX",
+    "root_text_id": "wzL4TQ6yPiU4EGfsmmfB0",
+    "source_file": "1-SOURCES/Commentaries/pi-an-8-tiika.md",
+    "text_id": "twFt7NwwFCuY7a9vbWU60",
+    "toc_id": "37CoFerj5dYfEESoyd2am"
+  },
   "pi-dn-1-abhinavatiika": {
     "aligned_to_edition_id": "4lUEgD4qPFWodyyqlhICx",
     "edition_id": "mIYWTEFBtbJYur04hBsfE",
