@@ -16,7 +16,9 @@ Not run on its own.
 import re
 import unicodedata
 
-BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
+# ".*?", not ".+?": an empty XML tag <hi rend="bold"></hi> is copied as "****"
+# (CSCD SN s0301a) and must be counted as a span like any other.
+BOLD_RE = re.compile(r"\*\*(.*?)\*\*")
 
 
 def strip_bold(s):

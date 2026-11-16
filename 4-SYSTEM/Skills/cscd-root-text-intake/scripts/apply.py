@@ -42,7 +42,17 @@ import re
 import sys
 from pathlib import Path
 
-NUM_PREFIX = re.compile(r"^(\d+)\.\s*(.*)$")
+# "149. text", or a printed range "225-240. text" (CSCD Saṃyuttanikāya): the
+# range is one paragraph and its block ID is the range as printed (^3-225-240).
+# A line that is only the number ("312-323", CSCD SN abbreviated suttas) is
+# numbered too; it has no prefix to strip and keeps the number as its text.
+NUM_PREFIX = re.compile(r"^(\d+(?:-\d+)?)(?:\.\s*(.*))?$")
+
+
+def span(printed: str):
+    """'149' -> (149, 149); '225-240' -> (225, 240)."""
+    a, _, b = printed.partition("-")
+    return int(a), int(b or a)
 HEADING = re.compile(r"^(#+)\s+(.*)$")
 EXISTING_ID = re.compile(r"\s*\^[\w-]+\s*$")
 
@@ -171,7 +181,8 @@ def detect_runs(lines):
             pending_headings = []
             continue
 
-        n = int(m.group(1))
+        printed = m.group(1)
+        n, n_end = span(printed)
         starts_new_run = (current is None) or (n == 1 and prev_n != 1)
 
         if starts_new_run:
@@ -179,22 +190,24 @@ def detect_runs(lines):
                 runs.append(current)
             current = {
                 "first_n": n,
-                "last_n": n,
+                "last_n": n_end,
                 "heading_candidates": pending_headings,
-                "items": [(start, end, n)],
+                "items": [(start, end, printed)],
                 "anomalies": [],
                 "unnumbered": [],
             }
             pending_headings = []
         else:
-            current["last_n"] = n
-            current["items"].append((start, end, n))
+            current["last_n"] = n_end
+            current["items"].append((start, end, printed))
             # Same printed N twice in a row → handled as Nx1/Nx2 on apply, not an anomaly.
-            # Other jumps (skip or go backwards without reset-to-1) need LLM review.
+            # Other jumps (skip or go backwards without reset-to-1) need LLM review;
+            # a skip the source itself prints (verify.py checks against the XML) is
+            # reported here too, so it can be recorded.
             if n != prev_n and n != prev_n + 1:
-                current["anomalies"].append((start, prev_n + 1, n))
+                current["anomalies"].append((start, prev_n + 1, printed))
             pending_headings = []
-        prev_n = n
+        prev_n = n_end
 
     if current is not None:
         runs.append(current)
@@ -320,7 +333,7 @@ def parse_zones(spec: str, n_runs: int):
     return mapping
 
 
-def content_id(book: int, zone: str, n: int, occurrence: int = 0) -> str:
+def content_id(book: int, zone: str, n, occurrence: int = 0) -> str:
     """book-n / book-zone-n; 2nd+ same printed N → …Nx1, …Nx2 (occurrence 1, 2…)."""
     if zone == "":
         base = f"{book}-{n}"
@@ -387,7 +400,7 @@ def cmd_apply(path: Path, zones_spec: str):
 
         if i in prefix_strip:
             m = NUM_PREFIX.match(clean.strip())
-            clean = m.group(2) if m else clean.strip()
+            clean = (m.group(2) if m.group(2) is not None else clean.strip()) if m else clean.strip()
 
         if i in heading_ids:
             result.append(f"{clean.rstrip()} ^{heading_ids[i]}")

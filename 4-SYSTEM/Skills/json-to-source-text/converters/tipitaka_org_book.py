@@ -84,10 +84,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from json_to_source_text import format_frontmatter, clean_text  # noqa: E402
 
 
-_leading_num_re = re.compile(r"^\s*\d+\.\s*")
+# heading number as printed: "1. ", a range "1-10. ", or a list "4-5-6. " (CSCD SN)
+_leading_num_re = re.compile(r"^\s*\d+(?:-\d+)*\.\s*")
 # Verse opening: captures the leading number (used as the block-ID verse part
 # for non-TOC sections). E.g. "583. Katame dhammā…" → group(1) == "583".
-_verse_opening_re = re.compile(r"^\s*(\d+)\.\s")
+# A printed range opens one verse too: "225-240. …" → "225-240" (CSCD
+# Saṃyuttanikāya), so the block ID is the range as printed.
+# A paragraph that is only a printed number (CSCD SN "312-323", abbreviated
+# suttas) opens a verse too, and keeps the number as its text.
+_verse_opening_re = re.compile(r"^\s*(\d+(?:-\d+)?)(?:\.\s|\s*$)")
 
 
 def strip_leading_number(title: str) -> str:
@@ -219,6 +224,13 @@ def convert_json_to_source_text(json_path, output_path) -> None:
             (c for r, c in items if r == ROLE_CHAPTER),
             f"Section {h3_position}",
         )
+        # A section with no chapter-class segment that OPENS with a heading
+        # (a closing section after the last chapter <div>, e.g. CSCD SN
+        # "Sagāthāvaggo paṭhamo." + its uddāna) takes that heading as its h3.
+        skip_first = False
+        if (not is_toc and items and h3_title_raw.startswith("Section ")
+                and items[0][0] in (ROLE_TITLE, ROLE_SUBHEAD)):
+            h3_title_raw, skip_first = items[0][1], True
         h3_title = strip_leading_number(h3_title_raw)
         out.append(f"### {h3_title} ^{book_id}-{h3_position}-0\n\n")
 
@@ -263,7 +275,9 @@ def convert_json_to_source_text(json_path, output_path) -> None:
             out.append(f"{body}{id_str}\n\n")
             verse_buffer.clear()
 
-        for role, content in items:
+        for k_item, (role, content) in enumerate(items):
+            if skip_first and k_item == 0:
+                continue
             if role == ROLE_CHAPTER:
                 if not consumed_chapter_title:
                     consumed_chapter_title = True
@@ -325,7 +339,7 @@ def convert_json_to_source_text(json_path, output_path) -> None:
                     # before we start the new one.
                     if current_verse_num[0] is not None:
                         flush_verse()
-                    current_verse_num[0] = int(m.group(1))
+                    current_verse_num[0] = m.group(1)
             verse_buffer.append(content)
 
         flush_verse()

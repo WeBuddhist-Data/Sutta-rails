@@ -46,7 +46,10 @@ Line-level rules (each one printed in the run summary, for the report):
   - <p rend="hangnum">N.</p> holds only a paragraph number; its text is the next
     paragraph (a gāthā). The two are joined into one segment "N. <text>", as
     tipitaka.app shows them, so the paragraph keeps its number. A hangnum not
-    followed by a text paragraph of the same chapter stops the script.
+    followed by a text paragraph of the same chapter stops the script, except:
+    a hangnum directly before a heading (CSCD SN Mahāvagga "312-323", a vagga of
+    abbreviated suttas that prints only their numbers and a heading) has no text
+    of its own; it stays where it is, as a block holding just the number.
   - "(Paṭhamo bhāgo)", "(Dutiyo bhāgo)": the part of a volume printed in two parts.
     Kept as plain text (css "centered"), never a heading. The nikāya and book
     lines a later part reprints in the same file are kept as plain text too.
@@ -164,7 +167,7 @@ def main(src, dst):
             suttas = cscd_shape.sutta_heads(book_div)
         except cscd_shape.ShapeError as e:
             sys.exit(f"STOP: {e} — the sutta level cannot be read; decide it with a human.")
-    notes = {"hangnum joined": [], "part labels as text": [], "reprinted title lines as text": [],
+    notes = {"hangnum joined": [], "hangnum kept as a number-only block": [], "part labels as text": [], "reprinted title lines as text": [],
              "moved into the first chapter": []}
     stem = src.name.split(".")[0]
     kind = src.name.split(".")[1]
@@ -236,7 +239,13 @@ def main(src, dst):
         g = segs[k]
         if g["css_class"] == "hangnum":
             nxt = segs[k + 1] if k + 1 < len(segs) else None
-            if not re.fullmatch(r"\d+\.", g["content"]) or nxt is None \
+            if re.fullmatch(r"\d+(?:-\d+)?", g["content"]) and nxt is not None \
+                    and nxt["chapter"] == g["chapter"] and nxt["css_class"] in HEADING_CSS:
+                notes["hangnum kept as a number-only block"].append(g["content"])
+                joined.append(dict(g, css_class="bodytext"))
+                k += 1
+                continue
+            if not re.fullmatch(r"\d+(?:-\d+)?\.", g["content"]) or nxt is None \
                     or nxt["chapter"] != g["chapter"] or nxt["css_class"] in HEADING_CSS:
                 sys.exit(f"STOP: hangnum {g['content']!r} is not followed by a text paragraph of its chapter")
             notes["hangnum joined"].append(g["content"])

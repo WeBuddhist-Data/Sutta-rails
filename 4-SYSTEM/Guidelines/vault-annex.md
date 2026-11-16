@@ -20,16 +20,22 @@ Source-text files in `1-SOURCES/Text/` are **one file per CSCD volume**. Ingeste
 | Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-mn-1.md` |
 | Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-mn-2.md` |
 | Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-mn-3.md` |
+| Saṃyuttanikāya | Sagāthāvaggo | 1 | `s0301m.mul.xml` | `sn-1` | `pi-sn-1.md` |
+| Saṃyuttanikāya | Nidānavaggo | 2 | `s0302m.mul.xml` | `sn-2` | `pi-sn-2.md` |
+| Saṃyuttanikāya | Khandhavaggo | 3 | `s0303m.mul.xml` | `sn-3` | `pi-sn-3.md` |
+| Saṃyuttanikāya | Saḷāyatanavaggo | 4 | `s0304m.mul.xml` | `sn-4` | `pi-sn-4.md` |
+| Saṃyuttanikāya | Mahāvaggo | 5 | `s0305m.mul.xml` | `sn-5` | `pi-sn-5.md` |
 
-Only volumes that have been ingested are present in the folder. The Dīghanikāya and the Majjhimanikāya are in, in Pāli: root text and commentaries (§3), no translations yet. MN registered 2026-11-13.
+Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima- and Saṃyuttanikāya are in, in Pāli: root text and commentaries (§3), no translations yet. MN registered 2026-11-13, SN 2026-11-14.
 
-**Other nikāyas** (Saṃyutta, Aṅguttara, Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names.
+**Other nikāyas** (Aṅguttara, Khuddaka) are registered in this table **before** they are ingested, with their book numbers and file names.
 
-`cscd-root-text-intake` supports two shapes:
+`cscd-root-text-intake` supports three shapes:
 - book → sutta `<div>`s (Dīgha);
-- book → vagga `<div>`s whose suttas are numbered sub-headings (Majjhima).
+- book → vagga `<div>`s whose suttas are numbered sub-headings (Majjhima);
+- book → saṃyutta `<div>`s, with vaggas as `title` and suttas as `subhead` paragraphs (Saṃyutta).
 
-Saṃyutta and Aṅguttara volumes nest deeper (saṃyutta/nipāta → vagga → sutta). For those the skill stops rather than flattening; it must be extended first.
+Aṅguttaranikāya volumes are split over several files and nest by nipāta; the skill must be checked against that shape before they are ingested. It stops rather than flattening.
 
 ---
 
@@ -39,8 +45,8 @@ Saṃyutta and Aṅguttara volumes nest deeper (saṃyutta/nipāta → vagga →
 
 **Format example:** `^1-149` (Sīlakkhandhavagga, printed paragraph 149)
 
-- **Nikāya collection:** the abbreviation in the file name: `dn` for Dīghanikāya, `mn` for Majjhimanikāya. The collection is given by the file, not by the ID.
-- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas, `1`–`3` for the Majjhimanikāya's three paṇṇāsas).
+- **Nikāya collection:** the abbreviation in the file name: `dn` for Dīghanikāya, `mn` for Majjhimanikāya, `sn` for Saṃyuttanikāya. The collection is given by the file, not by the ID.
+- **`book`:** the position of the CSCD volume within its nikāya (`1`–`3` for the Dīghanikāya's three vaggas, `1`–`3` for the Majjhimanikāya's three paṇṇāsas, `1`–`5` for the Saṃyuttanikāya's five vaggas).
 
 Block IDs always resolve as `file#^id`, so the same `^1-149` in two different files names two different blocks.
 
@@ -65,15 +71,30 @@ Block IDs always resolve as `file#^id`, so the same `^1-149` in two different fi
 
 A commentary's vagga and sutta headings carry the same IDs as the root's (`#### Sabbāsavasuttavaṇṇanā ^1-1-2-0`). A ṭīkā's own numbered list under a `title` heading is one level deeper again (`###### Desanāhāravaṇṇanā`, the 16 hāras of the Mūlapaṇṇāsa-ṭīkā).
 
-Each heading segment is the heading's **sibling position** under its parent. It is not the number printed in the source. Printed sutta and vagga numbers are stripped from the heading text (`1. Brahmajālasuttaṃ` → `Brahmajālasuttaṃ`).
+**Saṃyuttanikāya:** each volume holds saṃyuttas. A saṃyutta with vaggas nests the sutta under its vagga; a saṃyutta without vaggas (about half) holds its suttas directly:
+
+| Markdown | Role | Anchor | Example |
+| -------- | ---- | ------ | ------- |
+| `##` | Volume (vagga) | `^<book>-0` | `## Sagāthāvaggo ^1-0` |
+| `###` | Saṃyutta | `^<book>-<s>-0` | `### Devatāsaṃyuttaṃ ^1-1-0` |
+| `####` | Vagga (`title`) | `^<book>-<s>-<v>-0` | `#### Naḷavaggo ^1-1-1-0` |
+| `#####` | Sutta (`subhead`) | `^<book>-<s>-<v>-<n>-0` | `##### Oghataraṇasuttaṃ ^1-1-1-1-0` |
+| `####` | Sutta, in a saṃyutta without vaggas | `^<book>-<s>-<n>-0` | `#### Āḷavikāsuttaṃ ^1-5-1-0` |
+
+A section after the last saṃyutta (`Sagāthāvaggo paṭhamo.` with its uddāna) is a `###` of its own. In the commentaries, saṃyutta IDs equal the root's. Vagga and sutta IDs often do not, because a commentary leaves out the vaggas and suttas it does not comment on and heading IDs are sibling positions. The transclusions carry the alignment.
+
+Each heading segment is the heading's **sibling position** under its parent. It is not the number printed in the source. Printed sutta and vagga numbers, and printed ranges, are stripped from the heading text (`1. Brahmajālasuttaṃ` → `Brahmajālasuttaṃ`, `1-10. Tathāgatādisuttaṃ` → `Tathāgatādisuttaṃ`).
 
 ### Verse numbering rule
 
 - The content ID is the **paragraph number printed in CSCD**, copied verbatim: never renumbered, padded or invented.
-- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360; Mūlapaṇṇāsa 1–513, Majjhimapaṇṇāsa 1–486, Uparipaṇṇāsa 1–463. One file per volume therefore gives each file a single unbroken run, and content IDs need no zone segment.
+- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360; Mūlapaṇṇāsa 1–513, Majjhimapaṇṇāsa 1–486, Uparipaṇṇāsa 1–463; Sagāthāvagga 1–271, Nidānavagga 1–246, Khandhavagga 1–716, Saḷāyatanavagga 1–420, Mahāvagga 1–1201. One file per volume therefore gives each file a single unbroken run, and content IDs need no zone segment.
 - The number does **not** restart at sutta or sub-heading boundaries.
 - A paragraph's unnumbered continuation lines, gāthā lines and closing lines (`… niṭṭhitaṃ`) stay in its block. The ID goes on the block's last line.
-- CSCD sometimes prints a paragraph number on a line of its own (`<p rend="hangnum">`), with the paragraph's gāthā on the next line. The number is joined to that gāthā line, as tipitaka.app shows it. This happens in 10 MN paragraphs: MN 1 ¶513; MN 2 ¶76, 456–460; MN 3 ¶135, 237, 382.
+- CSCD sometimes prints a paragraph number on a line of its own (`<p rend="hangnum">`), with the paragraph's gāthā on the next line. The number is joined to that gāthā line, as tipitaka.app shows it. This happens in 10 MN paragraphs (MN 1 ¶513; MN 2 ¶76, 456–460; MN 3 ¶135, 237, 382) and 48 in SN 1.
+- **Printed ranges** (Saṃyuttanikāya): a paragraph printed as `225-240.` is one block, and its ID is the range as printed, `^3-225-240`. There are 27 in SN 3, 16 in SN 4 and 50 in SN 5. A commentary citation of any number in the range links to that block.
+- **Gaps as printed** (SN Mahāvagga): one paragraph number can cover a run of abbreviated suttas, so the next printed number jumps (`270.` → `280.`). The IDs keep the gap. The 11 gaps are 270→280, 280→292, 292→302, 302→311, 552→587-596, 608→641-650, 662→673-684, 716→749-758, 770→792-802, 856→889-898 and 934→967-976.
+- **Number-only paragraphs before a heading** (SN Mahāvagga `312-323`, `324-333`, `334-345`, `346-356`, `357-366`): a vagga of fully abbreviated suttas prints only the number and a heading. The number stays where it is printed, as a block holding just the number (`312-323 ^5-312-323`).
 
 ### Text form
 
@@ -109,8 +130,9 @@ A paragraph that the source sets apart without a printed number (e.g. directly a
 Currently used:
 - `^2-U1`: Mahāsudassanasutta.
 - `^3-U1`: Pāsādikasutta, before paragraph 165.
+- Saṃyuttanikāya: `^1-U1` (Sagāthāvagga closing line); `^2-U1`, `^2-U2` (Nidānasaṃyutta peyyāla and closing); `^5-U1`…`^5-U12` (Mahāvagga, unnumbered abbreviated suttas and closing lines).
 
-No duplicates occur in the Dīghanikāya or the Majjhimanikāya, and the Majjhimanikāya has no `U` blocks.
+No duplicates occur in the Dīgha-, Majjhima- or Saṃyuttanikāya, and the Majjhimanikāya has no `U` blocks.
 
 **Why:** this keeps the invariant that every `^<book>-<N>` is a real printed number.
 

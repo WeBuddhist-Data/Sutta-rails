@@ -91,10 +91,14 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
 1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped (and, in a vagga volume, the sutta number on `####` headings). A `<p rend="hangnum">` holds only a paragraph number (`456.`) and its text is the next paragraph, a gāthā; the two are joined into one line, as tipitaka.app shows them, so the gāthā block gets `^<book>-456`. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
 2. **N is the printed paragraph number.** Never renumber, recompute, pad or invent. If the XML skips or repeats a number, the IDs do too (`x` suffix for a repeat, as `apply.py` assigns it).
+   - A **printed range** (`225-240.`, CSCD Saṃyuttanikāya) is one paragraph, and its ID is the range as printed: `^3-225-240`.
+   - A **gap the XML itself prints** (SN Mahāvagga, where one paragraph number covers a run of abbreviated suttas, so `270.` is followed by `280.`) stays a gap. `apply.py audit` lists each one as an ANOMALY, and `verify.py` confirms the IDs equal the XML's numbers. Record every gap in the report.
+   - A **number-only paragraph directly before a heading** (`<p rend="hangnum">312-323</p>`, SN Mahāvagga) has no text of its own. It stays where it is, as a block holding just the number (`312-323 ^5-312-323`). tipitaka.app shows the number on the heading line instead; record it as an explained site difference.
 3. **One volume, one file, one run.** If `apply.py audit` reports more than one numbering run, an anomaly, or a reset, stop and show it to the human — do not pick zones on your own.
 4. **Unsupported XML shape stops the run.** `cscd_xml_to_json.py` supports three shapes:
    - book → chapter `<div>`s, one div type (DN: sutta divs);
    - book → `<div type="vagga">`, where each sutta is a numbered `<p rend="subhead">` (MN). The rule lives in `cscd_shape.py`: number = next in the vagga, title contains "sutta". Those headings become css `sutta`, i.e. `####`;
+   - book → `<div type="samyutta">` (SN), where a vagga is a `<p rend="title">` and a sutta a `<p rend="subhead">`. A saṃyutta with vaggas nests `### saṃyutta → #### vagga → ##### sutta`. One without vaggas nests `### saṃyutta → #### sutta`. A heading after the last saṃyutta (`Sagāthāvaggo paṭhamo.` + uddāna) is a `###` section of its own;
    - volumes with no `<div>`s, whose chapters are `<p rend="chapter">`.
 
    It prints `STOP: …`, exits non-zero and writes nothing if:
@@ -168,6 +172,12 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
 ## Notes
 
 `apply.py` reads the book number from the `##` line's `^<book>-0`, which step 4 sets. The scripts were first run on the Dīgha Nikāya (s0101m–s0103m, 2026-11-13, all PASS against the XML and tipitaka.app).
+
+**Saṃyuttanikāya** (s0301m–s0305m) dry run, 2026-11-14, in a scratch folder.
+- All five PASS `verify.py`: 271 / 246 / 362 / 361 / 621 content IDs, including 93 printed ranges; the Mahāvagga's 11 gaps are as printed.
+- Segment counts equal the site's: 3450 / 1427 / 1467 / 2020 / 2847, with 48 + 5 `hangnum`s handled.
+- Volumes 1, 2 and 4 PASS `compare_site.py`. Volumes 3 and 5 differ only in site artefacts: the site nests unnumbered or misprinted sutta headings one level deeper (`9.Khayadhammasuttaṃ`; five abbreviated suttas in Bojjhaṅgasaṃyutta), and it shows the five number-only paragraphs on their heading lines.
+- After the SN changes, the DN and MN files regenerate byte-identical.
 
 **Majjhimanikāya** (s0201m–s0203m) dry run, 2026-11-13, in a scratch folder: all three PASS `verify.py` and `compare_site.py`.
 - 513 / 486 / 463 content IDs and 50 / 50 / 52 suttas.

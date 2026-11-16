@@ -21,7 +21,7 @@ import sys
 
 book, path = sys.argv[1], sys.argv[2]
 lines = open(path, encoding="utf-8").read().split("\n")
-NUM = re.compile(r"^\d+\.\s")
+NUM = re.compile(r"^\d+(?:-\d+)?(?:\.\s|$)")   # "149. ", a range "225-240. ", or a number-only line
 
 h2 = [i for i, l in enumerate(lines) if l.startswith("## ")]
 if len(h2) != 1:
