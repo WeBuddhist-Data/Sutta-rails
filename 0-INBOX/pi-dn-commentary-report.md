@@ -138,3 +138,24 @@ The XML's `<hi rend="bold">` (the word being explained) was being dropped. It is
 - **Text unchanged.** IDs, headings, links and line count are as before. With `**` removed, the only difference from the earlier build is spacing at the 283 tags that hold a space at their edge.
 - **vs tipitaka.app.** About 95% of the lines with bold are character-for-character identical to the site (after its own display forms: page markers, `{ }`, `‘‘ ’’`, numbers). The rest differ only where the site departs from the XML: it drops a space next to a bold marker, joins two spans the XML keeps apart (144 cases, e.g. XML `<hi>Āyasmato</hi> <hi>mahākassapassa</hi>` → site `**Āyasmatomahākassapassa**`), or drops a bold tag that holds only a space (2 cases) together with the space. Here the XML is followed.
 - The unresolved-citation logs in `0-INBOX/temp/dn-comm/` were refreshed (their text excerpts now show bold).
+
+---
+
+## DN volumes 2 and 3: uploaded to library-prod.webuddhist.com (2026-11-16)
+
+Uploaded 2026-11-16 to library-prod.webuddhist.com with `0-INBOX/temp/upload-dn23-sn.sh`. For each file: lint, parse, dry run with live checks, `--execute`, `--verify`; the logs are `0-INBOX/temp/upload-dn23-sn-batch1.log` and `upload-dn23-sn.log`. The library IDs are in each file's frontmatter and in both upload ledgers.
+
+What was checked: the IDs in the files equal the ledgers; each commentary's live `commentary_of` is its root's `text_id`, and it is aligned to its root's edition; live segments equal the file's blocks.
+
+**Library titles.** The library allows each title once per language, and "Mahāvagga" is a book name in all three piṭakas. Five titles were taken: by the Vinaya vault's uploaded `Mahāvaggapāḷi` and `Mahāvagga-aṭṭhakathā`, and by each other (`Mahāvaggaṭīkā` twice). They got the nikāya in brackets: `Mahāvaggapāḷi (Dīghanikāya)`, `Mahāvaggaṭṭhakathā (Dīghanikāya)`, `Mahāvaggaṭīkā (Dīghanikāya)`, `Mahāvagga-aṭṭhakathā (Saṃyuttanikāya)` and `Mahāvaggaṭīkā (Saṃyuttanikāya)`. Only the frontmatter `title` changed; the text and its printed headings are as in the source.
+
+The upload ran with `SSL_CERT_FILE` set to certifi's bundle, because this Python (python.org 3.13) has no CA file of its own.
+
+| File | Library title | text_id | edition_id | toc_id | Segments | Alignment pairs → root edition |
+|---|---|---|---|---|---|---|
+| pi-dn-2 | Mahāvaggapāḷi (Dīghanikāya) | `VLrppRA33akV8uSiRUkum` | `v2pN8xOpbBxpr23aZ6bMp` | `Ob7iZQmIittxUSNPoYvui` | 443 | — |
+| pi-dn-2-atthakatha | Mahāvaggaṭṭhakathā (Dīghanikāya) | `6E0HJaqiDh1WlsoEJoQWs` | `WfdZGNPU23ljYGMNnlGNS` | `idvaAg5T6HJWqPAC0s4T7` | 1456 | 1478 → `v2pN8xOpbBxpr23aZ6bMp` |
+| pi-dn-2-tiika | Mahāvaggaṭīkā (Dīghanikāya) | `gaGMZ6yd2k0KIJvepyeuj` | `t8Ksci3T2AIibNvUcp6Hm` | `g2YLPM3MF0JJYIX4wL3Hk` | 1291 | 1325 → `v2pN8xOpbBxpr23aZ6bMp` |
+| pi-dn-3 | Pāthikavaggapāḷi | `p5A3mL0dkcEYIHP1jSUqT` | `Eb6341hKRVPceJFk7gzKM` | `WiCiI3XA5UWLSDqKchqK5` | 362 | — |
+| pi-dn-3-atthakatha | Pāthikavaggaṭṭhakathā | `Cmt7evIAP0SeUjonKSd2b` | `W7l99dBzZvQFTqCIw9eVY` | `3nIlyNl4LE825KWaPp2Xy` | 959 | 958 → `Eb6341hKRVPceJFk7gzKM` |
+| pi-dn-3-tiika | Pāthikavaggaṭīkā | `eUNzoSBJ59RDfcGbALjiC` | `7XbkkMwclIjLMW6JQlhQb` | `TQuwxzyOEJOtmPVMEmisA` | 963 | 962 → `Eb6341hKRVPceJFk7gzKM` |
