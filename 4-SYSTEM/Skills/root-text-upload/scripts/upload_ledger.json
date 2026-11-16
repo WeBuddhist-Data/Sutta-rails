@@ -232,5 +232,33 @@
     "source_file": "1-SOURCES/Text/pi-sn-2.md",
     "text_id": "DgA6j95JeMKK42tNQiGEc",
     "toc_id": "PtTs0dstXAoXFuygVykWw"
+  },
+  "pi-sn-3": {
+    "edition_id": "vHMiuor2liUwl2rnB489Z",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "J2ZsEPJjQFrfo2CCDuNeP",
+        "ts": "2026-11-16T10:01:42"
+      },
+      {
+        "chars": 389839,
+        "edition_id": "vHMiuor2liUwl2rnB489Z",
+        "segments": 363,
+        "step": "edition",
+        "ts": "2026-11-16T10:01:43"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "mowrLTLJhI7vqxQDJkqh9",
+        "ts": "2026-11-16T10:01:44"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-sn-3.md",
+    "text_id": "J2ZsEPJjQFrfo2CCDuNeP",
+    "toc_id": "mowrLTLJhI7vqxQDJkqh9"
   }
 }
