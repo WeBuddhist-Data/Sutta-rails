@@ -5446,11 +5446,19 @@
     },
     {
       "source_segment_reference": "1-1193",
-      "target_segment_reference": "1-502"
+      "target_segment_reference": "1-504"
     },
     {
       "source_segment_reference": "1-1193",
-      "target_segment_reference": "1-503"
+      "target_segment_reference": "1-505"
+    },
+    {
+      "source_segment_reference": "1-1193",
+      "target_segment_reference": "1-506"
+    },
+    {
+      "source_segment_reference": "1-1193",
+      "target_segment_reference": "1-507"
     },
     {
       "source_segment_reference": "1-1194",

@@ -3566,7 +3566,14 @@ Kevaṭṭasuttavaṇṇanā niṭṭhitā. ^1-1190
 
 502-503. **Pāpaka**nti parānukampā virahitattā lāmakaṃ, na pana ucchedasassatānaṃ aññataraṃ. **Uppannaṃ hotī**ti jātaṃ hoti, na kevalañca citte jātamattameva. So kira tassa vasena parisamajjhepi evaṃ bhāsatiyeva. **Kiñhi paro parassā**ti paro yo anusāsīyati, so tassa anusāsakassa kiṃ karissati. Attanā paṭiladdhaṃ kusalaṃ dhammaṃ attanāva sakkatvā garuṃ katvā vihātabbanti vadati. ^1-1192
 
-504-407. **Rosikaṃ nhāpitaṃ āmantesī**ti rosikāti evaṃ itthiliṅgavasena laddhanāmaṃ nhāpitaṃ āmantesi. So kira bhagavato āgamanaṃ sutvā cintesi – "vihāraṃ gantvā diṭṭhaṃ nāmaṃ bhāro, gehaṃ pana āṇāpetvā passissāmi ceva yathāsatti ca āgantukabhikkhaṃ dassāmī"ti, tasmā evaṃ nhāpitaṃ āmantesi. ^1-1193
+![[1-SOURCES/Text/pi-dn-1.md#^1-504]]
+![[1-SOURCES/Text/pi-dn-1.md#^1-505]]
+![[1-SOURCES/Text/pi-dn-1.md#^1-506]]
+![[1-SOURCES/Text/pi-dn-1.md#^1-507]]
+
+504-407. **Rosikaṃ nhāpitaṃ āmantesī**ti rosikāti evaṃ itthiliṅgavasena laddhanāmaṃ nhāpitaṃ āmantesi. So kira bhagavato āgamanaṃ sutvā cintesi – "vihāraṃ gantvā diṭṭhaṃ nāmaṃ bhāro, gehaṃ pana āṇāpetvā passissāmi ceva yathāsatti ca āgantukabhikkhaṃ dassāmī"ti, tasmā evaṃ nhāpitaṃ āmantesi.[^ed-504] ^1-1193
+
+[^ed-504]: [Ed: the CSCD XML (s0101a.att.xml) prints this paragraph number as 504-407; the next paragraph is 508 and the ṭīkā and abhinavaṭīkā cite 504, so the range is 504–507. The links point to ^1-504–^1-507; the printed number is kept as in the source.]
 
 ![[1-SOURCES/Text/pi-dn-1.md#^1-508]]
 

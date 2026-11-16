@@ -1,7 +1,7 @@
 {
   "status": "ok",
   "source": "1-SOURCES/Commentaries/pi-dn-1-atthakatha.md",
-  "validated_at": "2026-11-13T09:44:22.768108+00:00",
+  "validated_at": "2026-11-16T08:41:12.270994+00:00",
   "notes": [
     "bdrc_work_id: not set (optional)",
     "wiki: not set (optional)",
@@ -27,7 +27,7 @@
     "language": "pi",
     "commentary_of": "mQNCKJ7TpegM8rl0cyxOZ",
     "translation_of": null,
-    "category_id": "MZUUxphQ0yFwLBon3Vng8",
+    "category_id": "XfCwZpoJMtfO7s0laQkdK",
     "license": "cc0",
     "contributions": null,
     "tag_ids": [
