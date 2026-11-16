@@ -1,4 +1,32 @@
 {
+  "pi-an-1": {
+    "edition_id": "UopigfzoTevjdwKcC00E7",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "OzMkZ0SL8PTrPcoXdpS9a",
+        "ts": "2026-11-16T10:53:39"
+      },
+      {
+        "chars": 71952,
+        "edition_id": "UopigfzoTevjdwKcC00E7",
+        "segments": 324,
+        "step": "edition",
+        "ts": "2026-11-16T10:53:40"
+      },
+      {
+        "step": "toc",
+        "subsections": 1,
+        "toc_id": "Arxh4s7sKwjRalFJSh0hq",
+        "ts": "2026-11-16T10:53:41"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-an-1.md",
+    "text_id": "OzMkZ0SL8PTrPcoXdpS9a",
+    "toc_id": "Arxh4s7sKwjRalFJSh0hq"
+  },
   "pi-dn-1": {
     "edition_id": "4lUEgD4qPFWodyyqlhICx",
     "file_type": "root-text",
