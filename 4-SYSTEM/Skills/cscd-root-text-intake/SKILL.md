@@ -6,7 +6,7 @@ profile: rails-vault
 
 # cscd-root-text-intake
 
-Produces one root-text file per CSCD volume in `1-SOURCES/Text/` (e.g. `pi-dn-1.md`, `pi-mn-1.md`), in this shape: `^T-1` homage, `# <nikāya> ^0`, `## <volume> ^<book>-0`, sibling-numbered headings ending `-0`, and content IDs `^<book>-<N>` where **N is the paragraph number printed in the source, copied verbatim**. It exists so every volume goes through the identical chain — CSCD XML → segment JSON → `json-to-source-text` → block IDs → heading IDs — and is proven identical to its XML before anything cites it. A correct output has exactly one content ID per printed paragraph number, every heading of the XML, and the XML's word stream unchanged.
+Builds one root-text file per CSCD volume (e.g. `pi-dn-1.md`) in `0-INBOX/temp/`, verifies it, and then, for a work CSCD prints in several volumes, joins the volumes into one file per work in `1-SOURCES/Text/` (`pi-dn.md`, `pi-mn.md`, `pi-sn.md`, `pi-an.md`; each volume a `##` chapter — step 12). A Khuddakanikāya book is one work and one file (`pi-kn-<book>.md`). Each volume has this shape: `^T-1` homage, `# <nikāya> ^0`, `## <volume> ^<book>-0`, sibling-numbered headings ending `-0`, and content IDs `^<book>-<N>` where **N is the paragraph number printed in the source, copied verbatim**. It exists so every volume goes through the identical chain — CSCD XML → segment JSON → `json-to-source-text` → block IDs → heading IDs — and is proven identical to its XML before anything cites it. A correct output has exactly one content ID per printed paragraph number, every heading of the XML, and the XML's word stream unchanged.
 
 This skill does **root text (mūla) only**. Commentaries (`.att`, `.tik`, `.nrf`) are a separate intake (`json-to-commentary`).
 
@@ -94,7 +94,7 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
    - A **printed range** (`225-240.`, CSCD Saṃyuttanikāya) is one paragraph, and its ID is the range as printed: `^3-225-240`.
    - A **gap the XML itself prints** (SN Mahāvagga, where one paragraph number covers a run of abbreviated suttas, so `270.` is followed by `280.`) stays a gap. `apply.py audit` lists each one as an ANOMALY, and `verify.py` confirms the IDs equal the XML's numbers. Record every gap in the report.
    - A **number-only paragraph directly before a heading** (`<p rend="hangnum">312-323</p>`, SN Mahāvagga) has no text of its own. It stays where it is, as a block holding just the number (`312-323 ^5-312-323`). tipitaka.app shows the number on the heading line instead; record it as an explained site difference.
-3. **One volume, one file, one run.** If `apply.py audit` reports more than one numbering run, an anomaly, or a reset, stop and show it to the human — do not pick zones on your own.
+3. **One volume, one draft, one run; one work, one file.** Each volume is built and verified as its own draft. A multi-volume work is then joined with `merge_volumes.py` (step 12) into one file: every block and ID kept, a later volume's opening homage and nikāya line kept as plain blocks `^<book>-T1`, `^<book>-T2`. If `apply.py audit` reports more than one numbering run, an anomaly, or a reset, stop and show it to the human — do not pick zones on your own.
 4. **Unsupported XML shape stops the run.** `cscd_xml_to_json.py` supports three shapes:
    - book → chapter `<div>`s, one div type (DN: sutta divs);
    - book → `<div type="vagga">`, where each sutta is a numbered `<p rend="subhead">` (MN). The rule lives in `cscd_shape.py`: number = next in the vagga, title contains "sutta". Those headings become css `sutta`, i.e. `####`;
@@ -160,7 +160,12 @@ Run from the vault root. `S=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `C=<
    ```
    Must print `PASS`: every md line matches one site paragraph in order, every site paragraph number (`n`) sits in block `^<book>-<n>`, and every contents-tree node matches in title, order and nesting. Contents titles are compared without `[variant readings]`, which the site leaves out of them. The site counts the piṭaka as a level the source does not print, so a **constant** depth offset (e.g. `site depth = md level + 1`) is expected; anything else is a problem. On a mismatch, find the cause in the scripts, regenerate from step 3, and rerun steps 8–9.
 10. **Report** to the human: per file — content-ID range, `U` blocks, heading count, chapter count, word count, the site match counts, every split from step 4. Ask for approval to move into `1-SOURCES/Text/`.
-11. **Move on approval**: `mv -n 0-INBOX/temp/$C/pi-$C-<book>.md 1-SOURCES/Text/`, then rerun steps 8–9 on the moved file. (Replacing an existing `1-SOURCES/` file needs the human's explicit approval for that file.)
+11. **Move on approval** (a single-volume work, e.g. a KN book): `mv -n 0-INBOX/temp/$C/pi-$C-<book>.md 1-SOURCES/Text/`, then rerun steps 8–9 on the moved file. (Replacing an existing `1-SOURCES/` file needs the human's explicit approval for that file.)
+12. **Join a multi-volume work** (DN, MN, SN, AN), on approval, once every volume passes steps 8–9:
+    ```bash
+    python3 -I $S/merge_volumes.py 0-INBOX/temp/$C/pi-$C.md 0-INBOX/temp/$C/pi-$C-1.md … 0-INBOX/temp/$C/pi-$C-<n>.md --title "<Nikāya>" --label "all <n> volumes"
+    ```
+    Then check the join word for word against the XML volumes in order (`0-INBOX/tipitaka-xml-check/<date>/indep.py`) and move it: `mv 0-INBOX/temp/$C/pi-$C.md 1-SOURCES/Text/`. Keep the per-volume drafts in `0-INBOX/temp/$C/`: `verify.py`, `compare_site.py` and the commentary build work per volume. Adding a volume to a joined work means rebuilding the join and re-uploading the text.
 
 ---
 

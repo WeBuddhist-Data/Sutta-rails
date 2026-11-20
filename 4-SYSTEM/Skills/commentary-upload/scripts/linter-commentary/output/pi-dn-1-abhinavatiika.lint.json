@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "source": "1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md",
-  "validated_at": "2026-11-13T09:44:27.591781+00:00",
+  "validated_at": "2026-11-20T05:34:48.105461+00:00",
   "notes": [
     "bdrc_work_id: not set (optional)",
     "wiki: not set (optional)",
     "date: not set (optional)",
     "translation_of: not set (optional)",
-    "commentary_of: 'mQNCKJ7TpegM8rl0cyxOZ'",
-    "root_text: '1-SOURCES/Text/pi-dn-1.md'",
+    "commentary_of: 'O4D2mIIgVEMj82ljsKBth'",
+    "root_text: '1-SOURCES/Text/pi-dn.md'",
     "source: source = 'https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0104t.nrf.xml'",
     "toc: 158 headers found"
   ],
@@ -25,9 +25,9 @@
     },
     "alt_titles": null,
     "language": "pi",
-    "commentary_of": "mQNCKJ7TpegM8rl0cyxOZ",
+    "commentary_of": "O4D2mIIgVEMj82ljsKBth",
     "translation_of": null,
-    "category_id": "MZUUxphQ0yFwLBon3Vng8",
+    "category_id": "XfCwZpoJMtfO7s0laQkdK",
     "license": "cc0",
     "contributions": null,
     "tag_ids": [

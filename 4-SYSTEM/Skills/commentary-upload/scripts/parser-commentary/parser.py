@@ -33,6 +33,8 @@ TRANSCLUSION_RE = re.compile(r'^\s*!\[\[.*?#\^.*?\]\]\s*$')
 _TRANS_REF_RE = re.compile(r'!\[\[.*?#\^([A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)\]\]')
 # Same, capturing the linked file as well: (file, ref)
 _TRANS_FILE_REF_RE = re.compile(r'!\[\[([^\]#|]*)#\^([A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)\]\]')
+# A later volume's opening block in a joined file (merge_volumes.py): ^<book>-T<k>.
+_VOLUME_OPENING_RE = re.compile(r'^\d+-T\d+$')
 _WYLIE_RE = re.compile(r"'[a-zA-Z]")
 
 
@@ -406,12 +408,11 @@ def _build_content_and_segmentation(blocks, doc_default):
                 f"segment; the parts may each need their own block ID",
                 file=sys.stderr,
             )
-        # Verse wins: several lines with no gap is a verse wherever it sits,
-        # front matter or colophon included. Otherwise the ID decides.
-        if _is_verse_shape(content_lines):
-            seg_type = "verse"
-        else:
-            seg_type = _infer_segment_type(ref_no_caret, doc_default)
+        # The ID decides the type, as in the Abhidhamma and Vinaya vaults:
+        # commentary blocks are paragraphs, verses (gāthās) included. (The
+        # earlier "verse wins" rule typed any multi-line block as a verse;
+        # changed 2026-11-20 to match vinaya-rails.)
+        seg_type = _infer_segment_type(ref_no_caret, doc_default)
         seg_list.append({"lines": line_spans, "type": seg_type, "reference": ref_no_caret})
 
     return "".join(parts), seg_list, headings
@@ -527,20 +528,34 @@ def build_alignment(source_path):
 
     for block in blocks:
         lines = block["lines"]
-        # Headings are invisible to alignment (FORK, Dzongsar-dolma-bumtsok-rails
-        # 2026-09-26): they are never aligned and they neither close nor reset the
-        # current scope — only the next transclusion group does. A heading line
-        # glued to transclusion lines is dropped and the rest read as usual.
+        # A heading ends the current scope, as in the Abhidhamma vault
+        # (abhidhamma-rails parser-commentary, used for its pi-1 … pi-7
+        # uploads) and the Vinaya vault: commentary after a heading must carry
+        # its own transclusion to be aligned. Headings are never aligned. Root
+        # transclusions glued to the heading open the new scope. (Changed
+        # 2026-11-20 from the run-on-across-headings rule, to match vinaya-rails.)
         if block["is_header"]:
-            lines = [l for l in lines if not l.lstrip().startswith('#')]
-            if not any(l.strip() for l in lines):
-                continue
-            block = {**block, "ref": None}
+            glued = [r for l in lines if not l.lstrip().startswith('#')
+                     for f, r in _TRANS_FILE_REF_RE.findall(l)
+                     if root_name is None or _note_name(f) == root_name]
+            active_targets = list(dict.fromkeys(glued))
+            prev_trans_only = False
+            continue
         # Only transclusions of the root_text file give alignment targets
         # (FORK, Dzongsar-dolma-bumtsok-rails 2026-09-26). A transclusion of any
         # other file still counts as a transclusion group — it closes the
         # current scope — but adds no target, so the commentary under it stays
         # unaligned instead of being paired with a same-numbered root block.
+        # A volume's opening lines in a file joined from several volumes
+        # (merge_volumes.py: its homage and nikāya line, ^<book>-T<k>) start a
+        # new volume. They are never aligned, and they end the current scope,
+        # so the next volume's blocks before its first transclusion group stay
+        # unaligned, exactly as they were when each volume was its own file
+        # (sutta-rails, 2026-11-20).
+        if block["ref"] and _VOLUME_OPENING_RE.match(block["ref"].lstrip("^")):
+            active_targets = []
+            prev_trans_only = False
+            continue
         trans_links = [(f, r) for l in lines for f, r in _TRANS_FILE_REF_RE.findall(l)]
         trans_refs = [r for f, r in trans_links
                       if root_name is None or _note_name(f) == root_name]

@@ -171,7 +171,7 @@ Run from the vault root. `R=4-SYSTEM/Skills/cscd-root-text-intake/scripts`, `S=4
    - every explained site difference.
    
    Then ask for approval.
-10. **On approval:** add the `registered_id`s to annex §3, then `mv -n $T/pi-$C-<book>-<layer>.md 1-SOURCES/Commentaries/`. Rerun steps 7–8 on the moved files, passing `--unresolved $T/pi-$C-<book>-<layer>.unresolved.json` to `verify_commentary.py` (the logs stay in `0-INBOX/`).
+10. **On approval:** add the `registered_id`s to annex §3. A single-volume work (a KN book) moves as is. For a multi-volume work (DN, MN, SN, AN), build each volume against its per-volume root draft in `0-INBOX/temp/$C/`, verify it, then join the volumes with `cscd-root-text-intake/scripts/merge_volumes.py <out> <parts…> --title "<Nikāya>-<layer label>" --registered-id $C-<layer> --root-text 1-SOURCES/Text/pi-$C.md [--commentary 1-SOURCES/Commentaries/pi-$C-atthakatha.md] --relink 1-SOURCES/Text/pi-$C-<book>.md=1-SOURCES/Text/pi-$C.md …` (one `--relink` per volume), check it word for word against the XML volumes, and move the joined file. Otherwise `mv -n $T/pi-$C-<book>-<layer>.md 1-SOURCES/Commentaries/`. Rerun steps 7–8 on the moved files, passing `--unresolved $T/pi-$C-<book>-<layer>.unresolved.json` to `verify_commentary.py` (the logs stay in `0-INBOX/`).
 
 ---
 

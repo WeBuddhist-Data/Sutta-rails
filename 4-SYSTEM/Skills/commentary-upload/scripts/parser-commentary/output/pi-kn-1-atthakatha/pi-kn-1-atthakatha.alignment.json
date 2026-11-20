@@ -281,50 +281,6 @@
       "target_segment_reference": "1-5-1"
     },
     {
-      "source_segment_reference": "1-444",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-445",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-446",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-447",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-448",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-449",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-450",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-451",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-452",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-453",
-      "target_segment_reference": "1-5-1"
-    },
-    {
-      "source_segment_reference": "1-454",
-      "target_segment_reference": "1-5-1"
-    },
-    {
       "source_segment_reference": "1-455",
       "target_segment_reference": "1-5-2"
     },
@@ -981,86 +937,6 @@
       "target_segment_reference": "1-5-13"
     },
     {
-      "source_segment_reference": "1-619",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-620",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-621",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-622",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-623",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-624",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-625",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-626",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-627",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-628",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-629",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-630",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-631",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-632",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-633",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-634",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-635",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-636",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-637",
-      "target_segment_reference": "1-5-13"
-    },
-    {
-      "source_segment_reference": "1-638",
-      "target_segment_reference": "1-5-13"
-    },
-    {
       "source_segment_reference": "1-639",
       "target_segment_reference": "1-6-1"
     },
@@ -1445,78 +1321,6 @@
       "target_segment_reference": "1-6-17"
     },
     {
-      "source_segment_reference": "1-735",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-736",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-737",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-738",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-739",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-740",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-741",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-742",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-743",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-744",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-745",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-746",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-747",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-748",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-749",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-750",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-751",
-      "target_segment_reference": "1-6-17"
-    },
-    {
-      "source_segment_reference": "1-752",
-      "target_segment_reference": "1-6-17"
-    },
-    {
       "source_segment_reference": "1-753",
       "target_segment_reference": "1-7-1"
     },
@@ -1769,75 +1573,11 @@
       "target_segment_reference": "1-7-12"
     },
     {
-      "source_segment_reference": "1-796",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-797",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-798",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-799",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-800",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-801",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-802",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-803",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-804",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-805",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-806",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-807",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-808",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-809",
-      "target_segment_reference": "1-7-12"
-    },
-    {
-      "source_segment_reference": "1-810",
-      "target_segment_reference": "1-7-12"
-    },
-    {
       "source_segment_reference": "1-811",
       "target_segment_reference": "1-8-1"
     },
     {
       "source_segment_reference": "1-812",
-      "target_segment_reference": "1-8-1"
-    },
-    {
-      "source_segment_reference": "1-813",
       "target_segment_reference": "1-8-1"
     },
     {
@@ -1869,10 +1609,6 @@
       "target_segment_reference": "1-8-2"
     },
     {
-      "source_segment_reference": "1-821",
-      "target_segment_reference": "1-8-2"
-    },
-    {
       "source_segment_reference": "1-822",
       "target_segment_reference": "1-8-3"
     },
@@ -1882,10 +1618,6 @@
     },
     {
       "source_segment_reference": "1-824",
-      "target_segment_reference": "1-8-3"
-    },
-    {
-      "source_segment_reference": "1-825",
       "target_segment_reference": "1-8-3"
     },
     {
@@ -1917,10 +1649,6 @@
       "target_segment_reference": "1-8-5"
     },
     {
-      "source_segment_reference": "1-833",
-      "target_segment_reference": "1-8-5"
-    },
-    {
       "source_segment_reference": "1-834",
       "target_segment_reference": "1-8-6"
     },
@@ -1934,10 +1662,6 @@
     },
     {
       "source_segment_reference": "1-837",
-      "target_segment_reference": "1-8-6"
-    },
-    {
-      "source_segment_reference": "1-838",
       "target_segment_reference": "1-8-6"
     },
     {
@@ -1969,10 +1693,6 @@
       "target_segment_reference": "1-8-7"
     },
     {
-      "source_segment_reference": "1-846",
-      "target_segment_reference": "1-8-7"
-    },
-    {
       "source_segment_reference": "1-847",
       "target_segment_reference": "1-8-8"
     },
@@ -1997,10 +1717,6 @@
       "target_segment_reference": "1-8-8"
     },
     {
-      "source_segment_reference": "1-853",
-      "target_segment_reference": "1-8-8"
-    },
-    {
       "source_segment_reference": "1-854",
       "target_segment_reference": "1-8-9"
     },
@@ -2010,10 +1726,6 @@
     },
     {
       "source_segment_reference": "1-856",
-      "target_segment_reference": "1-8-9"
-    },
-    {
-      "source_segment_reference": "1-857",
       "target_segment_reference": "1-8-9"
     },
     {
@@ -2150,58 +1862,6 @@
     },
     {
       "source_segment_reference": "1-891",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-892",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-893",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-894",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-895",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-896",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-897",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-898",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-899",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-900",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-901",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-902",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-903",
-      "target_segment_reference": "1-8-16"
-    },
-    {
-      "source_segment_reference": "1-904",
       "target_segment_reference": "1-8-16"
     },
     {
@@ -2426,42 +2086,6 @@
     },
     {
       "source_segment_reference": "1-960",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-961",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-962",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-963",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-964",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-965",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-966",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-967",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-968",
-      "target_segment_reference": "1-9-10"
-    },
-    {
-      "source_segment_reference": "1-969",
       "target_segment_reference": "1-9-10"
     }
   ]

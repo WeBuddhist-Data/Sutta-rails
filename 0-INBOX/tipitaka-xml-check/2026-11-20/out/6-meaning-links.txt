@@ -1,0 +1,29 @@
+  linked ['2-232-246'] (0.15)  best ^3-T1 (1.00)  | '232-246. **Thambhassā**ti kodhamānavasena thaddhabhāvassa. **Sārabbhas'
+  linked ['3-164-183', '3-184'] (0.10)  best ^4-T1 (1.00)  | '164-184. **Samanuñño**ti samānajjhāsayo. **Rāgassā**ti pañcakāmaguṇika'
+  linked ['4-274', '4-275', '4-276', '4-277-303', '4-304-783'] (0.09)  best ^5-T1 (1.00)  | '274-783. Rāgapeyyālaṃ arahattaṃ pāpetvā kathitaṃ. Sesaṃ sabbattha uttā'
+  linked ['5-181'] (0.29)  best ^5-184 (0.55)  | '181. Catutthassa paṭhame **mandattā momūhattā**ti neva samādānaṃ jānāt'
+pi-an-atthakatha.md: 1212 link groups, 4 flagged
+  linked ['1-559'] (0.17)  best ^2-T1 (1.00)  | '559. **Ete** **mayaṃ bhavantaṃ gotama**nti idaṃ tesaṃ dutiyaṃ saraṇaga'
+  linked ['2-308'] (0.17)  best ^2-309 (0.88)  | '308. **Sarāmahaṃ bho**ti tadā kira manussānaṃ saccavādikālo hoti, tasm'
+  linked ['2-441'] (0.19)  best ^3-T1 (1.00)  | '441. **Āyasmā** **gavaṃpatī**ti thero kira pubbe manussakāle gopāladār'
+pi-dn-atthakatha.md: 958 link groups, 3 flagged
+  linked ['1-7-3'] (0.69)  best ^1-7-2 (1.00)  | '3. Evaṃ bhagavā anappakepi annapānādimhi paccupaṭṭhite "api nāma amhe '
+  linked ['1-7-4'] (0.00)  best ^1-7-3 (1.00)  | '4. Evaṃ bhagavā raññā māgadhena petabhūtānaṃ ñātīnaṃ anukampāya dinnaṃ'
+  linked ['1-7-10'] (0.00)  best ^1-7-9 (0.78)  | '10. Evaṃ bhagavā "ito dinnena yāpenti, petā kālagatā tahi"nti imaṃ att'
+  linked ['1-7-11'] (0.11)  best ^1-7-9 (1.00)  | '11. Evaṃ bhagavā petānaṃ dakkhiṇāniyyātane kāraṇabhūtāni anussaraṇavat'
+  linked ['1-7-12'] (0.00)  best ^1-7-11 (0.89)  | '12. Evaṃ bhagavā "ruṇṇaṃ vā soko vā yā caññā paridevanā, sabbampi taṃ '
+pi-kn-1-atthakatha.md: 67 link groups, 5 flagged
+pi-kn-2-atthakatha.md: 436 link groups, 0 flagged
+  linked ['1-14'] (0.36)  best ^1-16 (0.73)  | '14. **Evaṃ** **me sutaṃ…pe… sāvatthiya**nti sabbāsavasuttaṃ. Tatrāyaṃ '
+  linked ['1-72'] (0.62)  best ^1-71 (0.95)  | '72. Ettāvatā saṃkilesaṃ dassetvā idāni vodānaṃ dassento **sa kho so, b'
+  linked ['1-513'] (0.24)  best ^2-T1 (1.00)  | '513. **Vidhuraṃ sāvakamāsajjā**ti vidhuraṃ sāvakaṃ ghaṭṭayitvā. **Pacc'
+  linked ['2-485'] (0.50)  best ^3-T1 (1.00)  | '485. **Aṭṭhitavata**nti aṭṭhitatapaṃ, assa padhānapadena saddhiṃ samba'
+  linked ['3-135'] (0.45)  best ^3-134 (0.76)  | '135. **Ye sattasārā**ti ariṭṭho upariṭṭho tagarasikhī yasassī sudassan'
+  linked ['3-241'] (0.42)  best ^3-242 (0.78)  | '241. **Atthi pana vo**ti pacchimapucchāya lokuttaradhammaṃ puccheyya. '
+pi-mn-atthakatha.md: 1098 link groups, 6 flagged
+  linked ['1-271'] (0.20)  best ^2-T1 (1.00)  | '271. Pañcame **mā vo kodho ajjhabhavī**ti kodho tumhe mā abhibhavi, tu'
+  linked ['2-4'] (0.38)  best ^2-5 (0.80)  | '4. Catutthe **vipassissā**ti tassa kira bodhisattassa yathā lokiyamanu'
+  linked ['2-246'] (0.14)  best ^3-T1 (1.00)  | '246. Dvādasame **cirarattaṃsametikā**ti dīgharattaṃ saṃsanditvā sametv'
+  linked ['3-170', '3-171', '3-172', '3-173', '3-174', '3-175', '3-176', '3-177', '3-178', '3-179', '3-180', '3-181'] (0.16)  best ^3-184 (0.50)  | '170-181. Dutiyavaggassa paṭhame **māro, māro**ti maraṇaṃ pucchati. Yas'
+  linked ['4-420'] (0.14)  best ^5-T1 (1.00)  | '420. Ekādasame **etamettakena ettakamevā**ti āvuso yassāpi etaṃ ettake'
+pi-sn-atthakatha.md: 959 link groups, 5 flagged

@@ -61,13 +61,13 @@ Scores a Tibetan OCR file's perplexity against a language model, so a bad scan i
 ### `cscd-root-text-intake` **[exists]**
 **Purpose:** Bring a Pāli root-text volume from VRI's CSCD XML into `1-SOURCES/Text/` with block IDs (printed paragraph number = ID), verified word for word against the XML and line for line against tipitaka.app. Handles sutta-`<div>` volumes (Dīgha), suttas inside vagga `<div>`s (Majjhima) and saṃyutta `<div>`s with vagga and sutta headings, printed paragraph ranges and gaps (Saṃyutta), and a tree mode that reads heading levels from the XML's own nesting (Aṅguttara); anything else stops the run.
 **Inputs:** CSCD `.mul.xml` stem(s), the book number and file name per volume from the annex, and approval to download.
-**Outputs:** `1-SOURCES/Text/pi-<collection>-<book>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and intermediates in `0-INBOX/temp/<collection>/`.
+**Outputs:** `1-SOURCES/Text/pi-<collection>.md` for a multi-volume work (DN, MN, SN, AN: volumes built and verified one by one, then joined with `merge_volumes.py`, each volume a `##` chapter) or `pi-kn-<book>.md` for a KN book (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and intermediates in `0-INBOX/temp/<collection>/`.
 → [`cscd-root-text-intake/SKILL.md`](cscd-root-text-intake/SKILL.md)
 
 ### `cscd-commentary-intake` **[exists]**
 **Purpose:** Bring a Pāli commentary work from VRI's CSCD XML into `1-SOURCES/Commentaries/` with block IDs and links to the root paragraphs it cites, verified against the XML and tipitaka.app. Same shapes as `cscd-root-text-intake` (Dīgha, Majjhima, Saṃyutta, Aṅguttara), and one file per book of a multi-book volume; a cited number links to the root block that holds it, including a printed range.
 **Inputs:** CSCD `.att`/`.tik`/`.nrf` stem(s), the root file already in `1-SOURCES/Text/`, the file name and `registered_id` from the annex, and approval to download.
-**Outputs:** `1-SOURCES/Commentaries/pi-<collection>-<book>-<layer>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and drafts, logs and site data in `0-INBOX/`.
+**Outputs:** `1-SOURCES/Commentaries/pi-<collection>-<layer>.md` for a multi-volume work (joined per nikāya like the root) or `pi-kn-<book>-<layer>.md` (after approval), with the XML in `0-INBOX/raw-data/<collection>/` and drafts, logs and site data in `0-INBOX/`.
 → [`cscd-commentary-intake/SKILL.md`](cscd-commentary-intake/SKILL.md)
 
 ---
@@ -402,7 +402,7 @@ Lints, parses and uploads a root text to the library backend as a text, an editi
 → [`root-text-upload/SKILL.md`](root-text-upload/SKILL.md)
 
 ### `commentary-upload`
-Lints, parses and uploads a commentary to the library backend as its own text with an edition, a table of contents and an alignment to the root edition's segments.
+Lints, parses and uploads a commentary to the library backend as its own text with an edition, a table of contents and an alignment to the root edition's segments. A parser rule changed after upload is re-applied to the live commentary with `replace_segmentation.py` (same ids).
 → [`commentary-upload/SKILL.md`](commentary-upload/SKILL.md)
 
 ### `yigchung-upload`

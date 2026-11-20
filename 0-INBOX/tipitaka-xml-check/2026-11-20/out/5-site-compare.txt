@@ -1,0 +1,1099 @@
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-dn-1.md'
+pi-dn-1 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-1-atthakatha.md'
+pi-dn-1-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-1-tiika.md'
+pi-dn-1-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-dn-2.md'
+pi-dn-2 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-2-atthakatha.md'
+pi-dn-2-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-2-tiika.md'
+pi-dn-2-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-dn-3.md'
+pi-dn-3 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-3-atthakatha.md'
+pi-dn-3-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-3-tiika.md'
+pi-dn-3-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-mn-1.md'
+pi-mn-1 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-1-atthakatha.md'
+pi-mn-1-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-1-tiika.md'
+pi-mn-1-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-mn-2.md'
+pi-mn-2 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-2-atthakatha.md'
+pi-mn-2-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-2-tiika.md'
+pi-mn-2-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-mn-3.md'
+pi-mn-3 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-3-atthakatha.md'
+pi-mn-3-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-mn-3-tiika.md'
+pi-mn-3-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-sn-1.md'
+pi-sn-1 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-1-atthakatha.md'
+pi-sn-1-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-1-tiika.md'
+pi-sn-1-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-sn-2.md'
+pi-sn-2 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-2-atthakatha.md'
+pi-sn-2-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-2-tiika.md'
+pi-sn-2-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-sn-3.md'
+pi-sn-3 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-3-atthakatha.md'
+pi-sn-3-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-3-tiika.md'
+pi-sn-3-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-sn-4.md'
+pi-sn-4 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-4-atthakatha.md'
+pi-sn-4-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-4-tiika.md'
+pi-sn-4-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-sn-5.md'
+pi-sn-5 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-5-atthakatha.md'
+pi-sn-5-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-sn-5-tiika.md'
+pi-sn-5-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 148, in <module>
+    a_items = md_items(atta_md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-dn-1-atthakatha.md'
+pi-dn-1-abhinavatiika |  note: 66 bold group(s) the site joins into one span (XML and md keep them apart), e.g. site ['sanarāmaralokagaruṃ."Sanaramarūlokagaru'] vs md ['sanarāmaralokagaruṃ', 'Sa
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-1.md'
+pi-an-1 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-1-atthakatha.md'
+pi-an-1-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-1-tiika.md'
+pi-an-1-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-2.md'
+pi-an-2 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-2-atthakatha.md'
+pi-an-2-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-2-tiika.md'
+pi-an-2-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-3.md'
+pi-an-3 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-3-atthakatha.md'
+pi-an-3-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-3-tiika.md'
+pi-an-3-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-4.md'
+pi-an-4 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-4-atthakatha.md'
+pi-an-4-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-4-tiika.md'
+pi-an-4-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-5.md'
+pi-an-5 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-5-atthakatha.md'
+pi-an-5-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-5-tiika.md'
+pi-an-5-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-6.md'
+pi-an-6 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-6-atthakatha.md'
+pi-an-6-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-6-tiika.md'
+pi-an-6-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-7.md'
+pi-an-7 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-7-atthakatha.md'
+pi-an-7-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-7-tiika.md'
+pi-an-7-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-8.md'
+pi-an-8 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-8-atthakatha.md'
+pi-an-8-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-8-tiika.md'
+pi-an-8-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-9.md'
+pi-an-9 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-9-atthakatha.md'
+pi-an-9-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-9-tiika.md'
+pi-an-9-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-10.md'
+pi-an-10 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-10-atthakatha.md'
+pi-an-10-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-10-tiika.md'
+pi-an-10-tiika | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-root-text-intake/scripts/compare_site.py", line 38, in <module>
+    lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Text/pi-an-11.md'
+pi-an-11 | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-11-atthakatha.md'
+pi-an-11-atthakatha | 
+Traceback (most recent call last):
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 94, in <module>
+    items = md_items(md)
+  File "/Users/lobsangtseten/Desktop/Suttapitaka/Sutta-rails/4-SYSTEM/Skills/cscd-commentary-intake/scripts/compare_site_commentary.py", line 53, in md_items
+    body = Path(path).read_text(encoding="utf-8").split("\n---\n", 1)[1]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '1-SOURCES/Commentaries/pi-an-11-tiika.md'
+pi-an-11-tiika | 
+pi-kn-1 |  PASS
+pi-kn-1-atthakatha |  - site link commentary para 1007 -> root 13: md scope []
+pi-kn-2 |  PASS
+pi-kn-2-atthakatha |  - tree delete: site ['Dhammapada-aṭṭhakathā'] | md []

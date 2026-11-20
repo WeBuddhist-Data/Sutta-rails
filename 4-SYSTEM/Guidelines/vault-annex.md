@@ -10,34 +10,36 @@ When the Guidelines and this annex disagree on a vault-specific detail, this ann
 
 This vault serves the **Pāli Sutta Piṭaka**, the second basket of the Pāli Canon, in the Chaṭṭha Saṅgāyana (CSCD) edition published by the Vipassana Research Institute.
 
-Source-text files in `1-SOURCES/Text/` are **one file per CSCD volume**. Ingested so far:
+Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vinaya and Abhidhamma vaults: a work CSCD prints in several volumes is one file, and each volume is a `##` chapter in it. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are each one work (`pi-dn.md`, `pi-mn.md`, `pi-sn.md`, `pi-an.md`). Each Khuddakanikāya book is a work of its own (`pi-kn-<book>.md`). Each volume is still built and verified on its own (`cscd-root-text-intake`), then the volumes are joined with `merge_volumes.py` (merged 2026-11-20). Ingested so far:
 
-| Nikāya | Volume | `book` | CSCD source | tipitaka.app key | Filename |
-| ------ | ------ | ------ | ----------- | ---------------- | -------- |
-| Dīghanikāya | Sīlakkhandhavaggapāḷi | 1 | `s0101m.mul.xml` | `dn-1` | `pi-dn-1.md` |
-| Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dn-2.md` |
-| Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dn-3.md` |
-| Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-mn-1.md` |
-| Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-mn-2.md` |
-| Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-mn-3.md` |
-| Saṃyuttanikāya | Sagāthāvaggo | 1 | `s0301m.mul.xml` | `sn-1` | `pi-sn-1.md` |
-| Saṃyuttanikāya | Nidānavaggo | 2 | `s0302m.mul.xml` | `sn-2` | `pi-sn-2.md` |
-| Saṃyuttanikāya | Khandhavaggo | 3 | `s0303m.mul.xml` | `sn-3` | `pi-sn-3.md` |
-| Saṃyuttanikāya | Saḷāyatanavaggo | 4 | `s0304m.mul.xml` | `sn-4` | `pi-sn-4.md` |
-| Saṃyuttanikāya | Mahāvaggo | 5 | `s0305m.mul.xml` | `sn-5` | `pi-sn-5.md` |
-| Aṅguttaranikāya | Ekakanipātapāḷi | 1 | `s0401m.mul.xml` | `an-1` | `pi-an-1.md` |
-| Aṅguttaranikāya | Dukanipātapāḷi | 2 | `s0402m1.mul.xml` | `an-2` | `pi-an-2.md` |
-| Aṅguttaranikāya | Tikanipātapāḷi | 3 | `s0402m2.mul.xml` | `an-3` | `pi-an-3.md` |
-| Aṅguttaranikāya | Catukkanipātapāḷi | 4 | `s0402m3.mul.xml` | `an-4` | `pi-an-4.md` |
-| Aṅguttaranikāya | Pañcakanipātapāḷi | 5 | `s0403m1.mul.xml` | `an-5` | `pi-an-5.md` |
-| Aṅguttaranikāya | Chakkanipātapāḷi | 6 | `s0403m2.mul.xml` | `an-6` | `pi-an-6.md` |
-| Aṅguttaranikāya | Sattakanipātapāḷi | 7 | `s0403m3.mul.xml` | `an-7` | `pi-an-7.md` |
-| Aṅguttaranikāya | Aṭṭhakanipātapāḷi | 8 | `s0404m1.mul.xml` | `an-8` | `pi-an-8.md` |
-| Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-an-9.md` |
-| Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-an-10.md` |
-| Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-an-11.md` |
+| Nikāya | Volume = chapter | `book` | CSCD source | tipitaka.app key | Filename |
+| ------ | ---------------- | ------ | ----------- | ---------------- | -------- |
+| Dīghanikāya | Sīlakkhandhavaggapāḷi | 1 | `s0101m.mul.xml` | `dn-1` | `pi-dn.md` |
+| Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dn.md` |
+| Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dn.md` |
+| Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-mn.md` |
+| Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-mn.md` |
+| Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-mn.md` |
+| Saṃyuttanikāya | Sagāthāvaggo | 1 | `s0301m.mul.xml` | `sn-1` | `pi-sn.md` |
+| Saṃyuttanikāya | Nidānavaggo | 2 | `s0302m.mul.xml` | `sn-2` | `pi-sn.md` |
+| Saṃyuttanikāya | Khandhavaggo | 3 | `s0303m.mul.xml` | `sn-3` | `pi-sn.md` |
+| Saṃyuttanikāya | Saḷāyatanavaggo | 4 | `s0304m.mul.xml` | `sn-4` | `pi-sn.md` |
+| Saṃyuttanikāya | Mahāvaggo | 5 | `s0305m.mul.xml` | `sn-5` | `pi-sn.md` |
+| Aṅguttaranikāya | Ekakanipātapāḷi | 1 | `s0401m.mul.xml` | `an-1` | `pi-an.md` |
+| Aṅguttaranikāya | Dukanipātapāḷi | 2 | `s0402m1.mul.xml` | `an-2` | `pi-an.md` |
+| Aṅguttaranikāya | Tikanipātapāḷi | 3 | `s0402m2.mul.xml` | `an-3` | `pi-an.md` |
+| Aṅguttaranikāya | Catukkanipātapāḷi | 4 | `s0402m3.mul.xml` | `an-4` | `pi-an.md` |
+| Aṅguttaranikāya | Pañcakanipātapāḷi | 5 | `s0403m1.mul.xml` | `an-5` | `pi-an.md` |
+| Aṅguttaranikāya | Chakkanipātapāḷi | 6 | `s0403m2.mul.xml` | `an-6` | `pi-an.md` |
+| Aṅguttaranikāya | Sattakanipātapāḷi | 7 | `s0403m3.mul.xml` | `an-7` | `pi-an.md` |
+| Aṅguttaranikāya | Aṭṭhakanipātapāḷi | 8 | `s0404m1.mul.xml` | `an-8` | `pi-an.md` |
+| Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-an.md` |
+| Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-an.md` |
+| Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-an.md` |
 | Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-kn-1.md` |
 | Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-kn-2.md` |
+
+**Before 2026-11-20** each volume was its own file (`pi-dn-1.md` … `pi-an-11.md`) and its own library text. Those files are in git history; the verification reports in `0-INBOX/` dated before the merge refer to them.
 
 Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya is being added book by book. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16.
 
@@ -49,7 +51,9 @@ Only volumes that have been ingested are present in the folder. The Dīgha-, Maj
 - book → saṃyutta `<div>`s, with vaggas as `title` and suttas as `subhead` paragraphs (Saṃyutta);
 - **tree mode** (Aṅguttara), where divisions nest in more than one way. Each heading's level is read from the XML's own nesting.
 
-**Aṅguttaranikāya:** one file per nipāta, as CSCD prints the root and tipitaka.app shows all three layers. `book` is the nipāta number. A CSCD commentary volume holds several nipātas as separate books (`s0402a` = Duka-, Tika-, Catukkanipāta), and each becomes its own file. Converted in tree mode (`--tree`, and `--book K` for the commentaries).
+**Aṅguttaranikāya:** each nipāta is built as its own volume file, as CSCD prints the root and tipitaka.app shows all three layers, then the eleven are joined into `pi-an.md`. `book` is the nipāta number. A CSCD commentary volume holds several nipātas as separate books (`s0402a` = Duka-, Tika-, Catukkanipāta); each is built on its own (tree mode, `--book K`) and the eleven are joined into `pi-an-atthakatha.md` / `pi-an-tiika.md`.
+
+**Joining volumes (`merge_volumes.py`, in `cscd-root-text-intake/scripts/`):** every block of every volume is kept in order with its ID. The first volume's homage `^T-1` and `# <nikāya> ^0` open the file. A later volume's own opening lines are printed text, so they stay where printed, as plain blocks: its homage becomes `^<book>-T1` and its printed nikāya line `^<book>-T2` (see the deviation in §2). Transclusions are pointed at the joined root. The join is checked word for word against the XML volumes in order.
 
 ---
 
@@ -116,7 +120,7 @@ Each heading segment is the heading's **sibling position** under its parent. It 
 ### Verse numbering rule
 
 - The content ID is the **paragraph number printed in CSCD**, copied verbatim: never renumbered, padded or invented.
-- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360; Mūlapaṇṇāsa 1–513, Majjhimapaṇṇāsa 1–486, Uparipaṇṇāsa 1–463; Sagāthāvagga 1–271, Nidānavagga 1–246, Khandhavagga 1–716, Saḷāyatanavagga 1–420, Mahāvagga 1–1201; the eleven nipātas 1–611, 1–246, 1–184, 1–783, 1–1151, 1–649, 1–1132, 1–626, 1–432, 1–746 and 1–671. One file per volume therefore gives each file a single unbroken run, and content IDs need no zone segment.
+- CSCD restarts paragraph numbers at 1 in **each volume**: Sīlakkhandhavagga 1–559, Mahāvagga 1–441, Pāthikavagga 1–360; Mūlapaṇṇāsa 1–513, Majjhimapaṇṇāsa 1–486, Uparipaṇṇāsa 1–463; Sagāthāvagga 1–271, Nidānavagga 1–246, Khandhavagga 1–716, Saḷāyatanavagga 1–420, Mahāvagga 1–1201; the eleven nipātas 1–611, 1–246, 1–184, 1–783, 1–1151, 1–649, 1–1132, 1–626, 1–432, 1–746 and 1–671. The `book` segment keeps the runs apart, so a joined nikāya file holds one unbroken run per chapter (`^1-…`, `^2-…`, …) and content IDs need no zone segment.
 - The number does **not** restart at sutta or sub-heading boundaries.
 - A paragraph's unnumbered continuation lines, gāthā lines and closing lines (`… niṭṭhitaṃ`) stay in its block. The ID goes on the block's last line.
 - CSCD sometimes prints a paragraph number on a line of its own (`<p rend="hangnum">`), with the paragraph's gāthā on the next line. The number is joined to that gāthā line, as tipitaka.app shows it. This happens in 10 MN paragraphs (MN 1 ¶513; MN 2 ¶76, 456–460; MN 3 ¶135, 237, 382) and 48 in SN 1, and in AN 8 ¶32.
@@ -163,6 +167,8 @@ These are mechanical changes only; no wording changes. `verify.py` and `compare_
 
 **Why:** the homage is part of the printed text but precedes all structure. A synthetic "Introduction" heading would add editorial structure the source does not have.
 
+**In a joined file** (registered 2026-11-20), only the first volume's opening lines are `^T-1` and `^0`. Each later volume's homage and printed nikāya line stay where printed, just before its `##` chapter heading, as plain text blocks `^<book>-T1` and `^<book>-T2` (e.g. `Dīghanikāyo ^2-T2` before `## Mahāvaggapāḷi ^2-0`). The vault's `(aṭṭhakathā)` / `(ṭīkā)` label is not printed, so it is not in these lines.
+
 #### ⚑ Unnumbered blocks `^<book>-U<k>` and duplicates `^<book>-<N>x<k>` (registered 2026-11-13)
 
 A paragraph that the source sets apart without a printed number (e.g. directly after a sub-heading) is its own block `^<book>-U<k>`, with `k` in document order within the file. A printed number repeated within one run takes `x1`, `x2`, … on its later copies.
@@ -186,54 +192,66 @@ No `registered_id` may be used in any rail until it is added to this roster.
 
 | `registered_id` | Title | Tier | Language | Root text | File |
 | --------------- | ----- | ---- | -------- | --------- | ---- |
-| `dn-1-atthakatha` | Sīlakkhandhavaggaṭṭhakathā | commentary | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-atthakatha.md` |
-| `dn-2-atthakatha` | Mahāvaggaṭṭhakathā | commentary | Pāli | `pi-dn-2.md` | `1-SOURCES/Commentaries/pi-dn-2-atthakatha.md` |
-| `dn-3-atthakatha` | Pāthikavaggaṭṭhakathā | commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-atthakatha.md` |
-| `dn-1-tiika` | Sīlakkhandhavaggaṭīkā | sub-commentary | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-tiika.md` |
-| `dn-2-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-dn-2.md` | `1-SOURCES/Commentaries/pi-dn-2-tiika.md` |
-| `dn-3-tiika` | Pāthikavaggaṭīkā | sub-commentary | Pāli | `pi-dn-3.md` | `1-SOURCES/Commentaries/pi-dn-3-tiika.md` |
-| `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn-1.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
-
-| `mn-1-atthakatha` | Mūlapaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-1.md` | `1-SOURCES/Commentaries/pi-mn-1-atthakatha.md` |
-| `mn-2-atthakatha` | Majjhimapaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-2.md` | `1-SOURCES/Commentaries/pi-mn-2-atthakatha.md` |
-| `mn-3-atthakatha` | Uparipaṇṇāsa-aṭṭhakathā | commentary | Pāli | `pi-mn-3.md` | `1-SOURCES/Commentaries/pi-mn-3-atthakatha.md` |
-| `mn-1-tiika` | Mūlapaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-1.md` | `1-SOURCES/Commentaries/pi-mn-1-tiika.md` |
-| `mn-2-tiika` | Majjhimapaṇṇāsaṭīkā | sub-commentary | Pāli | `pi-mn-2.md` | `1-SOURCES/Commentaries/pi-mn-2-tiika.md` |
-| `mn-3-tiika` | Uparipaṇṇāsa-ṭīkā | sub-commentary | Pāli | `pi-mn-3.md` | `1-SOURCES/Commentaries/pi-mn-3-tiika.md` |
-| `sn-1-atthakatha` | Sagāthāvagga-aṭṭhakathā | commentary | Pāli | `pi-sn-1.md` | `1-SOURCES/Commentaries/pi-sn-1-atthakatha.md` |
-| `sn-2-atthakatha` | Nidānavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-2.md` | `1-SOURCES/Commentaries/pi-sn-2-atthakatha.md` |
-| `sn-3-atthakatha` | Khandhavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-3.md` | `1-SOURCES/Commentaries/pi-sn-3-atthakatha.md` |
-| `sn-4-atthakatha` | Saḷāyatanavagga-aṭṭhakathā | commentary | Pāli | `pi-sn-4.md` | `1-SOURCES/Commentaries/pi-sn-4-atthakatha.md` |
-| `sn-5-atthakatha` | Mahāvagga-aṭṭhakathā | commentary | Pāli | `pi-sn-5.md` | `1-SOURCES/Commentaries/pi-sn-5-atthakatha.md` |
-| `sn-1-tiika` | Sagāthāvaggaṭīkā | sub-commentary | Pāli | `pi-sn-1.md` | `1-SOURCES/Commentaries/pi-sn-1-tiika.md` |
-| `sn-2-tiika` | Nidānavaggaṭīkā | sub-commentary | Pāli | `pi-sn-2.md` | `1-SOURCES/Commentaries/pi-sn-2-tiika.md` |
-| `sn-3-tiika` | Khandhavaggaṭīkā | sub-commentary | Pāli | `pi-sn-3.md` | `1-SOURCES/Commentaries/pi-sn-3-tiika.md` |
-| `sn-4-tiika` | Saḷāyatanavaggaṭīkā | sub-commentary | Pāli | `pi-sn-4.md` | `1-SOURCES/Commentaries/pi-sn-4-tiika.md` |
-| `sn-5-tiika` | Mahāvaggaṭīkā | sub-commentary | Pāli | `pi-sn-5.md` | `1-SOURCES/Commentaries/pi-sn-5-tiika.md` |
-| `an-1-atthakatha` | Ekakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-1.md` | `1-SOURCES/Commentaries/pi-an-1-atthakatha.md` |
-| `an-2-atthakatha` | Dukanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-2.md` | `1-SOURCES/Commentaries/pi-an-2-atthakatha.md` |
-| `an-3-atthakatha` | Tikanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-3.md` | `1-SOURCES/Commentaries/pi-an-3-atthakatha.md` |
-| `an-4-atthakatha` | Catukkanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-4.md` | `1-SOURCES/Commentaries/pi-an-4-atthakatha.md` |
-| `an-5-atthakatha` | Pañcakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-5.md` | `1-SOURCES/Commentaries/pi-an-5-atthakatha.md` |
-| `an-6-atthakatha` | Chakkanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-6.md` | `1-SOURCES/Commentaries/pi-an-6-atthakatha.md` |
-| `an-7-atthakatha` | Sattakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-7.md` | `1-SOURCES/Commentaries/pi-an-7-atthakatha.md` |
-| `an-8-atthakatha` | Aṭṭhakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-8.md` | `1-SOURCES/Commentaries/pi-an-8-atthakatha.md` |
-| `an-9-atthakatha` | Navakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-9.md` | `1-SOURCES/Commentaries/pi-an-9-atthakatha.md` |
-| `an-10-atthakatha` | Dasakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-10.md` | `1-SOURCES/Commentaries/pi-an-10-atthakatha.md` |
-| `an-11-atthakatha` | Ekādasakanipāta-aṭṭhakathā | commentary | Pāli | `pi-an-11.md` | `1-SOURCES/Commentaries/pi-an-11-atthakatha.md` |
-| `an-1-tiika` | Ekakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-1.md` | `1-SOURCES/Commentaries/pi-an-1-tiika.md` |
-| `an-2-tiika` | Dukanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-2.md` | `1-SOURCES/Commentaries/pi-an-2-tiika.md` |
-| `an-3-tiika` | Tikanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-3.md` | `1-SOURCES/Commentaries/pi-an-3-tiika.md` |
-| `an-4-tiika` | Catukkanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-4.md` | `1-SOURCES/Commentaries/pi-an-4-tiika.md` |
-| `an-5-tiika` | Pañcakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-5.md` | `1-SOURCES/Commentaries/pi-an-5-tiika.md` |
-| `an-6-tiika` | Chakkanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-6.md` | `1-SOURCES/Commentaries/pi-an-6-tiika.md` |
-| `an-7-tiika` | Sattakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-7.md` | `1-SOURCES/Commentaries/pi-an-7-tiika.md` |
-| `an-8-tiika` | Aṭṭhakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-8.md` | `1-SOURCES/Commentaries/pi-an-8-tiika.md` |
-| `an-9-tiika` | Navakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-9.md` | `1-SOURCES/Commentaries/pi-an-9-tiika.md` |
-| `an-10-tiika` | Dasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-10.md` | `1-SOURCES/Commentaries/pi-an-10-tiika.md` |
-| `an-11-tiika` | Ekādasakanipāta-ṭīkā | sub-commentary | Pāli | `pi-an-11.md` | `1-SOURCES/Commentaries/pi-an-11-tiika.md` |
+| `dn-atthakatha` | Dīghanikāya-aṭṭhakathā | commentary | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-atthakatha.md` |
+| `dn-tiika` | Dīghanikāya-ṭīkā | sub-commentary | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-tiika.md` |
+| `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
+| `mn-atthakatha` | Majjhimanikāya-aṭṭhakathā | commentary | Pāli | `pi-mn.md` | `1-SOURCES/Commentaries/pi-mn-atthakatha.md` |
+| `mn-tiika` | Majjhimanikāya-ṭīkā | sub-commentary | Pāli | `pi-mn.md` | `1-SOURCES/Commentaries/pi-mn-tiika.md` |
+| `sn-atthakatha` | Saṃyuttanikāya-aṭṭhakathā | commentary | Pāli | `pi-sn.md` | `1-SOURCES/Commentaries/pi-sn-atthakatha.md` |
+| `sn-tiika` | Saṃyuttanikāya-ṭīkā | sub-commentary | Pāli | `pi-sn.md` | `1-SOURCES/Commentaries/pi-sn-tiika.md` |
+| `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-atthakatha.md` |
+| `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-tiika.md` |
 | `kn-1-atthakatha` | Khuddakapāṭha-aṭṭhakathā | commentary | Pāli | `pi-kn-1.md` | `1-SOURCES/Commentaries/pi-kn-1-atthakatha.md` |
 | `kn-2-atthakatha` | Dhammapada-aṭṭhakathā | commentary | Pāli | `pi-kn-2.md` | `1-SOURCES/Commentaries/pi-kn-2-atthakatha.md` |
+
+**Retired 2026-11-20** (per-volume IDs, never reused). Each volume's commentary was its own file until the volumes were joined per nikāya. Each ID below is now a `##` chapter of the joined file:
+
+| Retired `registered_id` | Title (now a chapter) | Joined into |
+| --- | --- | --- |
+| `dn-1-atthakatha` | Sīlakkhandhavaggaṭṭhakathā | `dn-atthakatha` |
+| `dn-2-atthakatha` | Mahāvaggaṭṭhakathā | `dn-atthakatha` |
+| `dn-3-atthakatha` | Pāthikavaggaṭṭhakathā | `dn-atthakatha` |
+| `dn-1-tiika` | Sīlakkhandhavaggaṭīkā | `dn-tiika` |
+| `dn-2-tiika` | Mahāvaggaṭīkā | `dn-tiika` |
+| `dn-3-tiika` | Pāthikavaggaṭīkā | `dn-tiika` |
+| `mn-1-atthakatha` | Mūlapaṇṇāsa-aṭṭhakathā | `mn-atthakatha` |
+| `mn-2-atthakatha` | Majjhimapaṇṇāsa-aṭṭhakathā | `mn-atthakatha` |
+| `mn-3-atthakatha` | Uparipaṇṇāsa-aṭṭhakathā | `mn-atthakatha` |
+| `mn-1-tiika` | Mūlapaṇṇāsa-ṭīkā | `mn-tiika` |
+| `mn-2-tiika` | Majjhimapaṇṇāsaṭīkā | `mn-tiika` |
+| `mn-3-tiika` | Uparipaṇṇāsa-ṭīkā | `mn-tiika` |
+| `sn-1-atthakatha` | Sagāthāvagga-aṭṭhakathā | `sn-atthakatha` |
+| `sn-2-atthakatha` | Nidānavagga-aṭṭhakathā | `sn-atthakatha` |
+| `sn-3-atthakatha` | Khandhavagga-aṭṭhakathā | `sn-atthakatha` |
+| `sn-4-atthakatha` | Saḷāyatanavagga-aṭṭhakathā | `sn-atthakatha` |
+| `sn-5-atthakatha` | Mahāvagga-aṭṭhakathā | `sn-atthakatha` |
+| `sn-1-tiika` | Sagāthāvaggaṭīkā | `sn-tiika` |
+| `sn-2-tiika` | Nidānavaggaṭīkā | `sn-tiika` |
+| `sn-3-tiika` | Khandhavaggaṭīkā | `sn-tiika` |
+| `sn-4-tiika` | Saḷāyatanavaggaṭīkā | `sn-tiika` |
+| `sn-5-tiika` | Mahāvaggaṭīkā | `sn-tiika` |
+| `an-1-atthakatha` | Ekakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-2-atthakatha` | Dukanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-3-atthakatha` | Tikanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-4-atthakatha` | Catukkanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-5-atthakatha` | Pañcakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-6-atthakatha` | Chakkanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-7-atthakatha` | Sattakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-8-atthakatha` | Aṭṭhakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-9-atthakatha` | Navakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-10-atthakatha` | Dasakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-11-atthakatha` | Ekādasakanipāta-aṭṭhakathā | `an-atthakatha` |
+| `an-1-tiika` | Ekakanipāta-ṭīkā | `an-tiika` |
+| `an-2-tiika` | Dukanipāta-ṭīkā | `an-tiika` |
+| `an-3-tiika` | Tikanipāta-ṭīkā | `an-tiika` |
+| `an-4-tiika` | Catukkanipāta-ṭīkā | `an-tiika` |
+| `an-5-tiika` | Pañcakanipāta-ṭīkā | `an-tiika` |
+| `an-6-tiika` | Chakkanipāta-ṭīkā | `an-tiika` |
+| `an-7-tiika` | Sattakanipāta-ṭīkā | `an-tiika` |
+| `an-8-tiika` | Aṭṭhakanipāta-ṭīkā | `an-tiika` |
+| `an-9-tiika` | Navakanipāta-ṭīkā | `an-tiika` |
+| `an-10-tiika` | Dasakanipāta-ṭīkā | `an-tiika` |
+| `an-11-tiika` | Ekādasakanipāta-ṭīkā | `an-tiika` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 

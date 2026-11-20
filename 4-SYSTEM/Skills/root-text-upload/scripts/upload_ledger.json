@@ -1,4 +1,32 @@
 {
+  "pi-an": {
+    "edition_id": "uxeYZMNSAUqEK408gZ9W6",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "ZV0nnyNrdAs5qCMr4u30C",
+        "ts": "2026-11-20T10:38:45"
+      },
+      {
+        "chars": 2753760,
+        "edition_id": "uxeYZMNSAUqEK408gZ9W6",
+        "segments": 1899,
+        "step": "edition",
+        "ts": "2026-11-20T10:38:51"
+      },
+      {
+        "step": "toc",
+        "subsections": 11,
+        "toc_id": "PORi6IAAg28JTldCKiRRA",
+        "ts": "2026-11-20T10:38:55"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-an.md",
+    "text_id": "ZV0nnyNrdAs5qCMr4u30C",
+    "toc_id": "PORi6IAAg28JTldCKiRRA"
+  },
   "pi-an-1": {
     "edition_id": "UopigfzoTevjdwKcC00E7",
     "file_type": "root-text",
@@ -307,6 +335,34 @@
     "text_id": "3lYAlAzmWa087hlGQJs0V",
     "toc_id": "Uz0RbwL8gUu0QtMSNVvYD"
   },
+  "pi-dn": {
+    "edition_id": "zzEJt0lOkWnkepgn5UXDj",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "O4D2mIIgVEMj82ljsKBth",
+        "ts": "2026-11-20T10:37:55"
+      },
+      {
+        "chars": 1289242,
+        "edition_id": "zzEJt0lOkWnkepgn5UXDj",
+        "segments": 1367,
+        "step": "edition",
+        "ts": "2026-11-20T10:37:58"
+      },
+      {
+        "step": "toc",
+        "subsections": 3,
+        "toc_id": "RtTPE7ESydh2bCbu5Ozsr",
+        "ts": "2026-11-20T10:38:00"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-dn.md",
+    "text_id": "O4D2mIIgVEMj82ljsKBth",
+    "toc_id": "RtTPE7ESydh2bCbu5Ozsr"
+  },
   "pi-dn-1": {
     "edition_id": "4lUEgD4qPFWodyyqlhICx",
     "file_type": "root-text",
@@ -429,6 +485,34 @@
     "text_id": "MuwKRemR27jr6NkqjLnyl",
     "toc_id": "1mlXm3dPsnQ6D9peeA6Bc"
   },
+  "pi-mn": {
+    "edition_id": "6PPfQTUUOKIfHUZFMhy5T",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "u9MLgrwMkk8Z4bwlazQyP",
+        "ts": "2026-11-20T10:38:17"
+      },
+      {
+        "chars": 2222167,
+        "edition_id": "6PPfQTUUOKIfHUZFMhy5T",
+        "segments": 1467,
+        "step": "edition",
+        "ts": "2026-11-20T10:38:22"
+      },
+      {
+        "step": "toc",
+        "subsections": 3,
+        "toc_id": "8Wx06rT4CwtqTaFQTegbz",
+        "ts": "2026-11-20T10:38:23"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-mn.md",
+    "text_id": "u9MLgrwMkk8Z4bwlazQyP",
+    "toc_id": "8Wx06rT4CwtqTaFQTegbz"
+  },
   "pi-mn-1": {
     "edition_id": "aIXWlhR2vxkSUwyqXqAnU",
     "file_type": "root-text",
@@ -512,6 +596,34 @@
     "source_file": "1-SOURCES/Text/pi-mn-3.md",
     "text_id": "a16eguWjXslgsEZhMFjl0",
     "toc_id": "FHYhpcqRsrgwagkwmEw5N"
+  },
+  "pi-sn": {
+    "edition_id": "GEo57Bg25RbYxKoSnrBFX",
+    "file_type": "root-text",
+    "lang_tag": "pi",
+    "log": [
+      {
+        "step": "text",
+        "text_id": "uzZmqn2gy3nFauQi3A1Jc",
+        "ts": "2026-11-20T10:38:28"
+      },
+      {
+        "chars": 2349253,
+        "edition_id": "GEo57Bg25RbYxKoSnrBFX",
+        "segments": 1885,
+        "step": "edition",
+        "ts": "2026-11-20T10:38:31"
+      },
+      {
+        "step": "toc",
+        "subsections": 5,
+        "toc_id": "ZNtebjv9nvzCsPYsSkwSi",
+        "ts": "2026-11-20T10:38:37"
+      }
+    ],
+    "source_file": "1-SOURCES/Text/pi-sn.md",
+    "text_id": "uzZmqn2gy3nFauQi3A1Jc",
+    "toc_id": "ZNtebjv9nvzCsPYsSkwSi"
   },
   "pi-sn-1": {
     "edition_id": "SxPJdoL6EYy69LzgosNl4",
