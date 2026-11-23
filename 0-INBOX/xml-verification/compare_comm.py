@@ -224,7 +224,9 @@ for i, (k, st, lines, bid, links) in enumerate(blocks):
         b = a[:len(a) - len(b)] + b
     book = got[0].split("-")[0]
     want = [f"{book}-{n}" for n in range(int(a), int(b or a) + 1)] if not b or int(b) >= int(a) else None
-    if got != want and got != [f"{book}-{a}-{b}"] and got != within(book, int(a), int(b or a)):
+    sect = "-".join(got[0].split("-")[:-1])          # per-section links (KN 1): ^<book>-<section>-<n>
+    per_section = [f"{sect}-{n}" for n in range(int(a), int(b or a) + 1)] if want else None
+    if got != want and got != [f"{book}-{a}-{b}"] and got != within(book, int(a), int(b or a)) and got != per_section:
         link_probs.append(f"line {nxt[1]}: printed `{pm.group(0)}` but links {got}")
 P(f"## 4. Root links\n\n- groups {groups}, links {nlinks}, targets missing {missing}, groups not matching the printed number {len(link_probs) - missing}")
 for p in link_probs[:80]:

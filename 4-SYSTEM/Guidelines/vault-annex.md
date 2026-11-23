@@ -10,7 +10,7 @@ When the Guidelines and this annex disagree on a vault-specific detail, this ann
 
 This vault serves the **Pāli Sutta Piṭaka**, the second basket of the Pāli Canon, in the Chaṭṭha Saṅgāyana (CSCD) edition published by the Vipassana Research Institute.
 
-Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vinaya and Abhidhamma vaults: a work CSCD prints in several volumes is one file, and each volume is a `##` chapter in it. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are each one work (`pi-dn.md`, `pi-mn.md`, `pi-sn.md`, `pi-an.md`). Each Khuddakanikāya book is a work of its own (`pi-kn-<book>.md`). Each volume is still built and verified on its own (`cscd-root-text-intake`), then the volumes are joined with `merge_volumes.py` (merged 2026-11-20). Ingested so far:
+Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vinaya and Abhidhamma vaults: a work CSCD prints in several volumes is one file, and each volume is a `##` chapter in it. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are each one work (`pi-dn.md`, `pi-mn.md`, `pi-sn.md`, `pi-an.md`). The Khuddakanikāya is one file too (`pi-kn.md`), each of its books a `##` chapter, as tipitaka.app groups them under one Khuddakanikāya (joined 2026-11-23). Each volume is still built and verified on its own (`cscd-root-text-intake`), then the volumes are joined with `merge_volumes.py` (merged 2026-11-20). Ingested so far:
 
 | Nikāya | Volume = chapter | `book` | CSCD source | tipitaka.app key | Filename |
 | ------ | ---------------- | ------ | ----------- | ---------------- | -------- |
@@ -36,14 +36,14 @@ Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vina
 | Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-an.md` |
 | Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-an.md` |
 | Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-an.md` |
-| Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-kn-1.md` |
-| Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-kn-2.md` |
+| Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-kn.md` |
+| Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-kn.md` |
 
 **Before 2026-11-20** each volume was its own file (`pi-dn-1.md` … `pi-an-11.md`) and its own library text. Those files are in git history; the verification reports in `0-INBOX/` dated before the merge refer to them.
 
 Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya is being added book by book. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16.
 
-**Khuddakanikāya:** one file per book, `pi-kn-<book>`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
+**Khuddakanikāya:** one file, `pi-kn.md` (aṭṭhakathā `pi-kn-atthakatha.md`), each book a `##` chapter `^<book>-0`; until 2026-11-23 each book was its own file (`pi-kn-1.md`, `pi-kn-2.md`, in git history). A book is still built and verified on its own, then joined with `merge_volumes.py`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
 
 `cscd-root-text-intake` supports four shapes:
 - book → sutta `<div>`s (Dīgha);
@@ -155,9 +155,11 @@ These are mechanical changes only; no wording changes. `verify.py` and `compare_
 
 **Default here:** `^<book>-<N>`, one run of printed numbers per file.
 
-**Khuddakapāṭha (`pi-kn-1`):** the book numbers each of its 9 sections from 1, so `N` alone would repeat. Its IDs are `^1-<section>-<N>`, where `section` is the section's position (1–9) and `N` the printed verse number (Ratanasutta v. 3 = `^1-6-3`). All 89 printed numbers are kept. Saraṇattaya and Dvattiṃsākāra print no numbers and are `^1-U1`, `^1-U2`. The aṭṭhakathā's citations link within their own section (`6. Ratanasuttavaṇṇanā` → `^1-6-…`).
+**Khuddakapāṭha (book 1 of `pi-kn.md`):** the book numbers each of its 9 sections from 1, so `N` alone would repeat. Its IDs are `^1-<section>-<N>`, where `section` is the section's position (1–9) and `N` the printed verse number (Ratanasutta v. 3 = `^1-6-3`). All 89 printed numbers are kept. Saraṇattaya and Dvattiṃsākāra print no numbers and are `^1-U1`, `^1-U2`. The aṭṭhakathā's citations link within their own section (`6. Ratanasuttavaṇṇanā` → `^1-6-…`).
 
 **Why:** the printed numbers stay the IDs, as everywhere else, and every ID is unique in the file. Built with `apply.py --zone-per-section`; checked with `--per-section`.
+
+In the joined `pi-kn.md` the two shapes sit side by side: book 1 (Khuddakapāṭha) `^1-<section>-<N>`, book 2 (Dhammapada) `^2-<N>`. The frontmatter's `verse_id_format: book-chapter-verse` is book 1's.
 
 #### ⚑ Pre-title `^T-N` and collection heading `^0` — overrides `annotation-conventions.md` §2 (registered 2026-11-13)
 
@@ -201,8 +203,7 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `sn-tiika` | Saṃyuttanikāya-ṭīkā | sub-commentary | Pāli | `pi-sn.md` | `1-SOURCES/Commentaries/pi-sn-tiika.md` |
 | `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-atthakatha.md` |
 | `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-tiika.md` |
-| `kn-1-atthakatha` | Khuddakapāṭha-aṭṭhakathā | commentary | Pāli | `pi-kn-1.md` | `1-SOURCES/Commentaries/pi-kn-1-atthakatha.md` |
-| `kn-2-atthakatha` | Dhammapada-aṭṭhakathā | commentary | Pāli | `pi-kn-2.md` | `1-SOURCES/Commentaries/pi-kn-2-atthakatha.md` |
+| `kn-atthakatha` | Khuddakanikāya-aṭṭhakathā | commentary | Pāli | `pi-kn.md` | `1-SOURCES/Commentaries/pi-kn-atthakatha.md` |
 
 **Retired 2026-11-20** (per-volume IDs, never reused). Each volume's commentary was its own file until the volumes were joined per nikāya. Each ID below is now a `##` chapter of the joined file:
 
@@ -252,6 +253,8 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `an-9-tiika` | Navakanipāta-ṭīkā | `an-tiika` |
 | `an-10-tiika` | Dasakanipāta-ṭīkā | `an-tiika` |
 | `an-11-tiika` | Ekādasakanipāta-ṭīkā | `an-tiika` |
+| `kn-1-atthakatha` (retired 2026-11-23) | Khuddakapāṭha-aṭṭhakathā | `kn-atthakatha` |
+| `kn-2-atthakatha` (retired 2026-11-23) | Dhammapada-aṭṭhakathā | `kn-atthakatha` |
 
 Registered 2026-11-13. Sources: CSCD `s0101a`–`s0103a.att`, `s0101t`–`s0103t.tik`, and `s0104t` + `s0105t.nrf` (one work over two volumes, joined).
 
