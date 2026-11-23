@@ -17,12 +17,12 @@ Sources: s0401m.mul.xml, s0402m1.mul.xml, s0402m2.mul.xml, s0402m3.mul.xml, s040
 - Of those, lines that differ in bold markers or spacing only: 0
 - Difference hunks: 1
 
-### replace — vault line 11090
-- line 11090: replace: XML `homi araññavihārena. [[ ] etthantare pāṭho` → vault `homi araññavihārena. [[] etthantare pāṭho`
+### replace — vault line 11122
+- line 11122: delete: XML `(11). Rāgapeyyālaṃ` → vault `Rāgapeyyālaṃ`
 
 ## 4. Block IDs vs printed paragraph numbers
 
-- lines checked: 9116
+- lines checked: 9117
 - `U` blocks (unnumbered in the source): 1
 - mismatches: 0
 
@@ -39,7 +39,7 @@ XML level: nikaya = 0; a div `head` = div depth; `p` heading rends = depth + 1 (
   - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
   - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
   - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
-  - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
+  - replace: XML [(2, 'chapter', '(11). Rāgapeyyālaṃ'), (0, 'nikaya', 'Aṅguttaranikāyo')] → vault [(2, 'Rāgapeyyālaṃ', '^8-3-0', 'line 11122')]
   - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
   - delete: XML [(0, 'nikaya', 'Aṅguttaranikāyo')] → vault []
 - Level mismatches: 0
@@ -1265,7 +1265,7 @@ Aṅguttaranikāyo  ^0   (line 47)
         Paṭisāraṇīyasuttaṃ  ^8-2-4-9-0   (line 11103)
         Sammāvattanasuttaṃ  ^8-2-4-10-0   (line 11108)
       Sāmaññavaggo  ^8-2-5-0   (line 11116)
-    (11). Rāgapeyyālaṃ  ^8-3-0   (line 11122)
+    Rāgapeyyālaṃ  ^8-3-0   (line 11122)
   Navakanipātapāḷi  ^9-0   (line 11140)
     Paṭhamapaṇṇāsakaṃ  ^9-1-0   (line 11142)
       Sambodhivaggo  ^9-1-1-0   (line 11144)

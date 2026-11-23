@@ -11087,7 +11087,7 @@ Atha kho icchānaṅgalakā brāhmaṇagahapatikā tassā rattiyā accayena pahu
 "Idha panāhaṃ, nāgita, bhikkhuṃ passāmi āraññikaṃ araññe asamāhitaṃ nisinnaṃ. Tassa mayhaṃ, nāgita, evaṃ hoti – ‘idāni ayamāyasmā asamāhitaṃ vā cittaṃ samādahissati [samādahessati (katthaci)], samāhitaṃ vā cittaṃ anurakkhissatī’ti. Tenāhaṃ, nāgita, tassa bhikkhuno attamano homi araññavihārena.
 "Idha panāhaṃ, nāgita, bhikkhuṃ passāmi āraññikaṃ araññe samāhitaṃ nisinnaṃ. Tassa mayhaṃ, nāgita, evaṃ hoti – ‘idāni ayamāyasmā avimuttaṃ vā cittaṃ vimuccissati, vimuttaṃ vā cittaṃ anurakkhissatī’ti. Tenāhaṃ, nāgita, tassa bhikkhuno attamano homi araññavihārena.
 "Idha panāhaṃ, nāgita, bhikkhuṃ passāmi gāmantavihāriṃ lābhiṃ cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhārānaṃ. So taṃ lābhasakkārasilokaṃ nikāmayamāno riñcati paṭisallānaṃ, riñcati araññavanapatthāni pantāni senāsanāni; gāmanigamarājadhāniṃ osaritvā vāsaṃ kappeti. Tenāhaṃ, nāgita, tassa bhikkhuno na attamano homi gāmantavihārena.
-"Idha panāhaṃ, nāgita, bhikkhuṃ passāmi āraññikaṃ lābhiṃ cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhārānaṃ. So taṃ lābhasakkārasilokaṃ paṭipaṇāmetvā na riñcati paṭisallānaṃ, na riñcati araññavanapatthāni pantāni senāsanāni. Tenāhaṃ, nāgita, tassa bhikkhuno attamano homi araññavihārena. [[] etthantare pāṭho a. ni. 6.42 chakkanipāteyeva dissati, na ettha aṭṭhakanipāte]
+"Idha panāhaṃ, nāgita, bhikkhuṃ passāmi āraññikaṃ lābhiṃ cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhārānaṃ. So taṃ lābhasakkārasilokaṃ paṭipaṇāmetvā na riñcati paṭisallānaṃ, na riñcati araññavanapatthāni pantāni senāsanāni. Tenāhaṃ, nāgita, tassa bhikkhuno attamano homi araññavihārena. [[ ] etthantare pāṭho a. ni. 6.42 chakkanipāteyeva dissati, na ettha aṭṭhakanipāte]
 "Yasmāhaṃ [yasmiṃhaṃ (katthaci)], nāgita, samaye addhānamaggappaṭipanno na kañci passāmi purato vā pacchato vā, phāsu me, nāgita, tasmiṃ samaye hoti antamaso uccārapassāvakammāyā"ti. Chaṭṭhaṃ. ^8-86
 
 ##### Pattanikujjanasuttaṃ ^8-2-4-7-0
@@ -11119,7 +11119,7 @@ Atha kho [ettha "atha kho"ti ca, "upāsikā"ti ca idaṃ aṭṭhakathāyameva d
 Sāmaññavaggo pañcamo.
 Dutiyapaṇṇāsakaṃ samattaṃ. ^8-91-116
 
-### (11). Rāgapeyyālaṃ ^8-3-0
+### Rāgapeyyālaṃ ^8-3-0
 
 "Rāgassa, bhikkhave, abhiññāya aṭṭha dhammā bhāvetabbā. Katame aṭṭha? Sammādiṭṭhi, sammāsaṅkappo, sammāvācā, sammākammanto, sammāājīvo, sammāvāyāmo, sammāsati, sammāsamādhi – rāgassa, bhikkhave, abhiññāya ime aṭṭha dhammā bhāvetabbā"ti. ^8-117
 

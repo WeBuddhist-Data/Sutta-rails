@@ -1,0 +1,252 @@
+# Commentary check: `pi-an-atthakatha.md`
+
+Sources: s0401a.att.xml, s0402a.att.xml, s0403a.att.xml, s0404a.att.xml
+
+## 1. Content
+
+- XML lines 5126, vault lines 5126, identical 5124, hunks 3
+
+### replace — vault line 37
+- line 37: insert: XML `Aṅguttaranikāye` → vault `Aṅguttaranikāye (aṭṭhakathā)`
+
+### delete — vault line 102
+- XML [H/chapter] `Rūpādivaggavaṇṇanā`
+
+### insert — vault line 109
+- vault line 109 [H] `Rūpādivaggavaṇṇanā`
+
+## 2. Block IDs
+
+- running counters: book 1: 1319, book 2: 270, book 3: 503, book 4: 485, book 5: 292, book 6: 189, book 7: 133, book 8: 187, book 9: 84, book 10: 185, book 11: 65
+- no problems
+
+## 3. Headings
+
+- XML 1148, vault 1138, text mismatches 11
+  - replace: XML ['Aṅguttaranikāye'] → vault [('Aṅguttaranikāye (aṭṭhakathā)', '^0', 37)]
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+  - delete: XML ['Aṅguttaranikāye'] → vault []
+- level mismatches (XML: nikaya 0, div head = div depth, p heading = depth + 1): 239
+  - line 1090: `Etadaggapadavaṇṇanā` ^1-14-1-1-0: vault level 4, XML level 3 (subhead)
+  - line 1215: `Aññāsikoṇḍaññattheravatthu` ^1-14-1-2-0: vault level 4, XML level 3 (subhead)
+  - line 1267: `Sāriputta-moggallānattheravatthu` ^1-14-1-3-0: vault level 4, XML level 3 (subhead)
+  - line 1340: `Mahākassapattheravatthu` ^1-14-1-4-0: vault level 4, XML level 3 (subhead)
+  - line 1424: `Anuruddhattheravatthu` ^1-14-1-5-0: vault level 4, XML level 3 (subhead)
+  - line 1476: `Bhaddiyattheravatthu` ^1-14-1-6-0: vault level 4, XML level 3 (subhead)
+  - line 1488: `Lakuṇḍakabhaddiyattheravatthu` ^1-14-1-7-0: vault level 4, XML level 3 (subhead)
+  - line 1498: `Piṇḍolabhāradvājattheravatthu` ^1-14-1-8-0: vault level 4, XML level 3 (subhead)
+  - line 1514: `Mantāṇiputtapuṇṇattheravatthu` ^1-14-1-9-0: vault level 4, XML level 3 (subhead)
+  - line 1540: `Mahākaccānattheravatthu` ^1-14-1-10-0: vault level 4, XML level 3 (subhead)
+  - line 1566: `Dutiyaetadaggavaggo` ^1-14-2-1-0: vault level 4, XML level 3 (subhead)
+  - line 1568: `Cūḷapanthakattheravatthu` ^1-14-2-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 1626: `Subhūtittheravatthu` ^1-14-2-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 1646: `Khadiravaniyarevatattheravatthu` ^1-14-2-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 1679: `Kaṅkhārevatattheravatthu` ^1-14-2-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 1689: `Soṇakoḷivisattheravatthu` ^1-14-2-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 1713: `Soṇakuṭikaṇṇattheravatthu` ^1-14-2-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 1749: `Sīvalittheravatthu` ^1-14-2-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 1783: `Vakkalittheravatthu` ^1-14-2-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 1806: `Tatiyaetadaggavaggo` ^1-14-3-1-0: vault level 4, XML level 3 (subhead)
+  - line 1816: `Rāhula-raṭṭhapālattheravatthu` ^1-14-3-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 1851: `Kuṇḍadhānattheravatthu` ^1-14-3-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 1879: `Vaṅgīsattheravatthu` ^1-14-3-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 1903: `Upasenavaṅgantaputtattheravatthu` ^1-14-3-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 1917: `Dabbattheravatthu` ^1-14-3-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 1935: `Pilindavacchattheravatthu` ^1-14-3-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 1950: `Bāhiyadārucīriyattheravatthu` ^1-14-3-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 1975: `Kumārakassapattheravatthu` ^1-14-3-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 1989: `Mahākoṭṭhitattheravatthu` ^1-14-3-1-9-0: vault level 5, XML level 3 (subhead)
+  - line 2001: `Catutthaetadaggavaggo` ^1-14-4-1-0: vault level 4, XML level 3 (subhead)
+  - line 2003: `Ānandattheravatthu` ^1-14-4-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 2048: `Uruvelakassapattheravatthu` ^1-14-4-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 2066: `Kāḷudāyittheravatthu` ^1-14-4-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 2085: `Bākulattheravatthu` ^1-14-4-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 2113: `Sobhitattheravatthu` ^1-14-4-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 2123: `Upālittheravatthu` ^1-14-4-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 2133: `Nandakattheravatthu` ^1-14-4-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 2145: `Nandattheravatthu` ^1-14-4-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 2159: `Mahākappinattheravatthu` ^1-14-4-1-9-0: vault level 5, XML level 3 (subhead)
+  - line 2186: `Sāgatattheravatthu` ^1-14-4-1-10-0: vault level 5, XML level 3 (subhead)
+  - line 2202: `Rādhattheravatthu` ^1-14-4-1-11-0: vault level 5, XML level 3 (subhead)
+  - line 2228: `Mogharājattheravatthu` ^1-14-4-1-12-0: vault level 5, XML level 3 (subhead)
+  - line 2260: `Pañcamaetadaggavaggo` ^1-14-5-1-0: vault level 4, XML level 3 (subhead)
+  - line 2262: `Mahāpajāpatigotamītherīvatthu` ^1-14-5-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 2282: `Khemātherīvatthu` ^1-14-5-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 2301: `Uppalavaṇṇātherīvatthu` ^1-14-5-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 2339: `Paṭācārātherīvatthu` ^1-14-5-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 2372: `Dhammadinnātherīvatthu` ^1-14-5-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 2391: `Nandātherīvatthu` ^1-14-5-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 2405: `Soṇātherīvatthu` ^1-14-5-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 2418: `Bakulātherīvatthu` ^1-14-5-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 2424: `Kuṇḍalakesātherīvatthu` ^1-14-5-1-9-0: vault level 5, XML level 3 (subhead)
+  - line 2457: `Bhaddākāpilānītherīvatthu` ^1-14-5-1-10-0: vault level 5, XML level 3 (subhead)
+  - line 2465: `Bhaddākaccānātherīvatthu` ^1-14-5-1-11-0: vault level 5, XML level 3 (subhead)
+  - line 2475: `Kisāgotamītherīvatthu` ^1-14-5-1-12-0: vault level 5, XML level 3 (subhead)
+  - line 2502: `Siṅgālakamātātherīvatthu` ^1-14-5-1-13-0: vault level 5, XML level 3 (subhead)
+  - line 2514: `Chaṭṭhaetadaggavaggo` ^1-14-6-1-0: vault level 4, XML level 3 (subhead)
+  - line 2516: `Tapussabhallikavatthu` ^1-14-6-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 2526: `Anāthapiṇḍikaseṭṭhivatthu` ^1-14-6-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 2536: `Cittagahapativatthu` ^1-14-6-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 2555: `Hatthakaāḷavakavatthu` ^1-14-6-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 2573: `Mahānāmasakkavatthu` ^1-14-6-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 2581: `Uggagahapativatthu` ^1-14-6-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 2589: `Uggatagahapativatthu` ^1-14-6-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 2597: `Sūrambaṭṭhavatthu` ^1-14-6-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 2609: `Jīvakavatthu` ^1-14-6-1-9-0: vault level 5, XML level 3 (subhead)
+  - line 2617: `Nakulapitugahapativatthu` ^1-14-6-1-10-0: vault level 5, XML level 3 (subhead)
+  - line 2631: `Sattamaetadaggavaggo` ^1-14-7-1-0: vault level 4, XML level 3 (subhead)
+  - line 2633: `Sujātāvatthu` ^1-14-7-1-1-0: vault level 5, XML level 3 (subhead)
+  - line 2645: `Visākhāvatthu` ^1-14-7-1-2-0: vault level 5, XML level 3 (subhead)
+  - line 2713: `Khujjuttarā-sāmāvatīvatthu` ^1-14-7-1-3-0: vault level 5, XML level 3 (subhead)
+  - line 2818: `Uttarānandamātāvatthu` ^1-14-7-1-4-0: vault level 5, XML level 3 (subhead)
+  - line 2851: `Suppavāsāvatthu` ^1-14-7-1-5-0: vault level 5, XML level 3 (subhead)
+  - line 2859: `Suppiyāvatthu` ^1-14-7-1-6-0: vault level 5, XML level 3 (subhead)
+  - line 2869: `Kātiyānīvatthu` ^1-14-7-1-7-0: vault level 5, XML level 3 (subhead)
+  - line 2881: `Nakulamātāvatthu` ^1-14-7-1-8-0: vault level 5, XML level 3 (subhead)
+  - line 2887: `Kāḷīkuraragharikāvatthu` ^1-14-7-1-9-0: vault level 5, XML level 3 (subhead)
+  - line 2998: `Aṭṭhānapāḷi-dutiyavaggavaṇṇanā` ^1-15-2-1-0: vault level 4, XML level 3 (subhead)
+  - line 3072: `Ekadhammapāḷi-dutiyavaggavaṇṇanā` ^1-16-2-1-0: vault level 4, XML level 3 (subhead)
+  - line 3119: `Ekadhammapāḷi-tatiyavaggavaṇṇanā` ^1-16-3-1-0: vault level 4, XML level 3 (subhead)
+  - line 3196: `Ekadhammapāḷi-catutthavaggavaṇṇanā` ^1-16-4-1-0: vault level 4, XML level 3 (subhead)
+  - line 11323: `Sambodhivaggo` ^9-1-1-0: vault level 3, XML level 2 (chapter)
+  - line 11325: `Sambodhisuttavaṇṇanā` ^9-1-1-1-0: vault level 4, XML level 2 (subhead)
+  - line 11335: `Nissayasuttavaṇṇanā` ^9-1-1-2-0: vault level 4, XML level 2 (subhead)
+  - line 11341: `Meghiyasuttavaṇṇanā` ^9-1-1-3-0: vault level 4, XML level 2 (subhead)
+  - line 11349: `Nandakasuttavaṇṇanā` ^9-1-1-4-0: vault level 4, XML level 2 (subhead)
+  - line 11359: `Balasuttavaṇṇanā` ^9-1-1-5-0: vault level 4, XML level 2 (subhead)
+  - line 11365: `Sevanāsuttavaṇṇanā` ^9-1-1-6-0: vault level 4, XML level 2 (subhead)
+  - line 11371: `Sutavāsuttavaṇṇanā` ^9-1-1-7-0: vault level 4, XML level 2 (subhead)
+  - line 11377: `Sajjhasuttādivaṇṇanā` ^9-1-1-8-0: vault level 4, XML level 2 (subhead)
+  - line 11387: `Sīhanādavaggo` ^9-1-2-0: vault level 3, XML level 1 (chapter)
+  - line 11389: `Sīhanādasuttavaṇṇanā` ^9-1-2-1-0: vault level 4, XML level 2 (subhead)
+  - line 11405: `Saupādisesasuttavaṇṇanā` ^9-1-2-2-0: vault level 4, XML level 2 (subhead)
+  - line 11411: `Koṭṭhikasuttavaṇṇanā` ^9-1-2-3-0: vault level 4, XML level 2 (subhead)
+  - line 11417: `Samiddhisuttavaṇṇanā` ^9-1-2-4-0: vault level 4, XML level 2 (subhead)
+  - line 11423: `Gaṇḍasuttādivaṇṇanā` ^9-1-2-5-0: vault level 4, XML level 2 (subhead)
+  - line 11430: `Kulasuttādivaṇṇanā` ^9-1-2-6-0: vault level 4, XML level 2 (subhead)
+  - line 11437: `Devatāsuttavaṇṇanā` ^9-1-2-7-0: vault level 4, XML level 2 (subhead)
+  - line 11443: `Velāmasuttavaṇṇanā` ^9-1-2-8-0: vault level 4, XML level 2 (subhead)
+  - line 11482: `Sattāvāsavaggo` ^9-1-3-0: vault level 3, XML level 1 (chapter)
+  - line 11484: `Tiṭhānasuttavaṇṇanā` ^9-1-3-1-0: vault level 4, XML level 2 (subhead)
+  - line 11490: `Assakhaḷuṅkasuttavaṇṇanā` ^9-1-3-2-0: vault level 4, XML level 2 (subhead)
+  - line 11496: `Taṇhāmūlakasuttavaṇṇanā` ^9-1-3-3-0: vault level 4, XML level 2 (subhead)
+  - line 11506: `Sattāvāsasuttavaṇṇanā` ^9-1-3-4-0: vault level 4, XML level 2 (subhead)
+  - line 11512: `Paññāsuttavaṇṇanā` ^9-1-3-5-0: vault level 4, XML level 2 (subhead)
+  - line 11518: `Silāyūpasuttavaṇṇanā` ^9-1-3-6-0: vault level 4, XML level 2 (subhead)
+  - line 11526: `Verasuttadvayavaṇṇanā` ^9-1-3-7-0: vault level 4, XML level 2 (subhead)
+  - line 11533: `Āghātavatthusuttavaṇṇanā` ^9-1-3-8-0: vault level 4, XML level 2 (subhead)
+  - line 11539: `Āghātapaṭivinayasuttādivaṇṇanā` ^9-1-3-9-0: vault level 4, XML level 2 (subhead)
+  - line 11548: `Mahāvaggo` ^9-1-4-0: vault level 3, XML level 1 (chapter)
+  - line 11550: `Anupubbavihārasuttādivaṇṇanā` ^9-1-4-1-0: vault level 4, XML level 2 (subhead)
+  - line 11557: `Nibbānasukhasuttavaṇṇanā` ^9-1-4-2-0: vault level 4, XML level 2 (subhead)
+  - line 11563: `Gāvīupamāsuttavaṇṇanā` ^9-1-4-3-0: vault level 4, XML level 2 (subhead)
+  - line 11569: `Jhānasuttavaṇṇanā` ^9-1-4-4-0: vault level 4, XML level 2 (subhead)
+  - line 11581: `Ānandasuttavaṇṇanā` ^9-1-4-5-0: vault level 4, XML level 2 (subhead)
+  - line 11591: `Lokāyatikasuttavaṇṇanā` ^9-1-4-6-0: vault level 4, XML level 2 (subhead)
+  - line 11599: `Devāsurasaṅgāmasuttavaṇṇanā` ^9-1-4-7-0: vault level 4, XML level 2 (subhead)
+  - line 11607: `Nāgasuttavaṇṇanā` ^9-1-4-8-0: vault level 4, XML level 2 (subhead)
+  - line 11613: `Tapussasuttavaṇṇanā` ^9-1-4-9-0: vault level 4, XML level 2 (subhead)
+  - line 11623: `Sāmaññavaggo` ^9-1-5-0: vault level 3, XML level 1 (chapter)
+  - line 11625: `Sambādhasuttavaṇṇanā` ^9-1-5-1-0: vault level 4, XML level 2 (subhead)
+  - line 11631: `Kāyasakkhisuttavaṇṇanā` ^9-1-5-2-0: vault level 4, XML level 2 (subhead)
+  - line 11637: `Paññāvimuttasuttavaṇṇanā` ^9-1-5-3-0: vault level 4, XML level 2 (subhead)
+  - line 11643: `Ubhatobhāgavimuttasuttavaṇṇanā` ^9-1-5-4-0: vault level 4, XML level 2 (subhead)
+  - line 11649: `Sandiṭṭhikadhammasuttādivaṇṇanā` ^9-1-5-5-0: vault level 4, XML level 2 (subhead)
+  - line 11682: `Ānisaṃsavaggo` ^10-1-1-0: vault level 3, XML level 2 (chapter)
+  - line 11684: `Kimatthiyasuttavaṇṇanā` ^10-1-1-1-0: vault level 4, XML level 2 (subhead)
+  - line 11690: `Cetanākaraṇīyasuttavaṇṇanā` ^10-1-1-2-0: vault level 4, XML level 2 (subhead)
+  - line 11696: `Upanisasuttattayavaṇṇanā` ^10-1-1-3-0: vault level 4, XML level 2 (subhead)
+  - line 11704: `Samādhisuttavaṇṇanā` ^10-1-1-4-0: vault level 4, XML level 2 (subhead)
+  - line 11710: `Sāriputtasuttavaṇṇanā` ^10-1-1-5-0: vault level 4, XML level 2 (subhead)
+  - line 11716: `Jhānasuttavaṇṇanā` ^10-1-1-6-0: vault level 4, XML level 2 (subhead)
+  - line 11722: `Santavimokkhasuttavaṇṇanā` ^10-1-1-7-0: vault level 4, XML level 2 (subhead)
+  - line 11730: `Nāthavaggo` ^10-1-2-0: vault level 3, XML level 1 (chapter)
+  - line 11732: `Senāsanasuttavaṇṇanā` ^10-1-2-1-0: vault level 4, XML level 2 (subhead)
+  - line 11738: `Pañcaṅgasuttavaṇṇanā` ^10-1-2-2-0: vault level 4, XML level 2 (subhead)
+  - line 11744: `Saṃyojanasuttādivaṇṇanā` ^10-1-2-3-0: vault level 4, XML level 2 (subhead)
+  - line 11751: `Appamādasuttavaṇṇanā` ^10-1-2-4-0: vault level 4, XML level 2 (subhead)
+  - line 11759: `Āhuneyyasuttavaṇṇanā` ^10-1-2-5-0: vault level 4, XML level 2 (subhead)
+  - line 11765: `Paṭhamanāthasuttavaṇṇanā` ^10-1-2-6-0: vault level 4, XML level 2 (subhead)
+  - line 11775: `Dutiyanāthasuttavaṇṇanā` ^10-1-2-7-0: vault level 4, XML level 2 (subhead)
+  - line 11781: `Paṭhamaariyāvāsasuttavaṇṇanā` ^10-1-2-8-0: vault level 4, XML level 2 (subhead)
+  - line 11787: `Dutiyaariyāvāsasuttavaṇṇanā` ^10-1-2-9-0: vault level 4, XML level 2 (subhead)
+  - line 11799: `Mahāvaggo` ^10-1-3-0: vault level 3, XML level 1 (chapter)
+  - line 11801: `Sīhanādasuttavaṇṇanā` ^10-1-3-1-0: vault level 4, XML level 2 (subhead)
+  - line 11842: `Adhivuttipadasuttavaṇṇanā` ^10-1-3-2-0: vault level 4, XML level 2 (subhead)
+  - line 11848: `Kāyasuttavaṇṇanā` ^10-1-3-3-0: vault level 4, XML level 2 (subhead)
+  - line 11854: `Mahācundasuttavaṇṇanā` ^10-1-3-4-0: vault level 4, XML level 2 (subhead)
+  - line 11860: `Kasiṇasuttavaṇṇanā` ^10-1-3-5-0: vault level 4, XML level 2 (subhead)
+  - line 11866: `Kāḷīsuttavaṇṇanā` ^10-1-3-6-0: vault level 4, XML level 2 (subhead)
+  - line 11872: `Paṭhamamahāpañhasuttavaṇṇanā` ^10-1-3-7-0: vault level 4, XML level 2 (subhead)
+  - line 11890: `Dutiyamahāpañhasuttavaṇṇanā` ^10-1-3-8-0: vault level 4, XML level 2 (subhead)
+  - line 11896: `Paṭhamakosalasuttavaṇṇanā` ^10-1-3-9-0: vault level 4, XML level 2 (subhead)
+  - line 11908: `Dutiyakosalasuttavaṇṇanā` ^10-1-3-10-0: vault level 4, XML level 2 (subhead)
+  - line 11927: `Upālivaggo` ^10-1-4-0: vault level 3, XML level 1 (chapter)
+  - line 11929: `Upālisuttavaṇṇanā` ^10-1-4-1-0: vault level 4, XML level 2 (subhead)
+  - line 11949: `Pātimokkhaṭṭhapanāsuttavaṇṇanā` ^10-1-4-2-0: vault level 4, XML level 2 (subhead)
+  - line 11955: `Ubbāhikāsuttavaṇṇanā` ^10-1-4-3-0: vault level 4, XML level 2 (subhead)
+  - line 11961: `Upasampadāsuttavaṇṇanā` ^10-1-4-4-0: vault level 4, XML level 2 (subhead)
+  - line 11967: `Saṅghabhedasuttavaṇṇanā` ^10-1-4-5-0: vault level 4, XML level 2 (subhead)
+  - line 11973: `Ānandasuttadvayavaṇṇanā` ^10-1-4-6-0: vault level 4, XML level 2 (subhead)
+  - line 11982: `Akkosavaggo` ^10-1-5-0: vault level 3, XML level 1 (chapter)
+  - line 11984: `Kusinārasuttavaṇṇanā` ^10-1-5-1-0: vault level 4, XML level 2 (subhead)
+  - line 11992: `Rājantepurappavesanasuttavaṇṇanā` ^10-1-5-2-0: vault level 4, XML level 2 (subhead)
+  - line 11998: `Sakkasuttavaṇṇanā` ^10-1-5-3-0: vault level 4, XML level 2 (subhead)
+  - line 12004: `Mahālisuttavaṇṇanā` ^10-1-5-4-0: vault level 4, XML level 2 (subhead)
+  - line 12010: `Pabbajitaabhiṇhasuttavaṇṇanā` ^10-1-5-5-0: vault level 4, XML level 2 (subhead)
+  - line 12022: `Sarīraṭṭhadhammasuttādivaṇṇanā` ^10-1-5-6-0: vault level 4, XML level 2 (subhead)
+  - line 12033: `Dutiyapaṇṇāsakaṃ` ^10-2-0: vault level 2, XML level 1 (title)
+  - line 12035: `Sacittavaggo` ^10-2-1-0: vault level 3, XML level 1 (chapter)
+  - line 12037: `Sacittasuttādivaṇṇanā` ^10-2-1-1-0: vault level 4, XML level 2 (subhead)
+  - line 12046: `Mūlakasuttavaṇṇanā` ^10-2-1-2-0: vault level 4, XML level 2 (subhead)
+  - line 12052: `Pabbajjāsuttavaṇṇanā` ^10-2-1-3-0: vault level 4, XML level 2 (subhead)
+  - line 12058: `Girimānandasuttavaṇṇanā` ^10-2-1-4-0: vault level 4, XML level 2 (subhead)
+  - line 12066: `Yamakavaggo` ^10-2-2-0: vault level 3, XML level 1 (chapter)
+  - line 12068: `Avijjāsuttādivaṇṇanā` ^10-2-2-1-0: vault level 4, XML level 2 (subhead)
+  - line 12075: `Niṭṭhaṅgatasuttādivaṇṇanā` ^10-2-2-2-0: vault level 4, XML level 2 (subhead)
+  - line 12082: `Paṭhamasukhasuttādivaṇṇanā` ^10-2-2-3-0: vault level 4, XML level 2 (subhead)
+  - line 12090: `Kathāvatthusuttadvayavaṇṇanā` ^10-2-2-4-0: vault level 4, XML level 2 (subhead)
+  - line 12107: `Ākaṅkhavaggo` ^10-2-3-0: vault level 3, XML level 1 (chapter)
+  - line 12109: `Ākaṅkhasuttavaṇṇanā` ^10-2-3-1-0: vault level 4, XML level 2 (subhead)
+  - line 12125: `Kaṇṭakasuttavaṇṇanā` ^10-2-3-2-0: vault level 4, XML level 2 (subhead)
+  - line 12131: `Iṭṭhadhammasuttādivaṇṇanā` ^10-2-3-3-0: vault level 4, XML level 2 (subhead)
+  - line 12138: `Migasālāsuttavaṇṇanā` ^10-2-3-4-0: vault level 4, XML level 2 (subhead)
+  - line 12148: `Kākasuttavaṇṇanā` ^10-2-3-5-0: vault level 4, XML level 2 (subhead)
+  - line 12154: `Āghātavatthusuttavaṇṇanā` ^10-2-3-6-0: vault level 4, XML level 2 (subhead)
+  - line 12162: `Theravaggo` ^10-2-4-0: vault level 3, XML level 1 (chapter)
+  - line 12164: `Vāhanasuttādivaṇṇanā` ^10-2-4-1-0: vault level 4, XML level 2 (subhead)
+  - line 12172: `Byākaraṇasuttavaṇṇanā` ^10-2-4-2-0: vault level 4, XML level 2 (subhead)
+  - line 12178: `Katthīsuttādivaṇṇanā` ^10-2-4-3-0: vault level 4, XML level 2 (subhead)
+  - line 12185: `Nappiyasuttavaṇṇanā` ^10-2-4-4-0: vault level 4, XML level 2 (subhead)
+  - line 12191: `Akkosakasuttavaṇṇanā` ^10-2-4-5-0: vault level 4, XML level 2 (subhead)
+  - line 12197: `Kokālikasuttavaṇṇanā` ^10-2-4-6-0: vault level 4, XML level 2 (subhead)
+  - line 12225: `Upālivaggo` ^10-2-5-0: vault level 3, XML level 1 (chapter)
+  - line 12227: `Kāmabhogīsuttādivaṇṇanā` ^10-2-5-1-0: vault level 4, XML level 2 (subhead)
+  - line 12234: `Kiṃdiṭṭhikasuttavaṇṇanā` ^10-2-5-2-0: vault level 4, XML level 2 (subhead)
+  - line 12240: `Vajjiyamāhitasuttavaṇṇanā` ^10-2-5-3-0: vault level 4, XML level 2 (subhead)
+  - line 12246: `Uttiyasuttavaṇṇanā` ^10-2-5-4-0: vault level 4, XML level 2 (subhead)
+  - line 12252: `Kokanudasuttavaṇṇanā` ^10-2-5-5-0: vault level 4, XML level 2 (subhead)
+  - line 12258: `Āhuneyyasuttādivaṇṇanā` ^10-2-5-6-0: vault level 4, XML level 2 (subhead)
+- hierarchy hints: 10
+  - line 1804: `14. Etadaggavaggo` ^1-14-3-0 restarts numbering after sibling `14. Etadaggavaggo`
+  - line 1999: `14. Etadaggavaggo` ^1-14-4-0 restarts numbering after sibling `14. Etadaggavaggo`
+  - line 2258: `14. Etadaggavaggo` ^1-14-5-0 restarts numbering after sibling `14. Etadaggavaggo`
+  - line 2512: `14. Etadaggavaggo` ^1-14-6-0 restarts numbering after sibling `14. Etadaggavaggo`
+  - line 2629: `14. Etadaggavaggo` ^1-14-7-0 restarts numbering after sibling `14. Etadaggavaggo`
+  - line 3117: `16. Ekadhammapāḷi` ^1-16-3-0 restarts numbering after sibling `16. Ekadhammapāḷi`
+  - line 3194: `16. Ekadhammapāḷi` ^1-16-4-0 restarts numbering after sibling `16. Ekadhammapāḷi`
+  - line 4441: `1. Kodhapeyyālaṃ` ^2-4-0 restarts numbering after sibling `3. Tatiyapaṇṇāsakaṃ`
+  - line 9343: `1. Sammutipeyyālādivaṇṇanā` ^5-6-2-0 restarts numbering after sibling `1-3. Upasampādetabbasuttādivaṇṇanā`
+  - line 12431: `(21) 1. Karajakāyavaggo` ^10-5-0 restarts numbering after sibling `4. Catutthapaṇṇāsakaṃ`
+
+## 4. Root links
+
+- groups 1212, links 1427, targets missing 0, groups not matching the printed number 0

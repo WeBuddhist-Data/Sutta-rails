@@ -52,8 +52,14 @@ class Tree:
     def renumber(self, root):
         def go(n, prefix, depth):
             n.new_id, n.new_depth = prefix + "-0", depth
-            for k, c in enumerate(n.kids, 1):
-                go(c, f"{prefix}-{k}", depth + 1)
+            k = 0
+            for c in n.kids:
+                seg = c.id.split("-")[-2] if c.id.count("-") >= 1 else ""
+                if seg and not seg.isdigit() and c.parent is n and c.id[:-len(seg) - 3] == n.id[:-2]:
+                    go(c, f"{prefix}-{seg}", depth + 1)     # a non-numeric slot (Roman front matter ^1-I-0) keeps its name
+                else:
+                    k += 1
+                    go(c, f"{prefix}-{k}", depth + 1)
         go(root, root.id[:-2], root.depth)
         sub = []
         def pre(n):
