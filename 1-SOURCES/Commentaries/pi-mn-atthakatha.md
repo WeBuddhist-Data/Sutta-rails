@@ -12491,7 +12491,7 @@ Uparipaṇṇāsaṭṭhakathā niṭṭhitā. ^3-974
 
 Yo cāyaṃ "sabbadhammamūlapariyāyaṃ vo, bhikkhave, desissāmī"ti āraddhattā **ādikalyāṇo,** majjhe "suttaṃ geyyaṃ veyyākaraṇaṃ gāthā udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedalla"nti vacanato **majjhekalyāṇo,** sanniṭṭhāne "ariyo bhāvitindriyo"ti vacanato **pariyosānakalyāṇo**ti tividhakalyāṇo majjhimanikāyo "mahāvipassanā nāmāya"nti vutto, so vaṇṇanāvasena samatto hoti. ^3-975
 
-##### Nigamanakathā ^3-5-10-1-0
+#### Nigamanakathā ^3-5-11-0
 
 Ettāvatā ca – ^3-976
 

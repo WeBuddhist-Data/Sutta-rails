@@ -12193,11 +12193,10 @@ Papātavaggavaṇṇanā niṭṭhitā. ^5-556
 
 Āmakadhaññapeyyālavaggavaṇṇanā niṭṭhitā. ^5-573
 
-##### Sāratthappakāsiniyā saṃyuttanikāya-aṭṭhakathāya ^5-12-10-4-0
-
+Sāratthappakāsiniyā saṃyuttanikāya-aṭṭhakathāya
 Mahāvaggavaṇṇanāya līnatthappakāsanā niṭṭhitā. ^5-574
 
-##### Nigamanakathāvaṇṇanā ^5-12-10-5-0
+### Nigamanakathāvaṇṇanā ^5-13-0
 
 Sakalarūpārūpasammasane saṇhasukhumavisayañāṇatāya vipassanācāranipuṇabuddhīnaṃ susaṃyatakāyavacīsamācāratāya samathavipassanāsu sammadeva yatanato ca **yatīnaṃ** bhikkhūnaṃ khandhāyatanadhātusaccindriyapaṭiccasamuppādabhede paramatthadhamme nānānayehi ñāṇavibhāgassa sannissayena **bahukārassa** saṃyuttāgamavarassa atthasaṃvaṇṇanaṃ kātuṃ sāratthappakāsanato eva **nipuṇā** yā mayā aṭṭhakathā āraddhāti sambandho. Savisesaṃ paññāvahaguṇattā eva hissa ganthārambhe āditopi "paññāpabhedajananassā"ti vuttaṃ. **Mahāaṭṭhakathāya sāra**nti saṃyuttamahāaṭṭhakathāya sāraṃ. **Ekūnasaṭṭhimatto**ti thokaṃ ūnabhāvato **matta**-saddaggahaṇaṃ. ^5-575
 
