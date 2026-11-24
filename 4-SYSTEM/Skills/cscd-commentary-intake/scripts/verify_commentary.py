@@ -42,6 +42,9 @@ if "--unresolved" in args:
     k = args.index("--unresolved"); unres_arg = args[k + 1]; del args[k:k + 2]
 PER_SECTION = "--per-section" in args          # root IDs ^<book>-<section>-<N>
 args = [a for a in args if a != "--per-section"]
+ZONES = None                                    # a zoned root's labels in order (zone_link.py)
+if "--zones" in args:
+    k = args.index("--zones"); ZONES = args[k + 1].split(","); del args[k:k + 2]
 book_k = None
 if "--book" in args:
     k = args.index("--book"); book_k = int(args[k + 1]); del args[k:k + 2]
@@ -87,6 +90,10 @@ for x in xmls:
                 sel.append(c)
         body = sel
     xml_bodies.append(body)
+    # a div-less file (KN aṭṭhakathās, tree mode): a heading paragraph tree_levels leaves out
+    # is a later part's reprinted heading, kept as text with its printed number (cscd_shape)
+    import cscd_shape  # noqa: E402
+    lv = cscd_shape.tree_levels(body) if body.find(".//div[@type='book']") is None else None
     for el in body.iter():
         if el.tag not in ("p", "head", "trailer"):
             continue
@@ -98,7 +105,9 @@ for x in xmls:
         s = re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)   # "8 ." = the number's two tags (as the converter)
         s = NUM_FIX.sub(r"\1. ", s)
         rend = el.get("rend") or ""
-        if el.tag == "head" or rend in HEADING_RENDS:
+        reprinted = (lv is not None and el.tag == "p" and rend in HEADING_RENDS and id(el) not in lv
+                     and not cscd_shape.part_label(cscd_shape.text_of(el)))
+        if (el.tag == "head" or rend in HEADING_RENDS) and not reprinted:
             s = LEAD.sub("", s)
         xml_words += s.split()
         # a printed citation; an @n alone (the AN homage, n="0") prints nothing
@@ -176,8 +185,13 @@ for b in blocks:
     else:
         content_n.append(int(mm.group(1)))
     c = CIT.match(b[0])
+    alone = re.fullmatch(r"(\d+)(?:\s+\^[\w-]+)?", b[0].strip()) if len(b) == 1 else None
     if c:
         md_cits.append((b[0].split(".")[0], list(pending), b[0][:60]))
+    elif alone:
+        # the number alone, its dot opening the next paragraph (Apadāna-aṭṭhakathā "314"): a
+        # cited block; the XML side counts it from its @n as for any other citation
+        md_cits.append((alone.group(1), list(pending), b[0][:60]))
     elif pending:
         problems.append(f"links before an uncited paragraph: {b[0][:60]}")
     pending = []
@@ -231,6 +245,10 @@ def expand(n):
     return list(range(a, b + 1))
 
 
+if ZONES is not None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import zone_link  # noqa: E402
+    ZL = zone_link.ZoneLinker(Path(root_path).read_text(encoding="utf-8"), book, ZONES)
 xml_linkable = [n for n in xml_cits]
 ok = bad = skipped = 0
 md_by_order = [c for c in md_cits]
@@ -261,7 +279,10 @@ for printed, links, head in md_by_order:
             problems.append(f"unreadable citation {printed} has links {links[:3]}")
         skipped += 1
         continue
-    exp = [f"{book}-{sec_here}-{k}" for k in exp if f"{book}-{sec_here}-{k}" in root_ids] if PER_SECTION else covering(exp)
+    if ZONES is not None:
+        exp = ZL.link(exp)[0]
+    else:
+        exp = [f"{book}-{sec_here}-{k}" for k in exp if f"{book}-{sec_here}-{k}" in root_ids] if PER_SECTION else covering(exp)
     if links == exp:
         ok += 1
     else:

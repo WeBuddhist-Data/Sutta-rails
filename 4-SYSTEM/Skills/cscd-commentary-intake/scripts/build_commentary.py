@@ -43,6 +43,8 @@ ap.add_argument("--commentary")
 ap.add_argument("--frontmatter", action="append", default=[])   # repeatable
 ap.add_argument("--unlinked", action="append", default=[])
 ap.add_argument("--per-section", action="store_true")   # root IDs ^<book>-<section>-<N> (Khuddakapāṭha)
+# a zoned root: its zone labels in order, "" for a plain zone (Suttanipāta: "1,2"; Nettippakaraṇa: ",1")
+ap.add_argument("--zones")
 a = ap.parse_args()
 
 root = Path(a.root_md)
@@ -60,6 +62,10 @@ conv.BOOK_ID = book
 conv.ROOT_IDS = root_ids
 conv.UNLINKED_HEADINGS = set(a.unlinked)
 conv.PER_SECTION = a.per_section
+if a.zones is not None:
+    sys.path.insert(0, str(HERE))
+    import zone_link  # noqa: E402
+    conv.ZONE_LINKER = zone_link.ZoneLinker(root.read_text(encoding="utf-8"), book, a.zones.split(","))
 data = json.loads(Path(a.json_path).read_text(encoding="utf-8"))
 conv.LAYER_DISPLAY_MAP = {k: a.layer_label for k in ("atthakatha", "tika", "other", data.get("layer", ""))}
 out = Path(a.out_md)
@@ -112,10 +118,12 @@ lines.append("---")
 out.write_text("\n".join(lines) + "\n" + body, encoding="utf-8")
 
 # 6. block IDs
-cmd = ["python3", "-I", str(HERE / "apply_commentary_ids.py"), "apply", str(out)]
+# the interpreter running this script (a bare "python3" is the Microsoft Store alias on Windows),
+# in UTF-8 mode so Pāli in its output survives a cp1252 console
+cmd = [sys.executable, "-I", "-X", "utf8", str(HERE / "apply_commentary_ids.py"), "apply", str(out)]
 for fm_heading in a.frontmatter:
     cmd += ["--frontmatter", fm_heading]
-r = subprocess.run(cmd, capture_output=True, text=True)
+r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
 if r.returncode:
     sys.exit(r.stdout + r.stderr)
 for ln in r.stdout.splitlines():

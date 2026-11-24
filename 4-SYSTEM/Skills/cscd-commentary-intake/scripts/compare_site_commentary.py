@@ -30,7 +30,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "cscd-root-text-int
 import bold_check  # noqa: E402
 
 PER_SECTION = "--per-section" in sys.argv     # root IDs ^<book>-<section>-<N> (Khuddakapāṭha)
-argv = [a for a in sys.argv if a != "--per-section"]
+ZONES = None     # --zones L1,L2,…: a zoned root's labels in order ("" = plain), as zone_link.py
+if "--zones" in sys.argv:
+    _k = sys.argv.index("--zones"); ZONES = sys.argv[_k + 1].split(","); del sys.argv[_k:_k + 2]
+ALL = "--all" in sys.argv          # print every problem, not the first 15
+argv = [a for a in sys.argv if a not in ("--per-section", "--all")]
 md, sdir, key, root_key = argv[1:5]
 atta_md, atta_key = (argv[5], argv[6]) if len(argv) > 6 else (None, None)
 S = Path(sdir)
@@ -130,12 +134,27 @@ if atta_md is None:
     # the book number from the file's root_text (…-<book>.md); a site key need
     # not carry one (Khuddaka: "kn-khp")
     book = re.search(r"^root_text:.*-(\d+)\.md\s*$", Path(md).read_text(encoding="utf-8"), re.M).group(1)
+    zone_of = {}
+    if ZONES is not None:
+        # a zoned root: each root paragraph's zone from the run rules the root build used
+        sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "cscd-root-text-intake" / "scripts"))
+        import zones  # noqa: E402
+        seq, hs = [], False
+        for i, p in sorted(root_paras.items()):
+            if p.get("r") in ("chapter", "title", "subhead", "subsubhead", "book"):
+                hs = True
+            elif p.get("n"):
+                seq.append((i, p["n"], hs)); hs = False
+        for (i, _, _), z in zip(seq, zones.assign((n, h) for _, n, h in seq)):
+            zone_of[i] = ZONES[z - 1] if z <= len(ZONES) else str(z)
     for l in links:
         if l["kind"] != "mula-atta":
             continue
         n = root_paras.get(l["t"], {}).get("n")
         j = pairs.get(l["i"])
         want = f"{book}-{n}"
+        if ZONES is not None and zone_of.get(l["t"]):
+            want = f"{book}-{zone_of[l['t']]}-{n}"
         if PER_SECTION:                 # root node key "<root-key>-<section>[-…]"
             rest = root_paras.get(l["t"], {}).get("k", "")[len(root_key):].strip("-").split("-")
             want = f"{book}-{rest[0]}-{n}" if rest and rest[0].isdigit() else want
@@ -176,5 +195,5 @@ for n_ in notes:
     cats[c] = cats.get(c, 0) + 1
 for c, k in cats.items():
     print(f"   note: {k} × {c}")
-print("   PASS" if not problems else "   PROBLEMS (%d):\n   - " % len(problems) + "\n   - ".join(problems[:15]))
+print("   PASS" if not problems else "   PROBLEMS (%d):\n   - " % len(problems) + "\n   - ".join(problems if ALL else problems[:15]))
 sys.exit(1 if problems else 0)

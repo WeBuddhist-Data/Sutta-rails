@@ -25,13 +25,24 @@ for x in xmls:
     body = ET.parse(x).getroot().find(".//body")
     if book_k is not None:
         body = [d for d in body.iter("div") if d.get("type") == "book"][book_k - 1]
+    books, reprint = 0, False
     for e in body.iter():
+        if e.tag == "p" and e.get("rend") == "book":
+            books += 1
+            reprint = books > 1              # a later part reprints the book title …
+            continue
         if (e.tag == "head" and e.get("rend") != "book") or (
                 e.tag == "p" and e.get("rend") in ("subhead", "subsubhead", "title", "chapter")):
             t = cs.text_with_notes(e).replace("‘‘", '"').replace("’’", '"')
             if cs.part_label(t):
                 continue
-            xh.append(cs.strip_heading_number(t))
+            h = cs.strip_heading_number(t)
+            if reprint and h in xh:
+                continue                     # … and the heading still open: text, not a heading
+            reprint = False
+            xh.append(h)
+        elif e.tag == "p" and e.get("rend") not in ("centre", "nikaya"):
+            reprint = False
 lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
 mh = [cs.strip_heading_number(re.sub(r"\s+\^[\w-]+$", "", l[l.index(" ") + 1:])).replace("**", "")
       for l in lines if re.match(r"^#{3,} ", l)]

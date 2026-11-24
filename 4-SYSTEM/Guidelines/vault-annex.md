@@ -92,7 +92,7 @@ Known tipitaka.app differences, where the vault follows the XML:
 
 **Renamed 2026-11-24** (human decision, as the Vinaya's `pi-N` → `pi-<book>pali`): the five root texts went from the nikāya abbreviation to its name, `pi-dn.md` → `pi-dighanikaya.md`, `pi-mn` → `pi-majjhimanikaya`, `pi-sn` → `pi-samyuttanikaya`, `pi-an` → `pi-anguttaranikaya`, `pi-kn` → `pi-khuddakanikaya`. The commentaries take the same prefix with their layer unchanged, for example `pi-dn-tiika.md` → `pi-dighanikaya-tiika.md` and `pi-dn-1-abhinavatiika.md` → `pi-dighanikaya-1-abhinavatiika.md`. All 11,784 transclusions and the `root_text:`/`commentary:` lines were repointed by `0-INBOX/sutta-rename/rename_sutta.py`, and `check_links.py` found none broken. The library ids (`registered_id: dn-tiika` …) are not file names and are unchanged. The upload ledgers still name the old paths: the upload skills forbid editing them by hand, and they fall back to the frontmatter ids. Reports in `0-INBOX/` dated before the rename use the old names.
 
-Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya root text is complete (all 20 books, 2026-11-24); its aṭṭhakathā still covers only books 1–2. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16, books 3–20 2026-11-23/24.
+Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya root text is complete (all 20 books, 2026-11-24); its aṭṭhakathā is being added book by book (table in §3). MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16, books 3–20 2026-11-23/24.
 
 **Khuddakanikāya:** one file, `pi-khuddakanikaya.md` (aṭṭhakathā `pi-khuddakanikaya-atthakatha.md`), each book a `##` chapter `^<book>-0`; until 2026-11-23 each book was its own file (`pi-kn-1.md`, `pi-kn-2.md`, in git history). A book is still built and verified on its own, then joined with `merge_volumes.py`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
 
@@ -255,6 +255,23 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-atthakatha.md` |
 | `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-tiika.md` |
 | `kn-atthakatha` | Khuddakanikāya-aṭṭhakathā | commentary | Pāli | `pi-khuddakanikaya.md` | `1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md` |
+
+**`kn-atthakatha`, book by book** (each a `##` chapter `^<book>-0`, as in the root; built against the book's root draft, then joined with `--relink` to `pi-khuddakanikaya.md`; report: `0-INBOX/pi-kn-commentary-report.md`):
+
+| Book | Commentary | CSCD source | Added | Notes |
+| --- | --- | --- | --- | --- |
+| 1 | Khuddakapāṭha-aṭṭhakathā | `s0501a.att.xml` | 2026-11-16 | front matter `^1-I-0`; per-section links |
+| 2 | Dhammapada-aṭṭhakathā | `s0502a.att.xml` | 2026-11-16 | printed in two parts (kept as text) |
+| 3 | Udāna-aṭṭhakathā | `s0503a.att.xml` | 2026-11-24 | front matter `Ganthārambhakathā` `^3-I-0`; `Nigamanakathā` its own `###` `^3-9-0` (human decisions); 92 citations, all linked |
+| 4 | Itivuttaka-aṭṭhakathā | `s0504a.att.xml` | 2026-11-24 | front matter `Ganthārambhakathā` `^4-I-0` and `Nidānavaṇṇanā` `^4-II-0`; `Nigamanakathā` `^4-5-0` (human decisions); nipātas `^4-1-0`…`^4-4-0` as in the root; 108 citations, all linked |
+| 5 | Suttanipāta-aṭṭhakathā | `s0505a.att.xml` | 2026-11-24 | front matter `^5-I-0`; `Nigamanakathā` `^5-6-0`; links zone-aware (all into `^5-1-N`); 905 citations linked; `1156.` unlinked (source slip for root 1155); the second part's reprinted opening, including "2. Cūḷavaggo", kept as text |
+| 6 | Vimānavatthu-aṭṭhakathā | `s0506a.att.xml` | 2026-11-24 | front matter `^6-I-0`; `Nigamanakathā` `^6-3-0`; 1,375 citations linked; 7 unlinked, all verses the root elides with "…pe…" (numbers the root XML never prints) |
+| 7 | Petavatthu-aṭṭhakathā | `s0507a.att.xml` | 2026-11-24 | front matter `^7-I-0`; `Nigamanakathā` `^7-5-0`; 1,067 citations, all linked |
+| 8 | Theragāthā-aṭṭhakathā | `s0508a1.att.xml` + `s0508a2.att.xml` | 2026-11-24 | two volumes joined, volume 2's opening as text; front matter `^8-I-0`; Nidānagāthāvaṇṇanā `^8-1-0` and the 21 nipātas as in the root (303 of 303 headings); 1,281 citations, all linked |
+| 9 | Therīgāthā-aṭṭhakathā | `s0509a.att.xml` | 2026-11-24 | no front matter; 16 nipātas as in the root; closing `Nigamanagāthā` its own `###` `^9-17-0` (by analogy with the Nigamanakathā decision); 524 citations, all linked |
+| 10 | Apadāna-aṭṭhakathā | `s0510a.att.xml` | 2026-11-24 | Therāpadāna only (no Therīapadāna commentary exists). Human decisions: the Nidāna as front matter `^10-II-0`, nested (Dūrenidāna › Sumedhakathā and the 25 Buddhas; Avidūre-, Santikenidāna); "Therāpadānaṃ" as text; vagga IDs by printed number (grouped 21-23, 34-38, 43-48, 50-53 on their first vagga), Nigamanakathā `^10-57-0`. 973 citations linked; 8 under "43-48" unlinked (the heading names no single vagga) |
+
+CSCD has no aṭṭhakathā for the Therīapadāna (11), Milindapañha (18) or Peṭakopadesa (20): the Apadāna-aṭṭhakathā (`s0510a`) covers the Therāpadāna only. The two Nettippakaraṇa ṭīkās (`s0519t.tik`, `s0501t.nrf` Nettivibhāvinī) are to be decided at book 19.
 
 **Retired 2026-11-20** (per-volume IDs, never reused). Each volume's commentary was its own file until the volumes were joined per nikāya. Each ID below is now a `##` chapter of the joined file:
 

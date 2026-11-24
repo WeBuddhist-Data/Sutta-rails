@@ -109,16 +109,46 @@ def tree_levels(book_div):
     <p rend="book"> is then the book's heading (##), and the rest nests under it."""
     levels = {}
     divless_book = book_div.tag == "body"
+    rank = P_HEAD_RANK
+    if divless_book:
+        # With no <div>s, the file's own order says which of title/chapter is outer: the KN
+        # aṭṭhakathās use both ways round (Itivuttaka-aṭṭhakathā: chapter = nipāta, title = vagga
+        # inside it; Apadāna-aṭṭhakathā: title outer). The first real one (part labels such as
+        # "(Paṭhamo bhāgo)" are not headings) is the outer level.
+        first = next((c.get("rend") for c in book_div.iter("p")
+                      if c.get("rend") in ("title", "chapter") and not part_label(text_of(c))), None)
+        if first == "chapter":
+            rank = {"chapter": 1, "title": 2, "subhead": 3, "subsubhead": 4}
+
+    seen_heads = set()                      # heading texts so far (number stripped)
+    reprint = [False]                       # inside a later part's reprinted opening
 
     def walk(container, level):
         # level = the '#' count of this container's own heading (book: 2).
         has_head = container.find("head") is not None or (divless_book and container is book_div)
         open_ranks = []                     # ranks of heading paragraphs open in this container
         own_head_seen = False
+        book_lines = 0
         for c in container:
             if c.tag == "div":
                 walk(c, level + 1)
                 continue
+            if c.tag == "p" and c.get("rend") == "book":
+                book_lines += 1
+                reprint[0] = book_lines > 1          # a later part reprints the book title
+                continue
+            txt = LEAD_NUM.sub("", text_of(c)).strip()
+            if reprint[0] and c.tag == "p" and c.get("rend") in P_HEAD_RANK:
+                if part_label(text_of(c)):
+                    continue
+                if txt in seen_heads:
+                    # the part's opening repeats the heading still open (CSCD Suttanipāta-
+                    # aṭṭhakathā, Dutiyo bhāgo: "2. Cūḷavaggo" again): text, not a new heading
+                    continue
+            if c.tag == "p" and c.get("rend") not in ("centre", "nikaya", "book") and not part_label(text_of(c)):
+                reprint[0] = False
+            if c.tag in ("p", "head") and (c.get("rend") in P_HEAD_RANK or c.tag == "head"):
+                seen_heads.add(txt)
             if c.tag == "head" and not own_head_seen:
                 levels[id(c)] = level        # the container's own heading
                 own_head_seen = True
@@ -127,7 +157,7 @@ def tree_levels(book_div):
             # a heading paragraph, or a further <head> in the same container (CSCD
             # s0404a: <head rend="chapter"> vaggas straight inside the book) ranks
             # by its rend: title > chapter > subhead > subsubhead
-            r = P_HEAD_RANK.get(c.get("rend")) if c.tag in ("p", "head") else None
+            r = rank.get(c.get("rend")) if c.tag in ("p", "head") else None
             if r is None or part_label(text_of(c)):
                 continue
             open_ranks = [x for x in open_ranks if x < r]

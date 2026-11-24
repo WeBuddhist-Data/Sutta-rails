@@ -1,0 +1,458 @@
+[
+{
+"key": "atta-kn-pv-0",
+"depth": 4,
+"rend": "subsubhead",
+"start": 3,
+"end": 30,
+"title": "Ganthārambhakathā"
+},
+{
+"key": "atta-kn-pv-1",
+"depth": 4,
+"rend": "chapter",
+"start": 30,
+"end": 434,
+"title": "1. Uragavaggo"
+},
+{
+"key": "atta-kn-pv-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 31,
+"end": 52,
+"title": "1. Khettūpamapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 52,
+"end": 67,
+"title": "2. Sūkaramukhapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 67,
+"end": 88,
+"title": "3. Pūtimukhapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 88,
+"end": 106,
+"title": "4. Piṭṭhadhītalikapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 106,
+"end": 177,
+"title": "5. Tirokuṭṭapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-6",
+"depth": 5,
+"rend": "subhead",
+"start": 177,
+"end": 212,
+"title": "6. Pañcaputtakhādakapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-7",
+"depth": 5,
+"rend": "subhead",
+"start": 212,
+"end": 243,
+"title": "7. Sattaputtakhādakapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-8",
+"depth": 5,
+"rend": "subhead",
+"start": 243,
+"end": 271,
+"title": "8. Goṇapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-9",
+"depth": 5,
+"rend": "subhead",
+"start": 271,
+"end": 290,
+"title": "9. Mahāpesakārapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-10",
+"depth": 5,
+"rend": "subhead",
+"start": 290,
+"end": 348,
+"title": "10. Khallāṭiyapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-11",
+"depth": 5,
+"rend": "subhead",
+"start": 348,
+"end": 394,
+"title": "11. Nāgapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-1-12",
+"depth": 5,
+"rend": "subhead",
+"start": 394,
+"end": 434,
+"title": "12. Uragapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2",
+"depth": 4,
+"rend": "chapter",
+"start": 434,
+"end": 1347,
+"title": "2. Ubbarivaggo"
+},
+{
+"key": "atta-kn-pv-2-1",
+"depth": 5,
+"rend": "subhead",
+"start": 435,
+"end": 511,
+"title": "1. Saṃsāramocakapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-2",
+"depth": 5,
+"rend": "subhead",
+"start": 511,
+"end": 550,
+"title": "2. Sāriputtattheramātupetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-3",
+"depth": 5,
+"rend": "subhead",
+"start": 550,
+"end": 646,
+"title": "3. Mattāpetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-4",
+"depth": 5,
+"rend": "subhead",
+"start": 646,
+"end": 696,
+"title": "4. Nandāpetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-5",
+"depth": 5,
+"rend": "subhead",
+"start": 696,
+"end": 700,
+"title": "5. Maṭṭhakuṇḍalīpetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-6",
+"depth": 5,
+"rend": "subhead",
+"start": 700,
+"end": 768,
+"title": "6. Kaṇhapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-7",
+"depth": 5,
+"rend": "subhead",
+"start": 768,
+"end": 827,
+"title": "7. Dhanapālaseṭṭhipetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-8",
+"depth": 5,
+"rend": "subhead",
+"start": 827,
+"end": 869,
+"title": "8. Cūḷaseṭṭhipetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-9",
+"depth": 5,
+"rend": "subhead",
+"start": 869,
+"end": 1128,
+"title": "9. Aṅkurapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-10",
+"depth": 5,
+"rend": "subhead",
+"start": 1128,
+"end": 1165,
+"title": "10. Uttaramātupetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-11",
+"depth": 5,
+"rend": "subhead",
+"start": 1165,
+"end": 1202,
+"title": "11. Suttapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-12",
+"depth": 5,
+"rend": "subhead",
+"start": 1202,
+"end": 1276,
+"title": "12. Kaṇṇamuṇḍapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-2-13",
+"depth": 5,
+"rend": "subhead",
+"start": 1276,
+"end": 1347,
+"title": "13. Ḍhubbaripetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3",
+"depth": 4,
+"rend": "chapter",
+"start": 1347,
+"end": 1791,
+"title": "3. Cūḷavaggo"
+},
+{
+"key": "atta-kn-pv-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1348,
+"end": 1421,
+"title": "1. Abhijjamānapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-2",
+"depth": 5,
+"rend": "subhead",
+"start": 1421,
+"end": 1511,
+"title": "2. Sāṇavāsittherapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-3",
+"depth": 5,
+"rend": "subhead",
+"start": 1511,
+"end": 1545,
+"title": "3. Rathakārapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-4",
+"depth": 5,
+"rend": "subhead",
+"start": 1545,
+"end": 1568,
+"title": "4. Bhusapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-5",
+"depth": 5,
+"rend": "subhead",
+"start": 1568,
+"end": 1613,
+"title": "5. Kumārapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-6",
+"depth": 5,
+"rend": "subhead",
+"start": 1613,
+"end": 1662,
+"title": "6. Seriṇīpetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-7",
+"depth": 5,
+"rend": "subhead",
+"start": 1662,
+"end": 1698,
+"title": "7. Migaluddakapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-8",
+"depth": 5,
+"rend": "subhead",
+"start": 1698,
+"end": 1727,
+"title": "8. Dutiyamigaluddakapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-9",
+"depth": 5,
+"rend": "subhead",
+"start": 1727,
+"end": 1754,
+"title": "9. Kūṭavinicchayikapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-3-10",
+"depth": 5,
+"rend": "subhead",
+"start": 1754,
+"end": 1791,
+"title": "10. Dhātuvivaṇṇapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4",
+"depth": 4,
+"rend": "chapter",
+"start": 1791,
+"end": 2532,
+"title": "4. Mahāvaggo"
+},
+{
+"key": "atta-kn-pv-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1792,
+"end": 2061,
+"title": "1. Ambasakkarapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-2",
+"depth": 5,
+"rend": "subhead",
+"start": 2061,
+"end": 2064,
+"title": "2. Serīsakapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-3",
+"depth": 5,
+"rend": "subhead",
+"start": 2064,
+"end": 2214,
+"title": "3. Nandakapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-4",
+"depth": 5,
+"rend": "subhead",
+"start": 2214,
+"end": 2217,
+"title": "4. Revatīpetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2217,
+"end": 2248,
+"title": "5. Ucchupetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2248,
+"end": 2275,
+"title": "6. Kumārapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-7",
+"depth": 5,
+"rend": "subhead",
+"start": 2275,
+"end": 2320,
+"title": "7. Rājaputtapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-8",
+"depth": 5,
+"rend": "subhead",
+"start": 2320,
+"end": 2351,
+"title": "8. Gūthakhādakapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-9",
+"depth": 5,
+"rend": "subhead",
+"start": 2351,
+"end": 2354,
+"title": "9. Gūthakhādakapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-10",
+"depth": 5,
+"rend": "subhead",
+"start": 2354,
+"end": 2388,
+"title": "10. Gaṇapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-11",
+"depth": 5,
+"rend": "subhead",
+"start": 2388,
+"end": 2403,
+"title": "11. Pāṭaliputtapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-12",
+"depth": 5,
+"rend": "subhead",
+"start": 2403,
+"end": 2429,
+"title": "12. Ambavanapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-13",
+"depth": 5,
+"rend": "subhead",
+"start": 2429,
+"end": 2437,
+"title": "13. Akkharukkhapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-14",
+"depth": 5,
+"rend": "subhead",
+"start": 2437,
+"end": 2448,
+"title": "14. Bhogasaṃharaṇapetivatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-15",
+"depth": 5,
+"rend": "subhead",
+"start": 2448,
+"end": 2467,
+"title": "15. Seṭṭhiputtapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-16",
+"depth": 5,
+"rend": "subhead",
+"start": 2467,
+"end": 2532,
+"title": "16. Saṭṭhikūṭapetavatthuvaṇṇanā"
+},
+{
+"key": "atta-kn-pv-4-16-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2507,
+"end": 2532,
+"title": "Nigamanakathā"
+}
+]

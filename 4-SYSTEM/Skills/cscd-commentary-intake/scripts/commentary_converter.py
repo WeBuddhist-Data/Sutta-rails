@@ -91,6 +91,9 @@ UNLINKED_MATCHED: set[str] = set()
 # ^<book>-<section>-<N>; a citation N links within the commentary's current
 # section, the printed number of its last level-3 heading (tree mode only).
 PER_SECTION = False
+# A zoned root (^<book>-<zone>-<N>, CSCD Suttanipāta): a zone_link.ZoneLinker set by
+# build_commentary.py --zones; a citation links to the zone zone_link.py picks (tree mode only).
+ZONE_LINKER = None
 # Truncated-tail ranges expanded for linking: (as printed, start, end).
 ABBREVIATED: list[tuple[str, int, int]] = []
 
@@ -617,6 +620,25 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
             gatha.clear()
 
     def emit(content: str, n_attr: str) -> None:
+        if n_attr and content.strip() == n_attr:
+            # the number alone, its dot opening the next paragraph (CSCD Apadāna-aṭṭhakathā:
+            # <p n="314">314</p><p>. Uḷurājāva …</p>): a printed citation, read as "314."
+            m = _verse_ref_re.match(content.strip() + ". ")
+            if m:
+                n0 = int(m.group(1))
+                ids, missing = (ZONE_LINKER.link([n0]) if ZONE_LINKER is not None else (None, None))
+                if PER_SECTION:
+                    want = [f"{BOOK_ID}-{section[0]}-{n0}"] if section[0] else []
+                    ids = [r for r in want if ROOT_IDS is None or r in ROOT_IDS]
+                    missing = [r for r in want if r not in ids] or ([] if want else [f"(no section) {n0}"])
+                elif ids is None:
+                    ids, missing = covering_blocks(ROOT_IDS, BOOK_ID, n0, n0) if ROOT_IDS is not None else (resolve_root_text_ids(BOOK_ID, "main", n0, n0), [])
+                if missing:
+                    UNRESOLVED.append((content.strip(), missing, content[:80]))
+                if ids:
+                    out.append(make_transclusions(ids, ROOT_TEXT_PATH) + "\n\n")
+                out.append(f"{content} {next_id()}\n\n")
+                return
         m = _verse_ref_re.match(content)
         if m and not n_attr:
             # a number the XML does not mark as a paragraph number (@n): the
@@ -643,7 +665,11 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
                 else:
                     UNRESOLVED.append((m.group(0).strip(), [], content[:80]))
             rt_ids = resolve_root_text_ids(BOOK_ID, "main", n_start, n_end)
-            if PER_SECTION:
+            if ZONE_LINKER is not None and n_end >= n_start:
+                rt_ids, missing = ZONE_LINKER.link(list(range(n_start, n_end + 1)))
+                if missing:
+                    UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
+            elif PER_SECTION:
                 want = [f"{BOOK_ID}-{section[0]}-{k}" for k in range(n_start, n_end + 1)] if section[0] else []
                 rt_ids = [r for r in want if ROOT_IDS is None or r in ROOT_IDS]
                 missing = [r for r in want if ROOT_IDS is not None and r not in ROOT_IDS] or ([] if want else [f"(no section) {n_start}"])
@@ -690,9 +716,16 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
         if role == ROLE_SKIP:
             continue
         n_attr = str(seg.get("paragraph") or "")
-        if n_attr and role in (ROLE_VERSE, ROLE_GATHA, ROLE_GATHALAST) \
+        if n_attr and role in (ROLE_VERSE, ROLE_GATHA, ROLE_GATHALAST) and content.strip() != n_attr \
                 and not _verse_ref_re.match(content) and not _numberlike_re.match(content):
             UNRESOLVED.append((n_attr, [], content[:80]))
+        if role in (ROLE_GATHA, ROLE_GATHALAST) and n_attr and _verse_ref_re.match(content) \
+                and gatha and not unlinked[0]:
+            # a cited verse that opens while an earlier quoted verse is still open (CSCD
+            # Vimānavatthu-aṭṭhakathā quotes runs of one-line verses, "256. …", "258. …",
+            # each with its own @n and no gathalast): close that one, so each cited verse
+            # is its own block with its own links
+            flush_gatha()
         if role in (ROLE_GATHA, ROLE_GATHALAST) and n_attr and _verse_ref_re.match(content) \
                 and not gatha and not unlinked[0]:
             # a gāthā that opens with a printed citation (a number-only line joined

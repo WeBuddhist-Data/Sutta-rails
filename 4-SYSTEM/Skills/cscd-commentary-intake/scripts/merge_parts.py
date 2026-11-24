@@ -37,7 +37,7 @@ for k, path in enumerate(parts):
     before_first = True
     for s in segs:
         s = dict(s)
-        if s["css_class"] == "chapter":
+        if s["css_class"] in ("chapter", "heading"):    # "heading": a --tree JSON (KN Theragāthā-aṭṭhakathā)
             before_first = False
         if before_first:
             retyped.append((Path(path).name, s["css_class"], s["content"]))

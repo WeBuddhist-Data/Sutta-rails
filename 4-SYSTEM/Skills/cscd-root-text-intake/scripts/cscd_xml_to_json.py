@@ -261,6 +261,10 @@ def main(src, dst, book=None, tree=False):
             if css in ("subhead", "subsubhead", "title") and cscd_shape.part_label(cscd_shape.text_of(child)):
                 notes["part labels as text"].append(cscd_shape.text_of(child))
                 css = "centered"
+            elif tree and child.tag == "p" and rend in cscd_shape.P_HEAD_RANK and id(child) not in levels:
+                # a later part's reprinted heading that tree_levels left out (cscd_shape)
+                notes["reprinted title lines as text"].append(cscd_shape.text_of(child))
+                css = "centered"
             if css in ("nikaya", "book") and child.tag == "p" and title is not None:
                 notes["reprinted title lines as text"].append(cscd_shape.text_of(child))
                 css = "centered"
