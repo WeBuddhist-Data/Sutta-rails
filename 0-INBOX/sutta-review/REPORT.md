@@ -151,6 +151,46 @@ The review now compares headings as printed, and lists each heading whose number
 - **Books:** all 20 KN root books; aṭṭhakathās for every book CSCD comments on (none for 11, 18, 20); the Nettippakaraṇa-ṭīkā only, the Nettivibhāvinī left out by decision (annex).
 - **Before any KN rebuild:** the shape scripts in `0-INBOX/temp/kn-comm/` pair headings by name, and the one that turns a paragraph into a heading must keep its number (the `Dutiyavaggavaṇṇanā` case). The intake skill scripts already do.
 
+## Second pass: page breaks, bold, structure and links (2026-11-25) ✅
+
+[`review_more.py`](review_more.py), a `<file>-more.md` per text. These were checked at build time; this pass re-runs them on today's files.
+
+| Nikāya | Page markers | Spacing differences | Bold spans (XML = vault) | Structure problems | Citations | Wrong links |
+|---|---|---|---|---|---|---|
+| Dīgha (4 files) | 10,959 | 0 | 40,166 ✓ | 0 | 2,216 | 1 known |
+| Majjhima (3) | 11,132 | 0 | 31,794 ✓ | 0 | 2,181 | 0 |
+| Saṃyutta (3) | 10,793 | 0 | 24,819 ✓ | 0 | 1,902 | 1 known |
+| Aṅguttara (3) | 12,581 | 0 | 25,523 ✓ | 0 | 2,133 | 0 |
+| Khuddaka (3) | 44,497 | 0 | 78,108 ✓ | 0 | 15,535 | 0 |
+| **All 16** | **89,962** | **0** | **200,410 ✓** | **0** | **23,967** | **2 known** |
+
+**A. Page breaks.** Lines are aligned by their letters, then compared with exact spacing and punctuation. Each `<pb/>` is tracked, and the editions' markers at the same spot count as one.
+- **No page break became a space and none joined two words.** The Vinaya's problem (`word<pb/>.` → `word .`, 3,111 cases) does not occur here. A marker with spaces around it is one space in the vault (`me <pb/> sutaṃ` → `me sutaṃ`), and one with none is no space (`dhammaṃ<pb/>.` → `dhammaṃ.`).
+- **No other spacing or punctuation difference** exists in any aligned line.
+- The only lines that cannot be aligned are the first pass's known ones: SN 5's 5 ranges, the AN Saṃkhepakathā heading move and KN's `474.`.
+
+**B. Bold.** All 200,410 `<hi rend="bold">` spans are `**…**` spans with exactly the same text, in order (`bold_check.py`). No `**` is unpaired.
+
+**C. Structure.** In all 16 files:
+- each heading sits under the heading one level up whose ID path is its own minus one segment;
+- no level is skipped;
+- no heading is empty.
+
+The "sibling restarts" listed in the detail files are the source's own numbering. A ṭīkā skips suttas it does not comment on (`7. …` after `3. …`), titles repeat (`14. Etadaggavaggo` ×6, as in the AN structure review), and grouped marks such as `(3-5)` are not counted.
+
+**D. Links.** Each printed citation was checked against its links: the linked root blocks must hold exactly the cited numbers.
+- **0 wrong links**, apart from the 2 known misprints: DN aṭṭhakathā `504-407.` → 504–507 and SN ṭīkā `1101.` → `^5-1103`.
+- **Cited numbers the root does not print (9 citations):** SN `531-650.`, `651-704.`, `705-812.` (aṭṭhakathā and ṭīkā) span the documented SN Mahāvagga gaps; AN `105-6.` (aṭṭhakathā and ṭīkā; the root has no 4-106); KN `229-231.` (no 6-231). Every number the root does print is linked.
+- **Citations with no links, all documented:**
+  - the MN, SN and AN ṭīkās' own Ganthārambhakathāvaṇṇanā numbers 1.–16. and 1.–19., and the AN Dasaka-ṭīkā's verse list 1.–12. (annex, `--unlinked`);
+  - KN aṭṭhakathā (20): the Tirokuṭṭa `13.`, the reprinted `2. Cūḷavaggo`, `1156.`, the 7 Vimānavatthu `…pe…` verses, the 8 under Apadāna "43-48", and 3 Jātaka items, all in the build logs (`0-INBOX/temp/kn-comm/*.unresolved.json`) and the annex;
+  - KN ṭīkā `125.`, a source slip.
+- **One false alarm:** KN aṭṭhakathā `314` (printed without a dot) is a citation the check did not recognise. It links `^10-1-314`, which is right.
+
+## Shelf coverage
+
+[`shelf_coverage.py`](shelf_coverage.py) lists every Sutta-shelf XML file in `romn/` (`s01*`–`s05*`, 101 files) against the `source_filename` lists in `1-SOURCES/`. **100 of the 101 are in the vault.** The one left out is `s0501t.nrf.xml`, the Nettivibhāvinī, by decision (annex). No vault file names an XML file that is not in `romn/`.
+
 ## Summary
 
 All five nikāyas, 16 files, are complete against tipitaka-xml: every XML line is in the vault and nothing is added. The only differences are documented choices: SN 5's 5 range blocks, the AN Saṃkhepakathā heading move, KN's `474.` and the heading↔text lines. All block IDs are unique and agree with their printed numbers, and every transclusion resolves. The one defect, printed heading numbers dropped from 12,711 headings, is fixed in the vault and in the intake scripts. Not done: the prod re-upload and syncing the shared skill library.
