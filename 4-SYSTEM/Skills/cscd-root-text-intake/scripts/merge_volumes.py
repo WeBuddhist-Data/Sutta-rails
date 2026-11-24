@@ -48,7 +48,9 @@ SPLIT = "--split" in args
 if SPLIT: args.remove("--split")
 title, reg, root_text, commentary, label = (take(f) for f in ("--title", "--registered-id", "--root-text", "--commentary", "--label"))
 out, parts = args[0], args[1:]
-if len(parts) < 2: sys.exit("STOP: give at least two parts")
+# one part: a work whose first volume is ingested alone (the Khuddakanikāya-ṭīkā, the Netti's only):
+# its body relinked, its frontmatter the work's; later volumes join it as usual
+if not parts: sys.exit("STOP: give at least one part")
 
 ID_END = re.compile(r"\s\^([\w-]+)\s*$")
 LAYER_LABEL = re.compile(r"\s*\((aṭṭhakathā|ṭīkā|abhinavaṭīkā)\)\s*$")
@@ -164,9 +166,10 @@ for f in fms:
     for s in unq(field(f, "source_filename")).strip("[]").split(","):
         s = s.strip()
         if s and s not in srcfiles: srcfiles.append(s)
-    vols = block(f, "source_volumes")
-    for u in (re.findall(r'"(https?://[^"]+)"', vols) if vols else [unq(field(f, "source"))]):
-        if u not in urls: urls.append(u)
+    # a volume built from several XML parts (merge_parts.py) lists them under `source:` itself
+    vols = block(f, "source_volumes") or block(f, "source")
+    for u in re.findall(r'"(https?://[^"]+)"', vols or "") or [unq(field(f, "source"))]:
+        if u and u not in urls: urls.append(u)
     for o in re.findall(r"^  - (.+)$", block(f, "other_ids") or "", re.M):
         if o not in others: others.append(o)
 
@@ -177,7 +180,7 @@ stems = ", ".join(s.replace(".xml", "") for s in srcfiles)
 how = ("Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py or tree mode) → block IDs, via the cscd-root-text-intake skill"
        if field(first, "file_type") == "root-text" else
        "Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept")
-desc = (f"VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, {len(srcfiles)} volume files ({stems}), {nikaya}{', ' + label if label else ''}. "
+desc = (f"VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, {len(srcfiles)} volume file{'s' if len(srcfiles) > 1 else ''} ({stems}), {nikaya}{', ' + label if label else ''}. "
         f"{how}. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: "
         f"every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. "
         f"Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings.")

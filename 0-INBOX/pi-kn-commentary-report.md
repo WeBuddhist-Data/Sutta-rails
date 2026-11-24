@@ -458,3 +458,39 @@ Run: `kn_comm_book.py 19 s0519a.att atta-kn-nett kn-nett … --zones=,1 --shape=
 **The Netti ṭīkās (human decision).** The Nettippakaraṇa-ṭīkā (`s0519t.tik`) is to be built next into a new `pi-khuddakanikaya-tiika.md`. The Nettivibhāvinī (`s0501t.nrf`) is left out.
 
 **Join:** 16,192 links, none broken; 54,183 block IDs, all unique; split proof OK; no bare LFs.
+
+## Book 19 ṭīkā — Nettippakaraṇa-ṭīkā (`s0519t.tik`, 2026-11-24)
+
+The first and only KN ṭīkā. It creates `1-SOURCES/Commentaries/pi-khuddakanikaya-tiika.md` (`kn-tiika`, `commentary:` the KN aṭṭhakathā), as the DN, MN, SN and AN ṭīkās have their own files. The Nettivibhāvinī (`s0501t.nrf`) is left out (human decision).
+
+Run: `kn_comm_book.py 19 s0519t.tik tika-kn-nett kn-nett … --layer=tiika --zones=,1 --shape=0-INBOX/temp/kn-comm/nett_shape.py --fm=Ganthārambhakathāvaṇṇanā --fm=Nidānakathāvaṇṇanā --accept-unresolved=125.`
+
+| Check | Result |
+|---|---|
+| Segments vs `tika-kn-nett` | 763 = 763 site paragraphs |
+| `verify_commentary.py` | PASS: `^19-1`…`^19-717`, 24,149 words = XML, 2,417 bold spans |
+| Citations | 130 printed: 129 linked right, 0 wrong, 1 left unlinked and logged ("125.", below) |
+| `check_headings.py` | 33 = 33, ALL MATCH |
+| Site | PASS: text and tree match |
+| Aṭṭhakathā check (new, `tika_probe.py`) | of the site's 129 paranum links, 128 agree and 1 is a range opening on the same block; 0 differ |
+| Tree vs root | 28 of 30 headings carry the root's ID and title; every `###` matches. The 2 misses are the commentary's own headings |
+
+**The ṭīkā's citations, checked through the aṭṭhakathā.** tipitaka.app links the ṭīkā's numbered paragraphs to the aṭṭhakathā's paragraphs (`atta-tika`), not to the root. So `compare_site_commentary.py` finds no root links to compare. `tika_probe.py` (now a driver check for any ṭīkā) takes each pair the site gives. The root blocks the ṭīkā paragraph links must be the ones its aṭṭhakathā paragraph links (in the book's aṭṭhakathā draft). One accepted variant: the ṭīkā's "73-4." links `^19-73` and `^19-74`, while its aṭṭhakathā paragraph cites 73 only.
+
+**"125." left unlinked (human decision: a source slip, Rule 2).** The ṭīkā's paragraph "125. Saccekadesato saccasamudāyo … ‘paramatthasaccaṃ vā hotū’ti āha. Caturo padāti …" explains the words of the aṭṭhakathā paragraph printed "170." ("Maggānaṭṭhaṅgiko … paramatthasaccaṃ vā hotu … caturo padā"), which links `^19-170`. The edition's root jumps from 124 to 170, and the ṭīkā keeps counting from 124. The root has no ¶125, so the printed "125." stays as printed, without a link. The site gives this paragraph no link either.
+
+**Human decisions (2026-11-24):**
+- **Front matter.** Ganthārambhakathāvaṇṇanā `^19-I-0` (on the aṭṭhakathā's opening verses) and Nidānakathāvaṇṇanā `^19-II-0` (on how the aṭṭhakathā introduces the Netti). Neither cites the root. This follows the AN ṭīkā's two opening sections and the Itivuttaka's `^4-II-0`.
+- **Headings** by `nett_shape.py`, as in the aṭṭhakathā:
+  - the vibhaṅgas take `^19-4-1-0`…`16-0`;
+  - the grouped "4. Padaṭṭhānahārasampātādi-" takes its first section, `^19-4-20-0` (the standing decision); the sampātas after it have no heading here;
+  - Nayasaṅkhepa is `^19-3-3-0` and Missaka `^19-4-33-0`, the same IDs as in the aṭṭhakathā.
+- **Nigamanakathāvaṇṇanā** is `^19-7-0` (the standing decision; the driver now recognises the "-vaṇṇanā" form).
+
+**Tooling changes:**
+- `kn_comm_book.py --layer=tiika` builds a ṭīkā (registered id `kn-<book>-tiika`, `--commentary`) and joins it into `pi-khuddakanikaya-tiika.md`. The first ṭīkā book creates that file.
+- `merge_volumes.py` takes one part (a work's first volume on its own), and reads a volume's source URLs when `source:` is a list (a book built from several XML parts).
+- **A defect found, now repaired:** the joined KN aṭṭhakathā's `source_volumes` listed 15 URLs and missed the 9 multi-part volumes (`s0508a1/2`, `s0513a1–4`, `s0514a1–3`). Their drafts list them under `source:`, which merge_volumes did not read before this fix. With approval, `fix_source_volumes.py` rebuilt the list from `source_filename` (24 URLs, in source order): 9 lines added, nothing else changed, body byte-identical, CRLF kept. Backup in `0-INBOX/temp/kn-comm/backups/`.
+- The new file's frontmatter took `license`, `tag_ids` and `category_id` from the KN aṭṭhakathā (the same values as the AN ṭīkā), and "1 volume file".
+
+**Join (new file):** 130 links, none broken; 753 block IDs, all unique; split proof OK; no bare LFs.

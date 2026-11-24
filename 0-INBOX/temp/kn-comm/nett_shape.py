@@ -43,7 +43,8 @@ if mode == "prep":
         if s["css_class"] == "centered" and s["content"].strip() in NIKAYA:
             s["css_class"], s["level"] = "heading", lev
             to_heading.append(s["content"].strip())
-    assert to_heading == NIKAYA, to_heading
+    # the aṭṭhakathā has all three; the ṭīkā (s0519t.tik) prints them as headings already (none)
+    assert to_heading in (NIKAYA, []), to_heading
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     Path(str(path) + ".shape.json").write_text(json.dumps({"to_heading": to_heading, "to_text": []},
                                                           ensure_ascii=False, indent=1), encoding="utf-8")

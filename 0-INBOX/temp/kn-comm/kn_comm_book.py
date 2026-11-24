@@ -23,8 +23,14 @@ PRESEC = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--presectio
 R, S = "4-SYSTEM/Skills/cscd-root-text-intake/scripts", "4-SYSTEM/Skills/cscd-commentary-intake/scripts"
 T = Path("0-INBOX/temp/kn-comm"); RAW = Path("0-INBOX/raw-data/kn"); CLONE = Path("D:/Work/OpenPecha/tipitaka-xml/romn")
 root_draft = f"0-INBOX/temp/kn/pi-kn-{book}.md"
-draft = T / f"pi-kn-{book}-atthakatha.md"
-comm = Path("1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md")
+# --layer=tiika: a ṭīkā (Netti-ṭīkā, human decision 2026-11-24), joined into pi-khuddakanikaya-tiika.md,
+# which the first ṭīkā book creates; it names the aṭṭhakathā it explains (frontmatter `commentary:`)
+LAYER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--layer=")), "atthakatha")
+assert LAYER in ("atthakatha", "tiika"), LAYER
+LAYER_LABEL, WORK = {"atthakatha": ("aṭṭhakathā", "Khuddakanikāya-aṭṭhakathā"), "tiika": ("ṭīkā", "Khuddakanikāya-ṭīkā")}[LAYER]
+ATT = "1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md"
+draft = T / f"pi-kn-{book}-{LAYER}.md"
+comm = Path(f"1-SOURCES/Commentaries/pi-khuddakanikaya-{LAYER}.md")
 ROOT = "1-SOURCES/Text/pi-khuddakanikaya.md"
 
 
@@ -39,7 +45,7 @@ def run(*a, ok=True, show=8):
 
 
 print(f"== book {book}: {label} ({', '.join(stems)})")
-assert f"^{book}-0" not in comm.read_text(encoding="utf-8"), f"book {book} is already in {comm}"
+assert not comm.exists() or f"^{book}-0" not in comm.read_text(encoding="utf-8"), f"book {book} is already in {comm}"
 xmls = []
 for st in stems:
     x = RAW / f"{st}.xml"
@@ -112,15 +118,18 @@ if fm:
 for extra in [a.split("=", 1)[1] for a in sys.argv if a.startswith("--fm=")]:
     fm += ["--frontmatter", extra]
     print(f"   decision (this book): {extra} -> front matter")
-run(f"{S}/build_commentary.py", jsons[0], root_draft, str(draft), "--registered-id", f"kn-{book}-atthakatha",
-    "--layer", "atthakatha", "--layer-label", "aṭṭhakathā", "--nikaya", "Khuddakanikāya", *fm,
+run(f"{S}/build_commentary.py", jsons[0], root_draft, str(draft), "--registered-id", f"kn-{book}-{LAYER}",
+    "--layer", LAYER, "--layer-label", LAYER_LABEL, "--nikaya", "Khuddakanikāya", *fm,
+    *(["--commentary", ATT] if LAYER == "tiika" else []),
+    *[x for u in [a.split("=", 1)[1] for a in sys.argv if a.startswith("--unlinked=")] for x in ("--unlinked", u)],
     *(["--per-section"] if PER_SECTION else []), *(["--zones", ZONES] if ZONES is not None else []), *(["--presection", PRESEC] if PRESEC else []), show=1)
 t = draft.read_text(encoding="utf-8")
-nig = re.search(r"^(#{4,}) (Nigamana(?:kathā|gāthā)) \^([\w-]+)$", t, re.M)   # gāthā: Therīgāthā-aṭṭhakathā
+# gāthā: Therīgāthā-aṭṭhakathā; -vaṇṇanā: a ṭīkā's (Netti-ṭīkā)
+nig = re.search(r"^(#{4,}) (Nigamana(?:kathā|gāthā)(?:vaṇṇanā)?) \^([\w-]+)$", t, re.M)
 if nig and not re.search(r"^#+ ", t[nig.end():], re.M):
     tops = [int(m.group(1)) for m in re.finditer(rf"^### .* \^{book}-(\d+)-0$", t, re.M)]
     new = f"### {nig.group(2)} ^{book}-{max(tops) + 1}-0"
-    shutil.copyfile(draft, T / f"pi-kn-{book}-atthakatha.xmllevels.md")
+    shutil.copyfile(draft, T / f"pi-kn-{book}-{LAYER}.xmllevels.md")
     draft.write_text(t.replace(nig.group(0), new), encoding="utf-8")
     print(f"   decision (standing): {nig.group(0)}  ->  {new}")
 elif nig:
@@ -168,7 +177,7 @@ if vrc:
           f"(dropped {dict(got['delete'])}, added {dict(got['insert'])})")
 h, _ = run(f"{R}/check_headings.py", str(draft), *xmls, "--all", show=1, ok=False)
 c, _ = run(f"{S}/compare_site_commentary.py", str(draft), "0-INBOX/tipitaka-app", key, rkey, "--all", *(["--per-section"] if PER_SECTION else []), *(["--zones", ZONES] if ZONES is not None else []), show=6, ok=False)
-unres = json.loads((T / f"pi-kn-{book}-atthakatha.unresolved.json").read_text(encoding="utf-8"))
+unres = json.loads((T / f"pi-kn-{book}-{LAYER}.unresolved.json").read_text(encoding="utf-8"))
 # reviewed exceptions (reported in 0-INBOX/pi-kn-commentary-report.md):
 #  --accept-unresolved=<printed>[,…]: a citation reviewed as a source slip, left unlinked (Rule 2)
 #  a site "tree delete" of exactly the reprinted part-opening lines the converter kept as text (Rule 4)
@@ -309,7 +318,7 @@ if PER_SECTION or ZONES is not None:
                   f"{sum(1 for p in zone_ok if zres[p] == 'lemmas')} where the vault's block holds more of the paragraph's "
                   f"bold lemmas, {sum(1 for p in zone_ok if zres[p] == 'run')} (no lemma evidence either way) in the run of the "
                   f"vault's citations on either side")
-            (T / f"pi-kn-{book}-atthakatha.site-zone-accepted.txt").write_text(
+            (T / f"pi-kn-{book}-{LAYER}.site-zone-accepted.txt").write_text(
                 "\n".join(f"{zres[p]}\t{p}" for p in zone_ok), encoding="utf-8")
     probs = [p for p in probs if p not in zone_ok]
     sec_art = [p for p in probs if PER_SECTION and sec_ok(p)]
@@ -335,7 +344,7 @@ if not site_ok:
     print(f"   site: {len(probs)} difference(s) not accepted:")
     for p in probs[:15]:
         print("      ", p[:240])
-    (T / f"pi-kn-{book}-atthakatha.site-left.txt").write_text("\n".join(probs), encoding="utf-8")
+    (T / f"pi-kn-{book}-{LAYER}.site-left.txt").write_text("\n".join(probs), encoding="utf-8")
 # --text-heading=<title>: an XML heading turned into text by a human decision (Apadāna-aṭṭhakathā:
 # "Therāpadānaṃ"); check_headings.py may then differ only by deleting exactly that title
 th = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--text-heading=")] + SHAPE_TEXT
@@ -352,6 +361,12 @@ th = th + FROM_TEXT + (["%d shaped headings" % len(SHAPE_HEAD)] if SHAPE_HEAD el
 if heads_ok and "ALL MATCH" not in h:
     print(f"   headings: accepted, only {th} differ (human decisions: text <-> heading)")
 v_ok = v.rstrip().endswith("PASS") or vrc != 0     # a non-zero exit got here only when accepted above
+# a ṭīkā: tipitaka.app links its numbered paragraphs to the aṭṭhakathā's, not to the root, so the
+# check above has no links to compare; tika_probe.py checks each ṭīkā paragraph links the root
+# blocks its aṭṭhakathā paragraph links (in the book's aṭṭhakathā draft)
+if LAYER == "tiika":
+    _o, trc = run(str(T / "tika_probe.py"), str(draft), str(T / f"pi-kn-{book}-atthakatha.md"), show=4, ok=False)
+    site_ok = site_ok and trc == 0
 ok = v_ok and heads_ok and site_ok and n_unres == 0
 print(f"== checks: verify {'PASS' if v.rstrip().endswith('PASS') else ('accepted' if v_ok else 'FAIL')}, headings "
       f"{'ALL MATCH' if 'ALL MATCH' in h else ('accepted' if heads_ok else 'MISMATCH')}, site {'PASS' if c.rstrip().endswith('PASS') else ('accepted' if site_ok else 'FAIL')}, unresolved {n_unres}")
@@ -361,11 +376,13 @@ if DRY:
     sys.exit(0)
 
 # join (step 10): merge, split proof, links
-out = T / "kn-atthakatha.join.md"
+out = T / f"kn-{LAYER}.join.md"
 rl = f"{root_draft}={ROOT}"
-run(f"{R}/merge_volumes.py", str(out), str(comm), str(draft), "--title", "Khuddakanikāya-aṭṭhakathā",
-    "--registered-id", "kn-atthakatha", "--root-text", ROOT, "--relink", rl, "--label", label, show=3)
-sp, _ = run(f"{R}/merge_volumes.py", "--split", str(out), str(comm), str(draft), "--relink", rl, show=1)
+prev = [str(comm)] if comm.exists() else []          # the first ṭīkā book creates the file
+run(f"{R}/merge_volumes.py", str(out), *prev, str(draft), "--title", WORK,
+    "--registered-id", f"kn-{LAYER}", "--root-text", ROOT, *(["--commentary", ATT] if LAYER == "tiika" else []),
+    "--relink", rl, "--label", label, show=3)
+sp, _ = run(f"{R}/merge_volumes.py", "--split", str(out), *prev, str(draft), "--relink", rl, show=1)
 if "SPLIT OK" not in sp:
     sys.exit("STOP: split proof failed")
 j = out.read_text(encoding="utf-8")
@@ -377,6 +394,7 @@ print(f"   joined: {len(links)} links, broken {len(bad)}; {len(ids)} block IDs, 
 if bad or len(ids) != len(set(ids)):
     sys.exit("STOP: joined file has broken links or duplicate IDs")
 (T / "backups").mkdir(exist_ok=True)
-shutil.copyfile(comm, T / "backups" / f"pi-khuddakanikaya-atthakatha.before-{book}.md")
+if prev:
+    shutil.copyfile(comm, T / "backups" / f"pi-khuddakanikaya-{LAYER}.before-{book}.md")
 shutil.copyfile(out, comm)
 print(f"== book {book} joined into {comm}")

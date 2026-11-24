@@ -255,6 +255,7 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-atthakatha.md` |
 | `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-tiika.md` |
 | `kn-atthakatha` | Khuddakanikāya-aṭṭhakathā | commentary | Pāli | `pi-khuddakanikaya.md` | `1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md` |
+| `kn-tiika` | Khuddakanikāya-ṭīkā | sub-commentary | Pāli | `pi-khuddakanikaya.md` | `1-SOURCES/Commentaries/pi-khuddakanikaya-tiika.md` |
 
 **`kn-atthakatha`, book by book** (each a `##` chapter `^<book>-0`, as in the root; built against the book's root draft, then joined with `--relink` to `pi-khuddakanikaya.md`; report: `0-INBOX/pi-kn-commentary-report.md`):
 
@@ -278,7 +279,13 @@ No `registered_id` may be used in any rail until it is added to this roster.
 | 17 | Paṭisambhidāmagga-aṭṭhakathā | `s0517a.att.xml` | 2026-11-24 | Human decisions: the vaggas as `###` on the root's IDs with the kathās under them (`^17-1-2-0` …); headings take the root's level and ID wherever the names pair, even where the XML nests them otherwise (Saṅkhārupekkhā, Indriyaparopariyatta, the chakkas, the Indriyakathā's Ka./Kha./Ga.); grouped titles on their first section; the commentary's own headings numbered after the root's (Mātikāvaṇṇanā `^17-1-2-49-0`, inside the Ñāṇakathā as printed); Nigamanakathā `^17-4-0`. Citations by zone (`--zones=M,1,2,3`: Mātikā `^17-M-`, then each vagga); 367 citations, all linked |
 | 19 | Nettippakaraṇa-aṭṭhakathā | `s0519a.att.xml` | 2026-11-24 | Human decision: vibhaṅga titles 5, 7 and 8, printed as big title lines (`rend="nikaya"`) and so kept as text by the converter, made headings like their siblings. Headings take the root's ID wherever the names pair (`^19-4-1-0`…`^19-4-30-0`; the sampātas the commentary does not head, Otaraṇa, Sodhana, Parikkhāra and Samāropana, leave their root IDs unused); the commentary's own headings numbered after the root's (Nayasaṅkhepo `^19-3-3-0`, a text line in the root; Missakahārasampātavaṇṇanā `^19-4-33-0`); Nigamanakathā `^19-7-0`. Citations by zone (`--zones=,1`: the main count `^19-N`, the Hārasaṅkhepa and Dvādasapada verses `^19-1-N`); 146 citations, all linked |
 
-CSCD has no aṭṭhakathā for the Therīapadāna (11), Milindapañha (18) or Peṭakopadesa (20): the Apadāna-aṭṭhakathā (`s0510a`) covers the Therāpadāna only. The two Nettippakaraṇa ṭīkās (human decision, 2026-11-24): the Nettippakaraṇa-ṭīkā (`s0519t.tik`) is to be built into a new `pi-khuddakanikaya-tiika.md`, as for the other nikāyas; the Nettivibhāvinī (`s0501t.nrf`), which CSCD files outside its ṭīkā layer, is left out.
+CSCD has no aṭṭhakathā for the Therīapadāna (11), Milindapañha (18) or Peṭakopadesa (20): the Apadāna-aṭṭhakathā (`s0510a`) covers the Therāpadāna only. The two Nettippakaraṇa ṭīkās (human decision, 2026-11-24): the Nettippakaraṇa-ṭīkā (`s0519t.tik`) is built into a new `pi-khuddakanikaya-tiika.md`, as for the other nikāyas; the Nettivibhāvinī (`s0501t.nrf`), which CSCD files outside its ṭīkā layer, is left out. CSCD has no other ṭīkā on the Khuddakanikāya.
+
+**`kn-tiika`** (registered 2026-11-24; `commentary:` `pi-khuddakanikaya-atthakatha.md`), one `##` chapter per book as in the root, built and joined like the aṭṭhakathā (`kn_comm_book.py --layer=tiika`):
+
+| Book | Ṭīkā | CSCD source | Added | Notes |
+| --- | --- | --- | --- | --- |
+| 19 | Nettippakaraṇa-ṭīkā | `s0519t.tik.xml` | 2026-11-24 | Human decisions: Ganthārambhakathāvaṇṇanā `^19-I-0` and Nidānakathāvaṇṇanā `^19-II-0` as front matter (no root citations); the ṭīkā's "125." (on the passage the aṭṭhakathā numbers 170, root `^19-170`) left unlinked and logged, a source slip, since the root has no ¶125. Headings on the root's IDs as in the aṭṭhakathā (grouped "Padaṭṭhānahārasampātādi" on its first section `^19-4-20-0`; Nayasaṅkhepa `^19-3-3-0`, Missaka `^19-4-33-0`); Nigamanakathāvaṇṇanā `^19-7-0`. Citations by zone (`--zones=,1`); 130 printed, 129 linked, all matching the aṭṭhakathā paragraph tipitaka.app pairs them with |
 
 **Retired 2026-11-20** (per-volume IDs, never reused). Each volume's commentary was its own file until the volumes were joined per nikāya. Each ID below is now a `##` chapter of the joined file:
 
