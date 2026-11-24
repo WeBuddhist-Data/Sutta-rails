@@ -18,11 +18,14 @@ class ZoneLinker:
         self.pos = {}                      # root block id -> its position in the root
         self.cover = {lab: {} for lab in self.labels}   # zone -> printed number -> block id
         ids = re.findall(r"\s\^([\w-]+)\s*$", root_text, re.M)
+        # a plain zone's prefix "<book>-" also starts every labelled zone's IDs: "19-1-5" (zone 1,
+        # block 5) would read as the plain range 1-5. A plain zone takes no ID of a labelled zone.
+        labelled = [f"{self.book}-{lab}-" for lab in self.labels if lab]
         for i, rid in enumerate(ids):
             self.pos[rid] = i
             for lab in self.labels:
                 pre = f"{self.book}-{lab}-" if lab else f"{self.book}-"
-                if not rid.startswith(pre):
+                if not rid.startswith(pre) or (not lab and any(rid.startswith(o) for o in labelled)):
                     continue
                 m = re.fullmatch(r"(\d+)(?:-(\d+))?(?:x\d+)?", rid[len(pre):])
                 if m and not rid[len(pre):].endswith("-0"):

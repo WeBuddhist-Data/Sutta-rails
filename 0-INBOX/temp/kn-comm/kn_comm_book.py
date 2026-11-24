@@ -18,6 +18,8 @@ book, stems, key, rkey, label = args[0], args[1].split(","), args[2], args[3], a
 PER_SECTION, DRY = "--per-section" in sys.argv, "--dry" in sys.argv
 # --zones=<labels>: the root's zone labels in order ("1,2" Suttanipāta; ",1" Nettippakaraṇa)
 ZONES = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--zones=")), None)
+# --presection=K: per-section citations before the first numbered section go to section K (decided per work)
+PRESEC = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--presection=")), None)
 R, S = "4-SYSTEM/Skills/cscd-root-text-intake/scripts", "4-SYSTEM/Skills/cscd-commentary-intake/scripts"
 T = Path("0-INBOX/temp/kn-comm"); RAW = Path("0-INBOX/raw-data/kn"); CLONE = Path("D:/Work/OpenPecha/tipitaka-xml/romn")
 root_draft = f"0-INBOX/temp/kn/pi-kn-{book}.md"
@@ -76,6 +78,31 @@ if SHAPE:
     run(SHAPE, "prep", jsons[0], show=2)
     segs = json.loads(Path(jsons[0]).read_text(encoding="utf-8"))["segments"]
 
+# --heading-from-text=<title>: a closing title the XML prints as a big title line (<p rend="nikaya">,
+# kept as text by the converter) made a heading, as the Milindapañha's Nigamanaṃ (human decision);
+# it is then placed like any closing Nigamanakathā (standing decision)
+FROM_TEXT = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--heading-from-text=")]
+# a --shape script lists the titles it turned into headings / into text (<json>.shape.json)
+SHAPE_HEAD, SHAPE_TEXT = [], []
+if SHAPE and Path(jsons[0] + ".shape.json").exists():
+    _sh = json.loads(Path(jsons[0] + ".shape.json").read_text(encoding="utf-8"))
+    SHAPE_HEAD, SHAPE_TEXT = _sh["to_heading"], _sh["to_text"]
+sys.path.insert(0, R)
+import cscd_shape  # noqa: E402
+_norm = lambda t: cscd_shape.strip_heading_number(t).strip()
+def acc_in(x, lst):
+    """x is one of the decided titles (as printed, or as check_headings normalises it)"""
+    return x in lst or _norm(x) in {_norm(t) for t in lst}
+if FROM_TEXT:
+    data = json.loads(Path(jsons[0]).read_text(encoding="utf-8"))
+    deepest = max(s.get("level", 3) for s in data["segments"] if s["css_class"] == "heading")
+    for s in data["segments"]:
+        if s["css_class"] == "centered" and s["content"].strip() in FROM_TEXT:
+            s["css_class"], s["level"] = "heading", deepest + 1   # last heading: promoted below
+            print(f"   decision (this book): text '{s['content'].strip()}' -> heading")
+    Path(jsons[0]).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    segs = data["segments"]
+
 # standing decisions
 heads = [s for s in segs if s["css_class"] == "heading"]
 fm = ["--frontmatter", "Ganthārambhakathā"] if heads and heads[0]["content"].strip() == "Ganthārambhakathā" else []
@@ -87,7 +114,7 @@ for extra in [a.split("=", 1)[1] for a in sys.argv if a.startswith("--fm=")]:
     print(f"   decision (this book): {extra} -> front matter")
 run(f"{S}/build_commentary.py", jsons[0], root_draft, str(draft), "--registered-id", f"kn-{book}-atthakatha",
     "--layer", "atthakatha", "--layer-label", "aṭṭhakathā", "--nikaya", "Khuddakanikāya", *fm,
-    *(["--per-section"] if PER_SECTION else []), *(["--zones", ZONES] if ZONES is not None else []), show=1)
+    *(["--per-section"] if PER_SECTION else []), *(["--zones", ZONES] if ZONES is not None else []), *(["--presection", PRESEC] if PRESEC else []), show=1)
 t = draft.read_text(encoding="utf-8")
 nig = re.search(r"^(#{4,}) (Nigamana(?:kathā|gāthā)) \^([\w-]+)$", t, re.M)   # gāthā: Therīgāthā-aṭṭhakathā
 if nig and not re.search(r"^#+ ", t[nig.end():], re.M):
@@ -115,9 +142,31 @@ print(f"   tree vs root: {len(match)}/{len(body)} headings have the root's ID an
 if top_bad or (len(match) < 0.9 * len(body) and "--accept-tree" not in sys.argv):
     sys.exit("STOP: the commentary's contents tree does not line up with the root's — review before joining")
 
-ps = (["--per-section"] if PER_SECTION else []) + (["--zones", ZONES] if ZONES is not None else [])
-v, _ = run(f"{S}/verify_commentary.py", str(draft), root_draft, *xmls, *ps, show=3)
-h, _ = run(f"{R}/check_headings.py", str(draft), *xmls, show=1, ok=False)
+ps = (["--per-section"] if PER_SECTION else []) + (["--zones", ZONES] if ZONES is not None else []) + (["--presection", PRESEC] if PRESEC else [])
+v, vrc = run(f"{S}/verify_commentary.py", str(draft), root_draft, *xmls, *ps, show=3, ok=False)
+if vrc:
+    # a --shape decision moves a numbered title between heading and text: a heading's printed
+    # number is not text, so the XML's "2." (a title line made a heading) drops out and a
+    # reprinted heading made text ("22. Mahānipāto") brings its "22." in. Accepted only for
+    # exactly those titles' numbers, once each; any other problem stops.
+    import collections
+    num = lambda lst, keep: collections.Counter(m.group(1) for t in lst for m in [re.match(r"\s*(\d+\.)\s", t)] if m and not keep(t))
+    # (jātaka titles keep their printed number, so they never differ)
+    want = {"delete": num(SHAPE_HEAD, lambda t: re.search(r"jātaka(?:va)?ṇṇanā\s*$", t)), "insert": num(SHAPE_TEXT, lambda t: False)}
+    vp = [l.strip()[1:].strip() for l in v.splitlines() if l.strip().startswith("- ")]
+    got = {"delete": collections.Counter(), "insert": collections.Counter()}
+    rest = []
+    for p in vp:
+        m = re.fullmatch(r"(delete): xml '(\d+\.)' \| md ''|(insert): xml '' \| md '(\d+\.)'", p)
+        if m:
+            got[m.group(1) or m.group(3)][m.group(2) or m.group(4)] += 1
+        elif not re.fullmatch(r"words differ from the XML in \d+ place\(s\)", p):
+            rest.append(p)
+    if rest or any(got[k][n] > want[k][n] for k in got for n in got[k]) or not any(got.values()):
+        sys.exit(f"STOP: verify_commentary.py exited {vrc}")
+    print(f"   verify: accepted, only the printed numbers of titles the --shape moved differ "
+          f"(dropped {dict(got['delete'])}, added {dict(got['insert'])})")
+h, _ = run(f"{R}/check_headings.py", str(draft), *xmls, "--all", show=1, ok=False)
 c, _ = run(f"{S}/compare_site_commentary.py", str(draft), "0-INBOX/tipitaka-app", key, rkey, "--all", *(["--per-section"] if PER_SECTION else []), *(["--zones", ZONES] if ZONES is not None else []), show=6, ok=False)
 unres = json.loads((T / f"pi-kn-{book}-atthakatha.unresolved.json").read_text(encoding="utf-8"))
 # reviewed exceptions (reported in 0-INBOX/pi-kn-commentary-report.md):
@@ -143,6 +192,8 @@ emp = [p for p in probs if empty_para_ok(p)]
 if emp:
     print(f"   site: {len(emp)} difference(s) from empty numbered paragraphs, linked on the next verse instead")
 probs = [p for p in probs if p not in emp]
+# headings turned into text by a human decision (--text-heading=…), which the site lists as nodes
+decided_text = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--text-heading=")] + SHAPE_TEXT
 # a number-only paragraph ("314", its dot opening the next one): the site shows it empty
 num_only = [p for p in probs if re.fullmatch(r"text replace: site \[''\] \| md \['\d+'\]", p)]
 # a per-section root (each vagga numbered from 1): tipitaka.app looks a printed number up across
@@ -150,7 +201,9 @@ num_only = [p for p in probs if re.fullmatch(r"text replace: site \[''\] \| md \
 # gloss links for that commentary paragraph name the vault's vagga; when it has none and the vault
 # links the same number in the commentary's current vagga; or for a reviewed unlinked citation.
 sec_art = []
-if PER_SECTION:
+# (a zoned root gets the text check below only: Paṭisambhidāmagga, whose four runs M, 1, 2, 3 the site
+# resolves its own way)
+if PER_SECTION or ZONES is not None:
     import ast
     gl = {}
     for l in json.loads(Path(f"0-INBOX/tipitaka-app/{key}.links.json").read_text(encoding="utf-8")):
@@ -166,29 +219,141 @@ if PER_SECTION:
         if not scope:
             return f"{site_paras[i].get('n')}." in acc
         secs = {s.split("-")[1] for s in scope}
+        if i in gl and secs <= gl[i]:
+            return True
+        # the site's gloss links name where else the verse is quoted from (Jātaka-aṭṭhakathā:
+        # SN, another jātaka): accepted when the root block the vault links has the words of
+        # the commentary paragraph itself
         if i in gl:
-            return secs <= gl[i]
+            return all(same_words(site_paras[i]["t"], root_blocks.get(s, "")) for s in scope)
         return all(s.split("-")[-1] == n for s in scope[:1])
-    sec_art = [p for p in probs if sec_ok(p)]
+
+    import difflib
+    _rl = Path(root_draft).read_text(encoding="utf-8").split("\n")
+    root_blocks, _buf = {}, []
+    for _ln in _rl:
+        if not _ln.strip() or _ln.startswith("#"):
+            _buf = []; continue
+        _buf.append(_ln)
+        _m = re.search(r"\s\^([\w-]+)\s*$", _ln)
+        if _m:
+            root_blocks[_m.group(1)] = " ".join(_buf); _buf = []
+    def _letters(s):
+        s = re.sub(r"\|[A-Z]\d+\.\d+\||\[[^\]]*\]|\{[^}]*\}|\s\^[\w-]+|\*\*|^\s*\d+\.", "", s)
+        return re.sub(r"[^a-zāīūṃṅñṭḍṇḷ]", "", s.lower())[:40]
+    def same_words(a, b):
+        return bool(b) and difflib.SequenceMatcher(None, _letters(a), _letters(b)).ratio() >= 0.85
+    # the site may number the root's sections differently from the vault (Cūḷaniddesa: the site's
+    # section 1 is the niddesa, the vault root's ^16-2-, after its Pārāyanavaggo ^16-1-): a link is
+    # then accepted when the root block the vault links has the words of the root paragraph the
+    # site links, i.e. both point at the same paragraph whatever its section number
+    _rp = {p.get("i", k): p for k, p in enumerate(json.loads(Path(f"0-INBOX/tipitaka-app/{rkey}.text.json").read_text(encoding="utf-8"))["paras"])}
+    site_root = {}
+    for l in json.loads(Path(f"0-INBOX/tipitaka-app/{key}.links.json").read_text(encoding="utf-8")):
+        if l["src"] == "paranum" and l["kind"] == "mula-atta" and l["t"] in _rp:
+            site_root[(l["i"], str(_rp[l["t"]].get("n")))] = _rp[l["t"]]["t"]
+    def same_root_para(p):
+        m = re.match(r"site link commentary para (\d+) -> root (\S+): md scope (\[.+\])$", p)
+        if not m:
+            return False
+        scope = ast.literal_eval(m.group(3))
+        txt = site_root.get((int(m.group(1)), m.group(2)))
+        # the site's paragraph can be a verse's first line (gatha1), the vault block the whole verse:
+        # compared over the shorter of the two, never fewer than 12 letters
+        def same_start(a, b):
+            a, b = _letters(a), _letters(b)
+            k = min(len(a), len(b))
+            return k >= 12 and difflib.SequenceMatcher(None, a[:k], b[:k]).ratio() >= 0.85
+        # … and the same printed number: the Cūḷaniddesa root prints each Pārāyana verse twice
+        # (Pārāyanavaggo ^16-1-57 = niddesa ^16-2-1), so the words alone do not pick the block
+        return (bool(scope) and txt is not None and scope[0].split("-")[-1] == m.group(2)
+                and all(same_start(txt, root_blocks.get(s, "")) for s in scope[:1]))
+    same_para = [p for p in probs if same_root_para(p)]
+    if same_para:
+        print(f"   site: {len(same_para)} number link(s) where the site numbers the root's sections differently "
+              f"(the root block the vault links has the words of the root paragraph the site links)")
+    probs = [p for p in probs if p not in same_para]
+    # a zoned root whose runs the site mixes up (Paṭisambhidāmagga: the Mātikā's "1." … "73." and
+    # the Mahāvagga's numbers looked up in the Paññāvagga, and the reverse): the vault's link stands
+    # when its root block holds more of the commentary paragraph's bold lemmas than the site's root
+    # paragraph does, or, where neither holds more, when it lies in the same zone as the vault's
+    # citations on either side of it (a commentary follows its root in order)
+    zone_ok = []
+    if ZONES is not None:
+        _ap = json.loads(Path(f"0-INBOX/tipitaka-app/{key}.text.json").read_text(encoding="utf-8"))["paras"]
+        _fold = lambda s: re.sub(r"[^a-zāīūṃṅñṭḍṇḷ]", "", re.sub(r"\|[A-Z]\d+\.\d+\||\{[^}]*\}|\*\*", "", s.lower()))
+        _seq = re.findall(r"#\^([\w-]+)\]\]", dtext)
+        _zone = lambda rid: rid.split("-")[1]
+        def zone_link_ok(p):
+            m = re.match(r"site link commentary para (\d+) -> root (\S+): md scope \['([\w-]+)'", p)
+            if not m:
+                return None
+            i, n, vid = int(m.group(1)), m.group(2), m.group(3)
+            txt = site_root.get((i, n))
+            if txt is None or vid.split("-")[-1] != n.split("-")[0]:
+                return None
+            lem = [_fold(b)[:12] for b in re.findall(r"\*\*(.+?)\*\*", _ap[i]["t"]) if len(_fold(b)) >= 5]
+            sv = sum(1 for x in lem if x in _fold(root_blocks.get(vid, "")))
+            ss = sum(1 for x in lem if x in _fold(txt))
+            if sv > ss:
+                return "lemmas"
+            if sv < ss:
+                return None
+            k = _seq.index(vid) if vid in _seq else -1
+            nb = [_seq[j] for j in (k - 1, k + 1) if 0 <= j < len(_seq) and j != k]
+            return "run" if k >= 0 and nb and all(_zone(x) == _zone(vid) for x in nb) else None
+        zres = {p: zone_link_ok(p) for p in probs}
+        zone_ok = [p for p, r in zres.items() if r]
+        if zone_ok:
+            print(f"   site: {len(zone_ok)} number link(s) the site resolved in another run of the zoned root: "
+                  f"{sum(1 for p in zone_ok if zres[p] == 'lemmas')} where the vault's block holds more of the paragraph's "
+                  f"bold lemmas, {sum(1 for p in zone_ok if zres[p] == 'run')} (no lemma evidence either way) in the run of the "
+                  f"vault's citations on either side")
+            (T / f"pi-kn-{book}-atthakatha.site-zone-accepted.txt").write_text(
+                "\n".join(f"{zres[p]}\t{p}" for p in zone_ok), encoding="utf-8")
+    probs = [p for p in probs if p not in zone_ok]
+    sec_art = [p for p in probs if PER_SECTION and sec_ok(p)]
     if sec_art:
-        print(f"   site: {len(sec_art)} number link(s) the site resolved in another vagga "
-              f"(the vault's vagga is the one the site's own gloss links name)")
+        _tv = [p for p in sec_art if int(re.match(r"site link commentary para (\d+)", p).group(1)) in gl
+               and not {s.split("-")[1] for s in ast.literal_eval(p.rsplit("md scope ", 1)[1]) or []} <= gl[int(re.match(r"site link commentary para (\d+)", p).group(1))]]
+        print(f"   site: {len(sec_art)} number link(s) the site resolved in another vagga (the vault's vagga is the one "
+              f"the site's own gloss links name; for {len(_tv)} they name a parallel elsewhere, and the linked root verse has the paragraph's words)")
 probs = [p for p in probs if p not in num_only and p not in sec_art]
+# a heading made from a big title line (--heading-from-text): the site has no contents node for it
+probs = [p for p in probs if not ((FROM_TEXT or SHAPE_HEAD) and re.fullmatch(r"tree insert: site \[\] \| md \[(.*)\]", p)
+                                  and all(acc_in(x, FROM_TEXT + SHAPE_HEAD) for x in re.findall(r"'([^']+)'", p)))]
+# … and difflib pairs a reprinted line or decided-text title next to them as one "replace"
+probs = [p for p in probs if not ((FROM_TEXT or SHAPE_HEAD) and re.fullmatch(r"tree replace: site \[(.*)\] \| md \[(.*)\]", p)
+                                  and all(t in reprinted or acc_in(t, decided_text) for t in re.findall(r"'([^']+)'", p.split(" | ")[0]))
+                                  and all(acc_in(x, FROM_TEXT + SHAPE_HEAD) for x in re.findall(r"'([^']+)'", p.split(" | ")[1])))]
 site_ok = c.rstrip().endswith("PASS") or not probs or (probs and all(
     p.startswith("tree delete: site [") and p.endswith("| md []")
-    and all(t in reprinted for t in re.findall(r"'([^']+)'", p.split("|")[0])) for p in probs))
+    and all(t in reprinted or acc_in(t, decided_text) for t in re.findall(r"'([^']+)'", p.split("|")[0])) for p in probs))
 if site_ok and not c.rstrip().endswith("PASS"):
-    print(f"   site: accepted, only the reprinted part-opening lines differ ({probs})")
+    print(f"   site: accepted, only reprinted lines or headings decided as text differ ({probs})")
+if not site_ok:
+    print(f"   site: {len(probs)} difference(s) not accepted:")
+    for p in probs[:15]:
+        print("      ", p[:240])
+    (T / f"pi-kn-{book}-atthakatha.site-left.txt").write_text("\n".join(probs), encoding="utf-8")
 # --text-heading=<title>: an XML heading turned into text by a human decision (Apadāna-aṭṭhakathā:
 # "Therāpadānaṃ"); check_headings.py may then differ only by deleting exactly that title
-th = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--text-heading=")]
+th = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--text-heading=")] + SHAPE_TEXT
 hd = [l.strip() for l in h.splitlines()[1:] if l.strip()]
-heads_ok = "ALL MATCH" in h or (th and hd and all(
-    re.fullmatch(r"delete \[(.*)\] \| \[\]", l) and all(x in th for x in re.findall(r"'([^']+)'", l)) for l in hd))
+heads_ok = "ALL MATCH" in h or ((th or FROM_TEXT or SHAPE_HEAD) and hd and all(
+    (re.fullmatch(r"delete \[(.*)\] \| \[\]", l) and all(acc_in(x, th) for x in re.findall(r"'([^']+)'", l)))
+    or (re.fullmatch(r"insert \[\] \| \[(.*)\]", l) and all(acc_in(x, FROM_TEXT + SHAPE_HEAD) for x in re.findall(r"'([^']+)'", l)))
+    # difflib pairs a decided-text title with the decided headings next to it as one "replace"
+    or (re.fullmatch(r"replace \[(.*)\] \| \[(.*)\]", l)
+        and all(acc_in(x, th) for x in re.findall(r"'([^']+)'", l.split(" | ")[0]))
+        and all(acc_in(x, FROM_TEXT + SHAPE_HEAD) for x in re.findall(r"'([^']+)'", l.split(" | ")[1])))
+    for l in hd))
+th = th + FROM_TEXT + (["%d shaped headings" % len(SHAPE_HEAD)] if SHAPE_HEAD else [])
 if heads_ok and "ALL MATCH" not in h:
-    print(f"   headings: accepted, only {th} differ (decided as text)")
-ok = v.rstrip().endswith("PASS") and heads_ok and site_ok and n_unres == 0
-print(f"== checks: verify {'PASS' if v.rstrip().endswith('PASS') else 'FAIL'}, headings "
+    print(f"   headings: accepted, only {th} differ (human decisions: text <-> heading)")
+v_ok = v.rstrip().endswith("PASS") or vrc != 0     # a non-zero exit got here only when accepted above
+ok = v_ok and heads_ok and site_ok and n_unres == 0
+print(f"== checks: verify {'PASS' if v.rstrip().endswith('PASS') else ('accepted' if v_ok else 'FAIL')}, headings "
       f"{'ALL MATCH' if 'ALL MATCH' in h else ('accepted' if heads_ok else 'MISMATCH')}, site {'PASS' if c.rstrip().endswith('PASS') else ('accepted' if site_ok else 'FAIL')}, unresolved {n_unres}")
 if not ok:
     sys.exit("STOP: not joining — review the output above")

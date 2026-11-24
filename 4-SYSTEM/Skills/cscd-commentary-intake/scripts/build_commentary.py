@@ -45,6 +45,9 @@ ap.add_argument("--unlinked", action="append", default=[])
 ap.add_argument("--per-section", action="store_true")   # root IDs ^<book>-<section>-<N> (Khuddakapāṭha)
 # a zoned root: its zone labels in order, "" for a plain zone (Suttanipāta: "1,2"; Nettippakaraṇa: ",1")
 ap.add_argument("--zones")
+# per-section: the section for citations before the first numbered '###' (front matter that quotes
+# the root's opening verses; a human decision per work: Cariyāpiṭaka-aṭṭhakathā "1")
+ap.add_argument("--presection")
 a = ap.parse_args()
 
 root = Path(a.root_md)
@@ -62,6 +65,7 @@ conv.BOOK_ID = book
 conv.ROOT_IDS = root_ids
 conv.UNLINKED_HEADINGS = set(a.unlinked)
 conv.PER_SECTION = a.per_section
+conv.PRESECTION = a.presection
 if a.zones is not None:
     sys.path.insert(0, str(HERE))
     import zone_link  # noqa: E402

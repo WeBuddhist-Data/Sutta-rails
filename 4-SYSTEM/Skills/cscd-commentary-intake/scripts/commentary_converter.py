@@ -91,6 +91,11 @@ UNLINKED_MATCHED: set[str] = set()
 # ^<book>-<section>-<N>; a citation N links within the commentary's current
 # section, the printed number of its last level-3 heading (tree mode only).
 PER_SECTION = False
+# Per-section: the section for citations that come before the first numbered '###' (in front
+# matter), set by build_commentary.py --presection when the text quotes those root verses
+# (Cariyāpiṭaka-aṭṭhakathā Nidānakathā: "1. … 'kappe ca satasahasse'…" = root ^13-1-1).
+PRESECTION = None
+SEEN_SECTION = [False]
 # A zoned root (^<book>-<zone>-<N>, CSCD Suttanipāta): a zone_link.ZoneLinker set by
 # build_commentary.py --zones; a citation links to the zone zone_link.py picks (tree mode only).
 ZONE_LINKER = None
@@ -628,7 +633,8 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
                 n0 = int(m.group(1))
                 ids, missing = (ZONE_LINKER.link([n0]) if ZONE_LINKER is not None else (None, None))
                 if PER_SECTION:
-                    want = [f"{BOOK_ID}-{section[0]}-{n0}"] if section[0] else []
+                    _s = section[0] or (PRESECTION if not SEEN_SECTION[0] else None)
+                    want = [f"{BOOK_ID}-{_s}-{n0}"] if _s else []
                     ids = [r for r in want if ROOT_IDS is None or r in ROOT_IDS]
                     missing = [r for r in want if r not in ids] or ([] if want else [f"(no section) {n0}"])
                 elif ids is None:
@@ -670,7 +676,8 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
                 if missing:
                     UNRESOLVED.append((m.group(0).strip(), missing, content[:80]))
             elif PER_SECTION:
-                want = [f"{BOOK_ID}-{section[0]}-{k}" for k in range(n_start, n_end + 1)] if section[0] else []
+                sec = section[0] or (PRESECTION if not SEEN_SECTION[0] else None)
+                want = [f"{BOOK_ID}-{sec}-{k}" for k in range(n_start, n_end + 1)] if sec else []
                 rt_ids = [r for r in want if ROOT_IDS is None or r in ROOT_IDS]
                 missing = [r for r in want if ROOT_IDS is not None and r not in ROOT_IDS] or ([] if want else [f"(no section) {n_start}"])
                 if missing:
@@ -702,11 +709,15 @@ def convert_tree(data: dict, json_path: Path, output_path: Path) -> None:
                 continue
         if css == "heading":
             flush_gatha()
-            text = _tree_lead_re.sub("", content).strip()
+            # keep_number: a title line made a heading by a human decision (Jātaka-aṭṭhakathā
+            # "1. Apaṇṇakajātakavaṇṇanā"): its printed number stays, as the XML prints it as text
+            text = content.strip() if seg.get("keep_number") else _tree_lead_re.sub("", content).strip()
             h_text[0] = text
             if seg["level"] == 3:
                 mnum = re.match(r"^\s*(\d+)\.", content)
                 section[0] = mnum.group(1) if mnum else None
+                if mnum:
+                    SEEN_SECTION[0] = True        # PRESECTION applies only before this
             unlinked[0] = text in UNLINKED_HEADINGS
             if unlinked[0]:
                 UNLINKED_MATCHED.add(text)

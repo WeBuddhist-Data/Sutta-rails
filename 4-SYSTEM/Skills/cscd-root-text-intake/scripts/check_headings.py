@@ -16,6 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cscd_shape as cs  # noqa: E402
 
 args = sys.argv[1:]
+ALL = "--all" in args                   # print every difference in full
+args = [a for a in args if a != "--all"]
 book_k = None
 if "--book" in args:
     i = args.index("--book"); book_k = int(args[i + 1]); del args[i:i + 2]
@@ -49,6 +51,6 @@ mh = [cs.strip_heading_number(re.sub(r"\s+\^[\w-]+$", "", l[l.index(" ") + 1:]))
 ops = [o for o in difflib.SequenceMatcher(None, xh, mh, autojunk=False).get_opcodes() if o[0] != "equal"]
 print(f"{Path(md).name}: xml headings {len(xh)}, md headings {len(mh)}, "
       + ("ALL MATCH" if not ops else f"{len(ops)} difference(s)"))
-for op, a, b, c, d in ops[:5]:
-    print("   ", op, xh[a:b][:3], "|", mh[c:d][:3])
+for op, a, b, c, d in (ops if ALL else ops[:5]):
+    print("   ", op, xh[a:b] if ALL else xh[a:b][:3], "|", mh[c:d] if ALL else mh[c:d][:3])
 sys.exit(1 if ops else 0)

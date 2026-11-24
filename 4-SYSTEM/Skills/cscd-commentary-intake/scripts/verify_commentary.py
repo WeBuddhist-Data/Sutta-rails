@@ -42,6 +42,9 @@ if "--unresolved" in args:
     k = args.index("--unresolved"); unres_arg = args[k + 1]; del args[k:k + 2]
 PER_SECTION = "--per-section" in args          # root IDs ^<book>-<section>-<N>
 args = [a for a in args if a != "--per-section"]
+PRESECTION = None                               # --presection K: as build_commentary.py
+if "--presection" in args:
+    k = args.index("--presection"); PRESECTION = args[k + 1]; del args[k:k + 2]
 ZONES = None                                    # a zoned root's labels in order (zone_link.py)
 if "--zones" in args:
     k = args.index("--zones"); ZONES = args[k + 1].split(","); del args[k:k + 2]
@@ -77,6 +80,7 @@ def render(el, out, top=True):
 xml_words, xml_cits, xml_bodies = [], [], []
 xml_secs = []          # per citation: the printed number of the section heading it sits under
 cur_sec = None
+seen_sec = False
 for x in xmls:
     body = ET.parse(x).getroot().find(".//body")
     if book_k is not None:
@@ -114,9 +118,12 @@ for x in xmls:
         if rend == "chapter":                      # a section heading: "6. Ratanasuttavaṇṇanā"
             msec = re.match(r"^\s*(\d+)\.", "".join(el.itertext()))
             cur_sec = msec.group(1) if msec else None
+            seen_sec = seen_sec or bool(msec)
         if el.tag == "p" and el.get("n") and any(h.get("rend") == "paranum" for h in el.iter("hi")):
             xml_cits.append(el.get("n"))
-            xml_secs.append(cur_sec)
+            # before the first numbered section: --presection (front matter quoting the root's
+            # opening verses, a decision per work), as the converter
+            xml_secs.append(cur_sec or (PRESECTION if not seen_sec else None))
 
 # ---------------- md side
 root_ids = set(re.findall(r"\s\^([\w-]+)\s*$", Path(root_path).read_text(encoding="utf-8"), re.M))
@@ -133,7 +140,9 @@ for ln in lines:
     if ln.startswith("# "):
         ln = re.sub(r"\s*\([^)]*\)\s*$", "", ln)   # editorial layer label
     ln = re.sub(r"^#+\s+", "", ln)
-    md_words += bold_check.strip_bold(ln).split()
+    # a bold tag can split a doubled quote the converter then leaves as printed
+    # (Jātaka-aṭṭhakathā "suggati’**’nti"): normalised here as on the XML side
+    md_words += bold_check.strip_bold(ln).replace("‘‘", '"').replace("’’", '"').split()
 md_bold, unpaired = bold_check.md_spans(lines, exact=True)
 for u in unpaired[:5]:
     problems.append(f"unpaired ** on line: {u!r}")

@@ -1,0 +1,154 @@
+[
+{
+"key": "atta-kn-mn-1",
+"depth": 4,
+"rend": "subsubhead",
+"start": 3,
+"end": 61,
+"title": "Ganthārambhakathā"
+},
+{
+"key": "atta-kn-mn-2",
+"depth": 4,
+"rend": "title",
+"start": 61,
+"end": 62,
+"title": "1. Aṭṭhakavaggo"
+},
+{
+"key": "atta-kn-mn-3",
+"depth": 4,
+"rend": "chapter",
+"start": 62,
+"end": 363,
+"title": "1. Kāmasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-4",
+"depth": 4,
+"rend": "chapter",
+"start": 363,
+"end": 704,
+"title": "2. Guhaṭṭhakasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 494,
+"end": 704,
+"title": "Tividhakalyāṇaṃ"
+},
+{
+"key": "atta-kn-mn-5",
+"depth": 4,
+"rend": "chapter",
+"start": 704,
+"end": 771,
+"title": "3. Duṭṭhaṭṭhakasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-6",
+"depth": 4,
+"rend": "chapter",
+"start": 771,
+"end": 885,
+"title": "4. Suddhaṭṭhakasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-7",
+"depth": 4,
+"rend": "chapter",
+"start": 885,
+"end": 912,
+"title": "5. Paramaṭṭhakasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-8",
+"depth": 4,
+"rend": "chapter",
+"start": 912,
+"end": 982,
+"title": "6. Jarāsuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-9",
+"depth": 4,
+"rend": "chapter",
+"start": 982,
+"end": 1070,
+"title": "7. Tissametteyyasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-10",
+"depth": 4,
+"rend": "chapter",
+"start": 1070,
+"end": 1140,
+"title": "8. Pasūrasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-11",
+"depth": 4,
+"rend": "chapter",
+"start": 1140,
+"end": 1183,
+"title": "9. Māgaṇḍiyasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-12",
+"depth": 4,
+"rend": "chapter",
+"start": 1183,
+"end": 1328,
+"title": "10. Purābhedasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-13",
+"depth": 4,
+"rend": "chapter",
+"start": 1328,
+"end": 1367,
+"title": "11. Kalahavivādasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-14",
+"depth": 4,
+"rend": "chapter",
+"start": 1367,
+"end": 1399,
+"title": "12. Cūḷabyūhasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-15",
+"depth": 4,
+"rend": "chapter",
+"start": 1399,
+"end": 1437,
+"title": "13. Mahābyūhasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-16",
+"depth": 4,
+"rend": "chapter",
+"start": 1437,
+"end": 1607,
+"title": "14. Tuvaṭakasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-17",
+"depth": 4,
+"rend": "chapter",
+"start": 1607,
+"end": 1670,
+"title": "15. Attadaṇḍasuttaniddesavaṇṇanā"
+},
+{
+"key": "atta-kn-mn-18",
+"depth": 4,
+"rend": "chapter",
+"start": 1670,
+"end": 1833,
+"title": "16. Sāriputtasuttaniddesavaṇṇanā"
+}
+]

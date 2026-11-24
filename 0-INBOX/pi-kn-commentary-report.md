@@ -217,3 +217,244 @@ It covers the Therāpadāna only (book 10). CSCD has no commentary on the Therī
 - **The book script** gained `--shape`, `--text-heading`, the per-vagga site acceptance, and a count check that allows either of the site's two counting habits.
 
 **Join:** 7,399 links, none broken; 26,632 block IDs, all unique.
+
+## Book 11 — Therīapadāna
+
+There is no commentary: the Apadāna-aṭṭhakathā (`s0510a`) covers the Therāpadāna only.
+
+## Book 12 — Buddhavaṃsa-aṭṭhakathā (`s0511a.att`, 2026-11-24)
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-bv` | 3,291 = 3,291 |
+| `verify_commentary.py --per-section` | PASS: `^12-1`…`^12-2099`, 57,186 words = XML, 2,054 bold spans |
+| Citations | 874 printed, 874 linked right, 0 wrong, 0 unresolved |
+| `check_headings.py` | all but "Abbhantaranidānaṃ" (text by decision) |
+| Site | all 3,291 paragraphs and all 874 links agree; the only difference is the site listing "Abbhantaranidānaṃ" as a contents node |
+| Tree vs root | all 28 chapters `^12-1-0`…`^12-28-0` carry the root's ID and title. The other 8 headings are the commentary's own sub-sections, with no counterpart in the root: Dūre-, Avidūre- and Santikenidānakathā under Gotama, and five topics under Buddhapakiṇṇaka |
+
+**Human decisions (2026-11-24), as for the Apadāna, applied by `0-INBOX/temp/kn-comm/buddhavamsa_shape.py` (headings only):**
+- `### Nidānakathā ^12-II-0` (no text of its own), front matter, with `#### Bāhiranidānaṃ ^12-II-I-0` (2 paragraphs) under it.
+- "Abbhantaranidānaṃ", a title with no text of its own printed above the 28 chapters, is text (`^12-…`). The chapters are `###` on the root's IDs.
+- The closing Nigamanakathā is `^12-30-0`, after the root's 29 sections. The root's section 29, the Dhātubhājanīyakathā, has no commentary.
+
+**Tool change:** the site acceptance also covers headings decided as text (`--text-heading`).
+
+**Join:** 8,295 links, none broken; 28,774 block IDs, all unique.
+
+## Book 13 — Cariyāpiṭaka-aṭṭhakathā (`s0512a.att`, 2026-11-24)
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-cp` | 2,011 = 2,011 |
+| `verify_commentary.py --per-section --presection 1` | PASS: `^13-1`…`^13-1532`, 58,575 words = XML, 1,835 bold spans |
+| Citations | 325 printed, 325 linked right, 0 wrong, 0 unresolved |
+| `check_headings.py` | all but the Nigamanakathā, made a heading (below) |
+| Site | all 2,011 paragraphs and all 325 links agree; the site has no contents node for the Nigamanakathā |
+| Tree vs root | 37 of 40 headings carry the root's ID and title, and so do all three vaggas `^13-1-0`…`^13-3-0`. The other three: `Mahāsutasomacariyāvaṇṇanā` is the root's Sutasomacariyā under its fuller name; `Uddānagāthāvaṇṇanā` and `Pakiṇṇakakathā` are the commentary's own sections |
+
+**Placements applied by analogy with earlier human decisions (easy to undo):**
+- **`Nidānakathā`** is front matter `^13-II-0`, as for the Itivuttaka, Apadāna and Buddhavaṃsa.
+- **`Nigamanakathā`** is its own `### ^13-4-0`. The XML prints it as a big title line (`<p rend="nikaya">`), as in the Milindapañha, so the converter kept it as text. It is made a heading (`--heading-from-text`), as you decided for the Milindapañha's Nigamanaṃ, and placed like every closing Nigamanakathā.
+
+**Two citations in the front matter, linked by what they quote (`--presection 1`).** The Nidānakathā's "1." reads "Idāni '**kappe ca satasahasse**'tiādinayappavattāya cariyāpiṭakapāḷiyā atthasaṃvaṇṇanā". Its "2." ends "… '**atītakappe**'tiādimāha". These are the opening words of the root's verses 1 and 2, `^13-1-1` "Kappe ca satasahasse …" and `^13-1-2` "Atītakappe caritaṃ …". So citations before the first numbered section go to section 1. tipitaka.app links them to vagga 1 as well. The option acts only before the first numbered section, so a later heading without a single number (the Apadāna's "43-48") cannot inherit it.
+
+**Kept as in the XML:** the `Pakiṇṇakakathā`, a general treatise on all the pāramīs that the text places at this point ("Imasmiṃ pana ṭhāne ṭhatvā … pakiṇṇakakathā kathetabbā"), stays under the Uddānagāthāvaṇṇanā in vagga 3.
+
+**Tool changes:**
+- `build_commentary.py`, `commentary_converter.py` and `verify_commentary.py` take `--presection`.
+- The book script takes `--heading-from-text` and `--presection`, with matching acceptance in the heading and site checks.
+
+**Join:** 8,644 links, none broken; 30,352 block IDs, all unique.
+
+## Book 14 — Jātaka-aṭṭhakathā (`s0513a1`–`a4.att`, `s0514a1`–`a3.att`: seven volumes, 2026-11-24)
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-jat` | 25,920 = 25,920 |
+| `verify_commentary.py --per-section` | accepted: `^14-1`…`^14-17473`, 583,311 words against the XML's 583,312, 14,200 bold spans. The only word differences are three printed numbers of titles the shape moves (below) |
+| Citations | 6,493 printed: 6,491 linked right, 0 wrong, 2 unresolved (below) |
+| `check_headings.py` | accepted: the 89 XML headings all match. The differences are the 546 headings the shape adds (544 jātaka titles, 2 vaggas) and the 2 lines it makes text |
+| Site | all 25,920 paragraphs match. Of the 6,493 number links, 2,193 agree with tipitaka.app outright. The other 4,300 are the per-section artefact seen before: tipitaka.app looks a number up across the whole root book. 4,271 of these are accepted because the site's own gloss links name the vault's nipāta. 28 are accepted because their gloss links name a parallel elsewhere (SN, another jātaka) while the vault's linked root verse has the paragraph's own words (text ratio ≥ 0.85; 0.88 to 1.00). 1 is the unresolved "3." |
+| Tree vs root | 610 of 627 headings carry the root's ID and title, and so do all `###`s (below) |
+
+**Human decisions (2026-11-24), applied by `0-INBOX/temp/kn-comm/jataka_shape.py` (headings only):**
+- **The Nidāna is front matter, nested as in the Apadāna:** `### Nidānakathā ^14-II-0` › `#### Dūrenidānakathā ^14-II-I-0` › `##### Sumedhakathā ^14-II-I-I-0`; `#### Avidūrenidānakathā ^14-II-II-0`; `#### Santikenidānakathā ^14-II-III-0`. The Ganthārambhakathā is `^14-I-0` (standing decision).
+- **All 547 jātakas are headings.** The XML prints 544 of the titles as plain paragraphs ("[11] 1. Lakkhaṇamigajātakavaṇṇanā"). Each is a heading one level below its vagga, or below its nipāta where the nipāta has no vaggas, as in the root. It keeps its printed numbers, so the words stay those of the XML. A jātaka's own sub-sections (the Mahānipāta's kaṇḍas) go one level below it.
+
+**Mis-tagging corrected (Rule 4):**
+- "2. Pucimandavaggo" and "3. Kuṭidūsakavaggo" are tagged like the nikāya line, so the converter kept them as text. They are made vagga headings like their siblings.
+- "Catuttho bhāgo" is a volume label printed without brackets, so it is text.
+- "22. Mahānipāto" is reprinted at the start of volume 7, where the Mahānipāta runs on from volume 6. It is text.
+- These moves account for the three word differences: a heading's printed number is not text, so the XML's "2." and "3." drop out and the reprint's "22." comes in. The book script accepts exactly these numbers, once each.
+
+**Vessantara kaṇḍas on the root's IDs.** The commentary has headings only from Jūjakapabbavaṇṇanā on. The root has headings from Dasavarakathā, so its Jūjakapabbaṃ is its fifth kaṇḍa.
+- **The problem:** the build numbered the commentary's kaṇḍas 1, 2, …, so `^14-22-10-1-0` "Jūjakapabbavaṇṇanā" would have claimed the root's Dasavarakathā.
+- **The fix:** the shape script's new `post` step gives each sub-section the root's ID for the kaṇḍa of the same name (name less "-vaṇṇanā" and a final "ṃ"): Jūjakapabba `-5-0` … Chakhattiyakamma `-12-0`. Nagarakaṇḍavaṇṇanā, which the root lacks, follows as `-13-0`.
+- **Bhūridatta:** the root gives it no sub-sections, so its seven kaṇḍas keep the build's `^14-22-6-1-0`…`-7-0`. These claim no root section.
+
+**Headings that differ from the root (17), all explained:**
+- 8 are jātakas under another spelling at the same position: Bhojājānīya/Gojānīya, Kāḷakaṇṇi/Kālakaṇṇi, Vissāsa-/Visāsabhojana, Kuṇḍakapūva/Kuṇḍapūva, Vaṭṭa/Vaṭṭaka, Khandha/Khaṇḍa, Vīṇāthūṇa/Vīṇāguṇa, Rājakumbha/Gajakumbha.
+- 1 is `[152] 2. Siṅgālajātakavaṇṇanā ^14-2-1-2-0`, where the root's heading is a verse line (next item).
+- 8 are the commentary's own sub-sections: the 7 Bhūridatta kaṇḍas and the Vessantara's Nagarakaṇḍavaṇṇanā.
+
+**Two unresolved citations, left unlinked (Rule 2):**
+- **`3.` (Dukanipāta), "Asamekkhitakammantaṃ, turitābhinipātinaṃ".**
+  - The root's XML (`s0513m.mul`) tags this verse's first line as the jātaka heading `<p rend="subhead">152. Asamekkhitakammantaṃ…</p>`, and prints no Siṅgālajātaka title.
+  - So in `1-SOURCES/Text/pi-khuddakanikaya.md` the line is `##### … ^14-2-1-2-0`, its second line is the unnumbered `^14-U2`, and there is no `^14-2-3`.
+  - tipitaka.app does not link it correctly either: its number link goes to Sattakanipāta.
+  - Repairing the root is a separate decision on a committed `1-SOURCES` file.
+- **`22.` (Ekādasakanipāta), "Phalā ca mūlā ca pahūtamettha …".** The root's XML prints 21 twice, so the second verse is `^14-18-21x1` and there is no `^14-18-22`.
+
+**Tool changes:**
+- **A doubled quote split by a bold tag.** The XML has ‘‘<b>pāpenti suggati’</b>’nti. The converter keeps the tag where it is (`suggati’**’nti`), so it does not turn ’’ into ". `verify_commentary.py` and `compare_site_commentary.py` now remove `**` before normalising quotes, on the md side too. This is the only such case in the vault (counted in every `1-SOURCES` file), so earlier books cannot change.
+- **The book script now accepts these exceptions:**
+  - verify word differences that are exactly the printed numbers of titles a `--shape` moved;
+  - a site or heading "replace" that only pairs a reprinted or decided-text line with decided headings;
+  - a per-section number link whose gloss links name a parallel, when the linked root verse has the paragraph's words.
+
+**Join:** 15,278 links, none broken; 48,461 block IDs, all unique; split proof OK.
+
+## Book 15 — Mahāniddesa-aṭṭhakathā (`s0515a.att`, 2026-11-24)
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-mn` | 1,833 = 1,833 |
+| `verify_commentary.py` | PASS: `^15-1`…`^15-1676`, 75,589 words = XML, 7,324 bold spans |
+| Citations | 209 printed, 209 linked right, 0 wrong, 0 unresolved |
+| `check_headings.py` | 19 = 19, ALL MATCH |
+| Site | PASS: 1,833 paragraphs matched; 209 of 209 links agree |
+| Tree vs root | 16 of 18 headings carry the root's ID and title, and so does the one `###`, Aṭṭhakavaggo `^15-1-0` (`--accept-tree`, below) |
+
+**The two headings that differ from the root:**
+- `Cūḷabyūhasuttaniddesavaṇṇanā ^15-1-12-0` is the root's Cūḷaviyūhasuttaniddeso, spelled differently, at the same ID. Mahābyūha/Mahāviyūha passes only because the 4-letter check sees "maha" in both.
+- `Tividhakalyāṇaṃ ^15-1-2-1-0` is the commentary's own sub-section under the Guhaṭṭhakasuttaniddesavaṇṇanā. The root has no counterpart, and the ID claims no root section.
+
+**Standing decision:** the Ganthārambhakathā is front matter `^15-I-0`. There is no Nigamanakathā.
+
+**Join:** 15,487 links, none broken; 50,159 block IDs, all unique; split proof OK.
+
+## Book 16 — Cūḷaniddesa-aṭṭhakathā (`s0516a.att`, 2026-11-24)
+
+Run: `kn_comm_book.py 16 s0516a.att atta-kn-nc kn-nc … --per-section --presection=2 --shape=0-INBOX/temp/kn-comm/nc_shape.py`
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-nc` | 749 = 749 |
+| `verify_commentary.py` | accepted: `^16-1`…`^16-669`, 24,232 md words / 24,233 XML. The one difference is the "2." of the Dutiyavagga title made a heading (below). 2,071 bold spans |
+| Citations | 146 printed, 146 linked right, 0 wrong, 0 unresolved (6 abbreviated ranges such as "35-7." read as 35–37) |
+| `check_headings.py` | accepted: the only difference is the inserted `Dutiyavaggavaṇṇanā` |
+| Site | accepted: 749 paragraphs matched. Of the 146 links, 40 agree directly and 106 are text-verified (below) |
+| Tree vs root | 25 of 25 headings carry the root's ID and title |
+
+**Root structure.** The root has three `###`:
+- Pārāyanavaggo `^16-1-0`: the sutta text, with paragraph IDs `^16-1-N`.
+- Pārāyanavagganiddeso `^16-2-0`.
+- Khaggavisāṇasutto `^16-3-0`, containing `#### Khaggavisāṇasuttaniddeso ^16-3-1-0` and four vaggas.
+
+The niddesa's paragraph numbers run from the Pārāyana on into the Khaggavisāṇa, so both have IDs `^16-2-N` (the Khaggavisāṇa starts at `^16-2-131`).
+
+**Decisions (`nc_shape.py`, headings only):**
+- **Section IDs.** The commentary explains the niddesa only and has no section for the root's Pārāyanavaggo `^16-1-0`. The build numbered its sections 1, 2 and Nigamana 3, one short of the root, so each heading's section number moves up by one:
+  - Pārāyanavagganiddeso becomes `^16-2-0`, and its 18 suttas take the root's `^16-2-N-0`.
+  - Khaggavisāṇasuttaniddeso becomes `^16-3-0`, Khaggavisāṇasuttaniddesavaṇṇanā `^16-3-1-0`, and the vaggas `^16-3-1-1-0`…`-4-0`.
+  - Nigamanakathā becomes `^16-4-0`, after the root's last section (the standing decision).
+- **Mis-tagging.** "2. Dutiyavaggavaṇṇanā" is tagged `<p rend="centre">`, a closing line's style, while its siblings 1, 3 and 4 are `<p rend="subhead">`. It is now a vagga heading at their level. The site lists no node for it either, because it follows the XML.
+- **Citation section.** Neither commentary `###` prints a number, so per-section linking has no section to read. `--presection=2` sends every citation to the root's section 2, the niddesa.
+
+**Site links, 106 text-verified.** The site numbers its root sections differently from the vault: its `kn-nc-1` is the niddesa (the vault's `^16-2-`) and its `kn-nc-2` is the Khaggavisāṇa. So its links for the Pārāyana commentary name section 1. Each of the 106 was accepted only when both of these hold:
+- The vault's linked block has the same printed number as the site's root paragraph.
+- The vault's block starts with that paragraph's words (difflib ≥ 0.85 over the shorter of the two, never fewer than 12 letters; the site's paragraph can be only a verse's first line).
+
+The number is needed because the root prints each Pārāyana verse twice (Pārāyanavaggo `^16-1-57` = niddesa `^16-2-1`), so the words alone fit both blocks. An audit confirmed that for every site link, the number picks exactly the vault's block. This check was added to `kn_comm_book.py` (`same_root_para`).
+
+**Join:** 15,645 links, none broken; 50,857 block IDs, all unique; split proof OK; no bare LFs.
+
+## Book 17 — Paṭisambhidāmagga-aṭṭhakathā (`s0517a.att`, 2026-11-24)
+
+Run: `kn_comm_book.py 17 s0517a.att atta-kn-ps kn-ps … --zones=M,1,2,3 --shape=0-INBOX/temp/kn-comm/ps_shape.py --accept-tree`
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-ps` | 2,515 vs 2,514 non-empty site paragraphs (2,515 with the empty one) |
+| `verify_commentary.py` | PASS: `^17-1`…`^17-2108`, 118,874 words = XML, 6,556 bold spans |
+| Citations | 367 printed, 367 linked right, 0 wrong, 0 unresolved |
+| `check_headings.py` | 177 = 177, ALL MATCH |
+| Site | accepted. Text and tree match except the reprinted volume-2 title "Paṭisambhidāmagga-aṭṭhakathā", kept as text (Rule 4). Of the 367 links, 178 agree directly and 189 are ones the site resolves in the wrong run (below) |
+| Tree vs root | 132 of 175 headings carry the root's ID and title; every `###` matches (`--accept-tree`; misses below) |
+
+**Citations by zone.** The root numbers its paragraphs in four runs: the Mātikā `^17-M-1…73`, then each vagga from 1 (`^17-1-`, `^17-2-`, `^17-3-`). The commentary's citations restart at the same places: Mātikāvaṇṇanā 1–73, then Mahāvagga 1–240, Yuganaddha 1–48, Paññā 1–42. So the zone linker (`--zones=M,1,2,3`) links each citation in the run that follows the last one. Per-section linking would not work, because no commentary `###` prints the vagga's number.
+
+**Human decisions (2026-11-24), applied by `ps_shape.py`, headings only:**
+- **Vaggas.** The XML puts "(1) Mahāvaggo", "(2) Yuganaddhavaggo" and "(3) Paññāvaggo" at the kathās' level. Following the root, they are now `###` on its IDs, with the kathās as `####` under them.
+- **Nesting follows the root.** A heading whose name pairs with a root heading takes that heading's ID and level. Pairing ignores "-vaṇṇanā"/"-niddeso", printed numbers, Ka./Kha. letters and a final vowel, and accepts a spelling variant (Sabbaññutaññāṇa). It searches in root order among not-yet-used headings under the commentary's parent, then up to the vagga. So these four XML nestings take the root's:
+  - "9. Saṅkhārupekkhā…" (the XML nests it under Ādīnava) becomes `^17-1-2-9-0`.
+  - "68. Indriyaparopariyatta…" becomes `^17-1-2-44-0`.
+  - The three chakkas go under Upakkilesa: `^17-1-4-3-1-0`…`3-0`.
+  - The Indriyakathā's Ka./Kha./Ga. become siblings of their suttantas (`^17-1-5-3-0`…).
+- **Grouped titles** take their first section, as in the Apadāna:
+  - "41-42. Khantiñāṇapariyogāhaṇa…" becomes Khanti `^17-1-2-32-0`.
+  - "Gha-ṅa. pariyādānaṭṭhapatiṭṭhāpakaṭṭha…" becomes the root's Ṅa. pariyādānaṭṭha `^17-1-5-15-0`. It explains pariyādāna and patiṭṭhāpaka, the root's Ṅa./Ca.; the root's Gha. adhiṭṭhāna has no heading here.
+  - "Balādivārattaya" becomes Balavāro `^17-2-4-2-0`.
+  - "Satipaṭṭhānavārādi" and "Sattabodhisattavārādi" become `^17-2-6-2-0` and `-4-0`.
+- **Four pairings read from the texts** (`ALIAS`):
+  - Vimokkhuddesa = Uddeso
+  - Vimokkhaniddesa = Niddeso
+  - Balādivārattaya = Balavāro
+  - Vivaṭṭañāṇachakka = Chavivaṭṭañāṇa
+- **The commentary's own headings (38)** keep the commentary's nesting and are numbered after the root's headings under the same parent, so their IDs claim no root section. They are:
+  - the Sutamaya's 13 sub-sections;
+  - Pañcañāṇapakiṇṇakaṃ;
+  - each kathā's "…kathāvaṇṇanā" introduction (e.g. Yuganaddhakathāvaṇṇanā `^17-2-1-3-0`, placed before the root's Suttantaniddeso `^17-2-1-1-0` because the commentary prints it first);
+  - **Mātikāvaṇṇanā** `^17-1-2-49-0`. It is printed right after "1. Ñāṇakathā", so it sits inside the Ñāṇakathā rather than on the root's Mātikā `^17-1-1-0`. Its 73 citations still link to `^17-M-1…73`.
+- **Nigamanakathā** is `^17-4-0`, after the root's last section (the standing decision).
+
+**Tree misses (43 of 175), all reviewed:**
+- 38 are the commentary's own headings above.
+- 5 are pairings whose first letters differ from the root's title, so the driver's 4-letter check misses them: Vimokkhuddesa/Uddeso, Vimokkhaniddesa/Niddeso, Vivaṭṭa-/Chavivaṭṭa-, the Gha-ṅa. group/Ṅa., and Cāravihāra/"Ga. cāravihāra" (the commentary prints no "Ga.").
+
+Root headings with no commentary heading include:
+- the Mātikā;
+- Pariyogāhaṇa (in the Khanti group);
+- the four Ānāpāna catukkas;
+- the Indriyakathā's Gha. and Ca.;
+- several Paṭisambhidā- and Dhammacakkakathā vāras inside groups;
+- the Suññakathā's Mātikā/Niddeso;
+- Dasaiddhi, and the Vivekakathā's Indriyaniddeso.
+
+**Site links resolved in the wrong run (189).** tipitaka.app resolves a printed number in another run of the root. For example, the Mātikāvaṇṇanā's "1." points to the Paññāvagga's "Aniccānupassanā" instead of the Mātikā's "Sotāvadhāne paññā sutamaye ñāṇaṃ". The driver now accepts such a link (`zone_link_ok`, zoned roots only; list in `pi-kn-17-atthakatha.site-zone-accepted.txt`) when the number is the same and either:
+- **Lemmas (173):** the vault's root block holds more of the commentary paragraph's bold lemmas than the site's root paragraph does; or
+- **Run (16):** neither holds more, and the vault's block lies in the same run as the vault's citations on either side. I read all 16, and the vault's block is the passage the paragraph explains in each (e.g. "Chando mūlaṭṭhena…", the Sammasana niddesa, "Sabbe sattā averino…" in the Mettākathā).
+
+In no case does the site's paragraph hold more of the lemmas. `kn_comm_book.py` also applies the book-16 check (same number, same opening words) to zoned roots, where it finds none.
+
+**Join:** 16,046 links, none broken; 53,145 block IDs, all unique; split proof OK; no bare LFs.
+
+## Book 19 — Nettippakaraṇa-aṭṭhakathā (`s0519a.att`, 2026-11-24)
+
+Run: `kn_comm_book.py 19 s0519a.att atta-kn-nett kn-nett … --zones=,1 --shape=0-INBOX/temp/kn-comm/nett_shape.py`
+
+| Check | Result |
+|---|---|
+| Segments vs `atta-kn-nett` | 1,095 = 1,095 site paragraphs |
+| `verify_commentary.py` | accepted: `^19-1`…`^19-995`, 50,157 words vs 50,160 in the XML (the three dropped printed numbers "5.", "7.", "8." of the titles made headings), 3,718 bold spans |
+| Citations | 146 printed, 146 linked right, 0 wrong, 0 unresolved |
+| `check_headings.py` | accepted: the only differences are the 3 titles made headings |
+| Site | accepted. Text 1,095 = 1,095; all 146 paranum links agree; the tree differs only by the 3 titles made headings |
+| Tree vs root | 36 of 38 headings carry the root's ID and title; every `###` matches. The 2 misses are the commentary's own headings (below) |
+
+**Citations by zone.** The root keeps one main count, ¶1–4 then ¶5–124 (`^19-N`). Inside the Niddesavāra, the Hārasaṅkhepa and Dvādasapada verses carry their own count 1–26 (`^19-1-N`). The commentary cites 1–4, then the verses 5–26, then the main count again from 5 in the Paṭiniddesavāra. `--zones=,1` links each citation in the run that follows the last one.
+
+**Linker bug fixed (`zone_link.py`).** The first dry run linked the Paṭiniddesavāra's 5–26 to the verses `^19-1-5…26` instead of `^19-5…26`. A plain zone's prefix `19-` also matched zone 1's IDs, and `19-1-5` read as the plain range 1–5. Verify passed, since it applies the same rule. tipitaka.app's links disagreed on 26 citations: 20 were left over, and 6 more had been wrongly accepted by the book-17 run rule, because their neighbours were wrong too. A plain zone now takes no ID of a labelled zone. After the fix all 146 links agree with the site. Books 5 and 17, the only other zoned roots, have no plain zone, so the fix does not change them.
+
+**Human decisions (2026-11-24), applied by `nett_shape.py`, headings only:**
+- **Vibhaṅga titles 5, 7, 8.** "5. Lakkhaṇa-", "7. Āvaṭṭa-" and "8. Vibhattihāravibhaṅgavaṇṇanā" are printed as big title lines (`<p rend="nikaya">`), which the converter keeps as text as if they were a volume's reprinted title. They are not reprints: each occurs once, opens its section and has its own "… niṭṭhitā." closing line, like its 13 siblings (`subhead`). They are now headings at their siblings' level.
+- **Pairing with the root** works as in book 17. A heading whose name pairs with a root heading takes its ID and level, so the vibhaṅgas are `^19-4-1-0`…`16-0` and the sampātas keep the root's numbers. The commentary heads no Otaraṇa, Sodhana, Parikkhāra or Samāropana sampāta (it goes from 11. Paññatti to 14. Adhiṭṭhāna, then to its own Missaka section, and cites none of ¶74–75 or ¶77–78), so those root IDs (`^19-4-28-0`, `-29-0`, `-31-0`, `-32-0`) stay unused.
+- **The commentary's own headings (2)** are numbered after the root's under the same parent (the standing decision):
+  - Nayasaṅkhepo `^19-3-3-0`. In the root "Nayasaṅkhepo" is a text line (`^19-1-16`), not a heading. It is printed between Hārasaṅkhepo `^19-3-1-0` and Dvādasapadaṃ `^19-3-2-0`.
+  - Missakahārasampātavaṇṇanā `^19-4-33-0`: the commentary's own run of all sixteen hāras over Dhp 2 ("Manopubbaṅgamā … pasannena"), which the root does not have.
+- **Nigamanakathā** is `^19-7-0`, after the root's last section (the standing decision).
+
+**The Netti ṭīkās (human decision).** The Nettippakaraṇa-ṭīkā (`s0519t.tik`) is to be built next into a new `pi-khuddakanikaya-tiika.md`. The Nettivibhāvinī (`s0501t.nrf`) is left out.
+
+**Join:** 16,192 links, none broken; 54,183 block IDs, all unique; split proof OK; no bare LFs.

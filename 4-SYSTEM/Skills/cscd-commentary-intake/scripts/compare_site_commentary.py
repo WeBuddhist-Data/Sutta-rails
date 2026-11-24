@@ -45,7 +45,8 @@ TRANS = re.compile(r"^!\[\[[^#\]]+#\^([\w-]+)\]\]$")
 
 def site_norm(s):
     s = re.sub(r"\|[A-Z]\d+\.\d+\|", " ", s)
-    s = s.replace("‘‘", '"').replace("’’", '"').replace("**", "")
+    # ** first: a bold tag can split a doubled quote (Jātaka-aṭṭhakathā "suggati’**’nti")
+    s = s.replace("**", "").replace("‘‘", '"').replace("’’", '"')
     s = s.replace("{", "[").replace("}", "]")
     s = re.sub(r"\s+", " ", s).strip()
     s = re.sub(r"\[\s+", "[", re.sub(r"\s+\]", "]", s))
@@ -73,7 +74,9 @@ def md_items(path):
             items.append({"text": title, "head": True, "level": len(h.group(1)), "scope": []})
             scope, group = [], []
         else:
-            items.append({"text": bold_check.strip_bold(re.sub(r"\s\^[\w-]+$", "", ln)), "head": False, "scope": list(scope)})
+            # a bold tag can split a doubled quote the converter leaves as printed ("suggati’**’nti")
+            items.append({"text": bold_check.strip_bold(re.sub(r"\s\^[\w-]+$", "", ln)).replace("‘‘", '"').replace("’’", '"'),
+                          "head": False, "scope": list(scope)})
         blockstart = False
     return items
 

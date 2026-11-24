@@ -1,0 +1,298 @@
+[
+{
+"key": "atta-kn-nett-0",
+"depth": 4,
+"rend": "subsubhead",
+"start": 3,
+"end": 47,
+"title": "Ganthārambhakathā"
+},
+{
+"key": "atta-kn-nett-1",
+"depth": 4,
+"rend": "chapter",
+"start": 47,
+"end": 84,
+"title": "1. Saṅgahavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-2",
+"depth": 4,
+"rend": "chapter",
+"start": 84,
+"end": 111,
+"title": "2. Uddesavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-3",
+"depth": 4,
+"rend": "chapter",
+"start": 111,
+"end": 198,
+"title": "3. Niddesavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 116,
+"end": 144,
+"title": "Hārasaṅkhepo"
+},
+{
+"key": "atta-kn-nett-3-2",
+"depth": 5,
+"rend": "subhead",
+"start": 144,
+"end": 151,
+"title": "Nayasaṅkhepo"
+},
+{
+"key": "atta-kn-nett-3-3",
+"depth": 5,
+"rend": "subhead",
+"start": 151,
+"end": 198,
+"title": "Dvādasapadaṃ"
+},
+{
+"key": "atta-kn-nett-4",
+"depth": 4,
+"rend": "chapter",
+"start": 198,
+"end": 1095,
+"title": "4. Paṭiniddesavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 199,
+"end": 289,
+"title": "1. Desanāhāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-2",
+"depth": 5,
+"rend": "subhead",
+"start": 289,
+"end": 346,
+"title": "2. Vicayahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-3",
+"depth": 5,
+"rend": "subhead",
+"start": 346,
+"end": 380,
+"title": "3. Yuttihāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-4",
+"depth": 5,
+"rend": "subhead",
+"start": 380,
+"end": 407,
+"title": "4. Padaṭṭhānahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-5",
+"depth": 5,
+"rend": "subhead",
+"start": 407,
+"end": 459,
+"title": "6. Catubyūhahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-6",
+"depth": 5,
+"rend": "subhead",
+"start": 459,
+"end": 467,
+"title": "9. Parivattanahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-7",
+"depth": 5,
+"rend": "subhead",
+"start": 467,
+"end": 483,
+"title": "10. Vevacanahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-8",
+"depth": 5,
+"rend": "subhead",
+"start": 483,
+"end": 500,
+"title": "11. Paññattihāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-9",
+"depth": 5,
+"rend": "subhead",
+"start": 500,
+"end": 509,
+"title": "12. Otaraṇahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-10",
+"depth": 5,
+"rend": "subhead",
+"start": 509,
+"end": 512,
+"title": "13. Sodhanahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-11",
+"depth": 5,
+"rend": "subhead",
+"start": 512,
+"end": 533,
+"title": "14. Adhiṭṭhānahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-12",
+"depth": 5,
+"rend": "subhead",
+"start": 533,
+"end": 542,
+"title": "15. Parikkhārahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-13",
+"depth": 5,
+"rend": "subhead",
+"start": 542,
+"end": 555,
+"title": "16. Samāropanahāravibhaṅgavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-14",
+"depth": 5,
+"rend": "subhead",
+"start": 555,
+"end": 575,
+"title": "1. Desanāhārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-15",
+"depth": 5,
+"rend": "subhead",
+"start": 575,
+"end": 671,
+"title": "2. Vicayahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-16",
+"depth": 5,
+"rend": "subhead",
+"start": 671,
+"end": 674,
+"title": "3. Yuttihārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-17",
+"depth": 5,
+"rend": "subhead",
+"start": 674,
+"end": 677,
+"title": "4. Padaṭṭhānahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-18",
+"depth": 5,
+"rend": "subhead",
+"start": 677,
+"end": 680,
+"title": "5. Lakkhaṇahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-19",
+"depth": 5,
+"rend": "subhead",
+"start": 680,
+"end": 684,
+"title": "6. Catubyūhahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-20",
+"depth": 5,
+"rend": "subhead",
+"start": 684,
+"end": 687,
+"title": "7. Āvaṭṭahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-21",
+"depth": 5,
+"rend": "subhead",
+"start": 687,
+"end": 691,
+"title": "8. Vibhattihārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-22",
+"depth": 5,
+"rend": "subhead",
+"start": 691,
+"end": 694,
+"title": "9. Parivattanahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-23",
+"depth": 5,
+"rend": "subhead",
+"start": 694,
+"end": 697,
+"title": "10. Vevacanahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-24",
+"depth": 5,
+"rend": "subhead",
+"start": 697,
+"end": 700,
+"title": "11. Paññattihārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-25",
+"depth": 5,
+"rend": "subhead",
+"start": 700,
+"end": 757,
+"title": "14. Adhiṭṭhānahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-25-1",
+"depth": 6,
+"rend": "subhead",
+"start": 703,
+"end": 757,
+"title": "Missakahārasampātavaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-26",
+"depth": 5,
+"rend": "chapter",
+"start": 757,
+"end": 856,
+"title": "Nayasamuṭṭhānavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-27",
+"depth": 5,
+"rend": "chapter",
+"start": 856,
+"end": 1095,
+"title": "Sāsanapaṭṭhānavāravaṇṇanā"
+},
+{
+"key": "atta-kn-nett-4-27-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1072,
+"end": 1095,
+"title": "Nigamanakathā"
+}
+]
