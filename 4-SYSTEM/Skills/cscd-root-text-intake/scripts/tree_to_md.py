@@ -30,6 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cscd_shape  # noqa: E402
 
 VERSE_OPEN = re.compile(r"^\s*(\d+(?:-\d+)?)(?:\.\s|\s*$)")
+NUM_ALONE = re.compile(r"^\s*(\d+(?:-\d+)?)\s*\.$")
 
 
 def main(src, dst):
@@ -37,7 +38,7 @@ def main(src, dst):
     if not data.get("tree"):
         sys.exit("STOP: this JSON was not made with cscd_xml_to_json.py --tree")
     out = ["---", f"title: {data.get('title_pali') or ''}", "---", ""]
-    buf, num = [], [None]
+    buf, num, pending, opening = [], [None], [None], [False]
 
     def flush():
         if buf:
@@ -63,9 +64,38 @@ def main(src, dst):
         if css == "heading":
             flush()
             num[0] = None
+            opening[0] = False
             out.append(f"{'#' * g['level']} {cscd_shape.strip_heading_number(text)} ^1-h-0\n")
             continue
+        if text.startswith("Namo tassa"):
+            # a second volume's printed opening inside one book (CSCD Therāpadāna part 2:
+            # homage, nikāya, book title, "(Dutiyo bhāgo)"): each line its own block up to the
+            # next heading, not the continuation of the last verse before it
+            flush()
+            num[0] = None
+            opening[0] = True
+        if opening[0]:
+            out.append(text + "\n")
+            continue
+        if pending[0]:
+            # a number printed alone in its own paragraph ("474 ." in a bodytext <p>,
+            # CSCD Suttanipāta) opens the next paragraph, as a joined hangnum does
+            text = f"{pending[0]}. {text}"
+            pending[0] = None
+        elif NUM_ALONE.match(text) and g.get("paragraph"):
+            pending[0] = NUM_ALONE.match(text).group(1)
+            continue
         m = VERSE_OPEN.match(text)
+        if m and g.get("paragraph", None) == "" and css == "centered":
+            # Text that only looks numbered: a centred title whose "N. " is not a paranum
+            # (CSCD Vimānavatthu, the sub-stories "1. Vatthuttamadāyikāvimānavatthu" …
+            # inside the Guttilavimāna). Its own block, marked ^1-nonum so apply.py gives
+            # it a ^<book>-U<k> ID and keeps its "N. " as text. (A hangnum joined to its
+            # verse may also lack @n — the Suttuddāna's 2–21 — and is a real number.)
+            flush()
+            num[0] = None
+            out.append(f"{text} ^1-nonum\n")
+            continue
         if m:
             if num[0] is not None:
                 flush()

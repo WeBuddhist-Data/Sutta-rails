@@ -1,0 +1,4946 @@
+[
+{
+"key": "kn-ap-1",
+"depth": 4,
+"rend": "chapter",
+"start": 4,
+"end": 1386,
+"title": "1. Buddhavaggo"
+},
+{
+"key": "kn-ap-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5,
+"end": 173,
+"title": "1. Buddhaapadānaṃ"
+},
+{
+"key": "kn-ap-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 173,
+"end": 292,
+"title": "2. Paccekabuddhaapadānaṃ"
+},
+{
+"key": "kn-ap-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 292,
+"end": 768,
+"title": "3-1. Sāriputtattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 768,
+"end": 817,
+"title": "3-2. Mahāmoggallānattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 817,
+"end": 866,
+"title": "3-3. Mahākassapattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-6",
+"depth": 5,
+"rend": "subhead",
+"start": 866,
+"end": 895,
+"title": "3-4. Anuruddhattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-7",
+"depth": 5,
+"rend": "subhead",
+"start": 895,
+"end": 914,
+"title": "3-5. Puṇṇamantāṇiputtattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-8",
+"depth": 5,
+"rend": "subhead",
+"start": 914,
+"end": 1231,
+"title": "3-6. Upālittheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-9",
+"depth": 5,
+"rend": "subhead",
+"start": 1231,
+"end": 1269,
+"title": "3-7. Aññāsikoṇḍaññattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-10",
+"depth": 5,
+"rend": "subhead",
+"start": 1269,
+"end": 1302,
+"title": "3-8. Piṇḍolabhāradvājattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-11",
+"depth": 5,
+"rend": "subhead",
+"start": 1302,
+"end": 1337,
+"title": "3-9. Khadiravaniyarevatattheraapadānaṃ"
+},
+{
+"key": "kn-ap-1-12",
+"depth": 5,
+"rend": "subhead",
+"start": 1337,
+"end": 1386,
+"title": "3-10. Ānandattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2",
+"depth": 4,
+"rend": "chapter",
+"start": 1386,
+"end": 5545,
+"title": "2. Sīhāsaniyavaggo"
+},
+{
+"key": "kn-ap-2-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1387,
+"end": 1414,
+"title": "1. Sīhāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-2",
+"depth": 5,
+"rend": "subhead",
+"start": 1414,
+"end": 1445,
+"title": "2. Ekatthambhikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-3",
+"depth": 5,
+"rend": "subhead",
+"start": 1445,
+"end": 1464,
+"title": "3. Nandattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-4",
+"depth": 5,
+"rend": "subhead",
+"start": 1464,
+"end": 1507,
+"title": "4. Cūḷapanthakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-5",
+"depth": 5,
+"rend": "subhead",
+"start": 1507,
+"end": 1536,
+"title": "5. Pilindavacchattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-6",
+"depth": 5,
+"rend": "subhead",
+"start": 1536,
+"end": 1575,
+"title": "6. Rāhulattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-7",
+"depth": 5,
+"rend": "subhead",
+"start": 1575,
+"end": 1602,
+"title": "7. Upasenavaṅgantaputtattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-8",
+"depth": 5,
+"rend": "subhead",
+"start": 1602,
+"end": 1635,
+"title": "8. Raṭṭhapālattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-9",
+"depth": 5,
+"rend": "subhead",
+"start": 1635,
+"end": 1662,
+"title": "9. Sopākattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-10",
+"depth": 5,
+"rend": "subhead",
+"start": 1662,
+"end": 1705,
+"title": "10. Sumaṅgalattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-11",
+"depth": 5,
+"rend": "subhead",
+"start": 5420,
+"end": 5433,
+"title": "1. Ālambaṇadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-12",
+"depth": 5,
+"rend": "subhead",
+"start": 5433,
+"end": 5447,
+"title": "2. Ajinadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-13",
+"depth": 5,
+"rend": "subhead",
+"start": 5447,
+"end": 5464,
+"title": "3. Dverataniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-14",
+"depth": 5,
+"rend": "subhead",
+"start": 5464,
+"end": 5476,
+"title": "4. Ārakkhadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-15",
+"depth": 5,
+"rend": "subhead",
+"start": 5476,
+"end": 5488,
+"title": "5. Abyādhikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-16",
+"depth": 5,
+"rend": "subhead",
+"start": 5488,
+"end": 5500,
+"title": "6. Aṅkolapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-17",
+"depth": 5,
+"rend": "subhead",
+"start": 5500,
+"end": 5512,
+"title": "7. Sovaṇṇavaṭaṃsakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-18",
+"depth": 5,
+"rend": "subhead",
+"start": 5512,
+"end": 5522,
+"title": "8. Miñjavaṭaṃsakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-19",
+"depth": 5,
+"rend": "subhead",
+"start": 5522,
+"end": 5534,
+"title": "9. Sukatāveḷiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-2-20",
+"depth": 5,
+"rend": "subhead",
+"start": 5534,
+"end": 5545,
+"title": "10. Ekavandaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3",
+"depth": 4,
+"rend": "chapter",
+"start": 1705,
+"end": 2123,
+"title": "3. Subhūtivaggo"
+},
+{
+"key": "kn-ap-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1706,
+"end": 1814,
+"title": "1. Subhūtittheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-2",
+"depth": 5,
+"rend": "subhead",
+"start": 1814,
+"end": 1927,
+"title": "2. Upavānattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-3",
+"depth": 5,
+"rend": "subhead",
+"start": 1927,
+"end": 1986,
+"title": "3. Tisaraṇagamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-4",
+"depth": 5,
+"rend": "subhead",
+"start": 1986,
+"end": 2031,
+"title": "4. Pañcasīlasamādāniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2031,
+"end": 2046,
+"title": "5. Annasaṃsāvakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2046,
+"end": 2057,
+"title": "6. Dhūpadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-7",
+"depth": 5,
+"rend": "subhead",
+"start": 2057,
+"end": 2068,
+"title": "7. Pulinapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-8",
+"depth": 5,
+"rend": "subhead",
+"start": 2068,
+"end": 2093,
+"title": "8. Uttiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-9",
+"depth": 5,
+"rend": "subhead",
+"start": 2093,
+"end": 2104,
+"title": "9. Ekañjalikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-3-10",
+"depth": 5,
+"rend": "subhead",
+"start": 2104,
+"end": 2123,
+"title": "10. Khomadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4",
+"depth": 4,
+"rend": "chapter",
+"start": 2124,
+"end": 2373,
+"title": "4. Kuṇḍadhānavaggo"
+},
+{
+"key": "kn-ap-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 2125,
+"end": 2160,
+"title": "1. Kuṇḍadhānattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-2",
+"depth": 5,
+"rend": "subhead",
+"start": 2160,
+"end": 2190,
+"title": "2. Sāgatattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-3",
+"depth": 5,
+"rend": "subhead",
+"start": 2190,
+"end": 2226,
+"title": "3. Mahākaccānattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-4",
+"depth": 5,
+"rend": "subhead",
+"start": 2226,
+"end": 2260,
+"title": "4. Kāḷudāyittheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2260,
+"end": 2302,
+"title": "5. Mogharājattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2302,
+"end": 2314,
+"title": "6. Adhimuttattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-7",
+"depth": 5,
+"rend": "subhead",
+"start": 2314,
+"end": 2326,
+"title": "7. Lasuṇadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-8",
+"depth": 5,
+"rend": "subhead",
+"start": 2326,
+"end": 2344,
+"title": "8. Āyāgadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-9",
+"depth": 5,
+"rend": "subhead",
+"start": 2344,
+"end": 2358,
+"title": "9. Dhammacakkikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-4-10",
+"depth": 5,
+"rend": "subhead",
+"start": 2358,
+"end": 2373,
+"title": "10. Kapparukkhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5",
+"depth": 4,
+"rend": "chapter",
+"start": 2377,
+"end": 2690,
+"title": "5. Upālivaggo"
+},
+{
+"key": "kn-ap-5-1",
+"depth": 5,
+"rend": "subhead",
+"start": 2378,
+"end": 2429,
+"title": "1. Bhāgineyyupālittheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-2",
+"depth": 5,
+"rend": "subhead",
+"start": 2429,
+"end": 2489,
+"title": "2. Soṇakoḷivisattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-3",
+"depth": 5,
+"rend": "subhead",
+"start": 2489,
+"end": 2525,
+"title": "3. Kāḷigodhāputtabhaddiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-4",
+"depth": 5,
+"rend": "subhead",
+"start": 2525,
+"end": 2541,
+"title": "4. Sanniṭṭhāpakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2541,
+"end": 2555,
+"title": "5. Pañcahatthiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2555,
+"end": 2567,
+"title": "6. Padumacchadaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-7",
+"depth": 5,
+"rend": "subhead",
+"start": 2567,
+"end": 2579,
+"title": "7. Sayanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-8",
+"depth": 5,
+"rend": "subhead",
+"start": 2579,
+"end": 2597,
+"title": "8. Caṅkamanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-9",
+"depth": 5,
+"rend": "subhead",
+"start": 2597,
+"end": 2648,
+"title": "9. Subhaddattheraapadānaṃ"
+},
+{
+"key": "kn-ap-5-10",
+"depth": 5,
+"rend": "subhead",
+"start": 2648,
+"end": 2690,
+"title": "10. Cundattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6",
+"depth": 4,
+"rend": "chapter",
+"start": 2694,
+"end": 2901,
+"title": "6. Bījanivaggo"
+},
+{
+"key": "kn-ap-6-1",
+"depth": 5,
+"rend": "subhead",
+"start": 2695,
+"end": 2712,
+"title": "1. Vidhūpanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-2",
+"depth": 5,
+"rend": "subhead",
+"start": 2712,
+"end": 2738,
+"title": "2. Sataraṃsittheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-3",
+"depth": 5,
+"rend": "subhead",
+"start": 2738,
+"end": 2750,
+"title": "3. Sayanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-4",
+"depth": 5,
+"rend": "subhead",
+"start": 2750,
+"end": 2768,
+"title": "4. Gandhodakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2768,
+"end": 2790,
+"title": "5. Opavayhattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2790,
+"end": 2806,
+"title": "6. Saparivārāsanattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-7",
+"depth": 5,
+"rend": "subhead",
+"start": 2806,
+"end": 2822,
+"title": "7. Pañcadīpakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-8",
+"depth": 5,
+"rend": "subhead",
+"start": 2822,
+"end": 2844,
+"title": "8. Dhajadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-9",
+"depth": 5,
+"rend": "subhead",
+"start": 2844,
+"end": 2868,
+"title": "9. Padumattheraapadānaṃ"
+},
+{
+"key": "kn-ap-6-10",
+"depth": 5,
+"rend": "subhead",
+"start": 2868,
+"end": 2901,
+"title": "10. Asanabodhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7",
+"depth": 4,
+"rend": "chapter",
+"start": 2905,
+"end": 3076,
+"title": "7. Sakacintaniyavaggo"
+},
+{
+"key": "kn-ap-7-1",
+"depth": 5,
+"rend": "subhead",
+"start": 2906,
+"end": 2921,
+"title": "1. Sakacintaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-2",
+"depth": 5,
+"rend": "subhead",
+"start": 2921,
+"end": 2935,
+"title": "2. Avopupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-3",
+"depth": 5,
+"rend": "subhead",
+"start": 2935,
+"end": 2951,
+"title": "3. Paccāgamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-4",
+"depth": 5,
+"rend": "subhead",
+"start": 2951,
+"end": 2971,
+"title": "4. Parappasādakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-5",
+"depth": 5,
+"rend": "subhead",
+"start": 2971,
+"end": 2987,
+"title": "5. Bhisadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-6",
+"depth": 5,
+"rend": "subhead",
+"start": 2987,
+"end": 3007,
+"title": "6. Sucintitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3007,
+"end": 3025,
+"title": "7. Vatthadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3025,
+"end": 3045,
+"title": "8. Ambadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3045,
+"end": 3059,
+"title": "9. Sumanattheraapadānaṃ"
+},
+{
+"key": "kn-ap-7-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3059,
+"end": 3076,
+"title": "10. Pupphacaṅkoṭiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8",
+"depth": 4,
+"rend": "chapter",
+"start": 3081,
+"end": 3253,
+"title": "8. Nāgasamālavaggo"
+},
+{
+"key": "kn-ap-8-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3082,
+"end": 3093,
+"title": "1. Nāgasamālattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3093,
+"end": 3103,
+"title": "2. Padasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3103,
+"end": 3113,
+"title": "3. Buddhasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3113,
+"end": 3126,
+"title": "4. Bhisāluvadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-5",
+"depth": 5,
+"rend": "subhead",
+"start": 3126,
+"end": 3136,
+"title": "5. Ekasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-6",
+"depth": 5,
+"rend": "subhead",
+"start": 3136,
+"end": 3154,
+"title": "6. Tiṇasantharadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3154,
+"end": 3168,
+"title": "7. Sūcidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3168,
+"end": 3182,
+"title": "8. Pāṭalipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3182,
+"end": 3196,
+"title": "9. Ṭhitañjaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-8-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3196,
+"end": 3253,
+"title": "10. Tipadumiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9",
+"depth": 4,
+"rend": "chapter",
+"start": 3257,
+"end": 3392,
+"title": "9. Timiravaggo"
+},
+{
+"key": "kn-ap-9-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3258,
+"end": 3279,
+"title": "1. Timirapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3279,
+"end": 3293,
+"title": "2. Gatasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3293,
+"end": 3307,
+"title": "3. Nipannañjalikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3307,
+"end": 3325,
+"title": "4. Adhopupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-5",
+"depth": 5,
+"rend": "subhead",
+"start": 3325,
+"end": 3337,
+"title": "5. Raṃsisaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-6",
+"depth": 5,
+"rend": "subhead",
+"start": 3337,
+"end": 3347,
+"title": "6. Dutiyaraṃsisaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3347,
+"end": 3357,
+"title": "7. Phaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3357,
+"end": 3365,
+"title": "8. Saddasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3365,
+"end": 3377,
+"title": "9. Bodhisiñcakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-9-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3377,
+"end": 3392,
+"title": "10. Padumapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10",
+"depth": 4,
+"rend": "chapter",
+"start": 3396,
+"end": 3549,
+"title": "10. Sudhāvaggo"
+},
+{
+"key": "kn-ap-10-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3397,
+"end": 3414,
+"title": "1. Sudhāpiṇḍiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3414,
+"end": 3428,
+"title": "2. Sucintikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3428,
+"end": 3440,
+"title": "3. Aḍḍhaceḷakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3440,
+"end": 3452,
+"title": "4. Sūcidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-5",
+"depth": 5,
+"rend": "subhead",
+"start": 3452,
+"end": 3468,
+"title": "5. Gandhamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-6",
+"depth": 5,
+"rend": "subhead",
+"start": 3468,
+"end": 3482,
+"title": "6. Tipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3482,
+"end": 3500,
+"title": "7. Madhupiṇḍikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3500,
+"end": 3514,
+"title": "8. Senāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3514,
+"end": 3526,
+"title": "9. Veyyāvaccakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-10-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3526,
+"end": 3549,
+"title": "10. Buddhupaṭṭhākattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11",
+"depth": 4,
+"rend": "chapter",
+"start": 3550,
+"end": 3706,
+"title": "11. Bhikkhadāyivaggo"
+},
+{
+"key": "kn-ap-11-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3551,
+"end": 3566,
+"title": "1. Bhikkhadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3566,
+"end": 3580,
+"title": "2. Ñāṇasaññikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3580,
+"end": 3594,
+"title": "3. Uppalahatthiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3594,
+"end": 3606,
+"title": "4. Padapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-5",
+"depth": 5,
+"rend": "subhead",
+"start": 3606,
+"end": 3618,
+"title": "5. Muṭṭhipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-6",
+"depth": 5,
+"rend": "subhead",
+"start": 3618,
+"end": 3634,
+"title": "6. Udakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3634,
+"end": 3659,
+"title": "7. Naḷamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3659,
+"end": 3673,
+"title": "8. Āsanupaṭṭhāhakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3673,
+"end": 3693,
+"title": "9. Biḷālidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-11-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3693,
+"end": 3706,
+"title": "10. Reṇupūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12",
+"depth": 4,
+"rend": "chapter",
+"start": 3710,
+"end": 3914,
+"title": "12. Mahāparivāravaggo"
+},
+{
+"key": "kn-ap-12-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3711,
+"end": 3734,
+"title": "1. Mahāparivārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3734,
+"end": 3754,
+"title": "2. Sumaṅgalattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3754,
+"end": 3778,
+"title": "3. Saraṇagamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3778,
+"end": 3798,
+"title": "4. Ekāsaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-5",
+"depth": 5,
+"rend": "subhead",
+"start": 3798,
+"end": 3818,
+"title": "5. Suvaṇṇapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-6",
+"depth": 5,
+"rend": "subhead",
+"start": 3818,
+"end": 3836,
+"title": "6. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-7",
+"depth": 5,
+"rend": "subhead",
+"start": 3836,
+"end": 3856,
+"title": "7. Buddhasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-8",
+"depth": 5,
+"rend": "subhead",
+"start": 3856,
+"end": 3870,
+"title": "8. Maggasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-9",
+"depth": 5,
+"rend": "subhead",
+"start": 3870,
+"end": 3892,
+"title": "9. Paccupaṭṭhānasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-12-10",
+"depth": 5,
+"rend": "subhead",
+"start": 3892,
+"end": 3914,
+"title": "10. Jātipūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13",
+"depth": 4,
+"rend": "chapter",
+"start": 3918,
+"end": 4151,
+"title": "13. Sereyyavaggo"
+},
+{
+"key": "kn-ap-13-1",
+"depth": 5,
+"rend": "subhead",
+"start": 3919,
+"end": 3940,
+"title": "1. Sereyyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-2",
+"depth": 5,
+"rend": "subhead",
+"start": 3940,
+"end": 3974,
+"title": "2. Pupphathūpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-3",
+"depth": 5,
+"rend": "subhead",
+"start": 3974,
+"end": 3994,
+"title": "3. Pāyasadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-4",
+"depth": 5,
+"rend": "subhead",
+"start": 3994,
+"end": 4008,
+"title": "4. Gandhodakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4008,
+"end": 4058,
+"title": "5. Sammukhāthavikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4058,
+"end": 4080,
+"title": "6. Kusumāsaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4080,
+"end": 4100,
+"title": "7. Phaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4100,
+"end": 4116,
+"title": "8. Ñāṇasaññikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4116,
+"end": 4130,
+"title": "9. Gaṇṭhipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-13-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4130,
+"end": 4151,
+"title": "10. Padumapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14",
+"depth": 4,
+"rend": "chapter",
+"start": 4155,
+"end": 4323,
+"title": "14. Sobhitavaggo"
+},
+{
+"key": "kn-ap-14-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4156,
+"end": 4177,
+"title": "1. Sobhitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4177,
+"end": 4193,
+"title": "2. Sudassanattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4193,
+"end": 4214,
+"title": "3. Candanapūjanakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4214,
+"end": 4232,
+"title": "4. Pupphacchadaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4232,
+"end": 4248,
+"title": "5. Rahosaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4248,
+"end": 4262,
+"title": "6. Campakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4262,
+"end": 4280,
+"title": "7. Atthasandassakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4280,
+"end": 4292,
+"title": "8. Ekapasādaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4292,
+"end": 4306,
+"title": "9. Sālapupphadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-14-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4306,
+"end": 4323,
+"title": "10. Piyālaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15",
+"depth": 4,
+"rend": "chapter",
+"start": 4328,
+"end": 4455,
+"title": "15. Chattavaggo"
+},
+{
+"key": "kn-ap-15-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4329,
+"end": 4340,
+"title": "1. Atichattiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4340,
+"end": 4352,
+"title": "2. Thambhāropakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4352,
+"end": 4364,
+"title": "3. Vedikārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4364,
+"end": 4378,
+"title": "4. Saparivāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4378,
+"end": 4390,
+"title": "5. Umāpupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4390,
+"end": 4404,
+"title": "6. Anulepadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4404,
+"end": 4416,
+"title": "7. Maggadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4416,
+"end": 4430,
+"title": "8. Phalakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4430,
+"end": 4442,
+"title": "9. Vaṭaṃsakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-15-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4442,
+"end": 4455,
+"title": "10. Pallaṅkadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16",
+"depth": 4,
+"rend": "chapter",
+"start": 4459,
+"end": 4596,
+"title": "16. Bandhujīvakavaggo"
+},
+{
+"key": "kn-ap-16-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4460,
+"end": 4475,
+"title": "1. Bandhujīvakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4475,
+"end": 4493,
+"title": "2. Tambapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4493,
+"end": 4507,
+"title": "3. Vīthisammajjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4507,
+"end": 4517,
+"title": "4. Kakkārupupphapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4517,
+"end": 4529,
+"title": "5. Mandāravapupphapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4529,
+"end": 4541,
+"title": "6. Kadambapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4541,
+"end": 4551,
+"title": "7. Tiṇasūlakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4551,
+"end": 4567,
+"title": "8. Nāgapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4567,
+"end": 4579,
+"title": "9. Punnāgapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-16-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4579,
+"end": 4596,
+"title": "10. Kumudadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17",
+"depth": 4,
+"rend": "chapter",
+"start": 4600,
+"end": 4732,
+"title": "17. Supāricariyavaggo"
+},
+{
+"key": "kn-ap-17-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4601,
+"end": 4616,
+"title": "1. Supāricariyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4616,
+"end": 4630,
+"title": "2. Kaṇaverapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4630,
+"end": 4642,
+"title": "3. Khajjakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4642,
+"end": 4654,
+"title": "4. Desapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4654,
+"end": 4666,
+"title": "5. Kaṇikārachattiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4666,
+"end": 4678,
+"title": "6. Sappidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4678,
+"end": 4690,
+"title": "7. Yūthikapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4690,
+"end": 4704,
+"title": "8. Dussadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4704,
+"end": 4719,
+"title": "9. Samādapakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-17-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4719,
+"end": 4732,
+"title": "10. Pañcaṅguliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18",
+"depth": 4,
+"rend": "chapter",
+"start": 4736,
+"end": 4856,
+"title": "18. Kumudavaggo"
+},
+{
+"key": "kn-ap-18-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4737,
+"end": 4756,
+"title": "1. Kumudamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4756,
+"end": 4766,
+"title": "2. Nisseṇidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4766,
+"end": 4778,
+"title": "3. Rattipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4778,
+"end": 4786,
+"title": "4. Udapānadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4786,
+"end": 4798,
+"title": "5. Sīhāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4798,
+"end": 4808,
+"title": "6. Maggadattikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4808,
+"end": 4819,
+"title": "7. Ekadīpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4819,
+"end": 4831,
+"title": "8. Maṇipūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4831,
+"end": 4845,
+"title": "9. Tikicchakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-18-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4845,
+"end": 4856,
+"title": "10. Saṅghupaṭṭhākattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19",
+"depth": 4,
+"rend": "chapter",
+"start": 4860,
+"end": 5007,
+"title": "19. Kuṭajapupphiyavaggo"
+},
+{
+"key": "kn-ap-19-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4861,
+"end": 4874,
+"title": "1. Kuṭajapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-2",
+"depth": 5,
+"rend": "subhead",
+"start": 4874,
+"end": 4888,
+"title": "2. Bandhujīvakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-3",
+"depth": 5,
+"rend": "subhead",
+"start": 4888,
+"end": 4902,
+"title": "3. Koṭumbariyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-4",
+"depth": 5,
+"rend": "subhead",
+"start": 4902,
+"end": 4916,
+"title": "4. Pañcahatthiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-5",
+"depth": 5,
+"rend": "subhead",
+"start": 4916,
+"end": 4930,
+"title": "5. Isimuggadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-6",
+"depth": 5,
+"rend": "subhead",
+"start": 4930,
+"end": 4940,
+"title": "6. Bodhiupaṭṭhākattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-7",
+"depth": 5,
+"rend": "subhead",
+"start": 4940,
+"end": 4966,
+"title": "7. Ekacintikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-8",
+"depth": 5,
+"rend": "subhead",
+"start": 4966,
+"end": 4978,
+"title": "8. Tikaṇṇipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-9",
+"depth": 5,
+"rend": "subhead",
+"start": 4978,
+"end": 4992,
+"title": "9. Ekacāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-19-10",
+"depth": 5,
+"rend": "subhead",
+"start": 4992,
+"end": 5007,
+"title": "10. Tivaṇṭipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20",
+"depth": 4,
+"rend": "chapter",
+"start": 5011,
+"end": 5158,
+"title": "20. Tamālapupphiyavaggo"
+},
+{
+"key": "kn-ap-20-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5012,
+"end": 5025,
+"title": "1. Tamālapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5025,
+"end": 5039,
+"title": "2. Tiṇasanthārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5039,
+"end": 5051,
+"title": "3. Khaṇḍapulliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5051,
+"end": 5065,
+"title": "4. Asokapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5065,
+"end": 5077,
+"title": "5. Aṅkolakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5077,
+"end": 5093,
+"title": "6. Kisalayapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5093,
+"end": 5109,
+"title": "7. Tindukadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5109,
+"end": 5121,
+"title": "8. Muṭṭhipūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5121,
+"end": 5135,
+"title": "9. Kiṃkaṇikapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-20-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5135,
+"end": 5158,
+"title": "10. Yūthikapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21",
+"depth": 4,
+"rend": "chapter",
+"start": 5159,
+"end": 5280,
+"title": "21. Kaṇikārapupphiyavaggo"
+},
+{
+"key": "kn-ap-21-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5160,
+"end": 5171,
+"title": "1. Kaṇikārapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5171,
+"end": 5183,
+"title": "2. Minelapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5183,
+"end": 5195,
+"title": "3. Kiṅkaṇipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5195,
+"end": 5209,
+"title": "4. Taraṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5209,
+"end": 5219,
+"title": "5. Nigguṇḍipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5219,
+"end": 5231,
+"title": "6. Udakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5231,
+"end": 5243,
+"title": "7. Salalamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5243,
+"end": 5255,
+"title": "8. Koraṇḍapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5255,
+"end": 5265,
+"title": "9. Ādhāradāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-21-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5265,
+"end": 5280,
+"title": "10. Pāpanivāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22",
+"depth": 4,
+"rend": "chapter",
+"start": 5284,
+"end": 5415,
+"title": "22. Hatthivaggo"
+},
+{
+"key": "kn-ap-22-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5285,
+"end": 5298,
+"title": "1. Hatthidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5298,
+"end": 5310,
+"title": "2. Pānadhidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5310,
+"end": 5324,
+"title": "3. Saccasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5324,
+"end": 5334,
+"title": "4. Ekasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5334,
+"end": 5348,
+"title": "5. Raṃsisaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5348,
+"end": 5358,
+"title": "6. Sandhitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5358,
+"end": 5372,
+"title": "7. Tālavaṇṭadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5372,
+"end": 5388,
+"title": "8. Akkantasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5388,
+"end": 5404,
+"title": "9. Sappidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-22-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5404,
+"end": 5415,
+"title": "10. Pāpanivāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24",
+"depth": 4,
+"rend": "chapter",
+"start": 5549,
+"end": 5648,
+"title": "24. Udakāsanavaggo"
+},
+{
+"key": "kn-ap-24-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5550,
+"end": 5561,
+"title": "1. Udakāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5561,
+"end": 5571,
+"title": "2. Bhājanapālakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5571,
+"end": 5583,
+"title": "3. Sālapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5583,
+"end": 5595,
+"title": "4. Kilañjadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5595,
+"end": 5605,
+"title": "5. Vedikārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5605,
+"end": 5615,
+"title": "6. Vaṇṇakārattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5615,
+"end": 5623,
+"title": "7. Piyālapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5623,
+"end": 5631,
+"title": "8. Ambayāgadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5631,
+"end": 5639,
+"title": "9. Jagatikārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-24-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5639,
+"end": 5648,
+"title": "10. Vāsidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25",
+"depth": 4,
+"rend": "chapter",
+"start": 5652,
+"end": 5749,
+"title": "25. Tuvaradāyakavaggo"
+},
+{
+"key": "kn-ap-25-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5653,
+"end": 5662,
+"title": "1. Tuvaradāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5662,
+"end": 5674,
+"title": "2. Nāgakesariyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5674,
+"end": 5686,
+"title": "3. Naḷinakesariyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5686,
+"end": 5694,
+"title": "4. Viravapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5694,
+"end": 5702,
+"title": "5. Kuṭidhūpakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5702,
+"end": 5710,
+"title": "6. Pattadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5710,
+"end": 5720,
+"title": "7. Dhātupūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5720,
+"end": 5728,
+"title": "8. Sattalipupphapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5728,
+"end": 5738,
+"title": "9. Bimbijāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-25-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5738,
+"end": 5749,
+"title": "10. Uddālakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26",
+"depth": 4,
+"rend": "chapter",
+"start": 5753,
+"end": 5858,
+"title": "26. Thomakavaggo"
+},
+{
+"key": "kn-ap-26-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5754,
+"end": 5765,
+"title": "1. Thomakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5765,
+"end": 5775,
+"title": "2. Ekāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5775,
+"end": 5785,
+"title": "3. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5785,
+"end": 5795,
+"title": "4. Ticampakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5795,
+"end": 5803,
+"title": "5. Sattapāṭaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5803,
+"end": 5811,
+"title": "6. Upāhanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5811,
+"end": 5823,
+"title": "7. Mañjaripūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5823,
+"end": 5835,
+"title": "8. Paṇṇadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5835,
+"end": 5845,
+"title": "9. Kuṭidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-26-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5845,
+"end": 5858,
+"title": "10. Aggapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27",
+"depth": 4,
+"rend": "chapter",
+"start": 5862,
+"end": 5969,
+"title": "27. Padumukkhipavaggo"
+},
+{
+"key": "kn-ap-27-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5863,
+"end": 5876,
+"title": "1. Ākāsukkhipiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5876,
+"end": 5886,
+"title": "2. Telamakkhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5886,
+"end": 5896,
+"title": "3. Aḍḍhacandiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-4",
+"depth": 5,
+"rend": "subhead",
+"start": 5896,
+"end": 5906,
+"title": "4. Padīpadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-5",
+"depth": 5,
+"rend": "subhead",
+"start": 5906,
+"end": 5918,
+"title": "5. Biḷālidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-6",
+"depth": 5,
+"rend": "subhead",
+"start": 5918,
+"end": 5926,
+"title": "6. Macchadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-7",
+"depth": 5,
+"rend": "subhead",
+"start": 5926,
+"end": 5936,
+"title": "7. Javahaṃsakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-8",
+"depth": 5,
+"rend": "subhead",
+"start": 5936,
+"end": 5946,
+"title": "8. Saḷalapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-9",
+"depth": 5,
+"rend": "subhead",
+"start": 5946,
+"end": 5958,
+"title": "9. Upāgatāsayattheraapadānaṃ"
+},
+{
+"key": "kn-ap-27-10",
+"depth": 5,
+"rend": "subhead",
+"start": 5958,
+"end": 5969,
+"title": "10. Taraṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28",
+"depth": 4,
+"rend": "chapter",
+"start": 5973,
+"end": 6078,
+"title": "28. Suvaṇṇabibbohanavaggo"
+},
+{
+"key": "kn-ap-28-1",
+"depth": 5,
+"rend": "subhead",
+"start": 5974,
+"end": 5985,
+"title": "1. Suvaṇṇabibbohaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-2",
+"depth": 5,
+"rend": "subhead",
+"start": 5985,
+"end": 5997,
+"title": "2. Tilamuṭṭhidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-3",
+"depth": 5,
+"rend": "subhead",
+"start": 5997,
+"end": 6007,
+"title": "3. Caṅkoṭakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6007,
+"end": 6019,
+"title": "4. Abbhañjanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6019,
+"end": 6031,
+"title": "5. Ekañjalikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6031,
+"end": 6039,
+"title": "6. Potthakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6039,
+"end": 6049,
+"title": "7. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6049,
+"end": 6059,
+"title": "8. Āluvadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6059,
+"end": 6067,
+"title": "9. Ekapuṇḍarīkattheraapadānaṃ"
+},
+{
+"key": "kn-ap-28-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6067,
+"end": 6078,
+"title": "10. Taraṇīyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29",
+"depth": 4,
+"rend": "chapter",
+"start": 6083,
+"end": 6202,
+"title": "29. Paṇṇadāyakavaggo"
+},
+{
+"key": "kn-ap-29-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6084,
+"end": 6095,
+"title": "1. Paṇṇadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6095,
+"end": 6109,
+"title": "2. Phaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6109,
+"end": 6121,
+"title": "3. Paccuggamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6121,
+"end": 6131,
+"title": "4. Ekapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6131,
+"end": 6141,
+"title": "5. Maghavapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6141,
+"end": 6155,
+"title": "6. Upaṭṭhākadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6155,
+"end": 6163,
+"title": "7. Apadāniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6163,
+"end": 6175,
+"title": "8. Sattāhapabbajitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6175,
+"end": 6187,
+"title": "9. Buddhupaṭṭhāyikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-29-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6187,
+"end": 6202,
+"title": "10. Pubbaṅgamiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30",
+"depth": 4,
+"rend": "chapter",
+"start": 6206,
+"end": 6333,
+"title": "30. Citakapūjakavaggo"
+},
+{
+"key": "kn-ap-30-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6207,
+"end": 6220,
+"title": "1. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6220,
+"end": 6232,
+"title": "2. Pupphadhārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6232,
+"end": 6246,
+"title": "3. Chattadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6246,
+"end": 6256,
+"title": "4. Saddasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6256,
+"end": 6270,
+"title": "5. Gosīsanikkhepakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6270,
+"end": 6280,
+"title": "6. Pādapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6280,
+"end": 6292,
+"title": "7. Desakittakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6292,
+"end": 6302,
+"title": "8. Saraṇagamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6302,
+"end": 6310,
+"title": "9. Ambapiṇḍiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-30-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6310,
+"end": 6333,
+"title": "10. Anusaṃsāvakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31",
+"depth": 4,
+"rend": "chapter",
+"start": 6334,
+"end": 6459,
+"title": "31. Padumakesaravaggo"
+},
+{
+"key": "kn-ap-31-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6335,
+"end": 6346,
+"title": "1. Padumakesariyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6346,
+"end": 6356,
+"title": "2. Sabbagandhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6356,
+"end": 6366,
+"title": "3. Paramannadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6366,
+"end": 6382,
+"title": "4. Dhammasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6382,
+"end": 6392,
+"title": "5. Phaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6392,
+"end": 6410,
+"title": "6. Sampasādakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6410,
+"end": 6426,
+"title": "7. Ārāmadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6426,
+"end": 6436,
+"title": "8. Anulepadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6436,
+"end": 6446,
+"title": "9. Buddhasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-31-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6446,
+"end": 6459,
+"title": "10. Pabbhāradāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32",
+"depth": 4,
+"rend": "chapter",
+"start": 6463,
+"end": 6600,
+"title": "32. Ārakkhadāyakavaggo"
+},
+{
+"key": "kn-ap-32-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6464,
+"end": 6473,
+"title": "1. Ārakkhadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6473,
+"end": 6487,
+"title": "2. Bhojanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6487,
+"end": 6497,
+"title": "3. Gatasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6497,
+"end": 6511,
+"title": "4. Sattapadumiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6511,
+"end": 6525,
+"title": "5. Pupphāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6525,
+"end": 6543,
+"title": "6. Āsanasanthavikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6543,
+"end": 6555,
+"title": "7. Saddasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6555,
+"end": 6573,
+"title": "8. Tiraṃsiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6573,
+"end": 6589,
+"title": "9. Kandalipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-32-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6589,
+"end": 6600,
+"title": "10. Kumudamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33",
+"depth": 4,
+"rend": "chapter",
+"start": 6604,
+"end": 6838,
+"title": "33. Umāpupphiyavaggo"
+},
+{
+"key": "kn-ap-33-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6605,
+"end": 6620,
+"title": "1. Umāpupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6620,
+"end": 6634,
+"title": "2. Pulinapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6634,
+"end": 6644,
+"title": "3. Hāsajanakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6644,
+"end": 6668,
+"title": "4. Yaññasāmikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6668,
+"end": 6682,
+"title": "5. Nimittasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6682,
+"end": 6694,
+"title": "6. Annasaṃsāvakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-7",
+"depth": 5,
+"rend": "subhead",
+"start": 6694,
+"end": 6747,
+"title": "7. Nigguṇḍipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-8",
+"depth": 5,
+"rend": "subhead",
+"start": 6747,
+"end": 6767,
+"title": "8. Sumanāveḷiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-9",
+"depth": 5,
+"rend": "subhead",
+"start": 6767,
+"end": 6787,
+"title": "9. Pupphacchattiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-33-10",
+"depth": 5,
+"rend": "subhead",
+"start": 6787,
+"end": 6838,
+"title": "10. Saparivārachattadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34",
+"depth": 4,
+"rend": "chapter",
+"start": 6842,
+"end": 7152,
+"title": "34. Gandhodakavaggo"
+},
+{
+"key": "kn-ap-34-1",
+"depth": 5,
+"rend": "subhead",
+"start": 6843,
+"end": 6858,
+"title": "1. Gandhadhūpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-2",
+"depth": 5,
+"rend": "subhead",
+"start": 6858,
+"end": 6874,
+"title": "2. Udakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-3",
+"depth": 5,
+"rend": "subhead",
+"start": 6874,
+"end": 6886,
+"title": "3. Punnāgapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-4",
+"depth": 5,
+"rend": "subhead",
+"start": 6886,
+"end": 6928,
+"title": "4. Ekadussadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-5",
+"depth": 5,
+"rend": "subhead",
+"start": 6928,
+"end": 6961,
+"title": "5. Phusitakampiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-6",
+"depth": 5,
+"rend": "subhead",
+"start": 6961,
+"end": 7005,
+"title": "6. Pabhaṅkarattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7005,
+"end": 7039,
+"title": "7. Tiṇakuṭidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7039,
+"end": 7083,
+"title": "8. Uttareyyadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7083,
+"end": 7121,
+"title": "9. Dhammasavaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-34-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7121,
+"end": 7152,
+"title": "10. Ukkhittapadumiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35",
+"depth": 4,
+"rend": "chapter",
+"start": 7157,
+"end": 7313,
+"title": "35. Ekapadumiyavaggo"
+},
+{
+"key": "kn-ap-35-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7158,
+"end": 7181,
+"title": "1. Ekapadumiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-2",
+"depth": 5,
+"rend": "subhead",
+"start": 7181,
+"end": 7201,
+"title": "2. Tīṇuppalamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-3",
+"depth": 5,
+"rend": "subhead",
+"start": 7201,
+"end": 7217,
+"title": "3. Dhajadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-4",
+"depth": 5,
+"rend": "subhead",
+"start": 7217,
+"end": 7227,
+"title": "4. Tikiṅkaṇipūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-5",
+"depth": 5,
+"rend": "subhead",
+"start": 7227,
+"end": 7245,
+"title": "5. Naḷāgārikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-6",
+"depth": 5,
+"rend": "subhead",
+"start": 7245,
+"end": 7257,
+"title": "6. Campakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7257,
+"end": 7268,
+"title": "7. Padumapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7268,
+"end": 7292,
+"title": "8. Tiṇamuṭṭhidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7292,
+"end": 7302,
+"title": "9. Tindukaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-35-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7302,
+"end": 7313,
+"title": "10. Ekañjaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36",
+"depth": 4,
+"rend": "chapter",
+"start": 7317,
+"end": 7420,
+"title": "36. Saddasaññakavaggo"
+},
+{
+"key": "kn-ap-36-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7318,
+"end": 7331,
+"title": "1. Saddasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-2",
+"depth": 5,
+"rend": "subhead",
+"start": 7331,
+"end": 7343,
+"title": "2. Yavakalāpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-3",
+"depth": 5,
+"rend": "subhead",
+"start": 7343,
+"end": 7351,
+"title": "3. Kiṃsukapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-4",
+"depth": 5,
+"rend": "subhead",
+"start": 7351,
+"end": 7361,
+"title": "4. Sakosakakoraṇḍadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-5",
+"depth": 5,
+"rend": "subhead",
+"start": 7361,
+"end": 7371,
+"title": "5. Daṇḍadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-6",
+"depth": 5,
+"rend": "subhead",
+"start": 7371,
+"end": 7381,
+"title": "6. Ambayāgudāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7381,
+"end": 7391,
+"title": "7. Supuṭakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7391,
+"end": 7401,
+"title": "8. Mañcadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7401,
+"end": 7409,
+"title": "9. Saraṇagamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-36-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7409,
+"end": 7420,
+"title": "10. Piṇḍapātikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37",
+"depth": 4,
+"rend": "chapter",
+"start": 7424,
+"end": 7527,
+"title": "37. Mandāravapupphiyavaggo"
+},
+{
+"key": "kn-ap-37-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7425,
+"end": 7436,
+"title": "1. Mandāravapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-2",
+"depth": 5,
+"rend": "subhead",
+"start": 7436,
+"end": 7444,
+"title": "2. Kakkārupupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-3",
+"depth": 5,
+"rend": "subhead",
+"start": 7444,
+"end": 7454,
+"title": "3. Bhisamuḷāladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-4",
+"depth": 5,
+"rend": "subhead",
+"start": 7454,
+"end": 7464,
+"title": "4. Kesarapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-5",
+"depth": 5,
+"rend": "subhead",
+"start": 7464,
+"end": 7474,
+"title": "5. Aṅkolapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-6",
+"depth": 5,
+"rend": "subhead",
+"start": 7474,
+"end": 7484,
+"title": "6. Kadambapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7484,
+"end": 7492,
+"title": "7. Uddālakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7492,
+"end": 7502,
+"title": "8. Ekacampakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7502,
+"end": 7512,
+"title": "9. Timirapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-37-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7512,
+"end": 7527,
+"title": "10. Saḷalapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38",
+"depth": 4,
+"rend": "chapter",
+"start": 7531,
+"end": 7658,
+"title": "38. Bodhivandanavaggo"
+},
+{
+"key": "kn-ap-38-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7532,
+"end": 7545,
+"title": "1. Bodhivandakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-2",
+"depth": 5,
+"rend": "subhead",
+"start": 7545,
+"end": 7561,
+"title": "2. Pāṭalipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-3",
+"depth": 5,
+"rend": "subhead",
+"start": 7561,
+"end": 7581,
+"title": "3. Tīṇuppalamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-4",
+"depth": 5,
+"rend": "subhead",
+"start": 7581,
+"end": 7595,
+"title": "4. Paṭṭipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-5",
+"depth": 5,
+"rend": "subhead",
+"start": 7595,
+"end": 7605,
+"title": "5. Sattapaṇṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-6",
+"depth": 5,
+"rend": "subhead",
+"start": 7605,
+"end": 7615,
+"title": "6. Gandhamuṭṭhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7615,
+"end": 7625,
+"title": "7. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7625,
+"end": 7635,
+"title": "8. Sumanatālavaṇṭiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7635,
+"end": 7645,
+"title": "9. Sumanadāmiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-38-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7645,
+"end": 7658,
+"title": "10. Kāsumāriphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39",
+"depth": 4,
+"rend": "chapter",
+"start": 7662,
+"end": 7874,
+"title": "39. Avaṭaphalavaggo"
+},
+{
+"key": "kn-ap-39-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7663,
+"end": 7678,
+"title": "1. Avaṭaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-2",
+"depth": 5,
+"rend": "subhead",
+"start": 7678,
+"end": 7694,
+"title": "2. Labujadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-3",
+"depth": 5,
+"rend": "subhead",
+"start": 7694,
+"end": 7706,
+"title": "3. Udumbaraphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-4",
+"depth": 5,
+"rend": "subhead",
+"start": 7706,
+"end": 7716,
+"title": "4. Pilakkhaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-5",
+"depth": 5,
+"rend": "subhead",
+"start": 7716,
+"end": 7726,
+"title": "5. Phārusaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-6",
+"depth": 5,
+"rend": "subhead",
+"start": 7726,
+"end": 7738,
+"title": "6. Valliphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-7",
+"depth": 5,
+"rend": "subhead",
+"start": 7738,
+"end": 7750,
+"title": "7. Kadaliphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-8",
+"depth": 5,
+"rend": "subhead",
+"start": 7750,
+"end": 7762,
+"title": "8. Panasaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-9",
+"depth": 5,
+"rend": "subhead",
+"start": 7762,
+"end": 7792,
+"title": "9. Soṇakoṭivīsattheraapadānaṃ"
+},
+{
+"key": "kn-ap-39-10",
+"depth": 5,
+"rend": "subhead",
+"start": 7792,
+"end": 7874,
+"title": "10. Pubbakammapilotikabuddhaapadānaṃ"
+},
+{
+"key": "kn-ap-40",
+"depth": 4,
+"rend": "chapter",
+"start": 7880,
+"end": 9005,
+"title": "40. Pilindavacchavaggo"
+},
+{
+"key": "kn-ap-40-1",
+"depth": 5,
+"rend": "subhead",
+"start": 7881,
+"end": 8362,
+"title": "1. Pilindavacchattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-2",
+"depth": 5,
+"rend": "subhead",
+"start": 8362,
+"end": 8555,
+"title": "2. Selattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-3",
+"depth": 5,
+"rend": "subhead",
+"start": 8555,
+"end": 8614,
+"title": "3. Sabbakittikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-4",
+"depth": 5,
+"rend": "subhead",
+"start": 8614,
+"end": 8655,
+"title": "4. Madhudāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-5",
+"depth": 5,
+"rend": "subhead",
+"start": 8655,
+"end": 8722,
+"title": "5. Padumakūṭāgāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-6",
+"depth": 5,
+"rend": "subhead",
+"start": 8722,
+"end": 8789,
+"title": "6. Bākulattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-7",
+"depth": 5,
+"rend": "subhead",
+"start": 8789,
+"end": 8850,
+"title": "7. Girimānandattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-8",
+"depth": 5,
+"rend": "subhead",
+"start": 8850,
+"end": 8864,
+"title": "8. Saḷalamaṇḍapiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-9",
+"depth": 5,
+"rend": "subhead",
+"start": 8864,
+"end": 8920,
+"title": "9. Sabbadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-40-10",
+"depth": 5,
+"rend": "subhead",
+"start": 8920,
+"end": 9005,
+"title": "10. Ajitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41",
+"depth": 4,
+"rend": "chapter",
+"start": 9006,
+"end": 9774,
+"title": "41. Metteyyavaggo"
+},
+{
+"key": "kn-ap-41-1",
+"depth": 5,
+"rend": "subhead",
+"start": 9007,
+"end": 9066,
+"title": "1. Tissametteyyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-2",
+"depth": 5,
+"rend": "subhead",
+"start": 9066,
+"end": 9098,
+"title": "2. Puṇṇakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-3",
+"depth": 5,
+"rend": "subhead",
+"start": 9098,
+"end": 9153,
+"title": "3. Mettaguttheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-4",
+"depth": 5,
+"rend": "subhead",
+"start": 9153,
+"end": 9210,
+"title": "4. Dhotakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-5",
+"depth": 5,
+"rend": "subhead",
+"start": 9210,
+"end": 9334,
+"title": "5. Upasīvattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-6",
+"depth": 5,
+"rend": "subhead",
+"start": 9334,
+"end": 9378,
+"title": "6. Nandakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-7",
+"depth": 5,
+"rend": "subhead",
+"start": 9378,
+"end": 9461,
+"title": "7. Hemakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-8",
+"depth": 5,
+"rend": "subhead",
+"start": 9461,
+"end": 9567,
+"title": "8. Todeyyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-9",
+"depth": 5,
+"rend": "subhead",
+"start": 9567,
+"end": 9675,
+"title": "9. Jatukaṇṇittheraapadānaṃ"
+},
+{
+"key": "kn-ap-41-10",
+"depth": 5,
+"rend": "subhead",
+"start": 9675,
+"end": 9774,
+"title": "10. Udenattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42",
+"depth": 4,
+"rend": "chapter",
+"start": 9779,
+"end": 10180,
+"title": "42. Bhaddālivaggo"
+},
+{
+"key": "kn-ap-42-1",
+"depth": 5,
+"rend": "subhead",
+"start": 9780,
+"end": 9847,
+"title": "1. Bhaddālittheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-2",
+"depth": 5,
+"rend": "subhead",
+"start": 9847,
+"end": 9941,
+"title": "2. Ekachattiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-3",
+"depth": 5,
+"rend": "subhead",
+"start": 9941,
+"end": 9996,
+"title": "3. Tiṇasūlakachādaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-4",
+"depth": 5,
+"rend": "subhead",
+"start": 9996,
+"end": 10020,
+"title": "4. Madhumaṃsadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-5",
+"depth": 5,
+"rend": "subhead",
+"start": 10020,
+"end": 10032,
+"title": "5. Nāgapallavattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-6",
+"depth": 5,
+"rend": "subhead",
+"start": 10032,
+"end": 10068,
+"title": "6. Ekadīpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-7",
+"depth": 5,
+"rend": "subhead",
+"start": 10068,
+"end": 10082,
+"title": "7. Ucchaṅgapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-8",
+"depth": 5,
+"rend": "subhead",
+"start": 10082,
+"end": 10124,
+"title": "8. Yāgudāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-9",
+"depth": 5,
+"rend": "subhead",
+"start": 10124,
+"end": 10152,
+"title": "9. Patthodanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-42-10",
+"depth": 5,
+"rend": "subhead",
+"start": 10152,
+"end": 10180,
+"title": "10. Mañcadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43",
+"depth": 4,
+"rend": "chapter",
+"start": 10189,
+"end": 10546,
+"title": "43. Sakiṃsammajjakavaggo"
+},
+{
+"key": "kn-ap-43-1",
+"depth": 5,
+"rend": "subhead",
+"start": 10190,
+"end": 10222,
+"title": "1. Sakiṃsammajjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-2",
+"depth": 5,
+"rend": "subhead",
+"start": 10222,
+"end": 10264,
+"title": "2. Ekadussadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-3",
+"depth": 5,
+"rend": "subhead",
+"start": 10264,
+"end": 10315,
+"title": "3. Ekāsanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-4",
+"depth": 5,
+"rend": "subhead",
+"start": 10315,
+"end": 10330,
+"title": "4. Sattakadambapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-5",
+"depth": 5,
+"rend": "subhead",
+"start": 10330,
+"end": 10350,
+"title": "5. Koraṇḍapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-6",
+"depth": 5,
+"rend": "subhead",
+"start": 10350,
+"end": 10371,
+"title": "6. Ghatamaṇḍadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-7",
+"depth": 5,
+"rend": "subhead",
+"start": 10371,
+"end": 10412,
+"title": "7. Ekadhammassavaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-8",
+"depth": 5,
+"rend": "subhead",
+"start": 10412,
+"end": 10483,
+"title": "8. Sucintitattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-9",
+"depth": 5,
+"rend": "subhead",
+"start": 10483,
+"end": 10518,
+"title": "9. Sovaṇṇakiṅkaṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-43-10",
+"depth": 5,
+"rend": "subhead",
+"start": 10518,
+"end": 10546,
+"title": "10. Soṇṇakontarikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44",
+"depth": 4,
+"rend": "chapter",
+"start": 10551,
+"end": 10739,
+"title": "44. Ekavihārivaggo"
+},
+{
+"key": "kn-ap-44-1",
+"depth": 5,
+"rend": "subhead",
+"start": 10552,
+"end": 10580,
+"title": "1. Ekavihārikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-2",
+"depth": 5,
+"rend": "subhead",
+"start": 10580,
+"end": 10607,
+"title": "2. Ekasaṅkhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-3",
+"depth": 5,
+"rend": "subhead",
+"start": 10607,
+"end": 10626,
+"title": "3. Pāṭihīrasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-4",
+"depth": 5,
+"rend": "subhead",
+"start": 10626,
+"end": 10645,
+"title": "4. Ñāṇatthavikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-5",
+"depth": 5,
+"rend": "subhead",
+"start": 10645,
+"end": 10658,
+"title": "5. Ucchukhaṇḍikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-6",
+"depth": 5,
+"rend": "subhead",
+"start": 10658,
+"end": 10669,
+"title": "6. Kaḷambadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-7",
+"depth": 5,
+"rend": "subhead",
+"start": 10669,
+"end": 10680,
+"title": "7. Ambāṭakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-8",
+"depth": 5,
+"rend": "subhead",
+"start": 10680,
+"end": 10705,
+"title": "8. Harītakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-9",
+"depth": 5,
+"rend": "subhead",
+"start": 10705,
+"end": 10724,
+"title": "9. Ambapiṇḍiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-44-10",
+"depth": 5,
+"rend": "subhead",
+"start": 10724,
+"end": 10739,
+"title": "10. Ambaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45",
+"depth": 4,
+"rend": "chapter",
+"start": 10744,
+"end": 10919,
+"title": "45. Vibhītakavaggo"
+},
+{
+"key": "kn-ap-45-1",
+"depth": 5,
+"rend": "subhead",
+"start": 10745,
+"end": 10763,
+"title": "1. Vibhītakamiñjiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-2",
+"depth": 5,
+"rend": "subhead",
+"start": 10763,
+"end": 10778,
+"title": "2. Koladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-3",
+"depth": 5,
+"rend": "subhead",
+"start": 10778,
+"end": 10793,
+"title": "3. Billiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-4",
+"depth": 5,
+"rend": "subhead",
+"start": 10793,
+"end": 10812,
+"title": "4. Bhallātadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-5",
+"depth": 5,
+"rend": "subhead",
+"start": 10812,
+"end": 10823,
+"title": "5. Uttalipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-6",
+"depth": 5,
+"rend": "subhead",
+"start": 10823,
+"end": 10836,
+"title": "6. Ambāṭakiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-7",
+"depth": 5,
+"rend": "subhead",
+"start": 10836,
+"end": 10853,
+"title": "7. Sīhāsanikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-8",
+"depth": 5,
+"rend": "subhead",
+"start": 10853,
+"end": 10876,
+"title": "8. Pādapīṭhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-9",
+"depth": 5,
+"rend": "subhead",
+"start": 10876,
+"end": 10893,
+"title": "9. Vedikārakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-45-10",
+"depth": 5,
+"rend": "subhead",
+"start": 10893,
+"end": 10919,
+"title": "10. Bodhigharadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46",
+"depth": 4,
+"rend": "chapter",
+"start": 10924,
+"end": 11074,
+"title": "46. Jagatidāyakavaggo"
+},
+{
+"key": "kn-ap-46-1",
+"depth": 5,
+"rend": "subhead",
+"start": 10925,
+"end": 10945,
+"title": "1. Jagatidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-2",
+"depth": 5,
+"rend": "subhead",
+"start": 10945,
+"end": 10962,
+"title": "2. Morahatthiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-3",
+"depth": 5,
+"rend": "subhead",
+"start": 10962,
+"end": 10973,
+"title": "3. Sīhāsanabījiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-4",
+"depth": 5,
+"rend": "subhead",
+"start": 10973,
+"end": 10984,
+"title": "4. Tiṇukkadhāriyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-5",
+"depth": 5,
+"rend": "subhead",
+"start": 10984,
+"end": 10995,
+"title": "5. Akkamanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-6",
+"depth": 5,
+"rend": "subhead",
+"start": 10995,
+"end": 11007,
+"title": "6. Vanakoraṇḍiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-7",
+"depth": 5,
+"rend": "subhead",
+"start": 11007,
+"end": 11032,
+"title": "7. Ekachattiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-8",
+"depth": 5,
+"rend": "subhead",
+"start": 11032,
+"end": 11051,
+"title": "8. Jātipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-9",
+"depth": 5,
+"rend": "subhead",
+"start": 11051,
+"end": 11062,
+"title": "9. Paṭṭipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-46-10",
+"depth": 5,
+"rend": "subhead",
+"start": 11062,
+"end": 11074,
+"title": "10. Gandhapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47",
+"depth": 4,
+"rend": "chapter",
+"start": 11079,
+"end": 11238,
+"title": "47. Sālakusumiyavaggo"
+},
+{
+"key": "kn-ap-47-1",
+"depth": 5,
+"rend": "subhead",
+"start": 11080,
+"end": 11094,
+"title": "1. Sālakusumiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-2",
+"depth": 5,
+"rend": "subhead",
+"start": 11094,
+"end": 11105,
+"title": "2. Citakapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-3",
+"depth": 5,
+"rend": "subhead",
+"start": 11105,
+"end": 11116,
+"title": "3. Citakanibbāpakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-4",
+"depth": 5,
+"rend": "subhead",
+"start": 11116,
+"end": 11127,
+"title": "4. Setudāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-5",
+"depth": 5,
+"rend": "subhead",
+"start": 11127,
+"end": 11138,
+"title": "5. Sumanatālavaṇṭiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-6",
+"depth": 5,
+"rend": "subhead",
+"start": 11138,
+"end": 11151,
+"title": "6. Avaṭaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-7",
+"depth": 5,
+"rend": "subhead",
+"start": 11151,
+"end": 11168,
+"title": "7. Labujaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-8",
+"depth": 5,
+"rend": "subhead",
+"start": 11168,
+"end": 11179,
+"title": "8. Pilakkhaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-9",
+"depth": 5,
+"rend": "subhead",
+"start": 11179,
+"end": 11208,
+"title": "9. Sayaṃpaṭibhāniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-47-10",
+"depth": 5,
+"rend": "subhead",
+"start": 11208,
+"end": 11238,
+"title": "10. Nimittabyākaraṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48",
+"depth": 4,
+"rend": "chapter",
+"start": 11243,
+"end": 11448,
+"title": "48. Naḷamālivaggo"
+},
+{
+"key": "kn-ap-48-1",
+"depth": 5,
+"rend": "subhead",
+"start": 11244,
+"end": 11262,
+"title": "1. Naḷamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-2",
+"depth": 5,
+"rend": "subhead",
+"start": 11262,
+"end": 11307,
+"title": "2. Maṇipūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-3",
+"depth": 5,
+"rend": "subhead",
+"start": 11307,
+"end": 11340,
+"title": "3. Ukkāsatikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-4",
+"depth": 5,
+"rend": "subhead",
+"start": 11340,
+"end": 11351,
+"title": "4. Sumanabījaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-5",
+"depth": 5,
+"rend": "subhead",
+"start": 11351,
+"end": 11362,
+"title": "5. Kummāsadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-6",
+"depth": 5,
+"rend": "subhead",
+"start": 11362,
+"end": 11373,
+"title": "6. Kusaṭṭhakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-7",
+"depth": 5,
+"rend": "subhead",
+"start": 11373,
+"end": 11384,
+"title": "7. Giripunnāgiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-8",
+"depth": 5,
+"rend": "subhead",
+"start": 11384,
+"end": 11395,
+"title": "8. Vallikāraphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-9",
+"depth": 5,
+"rend": "subhead",
+"start": 11395,
+"end": 11434,
+"title": "9. Pānadhidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-48-10",
+"depth": 5,
+"rend": "subhead",
+"start": 11434,
+"end": 11448,
+"title": "10. Pulinacaṅkamiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49",
+"depth": 4,
+"rend": "chapter",
+"start": 11453,
+"end": 11911,
+"title": "49. Paṃsukūlavaggo"
+},
+{
+"key": "kn-ap-49-1",
+"depth": 5,
+"rend": "subhead",
+"start": 11454,
+"end": 11474,
+"title": "1. Paṃsukūlasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-2",
+"depth": 5,
+"rend": "subhead",
+"start": 11474,
+"end": 11511,
+"title": "2. Buddhasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-3",
+"depth": 5,
+"rend": "subhead",
+"start": 11511,
+"end": 11550,
+"title": "3. Bhisadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-4",
+"depth": 5,
+"rend": "subhead",
+"start": 11550,
+"end": 11610,
+"title": "4. Ñāṇathavikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-5",
+"depth": 5,
+"rend": "subhead",
+"start": 11610,
+"end": 11675,
+"title": "5. Candanamāliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-6",
+"depth": 5,
+"rend": "subhead",
+"start": 11675,
+"end": 11686,
+"title": "6. Dhātupūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-7",
+"depth": 5,
+"rend": "subhead",
+"start": 11686,
+"end": 11761,
+"title": "7. Pulinuppādakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-8",
+"depth": 5,
+"rend": "subhead",
+"start": 11761,
+"end": 11794,
+"title": "8. Taraṇiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-9",
+"depth": 5,
+"rend": "subhead",
+"start": 11794,
+"end": 11847,
+"title": "9. Dhammaruciyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-49-10",
+"depth": 5,
+"rend": "subhead",
+"start": 11847,
+"end": 11911,
+"title": "10. Sālamaṇḍapiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50",
+"depth": 4,
+"rend": "chapter",
+"start": 11916,
+"end": 12161,
+"title": "50. Kiṅkaṇipupphavaggo"
+},
+{
+"key": "kn-ap-50-1",
+"depth": 5,
+"rend": "subhead",
+"start": 11917,
+"end": 11935,
+"title": "1. Tikiṅkaṇipupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-2",
+"depth": 5,
+"rend": "subhead",
+"start": 11935,
+"end": 11950,
+"title": "2. Paṃsukūlapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-3",
+"depth": 5,
+"rend": "subhead",
+"start": 11950,
+"end": 11971,
+"title": "3. Koraṇḍapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-4",
+"depth": 5,
+"rend": "subhead",
+"start": 11971,
+"end": 11984,
+"title": "4. Kiṃsukapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-5",
+"depth": 5,
+"rend": "subhead",
+"start": 11984,
+"end": 12005,
+"title": "5. Upaḍḍhadussadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-6",
+"depth": 5,
+"rend": "subhead",
+"start": 12005,
+"end": 12026,
+"title": "6. Ghatamaṇḍadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-7",
+"depth": 5,
+"rend": "subhead",
+"start": 12026,
+"end": 12039,
+"title": "7. Udakadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-8",
+"depth": 5,
+"rend": "subhead",
+"start": 12039,
+"end": 12113,
+"title": "8. Pulinathūpiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-9",
+"depth": 5,
+"rend": "subhead",
+"start": 12113,
+"end": 12136,
+"title": "9. Naḷakuṭidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-50-10",
+"depth": 5,
+"rend": "subhead",
+"start": 12136,
+"end": 12161,
+"title": "10. Piyālaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51",
+"depth": 4,
+"rend": "chapter",
+"start": 12162,
+"end": 12377,
+"title": "51. Kaṇikāravaggo"
+},
+{
+"key": "kn-ap-51-1",
+"depth": 5,
+"rend": "subhead",
+"start": 12163,
+"end": 12245,
+"title": "1. Tikaṇikārapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-2",
+"depth": 5,
+"rend": "subhead",
+"start": 12245,
+"end": 12270,
+"title": "2. Ekapattadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-3",
+"depth": 5,
+"rend": "subhead",
+"start": 12270,
+"end": 12283,
+"title": "3. Kāsumāraphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-4",
+"depth": 5,
+"rend": "subhead",
+"start": 12283,
+"end": 12296,
+"title": "4. Avaṭaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-5",
+"depth": 5,
+"rend": "subhead",
+"start": 12296,
+"end": 12307,
+"title": "5. Pādaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-6",
+"depth": 5,
+"rend": "subhead",
+"start": 12307,
+"end": 12320,
+"title": "6. Mātuluṅgaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-7",
+"depth": 5,
+"rend": "subhead",
+"start": 12320,
+"end": 12333,
+"title": "7. Ajeliphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-8",
+"depth": 5,
+"rend": "subhead",
+"start": 12333,
+"end": 12344,
+"title": "8. Amodaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-9",
+"depth": 5,
+"rend": "subhead",
+"start": 12344,
+"end": 12357,
+"title": "9. Tālaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-51-10",
+"depth": 5,
+"rend": "subhead",
+"start": 12357,
+"end": 12377,
+"title": "10. Nāḷikeraphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52",
+"depth": 4,
+"rend": "chapter",
+"start": 12382,
+"end": 12563,
+"title": "52. Phaladāyakavaggo"
+},
+{
+"key": "kn-ap-52-1",
+"depth": 5,
+"rend": "subhead",
+"start": 12383,
+"end": 12399,
+"title": "1. Kurañciyaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-2",
+"depth": 5,
+"rend": "subhead",
+"start": 12399,
+"end": 12410,
+"title": "2. Kapitthaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-3",
+"depth": 5,
+"rend": "subhead",
+"start": 12410,
+"end": 12421,
+"title": "3. Kosambaphaliyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-4",
+"depth": 5,
+"rend": "subhead",
+"start": 12421,
+"end": 12434,
+"title": "4. Ketakapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-5",
+"depth": 5,
+"rend": "subhead",
+"start": 12434,
+"end": 12445,
+"title": "5. Nāgapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-6",
+"depth": 5,
+"rend": "subhead",
+"start": 12445,
+"end": 12464,
+"title": "6. Ajjunapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-7",
+"depth": 5,
+"rend": "subhead",
+"start": 12464,
+"end": 12479,
+"title": "7. Kuṭajapupphiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-8",
+"depth": 5,
+"rend": "subhead",
+"start": 12479,
+"end": 12494,
+"title": "8. Ghosasaññakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-9",
+"depth": 5,
+"rend": "subhead",
+"start": 12494,
+"end": 12549,
+"title": "9. Sabbaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-52-10",
+"depth": 5,
+"rend": "subhead",
+"start": 12549,
+"end": 12563,
+"title": "10. Padumadhārikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53",
+"depth": 4,
+"rend": "chapter",
+"start": 12568,
+"end": 12835,
+"title": "53. Tiṇadāyakavaggo"
+},
+{
+"key": "kn-ap-53-1",
+"depth": 5,
+"rend": "subhead",
+"start": 12569,
+"end": 12597,
+"title": "1. Tiṇamuṭṭhidāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-2",
+"depth": 5,
+"rend": "subhead",
+"start": 12597,
+"end": 12609,
+"title": "2. Mañcadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-3",
+"depth": 5,
+"rend": "subhead",
+"start": 12609,
+"end": 12620,
+"title": "3. Saraṇagamaniyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-4",
+"depth": 5,
+"rend": "subhead",
+"start": 12620,
+"end": 12635,
+"title": "4. Abbhañjanadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-5",
+"depth": 5,
+"rend": "subhead",
+"start": 12635,
+"end": 12646,
+"title": "5. Supaṭadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-6",
+"depth": 5,
+"rend": "subhead",
+"start": 12646,
+"end": 12660,
+"title": "6. Daṇḍadāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-7",
+"depth": 5,
+"rend": "subhead",
+"start": 12660,
+"end": 12673,
+"title": "7. Girinelapūjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-8",
+"depth": 5,
+"rend": "subhead",
+"start": 12673,
+"end": 12726,
+"title": "8. Bodhisammajjakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-9",
+"depth": 5,
+"rend": "subhead",
+"start": 12726,
+"end": 12741,
+"title": "9. Āmaṇḍaphaladāyakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-53-10",
+"depth": 5,
+"rend": "subhead",
+"start": 12741,
+"end": 12835,
+"title": "10. Sugandhattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54",
+"depth": 4,
+"rend": "chapter",
+"start": 12840,
+"end": 13580,
+"title": "54. Kaccāyanavaggo"
+},
+{
+"key": "kn-ap-54-1",
+"depth": 5,
+"rend": "subhead",
+"start": 12841,
+"end": 12899,
+"title": "1. Mahākaccāyanattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-2",
+"depth": 5,
+"rend": "subhead",
+"start": 12899,
+"end": 12976,
+"title": "2. Vakkalittheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-3",
+"depth": 5,
+"rend": "subhead",
+"start": 12976,
+"end": 13061,
+"title": "3. Mahākappinattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-4",
+"depth": 5,
+"rend": "subhead",
+"start": 13061,
+"end": 13146,
+"title": "4. Dabbamallaputtattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-5",
+"depth": 5,
+"rend": "subhead",
+"start": 13146,
+"end": 13204,
+"title": "5. Kumārakassapattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-6",
+"depth": 5,
+"rend": "subhead",
+"start": 13204,
+"end": 13291,
+"title": "6. Bāhiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-7",
+"depth": 5,
+"rend": "subhead",
+"start": 13291,
+"end": 13352,
+"title": "7. Mahākoṭṭhikattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-8",
+"depth": 5,
+"rend": "subhead",
+"start": 13352,
+"end": 13443,
+"title": "8. Uruveḷakassapattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-9",
+"depth": 5,
+"rend": "subhead",
+"start": 13443,
+"end": 13506,
+"title": "9. Rādhattheraapadānaṃ"
+},
+{
+"key": "kn-ap-54-10",
+"depth": 5,
+"rend": "subhead",
+"start": 13506,
+"end": 13580,
+"title": "10. Mogharājattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55",
+"depth": 4,
+"rend": "chapter",
+"start": 13585,
+"end": 14217,
+"title": "55. Bhaddiyavaggo"
+},
+{
+"key": "kn-ap-55-1",
+"depth": 5,
+"rend": "subhead",
+"start": 13586,
+"end": 13656,
+"title": "1. Lakuṇḍabhaddiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-2",
+"depth": 5,
+"rend": "subhead",
+"start": 13656,
+"end": 13697,
+"title": "2. Kaṅkhārevatattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-3",
+"depth": 5,
+"rend": "subhead",
+"start": 13697,
+"end": 13782,
+"title": "3. Sīvalittheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-4",
+"depth": 5,
+"rend": "subhead",
+"start": 13782,
+"end": 13879,
+"title": "4. Vaṅgīsattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-5",
+"depth": 5,
+"rend": "subhead",
+"start": 13879,
+"end": 13924,
+"title": "5. Nandakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-6",
+"depth": 5,
+"rend": "subhead",
+"start": 13924,
+"end": 13985,
+"title": "6. Kāḷudāyittheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-7",
+"depth": 5,
+"rend": "subhead",
+"start": 13985,
+"end": 14046,
+"title": "7. Abhayattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-8",
+"depth": 5,
+"rend": "subhead",
+"start": 14046,
+"end": 14099,
+"title": "8. Lomasakaṅgiyattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-9",
+"depth": 5,
+"rend": "subhead",
+"start": 14099,
+"end": 14142,
+"title": "9. Vanavacchattheraapadānaṃ"
+},
+{
+"key": "kn-ap-55-10",
+"depth": 5,
+"rend": "subhead",
+"start": 14142,
+"end": 14217,
+"title": "10. Cūḷasugandhattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56",
+"depth": 4,
+"rend": "chapter",
+"start": 14229,
+"end": 14637,
+"title": "56. Yasavaggo"
+},
+{
+"key": "kn-ap-56-1",
+"depth": 5,
+"rend": "subhead",
+"start": 14230,
+"end": 14289,
+"title": "1. Yasattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-2",
+"depth": 5,
+"rend": "subhead",
+"start": 14289,
+"end": 14303,
+"title": "2. Nadīkassapattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-3",
+"depth": 5,
+"rend": "subhead",
+"start": 14303,
+"end": 14318,
+"title": "3. Gayākassapattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-4",
+"depth": 5,
+"rend": "subhead",
+"start": 14318,
+"end": 14333,
+"title": "4. Kimilattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-5",
+"depth": 5,
+"rend": "subhead",
+"start": 14333,
+"end": 14346,
+"title": "5. Vajjīputtattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-6",
+"depth": 5,
+"rend": "subhead",
+"start": 14346,
+"end": 14425,
+"title": "6. Uttarattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-7",
+"depth": 5,
+"rend": "subhead",
+"start": 14425,
+"end": 14436,
+"title": "7. Aparauttarattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-8",
+"depth": 5,
+"rend": "subhead",
+"start": 14436,
+"end": 14475,
+"title": "8. Bhaddajittheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-9",
+"depth": 5,
+"rend": "subhead",
+"start": 14475,
+"end": 14486,
+"title": "9. Sivakattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-10",
+"depth": 5,
+"rend": "subhead",
+"start": 14486,
+"end": 14601,
+"title": "10. Upavānattheraapadānaṃ"
+},
+{
+"key": "kn-ap-56-11",
+"depth": 5,
+"rend": "subhead",
+"start": 14601,
+"end": 14637,
+"title": "11. Raṭṭhapālattheraapadānaṃ"
+}
+]

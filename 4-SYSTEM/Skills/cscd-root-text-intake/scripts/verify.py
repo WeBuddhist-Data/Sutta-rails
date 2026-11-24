@@ -38,7 +38,18 @@ TREE = "--tree" in sys.argv
 # --per-section: the book numbers each section (top-level division) from 1 (CSCD
 # Khuddakapāṭha); content IDs are ^<book>-<section>-<N>, section = its position.
 PER_SECTION = "--per-section" in sys.argv
-book, md_path, xml_path = [a for a in sys.argv[1:] if a not in ("--tree", "--per-section")][:3]
+# --zoned: the book has more than one numbering run, each a zone (apply.py --zones
+# "1=1@…,2=2@…"); content IDs are ^<book>-<run>-<N>, run = the k-th time the XML's
+# printed numbers start again at 1 (CSCD Suttanipāta: the verses 1-1155, then the
+# Suttuddāna 1-21).
+# --zone-labels L1,L2,…: run k's zone label is Lk instead of k (human decision; CSCD
+# Paṭisambhidāmagga: M,1,2,3 = the Mātikā, then the three vaggas). Implies --zoned.
+_args = sys.argv[1:]
+ZONE_LABELS = None
+if "--zone-labels" in _args:
+    _k = _args.index("--zone-labels"); ZONE_LABELS = _args[_k + 1].split(","); del _args[_k:_k + 2]
+ZONED = "--zoned" in _args or ZONE_LABELS is not None
+book, md_path, xml_path = [a for a in _args if a not in ("--tree", "--per-section", "--zoned")][:3]
 problems = []
 
 # ---------- md side ----------
@@ -57,6 +68,17 @@ for ln in lines:
         blocks.append([ln]); continue
     cur.append(ln)
 if cur: blocks.append(cur)
+
+_raw = open(xml_path, "rb").read()
+_xml_text = _raw.decode("utf-16") if _raw[:2] in (b"\xff\xfe", b"\xfe\xff") else _raw.decode("utf-8")
+_xml_plain = {re.sub(r"<[^>]+>", "", m).strip() for m in re.findall(r"<p rend=\"[^\"]+\"[^>]*>(.*?)</p>", _xml_text, re.S)
+              if "paranum" not in m}
+
+
+def xml_unnumbered(line):
+    """The XML has a <p> with exactly this text and no paranum."""
+    return line in _xml_plain
+
 
 content_ids, heading_ids, u_ids = [], [], []
 for b in blocks:
@@ -86,12 +108,28 @@ for b in blocks:
             u_ids.append(bid)
         else:
             content_ids.append(bid)
-        if re.match(r"^\d+(?:-\d+)?\.\s", b[0]):
+        if re.match(r"^\d+(?:-\d+)?\.\s", b[0]) and not (
+                bid in u_ids and xml_unnumbered(ID_RE.sub("", b[0]).strip())):
+            # (a U block may open "N. " where the XML prints it as text with no paranum:
+            # the Vimānavatthu's numbered sub-stories inside the Guttilavimāna)
             problems.append(f"N. prefix not stripped: {b[0][:60]}")
 
 nums = []
+PLAIN_ZONE = bool(ZONE_LABELS) and "" in ZONE_LABELS   # one run keeps plain ^<book>-N (Nettippakaraṇa)
 for cid in content_ids:
-    m = re.fullmatch(rf"{book}-(\d+-\d+(?:-\d+)?)" if PER_SECTION else rf"{book}-(\d+(?:-\d+)?)", cid)
+    # `x<k>` marks the k-th repeat of a number the XML prints more than once (Rule 2): it
+    # counts as that printed number (CSCD Theragāthā prints 1204 twice)
+    if ZONED:
+        # zoned: "<label>|<N>"; with a plain zone, ^<book>-N is label "" (no printed ranges then)
+        m = re.fullmatch(rf"{book}-(?:([A-Za-z0-9]+)-)?(\d+(?:-\d+)?)(?:x\d+)?" if PLAIN_ZONE else
+                         rf"{book}-([A-Za-z0-9]+)-(\d+(?:-\d+)?)(?:x\d+)?", cid)
+        if not m:
+            problems.append(f"unexpected content id shape: {cid}")
+            continue
+        nums.append(f"{m.group(1) or ''}|{m.group(2)}")
+        continue
+    m = re.fullmatch(
+                     rf"{book}-(\d+-\d+(?:-\d+)?)(?:x\d+)?" if PER_SECTION else rf"{book}-(\d+(?:-\d+)?)(?:x\d+)?", cid)
     if not m:
         problems.append(f"unexpected content id shape: {cid}")
         continue
@@ -103,7 +141,7 @@ def span(printed):
     return int(a), int(b or a)
 if len(set(heading_ids)) != len(heading_ids):
     problems.append("duplicate heading ids")
-if len(set(nums)) != len(nums):
+if len(set(content_ids)) != len(content_ids):
     problems.append("duplicate content ids")
 
 # ---------- xml side ----------
@@ -118,22 +156,47 @@ if PER_SECTION:
     _book = next(d for d in xbody.iter("div") if d.get("type") == "book")
     _secs = [d for d in _book if d.tag == "div"]
     paranums = [f"{k}-{p.get('n')}" for k, d in enumerate(_secs, 1) for p in d.iter("p") if printed(p)]
+elif ZONED:
+    # the number as printed (<hi rend="paranum">), not @n: the Suttanipāta's Suttuddāna
+    # prints "1." on n="1156" and 2–21 with no @n at all
+    _printed = []   # (number, a heading came between it and the previous number)
+    _head_since = False
+    for p in xbody.iter():
+        if p.tag == "head" or (p.tag == "p" and p.get("rend") in ("subhead", "subsubhead", "title", "chapter", "book")):
+            _head_since = True
+            continue
+        if p.tag != "p":
+            continue
+        _h = next((h for h in p.iter("hi") if h.get("rend") == "paranum"), None)
+        if _h is not None and re.fullmatch(r"\d+(?:-\d+)?", "".join(_h.itertext()).strip()):
+            _printed.append(("".join(_h.itertext()).strip(), _head_since))
+            _head_since = False
+    # runs: a new one at each restart at 1, an inner run may end by resuming the outer (zones.py)
+    import zones  # noqa: E402
+    _runs = zones.assign(_printed)
+    if ZONE_LABELS and max(_runs, default=0) != len(ZONE_LABELS):
+        problems.append(f"{max(_runs, default=0)} numbering runs in the XML but {len(ZONE_LABELS)} zone labels")
+    paranums = [f"{(ZONE_LABELS[z - 1] if ZONE_LABELS and z <= len(ZONE_LABELS) else z)}|{n}"
+                for z, (n, _hs) in zip(_runs, _printed)]
 if nums != paranums:
     problems.append(f"content ids != XML paranums (md {len(nums)}, xml {len(paranums)})")
 gaps = []   # printed-number jumps; allowed only because nums == the XML's own numbers
-prev, prev_sec = 0, None
+prev, prev_sec, last_of = 0, None, {}
 for x in nums:
-    if PER_SECTION:
-        sec, x = x.split("-", 1)
+    if PER_SECTION or ZONED:
+        sec, x = x.split("|" if ZONED else "-", 1)
         if sec != prev_sec:
-            prev, prev_sec = 0, sec
+            last_of[prev_sec] = prev
+            prev, prev_sec = last_of.get(sec, 0), sec   # a resumed zone continues where it stopped
     a, b = span(x)
-    if a <= prev:
+    if a == prev == b:
+        repeats = locals().get("repeats", []) + [x]   # a number the XML prints twice (x-suffixed ID)
+    elif a <= prev:
         problems.append(f"content ids out of order at {x}")
     elif a != prev + 1:
         gaps.append(f"{prev}->{x}")
     prev = b
-if nums and span(nums[0].split("-", 1)[1] if PER_SECTION else nums[0])[0] != 1:
+if nums and span(nums[0].split("|" if ZONED else "-", 1)[1] if PER_SECTION or ZONED else nums[0])[0] != 1:
     problems.append("content ids do not start at 1")
 
 book_div = next((d for d in xbody.iter("div") if d.get("type") == "book"), None)
@@ -189,12 +252,15 @@ if vagga_shape:
 
 def xml_words():
     out = []
+    in_head = [False]
 
     def rend(el, top=True):
         if el.tag == "pb":
             pass
         elif el.tag == "note":
             out.append(" [" + "".join(el.itertext()).strip() + "]")
+        elif el.tag == "hi" and el.get("rend") == "dot" and in_head[0]:
+            out.append(el.text or "")   # "152<hi rend="dot">.</hi> …" in a heading: the number's dot, stripped below
         elif el.tag == "hi" and el.get("rend") in ("paranum", "dot"):
             pass
         else:
@@ -215,9 +281,12 @@ def xml_words():
                 # number-only paragraph before a heading: the md keeps the number as its text
                 out.append("".join(el.itertext()).strip().rstrip(".") + "\n")
                 continue
+            is_head = (el.tag == "head" and el.get("rend") == "chapter") or id(el) in sutta_ids \
+                or (el.tag == "p" and el.get("rend") in ("subhead", "title")) or id(el) in tree_lv
+            in_head[0] = is_head
             rend(el)
-            if (el.tag == "head" and el.get("rend") == "chapter") or id(el) in sutta_ids \
-                    or (el.tag == "p" and el.get("rend") in ("subhead", "title")) or id(el) in tree_lv:
+            in_head[0] = False
+            if is_head:
                 seg = "".join(out[start:])
                 del out[start:]
                 out.append(cscd_shape.LEAD_NUM.sub("", seg) if TREE else re.sub(r"^\s*\d+(?:-\d+)*\.\s*", "", seg))
@@ -250,7 +319,8 @@ for u in unpaired[:5]:
 problems += bold_check.compare(bold_check.xml_spans([xbody], exact=True), md_bold, "xml")
 
 print(f"== {md_path}")
-print(f"   content ids {len(nums)} (^{book}-{nums[0]} .. ^{book}-{nums[-1]}; ranges {sum('-' in x for x in nums)}"
+_show = lambda x: x.lstrip("|").replace("|", "-")   # zoned "label|N" -> "label-N" / "N"
+print(f"   content ids {len(nums)} (^{book}-{_show(nums[0])} .. ^{book}-{_show(nums[-1])}; ranges {sum('-' in (x.split('|' if ZONED else '-', 1)[1] if PER_SECTION or ZONED else x) for x in nums)}"
       f"{', gaps as printed in the XML ' + str(len(gaps)) + ': ' + ' '.join(gaps[:6]) if gaps else ''}), U-blocks {u_ids}, headings {len(heading_ids)}, chapters {len(md_sutta_titles)}, "
       f"{'suttas ' + str(len(sutta_ids)) + ', ' if vagga_shape else ''}subheads {md_sub}")
 print(f"   words md {len(mw)} / xml {len(xw)}, bold spans {len(md_bold)}")

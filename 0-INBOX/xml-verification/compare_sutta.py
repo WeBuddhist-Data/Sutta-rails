@@ -23,13 +23,19 @@ sys.stdout.reconfigure(encoding="utf-8")
 md_path, out_path, xml_paths = sys.argv[1], sys.argv[2], sys.argv[3:]
 
 # ---------------------------------------------------------------- XML side
-def inner(el, top=True):
+def inner(el, top=True, head=False):
     s = el.text or ""
     for ch in el:
         if ch.tag == "note":
             s += "[" + inner(ch, False) + "]"
+        elif ch.tag == "hi" and ch.get("rend") == "dot" and top and head:
+            s += ch.text or ""        # a heading's "152<hi rend=dot>.</hi>": the number's dot, for strip_num
         elif ch.tag == "hi" and ch.get("rend") in ("paranum", "dot") and top:
-            pass                      # the printed number moves into the block ID
+            # the printed number moves into the block ID; an untagged dot right after it
+            # ("<hi rend=paranum>1</hi>. Sotāvadhāne", Paṭisambhidāmagga) goes with it
+            if ch.get("rend") == "paranum" and (ch.tail or "").startswith("."):
+                s += ch.tail[1:]
+                continue
         elif ch.tag == "hi" and ch.get("rend") == "bold":
             s += "**" + inner(ch, False) + "**"
         elif ch.tag != "pb":
@@ -60,7 +66,7 @@ def walk(el, depth):
             if ch.tag == "p" and rend in ("nikaya", "title", "subhead", "subsubhead", "chapter", "book"):
                 lvl = {"nikaya": 0, "book": depth + 1, "chapter": depth + 1, "title": depth + 1,
                        "subhead": depth + 1, "subsubhead": depth + 2}[rend]
-                t = strip_num(t)
+                t = strip_num(inner(ch, head=True).strip())
                 xml_heads.append((lvl, rend, t, inner(ch).strip()))
                 xml_lines.append(("H", t, rend, None, inner(ch).strip()))
                 cur_para[0] = None
@@ -189,7 +195,7 @@ for i, j in eq_pairs:
     if k != "P":
         continue
     bid = vault_lines[j][3] or ""
-    num = bid.split("-")[-1]
+    num = re.sub(r"x\d+$", "", bid.split("-")[-1])   # ^…-274x1: 2nd print of the same number
     if bid.startswith("T-") or re.match(r"^T\d+$", num):
         continue          # homage / volume-opening blocks (^T-1, ^<book>-T<k>) sit outside the numbering
     if pn is None:
@@ -199,6 +205,9 @@ for i, j in eq_pairs:
             u_ids.append(bid)
     else:
         lo = pn.split("-")[0]
+        if num.startswith("U") and rend == "centre" and re.match(r"^\d+\.\s", xml_lines[i][1]):
+            u_ids.append(bid)
+            continue      # a centred "N. …" title with no paranum of its own (Vimānavatthu, Guttilavimāna)
         if bid.endswith("-" + pn):
             continue      # a range ID such as ^3-225-240 for the printed range 225-240
         if num != pn and num != lo and not num.startswith(lo + "-"):

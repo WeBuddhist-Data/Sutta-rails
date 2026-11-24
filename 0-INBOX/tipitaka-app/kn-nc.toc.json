@@ -1,0 +1,362 @@
+[
+{
+"key": "kn-nc-3",
+"depth": 4,
+"rend": "subsubhead",
+"start": 3,
+"end": 4,
+"title": "Pārāyanavaggo"
+},
+{
+"key": "kn-nc-4",
+"depth": 4,
+"rend": "subhead",
+"start": 4,
+"end": 121,
+"title": "Vatthugāthā"
+},
+{
+"key": "kn-nc-5",
+"depth": 4,
+"rend": "subhead",
+"start": 121,
+"end": 145,
+"title": "1. Ajitamāṇavapucchā"
+},
+{
+"key": "kn-nc-6",
+"depth": 4,
+"rend": "subhead",
+"start": 145,
+"end": 156,
+"title": "2. Tissametteyyamāṇavapucchā"
+},
+{
+"key": "kn-nc-7",
+"depth": 4,
+"rend": "subhead",
+"start": 156,
+"end": 180,
+"title": "3. Puṇṇakamāṇavapucchā"
+},
+{
+"key": "kn-nc-8",
+"depth": 4,
+"rend": "subhead",
+"start": 180,
+"end": 211,
+"title": "4. Mettagūmāṇavapucchā"
+},
+{
+"key": "kn-nc-9",
+"depth": 4,
+"rend": "subhead",
+"start": 211,
+"end": 233,
+"title": "5. Dhotakamāṇavapucchā"
+},
+{
+"key": "kn-nc-10",
+"depth": 4,
+"rend": "subhead",
+"start": 233,
+"end": 257,
+"title": "6. Upasīvamāṇavapucchā"
+},
+{
+"key": "kn-nc-11",
+"depth": 4,
+"rend": "subhead",
+"start": 257,
+"end": 289,
+"title": "7. Nandamāṇavapucchā"
+},
+{
+"key": "kn-nc-12",
+"depth": 4,
+"rend": "subhead",
+"start": 289,
+"end": 301,
+"title": "8. Hemakamāṇavapucchā"
+},
+{
+"key": "kn-nc-13",
+"depth": 4,
+"rend": "subhead",
+"start": 301,
+"end": 313,
+"title": "9. Todeyyamāṇavapucchā"
+},
+{
+"key": "kn-nc-14",
+"depth": 4,
+"rend": "subhead",
+"start": 313,
+"end": 326,
+"title": "10. Kappamāṇavapucchā"
+},
+{
+"key": "kn-nc-15",
+"depth": 4,
+"rend": "subhead",
+"start": 326,
+"end": 341,
+"title": "11. Jatukaṇṇimāṇavapucchā"
+},
+{
+"key": "kn-nc-16",
+"depth": 4,
+"rend": "subhead",
+"start": 341,
+"end": 354,
+"title": "12. Bhadrāvudhamāṇavapucchā"
+},
+{
+"key": "kn-nc-17",
+"depth": 4,
+"rend": "subhead",
+"start": 354,
+"end": 373,
+"title": "13. Udayamāṇavapucchā"
+},
+{
+"key": "kn-nc-18",
+"depth": 4,
+"rend": "subhead",
+"start": 373,
+"end": 387,
+"title": "14. Posālamāṇavapucchā"
+},
+{
+"key": "kn-nc-19",
+"depth": 4,
+"rend": "subhead",
+"start": 387,
+"end": 399,
+"title": "15. Mogharājamāṇavapucchā"
+},
+{
+"key": "kn-nc-20",
+"depth": 4,
+"rend": "subhead",
+"start": 399,
+"end": 414,
+"title": "16. Piṅgiyamāṇavapucchā"
+},
+{
+"key": "kn-nc-21",
+"depth": 4,
+"rend": "subhead",
+"start": 414,
+"end": 431,
+"title": "17. Pārāyanatthutigāthā"
+},
+{
+"key": "kn-nc-22",
+"depth": 4,
+"rend": "subhead",
+"start": 431,
+"end": 474,
+"title": "18. Pārāyanānugītigāthā"
+},
+{
+"key": "kn-nc-1",
+"depth": 4,
+"rend": "chapter",
+"start": 474,
+"end": 1946,
+"title": "Pārāyanavagganiddeso"
+},
+{
+"key": "kn-nc-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 475,
+"end": 576,
+"title": "1. Ajitamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 576,
+"end": 618,
+"title": "2. Tissametteyyamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 618,
+"end": 720,
+"title": "3. Puṇṇakamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 720,
+"end": 895,
+"title": "4. Mettagūmāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 895,
+"end": 987,
+"title": "5. Dhotakamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-6",
+"depth": 5,
+"rend": "subhead",
+"start": 987,
+"end": 1073,
+"title": "6. Upasīvamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-7",
+"depth": 5,
+"rend": "subhead",
+"start": 1073,
+"end": 1184,
+"title": "7. Nandamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-8",
+"depth": 5,
+"rend": "subhead",
+"start": 1184,
+"end": 1225,
+"title": "8. Hemakamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-9",
+"depth": 5,
+"rend": "subhead",
+"start": 1225,
+"end": 1266,
+"title": "9. Todeyyamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-10",
+"depth": 5,
+"rend": "subhead",
+"start": 1266,
+"end": 1315,
+"title": "10. Kappamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-11",
+"depth": 5,
+"rend": "subhead",
+"start": 1315,
+"end": 1368,
+"title": "11. Jatukaṇṇimāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-12",
+"depth": 5,
+"rend": "subhead",
+"start": 1368,
+"end": 1411,
+"title": "12. Bhadrāvudhamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-13",
+"depth": 5,
+"rend": "subhead",
+"start": 1411,
+"end": 1493,
+"title": "13. Udayamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-14",
+"depth": 5,
+"rend": "subhead",
+"start": 1493,
+"end": 1561,
+"title": "14. Posālamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-15",
+"depth": 5,
+"rend": "subhead",
+"start": 1561,
+"end": 1646,
+"title": "15. Mogharājamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-16",
+"depth": 5,
+"rend": "subhead",
+"start": 1646,
+"end": 1696,
+"title": "16. Piṅgiyamāṇavapucchāniddeso"
+},
+{
+"key": "kn-nc-1-17",
+"depth": 5,
+"rend": "subhead",
+"start": 1696,
+"end": 1755,
+"title": "17. Pārāyanatthutigāthāniddeso"
+},
+{
+"key": "kn-nc-1-18",
+"depth": 5,
+"rend": "subhead",
+"start": 1755,
+"end": 1946,
+"title": "18. Pārāyanānugītigāthāniddeso"
+},
+{
+"key": "kn-nc-2",
+"depth": 4,
+"rend": "chapter",
+"start": 1946,
+"end": 2428,
+"title": "Khaggavisāṇasutto"
+},
+{
+"key": "kn-nc-2-1",
+"depth": 5,
+"rend": "title",
+"start": 1947,
+"end": 2428,
+"title": "Khaggavisāṇasuttaniddeso"
+},
+{
+"key": "kn-nc-2-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1948,
+"end": 2130,
+"title": "Paṭhamavaggo"
+},
+{
+"key": "kn-nc-2-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2130,
+"end": 2229,
+"title": "Dutiyavaggo"
+},
+{
+"key": "kn-nc-2-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2229,
+"end": 2330,
+"title": "Tatiyavaggo"
+},
+{
+"key": "kn-nc-2-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2330,
+"end": 2428,
+"title": "Catutthavaggo"
+}
+]

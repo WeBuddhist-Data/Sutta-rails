@@ -1,0 +1,138 @@
+[
+{
+"key": "kn-petk-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 213,
+"title": "1. Ariyasaccappakāsanapaṭhamabhūmi"
+},
+{
+"key": "kn-petk-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 12,
+"end": 17,
+"title": "Tatthāyaṃ uddānagāthā"
+},
+{
+"key": "kn-petk-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 17,
+"end": 24,
+"title": "Tattha uddānagāthā"
+},
+{
+"key": "kn-petk-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 24,
+"end": 35,
+"title": "Tattha uddānagāthā"
+},
+{
+"key": "kn-petk-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 35,
+"end": 201,
+"title": "Tattha imā uddānagāthā"
+},
+{
+"key": "kn-petk-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 201,
+"end": 213,
+"title": "Tatthimā uddānagāthā"
+},
+{
+"key": "kn-petk-2",
+"depth": 4,
+"rend": "chapter",
+"start": 213,
+"end": 508,
+"title": "2. Sāsanapaṭṭhānadutiyabhūmi"
+},
+{
+"key": "kn-petk-2-1",
+"depth": 5,
+"rend": "subhead",
+"start": 464,
+"end": 508,
+"title": "Tatthimā uddānagāthā"
+},
+{
+"key": "kn-petk-3",
+"depth": 4,
+"rend": "chapter",
+"start": 508,
+"end": 632,
+"title": "3. Suttādhiṭṭhānatatiyabhūmi"
+},
+{
+"key": "kn-petk-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 610,
+"end": 632,
+"title": "Tatthimā uddānagāthā"
+},
+{
+"key": "kn-petk-4",
+"depth": 4,
+"rend": "chapter",
+"start": 632,
+"end": 649,
+"title": "4. Suttavicayacatutthabhūmi"
+},
+{
+"key": "kn-petk-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 644,
+"end": 649,
+"title": "Tatthāyaṃ uddānagāthā"
+},
+{
+"key": "kn-petk-5",
+"depth": 4,
+"rend": "chapter",
+"start": 649,
+"end": 743,
+"title": "5. Pañcamabhūmi"
+},
+{
+"key": "kn-petk-6",
+"depth": 4,
+"rend": "chapter",
+"start": 743,
+"end": 825,
+"title": "6. Suttatthasamuccayabhūmi"
+},
+{
+"key": "kn-petk-7",
+"depth": 4,
+"rend": "chapter",
+"start": 825,
+"end": 1139,
+"title": "7. Hārasampātabhūmi"
+},
+{
+"key": "kn-petk-8",
+"depth": 4,
+"rend": "chapter",
+"start": 1139,
+"end": 1212,
+"title": "8. Suttavebhaṅgiyaṃ"
+},
+{
+"key": "kn-petk-8-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1193,
+"end": 1212,
+"title": "Tatthimā uddānagāthā"
+}
+]

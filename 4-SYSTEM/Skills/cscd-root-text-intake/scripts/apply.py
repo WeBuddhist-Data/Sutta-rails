@@ -160,6 +160,7 @@ def detect_runs(lines):
     current = None
     pending_headings = []
     prev_n = None
+    heading_since = False  # a heading between the previous numbered block and this one
     stray_unnumbered = []  # content blocks outside any run (before first run, or between — shouldn't normally happen)
 
     for (kind, start, end) in blocks:
@@ -168,11 +169,13 @@ def detect_runs(lines):
             level = len(m.group(1))
             text = strip_id(lines[start]).strip()
             pending_headings.append((start, level, text))
+            heading_since = True
             continue
 
         # content block
         first_line = strip_id(lines[start]).strip()
-        m = NUM_PREFIX.match(first_line)
+        # ^…-nonum (tree_to_md.py): the line opens "N. " but the XML gives it no paranum.
+        m = None if lines[end].rstrip().endswith("-nonum") else NUM_PREFIX.match(first_line)
         if not m:
             if current is not None:
                 current.setdefault("unnumbered", []).append((start, end))
@@ -183,11 +186,14 @@ def detect_runs(lines):
 
         printed = m.group(1)
         n, n_end = span(printed)
-        starts_new_run = (current is None) or (n == 1 and prev_n != 1)
+        # 1 right after 1 is a number printed twice (→ 1x1) — unless a heading came between
+        # them: then it is a new run (CSCD Milindapañha: the Anumānavagga ends at ¶1 and the
+        # Opammakathāpañho's Gadrabhavagga starts at ¶1)
+        starts_new_run = (current is None) or (n == 1 and (prev_n != 1 or heading_since))
+        heading_since = False
 
+        k = next((i for i, r in enumerate(runs) if r is current), None)
         if starts_new_run:
-            if current is not None:
-                runs.append(current)
             current = {
                 "first_n": n,
                 "last_n": n_end,
@@ -196,6 +202,15 @@ def detect_runs(lines):
                 "anomalies": [],
                 "unnumbered": [],
             }
+            runs.append(current)
+            pending_headings = []
+        elif n not in (prev_n, prev_n + 1) and k is not None and k >= 1 and n == runs[k - 1]["last_n"] + 1:
+            # resume the run before this one (zones.py; CSCD Nettippakaraṇa: main count 1-4,
+            # the Hārasaṅkhepa verses 1-26, then the main count again from 5)
+            current = runs[k - 1]
+            current["last_n"] = n_end
+            current["items"].append((start, end, printed))
+            current.setdefault("resumed_at", []).append(start)
             pending_headings = []
         else:
             current["last_n"] = n_end
@@ -209,8 +224,6 @@ def detect_runs(lines):
             pending_headings = []
         prev_n = n_end
 
-    if current is not None:
-        runs.append(current)
     return runs, stray_unnumbered
 
 
@@ -247,6 +260,8 @@ def cmd_audit(path: Path):
             f"  Run {idx}: lines {s0 + 1}-{e1 + 1} "
             f"({len(r['items'])} items, {r['first_n']}→{r['last_n']})"
         )
+        for i in r.get("resumed_at", []):
+            print(f"      resumed at L{i + 1} after the run inside it (zones.py)")
         if r["heading_candidates"]:
             print("      Heading candidates (choose which, if any, opens this zone):")
             for (i, level, text) in r["heading_candidates"]:
@@ -410,8 +425,9 @@ def cmd_apply(path: Path, zones_spec: str):
     # Stray blocks before the first run are left for ^T-N in the LLM heading pass.
     # Also a stray block after the first heading (a section that prints no
     # numbers, before the first run: Khuddakapāṭha's Saraṇattaya) is a U block.
-    first_heading = next((i for i, l in enumerate(lines) if is_heading(l) and not l.startswith("# ")
-                          and not l.startswith("## ")), None)
+    # (from the '##' book line on: text printed between the book title and its first
+    # section, CSCD Therāpadāna "(Paṭhamo bhāgo)", is a U block too)
+    first_heading = next((i for i, l in enumerate(lines) if is_heading(l) and not l.startswith("# ")), None)
     cands = [(start, end) for r in runs for (start, end) in r.get("unnumbered", [])]
     if first_heading is not None:
         cands += [(start, end) for (start, end) in _stray if start > first_heading]

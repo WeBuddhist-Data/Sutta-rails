@@ -1,0 +1,306 @@
+[
+{
+"key": "kn-cp-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 323,
+"title": "1. Akittivaggo"
+},
+{
+"key": "kn-cp-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4,
+"end": 26,
+"title": "1. Akitticariyā"
+},
+{
+"key": "kn-cp-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 26,
+"end": 46,
+"title": "2. Saṅkhacariyā"
+},
+{
+"key": "kn-cp-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 46,
+"end": 64,
+"title": "3. Kururājacariyā"
+},
+{
+"key": "kn-cp-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 64,
+"end": 85,
+"title": "4. Mahāsudassanacariyā"
+},
+{
+"key": "kn-cp-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 85,
+"end": 93,
+"title": "5. Mahāgovindacariyā"
+},
+{
+"key": "kn-cp-1-6",
+"depth": 5,
+"rend": "subhead",
+"start": 93,
+"end": 105,
+"title": "6. Nimirājacariyā"
+},
+{
+"key": "kn-cp-1-7",
+"depth": 5,
+"rend": "subhead",
+"start": 105,
+"end": 119,
+"title": "7. Candakumāracariyā"
+},
+{
+"key": "kn-cp-1-8",
+"depth": 5,
+"rend": "subhead",
+"start": 119,
+"end": 153,
+"title": "8. Sivirājacariyā"
+},
+{
+"key": "kn-cp-1-9",
+"depth": 5,
+"rend": "subhead",
+"start": 153,
+"end": 272,
+"title": "9. Vessantaracariyā"
+},
+{
+"key": "kn-cp-1-10",
+"depth": 5,
+"rend": "subhead",
+"start": 272,
+"end": 323,
+"title": "10. Sasapaṇḍitacariyā"
+},
+{
+"key": "kn-cp-2",
+"depth": 4,
+"rend": "chapter",
+"start": 323,
+"end": 536,
+"title": "2. Hatthināgavaggo"
+},
+{
+"key": "kn-cp-2-1",
+"depth": 5,
+"rend": "subhead",
+"start": 324,
+"end": 346,
+"title": "1. Mātuposakacariyā"
+},
+{
+"key": "kn-cp-2-2",
+"depth": 5,
+"rend": "subhead",
+"start": 346,
+"end": 366,
+"title": "2. Bhūridattacariyā"
+},
+{
+"key": "kn-cp-2-3",
+"depth": 5,
+"rend": "subhead",
+"start": 366,
+"end": 380,
+"title": "3. Campeyyanāgacariyā"
+},
+{
+"key": "kn-cp-2-4",
+"depth": 5,
+"rend": "subhead",
+"start": 380,
+"end": 404,
+"title": "4. Cūḷabodhicariyā"
+},
+{
+"key": "kn-cp-2-5",
+"depth": 5,
+"rend": "subhead",
+"start": 404,
+"end": 428,
+"title": "5. Mahiṃsarājacariyā"
+},
+{
+"key": "kn-cp-2-6",
+"depth": 5,
+"rend": "subhead",
+"start": 428,
+"end": 455,
+"title": "6. Rururājacariyā"
+},
+{
+"key": "kn-cp-2-7",
+"depth": 5,
+"rend": "subhead",
+"start": 455,
+"end": 469,
+"title": "7. Mātaṅgacariyā"
+},
+{
+"key": "kn-cp-2-8",
+"depth": 5,
+"rend": "subhead",
+"start": 469,
+"end": 487,
+"title": "8. Dhammadevaputtacariyā"
+},
+{
+"key": "kn-cp-2-9",
+"depth": 5,
+"rend": "subhead",
+"start": 487,
+"end": 511,
+"title": "9. Alīnasattucariyā"
+},
+{
+"key": "kn-cp-2-10",
+"depth": 5,
+"rend": "subhead",
+"start": 511,
+"end": 536,
+"title": "10. Saṅkhapālacariyā"
+},
+{
+"key": "kn-cp-3",
+"depth": 4,
+"rend": "chapter",
+"start": 536,
+"end": 819,
+"title": "3. Yudhañjayavaggo"
+},
+{
+"key": "kn-cp-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 537,
+"end": 551,
+"title": "1. Yudhañjayacariyā"
+},
+{
+"key": "kn-cp-3-2",
+"depth": 5,
+"rend": "subhead",
+"start": 551,
+"end": 587,
+"title": "2. Somanassacariyā"
+},
+{
+"key": "kn-cp-3-3",
+"depth": 5,
+"rend": "subhead",
+"start": 587,
+"end": 609,
+"title": "3. Ayogharacariyā"
+},
+{
+"key": "kn-cp-3-4",
+"depth": 5,
+"rend": "subhead",
+"start": 609,
+"end": 627,
+"title": "4. Bhisacariyā"
+},
+{
+"key": "kn-cp-3-5",
+"depth": 5,
+"rend": "subhead",
+"start": 627,
+"end": 641,
+"title": "5. Soṇapaṇḍitacariyā"
+},
+{
+"key": "kn-cp-3-6",
+"depth": 5,
+"rend": "subhead",
+"start": 641,
+"end": 682,
+"title": "6. Temiyacariyā"
+},
+{
+"key": "kn-cp-3-7",
+"depth": 5,
+"rend": "subhead",
+"start": 682,
+"end": 692,
+"title": "7. Kapirājacariyā"
+},
+{
+"key": "kn-cp-3-8",
+"depth": 5,
+"rend": "subhead",
+"start": 692,
+"end": 696,
+"title": "8. Saccatāpasacariyā"
+},
+{
+"key": "kn-cp-3-9",
+"depth": 5,
+"rend": "subhead",
+"start": 696,
+"end": 721,
+"title": "9. Vaṭṭapotakacariyā"
+},
+{
+"key": "kn-cp-3-10",
+"depth": 5,
+"rend": "subhead",
+"start": 721,
+"end": 743,
+"title": "10. Maccharājacariyā"
+},
+{
+"key": "kn-cp-3-11",
+"depth": 5,
+"rend": "subhead",
+"start": 743,
+"end": 772,
+"title": "11. Kaṇhadīpāyanacariyā"
+},
+{
+"key": "kn-cp-3-12",
+"depth": 5,
+"rend": "subhead",
+"start": 772,
+"end": 787,
+"title": "12. Sutasomacariyā"
+},
+{
+"key": "kn-cp-3-13",
+"depth": 5,
+"rend": "subhead",
+"start": 787,
+"end": 795,
+"title": "13. Suvaṇṇasāmacariyā"
+},
+{
+"key": "kn-cp-3-14",
+"depth": 5,
+"rend": "subhead",
+"start": 795,
+"end": 808,
+"title": "14. Ekarājacariyā"
+},
+{
+"key": "kn-cp-3-15",
+"depth": 5,
+"rend": "subhead",
+"start": 808,
+"end": 819,
+"title": "15. Mahālomahaṃsacariyā"
+}
+]

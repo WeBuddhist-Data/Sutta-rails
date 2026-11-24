@@ -1,0 +1,714 @@
+[
+{
+"key": "kn-thig-1",
+"depth": 4,
+"rend": "chapter",
+"start": 3,
+"end": 80,
+"title": "1. Ekakanipāto"
+},
+{
+"key": "kn-thig-1-1",
+"depth": 5,
+"rend": "subhead",
+"start": 4,
+"end": 8,
+"title": "1. Aññatarātherīgāthā"
+},
+{
+"key": "kn-thig-1-2",
+"depth": 5,
+"rend": "subhead",
+"start": 8,
+"end": 12,
+"title": "2. Muttātherīgāthā"
+},
+{
+"key": "kn-thig-1-3",
+"depth": 5,
+"rend": "subhead",
+"start": 12,
+"end": 16,
+"title": "3. Puṇṇātherīgāthā"
+},
+{
+"key": "kn-thig-1-4",
+"depth": 5,
+"rend": "subhead",
+"start": 16,
+"end": 20,
+"title": "4. Tissātherīgāthā"
+},
+{
+"key": "kn-thig-1-5",
+"depth": 5,
+"rend": "subhead",
+"start": 20,
+"end": 24,
+"title": "5. Aññatarātissātherīgāthā"
+},
+{
+"key": "kn-thig-1-6",
+"depth": 5,
+"rend": "subhead",
+"start": 24,
+"end": 28,
+"title": "6. Dhīrātherīgāthā"
+},
+{
+"key": "kn-thig-1-7",
+"depth": 5,
+"rend": "subhead",
+"start": 28,
+"end": 32,
+"title": "7. Vīrātherīgāthā"
+},
+{
+"key": "kn-thig-1-8",
+"depth": 5,
+"rend": "subhead",
+"start": 32,
+"end": 36,
+"title": "8. Mittātherīgāthā"
+},
+{
+"key": "kn-thig-1-9",
+"depth": 5,
+"rend": "subhead",
+"start": 36,
+"end": 40,
+"title": "9. Bhadrātherīgāthā"
+},
+{
+"key": "kn-thig-1-10",
+"depth": 5,
+"rend": "subhead",
+"start": 40,
+"end": 44,
+"title": "10. Upasamātherīgāthā"
+},
+{
+"key": "kn-thig-1-11",
+"depth": 5,
+"rend": "subhead",
+"start": 44,
+"end": 49,
+"title": "11. Muttātherīgāthā"
+},
+{
+"key": "kn-thig-1-12",
+"depth": 5,
+"rend": "subhead",
+"start": 49,
+"end": 61,
+"title": "12. Dhammadinnātherīgāthā"
+},
+{
+"key": "kn-thig-1-12-13",
+"depth": 6,
+"rend": "subhead",
+"start": 53,
+"end": 57,
+"title": "13.Visākhātherīgāthā"
+},
+{
+"key": "kn-thig-1-12-14",
+"depth": 6,
+"rend": "subhead",
+"start": 57,
+"end": 61,
+"title": "14.Sumanātherīgāthā"
+},
+{
+"key": "kn-thig-1-15",
+"depth": 5,
+"rend": "subhead",
+"start": 61,
+"end": 65,
+"title": "15. Uttarātherīgāthā"
+},
+{
+"key": "kn-thig-1-16",
+"depth": 5,
+"rend": "subhead",
+"start": 65,
+"end": 69,
+"title": "16. Vuḍḍhapabbajitasumanātherīgāthā"
+},
+{
+"key": "kn-thig-1-17",
+"depth": 5,
+"rend": "subhead",
+"start": 69,
+"end": 74,
+"title": "17. Dhammātherīgāthā"
+},
+{
+"key": "kn-thig-1-18",
+"depth": 5,
+"rend": "subhead",
+"start": 74,
+"end": 80,
+"title": "18. Saṅghātherīgāthā"
+},
+{
+"key": "kn-thig-2",
+"depth": 4,
+"rend": "chapter",
+"start": 80,
+"end": 146,
+"title": "2. Dukanipāto"
+},
+{
+"key": "kn-thig-2-1",
+"depth": 5,
+"rend": "subhead",
+"start": 81,
+"end": 87,
+"title": "1. Abhirūpanandātherīgāthā"
+},
+{
+"key": "kn-thig-2-2",
+"depth": 5,
+"rend": "subhead",
+"start": 87,
+"end": 93,
+"title": "2. Jentātherīgāthā"
+},
+{
+"key": "kn-thig-2-3",
+"depth": 5,
+"rend": "subhead",
+"start": 93,
+"end": 99,
+"title": "3. Sumaṅgalamātātherīgāthā"
+},
+{
+"key": "kn-thig-2-4",
+"depth": 5,
+"rend": "subhead",
+"start": 99,
+"end": 106,
+"title": "4. Aḍḍhakāsitherīgāthā"
+},
+{
+"key": "kn-thig-2-5",
+"depth": 5,
+"rend": "subhead",
+"start": 106,
+"end": 112,
+"title": "5. Cittātherīgāthā"
+},
+{
+"key": "kn-thig-2-6",
+"depth": 5,
+"rend": "subhead",
+"start": 112,
+"end": 119,
+"title": "6. Mettikātherīgāthā"
+},
+{
+"key": "kn-thig-2-7",
+"depth": 5,
+"rend": "subhead",
+"start": 119,
+"end": 126,
+"title": "7. Mittātherīgāthā"
+},
+{
+"key": "kn-thig-2-8",
+"depth": 5,
+"rend": "subhead",
+"start": 126,
+"end": 132,
+"title": "8. Abhayamātutherīgāthā"
+},
+{
+"key": "kn-thig-2-9",
+"depth": 5,
+"rend": "subhead",
+"start": 132,
+"end": 138,
+"title": "9. Abhayātherīgāthā"
+},
+{
+"key": "kn-thig-2-10",
+"depth": 5,
+"rend": "subhead",
+"start": 138,
+"end": 146,
+"title": "10. Sāmātherīgāthā"
+},
+{
+"key": "kn-thig-3",
+"depth": 4,
+"rend": "chapter",
+"start": 146,
+"end": 215,
+"title": "3. Tikanipāto"
+},
+{
+"key": "kn-thig-3-1",
+"depth": 5,
+"rend": "subhead",
+"start": 147,
+"end": 156,
+"title": "1. Aparāsāmātherīgāthā"
+},
+{
+"key": "kn-thig-3-2",
+"depth": 5,
+"rend": "subhead",
+"start": 156,
+"end": 165,
+"title": "2. Uttamātherīgāthā"
+},
+{
+"key": "kn-thig-3-3",
+"depth": 5,
+"rend": "subhead",
+"start": 165,
+"end": 173,
+"title": "3. Aparāuttamātherīgāthā"
+},
+{
+"key": "kn-thig-3-4",
+"depth": 5,
+"rend": "subhead",
+"start": 173,
+"end": 181,
+"title": "4. Dantikātherīgāthā"
+},
+{
+"key": "kn-thig-3-5",
+"depth": 5,
+"rend": "subhead",
+"start": 181,
+"end": 190,
+"title": "5. Ubbiritherīgāthā"
+},
+{
+"key": "kn-thig-3-6",
+"depth": 5,
+"rend": "subhead",
+"start": 190,
+"end": 198,
+"title": "6. Sukkātherīgāthā"
+},
+{
+"key": "kn-thig-3-7",
+"depth": 5,
+"rend": "subhead",
+"start": 198,
+"end": 206,
+"title": "7. Selātherīgāthā"
+},
+{
+"key": "kn-thig-3-8",
+"depth": 5,
+"rend": "subhead",
+"start": 206,
+"end": 215,
+"title": "8. Somātherīgāthā"
+},
+{
+"key": "kn-thig-4",
+"depth": 4,
+"rend": "chapter",
+"start": 215,
+"end": 227,
+"title": "4. Catukkanipāto"
+},
+{
+"key": "kn-thig-4-1",
+"depth": 5,
+"rend": "subhead",
+"start": 216,
+"end": 227,
+"title": "1. Bhaddākāpilānītherīgāthā"
+},
+{
+"key": "kn-thig-5",
+"depth": 4,
+"rend": "chapter",
+"start": 227,
+"end": 379,
+"title": "5. Pañcakanipāto"
+},
+{
+"key": "kn-thig-5-1",
+"depth": 5,
+"rend": "subhead",
+"start": 228,
+"end": 241,
+"title": "1. Aññatarātherīgāthā"
+},
+{
+"key": "kn-thig-5-2",
+"depth": 5,
+"rend": "subhead",
+"start": 241,
+"end": 253,
+"title": "2. Vimalātherīgāthā"
+},
+{
+"key": "kn-thig-5-3",
+"depth": 5,
+"rend": "subhead",
+"start": 253,
+"end": 265,
+"title": "3. Sīhātherīgāthā"
+},
+{
+"key": "kn-thig-5-4",
+"depth": 5,
+"rend": "subhead",
+"start": 265,
+"end": 277,
+"title": "4. Sundarīnandātherīgāthā"
+},
+{
+"key": "kn-thig-5-5",
+"depth": 5,
+"rend": "subhead",
+"start": 277,
+"end": 289,
+"title": "5. Nanduttarātherīgāthā"
+},
+{
+"key": "kn-thig-5-6",
+"depth": 5,
+"rend": "subhead",
+"start": 289,
+"end": 301,
+"title": "6. Mittākāḷītherīgāthā"
+},
+{
+"key": "kn-thig-5-7",
+"depth": 5,
+"rend": "subhead",
+"start": 301,
+"end": 313,
+"title": "7. Sakulātherīgāthā"
+},
+{
+"key": "kn-thig-5-8",
+"depth": 5,
+"rend": "subhead",
+"start": 313,
+"end": 325,
+"title": "8. Soṇātherīgāthā"
+},
+{
+"key": "kn-thig-5-9",
+"depth": 5,
+"rend": "subhead",
+"start": 325,
+"end": 337,
+"title": "9. Bhaddākuṇḍalakesātherīgāthā"
+},
+{
+"key": "kn-thig-5-10",
+"depth": 5,
+"rend": "subhead",
+"start": 337,
+"end": 350,
+"title": "10. Paṭācārātherīgāthā"
+},
+{
+"key": "kn-thig-5-11",
+"depth": 5,
+"rend": "subhead",
+"start": 350,
+"end": 366,
+"title": "11. Tiṃsamattātherīgāthā"
+},
+{
+"key": "kn-thig-5-12",
+"depth": 5,
+"rend": "subhead",
+"start": 366,
+"end": 379,
+"title": "12. Candātherīgāthā"
+},
+{
+"key": "kn-thig-6",
+"depth": 4,
+"rend": "chapter",
+"start": 379,
+"end": 494,
+"title": "6. Chakkanipāto"
+},
+{
+"key": "kn-thig-6-1",
+"depth": 5,
+"rend": "subhead",
+"start": 380,
+"end": 395,
+"title": "1. Pañcasatamattātherīgāthā"
+},
+{
+"key": "kn-thig-6-2",
+"depth": 5,
+"rend": "subhead",
+"start": 395,
+"end": 409,
+"title": "2. Vāseṭṭhītherīgāthā"
+},
+{
+"key": "kn-thig-6-3",
+"depth": 5,
+"rend": "subhead",
+"start": 409,
+"end": 423,
+"title": "3. Khemātherīgāthā"
+},
+{
+"key": "kn-thig-6-4",
+"depth": 5,
+"rend": "subhead",
+"start": 423,
+"end": 437,
+"title": "4. Sujātātherīgāthā"
+},
+{
+"key": "kn-thig-6-5",
+"depth": 5,
+"rend": "subhead",
+"start": 437,
+"end": 451,
+"title": "5. Anopamātherīgāthā"
+},
+{
+"key": "kn-thig-6-6",
+"depth": 5,
+"rend": "subhead",
+"start": 451,
+"end": 465,
+"title": "6. Mahāpajāpatigotamītherīgāthā"
+},
+{
+"key": "kn-thig-6-7",
+"depth": 5,
+"rend": "subhead",
+"start": 465,
+"end": 479,
+"title": "7. Guttātherīgāthā"
+},
+{
+"key": "kn-thig-6-8",
+"depth": 5,
+"rend": "subhead",
+"start": 479,
+"end": 494,
+"title": "8. Vijayātherīgāthā"
+},
+{
+"key": "kn-thig-7",
+"depth": 4,
+"rend": "chapter",
+"start": 494,
+"end": 544,
+"title": "7. Sattakanipāto"
+},
+{
+"key": "kn-thig-7-1",
+"depth": 5,
+"rend": "subhead",
+"start": 495,
+"end": 511,
+"title": "1. Uttarātherīgāthā"
+},
+{
+"key": "kn-thig-7-2",
+"depth": 5,
+"rend": "subhead",
+"start": 511,
+"end": 527,
+"title": "2. Cālātherīgāthā"
+},
+{
+"key": "kn-thig-7-3",
+"depth": 5,
+"rend": "subhead",
+"start": 527,
+"end": 544,
+"title": "3. Upacālātherīgāthā"
+},
+{
+"key": "kn-thig-8",
+"depth": 4,
+"rend": "chapter",
+"start": 544,
+"end": 565,
+"title": "8. Aṭṭhakanipāto"
+},
+{
+"key": "kn-thig-8-1",
+"depth": 5,
+"rend": "subhead",
+"start": 545,
+"end": 565,
+"title": "1. Sīsūpacālātherīgāthā"
+},
+{
+"key": "kn-thig-9",
+"depth": 4,
+"rend": "chapter",
+"start": 565,
+"end": 587,
+"title": "9. Navakanipāto"
+},
+{
+"key": "kn-thig-9-1",
+"depth": 5,
+"rend": "subhead",
+"start": 566,
+"end": 587,
+"title": "1. Vaḍḍhamātutherīgāthā"
+},
+{
+"key": "kn-thig-10",
+"depth": 4,
+"rend": "chapter",
+"start": 587,
+"end": 613,
+"title": "10. Ekādasanipāto"
+},
+{
+"key": "kn-thig-10-1",
+"depth": 5,
+"rend": "subhead",
+"start": 588,
+"end": 613,
+"title": "1. Kisāgotamītherīgāthā"
+},
+{
+"key": "kn-thig-11",
+"depth": 4,
+"rend": "chapter",
+"start": 613,
+"end": 641,
+"title": "11. Dvādasakanipāto"
+},
+{
+"key": "kn-thig-11-1",
+"depth": 5,
+"rend": "subhead",
+"start": 614,
+"end": 641,
+"title": "1. Uppalavaṇṇātherīgāthā"
+},
+{
+"key": "kn-thig-12",
+"depth": 4,
+"rend": "chapter",
+"start": 641,
+"end": 678,
+"title": "12. Soḷasanipāto"
+},
+{
+"key": "kn-thig-12-1",
+"depth": 5,
+"rend": "subhead",
+"start": 642,
+"end": 678,
+"title": "1. Puṇṇātherīgāthā"
+},
+{
+"key": "kn-thig-13",
+"depth": 4,
+"rend": "chapter",
+"start": 678,
+"end": 931,
+"title": "13. Vīsatinipāto"
+},
+{
+"key": "kn-thig-13-1",
+"depth": 5,
+"rend": "subhead",
+"start": 679,
+"end": 720,
+"title": "1. Ambapālītherīgāthā"
+},
+{
+"key": "kn-thig-13-2",
+"depth": 5,
+"rend": "subhead",
+"start": 720,
+"end": 764,
+"title": "2. Rohinītherīgāthā"
+},
+{
+"key": "kn-thig-13-3",
+"depth": 5,
+"rend": "subhead",
+"start": 764,
+"end": 811,
+"title": "3. Cāpātherīgāthā"
+},
+{
+"key": "kn-thig-13-4",
+"depth": 5,
+"rend": "subhead",
+"start": 811,
+"end": 870,
+"title": "4. Sundarītherīgāthā"
+},
+{
+"key": "kn-thig-13-5",
+"depth": 5,
+"rend": "subhead",
+"start": 870,
+"end": 931,
+"title": "5. Subhākammāradhītutherīgāthā"
+},
+{
+"key": "kn-thig-14",
+"depth": 4,
+"rend": "chapter",
+"start": 931,
+"end": 1003,
+"title": "14. Tiṃsanipāto"
+},
+{
+"key": "kn-thig-14-1",
+"depth": 5,
+"rend": "subhead",
+"start": 932,
+"end": 1003,
+"title": "1. Subhājīvakambavanikātherīgāthā"
+},
+{
+"key": "kn-thig-15",
+"depth": 4,
+"rend": "chapter",
+"start": 1003,
+"end": 1103,
+"title": "15. Cattālīsanipāto"
+},
+{
+"key": "kn-thig-15-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1004,
+"end": 1103,
+"title": "1. Isidāsītherīgāthā"
+},
+{
+"key": "kn-thig-16",
+"depth": 4,
+"rend": "chapter",
+"start": 1103,
+"end": 1257,
+"title": "16. Mahānipāto"
+},
+{
+"key": "kn-thig-16-1",
+"depth": 5,
+"rend": "subhead",
+"start": 1104,
+"end": 1257,
+"title": "1. Sumedhātherīgāthā"
+}
+]

@@ -1,0 +1,138 @@
+[
+{
+"key": "kn-mn-17",
+"depth": 4,
+"rend": "title",
+"start": 3,
+"end": 4,
+"title": "1. Aṭṭhakavaggo"
+},
+{
+"key": "kn-mn-1",
+"depth": 4,
+"rend": "chapter",
+"start": 4,
+"end": 114,
+"title": "1. Kāmasuttaniddeso"
+},
+{
+"key": "kn-mn-2",
+"depth": 4,
+"rend": "chapter",
+"start": 114,
+"end": 284,
+"title": "2. Guhaṭṭhakasuttaniddeso"
+},
+{
+"key": "kn-mn-3",
+"depth": 4,
+"rend": "chapter",
+"start": 284,
+"end": 372,
+"title": "3. Duṭṭhaṭṭhakasuttaniddeso"
+},
+{
+"key": "kn-mn-4",
+"depth": 4,
+"rend": "chapter",
+"start": 372,
+"end": 469,
+"title": "4. Suddhaṭṭhakasuttaniddeso"
+},
+{
+"key": "kn-mn-5",
+"depth": 4,
+"rend": "chapter",
+"start": 469,
+"end": 546,
+"title": "5. Paramaṭṭhakasuttaniddeso"
+},
+{
+"key": "kn-mn-6",
+"depth": 4,
+"rend": "chapter",
+"start": 546,
+"end": 684,
+"title": "6. Jarāsuttaniddeso"
+},
+{
+"key": "kn-mn-7",
+"depth": 4,
+"rend": "chapter",
+"start": 684,
+"end": 791,
+"title": "7. Tissametteyyasuttaniddeso"
+},
+{
+"key": "kn-mn-8",
+"depth": 4,
+"rend": "chapter",
+"start": 791,
+"end": 901,
+"title": "8. Pasūrasuttaniddeso"
+},
+{
+"key": "kn-mn-9",
+"depth": 4,
+"rend": "chapter",
+"start": 901,
+"end": 1068,
+"title": "9. Māgaṇḍiyasuttaniddeso"
+},
+{
+"key": "kn-mn-10",
+"depth": 4,
+"rend": "chapter",
+"start": 1068,
+"end": 1252,
+"title": "10. Purābhedasuttaniddeso"
+},
+{
+"key": "kn-mn-11",
+"depth": 4,
+"rend": "chapter",
+"start": 1252,
+"end": 1419,
+"title": "11. Kalahavivādasuttaniddeso"
+},
+{
+"key": "kn-mn-12",
+"depth": 4,
+"rend": "chapter",
+"start": 1419,
+"end": 1570,
+"title": "12. Cūḷaviyūhasuttaniddeso"
+},
+{
+"key": "kn-mn-13",
+"depth": 4,
+"rend": "chapter",
+"start": 1570,
+"end": 1777,
+"title": "13. Mahāviyūhasuttaniddeso"
+},
+{
+"key": "kn-mn-14",
+"depth": 4,
+"rend": "chapter",
+"start": 1777,
+"end": 2059,
+"title": "14. Tuvaṭṭakasuttaniddeso"
+},
+{
+"key": "kn-mn-15",
+"depth": 4,
+"rend": "chapter",
+"start": 2059,
+"end": 2342,
+"title": "15. Attadaṇḍasuttaniddeso"
+},
+{
+"key": "kn-mn-16",
+"depth": 4,
+"rend": "chapter",
+"start": 2342,
+"end": 2714,
+"title": "16. Sāriputtasuttaniddeso"
+}
+]

@@ -1,0 +1,5050 @@
+[
+{
+"key": "kn-jat-1",
+"depth": 4,
+"rend": "chapter",
+"start": 4,
+"end": 700,
+"title": "1. Ekakanipāto"
+},
+{
+"key": "kn-jat-1-1",
+"depth": 5,
+"rend": "title",
+"start": 5,
+"end": 50,
+"title": "1. Apaṇṇakavaggo"
+},
+{
+"key": "kn-jat-1-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 6,
+"end": 10,
+"title": "1. Apaṇṇakajātakaṃ"
+},
+{
+"key": "kn-jat-1-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 10,
+"end": 14,
+"title": "2. Vaṇṇupathajātakaṃ"
+},
+{
+"key": "kn-jat-1-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 14,
+"end": 18,
+"title": "3. Serivavāṇijajātakaṃ"
+},
+{
+"key": "kn-jat-1-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 18,
+"end": 22,
+"title": "4. Cūḷaseṭṭhijātakaṃ"
+},
+{
+"key": "kn-jat-1-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 22,
+"end": 26,
+"title": "5. Taṇḍulanāḷijātakaṃ"
+},
+{
+"key": "kn-jat-1-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 26,
+"end": 30,
+"title": "6. Devadhammajātakaṃ"
+},
+{
+"key": "kn-jat-1-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 30,
+"end": 34,
+"title": "7. Kaṭṭhahārijātakaṃ"
+},
+{
+"key": "kn-jat-1-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 34,
+"end": 38,
+"title": "8. Gāmaṇijātakaṃ"
+},
+{
+"key": "kn-jat-1-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 38,
+"end": 42,
+"title": "9. Maghadevajātakaṃ"
+},
+{
+"key": "kn-jat-1-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 42,
+"end": 50,
+"title": "10. Sukhavihārijātakaṃ"
+},
+{
+"key": "kn-jat-1-2",
+"depth": 5,
+"rend": "title",
+"start": 50,
+"end": 97,
+"title": "2. Sīlavaggo"
+},
+{
+"key": "kn-jat-1-2-11",
+"depth": 6,
+"rend": "subhead",
+"start": 51,
+"end": 56,
+"title": "11. Lakkhaṇamigajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-12",
+"depth": 6,
+"rend": "subhead",
+"start": 56,
+"end": 60,
+"title": "12. Nigrodhamigajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-13",
+"depth": 6,
+"rend": "subhead",
+"start": 60,
+"end": 65,
+"title": "13. Kaṇḍijātakaṃ"
+},
+{
+"key": "kn-jat-1-2-14",
+"depth": 6,
+"rend": "subhead",
+"start": 65,
+"end": 69,
+"title": "14. Vātamigajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-15",
+"depth": 6,
+"rend": "subhead",
+"start": 69,
+"end": 73,
+"title": "15. Kharādiyajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-16",
+"depth": 6,
+"rend": "subhead",
+"start": 73,
+"end": 77,
+"title": "16. Tipallatthamigajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-17",
+"depth": 6,
+"rend": "subhead",
+"start": 77,
+"end": 81,
+"title": "17. Mālutajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-18",
+"depth": 6,
+"rend": "subhead",
+"start": 81,
+"end": 85,
+"title": "18. Matakabhattajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-19",
+"depth": 6,
+"rend": "subhead",
+"start": 85,
+"end": 89,
+"title": "19. Āyācitabhattajātakaṃ"
+},
+{
+"key": "kn-jat-1-2-20",
+"depth": 6,
+"rend": "subhead",
+"start": 89,
+"end": 97,
+"title": "20. Naḷapānajātakaṃ"
+},
+{
+"key": "kn-jat-1-3",
+"depth": 5,
+"rend": "title",
+"start": 97,
+"end": 143,
+"title": "3. Kuruṅgavaggo"
+},
+{
+"key": "kn-jat-1-3-21",
+"depth": 6,
+"rend": "subhead",
+"start": 98,
+"end": 102,
+"title": "21. Kuruṅgamigajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-22",
+"depth": 6,
+"rend": "subhead",
+"start": 102,
+"end": 106,
+"title": "22. Kukkurajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-23",
+"depth": 6,
+"rend": "subhead",
+"start": 106,
+"end": 110,
+"title": "23. Gojānīyajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-24",
+"depth": 6,
+"rend": "subhead",
+"start": 110,
+"end": 114,
+"title": "24. Ājaññajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-25",
+"depth": 6,
+"rend": "subhead",
+"start": 114,
+"end": 118,
+"title": "25. Titthajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-26",
+"depth": 6,
+"rend": "subhead",
+"start": 118,
+"end": 122,
+"title": "26. Mahiḷāmukhajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-27",
+"depth": 6,
+"rend": "subhead",
+"start": 122,
+"end": 126,
+"title": "27. Abhiṇhajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-28",
+"depth": 6,
+"rend": "subhead",
+"start": 126,
+"end": 131,
+"title": "28. Nandivisālajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-29",
+"depth": 6,
+"rend": "subhead",
+"start": 131,
+"end": 135,
+"title": "29. Kaṇhajātakaṃ"
+},
+{
+"key": "kn-jat-1-3-30",
+"depth": 6,
+"rend": "subhead",
+"start": 135,
+"end": 143,
+"title": "30. Munikajātakaṃ"
+},
+{
+"key": "kn-jat-1-4",
+"depth": 5,
+"rend": "title",
+"start": 143,
+"end": 188,
+"title": "4. Kulāvakavaggo"
+},
+{
+"key": "kn-jat-1-4-31",
+"depth": 6,
+"rend": "subhead",
+"start": 144,
+"end": 148,
+"title": "31. Kulāvakajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-32",
+"depth": 6,
+"rend": "subhead",
+"start": 148,
+"end": 152,
+"title": "32. Naccajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-33",
+"depth": 6,
+"rend": "subhead",
+"start": 152,
+"end": 156,
+"title": "33. Sammodamānajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-34",
+"depth": 6,
+"rend": "subhead",
+"start": 156,
+"end": 160,
+"title": "34. Macchajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-35",
+"depth": 6,
+"rend": "subhead",
+"start": 160,
+"end": 164,
+"title": "35. Vaṭṭakajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-36",
+"depth": 6,
+"rend": "subhead",
+"start": 164,
+"end": 168,
+"title": "36. Sakuṇajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-37",
+"depth": 6,
+"rend": "subhead",
+"start": 168,
+"end": 172,
+"title": "37. Tittirajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-38",
+"depth": 6,
+"rend": "subhead",
+"start": 172,
+"end": 176,
+"title": "38. Bakajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-39",
+"depth": 6,
+"rend": "subhead",
+"start": 176,
+"end": 180,
+"title": "39. Nandajātakaṃ"
+},
+{
+"key": "kn-jat-1-4-40",
+"depth": 6,
+"rend": "subhead",
+"start": 180,
+"end": 188,
+"title": "40. Khadiraṅgārajātakaṃ"
+},
+{
+"key": "kn-jat-1-5",
+"depth": 5,
+"rend": "title",
+"start": 188,
+"end": 234,
+"title": "5. Atthakāmavaggo"
+},
+{
+"key": "kn-jat-1-5-41",
+"depth": 6,
+"rend": "subhead",
+"start": 189,
+"end": 193,
+"title": "41. Losakajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-42",
+"depth": 6,
+"rend": "subhead",
+"start": 193,
+"end": 197,
+"title": "42. Kapotajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-43",
+"depth": 6,
+"rend": "subhead",
+"start": 197,
+"end": 201,
+"title": "43. Veḷukajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-44",
+"depth": 6,
+"rend": "subhead",
+"start": 201,
+"end": 205,
+"title": "44. Makasajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-45",
+"depth": 6,
+"rend": "subhead",
+"start": 205,
+"end": 209,
+"title": "45. Rohiṇijātakaṃ"
+},
+{
+"key": "kn-jat-1-5-46",
+"depth": 6,
+"rend": "subhead",
+"start": 209,
+"end": 213,
+"title": "46. Ārāmadūsakajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-47",
+"depth": 6,
+"rend": "subhead",
+"start": 213,
+"end": 217,
+"title": "47. Vāruṇidūsakajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-48",
+"depth": 6,
+"rend": "subhead",
+"start": 217,
+"end": 221,
+"title": "48. Vedabbajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-49",
+"depth": 6,
+"rend": "subhead",
+"start": 221,
+"end": 225,
+"title": "49. Nakkhattajātakaṃ"
+},
+{
+"key": "kn-jat-1-5-50",
+"depth": 6,
+"rend": "subhead",
+"start": 225,
+"end": 234,
+"title": "50. Dummedhajātakaṃ"
+},
+{
+"key": "kn-jat-1-6",
+"depth": 5,
+"rend": "title",
+"start": 234,
+"end": 281,
+"title": "6. Āsīsavaggo"
+},
+{
+"key": "kn-jat-1-6-51",
+"depth": 6,
+"rend": "subhead",
+"start": 235,
+"end": 239,
+"title": "51.Mahāsīlavajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-52",
+"depth": 6,
+"rend": "subhead",
+"start": 239,
+"end": 243,
+"title": "52. Cūḷajanakajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-53",
+"depth": 6,
+"rend": "subhead",
+"start": 243,
+"end": 247,
+"title": "53. Puṇṇapātijātakaṃ"
+},
+{
+"key": "kn-jat-1-6-54",
+"depth": 6,
+"rend": "subhead",
+"start": 247,
+"end": 251,
+"title": "54. Kiṃphalajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-55",
+"depth": 6,
+"rend": "subhead",
+"start": 251,
+"end": 256,
+"title": "55. Pañcāvudhajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-56",
+"depth": 6,
+"rend": "subhead",
+"start": 256,
+"end": 261,
+"title": "56. Kañcanakkhandhajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-57",
+"depth": 6,
+"rend": "subhead",
+"start": 261,
+"end": 265,
+"title": "57. Vānarindajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-58",
+"depth": 6,
+"rend": "subhead",
+"start": 265,
+"end": 269,
+"title": "58. Tayodhammajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-59",
+"depth": 6,
+"rend": "subhead",
+"start": 269,
+"end": 273,
+"title": "59. Bherivādakajātakaṃ"
+},
+{
+"key": "kn-jat-1-6-60",
+"depth": 6,
+"rend": "subhead",
+"start": 273,
+"end": 281,
+"title": "60. Saṅkhadhamajātakaṃ"
+},
+{
+"key": "kn-jat-1-7",
+"depth": 5,
+"rend": "title",
+"start": 281,
+"end": 327,
+"title": "7. Itthivaggo"
+},
+{
+"key": "kn-jat-1-7-61",
+"depth": 6,
+"rend": "subhead",
+"start": 282,
+"end": 287,
+"title": "61. Asātamantajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-62",
+"depth": 6,
+"rend": "subhead",
+"start": 287,
+"end": 291,
+"title": "62. Aṇḍabhūtajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-63",
+"depth": 6,
+"rend": "subhead",
+"start": 291,
+"end": 295,
+"title": "63. Takkapaṇḍitajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-64",
+"depth": 6,
+"rend": "subhead",
+"start": 295,
+"end": 299,
+"title": "64. Durājānajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-65",
+"depth": 6,
+"rend": "subhead",
+"start": 299,
+"end": 303,
+"title": "65. Anabhiratijātakaṃ"
+},
+{
+"key": "kn-jat-1-7-66",
+"depth": 6,
+"rend": "subhead",
+"start": 303,
+"end": 307,
+"title": "66. Mudulakkhaṇajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-67",
+"depth": 6,
+"rend": "subhead",
+"start": 307,
+"end": 311,
+"title": "67. Ucchaṅgajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-68",
+"depth": 6,
+"rend": "subhead",
+"start": 311,
+"end": 315,
+"title": "68. Sāketajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-69",
+"depth": 6,
+"rend": "subhead",
+"start": 315,
+"end": 319,
+"title": "69. Visavantajātakaṃ"
+},
+{
+"key": "kn-jat-1-7-70",
+"depth": 6,
+"rend": "subhead",
+"start": 319,
+"end": 327,
+"title": "70. Kuddālajātakaṃ"
+},
+{
+"key": "kn-jat-1-8",
+"depth": 5,
+"rend": "title",
+"start": 327,
+"end": 374,
+"title": "8. Varuṇavaggo"
+},
+{
+"key": "kn-jat-1-8-71",
+"depth": 6,
+"rend": "subhead",
+"start": 328,
+"end": 332,
+"title": "71. Varuṇajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-72",
+"depth": 6,
+"rend": "subhead",
+"start": 332,
+"end": 336,
+"title": "72. Sīlavahatthijātakaṃ"
+},
+{
+"key": "kn-jat-1-8-73",
+"depth": 6,
+"rend": "subhead",
+"start": 336,
+"end": 340,
+"title": "73. Saccaṃkirajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-74",
+"depth": 6,
+"rend": "subhead",
+"start": 340,
+"end": 344,
+"title": "74. Rukkhadhammajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-75",
+"depth": 6,
+"rend": "subhead",
+"start": 344,
+"end": 348,
+"title": "75. Macchajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-76",
+"depth": 6,
+"rend": "subhead",
+"start": 348,
+"end": 352,
+"title": "76. Asaṅkiyajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-77",
+"depth": 6,
+"rend": "subhead",
+"start": 352,
+"end": 358,
+"title": "77. Mahāsupinajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-78",
+"depth": 6,
+"rend": "subhead",
+"start": 358,
+"end": 362,
+"title": "78. Illisajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-79",
+"depth": 6,
+"rend": "subhead",
+"start": 362,
+"end": 366,
+"title": "79. Kharassarajātakaṃ"
+},
+{
+"key": "kn-jat-1-8-80",
+"depth": 6,
+"rend": "subhead",
+"start": 366,
+"end": 374,
+"title": "80. Bhīmasenajātakaṃ"
+},
+{
+"key": "kn-jat-1-9",
+"depth": 5,
+"rend": "title",
+"start": 374,
+"end": 420,
+"title": "9. Apāyimhavaggo"
+},
+{
+"key": "kn-jat-1-9-81",
+"depth": 6,
+"rend": "subhead",
+"start": 375,
+"end": 379,
+"title": "81. Surāpānajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-82",
+"depth": 6,
+"rend": "subhead",
+"start": 379,
+"end": 383,
+"title": "82. Mittavindakajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-83",
+"depth": 6,
+"rend": "subhead",
+"start": 383,
+"end": 388,
+"title": "83. Kālakaṇṇijātakaṃ"
+},
+{
+"key": "kn-jat-1-9-84",
+"depth": 6,
+"rend": "subhead",
+"start": 388,
+"end": 392,
+"title": "84. Atthassadvārajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-85",
+"depth": 6,
+"rend": "subhead",
+"start": 392,
+"end": 396,
+"title": "85. Kiṃpakkajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-86",
+"depth": 6,
+"rend": "subhead",
+"start": 396,
+"end": 400,
+"title": "86. Sīlavīmaṃsakajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-87",
+"depth": 6,
+"rend": "subhead",
+"start": 400,
+"end": 404,
+"title": "87. Maṅgalajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-88",
+"depth": 6,
+"rend": "subhead",
+"start": 404,
+"end": 408,
+"title": "88. Sārambhajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-89",
+"depth": 6,
+"rend": "subhead",
+"start": 408,
+"end": 412,
+"title": "89. Kuhakajātakaṃ"
+},
+{
+"key": "kn-jat-1-9-90",
+"depth": 6,
+"rend": "subhead",
+"start": 412,
+"end": 420,
+"title": "90. Akataññujātakaṃ"
+},
+{
+"key": "kn-jat-1-10",
+"depth": 5,
+"rend": "title",
+"start": 420,
+"end": 466,
+"title": "10. Littavaggo"
+},
+{
+"key": "kn-jat-1-10-91",
+"depth": 6,
+"rend": "subhead",
+"start": 421,
+"end": 425,
+"title": "91. Littajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-92",
+"depth": 6,
+"rend": "subhead",
+"start": 425,
+"end": 429,
+"title": "92. Mahāsārajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-93",
+"depth": 6,
+"rend": "subhead",
+"start": 429,
+"end": 433,
+"title": "93. Visāsabhojanajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-94",
+"depth": 6,
+"rend": "subhead",
+"start": 433,
+"end": 437,
+"title": "94. Lomahaṃsajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-95",
+"depth": 6,
+"rend": "subhead",
+"start": 437,
+"end": 441,
+"title": "95. Mahāsudassanajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-96",
+"depth": 6,
+"rend": "subhead",
+"start": 441,
+"end": 445,
+"title": "96. Telapattajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-97",
+"depth": 6,
+"rend": "subhead",
+"start": 445,
+"end": 449,
+"title": "97. Nāmasiddhijātakaṃ"
+},
+{
+"key": "kn-jat-1-10-98",
+"depth": 6,
+"rend": "subhead",
+"start": 449,
+"end": 453,
+"title": "98. Kūṭavāṇijajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-99",
+"depth": 6,
+"rend": "subhead",
+"start": 453,
+"end": 457,
+"title": "99. Parosahassajātakaṃ"
+},
+{
+"key": "kn-jat-1-10-100",
+"depth": 6,
+"rend": "subhead",
+"start": 457,
+"end": 466,
+"title": "100. Asātarūpajātakaṃ"
+},
+{
+"key": "kn-jat-1-11",
+"depth": 5,
+"rend": "title",
+"start": 466,
+"end": 512,
+"title": "11. Parosatavaggo"
+},
+{
+"key": "kn-jat-1-11-101",
+"depth": 6,
+"rend": "subhead",
+"start": 467,
+"end": 471,
+"title": "101. Parosatajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-102",
+"depth": 6,
+"rend": "subhead",
+"start": 471,
+"end": 475,
+"title": "102. Paṇṇikajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-103",
+"depth": 6,
+"rend": "subhead",
+"start": 475,
+"end": 479,
+"title": "103. Verijātakaṃ"
+},
+{
+"key": "kn-jat-1-11-104",
+"depth": 6,
+"rend": "subhead",
+"start": 479,
+"end": 484,
+"title": "104. Mittavindakajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-105",
+"depth": 6,
+"rend": "subhead",
+"start": 484,
+"end": 488,
+"title": "105. Dubbalakaṭṭhajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-106",
+"depth": 6,
+"rend": "subhead",
+"start": 488,
+"end": 492,
+"title": "106. Udañcanījātakaṃ"
+},
+{
+"key": "kn-jat-1-11-107",
+"depth": 6,
+"rend": "subhead",
+"start": 492,
+"end": 496,
+"title": "107. Sālittakajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-108",
+"depth": 6,
+"rend": "subhead",
+"start": 496,
+"end": 500,
+"title": "108. Bāhiyajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-109",
+"depth": 6,
+"rend": "subhead",
+"start": 500,
+"end": 504,
+"title": "109. Kuṇḍapūvajātakaṃ"
+},
+{
+"key": "kn-jat-1-11-110",
+"depth": 6,
+"rend": "subhead",
+"start": 504,
+"end": 512,
+"title": "110. Sabbasaṃhārakapañhajātakaṃ"
+},
+{
+"key": "kn-jat-1-12",
+"depth": 5,
+"rend": "title",
+"start": 512,
+"end": 558,
+"title": "12. Haṃcivaggo"
+},
+{
+"key": "kn-jat-1-12-111",
+"depth": 6,
+"rend": "subhead",
+"start": 513,
+"end": 517,
+"title": "111. Gadrabhapañhajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-112",
+"depth": 6,
+"rend": "subhead",
+"start": 517,
+"end": 522,
+"title": "112. Amarādevīpañhajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-113",
+"depth": 6,
+"rend": "subhead",
+"start": 522,
+"end": 526,
+"title": "113. Siṅgālajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-114",
+"depth": 6,
+"rend": "subhead",
+"start": 526,
+"end": 530,
+"title": "114. Mitacintijātakaṃ"
+},
+{
+"key": "kn-jat-1-12-115",
+"depth": 6,
+"rend": "subhead",
+"start": 530,
+"end": 534,
+"title": "115. Anusāsikajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-116",
+"depth": 6,
+"rend": "subhead",
+"start": 534,
+"end": 538,
+"title": "116. Dubbacajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-117",
+"depth": 6,
+"rend": "subhead",
+"start": 538,
+"end": 542,
+"title": "117. Tittirajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-118",
+"depth": 6,
+"rend": "subhead",
+"start": 542,
+"end": 546,
+"title": "118. Vaṭṭakajātakaṃ"
+},
+{
+"key": "kn-jat-1-12-119",
+"depth": 6,
+"rend": "subhead",
+"start": 546,
+"end": 550,
+"title": "119. Akālarāvijātakaṃ"
+},
+{
+"key": "kn-jat-1-12-120",
+"depth": 6,
+"rend": "subhead",
+"start": 550,
+"end": 558,
+"title": "120. Bandhanamokkhajātakaṃ"
+},
+{
+"key": "kn-jat-1-13",
+"depth": 5,
+"rend": "title",
+"start": 558,
+"end": 603,
+"title": "13. Kusanāḷivaggo"
+},
+{
+"key": "kn-jat-1-13-121",
+"depth": 6,
+"rend": "subhead",
+"start": 559,
+"end": 563,
+"title": "121. Kusanāḷijātakaṃ"
+},
+{
+"key": "kn-jat-1-13-122",
+"depth": 6,
+"rend": "subhead",
+"start": 563,
+"end": 567,
+"title": "122. Dummedhajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-123",
+"depth": 6,
+"rend": "subhead",
+"start": 567,
+"end": 571,
+"title": "123. Naṅgalīsajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-124",
+"depth": 6,
+"rend": "subhead",
+"start": 571,
+"end": 575,
+"title": "124. Ambajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-125",
+"depth": 6,
+"rend": "subhead",
+"start": 575,
+"end": 579,
+"title": "125. Kaṭāhakajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-126",
+"depth": 6,
+"rend": "subhead",
+"start": 579,
+"end": 583,
+"title": "126. Asilakkhaṇajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-127",
+"depth": 6,
+"rend": "subhead",
+"start": 583,
+"end": 587,
+"title": "127. Kalaṇḍukajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-128",
+"depth": 6,
+"rend": "subhead",
+"start": 587,
+"end": 591,
+"title": "128. Biḷāravatajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-129",
+"depth": 6,
+"rend": "subhead",
+"start": 591,
+"end": 595,
+"title": "129. Aggikabhāradvājajātakaṃ"
+},
+{
+"key": "kn-jat-1-13-130",
+"depth": 6,
+"rend": "subhead",
+"start": 595,
+"end": 603,
+"title": "130. Kosiyajātakaṃ"
+},
+{
+"key": "kn-jat-1-14",
+"depth": 5,
+"rend": "title",
+"start": 603,
+"end": 648,
+"title": "14. Asampadānavaggo"
+},
+{
+"key": "kn-jat-1-14-131",
+"depth": 6,
+"rend": "subhead",
+"start": 604,
+"end": 608,
+"title": "131. Asampadānajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-132",
+"depth": 6,
+"rend": "subhead",
+"start": 608,
+"end": 612,
+"title": "132. Bhīrukajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-133",
+"depth": 6,
+"rend": "subhead",
+"start": 612,
+"end": 616,
+"title": "133. Ghatāsanajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-134",
+"depth": 6,
+"rend": "subhead",
+"start": 616,
+"end": 620,
+"title": "134. Jhānasodhanajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-135",
+"depth": 6,
+"rend": "subhead",
+"start": 620,
+"end": 624,
+"title": "135. Candābhajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-136",
+"depth": 6,
+"rend": "subhead",
+"start": 624,
+"end": 628,
+"title": "136. Suvaṇṇahaṃsajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-137",
+"depth": 6,
+"rend": "subhead",
+"start": 628,
+"end": 632,
+"title": "137. Babbujātakaṃ"
+},
+{
+"key": "kn-jat-1-14-138",
+"depth": 6,
+"rend": "subhead",
+"start": 632,
+"end": 636,
+"title": "138. Godhajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-139",
+"depth": 6,
+"rend": "subhead",
+"start": 636,
+"end": 640,
+"title": "139. Ubhatobhaṭṭhajātakaṃ"
+},
+{
+"key": "kn-jat-1-14-140",
+"depth": 6,
+"rend": "subhead",
+"start": 640,
+"end": 648,
+"title": "140. Kākajātakaṃ"
+},
+{
+"key": "kn-jat-1-15",
+"depth": 5,
+"rend": "title",
+"start": 648,
+"end": 700,
+"title": "15. Kakaṇṭakavaggo"
+},
+{
+"key": "kn-jat-1-15-141",
+"depth": 6,
+"rend": "subhead",
+"start": 649,
+"end": 653,
+"title": "141. Godhajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-142",
+"depth": 6,
+"rend": "subhead",
+"start": 653,
+"end": 657,
+"title": "142. Siṅgālajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-143",
+"depth": 6,
+"rend": "subhead",
+"start": 657,
+"end": 661,
+"title": "143. Virocajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-144",
+"depth": 6,
+"rend": "subhead",
+"start": 661,
+"end": 665,
+"title": "144. Naṅguṭṭhajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-145",
+"depth": 6,
+"rend": "subhead",
+"start": 665,
+"end": 669,
+"title": "145. Rādhajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-146",
+"depth": 6,
+"rend": "subhead",
+"start": 669,
+"end": 673,
+"title": "146. Samuddakākajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-147",
+"depth": 6,
+"rend": "subhead",
+"start": 673,
+"end": 677,
+"title": "147. Puppharattajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-148",
+"depth": 6,
+"rend": "subhead",
+"start": 677,
+"end": 681,
+"title": "148. Siṅgālajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-149",
+"depth": 6,
+"rend": "subhead",
+"start": 681,
+"end": 685,
+"title": "149. Ekapaṇṇajātakaṃ"
+},
+{
+"key": "kn-jat-1-15-150",
+"depth": 6,
+"rend": "subhead",
+"start": 685,
+"end": 700,
+"title": "150. Sañjīvajātakaṃ"
+},
+{
+"key": "kn-jat-2",
+"depth": 4,
+"rend": "chapter",
+"start": 700,
+"end": 1391,
+"title": "2. Dukanipāto"
+},
+{
+"key": "kn-jat-2-1",
+"depth": 5,
+"rend": "title",
+"start": 701,
+"end": 776,
+"title": "1. Daḷhavaggo"
+},
+{
+"key": "kn-jat-2-1-151",
+"depth": 6,
+"rend": "subhead",
+"start": 702,
+"end": 710,
+"title": "151. Rājovādajātakaṃ (2-1-1)"
+},
+{
+"key": "kn-jat-2-1-152",
+"depth": 6,
+"rend": "subhead",
+"start": 710,
+"end": 716,
+"title": "152. Asamekkhitakammantaṃ, turitābhinipātinaṃ."
+},
+{
+"key": "kn-jat-2-1-153",
+"depth": 6,
+"rend": "subhead",
+"start": 716,
+"end": 722,
+"title": "153. Sūkarajātakaṃ (2-1-3)"
+},
+{
+"key": "kn-jat-2-1-154",
+"depth": 6,
+"rend": "subhead",
+"start": 722,
+"end": 728,
+"title": "154. Uragajātaka (2-1-4)"
+},
+{
+"key": "kn-jat-2-1-155",
+"depth": 6,
+"rend": "subhead",
+"start": 728,
+"end": 734,
+"title": "155. Bhaggajātakaṃ (2-1-5)"
+},
+{
+"key": "kn-jat-2-1-156",
+"depth": 6,
+"rend": "subhead",
+"start": 734,
+"end": 741,
+"title": "156. Alīnacittajātakaṃ (2-1-6)"
+},
+{
+"key": "kn-jat-2-1-157",
+"depth": 6,
+"rend": "subhead",
+"start": 741,
+"end": 748,
+"title": "157. Guṇajātakaṃ (2-1-7)"
+},
+{
+"key": "kn-jat-2-1-158",
+"depth": 6,
+"rend": "subhead",
+"start": 748,
+"end": 754,
+"title": "158. Suhanujātakaṃ (2-1-8)"
+},
+{
+"key": "kn-jat-2-1-159",
+"depth": 6,
+"rend": "subhead",
+"start": 754,
+"end": 766,
+"title": "159. Morajātakaṃ (2-1-9)"
+},
+{
+"key": "kn-jat-2-1-160",
+"depth": 6,
+"rend": "subhead",
+"start": 766,
+"end": 776,
+"title": "160. Vinīlajātakaṃ (2-1-10)"
+},
+{
+"key": "kn-jat-2-2",
+"depth": 5,
+"rend": "title",
+"start": 776,
+"end": 841,
+"title": "2. Santhavavaggo"
+},
+{
+"key": "kn-jat-2-2-161",
+"depth": 6,
+"rend": "subhead",
+"start": 777,
+"end": 783,
+"title": "161. Indasamānagottajātakaṃ (2-2-1)"
+},
+{
+"key": "kn-jat-2-2-162",
+"depth": 6,
+"rend": "subhead",
+"start": 783,
+"end": 789,
+"title": "162. Santhavajātakaṃ (2-2-2)"
+},
+{
+"key": "kn-jat-2-2-163",
+"depth": 6,
+"rend": "subhead",
+"start": 789,
+"end": 795,
+"title": "163. Susīmajātakaṃ (2-2-3)"
+},
+{
+"key": "kn-jat-2-2-164",
+"depth": 6,
+"rend": "subhead",
+"start": 795,
+"end": 801,
+"title": "164. Gijjhajātakaṃ (2-2-4)"
+},
+{
+"key": "kn-jat-2-2-165",
+"depth": 6,
+"rend": "subhead",
+"start": 801,
+"end": 807,
+"title": "165. Nakulajātakaṃ (2-2-5)"
+},
+{
+"key": "kn-jat-2-2-166",
+"depth": 6,
+"rend": "subhead",
+"start": 807,
+"end": 813,
+"title": "166. Upasāḷakajātakaṃ (2-2-6)"
+},
+{
+"key": "kn-jat-2-2-167",
+"depth": 6,
+"rend": "subhead",
+"start": 813,
+"end": 819,
+"title": "167. Samiddhijātakaṃ (2-2-7)"
+},
+{
+"key": "kn-jat-2-2-168",
+"depth": 6,
+"rend": "subhead",
+"start": 819,
+"end": 825,
+"title": "168. Sakuṇagghijātakaṃ (2-2-8)"
+},
+{
+"key": "kn-jat-2-2-169",
+"depth": 6,
+"rend": "subhead",
+"start": 825,
+"end": 831,
+"title": "169. Arakajātakaṃ (2-2-9)"
+},
+{
+"key": "kn-jat-2-2-170",
+"depth": 6,
+"rend": "subhead",
+"start": 831,
+"end": 841,
+"title": "170. Kakaṇṭakajātakaṃ (2-2-10)"
+},
+{
+"key": "kn-jat-2-3",
+"depth": 5,
+"rend": "title",
+"start": 841,
+"end": 908,
+"title": "3. Kalyāṇavaggo"
+},
+{
+"key": "kn-jat-2-3-171",
+"depth": 6,
+"rend": "subhead",
+"start": 842,
+"end": 848,
+"title": "171. Kalyāṇadhammajātakaṃ (2-3-1)"
+},
+{
+"key": "kn-jat-2-3-172",
+"depth": 6,
+"rend": "subhead",
+"start": 848,
+"end": 854,
+"title": "172. Daddarajātakaṃ (2-3-2)"
+},
+{
+"key": "kn-jat-2-3-173",
+"depth": 6,
+"rend": "subhead",
+"start": 854,
+"end": 860,
+"title": "173. Makkaṭajātakaṃ (2-3-3)"
+},
+{
+"key": "kn-jat-2-3-174",
+"depth": 6,
+"rend": "subhead",
+"start": 860,
+"end": 866,
+"title": "174. Dubbhiyamakkaṭajātakaṃ (2-3-4)"
+},
+{
+"key": "kn-jat-2-3-175",
+"depth": 6,
+"rend": "subhead",
+"start": 866,
+"end": 872,
+"title": "175. Ādiccupaṭṭhānajātakaṃ (2-3-5)"
+},
+{
+"key": "kn-jat-2-3-176",
+"depth": 6,
+"rend": "subhead",
+"start": 872,
+"end": 878,
+"title": "176. Kaḷāyamuṭṭhijātakaṃ (2-3-6)"
+},
+{
+"key": "kn-jat-2-3-177",
+"depth": 6,
+"rend": "subhead",
+"start": 878,
+"end": 884,
+"title": "177. Tindukajātakaṃ (2-3-7)"
+},
+{
+"key": "kn-jat-2-3-178",
+"depth": 6,
+"rend": "subhead",
+"start": 884,
+"end": 892,
+"title": "178. Kacchapajātakaṃ (2-3-8)"
+},
+{
+"key": "kn-jat-2-3-179",
+"depth": 6,
+"rend": "subhead",
+"start": 892,
+"end": 898,
+"title": "179. Satadhammajātakaṃ (2-3-9)"
+},
+{
+"key": "kn-jat-2-3-180",
+"depth": 6,
+"rend": "subhead",
+"start": 898,
+"end": 908,
+"title": "180. Duddadajātakaṃ (2-3-10)"
+},
+{
+"key": "kn-jat-2-4",
+"depth": 5,
+"rend": "title",
+"start": 908,
+"end": 977,
+"title": "4. Asadisavaggo"
+},
+{
+"key": "kn-jat-2-4-181",
+"depth": 6,
+"rend": "subhead",
+"start": 909,
+"end": 915,
+"title": "181. Asadisajātakaṃ (2-4-1)"
+},
+{
+"key": "kn-jat-2-4-182",
+"depth": 6,
+"rend": "subhead",
+"start": 915,
+"end": 921,
+"title": "182. Saṅgāmāvacarajātakaṃ (2-4-2)"
+},
+{
+"key": "kn-jat-2-4-183",
+"depth": 6,
+"rend": "subhead",
+"start": 921,
+"end": 927,
+"title": "183. Vālodakajātakaṃ (2-4-3)"
+},
+{
+"key": "kn-jat-2-4-184",
+"depth": 6,
+"rend": "subhead",
+"start": 927,
+"end": 934,
+"title": "184. Giridattajātakaṃ (2-4-4)"
+},
+{
+"key": "kn-jat-2-4-185",
+"depth": 6,
+"rend": "subhead",
+"start": 934,
+"end": 942,
+"title": "185. Anabhiratijātakaṃ (2-4-5)"
+},
+{
+"key": "kn-jat-2-4-186",
+"depth": 6,
+"rend": "subhead",
+"start": 942,
+"end": 949,
+"title": "186. Dadhivāhanajātakaṃ (2-4-6)"
+},
+{
+"key": "kn-jat-2-4-187",
+"depth": 6,
+"rend": "subhead",
+"start": 949,
+"end": 955,
+"title": "187. Catumaṭṭhajātakaṃ (2-4-7)"
+},
+{
+"key": "kn-jat-2-4-188",
+"depth": 6,
+"rend": "subhead",
+"start": 955,
+"end": 961,
+"title": "188. Sīhakotthujātakaṃ (2-4-8)"
+},
+{
+"key": "kn-jat-2-4-189",
+"depth": 6,
+"rend": "subhead",
+"start": 961,
+"end": 967,
+"title": "189. Sīhacammajātakaṃ (2-4-9)"
+},
+{
+"key": "kn-jat-2-4-190",
+"depth": 6,
+"rend": "subhead",
+"start": 967,
+"end": 977,
+"title": "190. Sīlānisaṃsajātakaṃ (2-4-10)"
+},
+{
+"key": "kn-jat-2-5",
+"depth": 5,
+"rend": "title",
+"start": 977,
+"end": 1043,
+"title": "5. Ruhakavaggo"
+},
+{
+"key": "kn-jat-2-5-191",
+"depth": 6,
+"rend": "subhead",
+"start": 978,
+"end": 984,
+"title": "191. Ruhakajātakaṃ (2-5-1)"
+},
+{
+"key": "kn-jat-2-5-192",
+"depth": 6,
+"rend": "subhead",
+"start": 984,
+"end": 990,
+"title": "192. Sirikāḷakaṇṇijātakaṃ (2-5-2)"
+},
+{
+"key": "kn-jat-2-5-193",
+"depth": 6,
+"rend": "subhead",
+"start": 990,
+"end": 996,
+"title": "193. Cūḷapadumajātakaṃ (2-5-3)"
+},
+{
+"key": "kn-jat-2-5-194",
+"depth": 6,
+"rend": "subhead",
+"start": 996,
+"end": 1002,
+"title": "194. Maṇicorajātakaṃ (2-5-4)"
+},
+{
+"key": "kn-jat-2-5-195",
+"depth": 6,
+"rend": "subhead",
+"start": 1002,
+"end": 1008,
+"title": "195. Pabbatūpattharajātakaṃ (2-5-5)"
+},
+{
+"key": "kn-jat-2-5-196",
+"depth": 6,
+"rend": "subhead",
+"start": 1008,
+"end": 1014,
+"title": "196. Valāhakassajātakaṃ (2-5-6)"
+},
+{
+"key": "kn-jat-2-5-197",
+"depth": 6,
+"rend": "subhead",
+"start": 1014,
+"end": 1020,
+"title": "197. Mittāmittajātakaṃ (2-5-7)"
+},
+{
+"key": "kn-jat-2-5-198",
+"depth": 6,
+"rend": "subhead",
+"start": 1020,
+"end": 1026,
+"title": "198. Rādhajātakaṃ (2-5-8)"
+},
+{
+"key": "kn-jat-2-5-199",
+"depth": 6,
+"rend": "subhead",
+"start": 1026,
+"end": 1033,
+"title": "199. Gahapatijātakaṃ (2-5-9)"
+},
+{
+"key": "kn-jat-2-5-200",
+"depth": 6,
+"rend": "subhead",
+"start": 1033,
+"end": 1043,
+"title": "200. Sādhusīlajātakaṃ (2-5-10)"
+},
+{
+"key": "kn-jat-2-6",
+"depth": 5,
+"rend": "title",
+"start": 1043,
+"end": 1118,
+"title": "6. Nataṃdaḷhavaggo"
+},
+{
+"key": "kn-jat-2-6-201",
+"depth": 6,
+"rend": "subhead",
+"start": 1044,
+"end": 1050,
+"title": "201. Bandhanāgārajātakaṃ (2-6-1)"
+},
+{
+"key": "kn-jat-2-6-202",
+"depth": 6,
+"rend": "subhead",
+"start": 1050,
+"end": 1056,
+"title": "202. Keḷisīlajātakaṃ (2-6-2)"
+},
+{
+"key": "kn-jat-2-6-203",
+"depth": 6,
+"rend": "subhead",
+"start": 1056,
+"end": 1071,
+"title": "203. Khaṇḍajātakaṃ (2-6-3)"
+},
+{
+"key": "kn-jat-2-6-204",
+"depth": 6,
+"rend": "subhead",
+"start": 1071,
+"end": 1077,
+"title": "204. Vīrakajātakaṃ (2-6-4)"
+},
+{
+"key": "kn-jat-2-6-205",
+"depth": 6,
+"rend": "subhead",
+"start": 1077,
+"end": 1084,
+"title": "205. Gaṅgeyyajātakaṃ (2-6-5)"
+},
+{
+"key": "kn-jat-2-6-206",
+"depth": 6,
+"rend": "subhead",
+"start": 1084,
+"end": 1090,
+"title": "206. Kuruṅgamigajātakaṃ (2-6-6)"
+},
+{
+"key": "kn-jat-2-6-207",
+"depth": 6,
+"rend": "subhead",
+"start": 1090,
+"end": 1096,
+"title": "207. Assakajātakaṃ (2-6-7)"
+},
+{
+"key": "kn-jat-2-6-208",
+"depth": 6,
+"rend": "subhead",
+"start": 1096,
+"end": 1102,
+"title": "208. Susumārajātakaṃ (2-6-8)"
+},
+{
+"key": "kn-jat-2-6-209",
+"depth": 6,
+"rend": "subhead",
+"start": 1102,
+"end": 1108,
+"title": "209. Kukkuṭajātakaṃ (2-6-9)"
+},
+{
+"key": "kn-jat-2-6-210",
+"depth": 6,
+"rend": "subhead",
+"start": 1108,
+"end": 1118,
+"title": "210. Kandagalakajātakaṃ (2-6-10)"
+},
+{
+"key": "kn-jat-2-7",
+"depth": 5,
+"rend": "title",
+"start": 1118,
+"end": 1185,
+"title": "7. Bīraṇathambhavaggo"
+},
+{
+"key": "kn-jat-2-7-211",
+"depth": 6,
+"rend": "subhead",
+"start": 1119,
+"end": 1125,
+"title": "211. Somadattajātakaṃ (2-7-1)"
+},
+{
+"key": "kn-jat-2-7-212",
+"depth": 6,
+"rend": "subhead",
+"start": 1125,
+"end": 1131,
+"title": "212. Ucchiṭṭhabhattajātakaṃ (2-7-2)"
+},
+{
+"key": "kn-jat-2-7-213",
+"depth": 6,
+"rend": "subhead",
+"start": 1131,
+"end": 1137,
+"title": "213. Bharujātakaṃ (2-7-3)"
+},
+{
+"key": "kn-jat-2-7-214",
+"depth": 6,
+"rend": "subhead",
+"start": 1137,
+"end": 1143,
+"title": "214. Puṇṇanadījātakaṃ (2-7-4)"
+},
+{
+"key": "kn-jat-2-7-215",
+"depth": 6,
+"rend": "subhead",
+"start": 1143,
+"end": 1149,
+"title": "215. Kacchapajātakaṃ (2-7-5)"
+},
+{
+"key": "kn-jat-2-7-216",
+"depth": 6,
+"rend": "subhead",
+"start": 1149,
+"end": 1155,
+"title": "216. Macchajātakaṃ (2-7-6)"
+},
+{
+"key": "kn-jat-2-7-217",
+"depth": 6,
+"rend": "subhead",
+"start": 1155,
+"end": 1161,
+"title": "217. Seggujātakaṃ (2-7-7)"
+},
+{
+"key": "kn-jat-2-7-218",
+"depth": 6,
+"rend": "subhead",
+"start": 1161,
+"end": 1167,
+"title": "218. Kūṭavāṇijajātakaṃ (2-7-8)"
+},
+{
+"key": "kn-jat-2-7-219",
+"depth": 6,
+"rend": "subhead",
+"start": 1167,
+"end": 1174,
+"title": "219. Garahitajātakaṃ (2-7-9)"
+},
+{
+"key": "kn-jat-2-7-220",
+"depth": 6,
+"rend": "subhead",
+"start": 1174,
+"end": 1185,
+"title": "220. Dhammadhajajātakaṃ (2-7-10)"
+},
+{
+"key": "kn-jat-2-8",
+"depth": 5,
+"rend": "title",
+"start": 1185,
+"end": 1253,
+"title": "8. Kāsāvavaggo"
+},
+{
+"key": "kn-jat-2-8-221",
+"depth": 6,
+"rend": "subhead",
+"start": 1186,
+"end": 1192,
+"title": "221. Kāsāvajātakaṃ (2-8-1)"
+},
+{
+"key": "kn-jat-2-8-222",
+"depth": 6,
+"rend": "subhead",
+"start": 1192,
+"end": 1199,
+"title": "222. Cūḷanandiyajātakaṃ (2-8-2)"
+},
+{
+"key": "kn-jat-2-8-223",
+"depth": 6,
+"rend": "subhead",
+"start": 1199,
+"end": 1205,
+"title": "223. Puṭabhattajātakaṃ (2-8-3)"
+},
+{
+"key": "kn-jat-2-8-224",
+"depth": 6,
+"rend": "subhead",
+"start": 1205,
+"end": 1211,
+"title": "224. Kumbhilajātakaṃ (2-8-4)"
+},
+{
+"key": "kn-jat-2-8-225",
+"depth": 6,
+"rend": "subhead",
+"start": 1211,
+"end": 1217,
+"title": "225. Khantivaṇṇajātakaṃ (2-8-5)"
+},
+{
+"key": "kn-jat-2-8-226",
+"depth": 6,
+"rend": "subhead",
+"start": 1217,
+"end": 1224,
+"title": "226. Kosiyajātakaṃ (2-8-6)"
+},
+{
+"key": "kn-jat-2-8-227",
+"depth": 6,
+"rend": "subhead",
+"start": 1224,
+"end": 1231,
+"title": "227. Gūthapāṇajātakaṃ (2-8-7)"
+},
+{
+"key": "kn-jat-2-8-228",
+"depth": 6,
+"rend": "subhead",
+"start": 1231,
+"end": 1237,
+"title": "228. Kāmanītajātakaṃ (2-8-8)"
+},
+{
+"key": "kn-jat-2-8-229",
+"depth": 6,
+"rend": "subhead",
+"start": 1237,
+"end": 1243,
+"title": "229. Palāyitajātakaṃ (2-8-9)"
+},
+{
+"key": "kn-jat-2-8-230",
+"depth": 6,
+"rend": "subhead",
+"start": 1243,
+"end": 1253,
+"title": "230. Dutiyapalāyitajātakaṃ (2-8-10)"
+},
+{
+"key": "kn-jat-2-9",
+"depth": 5,
+"rend": "title",
+"start": 1253,
+"end": 1322,
+"title": "9. Upāhanavaggo"
+},
+{
+"key": "kn-jat-2-9-231",
+"depth": 6,
+"rend": "subhead",
+"start": 1254,
+"end": 1260,
+"title": "231. Upāhanajātakaṃ (2-9-1)"
+},
+{
+"key": "kn-jat-2-9-232",
+"depth": 6,
+"rend": "subhead",
+"start": 1260,
+"end": 1266,
+"title": "232. Vīṇāguṇajātakaṃ (2-9-2)"
+},
+{
+"key": "kn-jat-2-9-233",
+"depth": 6,
+"rend": "subhead",
+"start": 1266,
+"end": 1272,
+"title": "233. Vikaṇṇajātakaṃ (2-9-3)"
+},
+{
+"key": "kn-jat-2-9-234",
+"depth": 6,
+"rend": "subhead",
+"start": 1272,
+"end": 1278,
+"title": "234. Asitābhūjātakaṃ (2-9-4)"
+},
+{
+"key": "kn-jat-2-9-235",
+"depth": 6,
+"rend": "subhead",
+"start": 1278,
+"end": 1285,
+"title": "235. Vacchanakhajātakaṃ (2-9-5)"
+},
+{
+"key": "kn-jat-2-9-236",
+"depth": 6,
+"rend": "subhead",
+"start": 1285,
+"end": 1291,
+"title": "236. Bakajātakaṃ (2-9-6)"
+},
+{
+"key": "kn-jat-2-9-237",
+"depth": 6,
+"rend": "subhead",
+"start": 1291,
+"end": 1297,
+"title": "237. Sāketajātakaṃ (2-9-7)"
+},
+{
+"key": "kn-jat-2-9-238",
+"depth": 6,
+"rend": "subhead",
+"start": 1297,
+"end": 1304,
+"title": "238. Ekapadajātakaṃ (2-9-8)"
+},
+{
+"key": "kn-jat-2-9-239",
+"depth": 6,
+"rend": "subhead",
+"start": 1304,
+"end": 1310,
+"title": "239. Haritamaṇḍūkajātakaṃ (2-9-9)"
+},
+{
+"key": "kn-jat-2-9-240",
+"depth": 6,
+"rend": "subhead",
+"start": 1310,
+"end": 1322,
+"title": "240. Mahāpiṅgalajātakaṃ (2-9-10)"
+},
+{
+"key": "kn-jat-2-10",
+"depth": 5,
+"rend": "title",
+"start": 1322,
+"end": 1391,
+"title": "10. Siṅgālavaggo"
+},
+{
+"key": "kn-jat-2-10-241",
+"depth": 6,
+"rend": "subhead",
+"start": 1323,
+"end": 1329,
+"title": "241. Sabbadāṭhijātakaṃ (2-10-1)"
+},
+{
+"key": "kn-jat-2-10-242",
+"depth": 6,
+"rend": "subhead",
+"start": 1329,
+"end": 1335,
+"title": "242. Sunakhajātakaṃ (2-10-2)"
+},
+{
+"key": "kn-jat-2-10-243",
+"depth": 6,
+"rend": "subhead",
+"start": 1335,
+"end": 1341,
+"title": "243. Guttilajātakaṃ (2-10-3)"
+},
+{
+"key": "kn-jat-2-10-244",
+"depth": 6,
+"rend": "subhead",
+"start": 1341,
+"end": 1347,
+"title": "244. Vigaticchajātakaṃ (2-10-4)"
+},
+{
+"key": "kn-jat-2-10-245",
+"depth": 6,
+"rend": "subhead",
+"start": 1347,
+"end": 1353,
+"title": "245. Mūlapariyāyajātakaṃ (2-10-5)"
+},
+{
+"key": "kn-jat-2-10-246",
+"depth": 6,
+"rend": "subhead",
+"start": 1353,
+"end": 1359,
+"title": "246. Bālovādajātakaṃ (2-10-6)"
+},
+{
+"key": "kn-jat-2-10-247",
+"depth": 6,
+"rend": "subhead",
+"start": 1359,
+"end": 1365,
+"title": "247. Pādañjalījātakaṃ (2-10-7)"
+},
+{
+"key": "kn-jat-2-10-248",
+"depth": 6,
+"rend": "subhead",
+"start": 1365,
+"end": 1371,
+"title": "248. Kiṃsukopamajātakaṃ (2-10-8)"
+},
+{
+"key": "kn-jat-2-10-249",
+"depth": 6,
+"rend": "subhead",
+"start": 1371,
+"end": 1377,
+"title": "249. Sālakajātakaṃ (2-10-9)"
+},
+{
+"key": "kn-jat-2-10-250",
+"depth": 6,
+"rend": "subhead",
+"start": 1377,
+"end": 1391,
+"title": "250. Kapijātakaṃ (2-10-10)"
+},
+{
+"key": "kn-jat-3",
+"depth": 4,
+"rend": "chapter",
+"start": 1391,
+"end": 1825,
+"title": "3. Tikanipāto"
+},
+{
+"key": "kn-jat-3-1",
+"depth": 5,
+"rend": "title",
+"start": 1392,
+"end": 1478,
+"title": "1. Saṅkappavaggo"
+},
+{
+"key": "kn-jat-3-1-251",
+"depth": 6,
+"rend": "subhead",
+"start": 1393,
+"end": 1401,
+"title": "251. Saṅkapparāgajātakaṃ (3-1-1)"
+},
+{
+"key": "kn-jat-3-1-252",
+"depth": 6,
+"rend": "subhead",
+"start": 1401,
+"end": 1409,
+"title": "252. Tilamuṭṭhijātakaṃ (3-1-2)"
+},
+{
+"key": "kn-jat-3-1-253",
+"depth": 6,
+"rend": "subhead",
+"start": 1409,
+"end": 1417,
+"title": "253. Maṇikaṇṭhajātakaṃ (3-1-3)"
+},
+{
+"key": "kn-jat-3-1-254",
+"depth": 6,
+"rend": "subhead",
+"start": 1417,
+"end": 1425,
+"title": "254. Kuṇḍakakucchisindhavajātakaṃ (3-1-4)"
+},
+{
+"key": "kn-jat-3-1-255",
+"depth": 6,
+"rend": "subhead",
+"start": 1425,
+"end": 1433,
+"title": "255. Sukajātakaṃ (3-1-5)"
+},
+{
+"key": "kn-jat-3-1-256",
+"depth": 6,
+"rend": "subhead",
+"start": 1433,
+"end": 1442,
+"title": "256. Jarūdapānajātakaṃ (3-1-6)"
+},
+{
+"key": "kn-jat-3-1-257",
+"depth": 6,
+"rend": "subhead",
+"start": 1442,
+"end": 1450,
+"title": "257. Gāmaṇicandajātakaṃ (3-1-7)"
+},
+{
+"key": "kn-jat-3-1-258",
+"depth": 6,
+"rend": "subhead",
+"start": 1450,
+"end": 1458,
+"title": "258. Mandhātujātakaṃ (3-1-8)"
+},
+{
+"key": "kn-jat-3-1-259",
+"depth": 6,
+"rend": "subhead",
+"start": 1458,
+"end": 1466,
+"title": "259. Tirīṭavacchajātakaṃ (3-1-9)"
+},
+{
+"key": "kn-jat-3-1-260",
+"depth": 6,
+"rend": "subhead",
+"start": 1466,
+"end": 1478,
+"title": "260. Dūtajātakaṃ (3-1-10)"
+},
+{
+"key": "kn-jat-3-2",
+"depth": 5,
+"rend": "title",
+"start": 1478,
+"end": 1564,
+"title": "2. Padumavaggo"
+},
+{
+"key": "kn-jat-3-2-261",
+"depth": 6,
+"rend": "subhead",
+"start": 1479,
+"end": 1488,
+"title": "261. Padumajātakaṃ (3-2-1)"
+},
+{
+"key": "kn-jat-3-2-262",
+"depth": 6,
+"rend": "subhead",
+"start": 1488,
+"end": 1496,
+"title": "262. Mudupāṇijātakaṃ (3-2-2)"
+},
+{
+"key": "kn-jat-3-2-263",
+"depth": 6,
+"rend": "subhead",
+"start": 1496,
+"end": 1504,
+"title": "263. Cūḷapalobhanajātakaṃ (3-2-3)"
+},
+{
+"key": "kn-jat-3-2-264",
+"depth": 6,
+"rend": "subhead",
+"start": 1504,
+"end": 1512,
+"title": "264. Mahāpanādajātakaṃ (3-2-4)"
+},
+{
+"key": "kn-jat-3-2-265",
+"depth": 6,
+"rend": "subhead",
+"start": 1512,
+"end": 1520,
+"title": "265. Khurappajātakaṃ (3-2-5)"
+},
+{
+"key": "kn-jat-3-2-266",
+"depth": 6,
+"rend": "subhead",
+"start": 1520,
+"end": 1528,
+"title": "266. Vātaggasindhavajātakaṃ (3-2-6)"
+},
+{
+"key": "kn-jat-3-2-267",
+"depth": 6,
+"rend": "subhead",
+"start": 1528,
+"end": 1536,
+"title": "267. Kakkaṭakajātakaṃ (3-2-7)"
+},
+{
+"key": "kn-jat-3-2-268",
+"depth": 6,
+"rend": "subhead",
+"start": 1536,
+"end": 1544,
+"title": "268. Ārāmadūsakajātakaṃ (3-2-8)"
+},
+{
+"key": "kn-jat-3-2-269",
+"depth": 6,
+"rend": "subhead",
+"start": 1544,
+"end": 1552,
+"title": "269. Sujātajātakaṃ (3-2-9)"
+},
+{
+"key": "kn-jat-3-2-270",
+"depth": 6,
+"rend": "subhead",
+"start": 1552,
+"end": 1564,
+"title": "270. Ulūkajātakaṃ (3-2-10)"
+},
+{
+"key": "kn-jat-3-3",
+"depth": 5,
+"rend": "title",
+"start": 1564,
+"end": 1650,
+"title": "3. Udapānavaggo"
+},
+{
+"key": "kn-jat-3-3-271",
+"depth": 6,
+"rend": "subhead",
+"start": 1565,
+"end": 1573,
+"title": "271. Udapānadūsakajātakaṃ (3-3-1)"
+},
+{
+"key": "kn-jat-3-3-272",
+"depth": 6,
+"rend": "subhead",
+"start": 1573,
+"end": 1581,
+"title": "272. Byagghajātakaṃ (3-3-2)"
+},
+{
+"key": "kn-jat-3-3-273",
+"depth": 6,
+"rend": "subhead",
+"start": 1581,
+"end": 1589,
+"title": "273. Kacchapajātakaṃ (3-3-3)"
+},
+{
+"key": "kn-jat-3-3-274",
+"depth": 6,
+"rend": "subhead",
+"start": 1589,
+"end": 1597,
+"title": "274. Lolajātakaṃ (3-3-4)"
+},
+{
+"key": "kn-jat-3-3-275",
+"depth": 6,
+"rend": "subhead",
+"start": 1597,
+"end": 1605,
+"title": "275. Rucirajātakaṃ (3-3-5)"
+},
+{
+"key": "kn-jat-3-3-276",
+"depth": 6,
+"rend": "subhead",
+"start": 1605,
+"end": 1613,
+"title": "276. Kurudhammajātakaṃ (3-3-6)"
+},
+{
+"key": "kn-jat-3-3-277",
+"depth": 6,
+"rend": "subhead",
+"start": 1613,
+"end": 1621,
+"title": "277. Romakajātakaṃ (3-3-7)"
+},
+{
+"key": "kn-jat-3-3-278",
+"depth": 6,
+"rend": "subhead",
+"start": 1621,
+"end": 1629,
+"title": "278. Mahiṃsarājajātakaṃ (3-3-8)"
+},
+{
+"key": "kn-jat-3-3-279",
+"depth": 6,
+"rend": "subhead",
+"start": 1629,
+"end": 1638,
+"title": "279. Satapattajātakaṃ (3-3-9)"
+},
+{
+"key": "kn-jat-3-3-280",
+"depth": 6,
+"rend": "subhead",
+"start": 1638,
+"end": 1650,
+"title": "280. Puṭadūsakajātakaṃ (3-3-10)"
+},
+{
+"key": "kn-jat-3-4",
+"depth": 5,
+"rend": "title",
+"start": 1650,
+"end": 1736,
+"title": "4. Abbhantaravaggo"
+},
+{
+"key": "kn-jat-3-4-281",
+"depth": 6,
+"rend": "subhead",
+"start": 1651,
+"end": 1659,
+"title": "281. Abbhantarajātakaṃ (3-4-1)"
+},
+{
+"key": "kn-jat-3-4-282",
+"depth": 6,
+"rend": "subhead",
+"start": 1659,
+"end": 1667,
+"title": "282. Seyyajātakaṃ (3-4-2)"
+},
+{
+"key": "kn-jat-3-4-283",
+"depth": 6,
+"rend": "subhead",
+"start": 1667,
+"end": 1675,
+"title": "283. Vaḍḍhakīsūkarajātakaṃ (3-4-3)"
+},
+{
+"key": "kn-jat-3-4-284",
+"depth": 6,
+"rend": "subhead",
+"start": 1675,
+"end": 1683,
+"title": "284. Sirijātakaṃ (3-4-4)"
+},
+{
+"key": "kn-jat-3-4-285",
+"depth": 6,
+"rend": "subhead",
+"start": 1683,
+"end": 1691,
+"title": "285. Maṇisūkarajātakaṃ (3-4-5)"
+},
+{
+"key": "kn-jat-3-4-286",
+"depth": 6,
+"rend": "subhead",
+"start": 1691,
+"end": 1699,
+"title": "286. Sālūkajātakaṃ (3-4-6)"
+},
+{
+"key": "kn-jat-3-4-287",
+"depth": 6,
+"rend": "subhead",
+"start": 1699,
+"end": 1707,
+"title": "287. Lābhagarahajātakaṃ (3-4-7)"
+},
+{
+"key": "kn-jat-3-4-288",
+"depth": 6,
+"rend": "subhead",
+"start": 1707,
+"end": 1715,
+"title": "288. Macchuddānajātakaṃ (3-4-8)"
+},
+{
+"key": "kn-jat-3-4-289",
+"depth": 6,
+"rend": "subhead",
+"start": 1715,
+"end": 1724,
+"title": "289. Nānāchandajātakaṃ (3-4-9)"
+},
+{
+"key": "kn-jat-3-4-290",
+"depth": 6,
+"rend": "subhead",
+"start": 1724,
+"end": 1736,
+"title": "290. Sīlavīmaṃsakajātakaṃ (3-4-10)"
+},
+{
+"key": "kn-jat-3-5",
+"depth": 5,
+"rend": "title",
+"start": 1736,
+"end": 1825,
+"title": "5. Kumbhavaggo"
+},
+{
+"key": "kn-jat-3-5-291",
+"depth": 6,
+"rend": "subhead",
+"start": 1737,
+"end": 1745,
+"title": "291. Surāghaṭajātakaṃ (2-5-1)"
+},
+{
+"key": "kn-jat-3-5-292",
+"depth": 6,
+"rend": "subhead",
+"start": 1745,
+"end": 1753,
+"title": "292. Supattajātakaṃ (3-5-2)"
+},
+{
+"key": "kn-jat-3-5-293",
+"depth": 6,
+"rend": "subhead",
+"start": 1753,
+"end": 1761,
+"title": "293. Kāyanibbindajātakaṃ (3-5-3)"
+},
+{
+"key": "kn-jat-3-5-294",
+"depth": 6,
+"rend": "subhead",
+"start": 1761,
+"end": 1769,
+"title": "294. Jambukhādakajātakaṃ (3-5-4)"
+},
+{
+"key": "kn-jat-3-5-295",
+"depth": 6,
+"rend": "subhead",
+"start": 1769,
+"end": 1777,
+"title": "295. Antajātakaṃ (3-5-5)"
+},
+{
+"key": "kn-jat-3-5-296",
+"depth": 6,
+"rend": "subhead",
+"start": 1777,
+"end": 1785,
+"title": "296. Samuddajātakaṃ (3-5-6)"
+},
+{
+"key": "kn-jat-3-5-297",
+"depth": 6,
+"rend": "subhead",
+"start": 1785,
+"end": 1793,
+"title": "297. Kāmavilāpajātakaṃ (3-5-7)"
+},
+{
+"key": "kn-jat-3-5-298",
+"depth": 6,
+"rend": "subhead",
+"start": 1793,
+"end": 1801,
+"title": "298. Udumbarajātakaṃ (3-5-8)"
+},
+{
+"key": "kn-jat-3-5-299",
+"depth": 6,
+"rend": "subhead",
+"start": 1801,
+"end": 1809,
+"title": "299. Komāraputtajātakaṃ (3-5-9)"
+},
+{
+"key": "kn-jat-3-5-300",
+"depth": 6,
+"rend": "subhead",
+"start": 1809,
+"end": 1825,
+"title": "300. Vakajātakaṃ (3-5-10)"
+},
+{
+"key": "kn-jat-4",
+"depth": 4,
+"rend": "chapter",
+"start": 1825,
+"end": 2364,
+"title": "4. Catukkanipāto"
+},
+{
+"key": "kn-jat-4-1",
+"depth": 5,
+"rend": "title",
+"start": 1826,
+"end": 1933,
+"title": "1. Kāliṅgavaggo"
+},
+{
+"key": "kn-jat-4-1-301",
+"depth": 6,
+"rend": "subhead",
+"start": 1827,
+"end": 1838,
+"title": "301. Cūḷakāliṅgajātakaṃ (4-1-1)"
+},
+{
+"key": "kn-jat-4-1-302",
+"depth": 6,
+"rend": "subhead",
+"start": 1838,
+"end": 1848,
+"title": "302. Mahāassārohajātakaṃ (4-1-2)"
+},
+{
+"key": "kn-jat-4-1-303",
+"depth": 6,
+"rend": "subhead",
+"start": 1848,
+"end": 1858,
+"title": "303. Ekarājajātakaṃ (4-1-3)"
+},
+{
+"key": "kn-jat-4-1-304",
+"depth": 6,
+"rend": "subhead",
+"start": 1858,
+"end": 1868,
+"title": "304. Daddarajātakaṃ (4-1-4)"
+},
+{
+"key": "kn-jat-4-1-305",
+"depth": 6,
+"rend": "subhead",
+"start": 1868,
+"end": 1878,
+"title": "305. Sīlavīmaṃsanajātakaṃ (4-1-5)"
+},
+{
+"key": "kn-jat-4-1-306",
+"depth": 6,
+"rend": "subhead",
+"start": 1878,
+"end": 1888,
+"title": "306. Sujātajātakaṃ (4-1-6)"
+},
+{
+"key": "kn-jat-4-1-307",
+"depth": 6,
+"rend": "subhead",
+"start": 1888,
+"end": 1898,
+"title": "307. Palāsajātakaṃ (4-1-7)"
+},
+{
+"key": "kn-jat-4-1-308",
+"depth": 6,
+"rend": "subhead",
+"start": 1898,
+"end": 1908,
+"title": "308. Sakuṇajātakaṃ (4-1-8)"
+},
+{
+"key": "kn-jat-4-1-309",
+"depth": 6,
+"rend": "subhead",
+"start": 1908,
+"end": 1919,
+"title": "309. Chavakajātakaṃ (4-1-9)"
+},
+{
+"key": "kn-jat-4-1-310",
+"depth": 6,
+"rend": "subhead",
+"start": 1919,
+"end": 1933,
+"title": "310. Seyyajātakaṃ (4-1-10)"
+},
+{
+"key": "kn-jat-4-2",
+"depth": 5,
+"rend": "title",
+"start": 1933,
+"end": 2041,
+"title": "2. Pucimandavaggo"
+},
+{
+"key": "kn-jat-4-2-311",
+"depth": 6,
+"rend": "subhead",
+"start": 1934,
+"end": 1945,
+"title": "311. Pucimandajātakaṃ (4-2-1)"
+},
+{
+"key": "kn-jat-4-2-312",
+"depth": 6,
+"rend": "subhead",
+"start": 1945,
+"end": 1955,
+"title": "312. Kassapamandiyajātakaṃ (4-2-2)"
+},
+{
+"key": "kn-jat-4-2-313",
+"depth": 6,
+"rend": "subhead",
+"start": 1955,
+"end": 1965,
+"title": "313. Khantīvādījātakaṃ (4-2-3)"
+},
+{
+"key": "kn-jat-4-2-314",
+"depth": 6,
+"rend": "subhead",
+"start": 1965,
+"end": 1975,
+"title": "314. Lohakumbhijātakaṃ (4-2-4)"
+},
+{
+"key": "kn-jat-4-2-315",
+"depth": 6,
+"rend": "subhead",
+"start": 1975,
+"end": 1985,
+"title": "315. Sabbamaṃsalābhajātakaṃ (4-2-5)"
+},
+{
+"key": "kn-jat-4-2-316",
+"depth": 6,
+"rend": "subhead",
+"start": 1985,
+"end": 1996,
+"title": "316. Sasapaṇḍitajātakaṃ (4-2-6)"
+},
+{
+"key": "kn-jat-4-2-317",
+"depth": 6,
+"rend": "subhead",
+"start": 1996,
+"end": 2006,
+"title": "317. Matarodanajātakaṃ (4-2-7)"
+},
+{
+"key": "kn-jat-4-2-318",
+"depth": 6,
+"rend": "subhead",
+"start": 2006,
+"end": 2017,
+"title": "318. Kaṇaverajātakaṃ (4-2-8)"
+},
+{
+"key": "kn-jat-4-2-319",
+"depth": 6,
+"rend": "subhead",
+"start": 2017,
+"end": 2027,
+"title": "319. Tittirajātakaṃ (4-2-9)"
+},
+{
+"key": "kn-jat-4-2-320",
+"depth": 6,
+"rend": "subhead",
+"start": 2027,
+"end": 2041,
+"title": "320. Succajajātakaṃ (4-2-10)"
+},
+{
+"key": "kn-jat-4-3",
+"depth": 5,
+"rend": "title",
+"start": 2041,
+"end": 2146,
+"title": "3. Kuṭidūsakavaggo"
+},
+{
+"key": "kn-jat-4-3-321",
+"depth": 6,
+"rend": "subhead",
+"start": 2042,
+"end": 2052,
+"title": "321. Kuṭidūsakajātakaṃ (4-3-1)"
+},
+{
+"key": "kn-jat-4-3-322",
+"depth": 6,
+"rend": "subhead",
+"start": 2052,
+"end": 2062,
+"title": "322. Duddubhajātakaṃ (4-3-2)"
+},
+{
+"key": "kn-jat-4-3-323",
+"depth": 6,
+"rend": "subhead",
+"start": 2062,
+"end": 2072,
+"title": "323. Brahmadattajātakaṃ (4-3-3)"
+},
+{
+"key": "kn-jat-4-3-324",
+"depth": 6,
+"rend": "subhead",
+"start": 2072,
+"end": 2082,
+"title": "324. Cammasāṭakajātakaṃ (4-3-4)"
+},
+{
+"key": "kn-jat-4-3-325",
+"depth": 6,
+"rend": "subhead",
+"start": 2082,
+"end": 2092,
+"title": "325. Godharājajātakaṃ (4-3-5)"
+},
+{
+"key": "kn-jat-4-3-326",
+"depth": 6,
+"rend": "subhead",
+"start": 2092,
+"end": 2102,
+"title": "326. Kakkārujātakaṃ (4-3-6)"
+},
+{
+"key": "kn-jat-4-3-327",
+"depth": 6,
+"rend": "subhead",
+"start": 2102,
+"end": 2112,
+"title": "327. Kākavatījātakaṃ (4-3-7)"
+},
+{
+"key": "kn-jat-4-3-328",
+"depth": 6,
+"rend": "subhead",
+"start": 2112,
+"end": 2122,
+"title": "328. Ananusociyajātakaṃ (4-3-8)"
+},
+{
+"key": "kn-jat-4-3-329",
+"depth": 6,
+"rend": "subhead",
+"start": 2122,
+"end": 2132,
+"title": "329. Kāḷabāhujātakaṃ (4-3-9)"
+},
+{
+"key": "kn-jat-4-3-330",
+"depth": 6,
+"rend": "subhead",
+"start": 2132,
+"end": 2146,
+"title": "330. Sīlavīmaṃsajātakaṃ (4-3-10)"
+},
+{
+"key": "kn-jat-4-4",
+"depth": 5,
+"rend": "title",
+"start": 2146,
+"end": 2254,
+"title": "4. Kokilavaggo"
+},
+{
+"key": "kn-jat-4-4-331",
+"depth": 6,
+"rend": "subhead",
+"start": 2147,
+"end": 2157,
+"title": "331. Kokilajātakaṃ (4-4-1)"
+},
+{
+"key": "kn-jat-4-4-332",
+"depth": 6,
+"rend": "subhead",
+"start": 2157,
+"end": 2167,
+"title": "332. Rathalaṭṭhijātakaṃ (4-4-2)"
+},
+{
+"key": "kn-jat-4-4-333",
+"depth": 6,
+"rend": "subhead",
+"start": 2167,
+"end": 2178,
+"title": "333. Pakkagodhajātakaṃ (4-4-3)"
+},
+{
+"key": "kn-jat-4-4-334",
+"depth": 6,
+"rend": "subhead",
+"start": 2178,
+"end": 2190,
+"title": "334. Rājovādajātakaṃ (4-4-4)"
+},
+{
+"key": "kn-jat-4-4-335",
+"depth": 6,
+"rend": "subhead",
+"start": 2190,
+"end": 2200,
+"title": "335. Jambukajātakaṃ (4-4-5)"
+},
+{
+"key": "kn-jat-4-4-336",
+"depth": 6,
+"rend": "subhead",
+"start": 2200,
+"end": 2210,
+"title": "336. Brahāchattajātakaṃ (4-4-6)"
+},
+{
+"key": "kn-jat-4-4-337",
+"depth": 6,
+"rend": "subhead",
+"start": 2210,
+"end": 2220,
+"title": "337. Pīṭhajātakaṃ (4-4-7)"
+},
+{
+"key": "kn-jat-4-4-338",
+"depth": 6,
+"rend": "subhead",
+"start": 2220,
+"end": 2230,
+"title": "338. Thusajātakaṃ (4-4-8)"
+},
+{
+"key": "kn-jat-4-4-339",
+"depth": 6,
+"rend": "subhead",
+"start": 2230,
+"end": 2240,
+"title": "339. Bāverujātakaṃ (4-4-9)"
+},
+{
+"key": "kn-jat-4-4-340",
+"depth": 6,
+"rend": "subhead",
+"start": 2240,
+"end": 2254,
+"title": "340. Visayhajātakaṃ (4-4-10)"
+},
+{
+"key": "kn-jat-4-5",
+"depth": 5,
+"rend": "title",
+"start": 2254,
+"end": 2364,
+"title": "5. Cūḷakuṇālavaggo"
+},
+{
+"key": "kn-jat-4-5-341",
+"depth": 6,
+"rend": "subhead",
+"start": 2255,
+"end": 2265,
+"title": "341. Kaṇḍarījātakaṃ (4-5-1)"
+},
+{
+"key": "kn-jat-4-5-342",
+"depth": 6,
+"rend": "subhead",
+"start": 2265,
+"end": 2275,
+"title": "342. Vānarajātakaṃ (4-5-2)"
+},
+{
+"key": "kn-jat-4-5-343",
+"depth": 6,
+"rend": "subhead",
+"start": 2275,
+"end": 2285,
+"title": "343. Kuntinījātakaṃ (4-5-3)"
+},
+{
+"key": "kn-jat-4-5-344",
+"depth": 6,
+"rend": "subhead",
+"start": 2285,
+"end": 2295,
+"title": "344. Ambajātakaṃ (4-5-4)"
+},
+{
+"key": "kn-jat-4-5-345",
+"depth": 6,
+"rend": "subhead",
+"start": 2295,
+"end": 2305,
+"title": "345. Gajakumbhajātakaṃ (4-5-5)"
+},
+{
+"key": "kn-jat-4-5-346",
+"depth": 6,
+"rend": "subhead",
+"start": 2305,
+"end": 2315,
+"title": "346. Kesavajātakaṃ (4-5-6)"
+},
+{
+"key": "kn-jat-4-5-347",
+"depth": 6,
+"rend": "subhead",
+"start": 2315,
+"end": 2325,
+"title": "347. Ayakūṭajātakaṃ (4-5-7)"
+},
+{
+"key": "kn-jat-4-5-348",
+"depth": 6,
+"rend": "subhead",
+"start": 2325,
+"end": 2335,
+"title": "348. Araññajātakaṃ (4-5-8)"
+},
+{
+"key": "kn-jat-4-5-349",
+"depth": 6,
+"rend": "subhead",
+"start": 2335,
+"end": 2345,
+"title": "349. Sandhibhedajātakaṃ (4-5-9)"
+},
+{
+"key": "kn-jat-4-5-350",
+"depth": 6,
+"rend": "subhead",
+"start": 2345,
+"end": 2364,
+"title": "350. Devatāpañhajātakaṃ (4-5-10)"
+},
+{
+"key": "kn-jat-5",
+"depth": 4,
+"rend": "chapter",
+"start": 2364,
+"end": 2716,
+"title": "5. Pañcakanipāto"
+},
+{
+"key": "kn-jat-5-1",
+"depth": 5,
+"rend": "title",
+"start": 2365,
+"end": 2510,
+"title": "1. Maṇikuṇḍalavaggo"
+},
+{
+"key": "kn-jat-5-1-351",
+"depth": 6,
+"rend": "subhead",
+"start": 2366,
+"end": 2378,
+"title": "351. Maṇikuṇḍalajātakaṃ (5-1-1)"
+},
+{
+"key": "kn-jat-5-1-352",
+"depth": 6,
+"rend": "subhead",
+"start": 2378,
+"end": 2396,
+"title": "352. Sujātajātakaṃ (5-1-2)"
+},
+{
+"key": "kn-jat-5-1-353",
+"depth": 6,
+"rend": "subhead",
+"start": 2396,
+"end": 2409,
+"title": "353. Venasākhajātakaṃ (5-1-3)"
+},
+{
+"key": "kn-jat-5-1-354",
+"depth": 6,
+"rend": "subhead",
+"start": 2409,
+"end": 2431,
+"title": "354. Uragajātakaṃ (5-1-4)"
+},
+{
+"key": "kn-jat-5-1-355",
+"depth": 6,
+"rend": "subhead",
+"start": 2431,
+"end": 2443,
+"title": "355. Ghaṭajātakaṃ (5-1-5)"
+},
+{
+"key": "kn-jat-5-1-356",
+"depth": 6,
+"rend": "subhead",
+"start": 2443,
+"end": 2455,
+"title": "356. Koraṇḍiyajātakaṃ (5-1-6)"
+},
+{
+"key": "kn-jat-5-1-357",
+"depth": 6,
+"rend": "subhead",
+"start": 2455,
+"end": 2468,
+"title": "357. Laṭukikajātakaṃ (5-1-7)"
+},
+{
+"key": "kn-jat-5-1-358",
+"depth": 6,
+"rend": "subhead",
+"start": 2468,
+"end": 2482,
+"title": "358. Cūḷadhammapālajātakaṃ (5-1-8)"
+},
+{
+"key": "kn-jat-5-1-359",
+"depth": 6,
+"rend": "subhead",
+"start": 2482,
+"end": 2494,
+"title": "359. Suvaṇṇamigajātakaṃ (5-1-9)"
+},
+{
+"key": "kn-jat-5-1-360",
+"depth": 6,
+"rend": "subhead",
+"start": 2494,
+"end": 2510,
+"title": "360. Suyonandījātakaṃ (5-1-10)"
+},
+{
+"key": "kn-jat-5-2",
+"depth": 5,
+"rend": "title",
+"start": 2510,
+"end": 2633,
+"title": "2. Vaṇṇārohavaggo"
+},
+{
+"key": "kn-jat-5-2-361",
+"depth": 6,
+"rend": "subhead",
+"start": 2511,
+"end": 2523,
+"title": "361. Vaṇṇārohajātakaṃ (5-2-1)"
+},
+{
+"key": "kn-jat-5-2-362",
+"depth": 6,
+"rend": "subhead",
+"start": 2523,
+"end": 2535,
+"title": "362. Sīlavīmaṃsajātakaṃ (5-2-2)"
+},
+{
+"key": "kn-jat-5-2-363",
+"depth": 6,
+"rend": "subhead",
+"start": 2535,
+"end": 2547,
+"title": "363. Hirijātakaṃ (5-2-3)"
+},
+{
+"key": "kn-jat-5-2-364",
+"depth": 6,
+"rend": "subhead",
+"start": 2547,
+"end": 2559,
+"title": "364. Khajjopanakajātakaṃ (5-2-4)"
+},
+{
+"key": "kn-jat-5-2-365",
+"depth": 6,
+"rend": "subhead",
+"start": 2559,
+"end": 2571,
+"title": "365. Ahituṇḍikajātakaṃ (5-2-5)"
+},
+{
+"key": "kn-jat-5-2-366",
+"depth": 6,
+"rend": "subhead",
+"start": 2571,
+"end": 2583,
+"title": "366. Gumbiyajātakaṃ (5-2-6)"
+},
+{
+"key": "kn-jat-5-2-367",
+"depth": 6,
+"rend": "subhead",
+"start": 2583,
+"end": 2595,
+"title": "367. Sāḷiyajātakaṃ (5-2-7)"
+},
+{
+"key": "kn-jat-5-2-368",
+"depth": 6,
+"rend": "subhead",
+"start": 2595,
+"end": 2607,
+"title": "368. Tacasārajātakaṃ (5-2-8)"
+},
+{
+"key": "kn-jat-5-2-369",
+"depth": 6,
+"rend": "subhead",
+"start": 2607,
+"end": 2620,
+"title": "369. Mittavindakajātakaṃ (5-2-9)"
+},
+{
+"key": "kn-jat-5-2-370",
+"depth": 6,
+"rend": "subhead",
+"start": 2620,
+"end": 2633,
+"title": "370. Palāsajātakaṃ (5-2-10)"
+},
+{
+"key": "kn-jat-5-3",
+"depth": 5,
+"rend": "title",
+"start": 2633,
+"end": 2716,
+"title": "3. Aḍḍhavaggo"
+},
+{
+"key": "kn-jat-5-3-371",
+"depth": 6,
+"rend": "subhead",
+"start": 2634,
+"end": 2648,
+"title": "371. Dīghītikosalajātakaṃ (5-3-1)"
+},
+{
+"key": "kn-jat-5-3-372",
+"depth": 6,
+"rend": "subhead",
+"start": 2648,
+"end": 2664,
+"title": "372. Migapotakajātakaṃ (5-3-2)"
+},
+{
+"key": "kn-jat-5-3-373",
+"depth": 6,
+"rend": "subhead",
+"start": 2664,
+"end": 2677,
+"title": "373. Mūsikajātakaṃ (5-3-3)"
+},
+{
+"key": "kn-jat-5-3-374",
+"depth": 6,
+"rend": "subhead",
+"start": 2677,
+"end": 2694,
+"title": "374. Cūḷadhanuggahajātakaṃ (5-3-4)"
+},
+{
+"key": "kn-jat-5-3-375",
+"depth": 6,
+"rend": "subhead",
+"start": 2694,
+"end": 2716,
+"title": "375. Kapotajātakaṃ (5-3-5)"
+},
+{
+"key": "kn-jat-6",
+"depth": 4,
+"rend": "chapter",
+"start": 2716,
+"end": 3061,
+"title": "6. Chakkanipāto"
+},
+{
+"key": "kn-jat-6-1",
+"depth": 5,
+"rend": "title",
+"start": 2717,
+"end": 2902,
+"title": "1. Avāriyavaggo"
+},
+{
+"key": "kn-jat-6-1-376",
+"depth": 6,
+"rend": "subhead",
+"start": 2718,
+"end": 2735,
+"title": "376. Avāriyajātakaṃ (6-1-1)"
+},
+{
+"key": "kn-jat-6-1-377",
+"depth": 6,
+"rend": "subhead",
+"start": 2735,
+"end": 2749,
+"title": "377. Setaketujātakaṃ (6-1-2)"
+},
+{
+"key": "kn-jat-6-1-378",
+"depth": 6,
+"rend": "subhead",
+"start": 2749,
+"end": 2763,
+"title": "378. Darīmukhajātakaṃ (6-1-3)"
+},
+{
+"key": "kn-jat-6-1-379",
+"depth": 6,
+"rend": "subhead",
+"start": 2763,
+"end": 2777,
+"title": "379. Nerujātakaṃ (6-1-4)"
+},
+{
+"key": "kn-jat-6-1-380",
+"depth": 6,
+"rend": "subhead",
+"start": 2777,
+"end": 2796,
+"title": "380. Āsaṅkajātakaṃ (6-1-5)"
+},
+{
+"key": "kn-jat-6-1-381",
+"depth": 6,
+"rend": "subhead",
+"start": 2796,
+"end": 2811,
+"title": "381. Migālopajātakaṃ (6-1-6)"
+},
+{
+"key": "kn-jat-6-1-382",
+"depth": 6,
+"rend": "subhead",
+"start": 2811,
+"end": 2853,
+"title": "382. Sirikāḷakaṇṇijātakaṃ (6-1-7)"
+},
+{
+"key": "kn-jat-6-1-383",
+"depth": 6,
+"rend": "subhead",
+"start": 2853,
+"end": 2869,
+"title": "383. Kukkuṭajātakaṃ (6-1-8)"
+},
+{
+"key": "kn-jat-6-1-384",
+"depth": 6,
+"rend": "subhead",
+"start": 2869,
+"end": 2883,
+"title": "384. Dhammadhajajātakaṃ (6-1-9)"
+},
+{
+"key": "kn-jat-6-1-385",
+"depth": 6,
+"rend": "subhead",
+"start": 2883,
+"end": 2902,
+"title": "385. Nandiyamigarājajātakaṃ (6-1-10)"
+},
+{
+"key": "kn-jat-6-2",
+"depth": 5,
+"rend": "title",
+"start": 2902,
+"end": 3061,
+"title": "2. Kharaputtavaggo"
+},
+{
+"key": "kn-jat-6-2-386",
+"depth": 6,
+"rend": "subhead",
+"start": 2903,
+"end": 2917,
+"title": "386. Kharaputtajātakaṃ (6-2-1)"
+},
+{
+"key": "kn-jat-6-2-387",
+"depth": 6,
+"rend": "subhead",
+"start": 2917,
+"end": 2931,
+"title": "387. Sūcijātakaṃ (6-2-2)"
+},
+{
+"key": "kn-jat-6-2-388",
+"depth": 6,
+"rend": "subhead",
+"start": 2931,
+"end": 2945,
+"title": "388. Tuṇḍilajātakaṃ (6-2-3)"
+},
+{
+"key": "kn-jat-6-2-389",
+"depth": 6,
+"rend": "subhead",
+"start": 2945,
+"end": 2963,
+"title": "389. Suvaṇṇakakkaṭajātakaṃ (6-2-4)"
+},
+{
+"key": "kn-jat-6-2-390",
+"depth": 6,
+"rend": "subhead",
+"start": 2963,
+"end": 2978,
+"title": "390. Mayhakajātakaṃ (6-2-5)"
+},
+{
+"key": "kn-jat-6-2-391",
+"depth": 6,
+"rend": "subhead",
+"start": 2978,
+"end": 2994,
+"title": "391. Vijjādharajātakaṃ (6-2-6)"
+},
+{
+"key": "kn-jat-6-2-392",
+"depth": 6,
+"rend": "subhead",
+"start": 2994,
+"end": 3010,
+"title": "392. Siṅghapupphajātakaṃ (6-2-7)"
+},
+{
+"key": "kn-jat-6-2-393",
+"depth": 6,
+"rend": "subhead",
+"start": 3010,
+"end": 3025,
+"title": "393. Vighāsādajātakaṃ (6-2-8)"
+},
+{
+"key": "kn-jat-6-2-394",
+"depth": 6,
+"rend": "subhead",
+"start": 3025,
+"end": 3039,
+"title": "394. Vaṭṭakajātakaṃ (6-2-9)"
+},
+{
+"key": "kn-jat-6-2-395",
+"depth": 6,
+"rend": "subhead",
+"start": 3039,
+"end": 3061,
+"title": "395. Pārāvatajātakaṃ (6-2-10)"
+},
+{
+"key": "kn-jat-7",
+"depth": 4,
+"rend": "chapter",
+"start": 3061,
+"end": 3449,
+"title": "7. Sattakanipāto"
+},
+{
+"key": "kn-jat-7-1",
+"depth": 5,
+"rend": "title",
+"start": 3062,
+"end": 3245,
+"title": "1. Kukkuvaggo"
+},
+{
+"key": "kn-jat-7-1-396",
+"depth": 6,
+"rend": "subhead",
+"start": 3063,
+"end": 3079,
+"title": "396. Kukkujātakaṃ (7-1-1)"
+},
+{
+"key": "kn-jat-7-1-397",
+"depth": 6,
+"rend": "subhead",
+"start": 3079,
+"end": 3095,
+"title": "397. Manojajātakaṃ (7-1-2)"
+},
+{
+"key": "kn-jat-7-1-398",
+"depth": 6,
+"rend": "subhead",
+"start": 3095,
+"end": 3111,
+"title": "398. Sutanujātakaṃ (7-1-3)"
+},
+{
+"key": "kn-jat-7-1-399",
+"depth": 6,
+"rend": "subhead",
+"start": 3111,
+"end": 3127,
+"title": "399. Mātuposakagijjhajātakaṃ (7-1-4)"
+},
+{
+"key": "kn-jat-7-1-400",
+"depth": 6,
+"rend": "subhead",
+"start": 3127,
+"end": 3150,
+"title": "400. Dabbhapupphajātakaṃ (7-1-5)"
+},
+{
+"key": "kn-jat-7-1-401",
+"depth": 6,
+"rend": "subhead",
+"start": 3150,
+"end": 3172,
+"title": "401. Paṇṇakajātakaṃ (7-1-6)"
+},
+{
+"key": "kn-jat-7-1-402",
+"depth": 6,
+"rend": "subhead",
+"start": 3172,
+"end": 3190,
+"title": "402. Sattubhastajātakaṃ (7-1-7)"
+},
+{
+"key": "kn-jat-7-1-403",
+"depth": 6,
+"rend": "subhead",
+"start": 3190,
+"end": 3206,
+"title": "403. Aṭṭhisenakajātakaṃ (7-1-8)"
+},
+{
+"key": "kn-jat-7-1-404",
+"depth": 6,
+"rend": "subhead",
+"start": 3206,
+"end": 3222,
+"title": "404. Kapijātakaṃ (7-1-9)"
+},
+{
+"key": "kn-jat-7-1-405",
+"depth": 6,
+"rend": "subhead",
+"start": 3222,
+"end": 3245,
+"title": "405. Bakajātakaṃ (7-1-10)"
+},
+{
+"key": "kn-jat-7-2",
+"depth": 5,
+"rend": "title",
+"start": 3245,
+"end": 3449,
+"title": "2. Gandhāravaggo"
+},
+{
+"key": "kn-jat-7-2-406",
+"depth": 6,
+"rend": "subhead",
+"start": 3246,
+"end": 3262,
+"title": "406. Gandhārajātakaṃ (7-2-1)"
+},
+{
+"key": "kn-jat-7-2-407",
+"depth": 6,
+"rend": "subhead",
+"start": 3262,
+"end": 3279,
+"title": "407. Mahākapijātakaṃ (7-2-2)"
+},
+{
+"key": "kn-jat-7-2-408",
+"depth": 6,
+"rend": "subhead",
+"start": 3279,
+"end": 3298,
+"title": "408. Kumbhakārajātakaṃ (7-2-3)"
+},
+{
+"key": "kn-jat-7-2-409",
+"depth": 6,
+"rend": "subhead",
+"start": 3298,
+"end": 3314,
+"title": "409. Daḷhadhammajātakaṃ (7-2-4)"
+},
+{
+"key": "kn-jat-7-2-410",
+"depth": 6,
+"rend": "subhead",
+"start": 3314,
+"end": 3334,
+"title": "410. Somadattajātakaṃ (7-2-5)"
+},
+{
+"key": "kn-jat-7-2-411",
+"depth": 6,
+"rend": "subhead",
+"start": 3334,
+"end": 3350,
+"title": "411. Susīmajātakaṃ (7-2-6)"
+},
+{
+"key": "kn-jat-7-2-412",
+"depth": 6,
+"rend": "subhead",
+"start": 3350,
+"end": 3367,
+"title": "412. Koṭasimbalijātakaṃ (7-2-7)"
+},
+{
+"key": "kn-jat-7-2-413",
+"depth": 6,
+"rend": "subhead",
+"start": 3367,
+"end": 3383,
+"title": "413. Dhūmakārijātakaṃ (7-2-8)"
+},
+{
+"key": "kn-jat-7-2-414",
+"depth": 6,
+"rend": "subhead",
+"start": 3383,
+"end": 3399,
+"title": "414. Jāgarajātakaṃ (7-2-9)"
+},
+{
+"key": "kn-jat-7-2-415",
+"depth": 6,
+"rend": "subhead",
+"start": 3399,
+"end": 3425,
+"title": "415. Kummāsapiṇḍijātakaṃ (7-2-10)"
+},
+{
+"key": "kn-jat-7-2-416",
+"depth": 6,
+"rend": "subhead",
+"start": 3425,
+"end": 3449,
+"title": "416. Parantapajātakaṃ (7-2-11)"
+},
+{
+"key": "kn-jat-8",
+"depth": 4,
+"rend": "chapter",
+"start": 3449,
+"end": 3664,
+"title": "8. Aṭṭhakanipāto"
+},
+{
+"key": "kn-jat-8-417",
+"depth": 5,
+"rend": "subhead",
+"start": 3450,
+"end": 3470,
+"title": "417. Kaccānijātakaṃ (1)"
+},
+{
+"key": "kn-jat-8-418",
+"depth": 5,
+"rend": "subhead",
+"start": 3470,
+"end": 3489,
+"title": "418. Aṭṭhasaddajātakaṃ (2)"
+},
+{
+"key": "kn-jat-8-419",
+"depth": 5,
+"rend": "subhead",
+"start": 3489,
+"end": 3509,
+"title": "419. Sulasājātakaṃ (3)"
+},
+{
+"key": "kn-jat-8-420",
+"depth": 5,
+"rend": "subhead",
+"start": 3509,
+"end": 3529,
+"title": "420. Sumaṅgalajātakaṃ (4)"
+},
+{
+"key": "kn-jat-8-421",
+"depth": 5,
+"rend": "subhead",
+"start": 3529,
+"end": 3549,
+"title": "421. Gaṅgamālajātakaṃ (5)"
+},
+{
+"key": "kn-jat-8-422",
+"depth": 5,
+"rend": "subhead",
+"start": 3549,
+"end": 3582,
+"title": "422. Cetiyajātakaṃ (6)"
+},
+{
+"key": "kn-jat-8-423",
+"depth": 5,
+"rend": "subhead",
+"start": 3582,
+"end": 3603,
+"title": "423. Indriyajātakaṃ (7)"
+},
+{
+"key": "kn-jat-8-424",
+"depth": 5,
+"rend": "subhead",
+"start": 3603,
+"end": 3621,
+"title": "424. Ādittajātakaṃ (8)"
+},
+{
+"key": "kn-jat-8-425",
+"depth": 5,
+"rend": "subhead",
+"start": 3621,
+"end": 3645,
+"title": "425. Aṭṭhānajātakaṃ (9)"
+},
+{
+"key": "kn-jat-8-426",
+"depth": 5,
+"rend": "subhead",
+"start": 3645,
+"end": 3664,
+"title": "426. Dīpijātakaṃ (10)"
+},
+{
+"key": "kn-jat-9",
+"depth": 4,
+"rend": "chapter",
+"start": 3667,
+"end": 3924,
+"title": "9. Navakanipāto"
+},
+{
+"key": "kn-jat-9-427",
+"depth": 5,
+"rend": "subhead",
+"start": 3668,
+"end": 3691,
+"title": "427. Gijjhajātakaṃ (1)"
+},
+{
+"key": "kn-jat-9-428",
+"depth": 5,
+"rend": "subhead",
+"start": 3691,
+"end": 3714,
+"title": "428. Kosambiyajātakaṃ (2)"
+},
+{
+"key": "kn-jat-9-429",
+"depth": 5,
+"rend": "subhead",
+"start": 3714,
+"end": 3736,
+"title": "429. Mahāsuvajātakaṃ (3)"
+},
+{
+"key": "kn-jat-9-430",
+"depth": 5,
+"rend": "subhead",
+"start": 3736,
+"end": 3758,
+"title": "430. Cūḷasuvajātakaṃ (4)"
+},
+{
+"key": "kn-jat-9-431",
+"depth": 5,
+"rend": "subhead",
+"start": 3758,
+"end": 3778,
+"title": "431. Haritacajātakaṃ (5)"
+},
+{
+"key": "kn-jat-9-432",
+"depth": 5,
+"rend": "subhead",
+"start": 3778,
+"end": 3802,
+"title": "432. Padakusalamāṇavajātakaṃ (6)"
+},
+{
+"key": "kn-jat-9-433",
+"depth": 5,
+"rend": "subhead",
+"start": 3802,
+"end": 3822,
+"title": "433. Lomasakassapajātakaṃ (7)"
+},
+{
+"key": "kn-jat-9-434",
+"depth": 5,
+"rend": "subhead",
+"start": 3822,
+"end": 3843,
+"title": "434. Cakkavākajātakaṃ (8)"
+},
+{
+"key": "kn-jat-9-435",
+"depth": 5,
+"rend": "subhead",
+"start": 3843,
+"end": 3863,
+"title": "435. Haliddirāgajātakaṃ (9)"
+},
+{
+"key": "kn-jat-9-436",
+"depth": 5,
+"rend": "subhead",
+"start": 3863,
+"end": 3883,
+"title": "436. Samuggajātakaṃ (10)"
+},
+{
+"key": "kn-jat-9-437",
+"depth": 5,
+"rend": "subhead",
+"start": 3883,
+"end": 3903,
+"title": "437. Pūtimaṃsajātakaṃ (11)"
+},
+{
+"key": "kn-jat-9-438",
+"depth": 5,
+"rend": "subhead",
+"start": 3903,
+"end": 3924,
+"title": "438. Daddarajātakaṃ (12)"
+},
+{
+"key": "kn-jat-10",
+"depth": 4,
+"rend": "chapter",
+"start": 3927,
+"end": 4341,
+"title": "10. Dasakanipāto"
+},
+{
+"key": "kn-jat-10-439",
+"depth": 5,
+"rend": "subhead",
+"start": 3928,
+"end": 3950,
+"title": "439. Catudvārajātakaṃ (1)"
+},
+{
+"key": "kn-jat-10-440",
+"depth": 5,
+"rend": "subhead",
+"start": 3950,
+"end": 3982,
+"title": "440. Kaṇhajātakaṃ (2)"
+},
+{
+"key": "kn-jat-10-441",
+"depth": 5,
+"rend": "subhead",
+"start": 3982,
+"end": 4017,
+"title": "441. Catuposathiyajātakaṃ (3)"
+},
+{
+"key": "kn-jat-10-442",
+"depth": 5,
+"rend": "subhead",
+"start": 4017,
+"end": 4039,
+"title": "442. Saṅkhajātakaṃ (4)"
+},
+{
+"key": "kn-jat-10-443",
+"depth": 5,
+"rend": "subhead",
+"start": 4039,
+"end": 4067,
+"title": "443. Cūḷabodhijātakaṃ (5)"
+},
+{
+"key": "kn-jat-10-444",
+"depth": 5,
+"rend": "subhead",
+"start": 4067,
+"end": 4099,
+"title": "444. Kaṇhadīpāyanajātakaṃ (6)"
+},
+{
+"key": "kn-jat-10-445",
+"depth": 5,
+"rend": "subhead",
+"start": 4099,
+"end": 4122,
+"title": "445. Nigrodhajātakaṃ (7)"
+},
+{
+"key": "kn-jat-10-446",
+"depth": 5,
+"rend": "subhead",
+"start": 4122,
+"end": 4145,
+"title": "446. Takkalajātakaṃ (8)"
+},
+{
+"key": "kn-jat-10-447",
+"depth": 5,
+"rend": "subhead",
+"start": 4145,
+"end": 4171,
+"title": "447. Mahādhammapālajātakaṃ (9)"
+},
+{
+"key": "kn-jat-10-448",
+"depth": 5,
+"rend": "subhead",
+"start": 4171,
+"end": 4195,
+"title": "448. Kukkuṭajātakaṃ (10)"
+},
+{
+"key": "kn-jat-10-449",
+"depth": 5,
+"rend": "subhead",
+"start": 4195,
+"end": 4217,
+"title": "449. Maṭṭhakuṇḍalījātakaṃ (11)"
+},
+{
+"key": "kn-jat-10-450",
+"depth": 5,
+"rend": "subhead",
+"start": 4217,
+"end": 4241,
+"title": "450. Bilārakosiyajātakaṃ (12)"
+},
+{
+"key": "kn-jat-10-451",
+"depth": 5,
+"rend": "subhead",
+"start": 4241,
+"end": 4263,
+"title": "451. Cakkavākajātakaṃ (13)"
+},
+{
+"key": "kn-jat-10-452",
+"depth": 5,
+"rend": "subhead",
+"start": 4263,
+"end": 4285,
+"title": "452. Bhūripaññajātakaṃ (14)"
+},
+{
+"key": "kn-jat-10-453",
+"depth": 5,
+"rend": "subhead",
+"start": 4285,
+"end": 4307,
+"title": "453. Mahāmaṅgalajātakaṃ (15)"
+},
+{
+"key": "kn-jat-10-454",
+"depth": 5,
+"rend": "subhead",
+"start": 4307,
+"end": 4341,
+"title": "454. Ghaṭapaṇḍitajātakaṃ (16)"
+},
+{
+"key": "kn-jat-11",
+"depth": 4,
+"rend": "chapter",
+"start": 4344,
+"end": 4614,
+"title": "11. Ekādasakanipāto"
+},
+{
+"key": "kn-jat-11-455",
+"depth": 5,
+"rend": "subhead",
+"start": 4345,
+"end": 4371,
+"title": "455. Mātuposakajātakaṃ (1)"
+},
+{
+"key": "kn-jat-11-456",
+"depth": 5,
+"rend": "subhead",
+"start": 4371,
+"end": 4399,
+"title": "456. Juṇhajātakaṃ (2)"
+},
+{
+"key": "kn-jat-11-457",
+"depth": 5,
+"rend": "subhead",
+"start": 4399,
+"end": 4425,
+"title": "457. Dhammadevaputtajātakaṃ (3)"
+},
+{
+"key": "kn-jat-11-458",
+"depth": 5,
+"rend": "subhead",
+"start": 4425,
+"end": 4473,
+"title": "458. Udayajātakaṃ (4)"
+},
+{
+"key": "kn-jat-11-459",
+"depth": 5,
+"rend": "subhead",
+"start": 4473,
+"end": 4506,
+"title": "459. Pānīyajātakaṃ (5)"
+},
+{
+"key": "kn-jat-11-460",
+"depth": 5,
+"rend": "subhead",
+"start": 4506,
+"end": 4530,
+"title": "460. Yudhañcayajātakaṃ (6)"
+},
+{
+"key": "kn-jat-11-461",
+"depth": 5,
+"rend": "subhead",
+"start": 4530,
+"end": 4559,
+"title": "461. Dasarathajātakaṃ (7)"
+},
+{
+"key": "kn-jat-11-462",
+"depth": 5,
+"rend": "subhead",
+"start": 4559,
+"end": 4583,
+"title": "462. Saṃvarajātakaṃ (8)"
+},
+{
+"key": "kn-jat-11-463",
+"depth": 5,
+"rend": "subhead",
+"start": 4583,
+"end": 4614,
+"title": "463. Suppārakajātakaṃ (9)"
+},
+{
+"key": "kn-jat-12",
+"depth": 4,
+"rend": "chapter",
+"start": 4617,
+"end": 4910,
+"title": "12. Dvādasakanipāto"
+},
+{
+"key": "kn-jat-12-464",
+"depth": 5,
+"rend": "subhead",
+"start": 4618,
+"end": 4644,
+"title": "464. Cūḷakuṇālajātakaṃ (1)"
+},
+{
+"key": "kn-jat-12-465",
+"depth": 5,
+"rend": "subhead",
+"start": 4644,
+"end": 4671,
+"title": "465. Bhaddasālajātakaṃ (2)"
+},
+{
+"key": "kn-jat-12-466",
+"depth": 5,
+"rend": "subhead",
+"start": 4671,
+"end": 4698,
+"title": "466. Samuddavāṇijajātakaṃ (3)"
+},
+{
+"key": "kn-jat-12-467",
+"depth": 5,
+"rend": "subhead",
+"start": 4698,
+"end": 4726,
+"title": "467. Kāmajātakaṃ (4)"
+},
+{
+"key": "kn-jat-12-468",
+"depth": 5,
+"rend": "subhead",
+"start": 4726,
+"end": 4752,
+"title": "468. Janasandhajātakaṃ (5)"
+},
+{
+"key": "kn-jat-12-469",
+"depth": 5,
+"rend": "subhead",
+"start": 4752,
+"end": 4778,
+"title": "469. Mahākaṇhajātakaṃ (6)"
+},
+{
+"key": "kn-jat-12-470",
+"depth": 5,
+"rend": "subhead",
+"start": 4778,
+"end": 4822,
+"title": "470. Kosiyajātakaṃ (7)"
+},
+{
+"key": "kn-jat-12-471",
+"depth": 5,
+"rend": "subhead",
+"start": 4822,
+"end": 4848,
+"title": "471. Meṇḍakapañhajātakaṃ (8)"
+},
+{
+"key": "kn-jat-12-472",
+"depth": 5,
+"rend": "subhead",
+"start": 4848,
+"end": 4881,
+"title": "472. Mahāpadumajātakaṃ (9)"
+},
+{
+"key": "kn-jat-12-473",
+"depth": 5,
+"rend": "subhead",
+"start": 4881,
+"end": 4910,
+"title": "473. Mittāmittajātakaṃ (10)"
+},
+{
+"key": "kn-jat-13",
+"depth": 4,
+"rend": "chapter",
+"start": 4913,
+"end": 5255,
+"title": "13. Terasakanipāto"
+},
+{
+"key": "kn-jat-13-474",
+"depth": 5,
+"rend": "subhead",
+"start": 4914,
+"end": 4943,
+"title": "474. Ambajātakaṃ (1)"
+},
+{
+"key": "kn-jat-13-475",
+"depth": 5,
+"rend": "subhead",
+"start": 4943,
+"end": 4971,
+"title": "475. Phandanajātakaṃ (2)"
+},
+{
+"key": "kn-jat-13-476",
+"depth": 5,
+"rend": "subhead",
+"start": 4971,
+"end": 5001,
+"title": "476. Javanahaṃsajātakaṃ (3)"
+},
+{
+"key": "kn-jat-13-477",
+"depth": 5,
+"rend": "subhead",
+"start": 5001,
+"end": 5033,
+"title": "477. Cūḷanāradajātakaṃ (4)"
+},
+{
+"key": "kn-jat-13-478",
+"depth": 5,
+"rend": "subhead",
+"start": 5033,
+"end": 5062,
+"title": "478. Dūtajātakaṃ (5)"
+},
+{
+"key": "kn-jat-13-479",
+"depth": 5,
+"rend": "subhead",
+"start": 5062,
+"end": 5098,
+"title": "479. Kāliṅgabodhijātakaṃ (6)"
+},
+{
+"key": "kn-jat-13-480",
+"depth": 5,
+"rend": "subhead",
+"start": 5098,
+"end": 5149,
+"title": "480. Akittijātakaṃ (7)"
+},
+{
+"key": "kn-jat-13-481",
+"depth": 5,
+"rend": "subhead",
+"start": 5149,
+"end": 5178,
+"title": "481. Takkāriyajātakaṃ (8)"
+},
+{
+"key": "kn-jat-13-482",
+"depth": 5,
+"rend": "subhead",
+"start": 5178,
+"end": 5216,
+"title": "482. Rurumigarājajātakaṃ (9)"
+},
+{
+"key": "kn-jat-13-483",
+"depth": 5,
+"rend": "subhead",
+"start": 5216,
+"end": 5255,
+"title": "483. Sarabhamigajātakaṃ (10)"
+},
+{
+"key": "kn-jat-14",
+"depth": 4,
+"rend": "chapter",
+"start": 5258,
+"end": 5904,
+"title": "14. Pakiṇṇakanipāto"
+},
+{
+"key": "kn-jat-14-484",
+"depth": 5,
+"rend": "subhead",
+"start": 5259,
+"end": 5296,
+"title": "484. Sālikedārajātakaṃ (1)"
+},
+{
+"key": "kn-jat-14-485",
+"depth": 5,
+"rend": "subhead",
+"start": 5296,
+"end": 5350,
+"title": "485. Candakinnarījātakaṃ (2)"
+},
+{
+"key": "kn-jat-14-486",
+"depth": 5,
+"rend": "subhead",
+"start": 5350,
+"end": 5388,
+"title": "486. Mahāukkusajātakaṃ (3)"
+},
+{
+"key": "kn-jat-14-487",
+"depth": 5,
+"rend": "subhead",
+"start": 5388,
+"end": 5424,
+"title": "487. Uddālakajātakaṃ (4)"
+},
+{
+"key": "kn-jat-14-488",
+"depth": 5,
+"rend": "subhead",
+"start": 5424,
+"end": 5474,
+"title": "488. Bhisajātakaṃ (5)"
+},
+{
+"key": "kn-jat-14-489",
+"depth": 5,
+"rend": "subhead",
+"start": 5474,
+"end": 5528,
+"title": "489. Surucijātakaṃ (6)"
+},
+{
+"key": "kn-jat-14-490",
+"depth": 5,
+"rend": "subhead",
+"start": 5528,
+"end": 5562,
+"title": "490. Pañcuposathikajātakaṃ (7)"
+},
+{
+"key": "kn-jat-14-491",
+"depth": 5,
+"rend": "subhead",
+"start": 5562,
+"end": 5599,
+"title": "491. Mahāmorajātakaṃ (8)"
+},
+{
+"key": "kn-jat-14-492",
+"depth": 5,
+"rend": "subhead",
+"start": 5599,
+"end": 5641,
+"title": "492. Tacchasūkarajātakaṃ (9)"
+},
+{
+"key": "kn-jat-14-493",
+"depth": 5,
+"rend": "subhead",
+"start": 5641,
+"end": 5690,
+"title": "493. Mahāvāṇijajātakaṃ (10)"
+},
+{
+"key": "kn-jat-14-494",
+"depth": 5,
+"rend": "subhead",
+"start": 5690,
+"end": 5738,
+"title": "494. Sādhinajātakaṃ (11)"
+},
+{
+"key": "kn-jat-14-495",
+"depth": 5,
+"rend": "subhead",
+"start": 5738,
+"end": 5858,
+"title": "495. Dasabrāhmaṇajātakaṃ (12)"
+},
+{
+"key": "kn-jat-14-496",
+"depth": 5,
+"rend": "subhead",
+"start": 5858,
+"end": 5904,
+"title": "496. Bhikkhāparamparajātakaṃ (13)"
+},
+{
+"key": "kn-jat-15",
+"depth": 4,
+"rend": "chapter",
+"start": 5904,
+"end": 6734,
+"title": "15. Vīsatinipāto"
+},
+{
+"key": "kn-jat-15-497",
+"depth": 5,
+"rend": "subhead",
+"start": 5905,
+"end": 5953,
+"title": "497. Mātaṅgajātakaṃ (1)"
+},
+{
+"key": "kn-jat-15-498",
+"depth": 5,
+"rend": "subhead",
+"start": 5953,
+"end": 6011,
+"title": "498. Cittasambhūtajātakaṃ (2)"
+},
+{
+"key": "kn-jat-15-499",
+"depth": 5,
+"rend": "subhead",
+"start": 6011,
+"end": 6077,
+"title": "499. Sivijātakaṃ (3)"
+},
+{
+"key": "kn-jat-15-500",
+"depth": 5,
+"rend": "subhead",
+"start": 6077,
+"end": 6137,
+"title": "500. Sirīmantajātakaṃ (4)"
+},
+{
+"key": "kn-jat-15-501",
+"depth": 5,
+"rend": "subhead",
+"start": 6137,
+"end": 6197,
+"title": "501. Rohaṇamigajātakaṃ (5)"
+},
+{
+"key": "kn-jat-15-502",
+"depth": 5,
+"rend": "subhead",
+"start": 6197,
+"end": 6251,
+"title": "502. Cūḷahaṃsajātakaṃ (6)"
+},
+{
+"key": "kn-jat-15-503",
+"depth": 5,
+"rend": "subhead",
+"start": 6251,
+"end": 6310,
+"title": "503. Sattigumbajātakaṃ (7)"
+},
+{
+"key": "kn-jat-15-504",
+"depth": 5,
+"rend": "subhead",
+"start": 6310,
+"end": 6362,
+"title": "504. Bhallātiyajātakaṃ (8)"
+},
+{
+"key": "kn-jat-15-505",
+"depth": 5,
+"rend": "subhead",
+"start": 6362,
+"end": 6422,
+"title": "505. Somanassajātakaṃ (9)"
+},
+{
+"key": "kn-jat-15-506",
+"depth": 5,
+"rend": "subhead",
+"start": 6422,
+"end": 6515,
+"title": "506. Campeyyajātakaṃ (10)"
+},
+{
+"key": "kn-jat-15-507",
+"depth": 5,
+"rend": "subhead",
+"start": 6515,
+"end": 6579,
+"title": "507. Mahāpalobhanajātakaṃ (11)"
+},
+{
+"key": "kn-jat-15-508",
+"depth": 5,
+"rend": "subhead",
+"start": 6579,
+"end": 6626,
+"title": "508. Pañcapaṇḍitajātakaṃ (12)"
+},
+{
+"key": "kn-jat-15-509",
+"depth": 5,
+"rend": "subhead",
+"start": 6626,
+"end": 6680,
+"title": "509. Hatthipālajātakaṃ (13)"
+},
+{
+"key": "kn-jat-15-510",
+"depth": 5,
+"rend": "subhead",
+"start": 6680,
+"end": 6734,
+"title": "510. Ayogharajātakaṃ (14)"
+},
+{
+"key": "kn-jat-16",
+"depth": 4,
+"rend": "chapter",
+"start": 6734,
+"end": 7532,
+"title": "16. Tiṃsanipāto"
+},
+{
+"key": "kn-jat-16-511",
+"depth": 5,
+"rend": "subhead",
+"start": 6735,
+"end": 6805,
+"title": "511. Kiṃchandajātakaṃ (1)"
+},
+{
+"key": "kn-jat-16-512",
+"depth": 5,
+"rend": "subhead",
+"start": 6805,
+"end": 6869,
+"title": "512. Kumbhajātakaṃ (2)"
+},
+{
+"key": "kn-jat-16-513",
+"depth": 5,
+"rend": "subhead",
+"start": 6869,
+"end": 6940,
+"title": "513. Jayaddisajātakaṃ (3)"
+},
+{
+"key": "kn-jat-16-514",
+"depth": 5,
+"rend": "subhead",
+"start": 6940,
+"end": 7027,
+"title": "514. Chaddantajātakaṃ (4)"
+},
+{
+"key": "kn-jat-16-515",
+"depth": 5,
+"rend": "subhead",
+"start": 7027,
+"end": 7121,
+"title": "515. Sambhavajātakaṃ (5)"
+},
+{
+"key": "kn-jat-16-516",
+"depth": 5,
+"rend": "subhead",
+"start": 7121,
+"end": 7215,
+"title": "516. Mahākapijātakaṃ (6)"
+},
+{
+"key": "kn-jat-16-517",
+"depth": 5,
+"rend": "subhead",
+"start": 7215,
+"end": 7290,
+"title": "517. Dakarakkhasajātakaṃ (7)"
+},
+{
+"key": "kn-jat-16-518",
+"depth": 5,
+"rend": "subhead",
+"start": 7290,
+"end": 7371,
+"title": "518. Paṇḍaranāgarājajātakaṃ (8)"
+},
+{
+"key": "kn-jat-16-519",
+"depth": 5,
+"rend": "subhead",
+"start": 7371,
+"end": 7448,
+"title": "519. Sambulājātakaṃ (9)"
+},
+{
+"key": "kn-jat-16-520",
+"depth": 5,
+"rend": "subhead",
+"start": 7448,
+"end": 7532,
+"title": "520. Gandhatindukajātakaṃ (10)"
+},
+{
+"key": "kn-jat-17",
+"depth": 4,
+"rend": "chapter",
+"start": 7537,
+"end": 8049,
+"title": "17. Cattālīsanipāto"
+},
+{
+"key": "kn-jat-17-521",
+"depth": 5,
+"rend": "subhead",
+"start": 7538,
+"end": 7637,
+"title": "521. Tesakuṇajātakaṃ (1)"
+},
+{
+"key": "kn-jat-17-522",
+"depth": 5,
+"rend": "subhead",
+"start": 7637,
+"end": 7735,
+"title": "522. Sarabhaṅgajātakaṃ (2)"
+},
+{
+"key": "kn-jat-17-523",
+"depth": 5,
+"rend": "subhead",
+"start": 7735,
+"end": 7836,
+"title": "523. Alambusājātakaṃ (3)"
+},
+{
+"key": "kn-jat-17-524",
+"depth": 5,
+"rend": "subhead",
+"start": 7836,
+"end": 7944,
+"title": "524. Saṅkhapālajātakaṃ (4)"
+},
+{
+"key": "kn-jat-17-525",
+"depth": 5,
+"rend": "subhead",
+"start": 7944,
+"end": 8049,
+"title": "525. Cūḷasutasomajātakaṃ (5)"
+},
+{
+"key": "kn-jat-18",
+"depth": 4,
+"rend": "chapter",
+"start": 8052,
+"end": 8435,
+"title": "18. Paṇṇāsanipāto"
+},
+{
+"key": "kn-jat-18-526",
+"depth": 5,
+"rend": "subhead",
+"start": 8053,
+"end": 8168,
+"title": "526. Niḷinikājātakaṃ (1)"
+},
+{
+"key": "kn-jat-18-527",
+"depth": 5,
+"rend": "subhead",
+"start": 8168,
+"end": 8300,
+"title": "527. Ummādantījātakaṃ (2)"
+},
+{
+"key": "kn-jat-18-528",
+"depth": 5,
+"rend": "subhead",
+"start": 8300,
+"end": 8435,
+"title": "528. Mahābodhijātakaṃ (3)"
+},
+{
+"key": "kn-jat-19",
+"depth": 4,
+"rend": "chapter",
+"start": 8438,
+"end": 8721,
+"title": "19. Saṭṭhinipāto"
+},
+{
+"key": "kn-jat-19-529",
+"depth": 5,
+"rend": "subhead",
+"start": 8439,
+"end": 8583,
+"title": "529. Soṇakajātakaṃ (1)"
+},
+{
+"key": "kn-jat-19-530",
+"depth": 5,
+"rend": "subhead",
+"start": 8583,
+"end": 8721,
+"title": "530. Saṃkiccajātakaṃ (2)"
+},
+{
+"key": "kn-jat-20",
+"depth": 4,
+"rend": "chapter",
+"start": 8725,
+"end": 9111,
+"title": "20. Sattatinipāto"
+},
+{
+"key": "kn-jat-20-531",
+"depth": 5,
+"rend": "subhead",
+"start": 8726,
+"end": 8914,
+"title": "531. Kusajātakaṃ (1)"
+},
+{
+"key": "kn-jat-20-532",
+"depth": 5,
+"rend": "subhead",
+"start": 8914,
+"end": 9111,
+"title": "532. Soṇanandajātakaṃ (2)"
+},
+{
+"key": "kn-jat-21",
+"depth": 4,
+"rend": "chapter",
+"start": 9114,
+"end": 10185,
+"title": "21. Asītinipāto"
+},
+{
+"key": "kn-jat-21-533",
+"depth": 5,
+"rend": "subhead",
+"start": 9115,
+"end": 9294,
+"title": "533. Cūḷahaṃsajātakaṃ (1)"
+},
+{
+"key": "kn-jat-21-534",
+"depth": 5,
+"rend": "subhead",
+"start": 9294,
+"end": 9510,
+"title": "534. Mahāhaṃsajātakaṃ (2)"
+},
+{
+"key": "kn-jat-21-535",
+"depth": 5,
+"rend": "subhead",
+"start": 9510,
+"end": 9714,
+"title": "535. Sudhābhojanajātakaṃ (3)"
+},
+{
+"key": "kn-jat-21-536",
+"depth": 5,
+"rend": "subhead",
+"start": 9714,
+"end": 9929,
+"title": "536. Kuṇālajātakaṃ (4)"
+},
+{
+"key": "kn-jat-21-537",
+"depth": 5,
+"rend": "subhead",
+"start": 9929,
+"end": 10185,
+"title": "537. Mahāsutasomajātakaṃ (5)"
+},
+{
+"key": "kn-jat-22",
+"depth": 4,
+"rend": "chapter",
+"start": 10188,
+"end": 15382,
+"title": "22. Mahānipāto"
+},
+{
+"key": "kn-jat-22-538",
+"depth": 5,
+"rend": "subhead",
+"start": 10189,
+"end": 10438,
+"title": "538. Mūgapakkhajātakaṃ (1)"
+},
+{
+"key": "kn-jat-22-539",
+"depth": 5,
+"rend": "subhead",
+"start": 10438,
+"end": 10812,
+"title": "539. Mahājanakajātakaṃ (2)"
+},
+{
+"key": "kn-jat-22-540",
+"depth": 5,
+"rend": "subhead",
+"start": 10812,
+"end": 11067,
+"title": "540. Suvaṇṇasāmajātakaṃ (3)"
+},
+{
+"key": "kn-jat-22-541",
+"depth": 5,
+"rend": "subhead",
+"start": 11067,
+"end": 11456,
+"title": "541. Nimijātakaṃ (4)"
+},
+{
+"key": "kn-jat-22-542",
+"depth": 5,
+"rend": "subhead",
+"start": 11456,
+"end": 11868,
+"title": "542. Umaṅgajātakaṃ (5)"
+},
+{
+"key": "kn-jat-22-543",
+"depth": 5,
+"rend": "subhead",
+"start": 11868,
+"end": 12272,
+"title": "543. Bhūridattajātakaṃ (6)"
+},
+{
+"key": "kn-jat-22-544",
+"depth": 5,
+"rend": "subhead",
+"start": 12272,
+"end": 12624,
+"title": "544. Candakumārajātakaṃ (7)"
+},
+{
+"key": "kn-jat-22-545",
+"depth": 5,
+"rend": "subhead",
+"start": 12624,
+"end": 13024,
+"title": "545. Mahānāradakassapajātakaṃ (8)"
+},
+{
+"key": "kn-jat-22-546",
+"depth": 5,
+"rend": "subhead",
+"start": 13024,
+"end": 13674,
+"title": "546. Vidhurajātakaṃ (9)"
+},
+{
+"key": "kn-jat-22-546-1",
+"depth": 6,
+"rend": "subhead",
+"start": 13025,
+"end": 13124,
+"title": "Dohaḷakaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-546-2",
+"depth": 6,
+"rend": "subhead",
+"start": 13124,
+"end": 13208,
+"title": "Maṇikaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-546-3",
+"depth": 6,
+"rend": "subhead",
+"start": 13208,
+"end": 13241,
+"title": "Akkhakaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-546-4",
+"depth": 6,
+"rend": "subhead",
+"start": 13241,
+"end": 13290,
+"title": "Gharāvāsapañhā"
+},
+{
+"key": "kn-jat-22-546-5",
+"depth": 6,
+"rend": "subhead",
+"start": 13290,
+"end": 13390,
+"title": "Rājavasati"
+},
+{
+"key": "kn-jat-22-546-6",
+"depth": 6,
+"rend": "subhead",
+"start": 13390,
+"end": 13456,
+"title": "Antarapeyyālaṃ"
+},
+{
+"key": "kn-jat-22-546-7",
+"depth": 6,
+"rend": "subhead",
+"start": 13456,
+"end": 13505,
+"title": "Sādhunaradhammakaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-546-8",
+"depth": 6,
+"rend": "subhead",
+"start": 13505,
+"end": 13674,
+"title": "Kālāgirikaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-547",
+"depth": 5,
+"rend": "subhead",
+"start": 13674,
+"end": 15382,
+"title": "547. Vessantarajātakaṃ (10)"
+},
+{
+"key": "kn-jat-22-547-1",
+"depth": 6,
+"rend": "subhead",
+"start": 13675,
+"end": 13703,
+"title": "Dasavarakathā"
+},
+{
+"key": "kn-jat-22-547-2",
+"depth": 6,
+"rend": "subhead",
+"start": 13703,
+"end": 13866,
+"title": "Hemavantaṃ"
+},
+{
+"key": "kn-jat-22-547-3",
+"depth": 6,
+"rend": "subhead",
+"start": 13866,
+"end": 14141,
+"title": "Dānakaṇḍaṃ"
+},
+{
+"key": "kn-jat-22-547-4",
+"depth": 6,
+"rend": "subhead",
+"start": 14141,
+"end": 14240,
+"title": "Vanapavesanaṃ"
+},
+{
+"key": "kn-jat-22-547-5",
+"depth": 6,
+"rend": "subhead",
+"start": 14240,
+"end": 14382,
+"title": "Jūjakapabbaṃ"
+},
+{
+"key": "kn-jat-22-547-6",
+"depth": 6,
+"rend": "subhead",
+"start": 14382,
+"end": 14453,
+"title": "Cūḷavanavaṇṇanā"
+},
+{
+"key": "kn-jat-22-547-7",
+"depth": 6,
+"rend": "subhead",
+"start": 14453,
+"end": 14620,
+"title": "Mahāvanavaṇṇanā"
+},
+{
+"key": "kn-jat-22-547-8",
+"depth": 6,
+"rend": "subhead",
+"start": 14620,
+"end": 14820,
+"title": "Dārakapabbaṃ"
+},
+{
+"key": "kn-jat-22-547-9",
+"depth": 6,
+"rend": "subhead",
+"start": 14820,
+"end": 15001,
+"title": "Maddīpabbaṃ"
+},
+{
+"key": "kn-jat-22-547-10",
+"depth": 6,
+"rend": "subhead",
+"start": 15001,
+"end": 15079,
+"title": "Sakkapabbaṃ"
+},
+{
+"key": "kn-jat-22-547-11",
+"depth": 6,
+"rend": "subhead",
+"start": 15079,
+"end": 15217,
+"title": "Mahārājapabbaṃ"
+},
+{
+"key": "kn-jat-22-547-12",
+"depth": 6,
+"rend": "subhead",
+"start": 15217,
+"end": 15382,
+"title": "Chakhattiyakammaṃ"
+}
+]

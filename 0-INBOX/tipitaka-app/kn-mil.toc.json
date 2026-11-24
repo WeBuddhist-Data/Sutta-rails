@@ -1,0 +1,2202 @@
+[
+{
+"key": "kn-mil-1",
+"depth": 4,
+"rend": "chapter",
+"start": 2,
+"end": 107,
+"title": "Milindapañhapāḷi"
+},
+{
+"key": "kn-mil-1-1",
+"depth": 5,
+"rend": "subsubhead",
+"start": 17,
+"end": 18,
+"title": "1. Bāhirakathā"
+},
+{
+"key": "kn-mil-1-1a",
+"depth": 5,
+"rend": "subhead",
+"start": 18,
+"end": 107,
+"title": "Pubbayogādi"
+},
+{
+"key": "kn-mil-2",
+"depth": 4,
+"rend": "chapter",
+"start": 107,
+"end": 681,
+"title": "2-3. Milindapañho"
+},
+{
+"key": "kn-mil-2-1",
+"depth": 5,
+"rend": "title",
+"start": 108,
+"end": 211,
+"title": "1. Mahāvaggo"
+},
+{
+"key": "kn-mil-2-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 109,
+"end": 119,
+"title": "1. Paññattipañho"
+},
+{
+"key": "kn-mil-2-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 119,
+"end": 123,
+"title": "2. Vassagaṇanapañho"
+},
+{
+"key": "kn-mil-2-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 123,
+"end": 127,
+"title": "3. Vīmaṃsanapañho"
+},
+{
+"key": "kn-mil-2-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 127,
+"end": 134,
+"title": "4. Anantakāyapañho"
+},
+{
+"key": "kn-mil-2-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 134,
+"end": 142,
+"title": "5. Pabbajjapañho"
+},
+{
+"key": "kn-mil-2-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 142,
+"end": 146,
+"title": "6. Paṭisandhipañho"
+},
+{
+"key": "kn-mil-2-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 146,
+"end": 150,
+"title": "7. Yonisomanasikārapañho"
+},
+{
+"key": "kn-mil-2-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 150,
+"end": 156,
+"title": "8. Manasikāralakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 156,
+"end": 167,
+"title": "9. Sīlalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 167,
+"end": 173,
+"title": "10. Sampasādanalakkhaṇasaddhāpañho"
+},
+{
+"key": "kn-mil-2-1-11",
+"depth": 6,
+"rend": "subhead",
+"start": 173,
+"end": 180,
+"title": "11. Sampakkhandanalakkhaṇasaddhāpañho"
+},
+{
+"key": "kn-mil-2-1-12",
+"depth": 6,
+"rend": "subhead",
+"start": 180,
+"end": 186,
+"title": "12. Vīriyalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-1-13",
+"depth": 6,
+"rend": "subhead",
+"start": 186,
+"end": 193,
+"title": "13. Satilakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-1-14",
+"depth": 6,
+"rend": "subhead",
+"start": 193,
+"end": 199,
+"title": "14. Samādhipañho"
+},
+{
+"key": "kn-mil-2-1-15",
+"depth": 6,
+"rend": "subhead",
+"start": 199,
+"end": 204,
+"title": "15. Paññālakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-1-16",
+"depth": 6,
+"rend": "subhead",
+"start": 204,
+"end": 211,
+"title": "16. Nānādhammānaṃ ekakiccaabhinipphādanapañho"
+},
+{
+"key": "kn-mil-2-2",
+"depth": 5,
+"rend": "title",
+"start": 211,
+"end": 273,
+"title": "2. Addhānavaggo"
+},
+{
+"key": "kn-mil-2-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 212,
+"end": 219,
+"title": "1. Dhammasantatipañho"
+},
+{
+"key": "kn-mil-2-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 219,
+"end": 224,
+"title": "2. Paṭisandahanapañho"
+},
+{
+"key": "kn-mil-2-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 224,
+"end": 234,
+"title": "3. Ñāṇapaññāpañho"
+},
+{
+"key": "kn-mil-2-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 234,
+"end": 243,
+"title": "4. Paṭisandahanapuggalavediyanapañho"
+},
+{
+"key": "kn-mil-2-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 243,
+"end": 248,
+"title": "5. Vedanāpañho"
+},
+{
+"key": "kn-mil-2-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 248,
+"end": 257,
+"title": "6. Nāmarūpaekattanānattapañho"
+},
+{
+"key": "kn-mil-2-2-7",
+"depth": 6,
+"rend": "subhead",
+"start": 257,
+"end": 262,
+"title": "7. Therapaṭisandahanāpaṭisandahanapañho"
+},
+{
+"key": "kn-mil-2-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 262,
+"end": 267,
+"title": "8. Nāmarūpapaṭisandahanapañho"
+},
+{
+"key": "kn-mil-2-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 267,
+"end": 273,
+"title": "9. Addhānapañho"
+},
+{
+"key": "kn-mil-2-3",
+"depth": 5,
+"rend": "title",
+"start": 273,
+"end": 375,
+"title": "3. Vicāravaggo"
+},
+{
+"key": "kn-mil-2-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 274,
+"end": 278,
+"title": "1. Addhānamūlapañho"
+},
+{
+"key": "kn-mil-2-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 278,
+"end": 285,
+"title": "2. Purimakoṭipañho"
+},
+{
+"key": "kn-mil-2-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 285,
+"end": 291,
+"title": "3. Koṭipaññāyanapañho"
+},
+{
+"key": "kn-mil-2-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 291,
+"end": 295,
+"title": "4. Saṅkhārajāyamānapañho"
+},
+{
+"key": "kn-mil-2-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 295,
+"end": 306,
+"title": "5. Bhavantasaṅkhārajāyamānapañho"
+},
+{
+"key": "kn-mil-2-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 306,
+"end": 316,
+"title": "6. Vedagūpañho"
+},
+{
+"key": "kn-mil-2-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 316,
+"end": 333,
+"title": "7. Cakkhuviññāṇādipañho"
+},
+{
+"key": "kn-mil-2-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 333,
+"end": 341,
+"title": "8. Phassalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-9",
+"depth": 6,
+"rend": "subhead",
+"start": 341,
+"end": 347,
+"title": "9. Vedanālakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 347,
+"end": 352,
+"title": "10. Saññālakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-11",
+"depth": 6,
+"rend": "subhead",
+"start": 352,
+"end": 358,
+"title": "11. Cetanālakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-12",
+"depth": 6,
+"rend": "subhead",
+"start": 358,
+"end": 363,
+"title": "12. Viññāṇalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-13",
+"depth": 6,
+"rend": "subhead",
+"start": 363,
+"end": 368,
+"title": "13. Vitakkalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-3-14",
+"depth": 6,
+"rend": "subhead",
+"start": 368,
+"end": 375,
+"title": "14. Vicāralakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-4",
+"depth": 5,
+"rend": "title",
+"start": 375,
+"end": 434,
+"title": "4. Nibbānavaggo"
+},
+{
+"key": "kn-mil-2-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 376,
+"end": 381,
+"title": "1. Phassādivinibbhujanapañho"
+},
+{
+"key": "kn-mil-2-4-2",
+"depth": 6,
+"rend": "subhead",
+"start": 381,
+"end": 386,
+"title": "2. Nāgasenapañho"
+},
+{
+"key": "kn-mil-2-4-3",
+"depth": 6,
+"rend": "subhead",
+"start": 386,
+"end": 391,
+"title": "3. Pañcāyatanakammanibbattapañho"
+},
+{
+"key": "kn-mil-2-4-4",
+"depth": 6,
+"rend": "subhead",
+"start": 391,
+"end": 396,
+"title": "4. Kammanānākaraṇapañho"
+},
+{
+"key": "kn-mil-2-4-5",
+"depth": 6,
+"rend": "subhead",
+"start": 396,
+"end": 409,
+"title": "5. Vāyāmakaraṇapañho"
+},
+{
+"key": "kn-mil-2-4-6",
+"depth": 6,
+"rend": "subhead",
+"start": 409,
+"end": 416,
+"title": "6. Nerayikaggiuṇhabhāvapañho"
+},
+{
+"key": "kn-mil-2-4-7",
+"depth": 6,
+"rend": "subhead",
+"start": 416,
+"end": 420,
+"title": "7. Pathavisandhārakapañho"
+},
+{
+"key": "kn-mil-2-4-8",
+"depth": 6,
+"rend": "subhead",
+"start": 420,
+"end": 424,
+"title": "8. Nirodhanibbānapañho"
+},
+{
+"key": "kn-mil-2-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 424,
+"end": 428,
+"title": "9. Nibbānalabhanapañho"
+},
+{
+"key": "kn-mil-2-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 428,
+"end": 434,
+"title": "10. Nibbānasukhajānanapañho"
+},
+{
+"key": "kn-mil-2-5",
+"depth": 5,
+"rend": "title",
+"start": 434,
+"end": 481,
+"title": "5. Buddhavaggo"
+},
+{
+"key": "kn-mil-2-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 435,
+"end": 439,
+"title": "1. Buddhassa atthinatthibhāvapañho"
+},
+{
+"key": "kn-mil-2-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 439,
+"end": 443,
+"title": "2. Buddhassa anuttarabhāvapañho"
+},
+{
+"key": "kn-mil-2-5-3",
+"depth": 6,
+"rend": "subhead",
+"start": 443,
+"end": 447,
+"title": "3. Buddhassa anuttarabhāvajānanapañho"
+},
+{
+"key": "kn-mil-2-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 447,
+"end": 451,
+"title": "4. Dhammadiṭṭhapañho"
+},
+{
+"key": "kn-mil-2-5-5",
+"depth": 6,
+"rend": "subhead",
+"start": 451,
+"end": 456,
+"title": "5. Asaṅkamanapaṭisandahanapañho"
+},
+{
+"key": "kn-mil-2-5-6",
+"depth": 6,
+"rend": "subhead",
+"start": 456,
+"end": 460,
+"title": "6. Vedagūpañho"
+},
+{
+"key": "kn-mil-2-5-7",
+"depth": 6,
+"rend": "subhead",
+"start": 460,
+"end": 465,
+"title": "7. Aññakāyasaṅkamanapañho"
+},
+{
+"key": "kn-mil-2-5-8",
+"depth": 6,
+"rend": "subhead",
+"start": 465,
+"end": 470,
+"title": "8. Kammaphalaatthibhāvapañho"
+},
+{
+"key": "kn-mil-2-5-9",
+"depth": 6,
+"rend": "subhead",
+"start": 470,
+"end": 474,
+"title": "9. Uppajjatijānanapañho"
+},
+{
+"key": "kn-mil-2-5-10",
+"depth": 6,
+"rend": "subhead",
+"start": 474,
+"end": 481,
+"title": "10. Buddhanidassanapañho"
+},
+{
+"key": "kn-mil-2-6",
+"depth": 5,
+"rend": "title",
+"start": 481,
+"end": 532,
+"title": "6. Sativaggo"
+},
+{
+"key": "kn-mil-2-6-1",
+"depth": 6,
+"rend": "subhead",
+"start": 482,
+"end": 488,
+"title": "1. Kāyapiyāyanapañho"
+},
+{
+"key": "kn-mil-2-6-2",
+"depth": 6,
+"rend": "subhead",
+"start": 488,
+"end": 492,
+"title": "2. Sabbaññūbhāvapañho"
+},
+{
+"key": "kn-mil-2-6-3",
+"depth": 6,
+"rend": "subhead",
+"start": 492,
+"end": 498,
+"title": "3. Mahāpurisalakkhaṇapañho"
+},
+{
+"key": "kn-mil-2-6-4",
+"depth": 6,
+"rend": "subhead",
+"start": 498,
+"end": 502,
+"title": "4. Bhagavato brahmacāripañho"
+},
+{
+"key": "kn-mil-2-6-5",
+"depth": 6,
+"rend": "subhead",
+"start": 502,
+"end": 506,
+"title": "5. Bhagavato upasampadāpañho"
+},
+{
+"key": "kn-mil-2-6-6",
+"depth": 6,
+"rend": "subhead",
+"start": 506,
+"end": 510,
+"title": "6. Assubhesajjābhesajjapañho"
+},
+{
+"key": "kn-mil-2-6-7",
+"depth": 6,
+"rend": "subhead",
+"start": 510,
+"end": 514,
+"title": "7. Sarāgavītarāganānākaraṇapañho"
+},
+{
+"key": "kn-mil-2-6-8",
+"depth": 6,
+"rend": "subhead",
+"start": 514,
+"end": 518,
+"title": "8. Paññāpatiṭṭhānapañho"
+},
+{
+"key": "kn-mil-2-6-9",
+"depth": 6,
+"rend": "subhead",
+"start": 518,
+"end": 522,
+"title": "9. Saṃsārapañho"
+},
+{
+"key": "kn-mil-2-6-10",
+"depth": 6,
+"rend": "subhead",
+"start": 522,
+"end": 526,
+"title": "10. Cirakatasaraṇapañho"
+},
+{
+"key": "kn-mil-2-6-11",
+"depth": 6,
+"rend": "subhead",
+"start": 526,
+"end": 532,
+"title": "11. Abhijānantasatipañho"
+},
+{
+"key": "kn-mil-2-7",
+"depth": 5,
+"rend": "title",
+"start": 532,
+"end": 681,
+"title": "7. Arūpadhammavavattanavaggo"
+},
+{
+"key": "kn-mil-2-7-1",
+"depth": 6,
+"rend": "subhead",
+"start": 533,
+"end": 554,
+"title": "1. Satiuppajjanapañho"
+},
+{
+"key": "kn-mil-2-7-2",
+"depth": 6,
+"rend": "subhead",
+"start": 554,
+"end": 559,
+"title": "2. Buddhaguṇasatipaṭilābhapañho"
+},
+{
+"key": "kn-mil-2-7-3",
+"depth": 6,
+"rend": "subhead",
+"start": 559,
+"end": 566,
+"title": "3. Dukkhappahānavāyamapañho"
+},
+{
+"key": "kn-mil-2-7-4",
+"depth": 6,
+"rend": "subhead",
+"start": 566,
+"end": 572,
+"title": "4. Brahmalokapañho"
+},
+{
+"key": "kn-mil-2-7-5",
+"depth": 6,
+"rend": "subhead",
+"start": 572,
+"end": 578,
+"title": "5. Dvinnaṃ lokuppannānaṃ samakabhāvapañho"
+},
+{
+"key": "kn-mil-2-7-6",
+"depth": 6,
+"rend": "subhead",
+"start": 578,
+"end": 582,
+"title": "6. Bojjhaṅgapañho"
+},
+{
+"key": "kn-mil-2-7-7",
+"depth": 6,
+"rend": "subhead",
+"start": 582,
+"end": 586,
+"title": "7. Pāpapuññānaṃ appānappabhāvapañho"
+},
+{
+"key": "kn-mil-2-7-8",
+"depth": 6,
+"rend": "subhead",
+"start": 586,
+"end": 590,
+"title": "8. Jānantājānantapāpakaraṇapañho"
+},
+{
+"key": "kn-mil-2-7-9",
+"depth": 6,
+"rend": "subhead",
+"start": 590,
+"end": 595,
+"title": "9. Uttarakurukādigamanapañho"
+},
+{
+"key": "kn-mil-2-7-10",
+"depth": 6,
+"rend": "subhead",
+"start": 595,
+"end": 600,
+"title": "10. Dīghaṭṭhipañho"
+},
+{
+"key": "kn-mil-2-7-11",
+"depth": 6,
+"rend": "subhead",
+"start": 600,
+"end": 604,
+"title": "11. Assāsapassāsanirodhapañho"
+},
+{
+"key": "kn-mil-2-7-12",
+"depth": 6,
+"rend": "subhead",
+"start": 604,
+"end": 608,
+"title": "12. Samuddapañho"
+},
+{
+"key": "kn-mil-2-7-13",
+"depth": 6,
+"rend": "subhead",
+"start": 608,
+"end": 612,
+"title": "13. Samuddaekarasapañho"
+},
+{
+"key": "kn-mil-2-7-14",
+"depth": 6,
+"rend": "subhead",
+"start": 612,
+"end": 616,
+"title": "14. Sukhumapañho"
+},
+{
+"key": "kn-mil-2-7-15",
+"depth": 6,
+"rend": "subhead",
+"start": 616,
+"end": 620,
+"title": "15. Viññāṇanānatthapañho"
+},
+{
+"key": "kn-mil-2-7-16",
+"depth": 6,
+"rend": "subhead",
+"start": 620,
+"end": 626,
+"title": "16. Arūpadhammavavatthānadukkarapañho"
+},
+{
+"key": "kn-mil-2-7-16a",
+"depth": 6,
+"rend": "title",
+"start": 626,
+"end": 634,
+"title": "Milindapañhapucchāvisajjanā"
+},
+{
+"key": "kn-mil-2-7-16b",
+"depth": 6,
+"rend": "title",
+"start": 634,
+"end": 681,
+"title": "Meṇḍakapañhārambhakathā"
+},
+{
+"key": "kn-mil-2-7-16b-1",
+"depth": 7,
+"rend": "subhead",
+"start": 635,
+"end": 654,
+"title": "Aṭṭhamantaparivajjanīyaṭṭhānāni"
+},
+{
+"key": "kn-mil-2-7-16b-2",
+"depth": 7,
+"rend": "subhead",
+"start": 654,
+"end": 660,
+"title": "Aṭṭhamantavināsakapuggalā"
+},
+{
+"key": "kn-mil-2-7-16b-3",
+"depth": 7,
+"rend": "subhead",
+"start": 660,
+"end": 668,
+"title": "Navaguyhamantavidhaṃsakaṃ"
+},
+{
+"key": "kn-mil-2-7-16b-4",
+"depth": 7,
+"rend": "subhead",
+"start": 668,
+"end": 675,
+"title": "Aṭṭha paññāpaṭilābhakāraṇaṃ"
+},
+{
+"key": "kn-mil-2-7-16b-5",
+"depth": 7,
+"rend": "subhead",
+"start": 675,
+"end": 678,
+"title": "Ācariyaguṇaṃ"
+},
+{
+"key": "kn-mil-2-7-16b-6",
+"depth": 7,
+"rend": "subhead",
+"start": 678,
+"end": 681,
+"title": "Upāsakaguṇaṃ"
+},
+{
+"key": "kn-mil-3",
+"depth": 4,
+"rend": "chapter",
+"start": 681,
+"end": 1262,
+"title": "4. Meṇḍakapañho"
+},
+{
+"key": "kn-mil-3-1",
+"depth": 5,
+"rend": "title",
+"start": 682,
+"end": 823,
+"title": "1. Iddhibalavaggo"
+},
+{
+"key": "kn-mil-3-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 683,
+"end": 703,
+"title": "1. Katādhikārasaphalapañho"
+},
+{
+"key": "kn-mil-3-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 703,
+"end": 719,
+"title": "2. Sabbaññubhāvapañho"
+},
+{
+"key": "kn-mil-3-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 719,
+"end": 734,
+"title": "3. Devadattapabbajjapañho"
+},
+{
+"key": "kn-mil-3-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 734,
+"end": 750,
+"title": "4. Pathavicalanapañho"
+},
+{
+"key": "kn-mil-3-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 750,
+"end": 764,
+"title": "5. Sivirājacakkhudānapañho"
+},
+{
+"key": "kn-mil-3-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 764,
+"end": 782,
+"title": "6. Gabbhāvakkantipañho"
+},
+{
+"key": "kn-mil-3-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 782,
+"end": 793,
+"title": "7. Saddhammantaradhānapañho"
+},
+{
+"key": "kn-mil-3-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 793,
+"end": 809,
+"title": "8. Akusalacchedanapañho"
+},
+{
+"key": "kn-mil-3-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 809,
+"end": 816,
+"title": "9. Uttarikaraṇīyapañho"
+},
+{
+"key": "kn-mil-3-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 816,
+"end": 823,
+"title": "10. Iddhibaladassanapañho"
+},
+{
+"key": "kn-mil-3-2",
+"depth": 5,
+"rend": "title",
+"start": 823,
+"end": 901,
+"title": "2. Abhejjavaggo"
+},
+{
+"key": "kn-mil-3-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 824,
+"end": 830,
+"title": "1. Khuddānukhuddakapañho"
+},
+{
+"key": "kn-mil-3-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 830,
+"end": 839,
+"title": "2. Abyākaraṇīyapañho"
+},
+{
+"key": "kn-mil-3-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 839,
+"end": 854,
+"title": "3. Maccubhāyanābhāyanapañho"
+},
+{
+"key": "kn-mil-3-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 854,
+"end": 871,
+"title": "4. Maccupāsamuttipañho"
+},
+{
+"key": "kn-mil-3-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 871,
+"end": 885,
+"title": "5. Buddhalābhantarāyapañho"
+},
+{
+"key": "kn-mil-3-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 885,
+"end": 889,
+"title": "6. Apuññapañho"
+},
+{
+"key": "kn-mil-3-2-7",
+"depth": 6,
+"rend": "subhead",
+"start": 889,
+"end": 895,
+"title": "7. Bhikkhusaṅghapariharaṇapañho"
+},
+{
+"key": "kn-mil-3-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 895,
+"end": 901,
+"title": "8. Abhejjaparisapañho"
+},
+{
+"key": "kn-mil-3-3",
+"depth": 5,
+"rend": "title",
+"start": 901,
+"end": 1030,
+"title": "3. Paṇāmitavaggo"
+},
+{
+"key": "kn-mil-3-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 902,
+"end": 917,
+"title": "1. Seṭṭhadhammapañho"
+},
+{
+"key": "kn-mil-3-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 917,
+"end": 929,
+"title": "2. Sabbasattahitapharaṇapañho"
+},
+{
+"key": "kn-mil-3-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 929,
+"end": 945,
+"title": "3. Vatthaguyhanidassanapañho"
+},
+{
+"key": "kn-mil-3-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 945,
+"end": 951,
+"title": "4. Pharusavācābhāvapañho"
+},
+{
+"key": "kn-mil-3-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 951,
+"end": 963,
+"title": "5. Rukkhaacetanābhāvapañho"
+},
+{
+"key": "kn-mil-3-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 963,
+"end": 980,
+"title": "6. Piṇḍapātamahapphalapañho"
+},
+{
+"key": "kn-mil-3-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 980,
+"end": 989,
+"title": "7. Buddhapūjanapañho"
+},
+{
+"key": "kn-mil-3-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 989,
+"end": 999,
+"title": "8. Pādasakalikāhatapañho"
+},
+{
+"key": "kn-mil-3-3-9",
+"depth": 6,
+"rend": "subhead",
+"start": 999,
+"end": 1007,
+"title": "9. Aggaggasamaṇapañho"
+},
+{
+"key": "kn-mil-3-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 1007,
+"end": 1017,
+"title": "10. Vaṇṇabhaṇanapañho"
+},
+{
+"key": "kn-mil-3-3-11",
+"depth": 6,
+"rend": "subhead",
+"start": 1017,
+"end": 1022,
+"title": "11. Ahiṃsāniggahapañho"
+},
+{
+"key": "kn-mil-3-3-12",
+"depth": 6,
+"rend": "subhead",
+"start": 1022,
+"end": 1030,
+"title": "12. Bhikkhupaṇāmitapañho"
+},
+{
+"key": "kn-mil-3-4",
+"depth": 5,
+"rend": "title",
+"start": 1030,
+"end": 1130,
+"title": "4. Sabbaññutañāṇavaggo"
+},
+{
+"key": "kn-mil-3-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1031,
+"end": 1038,
+"title": "1. Iddhikammavipākapañho"
+},
+{
+"key": "kn-mil-3-4-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1038,
+"end": 1048,
+"title": "2. Dhammavinayapaṭicchannāpaṭicchannapañho"
+},
+{
+"key": "kn-mil-3-4-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1048,
+"end": 1052,
+"title": "3. Musāvādagarulahubhāvapañho"
+},
+{
+"key": "kn-mil-3-4-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1052,
+"end": 1057,
+"title": "4. Bodhisattadhammatāpañho"
+},
+{
+"key": "kn-mil-3-4-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1057,
+"end": 1064,
+"title": "5. Attanipātanapañho"
+},
+{
+"key": "kn-mil-3-4-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1064,
+"end": 1073,
+"title": "6. Mettābhāvanānisaṃsapañho"
+},
+{
+"key": "kn-mil-3-4-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1073,
+"end": 1103,
+"title": "7. Kusalākusalasamavisamapañho"
+},
+{
+"key": "kn-mil-3-4-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1103,
+"end": 1113,
+"title": "8. Amarādevīpañho"
+},
+{
+"key": "kn-mil-3-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1113,
+"end": 1121,
+"title": "9. Arahantaabhāyanapañho"
+},
+{
+"key": "kn-mil-3-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 1121,
+"end": 1130,
+"title": "10. Buddhasabbaññubhāvapañho"
+},
+{
+"key": "kn-mil-3-5",
+"depth": 5,
+"rend": "title",
+"start": 1130,
+"end": 1262,
+"title": "5. Santhavavaggo"
+},
+{
+"key": "kn-mil-3-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1131,
+"end": 1140,
+"title": "1. Santhavapañho"
+},
+{
+"key": "kn-mil-3-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1140,
+"end": 1150,
+"title": "2. Udarasaṃyatapañho"
+},
+{
+"key": "kn-mil-3-5-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1150,
+"end": 1160,
+"title": "3. Buddhaappābādhapañho"
+},
+{
+"key": "kn-mil-3-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1160,
+"end": 1169,
+"title": "4. Magguppādanapañho"
+},
+{
+"key": "kn-mil-3-5-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1169,
+"end": 1179,
+"title": "5. Buddhaaviheṭhakapañho"
+},
+{
+"key": "kn-mil-3-5-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1179,
+"end": 1188,
+"title": "6. Chaddantajotipālārabbhapañho"
+},
+{
+"key": "kn-mil-3-5-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1188,
+"end": 1194,
+"title": "7. Ghaṭikārapañho"
+},
+{
+"key": "kn-mil-3-5-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1194,
+"end": 1212,
+"title": "8. Brāhmaṇarājavādapañho"
+},
+{
+"key": "kn-mil-3-5-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1212,
+"end": 1235,
+"title": "9. Gāthābhigītabhojanakathāpañho"
+},
+{
+"key": "kn-mil-3-5-10",
+"depth": 6,
+"rend": "subhead",
+"start": 1235,
+"end": 1246,
+"title": "10. Dhammadesanāya appossukkapañho"
+},
+{
+"key": "kn-mil-3-5-11",
+"depth": 6,
+"rend": "subhead",
+"start": 1246,
+"end": 1262,
+"title": "11. Ācariyānācariyapañho"
+},
+{
+"key": "kn-mil-4",
+"depth": 4,
+"rend": "chapter",
+"start": 1262,
+"end": 1816,
+"title": "5. Anumānapañho"
+},
+{
+"key": "kn-mil-4-1",
+"depth": 5,
+"rend": "title",
+"start": 1263,
+"end": 1376,
+"title": "1. Buddhavaggo"
+},
+{
+"key": "kn-mil-4-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1264,
+"end": 1275,
+"title": "1. Dvinnaṃ buddhānaṃ anuppajjamānapañho"
+},
+{
+"key": "kn-mil-4-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1275,
+"end": 1293,
+"title": "2. Gotamivatthadānapañho"
+},
+{
+"key": "kn-mil-4-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1293,
+"end": 1301,
+"title": "3. Gihipabbajitasammāpaṭipattipañho"
+},
+{
+"key": "kn-mil-4-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1301,
+"end": 1311,
+"title": "4. Paṭipadādosapañho"
+},
+{
+"key": "kn-mil-4-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1311,
+"end": 1331,
+"title": "5. Hīnāyāvattanapañho"
+},
+{
+"key": "kn-mil-4-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1331,
+"end": 1339,
+"title": "6. Arahantavedanāvediyanapañho"
+},
+{
+"key": "kn-mil-4-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1339,
+"end": 1350,
+"title": "7. Abhisamayantarāyakarapañho"
+},
+{
+"key": "kn-mil-4-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1350,
+"end": 1363,
+"title": "8. Dussīlapañho"
+},
+{
+"key": "kn-mil-4-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1363,
+"end": 1376,
+"title": "9. Udakasattajīvapañho"
+},
+{
+"key": "kn-mil-4-2",
+"depth": 5,
+"rend": "title",
+"start": 1376,
+"end": 1435,
+"title": "2. Nippapañcavaggo"
+},
+{
+"key": "kn-mil-4-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1377,
+"end": 1386,
+"title": "1. Nippapañcapañho"
+},
+{
+"key": "kn-mil-4-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1386,
+"end": 1393,
+"title": "2. Khīṇāsavabhāvapañho"
+},
+{
+"key": "kn-mil-4-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1393,
+"end": 1400,
+"title": "3. Khīṇāsavasatisammosapañho"
+},
+{
+"key": "kn-mil-4-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1400,
+"end": 1404,
+"title": "4. Loke natthibhāvapañho"
+},
+{
+"key": "kn-mil-4-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1404,
+"end": 1416,
+"title": "5. Akammajādipañho"
+},
+{
+"key": "kn-mil-4-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1416,
+"end": 1419,
+"title": "6. Kammajādipañho"
+},
+{
+"key": "kn-mil-4-2-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1419,
+"end": 1422,
+"title": "7. Yakkhapañho"
+},
+{
+"key": "kn-mil-4-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1422,
+"end": 1426,
+"title": "8. Anavasesasikkhāpadapañho"
+},
+{
+"key": "kn-mil-4-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1426,
+"end": 1429,
+"title": "9. Sūriyatapanapañho"
+},
+{
+"key": "kn-mil-4-2-10",
+"depth": 6,
+"rend": "subhead",
+"start": 1429,
+"end": 1435,
+"title": "10. Kaṭhinatapanapañho"
+},
+{
+"key": "kn-mil-4-3",
+"depth": 5,
+"rend": "title",
+"start": 1435,
+"end": 1626,
+"title": "3. Vessantaravaggo"
+},
+{
+"key": "kn-mil-4-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1436,
+"end": 1474,
+"title": "1. Vessantarapañho"
+},
+{
+"key": "kn-mil-4-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1474,
+"end": 1494,
+"title": "2. Dukkarakārikapañho"
+},
+{
+"key": "kn-mil-4-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1494,
+"end": 1504,
+"title": "3. Kusalākusalabalavatarapañho"
+},
+{
+"key": "kn-mil-4-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1504,
+"end": 1517,
+"title": "4. Pubbapetādisapañho"
+},
+{
+"key": "kn-mil-4-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1517,
+"end": 1528,
+"title": "5. Supinapañho"
+},
+{
+"key": "kn-mil-4-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1528,
+"end": 1561,
+"title": "6. Akālamaraṇapañho"
+},
+{
+"key": "kn-mil-4-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1561,
+"end": 1568,
+"title": "7. Cetiyapāṭihāriyapañho"
+},
+{
+"key": "kn-mil-4-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1568,
+"end": 1577,
+"title": "8. Dhammābhisamayapañho"
+},
+{
+"key": "kn-mil-4-3-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1577,
+"end": 1583,
+"title": "9. Ekantasukhanibbānapañho"
+},
+{
+"key": "kn-mil-4-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 1583,
+"end": 1601,
+"title": "10. Nibbānarūpasaṇṭhānapañho"
+},
+{
+"key": "kn-mil-4-3-11",
+"depth": 6,
+"rend": "subhead",
+"start": 1601,
+"end": 1615,
+"title": "11. Nibbānasacchikaraṇapañho"
+},
+{
+"key": "kn-mil-4-3-12",
+"depth": 6,
+"rend": "subhead",
+"start": 1615,
+"end": 1626,
+"title": "12. Nibbānasannihitapañho"
+},
+{
+"key": "kn-mil-4-4",
+"depth": 5,
+"rend": "title",
+"start": 1626,
+"end": 1816,
+"title": "4. Anumānavaggo"
+},
+{
+"key": "kn-mil-4-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1627,
+"end": 1773,
+"title": "1. Anumānapañho"
+},
+{
+"key": "kn-mil-4-4-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1773,
+"end": 1816,
+"title": "2. Dhutaṅgapañho"
+},
+{
+"key": "kn-mil-5",
+"depth": 4,
+"rend": "chapter",
+"start": 1816,
+"end": 2474,
+"title": "6. Opammakathāpañho"
+},
+{
+"key": "kn-mil-5-1",
+"depth": 5,
+"rend": "title",
+"start": 1933,
+"end": 2013,
+"title": "1. Gadrabhavaggo"
+},
+{
+"key": "kn-mil-5-1-1",
+"depth": 6,
+"rend": "subhead",
+"start": 1934,
+"end": 1939,
+"title": "1. Gadrabhaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-2",
+"depth": 6,
+"rend": "subhead",
+"start": 1939,
+"end": 1955,
+"title": "2. Kukkuṭaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-3",
+"depth": 6,
+"rend": "subhead",
+"start": 1955,
+"end": 1960,
+"title": "3. Kalandakaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-4",
+"depth": 6,
+"rend": "subhead",
+"start": 1960,
+"end": 1965,
+"title": "4. Dīpiniyaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-5",
+"depth": 6,
+"rend": "subhead",
+"start": 1965,
+"end": 1976,
+"title": "5. Dīpikaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-6",
+"depth": 6,
+"rend": "subhead",
+"start": 1976,
+"end": 1987,
+"title": "6. Kummaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-7",
+"depth": 6,
+"rend": "subhead",
+"start": 1987,
+"end": 1992,
+"title": "7. Vaṃsaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-8",
+"depth": 6,
+"rend": "subhead",
+"start": 1992,
+"end": 1997,
+"title": "8. Cāpaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-9",
+"depth": 6,
+"rend": "subhead",
+"start": 1997,
+"end": 2003,
+"title": "9. Vāyasaṅgapañho"
+},
+{
+"key": "kn-mil-5-1-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2003,
+"end": 2013,
+"title": "10. Makkaṭaṅgapañho"
+},
+{
+"key": "kn-mil-5-2",
+"depth": 5,
+"rend": "title",
+"start": 2013,
+"end": 2084,
+"title": "2. Samuddavaggo"
+},
+{
+"key": "kn-mil-5-2-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2014,
+"end": 2021,
+"title": "1. Lābulataṅgapañho"
+},
+{
+"key": "kn-mil-5-2-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2021,
+"end": 2026,
+"title": "2. Padumaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2026,
+"end": 2034,
+"title": "3. Bījaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2034,
+"end": 2043,
+"title": "4. Sālakalyāṇikaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2043,
+"end": 2049,
+"title": "5. Nāvaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2049,
+"end": 2055,
+"title": "6. Nāvālagganakaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2055,
+"end": 2058,
+"title": "7. Kūpaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-8",
+"depth": 6,
+"rend": "subhead",
+"start": 2058,
+"end": 2065,
+"title": "8. Niyāmakaṅgapañho"
+},
+{
+"key": "kn-mil-5-2-9",
+"depth": 6,
+"rend": "subhead",
+"start": 2065,
+"end": 2070,
+"title": "9. Kammakāraṅgapañho"
+},
+{
+"key": "kn-mil-5-2-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2070,
+"end": 2084,
+"title": "10. Samuddaṅgapañho"
+},
+{
+"key": "kn-mil-5-3",
+"depth": 5,
+"rend": "title",
+"start": 2084,
+"end": 2193,
+"title": "3. Pathavīvaggo"
+},
+{
+"key": "kn-mil-5-3-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2085,
+"end": 2096,
+"title": "1. Pathavīaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2096,
+"end": 2106,
+"title": "2. Āpaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2106,
+"end": 2114,
+"title": "3. Tejaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2114,
+"end": 2123,
+"title": "4. Vāyuṅgapañho"
+},
+{
+"key": "kn-mil-5-3-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2123,
+"end": 2145,
+"title": "5. Pabbataṅgapañho"
+},
+{
+"key": "kn-mil-5-3-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2145,
+"end": 2152,
+"title": "6. Ākāsaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2152,
+"end": 2159,
+"title": "7. Candaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-8",
+"depth": 6,
+"rend": "subhead",
+"start": 2159,
+"end": 2172,
+"title": "8. Sūriyaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-9",
+"depth": 6,
+"rend": "subhead",
+"start": 2172,
+"end": 2179,
+"title": "9. Sakkaṅgapañho"
+},
+{
+"key": "kn-mil-5-3-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2179,
+"end": 2193,
+"title": "10. Cakkavattiṅgapañho"
+},
+{
+"key": "kn-mil-5-4",
+"depth": 5,
+"rend": "title",
+"start": 2193,
+"end": 2272,
+"title": "4. Upacikāvaggo"
+},
+{
+"key": "kn-mil-5-4-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2194,
+"end": 2199,
+"title": "1. Upacikaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2199,
+"end": 2205,
+"title": "2. Biḷāraṅgapañho"
+},
+{
+"key": "kn-mil-5-4-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2205,
+"end": 2210,
+"title": "3. Undūraṅgapañho"
+},
+{
+"key": "kn-mil-5-4-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2210,
+"end": 2215,
+"title": "4. Vicchikaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2215,
+"end": 2220,
+"title": "5. Nakulaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2220,
+"end": 2233,
+"title": "6. Jarasiṅgālaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2233,
+"end": 2242,
+"title": "7. Migaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-8",
+"depth": 6,
+"rend": "subhead",
+"start": 2242,
+"end": 2252,
+"title": "8. Gorūpaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-9",
+"depth": 6,
+"rend": "subhead",
+"start": 2252,
+"end": 2258,
+"title": "9. Varāhaṅgapañho"
+},
+{
+"key": "kn-mil-5-4-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2258,
+"end": 2272,
+"title": "10. Hatthiṅgapañho"
+},
+{
+"key": "kn-mil-5-5",
+"depth": 5,
+"rend": "title",
+"start": 2272,
+"end": 2343,
+"title": "5. Sīhavaggo"
+},
+{
+"key": "kn-mil-5-5-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2273,
+"end": 2283,
+"title": "1. Sīhaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2283,
+"end": 2290,
+"title": "2. Cakkavākaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2290,
+"end": 2296,
+"title": "3. Peṇāhikaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2296,
+"end": 2301,
+"title": "4. Gharakapotaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2301,
+"end": 2306,
+"title": "5. Ulūkaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2306,
+"end": 2311,
+"title": "6. Satapattaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2311,
+"end": 2319,
+"title": "7. Vagguliṅgapañho"
+},
+{
+"key": "kn-mil-5-5-8",
+"depth": 6,
+"rend": "subhead",
+"start": 2319,
+"end": 2324,
+"title": "8. Jalūkaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-9",
+"depth": 6,
+"rend": "subhead",
+"start": 2324,
+"end": 2331,
+"title": "9. Sappaṅgapañho"
+},
+{
+"key": "kn-mil-5-5-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2331,
+"end": 2343,
+"title": "10. Ajagaraṅgapañho"
+},
+{
+"key": "kn-mil-5-6",
+"depth": 5,
+"rend": "title",
+"start": 2343,
+"end": 2418,
+"title": "6. Makkaṭakavaggo"
+},
+{
+"key": "kn-mil-5-6-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2344,
+"end": 2349,
+"title": "1. Panthamakkaṭakaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2349,
+"end": 2354,
+"title": "2. Thanassitadārakaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2354,
+"end": 2359,
+"title": "3. Cittakadharakummaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2359,
+"end": 2368,
+"title": "4. Pavanaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2368,
+"end": 2375,
+"title": "5. Rukkhaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2375,
+"end": 2384,
+"title": "6. Meghaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2384,
+"end": 2391,
+"title": "7. Maṇiratanaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-8",
+"depth": 6,
+"rend": "subhead",
+"start": 2391,
+"end": 2399,
+"title": "8. Māgavikaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-9",
+"depth": 6,
+"rend": "subhead",
+"start": 2399,
+"end": 2405,
+"title": "9. Bāḷisikaṅgapañho"
+},
+{
+"key": "kn-mil-5-6-10",
+"depth": 6,
+"rend": "subhead",
+"start": 2405,
+"end": 2418,
+"title": "10. Tacchakaṅgapañho"
+},
+{
+"key": "kn-mil-5-7",
+"depth": 5,
+"rend": "title",
+"start": 2418,
+"end": 2474,
+"title": "7. Kumbhavaggo"
+},
+{
+"key": "kn-mil-5-7-1",
+"depth": 6,
+"rend": "subhead",
+"start": 2419,
+"end": 2424,
+"title": "1. Kumbhaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-2",
+"depth": 6,
+"rend": "subhead",
+"start": 2424,
+"end": 2430,
+"title": "2. Kāḷāyasaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-3",
+"depth": 6,
+"rend": "subhead",
+"start": 2430,
+"end": 2439,
+"title": "3. Chattaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-4",
+"depth": 6,
+"rend": "subhead",
+"start": 2439,
+"end": 2446,
+"title": "4. Khettaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-5",
+"depth": 6,
+"rend": "subhead",
+"start": 2446,
+"end": 2452,
+"title": "5. Agadaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-6",
+"depth": 6,
+"rend": "subhead",
+"start": 2452,
+"end": 2459,
+"title": "6. Bhojanaṅgapañho"
+},
+{
+"key": "kn-mil-5-7-7",
+"depth": 6,
+"rend": "subhead",
+"start": 2459,
+"end": 2474,
+"title": "7. Issāsaṅgapañho"
+}
+]

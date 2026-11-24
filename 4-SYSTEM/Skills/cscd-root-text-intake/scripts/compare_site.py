@@ -20,7 +20,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bold_check  # noqa: E402
 
 PER_SECTION = "--per-section" in sys.argv   # IDs ^<book>-<section>-<N> (Khuddakapāṭha)
-book, md, textp, tocp = [x for x in sys.argv[1:] if x != "--per-section"][:4]
+_args = sys.argv[1:]
+ZONE_LABELS = None   # --zone-labels M,1,2,3: run k's zone label (Paṭisambhidāmagga); implies --zoned
+if "--zone-labels" in _args:
+    _k = _args.index("--zone-labels"); ZONE_LABELS = _args[_k + 1].split(","); del _args[_k:_k + 2]
+ZONED = "--zoned" in _args or ZONE_LABELS is not None   # IDs ^<book>-<run>-<N>, run = k-th restart at 1 (Suttanipāta)
+book, md, textp, tocp = [x for x in _args if x not in ("--per-section", "--zoned")][:4]
 # printed numbers dropped before comparing: "1. ", "1-10. ", "(6) 1. " (AN vaggas)
 LEAD = re.compile(r"^\s*(?:\(\d+\)\s*)?(\d+(?:-\d+)*|\(\d+\))\s*\.\s*")
 
@@ -75,14 +80,31 @@ for op, i1, i2, j1, j2 in sm.get_opcodes():
 
 # printed paragraph numbers -> block IDs
 num_ok = num_bad = 0
+zone, zprev = 0, None
+import zones  # noqa: E402  (the run rules shared with apply.py and verify.py)
+head_since, numbered = False, []
+for i, p in enumerate(paras):
+    if p.get("r") in ("chapter", "title", "subhead", "subsubhead", "book"):
+        head_since = True
+    elif p.get("n"):
+        numbered.append((i, p["n"], head_since))
+        head_since = False
+run_of = dict(zip((i for i, _, _ in numbered), zones.assign((n, hs) for _, n, hs in numbered))) if ZONED else {}
 for i, p in enumerate(paras):
     n = p.get("n")              # the site keeps the printed paragraph number here
     if not n:
         continue
     j = pairs.get(i)
     want = f"{book}-{n}"
+    if ZONED:
+        zone = run_of[i]
+        lab = ZONE_LABELS[zone - 1] if ZONE_LABELS and zone <= len(ZONE_LABELS) else str(zone)
+        want = f"{book}-{lab}-{n}" if lab else f"{book}-{n}"
     if PER_SECTION:                     # the site's node key "<book-key>-<section>[-…]" gives the section
-        rest = p.get("k", "")[len(json.loads(Path(textp).read_text(encoding="utf-8"))["book"]["root"]):].strip("-").split("-")
+        # the book's own key, from its contents tree ("kn-thiap-1" -> "kn-thiap"): the text
+        # file's book.root names the site's source file, which may hold two books (kn-ap)
+        root = json.loads(Path(tocp).read_text(encoding="utf-8"))[0]["key"].rsplit("-", 1)[0]
+        rest = p.get("k", "")[len(root):].strip("-").split("-")
         want = f"{book}-{rest[0]}-{n}" if rest and rest[0].isdigit() else want
     if j is not None and items[j].get("block") == want:
         num_ok += 1
