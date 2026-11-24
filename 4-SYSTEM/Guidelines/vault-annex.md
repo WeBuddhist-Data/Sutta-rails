@@ -10,59 +10,59 @@ When the Guidelines and this annex disagree on a vault-specific detail, this ann
 
 This vault serves the **Pāli Sutta Piṭaka**, the second basket of the Pāli Canon, in the Chaṭṭha Saṅgāyana (CSCD) edition published by the Vipassana Research Institute.
 
-Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vinaya and Abhidhamma vaults: a work CSCD prints in several volumes is one file, and each volume is a `##` chapter in it. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are each one work (`pi-dn.md`, `pi-mn.md`, `pi-sn.md`, `pi-an.md`). The Khuddakanikāya is one file too (`pi-kn.md`), each of its books a `##` chapter, as tipitaka.app groups them under one Khuddakanikāya (joined 2026-11-23). Each volume is still built and verified on its own (`cscd-root-text-intake`), then the volumes are joined with `merge_volumes.py` (merged 2026-11-20). Ingested so far:
+Source-text files in `1-SOURCES/Text/` are **one file per work**, as in the Vinaya and Abhidhamma vaults: a work CSCD prints in several volumes is one file, and each volume is a `##` chapter in it. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are each one work (`pi-dighanikaya.md`, `pi-majjhimanikaya.md`, `pi-samyuttanikaya.md`, `pi-anguttaranikaya.md`). The Khuddakanikāya is one file too (`pi-khuddakanikaya.md`), each of its books a `##` chapter, as tipitaka.app groups them under one Khuddakanikāya (joined 2026-11-23). Each volume is still built and verified on its own (`cscd-root-text-intake`), then the volumes are joined with `merge_volumes.py` (merged 2026-11-20). Ingested so far:
 
 | Nikāya | Volume = chapter | `book` | CSCD source | tipitaka.app key | Filename |
 | ------ | ---------------- | ------ | ----------- | ---------------- | -------- |
-| Dīghanikāya | Sīlakkhandhavaggapāḷi | 1 | `s0101m.mul.xml` | `dn-1` | `pi-dn.md` |
-| Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dn.md` |
-| Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dn.md` |
-| Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-mn.md` |
-| Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-mn.md` |
-| Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-mn.md` |
-| Saṃyuttanikāya | Sagāthāvaggo | 1 | `s0301m.mul.xml` | `sn-1` | `pi-sn.md` |
-| Saṃyuttanikāya | Nidānavaggo | 2 | `s0302m.mul.xml` | `sn-2` | `pi-sn.md` |
-| Saṃyuttanikāya | Khandhavaggo | 3 | `s0303m.mul.xml` | `sn-3` | `pi-sn.md` |
-| Saṃyuttanikāya | Saḷāyatanavaggo | 4 | `s0304m.mul.xml` | `sn-4` | `pi-sn.md` |
-| Saṃyuttanikāya | Mahāvaggo | 5 | `s0305m.mul.xml` | `sn-5` | `pi-sn.md` |
-| Aṅguttaranikāya | Ekakanipātapāḷi | 1 | `s0401m.mul.xml` | `an-1` | `pi-an.md` |
-| Aṅguttaranikāya | Dukanipātapāḷi | 2 | `s0402m1.mul.xml` | `an-2` | `pi-an.md` |
-| Aṅguttaranikāya | Tikanipātapāḷi | 3 | `s0402m2.mul.xml` | `an-3` | `pi-an.md` |
-| Aṅguttaranikāya | Catukkanipātapāḷi | 4 | `s0402m3.mul.xml` | `an-4` | `pi-an.md` |
-| Aṅguttaranikāya | Pañcakanipātapāḷi | 5 | `s0403m1.mul.xml` | `an-5` | `pi-an.md` |
-| Aṅguttaranikāya | Chakkanipātapāḷi | 6 | `s0403m2.mul.xml` | `an-6` | `pi-an.md` |
-| Aṅguttaranikāya | Sattakanipātapāḷi | 7 | `s0403m3.mul.xml` | `an-7` | `pi-an.md` |
-| Aṅguttaranikāya | Aṭṭhakanipātapāḷi | 8 | `s0404m1.mul.xml` | `an-8` | `pi-an.md` |
-| Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-an.md` |
-| Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-an.md` |
-| Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-an.md` |
-| Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-kn.md` |
-| Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-kn.md` |
+| Dīghanikāya | Sīlakkhandhavaggapāḷi | 1 | `s0101m.mul.xml` | `dn-1` | `pi-dighanikaya.md` |
+| Dīghanikāya | Mahāvaggapāḷi | 2 | `s0102m.mul.xml` | `dn-2` | `pi-dighanikaya.md` |
+| Dīghanikāya | Pāthikavaggapāḷi | 3 | `s0103m.mul.xml` | `dn-3` | `pi-dighanikaya.md` |
+| Majjhimanikāya | Mūlapaṇṇāsapāḷi | 1 | `s0201m.mul.xml` | `mn-1` | `pi-majjhimanikaya.md` |
+| Majjhimanikāya | Majjhimapaṇṇāsapāḷi | 2 | `s0202m.mul.xml` | `mn-2` | `pi-majjhimanikaya.md` |
+| Majjhimanikāya | Uparipaṇṇāsapāḷi | 3 | `s0203m.mul.xml` | `mn-3` | `pi-majjhimanikaya.md` |
+| Saṃyuttanikāya | Sagāthāvaggo | 1 | `s0301m.mul.xml` | `sn-1` | `pi-samyuttanikaya.md` |
+| Saṃyuttanikāya | Nidānavaggo | 2 | `s0302m.mul.xml` | `sn-2` | `pi-samyuttanikaya.md` |
+| Saṃyuttanikāya | Khandhavaggo | 3 | `s0303m.mul.xml` | `sn-3` | `pi-samyuttanikaya.md` |
+| Saṃyuttanikāya | Saḷāyatanavaggo | 4 | `s0304m.mul.xml` | `sn-4` | `pi-samyuttanikaya.md` |
+| Saṃyuttanikāya | Mahāvaggo | 5 | `s0305m.mul.xml` | `sn-5` | `pi-samyuttanikaya.md` |
+| Aṅguttaranikāya | Ekakanipātapāḷi | 1 | `s0401m.mul.xml` | `an-1` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Dukanipātapāḷi | 2 | `s0402m1.mul.xml` | `an-2` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Tikanipātapāḷi | 3 | `s0402m2.mul.xml` | `an-3` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Catukkanipātapāḷi | 4 | `s0402m3.mul.xml` | `an-4` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Pañcakanipātapāḷi | 5 | `s0403m1.mul.xml` | `an-5` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Chakkanipātapāḷi | 6 | `s0403m2.mul.xml` | `an-6` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Sattakanipātapāḷi | 7 | `s0403m3.mul.xml` | `an-7` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Aṭṭhakanipātapāḷi | 8 | `s0404m1.mul.xml` | `an-8` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Navakanipātapāḷi | 9 | `s0404m2.mul.xml` | `an-9` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Dasakanipātapāḷi | 10 | `s0404m3.mul.xml` | `an-10` | `pi-anguttaranikaya.md` |
+| Aṅguttaranikāya | Ekādasakanipātapāḷi | 11 | `s0404m4.mul.xml` | `an-11` | `pi-anguttaranikaya.md` |
+| Khuddakanikāya | Khuddakapāṭhapāḷi | 1 | `s0501m.mul.xml` | `kn-khp` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Dhammapadapāḷi | 2 | `s0502m.mul.xml` | `kn-dhp` | `pi-khuddakanikaya.md` |
 
-**Registered 2026-11-23, ingested 2026-11-23/24** (Khuddakanikāya books 3–20; each is a `##` chapter `^<book>-0` of `pi-kn.md`, joined after it passed the intake checks; source copied from the local tipitaka-xml clone, `romn/` unchanged since `0854d11`, Aug 2024):
+**Registered 2026-11-23, ingested 2026-11-23/24** (Khuddakanikāya books 3–20; each is a `##` chapter `^<book>-0` of `pi-khuddakanikaya.md`, joined after it passed the intake checks; source copied from the local tipitaka-xml clone, `romn/` unchanged since `0854d11`, Aug 2024):
 
 | Nikāya | Book | `book` | CSCD source | tipitaka.app key | Filename |
 | ------ | ---- | ------ | ----------- | ---------------- | -------- |
-| Khuddakanikāya | Udānapāḷi | 3 | `s0503m.mul.xml` | `kn-ud` | `pi-kn.md` |
-| Khuddakanikāya | Itivuttakapāḷi | 4 | `s0504m.mul.xml` | `kn-iti` | `pi-kn.md` |
-| Khuddakanikāya | Suttanipātapāḷi | 5 | `s0505m.mul.xml` | `kn-snp` | `pi-kn.md` |
-| Khuddakanikāya | Vimānavatthupāḷi | 6 | `s0506m.mul.xml` | `kn-vv` | `pi-kn.md` |
-| Khuddakanikāya | Petavatthupāḷi | 7 | `s0507m.mul.xml` | `kn-pv` | `pi-kn.md` |
-| Khuddakanikāya | Theragāthāpāḷi | 8 | `s0508m.mul.xml` | `kn-thag` | `pi-kn.md` |
-| Khuddakanikāya | Therīgāthāpāḷi | 9 | `s0509m.mul.xml` | `kn-thig` | `pi-kn.md` |
-| Khuddakanikāya | Therāpadānapāḷi | 10 | `s0510m1.mul.xml` (part 1, vaggas 1–42) + `s0510m2.mul.xml` up to its second book `<div>` (part 2, vaggas 43–56) | `kn-ap` | `pi-kn.md` |
-| Khuddakanikāya | Therīapadānapāḷi | 11 | `s0510m2.mul.xml` from `<div id="kn11" type="book">` to the end | `kn-thiap` | `pi-kn.md` |
-| Khuddakanikāya | Buddhavaṃsapāḷi | 12 | `s0511m.mul.xml` | `kn-bv` | `pi-kn.md` |
-| Khuddakanikāya | Cariyāpiṭakapāḷi | 13 | `s0512m.mul.xml` | `kn-cp` | `pi-kn.md` |
-| Khuddakanikāya | Jātakapāḷi | 14 | `s0513m.mul.xml` + `s0514m.mul.xml` | `kn-jat` | `pi-kn.md` |
-| Khuddakanikāya | Mahāniddesapāḷi | 15 | `s0515m.mul.xml` | `kn-mn` | `pi-kn.md` |
-| Khuddakanikāya | Cūḷaniddesapāḷi | 16 | `s0516m.mul.xml` | `kn-nc` | `pi-kn.md` |
-| Khuddakanikāya | Paṭisambhidāmaggapāḷi | 17 | `s0517m.mul.xml` | `kn-ps` | `pi-kn.md` |
-| Khuddakanikāya | Milindapañhapāḷi | 18 | `s0518m.nrf.xml` (restructured: see below) | `kn-mil` | `pi-kn.md` |
-| Khuddakanikāya | Nettippakaraṇapāḷi | 19 | `s0519m.mul.xml` | `kn-nett` | `pi-kn.md` |
-| Khuddakanikāya | Peṭakopadesapāḷi | 20 | `s0520m.nrf.xml` | `kn-petk` | `pi-kn.md` |
+| Khuddakanikāya | Udānapāḷi | 3 | `s0503m.mul.xml` | `kn-ud` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Itivuttakapāḷi | 4 | `s0504m.mul.xml` | `kn-iti` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Suttanipātapāḷi | 5 | `s0505m.mul.xml` | `kn-snp` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Vimānavatthupāḷi | 6 | `s0506m.mul.xml` | `kn-vv` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Petavatthupāḷi | 7 | `s0507m.mul.xml` | `kn-pv` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Theragāthāpāḷi | 8 | `s0508m.mul.xml` | `kn-thag` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Therīgāthāpāḷi | 9 | `s0509m.mul.xml` | `kn-thig` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Therāpadānapāḷi | 10 | `s0510m1.mul.xml` (part 1, vaggas 1–42) + `s0510m2.mul.xml` up to its second book `<div>` (part 2, vaggas 43–56) | `kn-ap` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Therīapadānapāḷi | 11 | `s0510m2.mul.xml` from `<div id="kn11" type="book">` to the end | `kn-thiap` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Buddhavaṃsapāḷi | 12 | `s0511m.mul.xml` | `kn-bv` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Cariyāpiṭakapāḷi | 13 | `s0512m.mul.xml` | `kn-cp` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Jātakapāḷi | 14 | `s0513m.mul.xml` + `s0514m.mul.xml` | `kn-jat` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Mahāniddesapāḷi | 15 | `s0515m.mul.xml` | `kn-mn` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Cūḷaniddesapāḷi | 16 | `s0516m.mul.xml` | `kn-nc` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Paṭisambhidāmaggapāḷi | 17 | `s0517m.mul.xml` | `kn-ps` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Milindapañhapāḷi | 18 | `s0518m.nrf.xml` (restructured: see below) | `kn-mil` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Nettippakaraṇapāḷi | 19 | `s0519m.mul.xml` | `kn-nett` | `pi-khuddakanikaya.md` |
+| Khuddakanikāya | Peṭakopadesapāḷi | 20 | `s0520m.nrf.xml` | `kn-petk` | `pi-khuddakanikaya.md` |
 
-**Ingested 2026-11-23/24:** books 3–20 are in `pi-kn.md`, so all 20 books of the Khuddakanikāya are in; each book's text equals its XML line for line. Each book has its own IDs:
+**Ingested 2026-11-23/24:** books 3–20 are in `pi-khuddakanikaya.md`, so all 20 books of the Khuddakanikāya are in; each book's text equals its XML line for line. Each book has its own IDs:
 
 | Book | IDs |
 | ---- | --- |
@@ -90,9 +90,11 @@ Known tipitaka.app differences, where the vault follows the XML:
 
 **Before 2026-11-20** each volume was its own file (`pi-dn-1.md` … `pi-an-11.md`) and its own library text. Those files are in git history; the verification reports in `0-INBOX/` dated before the merge refer to them.
 
+**Renamed 2026-11-24** (human decision, as the Vinaya's `pi-N` → `pi-<book>pali`): the five root texts went from the nikāya abbreviation to its name, `pi-dn.md` → `pi-dighanikaya.md`, `pi-mn` → `pi-majjhimanikaya`, `pi-sn` → `pi-samyuttanikaya`, `pi-an` → `pi-anguttaranikaya`, `pi-kn` → `pi-khuddakanikaya`. The commentaries take the same prefix with their layer unchanged, for example `pi-dn-tiika.md` → `pi-dighanikaya-tiika.md` and `pi-dn-1-abhinavatiika.md` → `pi-dighanikaya-1-abhinavatiika.md`. All 11,784 transclusions and the `root_text:`/`commentary:` lines were repointed by `0-INBOX/sutta-rename/rename_sutta.py`, and `check_links.py` found none broken. The library ids (`registered_id: dn-tiika` …) are not file names and are unchanged. The upload ledgers still name the old paths: the upload skills forbid editing them by hand, and they fall back to the frontmatter ids. Reports in `0-INBOX/` dated before the rename use the old names.
+
 Only volumes that have been ingested are present in the folder. The Dīgha-, Majjhima-, Saṃyutta- and Aṅguttaranikāya are in, in Pāli: root text and commentaries (§3), no translations yet. The Khuddakanikāya root text is complete (all 20 books, 2026-11-24); its aṭṭhakathā still covers only books 1–2. MN registered 2026-11-13, SN 2026-11-14, AN 2026-11-16, KN books 1–2 2026-11-16, books 3–20 2026-11-23/24.
 
-**Khuddakanikāya:** one file, `pi-kn.md` (aṭṭhakathā `pi-kn-atthakatha.md`), each book a `##` chapter `^<book>-0`; until 2026-11-23 each book was its own file (`pi-kn-1.md`, `pi-kn-2.md`, in git history). A book is still built and verified on its own, then joined with `merge_volumes.py`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
+**Khuddakanikāya:** one file, `pi-khuddakanikaya.md` (aṭṭhakathā `pi-khuddakanikaya-atthakatha.md`), each book a `##` chapter `^<book>-0`; until 2026-11-23 each book was its own file (`pi-kn-1.md`, `pi-kn-2.md`, in git history). A book is still built and verified on its own, then joined with `merge_volumes.py`. `book` is the book's position in tipitaka.app's list of the 20 books: 1 Khuddakapāṭha, 2 Dhammapada, 3 Udāna, 4 Itivuttaka, 5 Suttanipāta, 6 Vimānavatthu, 7 Petavatthu, 8 Theragāthā, 9 Therīgāthā, 10 Therāpadāna, 11 Therīapadāna, 12 Buddhavaṃsa, 13 Cariyāpiṭaka, 14 Jātaka, 15 Mahāniddesa, 16 Cūḷaniddesa, 17 Paṭisambhidāmagga, 18 Milindapañha, 19 Nettippakaraṇa, 20 Peṭakopadesa. Each book is registered in this table **before** it is ingested. Converted in tree mode.
 
 `cscd-root-text-intake` supports four shapes:
 - book → sutta `<div>`s (Dīgha);
@@ -100,7 +102,7 @@ Only volumes that have been ingested are present in the folder. The Dīgha-, Maj
 - book → saṃyutta `<div>`s, with vaggas as `title` and suttas as `subhead` paragraphs (Saṃyutta);
 - **tree mode** (Aṅguttara), where divisions nest in more than one way. Each heading's level is read from the XML's own nesting.
 
-**Aṅguttaranikāya:** each nipāta is built as its own volume file, as CSCD prints the root and tipitaka.app shows all three layers, then the eleven are joined into `pi-an.md`. `book` is the nipāta number. A CSCD commentary volume holds several nipātas as separate books (`s0402a` = Duka-, Tika-, Catukkanipāta); each is built on its own (tree mode, `--book K`) and the eleven are joined into `pi-an-atthakatha.md` / `pi-an-tiika.md`.
+**Aṅguttaranikāya:** each nipāta is built as its own volume file, as CSCD prints the root and tipitaka.app shows all three layers, then the eleven are joined into `pi-anguttaranikaya.md`. `book` is the nipāta number. A CSCD commentary volume holds several nipātas as separate books (`s0402a` = Duka-, Tika-, Catukkanipāta); each is built on its own (tree mode, `--book K`) and the eleven are joined into `pi-anguttaranikaya-atthakatha.md` / `pi-anguttaranikaya-tiika.md`.
 
 **Joining volumes (`merge_volumes.py`, in `cscd-root-text-intake/scripts/`):** every block of every volume is kept in order with its ID. The first volume's homage `^T-1` and `# <nikāya> ^0` open the file. A later volume's own opening lines are printed text, so they stay where printed, as plain blocks: its homage becomes `^<book>-T1` and its printed nikāya line `^<book>-T2` (see the deviation in §2). Transclusions are pointed at the joined root. The join is checked word for word against the XML volumes in order.
 
@@ -204,11 +206,11 @@ These are mechanical changes only; no wording changes. `verify.py` and `compare_
 
 **Default here:** `^<book>-<N>`, one run of printed numbers per file.
 
-**Khuddakapāṭha (book 1 of `pi-kn.md`):** the book numbers each of its 9 sections from 1, so `N` alone would repeat. Its IDs are `^1-<section>-<N>`, where `section` is the section's position (1–9) and `N` the printed verse number (Ratanasutta v. 3 = `^1-6-3`). All 89 printed numbers are kept. Saraṇattaya and Dvattiṃsākāra print no numbers and are `^1-U1`, `^1-U2`. The aṭṭhakathā's citations link within their own section (`6. Ratanasuttavaṇṇanā` → `^1-6-…`).
+**Khuddakapāṭha (book 1 of `pi-khuddakanikaya.md`):** the book numbers each of its 9 sections from 1, so `N` alone would repeat. Its IDs are `^1-<section>-<N>`, where `section` is the section's position (1–9) and `N` the printed verse number (Ratanasutta v. 3 = `^1-6-3`). All 89 printed numbers are kept. Saraṇattaya and Dvattiṃsākāra print no numbers and are `^1-U1`, `^1-U2`. The aṭṭhakathā's citations link within their own section (`6. Ratanasuttavaṇṇanā` → `^1-6-…`).
 
 **Why:** the printed numbers stay the IDs, as everywhere else, and every ID is unique in the file. Built with `apply.py --zone-per-section`; checked with `--per-section`.
 
-In the joined `pi-kn.md` the two shapes sit side by side: book 1 (Khuddakapāṭha) `^1-<section>-<N>`, book 2 (Dhammapada) `^2-<N>`. The frontmatter's `verse_id_format: book-chapter-verse` is book 1's.
+In the joined `pi-khuddakanikaya.md` the two shapes sit side by side: book 1 (Khuddakapāṭha) `^1-<section>-<N>`, book 2 (Dhammapada) `^2-<N>`. The frontmatter's `verse_id_format: book-chapter-verse` is book 1's.
 
 #### ⚑ Pre-title `^T-N` and collection heading `^0` — overrides `annotation-conventions.md` §2 (registered 2026-11-13)
 
@@ -243,16 +245,16 @@ No `registered_id` may be used in any rail until it is added to this roster.
 
 | `registered_id` | Title | Tier | Language | Root text | File |
 | --------------- | ----- | ---- | -------- | --------- | ---- |
-| `dn-atthakatha` | Dīghanikāya-aṭṭhakathā | commentary | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-atthakatha.md` |
-| `dn-tiika` | Dīghanikāya-ṭīkā | sub-commentary | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-tiika.md` |
-| `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dn.md` | `1-SOURCES/Commentaries/pi-dn-1-abhinavatiika.md` |
-| `mn-atthakatha` | Majjhimanikāya-aṭṭhakathā | commentary | Pāli | `pi-mn.md` | `1-SOURCES/Commentaries/pi-mn-atthakatha.md` |
-| `mn-tiika` | Majjhimanikāya-ṭīkā | sub-commentary | Pāli | `pi-mn.md` | `1-SOURCES/Commentaries/pi-mn-tiika.md` |
-| `sn-atthakatha` | Saṃyuttanikāya-aṭṭhakathā | commentary | Pāli | `pi-sn.md` | `1-SOURCES/Commentaries/pi-sn-atthakatha.md` |
-| `sn-tiika` | Saṃyuttanikāya-ṭīkā | sub-commentary | Pāli | `pi-sn.md` | `1-SOURCES/Commentaries/pi-sn-tiika.md` |
-| `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-atthakatha.md` |
-| `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-an.md` | `1-SOURCES/Commentaries/pi-an-tiika.md` |
-| `kn-atthakatha` | Khuddakanikāya-aṭṭhakathā | commentary | Pāli | `pi-kn.md` | `1-SOURCES/Commentaries/pi-kn-atthakatha.md` |
+| `dn-atthakatha` | Dīghanikāya-aṭṭhakathā | commentary | Pāli | `pi-dighanikaya.md` | `1-SOURCES/Commentaries/pi-dighanikaya-atthakatha.md` |
+| `dn-tiika` | Dīghanikāya-ṭīkā | sub-commentary | Pāli | `pi-dighanikaya.md` | `1-SOURCES/Commentaries/pi-dighanikaya-tiika.md` |
+| `dn-1-abhinavatiika` | Sīlakkhandhavaggaabhinavaṭīkā | sub-commentary (second) | Pāli | `pi-dighanikaya.md` | `1-SOURCES/Commentaries/pi-dighanikaya-1-abhinavatiika.md` |
+| `mn-atthakatha` | Majjhimanikāya-aṭṭhakathā | commentary | Pāli | `pi-majjhimanikaya.md` | `1-SOURCES/Commentaries/pi-majjhimanikaya-atthakatha.md` |
+| `mn-tiika` | Majjhimanikāya-ṭīkā | sub-commentary | Pāli | `pi-majjhimanikaya.md` | `1-SOURCES/Commentaries/pi-majjhimanikaya-tiika.md` |
+| `sn-atthakatha` | Saṃyuttanikāya-aṭṭhakathā | commentary | Pāli | `pi-samyuttanikaya.md` | `1-SOURCES/Commentaries/pi-samyuttanikaya-atthakatha.md` |
+| `sn-tiika` | Saṃyuttanikāya-ṭīkā | sub-commentary | Pāli | `pi-samyuttanikaya.md` | `1-SOURCES/Commentaries/pi-samyuttanikaya-tiika.md` |
+| `an-atthakatha` | Aṅguttaranikāya-aṭṭhakathā | commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-atthakatha.md` |
+| `an-tiika` | Aṅguttaranikāya-ṭīkā | sub-commentary | Pāli | `pi-anguttaranikaya.md` | `1-SOURCES/Commentaries/pi-anguttaranikaya-tiika.md` |
+| `kn-atthakatha` | Khuddakanikāya-aṭṭhakathā | commentary | Pāli | `pi-khuddakanikaya.md` | `1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md` |
 
 **Retired 2026-11-20** (per-volume IDs, never reused). Each volume's commentary was its own file until the volumes were joined per nikāya. Each ID below is now a `##` chapter of the joined file:
 
