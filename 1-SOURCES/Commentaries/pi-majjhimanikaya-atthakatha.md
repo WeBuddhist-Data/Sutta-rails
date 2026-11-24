@@ -10,7 +10,7 @@ pitaka: sutta
 nikaya: Majjhimanikāya
 layer: atthakatha
 root_text: 1-SOURCES/Text/pi-majjhimanikaya.md
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0201a.att, s0202a.att, s0203a.att), Majjhimanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0201a.att, s0202a.att, s0203a.att), Majjhimanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0201a.att.xml, s0202a.att.xml, s0203a.att.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0201a.att.xml"
 source_volumes:
@@ -104,9 +104,9 @@ Anusandhinayā ete, majjhimassa pakāsitā"ti. ^1-21
 
 Tattha paṇṇāsāsu **mūlapaṇṇāsā** ādi, vaggesu **mūlapariyāyavaggo,** suttesu **mūlapariyāyasuttaṃ**. Tassāpi "evaṃ me suta"ntiādikaṃ āyasmatā ānandena paṭhamamahāsaṅgītikāle vuttaṃ nidānamādi. Sā panesā paṭhamamahāsaṅgīti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ādimhi vitthāritā. Tasmā sā tattha vitthāritanayeneva veditabbā. ^1-22
 
-### Mūlapariyāyavaggo ^1-1-0
+### 1. Mūlapariyāyavaggo ^1-1-0
 
-#### Mūlapariyāyasuttavaṇṇanā ^1-1-1-0
+#### 1. Mūlapariyāyasuttavaṇṇanā ^1-1-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-1]]
 
@@ -697,7 +697,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-271
 
 Mūlapariyāyasuttavaṇṇanā niṭṭhitā. ^1-272
 
-#### Sabbāsavasuttavaṇṇanā ^1-1-2-0
+#### 2. Sabbāsavasuttavaṇṇanā ^1-1-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-14]]
 
@@ -993,7 +993,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-392
 
 Sabbāsavasuttavaṇṇanā niṭṭhitā. ^1-393
 
-#### Dhammadāyādasuttavaṇṇanā ^1-1-3-0
+#### 3. Dhammadāyādasuttavaṇṇanā ^1-1-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-29]]
 
@@ -1165,7 +1165,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-472
 
 Dhammadāyādasuttavaṇṇanā niṭṭhitā. ^1-473
 
-#### Bhayabheravasuttavaṇṇanā ^1-1-4-0
+#### 4. Bhayabheravasuttavaṇṇanā ^1-1-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-34]]
 
@@ -1500,7 +1500,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-596
 
 Bhayabheravasuttavaṇṇanā niṭṭhitā. ^1-597
 
-#### Anaṅgaṇasuttavaṇṇanā ^1-1-5-0
+#### 5. Anaṅgaṇasuttavaṇṇanā ^1-1-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-57]]
 
@@ -1644,7 +1644,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-656
 
 Anaṅgaṇasuttavaṇṇanā niṭṭhitā. ^1-657
 
-#### Ākaṅkheyyasuttavaṇṇanā ^1-1-6-0
+#### 6. Ākaṅkheyyasuttavaṇṇanā ^1-1-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-64]]
 
@@ -1738,7 +1738,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-695
 
 Ākaṅkheyyasuttavaṇṇanā niṭṭhitā. ^1-696
 
-#### Vatthasuttavaṇṇanā ^1-1-7-0
+#### 7. Vatthasuttavaṇṇanā ^1-1-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-70]]
 
@@ -1864,7 +1864,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-746
 
 Vatthasuttavaṇṇanā niṭṭhitā. ^1-747
 
-#### Sallekhasuttavaṇṇanā ^1-1-8-0
+#### 8. Sallekhasuttavaṇṇanā ^1-1-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-81]]
 
@@ -1971,7 +1971,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-790
 
 Sallekhasuttavaṇṇanā niṭṭhitā. ^1-791
 
-#### Sammādiṭṭhisuttavaṇṇanā ^1-1-9-0
+#### 9. Sammādiṭṭhisuttavaṇṇanā ^1-1-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-89]]
 
@@ -2300,7 +2300,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-920
 
 Sammādiṭṭhisuttavaṇṇanā niṭṭhitā. ^1-921
 
-#### Satipaṭṭhānasuttavaṇṇanā ^1-1-10-0
+#### 10. Satipaṭṭhānasuttavaṇṇanā ^1-1-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-105]]
 
@@ -3015,9 +3015,9 @@ Satipaṭṭhānasuttavaṇṇanā niṭṭhitā. ^1-1226
 
 Paṭhamavaggavaṇṇanā niṭṭhitā. ^1-1227
 
-### Sīhanādavaggo ^1-2-0
+### 2. Sīhanādavaggo ^1-2-0
 
-#### Cūḷasīhanādasuttavaṇṇanā ^1-2-1-0
+#### 1. Cūḷasīhanādasuttavaṇṇanā ^1-2-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-139]]
 
@@ -3210,7 +3210,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1306
 
 Cūḷasīhanādasuttavaṇṇanā niṭṭhitā. ^1-1307
 
-#### Mahāsīhanādasuttavaṇṇanā ^1-2-2-0
+#### 2. Mahāsīhanādasuttavaṇṇanā ^1-2-2-0
 
 ##### Vesālinagaravaṇṇanā ^1-2-2-1-0
 
@@ -3521,7 +3521,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1422
 
 Mahāsīhanādasuttavaṇṇanā niṭṭhitā. ^1-1423
 
-#### Mahādukkhakkhandhasuttavaṇṇanā ^1-2-3-0
+#### 3. Mahādukkhakkhandhasuttavaṇṇanā ^1-2-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-163]]
 
@@ -3585,7 +3585,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1443
 
 Mahādukkhakkhandhasuttavaṇṇanā niṭṭhitā. ^1-1444
 
-#### Cūḷadukkhakkhandhasuttavaṇṇanā ^1-2-4-0
+#### 4. Cūḷadukkhakkhandhasuttavaṇṇanā ^1-2-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-175]]
 
@@ -3627,7 +3627,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1458
 
 Cūḷadukkhakkhandhasuttavaṇṇanā niṭṭhitā. ^1-1459
 
-#### Anumānasuttavaṇṇanā ^1-2-5-0
+#### 5. Anumānasuttavaṇṇanā ^1-2-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-181]]
 
@@ -3657,7 +3657,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1469
 
 Anumānasuttavaṇṇanā niṭṭhitā. ^1-1470
 
-#### Cetokhilasuttavaṇṇanā ^1-2-6-0
+#### 6. Cetokhilasuttavaṇṇanā ^1-2-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-185]]
 
@@ -3688,7 +3688,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1480
 
 Cetokhilasuttavaṇṇanā niṭṭhitā. ^1-1481
 
-#### Vanapatthapariyāyasuttavaṇṇanā ^1-2-7-0
+#### 7. Vanapatthapariyāyasuttavaṇṇanā ^1-2-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-190]]
 
@@ -3722,7 +3722,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1489
 
 Vanapatthapariyāyasuttavaṇṇanā niṭṭhitā. ^1-1490
 
-#### Madhupiṇḍikasuttavaṇṇanā ^1-2-8-0
+#### 8. Madhupiṇḍikasuttavaṇṇanā ^1-2-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-199]]
 
@@ -3776,7 +3776,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1508
 
 Madhupiṇḍikasuttavaṇṇanā niṭṭhitā. ^1-1509
 
-#### Dvedhāvitakkasuttavaṇṇanā ^1-2-9-0
+#### 9. Dvedhāvitakkasuttavaṇṇanā ^1-2-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-206]]
 
@@ -3834,7 +3834,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1530
 
 Dvedhāvitakkasuttavaṇṇanā niṭṭhitā. ^1-1531
 
-#### Vitakkasaṇṭhānasuttavaṇṇanā ^1-2-10-0
+#### 10. Vitakkasaṇṭhānasuttavaṇṇanā ^1-2-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-216]]
 
@@ -3922,9 +3922,9 @@ Mūlapaṇṇāsa-aṭṭhakathā ^1-1565
 
 (Dutiyo bhāgo) ^1-1566
 
-### Opammavaggo ^1-3-0
+### 3. Opammavaggo ^1-3-0
 
-#### Kakacūpamasuttavaṇṇanā ^1-3-1-0
+#### 1. Kakacūpamasuttavaṇṇanā ^1-3-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-222]]
 
@@ -4003,7 +4003,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1590
 
 Kakacūpamasuttavaṇṇanā niṭṭhitā. ^1-1591
 
-#### Alagaddūpamasuttavaṇṇanā ^1-3-2-0
+#### 2. Alagaddūpamasuttavaṇṇanā ^1-3-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-234]]
 
@@ -4138,7 +4138,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1640
 
 Alagaddūpamasuttavaṇṇanā niṭṭhitā. ^1-1641
 
-#### Vammikasuttavaṇṇanā ^1-3-3-0
+#### 3. Vammikasuttavaṇṇanā ^1-3-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-249]]
 
@@ -4222,7 +4222,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1677
 
 Vammikasuttavaṇṇanā niṭṭhitā. ^1-1678
 
-#### Rathavinītasuttavaṇṇanā ^1-3-4-0
+#### 4. Rathavinītasuttavaṇṇanā ^1-3-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-252]]
 
@@ -4409,7 +4409,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1751
 
 Rathavinītasuttavaṇṇanā niṭṭhitā. ^1-1752
 
-#### Nivāpasuttavaṇṇanā ^1-3-5-0
+#### 5. Nivāpasuttavaṇṇanā ^1-3-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-261]]
 
@@ -4455,7 +4455,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1763
 
 Nivāpasuttavaṇṇanā niṭṭhitā. ^1-1764
 
-#### Pāsarāsisuttavaṇṇanā ^1-3-6-0
+#### 6. Pāsarāsisuttavaṇṇanā ^1-3-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-272]]
 
@@ -4660,7 +4660,7 @@ Pāsarāsisuttavaṇṇanā niṭṭhitā. ^1-1844
 
 Ariyapariyesanātipi etasseva nāmaṃ. ^1-1845
 
-#### Cūḷahatthipadopamasuttavaṇṇanā ^1-3-7-0
+#### 7. Cūḷahatthipadopamasuttavaṇṇanā ^1-3-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-288]]
 
@@ -4813,7 +4813,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1905
 
 Cūḷahatthipadopamasuttavaṇṇanā niṭṭhitā. ^1-1906
 
-#### Mahāhatthipadopamasuttavaṇṇanā ^1-3-8-0
+#### 8. Mahāhatthipadopamasuttavaṇṇanā ^1-3-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-300]]
 
@@ -4904,7 +4904,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1941
 
 Mahāhatthipadopamasuttavaṇṇanā niṭṭhitā. ^1-1942
 
-#### Mahāsāropamasuttavaṇṇanā ^1-3-9-0
+#### 9. Mahāsāropamasuttavaṇṇanā ^1-3-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-307]]
 
@@ -4928,7 +4928,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1949
 
 Mahāsāropamasuttavaṇṇanā niṭṭhitā. ^1-1950
 
-#### Cūḷasāropamasuttavaṇṇanā ^1-3-10-0
+#### 10. Cūḷasāropamasuttavaṇṇanā ^1-3-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-312]]
 
@@ -4956,9 +4956,9 @@ Cūḷasāropamasuttavaṇṇanā niṭṭhitā. ^1-1959
 
 Tatiyavaggavaṇṇanā niṭṭhitā. ^1-1960
 
-### Mahāyamakavaggo ^1-4-0
+### 4. Mahāyamakavaggo ^1-4-0
 
-#### Cūḷagosiṅgasuttavaṇṇanā ^1-4-1-0
+#### 1. Cūḷagosiṅgasuttavaṇṇanā ^1-4-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-325]]
 
@@ -5020,7 +5020,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-1982
 
 Cūḷagosiṅgasuttavaṇṇanā niṭṭhitā. ^1-1983
 
-#### Mahāgosiṅgasuttavaṇṇanā ^1-4-2-0
+#### 2. Mahāgosiṅgasuttavaṇṇanā ^1-4-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-332]]
 
@@ -5122,7 +5122,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2017
 
 Mahāgosiṅgasuttavaṇṇanā niṭṭhitā. ^1-2018
 
-#### Mahāgopālakasuttavaṇṇanā ^1-4-3-0
+#### 3. Mahāgopālakasuttavaṇṇanā ^1-4-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-346]]
 
@@ -5180,7 +5180,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2043
 
 Mahāgopālakasuttavaṇṇanā niṭṭhitā. ^1-2044
 
-#### Cūḷagopālakasuttavaṇṇanā ^1-4-4-0
+#### 4. Cūḷagopālakasuttavaṇṇanā ^1-4-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-350]]
 
@@ -5204,7 +5204,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2051
 
 Cūḷagopālakasuttavaṇṇanā niṭṭhitā. ^1-2052
 
-#### Cūḷasaccakasuttavaṇṇanā ^1-4-5-0
+#### 5. Cūḷasaccakasuttavaṇṇanā ^1-4-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-353]]
 
@@ -5321,7 +5321,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2092
 
 Cūḷasaccakasuttavaṇṇanā niṭṭhitā. ^1-2093
 
-#### Mahāsaccakasuttavaṇṇanā ^1-4-6-0
+#### 6. Mahāsaccakasuttavaṇṇanā ^1-4-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-364]]
 
@@ -5426,7 +5426,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2125
 
 Mahāsaccakasuttavaṇṇanā niṭṭhitā. ^1-2126
 
-#### Cūḷataṇhāsaṅkhayasuttavaṇṇanā ^1-4-7-0
+#### 7. Cūḷataṇhāsaṅkhayasuttavaṇṇanā ^1-4-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-390]]
 
@@ -5478,7 +5478,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2144
 
 Cūḷataṇhāsaṅkhayasuttavaṇṇanā niṭṭhitā. ^1-2145
 
-#### Mahātaṇhāsaṅkhayasuttavaṇṇanā ^1-4-8-0
+#### 8. Mahātaṇhāsaṅkhayasuttavaṇṇanā ^1-4-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-396]]
 
@@ -5549,7 +5549,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2164
 
 Mahātaṇhāsaṅkhayasuttavaṇṇanā niṭṭhitā. ^1-2165
 
-#### Mahāassapurasuttavaṇṇanā ^1-4-9-0
+#### 9. Mahāassapurasuttavaṇṇanā ^1-4-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-415]]
 
@@ -5664,7 +5664,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2202
 
 Mahāassapurasuttavaṇṇanā niṭṭhitā. ^1-2203
 
-#### Cūḷaassapurasuttavaṇṇanā ^1-4-10-0
+#### 10. Cūḷaassapurasuttavaṇṇanā ^1-4-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-435]]
 
@@ -5688,9 +5688,9 @@ Cūḷaassapurasuttavaṇṇanā niṭṭhitā. ^1-2209
 
 Catutthavaggavaṇṇanā niṭṭhitā. ^1-2210
 
-### Cūḷayamakavaggo ^1-5-0
+### 5. Cūḷayamakavaggo ^1-5-0
 
-#### Sāleyyakasuttavaṇṇanā ^1-5-1-0
+#### 1. Sāleyyakasuttavaṇṇanā ^1-5-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-439]]
 
@@ -5744,7 +5744,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2231
 
 Sāleyyakasuttavaṇṇanā niṭṭhitā. ^1-2232
 
-#### Verañjakasuttavaṇṇanā ^1-5-2-0
+#### 2. Verañjakasuttavaṇṇanā ^1-5-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-444]]
 
@@ -5754,7 +5754,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2234
 
 Verañjakasuttavaṇṇanā niṭṭhitā. ^1-2235
 
-#### Mahāvedallasuttavaṇṇanā ^1-5-3-0
+#### 3. Mahāvedallasuttavaṇṇanā ^1-5-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-449]]
 
@@ -5895,7 +5895,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2292
 
 Mahāvedallasuttavaṇṇanā niṭṭhitā. ^1-2293
 
-#### Cūḷavedallasuttavaṇṇanā ^1-5-4-0
+#### 4. Cūḷavedallasuttavaṇṇanā ^1-5-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-460]]
 
@@ -5989,7 +5989,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2330
 
 Cūḷavedallasuttavaṇṇanā niṭṭhitā. ^1-2331
 
-#### Cūḷadhammasamādānasuttavaṇṇanā ^1-5-5-0
+#### 5. Cūḷadhammasamādānasuttavaṇṇanā ^1-5-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-468]]
 
@@ -6031,7 +6031,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2346
 
 Cūḷadhammasamādānasuttavaṇṇanā niṭṭhitā. ^1-2347
 
-#### Mahādhammasamādānasuttavaṇṇanā ^1-5-6-0
+#### 6. Mahādhammasamādānasuttavaṇṇanā ^1-5-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-473]]
 
@@ -6095,7 +6095,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2363
 
 Mahādhammasamādānasuttavaṇṇanā niṭṭhitā. ^1-2364
 
-#### Vīmaṃsakasuttavaṇṇanā ^1-5-7-0
+#### 7. Vīmaṃsakasuttavaṇṇanā ^1-5-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-487]]
 
@@ -6198,7 +6198,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2404
 
 Vīmaṃsakasuttavaṇṇanā niṭṭhitā. ^1-2405
 
-#### Kosambiyasuttavaṇṇanā ^1-5-8-0
+#### 8. Kosambiyasuttavaṇṇanā ^1-5-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-491]]
 
@@ -6298,7 +6298,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2444
 
 Kosambiyasuttavaṇṇanā niṭṭhitā. ^1-2445
 
-#### Brahmanimantanikasuttavaṇṇanā ^1-5-9-0
+#### 9. Brahmanimantanikasuttavaṇṇanā ^1-5-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-501]]
 
@@ -6403,7 +6403,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^1-2482
 
 Brahmanimantanikasuttavaṇṇanā niṭṭhitā. ^1-2483
 
-#### Māratajjanīyasuttavaṇṇanā ^1-5-10-0
+#### 10. Māratajjanīyasuttavaṇṇanā ^1-5-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^1-506]]
 
@@ -6483,9 +6483,9 @@ Majjhimanikāye ^2-T2
 
 ## Majjhimapaṇṇāsa-aṭṭhakathā ^2-0
 
-### Gahapativaggo ^2-1-0
+### 1. Gahapativaggo ^2-1-0
 
-#### Kandarakasuttavaṇṇanā ^2-1-1-0
+#### 1. Kandarakasuttavaṇṇanā ^2-1-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-1]]
 
@@ -6543,7 +6543,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-19
 
 Kandarakasuttavaṇṇanā niṭṭhitā. ^2-20
 
-#### Aṭṭhakanāgarasuttavaṇṇanā ^2-1-2-0
+#### 2. Aṭṭhakanāgarasuttavaṇṇanā ^2-1-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-17]]
 
@@ -6579,7 +6579,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-32
 
 Aṭṭhakanāgarasuttavaṇṇanā niṭṭhitā. ^2-33
 
-#### Sekhasuttavaṇṇanā ^2-1-3-0
+#### 3. Sekhasuttavaṇṇanā ^2-1-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-22]]
 
@@ -6735,7 +6735,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-88
 
 Sekhasuttavaṇṇanā niṭṭhitā. ^2-89
 
-#### Potaliyasuttavaṇṇanā ^2-1-4-0
+#### 4. Potaliyasuttavaṇṇanā ^2-1-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-31]]
 
@@ -6814,7 +6814,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-112
 
 Potaliyasuttavaṇṇanā niṭṭhitā. ^2-113
 
-#### Jīvakasuttavaṇṇanā ^2-1-5-0
+#### 5. Jīvakasuttavaṇṇanā ^2-1-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-51]]
 
@@ -6858,7 +6858,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-128
 
 Jīvakasuttavaṇṇanā niṭṭhitā. ^2-129
 
-#### Upālisuttavaṇṇanā ^2-1-6-0
+#### 6. Upālisuttavaṇṇanā ^2-1-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-56]]
 
@@ -7199,7 +7199,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-257
 
 Upālisuttavaṇṇanā niṭṭhitā. ^2-258
 
-#### Kukkuravatikasuttavaṇṇanā ^2-1-7-0
+#### 7. Kukkuravatikasuttavaṇṇanā ^2-1-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-78]]
 
@@ -7252,7 +7252,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-277
 
 Kukkuravatikasuttavaṇṇanā niṭṭhitā. ^2-278
 
-#### Abhayarājakumārasuttavaṇṇanā ^2-1-8-0
+#### 8. Abhayarājakumārasuttavaṇṇanā ^2-1-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-83]]
 
@@ -7292,7 +7292,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-291
 
 Abhayarājakumārasuttavaṇṇanā niṭṭhitā. ^2-292
 
-#### Bahuvedanīyasuttavaṇṇanā ^2-1-9-0
+#### 9. Bahuvedanīyasuttavaṇṇanā ^2-1-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-88]]
 
@@ -7316,7 +7316,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-298
 
 Bahuvedanīyasuttavaṇṇanā niṭṭhitā. ^2-299
 
-#### Apaṇṇakasuttavaṇṇanā ^2-1-10-0
+#### 10. Apaṇṇakasuttavaṇṇanā ^2-1-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-92]]
 
@@ -7385,9 +7385,9 @@ Apaṇṇakasuttavaṇṇanā niṭṭhitā. ^2-321
 
 Paṭhamavaggavaṇṇanā niṭṭhitā. ^2-322
 
-### Bhikkhuvaggo ^2-2-0
+### 2. Bhikkhuvaggo ^2-2-0
 
-#### Ambalaṭṭhikarāhulovādasuttavaṇṇanā ^2-2-1-0
+#### 1. Ambalaṭṭhikarāhulovādasuttavaṇṇanā ^2-2-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-107]]
 
@@ -7428,7 +7428,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-335
 
 Ambalaṭṭhikarāhulovādasuttavaṇṇanā niṭṭhitā. ^2-336
 
-#### Mahārāhulovādasuttavaṇṇanā ^2-2-2-0
+#### 2. Mahārāhulovādasuttavaṇṇanā ^2-2-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-113]]
 
@@ -7512,7 +7512,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-366
 
 Māhārāhulovādasuttavaṇṇanā niṭṭhitā. ^2-367
 
-#### Cūḷamālukyasuttavaṇṇanā ^2-2-3-0
+#### 3. Cūḷamālukyasuttavaṇṇanā ^2-2-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-122]]
 
@@ -7538,7 +7538,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-373
 
 Cūḷamālukyasuttavaṇṇanā niṭṭhitā. ^2-374
 
-#### Mahāmālukyasuttavaṇṇanā ^2-2-4-0
+#### 4. Mahāmālukyasuttavaṇṇanā ^2-2-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-129]]
 
@@ -7568,7 +7568,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-384
 
 Mahāmālukyasuttavaṇṇanā niṭṭhitā. ^2-385
 
-#### Bhaddālisuttavaṇṇanā ^2-2-5-0
+#### 5. Bhaddālisuttavaṇṇanā ^2-2-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-134]]
 
@@ -7670,7 +7670,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-423
 
 Bhaddālisuttavaṇṇanā niṭṭhitā. ^2-424
 
-#### Laṭukikopamasuttavaṇṇanā ^2-2-6-0
+#### 6. Laṭukikopamasuttavaṇṇanā ^2-2-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-148]]
 
@@ -7728,7 +7728,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-442
 
 Laṭukikopamasuttavaṇṇanā niṭṭhitā. ^2-443
 
-#### Cātumasuttavaṇṇanā ^2-2-7-0
+#### 7. Cātumasuttavaṇṇanā ^2-2-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-157]]
 
@@ -7774,7 +7774,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-455
 
 Cātumasuttavaṇṇanā niṭṭhitā. ^2-456
 
-#### Naḷakapānasuttavaṇṇanā ^2-2-8-0
+#### 8. Naḷakapānasuttavaṇṇanā ^2-2-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-166]]
 
@@ -7817,7 +7817,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-471
 
 Naḷakapānasuttavaṇṇanā niṭṭhitā. ^2-472
 
-#### Goliyānisuttavaṇṇanā ^2-2-9-0
+#### 9. Goliyānisuttavaṇṇanā ^2-2-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-173]]
 
@@ -7835,7 +7835,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-478
 
 Goliyānisuttavaṇṇanā niṭṭhitā. ^2-479
 
-#### Kīṭāgirisuttavaṇṇanā ^2-2-10-0
+#### 10. Kīṭāgirisuttavaṇṇanā ^2-2-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-174]]
 
@@ -7893,9 +7893,9 @@ Kīṭāgirisuttavaṇṇanā niṭṭhitā. ^2-499
 
 Dutiyavaggavaṇṇanā niṭṭhitā. ^2-500
 
-### Paribbājakavaggo ^2-3-0
+### 3. Paribbājakavaggo ^2-3-0
 
-#### Tevijjavacchasuttavaṇṇanā ^2-3-1-0
+#### 1. Tevijjavacchasuttavaṇṇanā ^2-3-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-185]]
 
@@ -7913,7 +7913,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-505
 
 Tevijjavacchasuttavaṇṇanā niṭṭhitā. ^2-506
 
-#### Aggivacchasuttavaṇṇanā ^2-3-2-0
+#### 2. Aggivacchasuttavaṇṇanā ^2-3-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-187]]
 
@@ -7943,7 +7943,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-514
 
 Aggivacchasuttavaṇṇanā niṭṭhitā. ^2-515
 
-#### Mahāvacchasuttavaṇṇanā ^2-3-3-0
+#### 3. Mahāvacchasuttavaṇṇanā ^2-3-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-193]]
 
@@ -7986,7 +7986,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-526
 
 Mahāvacchasuttavaṇṇanā niṭṭhitā. ^2-527
 
-#### Dīghanakhasuttavaṇṇanā ^2-3-4-0
+#### 4. Dīghanakhasuttavaṇṇanā ^2-3-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-201]]
 
@@ -8041,7 +8041,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-546
 
 Dīghanakhasuttavaṇṇanā niṭṭhitā. ^2-547
 
-#### Māgaṇḍiyasuttavaṇṇanā ^2-3-5-0
+#### 5. Māgaṇḍiyasuttavaṇṇanā ^2-3-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-207]]
 
@@ -8141,7 +8141,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-578
 
 Māgaṇḍiyasuttavaṇṇanā niṭṭhitā. ^2-579
 
-#### Sandakasuttavaṇṇanā ^2-3-6-0
+#### 6. Sandakasuttavaṇṇanā ^2-3-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-223]]
 
@@ -8225,7 +8225,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-609
 
 Sandakasuttavaṇṇanā niṭṭhitā. ^2-610
 
-#### Mahāsakuludāyisuttavaṇṇanā ^2-3-7-0
+#### 7. Mahāsakuludāyisuttavaṇṇanā ^2-3-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-237]]
 
@@ -8381,7 +8381,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-668
 
 Mahāsakuludāyisuttavaṇṇanā niṭṭhitā. ^2-669
 
-#### Samaṇamuṇḍikasuttavaṇṇanā ^2-3-8-0
+#### 8. Samaṇamuṇḍikasuttavaṇṇanā ^2-3-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-260]]
 
@@ -8435,7 +8435,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-686
 
 Samaṇamuṇḍikasuttavaṇṇanā niṭṭhitā. ^2-687
 
-#### Cūḷasakuludāyisuttavaṇṇanā ^2-3-9-0
+#### 9. Cūḷasakuludāyisuttavaṇṇanā ^2-3-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-270]]
 
@@ -8491,7 +8491,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-705
 
 Cūḷasakuludāyisuttavaṇṇanā niṭṭhitā. ^2-706
 
-#### Vekhanasasuttavaṇṇanā ^2-3-10-0
+#### 10. Vekhanasasuttavaṇṇanā ^2-3-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-278]]
 
@@ -8513,9 +8513,9 @@ Vekhanasasuttavaṇṇanā niṭṭhitā. ^2-712
 
 Tatiyavaggavaṇṇanā niṭṭhitā. ^2-713
 
-### Rājavaggo ^2-4-0
+### 4. Rājavaggo ^2-4-0
 
-#### Ghaṭikārasuttavaṇṇanā ^2-4-1-0
+#### 1. Ghaṭikārasuttavaṇṇanā ^2-4-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-282]]
 
@@ -8581,7 +8581,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-733
 
 Ghaṭikārasuttavaṇṇanā niṭṭhitā. ^2-734
 
-#### Raṭṭhapālasuttavaṇṇanā ^2-4-2-0
+#### 2. Raṭṭhapālasuttavaṇṇanā ^2-4-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-293]]
 
@@ -8713,7 +8713,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-784
 
 Raṭṭhapālasuttavaṇṇanā niṭṭhitā. ^2-785
 
-#### Maghadevasuttavaṇṇanā ^2-4-3-0
+#### 3. Maghadevasuttavaṇṇanā ^2-4-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-308]]
 
@@ -8827,7 +8827,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-823
 
 Maghadevasuttavaṇṇanā niṭṭhitā. ^2-824
 
-#### Madhurasuttavaṇṇanā ^2-4-4-0
+#### 4. Madhurasuttavaṇṇanā ^2-4-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-317]]
 
@@ -8847,7 +8847,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-829
 
 Madhurasuttavaṇṇanā niṭṭhitā. ^2-830
 
-#### Bodhirājakumārasuttavaṇṇanā ^2-4-5-0
+#### 5. Bodhirājakumārasuttavaṇṇanā ^2-4-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-324]]
 
@@ -8893,7 +8893,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-843
 
 Bodhirājakumārasuttavaṇṇanā niṭṭhitā. ^2-844
 
-#### Aṅgulimālasuttavaṇṇanā ^2-4-6-0
+#### 6. Aṅgulimālasuttavaṇṇanā ^2-4-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-347]]
 
@@ -8982,7 +8982,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-880
 
 Aṅgulimālasuttavaṇṇanā niṭṭhitā. ^2-881
 
-#### Piyajātikasuttavaṇṇanā ^2-4-7-0
+#### 7. Piyajātikasuttavaṇṇanā ^2-4-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-353]]
 
@@ -9010,7 +9010,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-889
 
 Piyajātikasuttavaṇṇanā niṭṭhitā. ^2-890
 
-#### Bāhitikasuttavaṇṇanā ^2-4-8-0
+#### 8. Bāhitikasuttavaṇṇanā ^2-4-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-358]]
 
@@ -9038,7 +9038,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-897
 
 Bāhitikasuttavaṇṇanā niṭṭhitā. ^2-898
 
-#### Dhammacetiyasuttavaṇṇanā ^2-4-9-0
+#### 9. Dhammacetiyasuttavaṇṇanā ^2-4-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-364]]
 
@@ -9087,7 +9087,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-913
 
 Dhammacetiyasuttavaṇṇanā niṭṭhitā. ^2-914
 
-#### Kaṇṇakatthalasuttavaṇṇanā ^2-4-10-0
+#### 10. Kaṇṇakatthalasuttavaṇṇanā ^2-4-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-375]]
 
@@ -9127,9 +9127,9 @@ Kaṇṇakatthalasuttavaṇṇanā niṭṭhitā. ^2-925
 
 Catutthavaggavaṇṇanā niṭṭhitā. ^2-926
 
-### Brāhmaṇavaggo ^2-5-0
+### 5. Brāhmaṇavaggo ^2-5-0
 
-#### Brahmāyusuttavaṇṇanā ^2-5-1-0
+#### 1. Brahmāyusuttavaṇṇanā ^2-5-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-383]]
 
@@ -9314,7 +9314,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1006
 
 Brahmāyusuttavaṇṇanā niṭṭhitā. ^2-1007
 
-#### Selasuttavaṇṇanā ^2-5-2-0
+#### 2. Selasuttavaṇṇanā ^2-5-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-396]]
 
@@ -9366,7 +9366,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1026
 
 Selasuttavaṇṇanā niṭṭhitā. ^2-1027
 
-#### Assalāyanasuttavaṇṇanā ^2-5-3-0
+#### 3. Assalāyanasuttavaṇṇanā ^2-5-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-401]]
 
@@ -9412,7 +9412,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1040
 
 Assalāyanasuttavaṇṇanā niṭṭhitā. ^2-1041
 
-#### Ghoṭamukhasuttavaṇṇanā ^2-5-4-0
+#### 4. Ghoṭamukhasuttavaṇṇanā ^2-5-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-412]]
 
@@ -9434,7 +9434,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1046
 
 Ghoṭamukhasuttavaṇṇanā niṭṭhitā. ^2-1047
 
-#### Caṅkīsuttavaṇṇanā ^2-5-5-0
+#### 5. Caṅkīsuttavaṇṇanā ^2-5-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-422]]
 
@@ -9517,7 +9517,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1075
 
 Caṅkīsuttavaṇṇanā niṭṭhitā. ^2-1076
 
-#### Esukārīsuttavaṇṇanā ^2-5-6-0
+#### 6. Esukārīsuttavaṇṇanā ^2-5-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-437]]
 
@@ -9531,7 +9531,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1079
 
 Esukārīsuttavaṇṇanā niṭṭhitā. ^2-1080
 
-#### Dhanañjānisuttavaṇṇanā ^2-5-7-0
+#### 7. Dhanañjānisuttavaṇṇanā ^2-5-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-445]]
 
@@ -9553,7 +9553,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1085
 
 Dhanañjānisuttavaṇṇanā niṭṭhitā. ^2-1086
 
-#### Vāseṭṭhasuttavaṇṇanā ^2-5-8-0
+#### 8. Vāseṭṭhasuttavaṇṇanā ^2-5-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-454]]
 
@@ -9669,7 +9669,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1135
 
 Vāseṭṭhasuttavaṇṇanā niṭṭhitā. ^2-1136
 
-#### Subhasuttavaṇṇanā ^2-5-9-0
+#### 9. Subhasuttavaṇṇanā ^2-5-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-462]]
 
@@ -9717,7 +9717,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^2-1150
 
 Subhasuttavaṇṇanā niṭṭhitā. ^2-1151
 
-#### Saṅgāravasuttavaṇṇanā ^2-5-10-0
+#### 10. Saṅgāravasuttavaṇṇanā ^2-5-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^2-473]]
 
@@ -9758,9 +9758,9 @@ Majjhimanikāye ^3-T2
 
 ## Uparipaṇṇāsa-aṭṭhakathā ^3-0
 
-### Devadahavaggo ^3-1-0
+### 1. Devadahavaggo ^3-1-0
 
-#### Devadahasuttavaṇṇanā ^3-1-1-0
+#### 1. Devadahasuttavaṇṇanā ^3-1-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-1]]
 
@@ -9842,7 +9842,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-27
 
 Devadahasuttavaṇṇanā niṭṭhitā. ^3-28
 
-#### Pañcattayasuttavaṇṇanā ^3-1-2-0
+#### 2. Pañcattayasuttavaṇṇanā ^3-1-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-21]]
 
@@ -9928,7 +9928,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-55
 
 Pañcattayasuttavaṇṇanā niṭṭhitā. ^3-56
 
-#### Kintisuttavaṇṇanā ^3-1-3-0
+#### 3. Kintisuttavaṇṇanā ^3-1-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-34]]
 
@@ -9968,7 +9968,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-68
 
 Kintisuttavaṇṇanā niṭṭhitā. ^3-69
 
-#### Sāmagāmasuttavaṇṇanā ^3-1-4-0
+#### 4. Sāmagāmasuttavaṇṇanā ^3-1-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-41]]
 
@@ -10087,7 +10087,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-114
 
 Sāmagāmasuttavaṇṇanā niṭṭhitā. ^3-115
 
-#### Sunakkhattasuttavaṇṇanā ^3-1-5-0
+#### 5. Sunakkhattasuttavaṇṇanā ^3-1-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-55]]
 
@@ -10139,7 +10139,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-129
 
 Sunakkhattasuttavaṇṇanā niṭṭhitā. ^3-130
 
-#### Āneñjasappāyasuttavaṇṇanā ^3-1-6-0
+#### 6. Āneñjasappāyasuttavaṇṇanā ^3-1-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-66]]
 
@@ -10197,7 +10197,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-151
 
 Āneñjasappāyasuttavaṇṇanā niṭṭhitā. ^3-152
 
-#### Gaṇakamoggallānasuttavaṇṇanā ^3-1-7-0
+#### 7. Gaṇakamoggallānasuttavaṇṇanā ^3-1-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-74]]
 
@@ -10223,7 +10223,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-159
 
 Gaṇakamoggallānasuttavaṇṇanā niṭṭhitā. ^3-160
 
-#### Gopakamoggallānasuttavaṇṇanā ^3-1-8-0
+#### 8. Gopakamoggallānasuttavaṇṇanā ^3-1-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-79]]
 
@@ -10255,7 +10255,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-169
 
 Gopakamoggallānasuttavaṇṇanā niṭṭhitā. ^3-170
 
-#### Mahāpuṇṇamasuttavaṇṇanā ^3-1-9-0
+#### 9. Mahāpuṇṇamasuttavaṇṇanā ^3-1-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-85]]
 
@@ -10297,7 +10297,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-184
 
 Mahāpuṇṇamasuttavaṇṇanā niṭṭhitā. ^3-185
 
-#### Cūḷapuṇṇamasuttavaṇṇanā ^3-1-10-0
+#### 10. Cūḷapuṇṇamasuttavaṇṇanā ^3-1-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-91]]
 
@@ -10315,9 +10315,9 @@ Cūḷapuṇṇamasuttavaṇṇanā niṭṭhitā. ^3-191
 
 Paṭhamavaggavaṇṇanā niṭṭhitā. ^3-192
 
-### Anupadavaggo ^3-2-0
+### 2. Anupadavaggo ^3-2-0
 
-#### Anupadasuttavaṇṇanā ^3-2-1-0
+#### 1. Anupadasuttavaṇṇanā ^3-2-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-93]]
 
@@ -10377,7 +10377,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-216
 
 Anupadasuttavaṇṇanā niṭṭhitā. ^3-217
 
-#### Chabbisodhanasuttavaṇṇanā ^3-2-2-0
+#### 2. Chabbisodhanasuttavaṇṇanā ^3-2-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-98]]
 
@@ -10425,7 +10425,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-234
 
 Chabbisodhanasuttavaṇṇanā niṭṭhitā. ^3-235
 
-#### Sappurisadhammasuttavaṇṇanā ^3-2-3-0
+#### 3. Sappurisadhammasuttavaṇṇanā ^3-2-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-105]]
 
@@ -10451,7 +10451,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-242
 
 Sappurisadhammasuttavaṇṇanā niṭṭhitā. ^3-243
 
-#### Sevitabbāsevitabbasuttavaṇṇanā ^3-2-4-0
+#### 4. Sevitabbāsevitabbasuttavaṇṇanā ^3-2-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-109]]
 
@@ -10485,7 +10485,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-252
 
 Sevitabbāsevitabbasuttavaṇṇanā niṭṭhitā. ^3-253
 
-#### Bahudhātukasuttavaṇṇanā ^3-2-5-0
+#### 5. Bahudhātukasuttavaṇṇanā ^3-2-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-124]]
 
@@ -10647,7 +10647,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-321
 
 Bahudhātukasuttavaṇṇanā niṭṭhitā. ^3-322
 
-#### Isigilisuttavaṇṇanā ^3-2-6-0
+#### 6. Isigilisuttavaṇṇanā ^3-2-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-133]]
 
@@ -10684,7 +10684,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-336
 
 Isigilisuttavaṇṇanā niṭṭhitā. ^3-337
 
-#### Mahācattārīsakasuttavaṇṇanā ^3-2-7-0
+#### 7. Mahācattārīsakasuttavaṇṇanā ^3-2-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-136]]
 
@@ -10738,7 +10738,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-354
 
 Mahācattārīsakasuttavaṇṇanā niṭṭhitā. ^3-355
 
-#### Ānāpānassatisuttavaṇṇanā ^3-2-8-0
+#### 8. Ānāpānassatisuttavaṇṇanā ^3-2-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-144]]
 
@@ -10788,7 +10788,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-371
 
 Ānāpānassatisuttavaṇṇanā niṭṭhitā. ^3-372
 
-#### Kāyagatāsatisuttavaṇṇanā ^3-2-9-0
+#### 9. Kāyagatāsatisuttavaṇṇanā ^3-2-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-153]]
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-154]]
@@ -10817,7 +10817,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-380
 
 Kāyagatāsatisuttavaṇṇanā niṭṭhitā. ^3-381
 
-#### Saṅkhārupapattisuttavaṇṇanā ^3-2-10-0
+#### 10. Saṅkhārupapattisuttavaṇṇanā ^3-2-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-160]]
 
@@ -10855,9 +10855,9 @@ Saṅkhārupapattisuttavaṇṇanā niṭṭhitā. ^3-392
 
 Dutiyavaggavaṇṇanā niṭṭhitā. ^3-393
 
-### Suññatavaggo ^3-3-0
+### 3. Suññatavaggo ^3-3-0
 
-#### Cūḷasuññatasuttavaṇṇanā ^3-3-1-0
+#### 1. Cūḷasuññatasuttavaṇṇanā ^3-3-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-176]]
 
@@ -10893,7 +10893,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-404
 
 Cūḷasuññatasuttavaṇṇanā niṭṭhitā. ^3-405
 
-#### Mahāsuññatasuttavaṇṇanā ^3-3-2-0
+#### 2. Mahāsuññatasuttavaṇṇanā ^3-3-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-185]]
 
@@ -10978,7 +10978,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-436
 
 Mahāsuññatasuttavaṇṇanā niṭṭhitā. ^3-437
 
-#### Acchariyaabbhutasuttavaṇṇanā ^3-3-3-0
+#### 3. Acchariyaabbhutasuttavaṇṇanā ^3-3-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-197]]
 
@@ -11116,7 +11116,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-492
 
 Acchariyaabbhutasuttavaṇṇanā niṭṭhitā. ^3-493
 
-#### Bākulasuttavaṇṇanā ^3-3-4-0
+#### 4. Bākulasuttavaṇṇanā ^3-3-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-209]]
 
@@ -11160,7 +11160,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-509
 
 Bākulasuttavaṇṇanā niṭṭhitā. ^3-510
 
-#### Dantabhūmisuttavaṇṇanā ^3-3-5-0
+#### 5. Dantabhūmisuttavaṇṇanā ^3-3-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-213]]
 
@@ -11204,7 +11204,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-523
 
 Dantabhūmisuttavaṇṇanā niṭṭhitā. ^3-524
 
-#### Bhūmijasuttavaṇṇanā ^3-3-6-0
+#### 6. Bhūmijasuttavaṇṇanā ^3-3-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-223]]
 
@@ -11214,7 +11214,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-526
 
 Bhūmijasuttavaṇṇanā niṭṭhitā. ^3-527
 
-#### Anuruddhasuttavaṇṇanā ^3-3-7-0
+#### 7. Anuruddhasuttavaṇṇanā ^3-3-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-230]]
 
@@ -11251,7 +11251,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-538
 
 Anuruddhasuttavaṇṇanā niṭṭhitā. ^3-539
 
-#### Upakkilesasuttavaṇṇanā ^3-3-8-0
+#### 8. Upakkilesasuttavaṇṇanā ^3-3-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-236]]
 
@@ -11319,7 +11319,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-565
 
 Upakkilesasuttavaṇṇanā niṭṭhitā. ^3-566
 
-#### Bālapaṇḍitasuttavaṇṇanā ^3-3-9-0
+#### 9. Bālapaṇḍitasuttavaṇṇanā ^3-3-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-246]]
 
@@ -11466,7 +11466,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-617
 
 Bālapaṇḍitasuttavaṇṇanā niṭṭhitā. ^3-618
 
-#### Devadūtasuttavaṇṇanā ^3-3-10-0
+#### 10. Devadūtasuttavaṇṇanā ^3-3-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-261]]
 
@@ -11548,9 +11548,9 @@ Devadūtasuttavaṇṇanā niṭṭhitā. ^3-647
 
 Tatiyavaggavaṇṇanā niṭṭhitā. ^3-648
 
-### Vibhaṅgavaggo ^3-4-0
+### 4. Vibhaṅgavaggo ^3-4-0
 
-#### Bhaddekarattasuttavaṇṇanā ^3-4-1-0
+#### 1. Bhaddekarattasuttavaṇṇanā ^3-4-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-272]]
 
@@ -11584,7 +11584,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-659
 
 Bhaddekarattasuttavaṇṇanā niṭṭhitā. ^3-660
 
-#### Ānandabhaddekarattasuttavaṇṇanā ^3-4-2-0
+#### 2. Ānandabhaddekarattasuttavaṇṇanā ^3-4-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-276]]
 
@@ -11598,7 +11598,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-663
 
 Ānandabhaddekarattasuttavaṇṇanā niṭṭhitā. ^3-664
 
-#### Mahākaccānabhaddekarattasuttavaṇṇanā ^3-4-3-0
+#### 3. Mahākaccānabhaddekarattasuttavaṇṇanā ^3-4-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-279]]
 
@@ -11622,7 +11622,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-670
 
 Mahākaccānabhaddekarattasuttavaṇṇanā niṭṭhitā. ^3-671
 
-#### Lomasakaṅgiyabhaddekarattasuttavaṇṇanā ^3-4-4-0
+#### 4. Lomasakaṅgiyabhaddekarattasuttavaṇṇanā ^3-4-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-286]]
 
@@ -11638,7 +11638,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-676
 
 Lomasakaṅgiyabhaddekarattasuttavaṇṇanā niṭṭhitā. ^3-677
 
-#### Cūḷakammavibhaṅgasuttavaṇṇanā ^3-4-5-0
+#### 5. Cūḷakammavibhaṅgasuttavaṇṇanā ^3-4-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-289]]
 
@@ -11701,7 +11701,7 @@ Cūḷakammavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-700
 
 Subhasuttantipi vuccati. ^3-701
 
-#### Mahākammavibhaṅgasuttavaṇṇanā ^3-4-6-0
+#### 6. Mahākammavibhaṅgasuttavaṇṇanā ^3-4-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-298]]
 
@@ -11749,7 +11749,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-717
 
 Mahākammavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-718
 
-#### Saḷāyatanavibhaṅgasuttavaṇṇanā ^3-4-7-0
+#### 7. Saḷāyatanavibhaṅgasuttavaṇṇanā ^3-4-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-304]]
 
@@ -11823,7 +11823,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-743
 
 Saḷāyatanavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-744
 
-#### Uddesavibhaṅgasuttavaṇṇanā ^3-4-8-0
+#### 8. Uddesavibhaṅgasuttavaṇṇanā ^3-4-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-313]]
 
@@ -11851,7 +11851,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-751
 
 Uddesavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-752
 
-#### Araṇavibhaṅgasuttavaṇṇanā ^3-4-9-0
+#### 9. Araṇavibhaṅgasuttavaṇṇanā ^3-4-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-323]]
 
@@ -11893,7 +11893,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-763
 
 Araṇavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-764
 
-#### Dhātuvibhaṅgasuttavaṇṇanā ^3-4-10-0
+#### 10. Dhātuvibhaṅgasuttavaṇṇanā ^3-4-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-342]]
 
@@ -12086,7 +12086,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-834
 
 Dhātuvibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-835
 
-#### Saccavibhaṅgasuttavaṇṇanā ^3-4-11-0
+#### 11. Saccavibhaṅgasuttavaṇṇanā ^3-4-11-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-371]]
 
@@ -12100,7 +12100,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-839
 
 Saccavibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-840
 
-#### Dakkhiṇāvibhaṅgasuttavaṇṇanā ^3-4-12-0
+#### 12. Dakkhiṇāvibhaṅgasuttavaṇṇanā ^3-4-12-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-376]]
 
@@ -12179,9 +12179,9 @@ Dakkhiṇāvibhaṅgasuttavaṇṇanā niṭṭhitā. ^3-870
 
 Catutthavaggavaṇṇanā niṭṭhitā. ^3-871
 
-### Saḷāyatanavaggo ^3-5-0
+### 5. Saḷāyatanavaggo ^3-5-0
 
-#### Anāthapiṇḍikovādasuttavaṇṇanā ^3-5-1-0
+#### 1. Anāthapiṇḍikovādasuttavaṇṇanā ^3-5-1-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-383]]
 
@@ -12219,7 +12219,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-883
 
 Anāthapiṇḍikovādasuttavaṇṇanā niṭṭhitā. ^3-884
 
-#### Channovādasuttavaṇṇanā ^3-5-2-0
+#### 2. Channovādasuttavaṇṇanā ^3-5-2-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-389]]
 
@@ -12245,7 +12245,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-890
 
 Channovādasuttavaṇṇanā niṭṭhitā. ^3-891
 
-#### Puṇṇovādasuttavaṇṇanā ^3-5-3-0
+#### 3. Puṇṇovādasuttavaṇṇanā ^3-5-3-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-395]]
 
@@ -12295,7 +12295,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-911
 
 Puṇṇovādasuttavaṇṇanā niṭṭhitā. ^3-912
 
-#### Nandakovādasuttavaṇṇanā ^3-5-4-0
+#### 4. Nandakovādasuttavaṇṇanā ^3-5-4-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-398]]
 
@@ -12339,7 +12339,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-925
 
 Nandakovādasuttavaṇṇanā niṭṭhitā. ^3-926
 
-#### Rāhulovādasuttavaṇṇanā ^3-5-5-0
+#### 5. Rāhulovādasuttavaṇṇanā ^3-5-5-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-416]]
 
@@ -12357,7 +12357,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-931
 
 Rāhulovādasuttavaṇṇanā niṭṭhitā. ^3-932
 
-#### Chachakkasuttavaṇṇanā ^3-5-6-0
+#### 6. Chachakkasuttavaṇṇanā ^3-5-6-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-420]]
 
@@ -12397,7 +12397,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-944
 
 Chachakkasuttavaṇṇanā niṭṭhitā. ^3-945
 
-#### Mahāsaḷāyatanikasuttavaṇṇanā ^3-5-7-0
+#### 7. Mahāsaḷāyatanikasuttavaṇṇanā ^3-5-7-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-428]]
 
@@ -12427,7 +12427,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-953
 
 Mahāsaḷāyatanikasuttavaṇṇanā niṭṭhitā. ^3-954
 
-#### Nagaravindeyyasuttavaṇṇanā ^3-5-8-0
+#### 8. Nagaravindeyyasuttavaṇṇanā ^3-5-8-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-435]]
 
@@ -12441,7 +12441,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-957
 
 Nagaravindeyyasuttavaṇṇanā niṭṭhitā. ^3-958
 
-#### Piṇḍapātapārisuddhisuttavaṇṇanā ^3-5-9-0
+#### 9. Piṇḍapātapārisuddhisuttavaṇṇanā ^3-5-9-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-438]]
 
@@ -12457,7 +12457,7 @@ Papañcasūdaniyā majjhimanikāyaṭṭhakathāya ^3-962
 
 Piṇḍapātapārisuddhisuttavaṇṇanā niṭṭhitā. ^3-963
 
-#### Indriyabhāvanāsuttavaṇṇanā ^3-5-10-0
+#### 10. Indriyabhāvanāsuttavaṇṇanā ^3-5-10-0
 
 ![[1-SOURCES/Text/pi-majjhimanikaya.md#^3-453]]
 

@@ -128,7 +128,14 @@ _numberlike_re    = re.compile(r"^\s*\d+(?:-\d+)+\.")
 
 
 def strip_leading_number(text: str) -> str:
+    """For matching a heading by name only (h3 dedupe, --unlinked)."""
     return _leading_num_re.sub("", text).strip()
+
+
+def printed_heading(text: str) -> str:
+    """The heading as written: its printed number kept ("1. Brahmajālasuttavaṇṇanā"),
+    since a heading's number cannot be read back from its block ID."""
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def clean_text(s: str) -> str:
@@ -390,6 +397,7 @@ def convert_json_to_commentary(
             (c for r, c in items if r == ROLE_CHAPTER), None
         )
         if chapter_title_raw is not None:
+            h3_shown = printed_heading(chapter_title_raw)
             h3_title = strip_leading_number(chapter_title_raw)
         else:
             # ch0: no chapter-class segment.
@@ -410,9 +418,10 @@ def convert_json_to_commentary(
                     or next((c for r, c in items if r == ROLE_SUBSUBHEAD), None)
                     or f"Section {src_ch}"
                 )
+            h3_shown = printed_heading(h3_title)
             h3_title = strip_leading_number(h3_title)
 
-        h3_line = f"### {h3_title} ^{BOOK_ID}-{src_ch}-0\n\n"
+        h3_line = f"### {h3_shown} ^{BOOK_ID}-{src_ch}-0\n\n"
         unlinked = [False]   # True while the text sits directly under an UNLINKED heading
 
         def heading(line: str, text: str) -> None:
@@ -514,7 +523,7 @@ def convert_json_to_commentary(
                 in_sutta, title_group, seen_title = True, False, True
                 h4_counter += 1
                 h5_counter  = 0
-                heading(f"#### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-0\n\n", text)
+                heading(f"#### {printed_heading(content)} ^{BOOK_ID}-{src_ch}-{h4_counter}-0\n\n", text)
                 continue
 
             if in_sutta and role in (ROLE_TITLE, ROLE_SUBHEAD, ROLE_SUBSUBHEAD):
@@ -522,12 +531,12 @@ def convert_json_to_commentary(
                 text = strip_leading_number(content)
                 if role != ROLE_TITLE and title_group and _leading_num_re.match(content):
                     h6_counter += 1
-                    heading(f"###### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-{h6_counter}-0\n\n", text)
+                    heading(f"###### {printed_heading(content)} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-{h6_counter}-0\n\n", text)
                     continue
                 title_group = role == ROLE_TITLE
                 h5_counter += 1
                 h6_counter  = 0
-                heading(f"##### {text} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-0\n\n", text)
+                heading(f"##### {printed_heading(content)} ^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-0\n\n", text)
                 continue
 
             if role == ROLE_TITLE:
@@ -540,7 +549,7 @@ def convert_json_to_commentary(
                 h4_counter += 1
                 h5_counter  = 0
                 heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-0"
-                heading(f"#### {strip_leading_number(content)} {heading_id}\n\n",
+                heading(f"#### {printed_heading(content)} {heading_id}\n\n",
                         strip_leading_number(content))
                 continue
 
@@ -557,13 +566,13 @@ def convert_json_to_commentary(
                     # h5: deeper sub-section under an h4 title
                     h5_counter += 1
                     heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-{h5_counter}-0"
-                    heading(f"##### {text} {heading_id}\n\n", text)
+                    heading(f"##### {printed_heading(content)} {heading_id}\n\n", text)
                 else:
                     # h4: sub-section before any h4 title in this chapter
                     h4_counter += 1
                     h5_counter  = 0
                     heading_id  = f"^{BOOK_ID}-{src_ch}-{h4_counter}-0"
-                    heading(f"#### {text} {heading_id}\n\n", text)
+                    heading(f"#### {printed_heading(content)} {heading_id}\n\n", text)
                 continue
 
             if role == ROLE_GATHA:

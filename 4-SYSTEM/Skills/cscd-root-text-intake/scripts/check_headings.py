@@ -4,7 +4,7 @@ cscd-commentary-intake (it does not use the converters' level rules).
 
 Every heading element of the XML (<head> other than the book's, and <p> with rend
 subhead / subsubhead / title / chapter), in order and with the same text (printed
-number or range stripped, notes as [..]), must be a markdown heading (### or
+number or range kept as printed, notes as [..]), must be a markdown heading (### or
 deeper) of the file, and the file must have no heading the XML lacks. Part labels
 ("(Dutiyo bhāgo)") are text, not headings.
 
@@ -38,7 +38,7 @@ for x in xmls:
             t = cs.text_with_notes(e).replace("‘‘", '"').replace("’’", '"')
             if cs.part_label(t):
                 continue
-            h = cs.strip_heading_number(t)
+            h = cs.printed_heading(t)
             if reprint and h in xh:
                 continue                     # … and the heading still open: text, not a heading
             reprint = False
@@ -46,7 +46,7 @@ for x in xmls:
         elif e.tag == "p" and e.get("rend") not in ("centre", "nikaya"):
             reprint = False
 lines = Path(md).read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
-mh = [cs.strip_heading_number(re.sub(r"\s+\^[\w-]+$", "", l[l.index(" ") + 1:])).replace("**", "")
+mh = [cs.printed_heading(re.sub(r"\s+\^[\w-]+$", "", l[l.index(" ") + 1:])).replace("**", "")
       for l in lines if re.match(r"^#{3,} ", l)]
 ops = [o for o in difflib.SequenceMatcher(None, xh, mh, autojunk=False).get_opcodes() if o[0] != "equal"]
 print(f"{Path(md).name}: xml headings {len(xh)}, md headings {len(mh)}, "

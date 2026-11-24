@@ -99,6 +99,13 @@ def strip_leading_number(title: str) -> str:
     return _leading_num_re.sub("", title).strip()
 
 
+def printed_heading(title: str) -> str:
+    """The heading as printed, its number kept ("1. Brahmajālasuttaṃ"): a heading's
+    number cannot be read back from its block ID (^1-1-0 is a structural path), so it
+    stays in the text, as in the Vinaya files (CLAUDE.md §5a)."""
+    return re.sub(r"\s+", " ", title).strip()
+
+
 # Internal roles
 ROLE_CHAPTER = "chapter"
 ROLE_TITLE = "title"
@@ -231,7 +238,7 @@ def convert_json_to_source_text(json_path, output_path) -> None:
         if (not is_toc and items and h3_title_raw.startswith("Section ")
                 and items[0][0] in (ROLE_TITLE, ROLE_SUBHEAD)):
             h3_title_raw, skip_first = items[0][1], True
-        h3_title = strip_leading_number(h3_title_raw)
+        h3_title = printed_heading(h3_title_raw)
         out.append(f"### {h3_title} ^{book_id}-{h3_position}-0\n\n")
 
         # Per-h3 emission state.
@@ -297,7 +304,7 @@ def convert_json_to_source_text(json_path, output_path) -> None:
                     h4_counter += 1
                     h5_counter = 0
                     heading_id = f"^{book_id}-{h3_position}-{h4_counter}-0"
-                out.append(f"#### {strip_leading_number(content)} {heading_id}\n\n")
+                out.append(f"#### {printed_heading(content)} {heading_id}\n\n")
                 continue
             if role == ROLE_SUBHEAD:
                 flush_verse()
@@ -309,7 +316,7 @@ def convert_json_to_source_text(json_path, output_path) -> None:
                         heading_id = f"^{book_id}-{h3_position}{toc_letter}-{h5_counter}-0"
                     else:
                         heading_id = f"^{book_id}-{h3_position}-{h4_counter}-{h5_counter}-0"
-                    out.append(f"##### {strip_leading_number(content)} {heading_id}\n\n")
+                    out.append(f"##### {printed_heading(content)} {heading_id}\n\n")
                 else:
                     # Standalone subhead before any title — treat as H4
                     if is_toc:
@@ -321,7 +328,7 @@ def convert_json_to_source_text(json_path, output_path) -> None:
                         h4_counter += 1
                         h5_counter = 0
                         heading_id = f"^{book_id}-{h3_position}-{h4_counter}-0"
-                    out.append(f"#### {strip_leading_number(content)} {heading_id}\n\n")
+                    out.append(f"#### {printed_heading(content)} {heading_id}\n\n")
                 continue
             # ROLE_VERSE
             m = _verse_opening_re.match(content)

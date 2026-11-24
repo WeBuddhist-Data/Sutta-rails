@@ -11,7 +11,7 @@ nikaya: Khuddakanikāya
 layer: tiika
 root_text: 1-SOURCES/Text/pi-khuddakanikaya.md
 commentary: 1-SOURCES/Commentaries/pi-khuddakanikaya-atthakatha.md
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 1 volume file (s0519t.tik), Khuddakanikāya, Nettippakaraṇa-ṭīkā. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 1 volume file (s0519t.tik), Khuddakanikāya, Nettippakaraṇa-ṭīkā. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0519t.tik.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0519t.tik.xml"
 source_volumes:
@@ -163,7 +163,7 @@ Yeneva kāraṇena nidānāvacanassa pamāṇabhāvasādhanatā, teneva kāraṇ
 
 **"Ayaṃ vibhāgo"**tiādinā ekavidhato paṭṭhāya yāva caturāsītisahassappabhedā, tāva yathādassitassa pakaraṇavibhāgassa puna **"ādinā nayena pakaraṇavibhāgo veditabbo"**ti idaṃ nigamanaṃ. Tattha **ādinā nayenā**ti **ādi**saddena abhiññeyyadhammaniddesato paññattipaññapetabbadhammavibhajanato tiyaddhapariyāpannadhammavicārato caturoghanittharaṇatthato pañcābhinandanādippahānato chataṇhākāyupasamanato saṅgahavārādisattavārasaṅgahato aṭṭhamicchattasamugghātadīpanatoti evamādīnaṃ saṅgaho daṭṭhabbo. ^19-63
 
-### Saṅgahavāravaṇṇanā ^19-1-0
+### 1. Saṅgahavāravaṇṇanā ^19-1-0
 
 **Ya**nti aniyamattho sabbanāmasaddo kammasādhanavasena vutto. Atthāvabodhanattho saddappayogo atthaparādhīno kevalo atthapadatthako, so padatthavipariyesakārinā iti-saddena parabhūtena saddapadatthako jāyatīti āha **"yanti aniyamato upayoganiddeso"**ti. **Lokoti kattuniddeso**tiādīsupi eseva nayo. ^19-64
 
@@ -203,7 +203,7 @@ Desanādesitāni ca yāvadeva vijānanatthānīti vijānanaṃ padhānanti tamev
 
 Saṅgahavāravaṇṇanā niṭṭhitā. ^19-82
 
-### Uddesavāravaṇṇanā ^19-2-0
+### 2. Uddesavāravaṇṇanā ^19-2-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-1]]
 
@@ -233,7 +233,7 @@ Saṅgahavāravaṇṇanā niṭṭhitā. ^19-82
 
 Uddesavāravaṇṇanā niṭṭhitā. ^19-93
 
-### Niddesavāravaṇṇanā ^19-3-0
+### 3. Niddesavāravaṇṇanā ^19-3-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-4]]
 
@@ -425,9 +425,9 @@ Apicettha sampayogavippayogavirodhapakaraṇaliṅgasaddantarasannidhānasāmatt
 
 Niddesavāravaṇṇanā niṭṭhitā. ^19-160
 
-### Paṭiniddesavāravaṇṇanā ^19-4-0
+### 4. Paṭiniddesavāravaṇṇanā ^19-4-0
 
-#### Desanāhāravibhaṅgavaṇṇanā ^19-4-1-0
+#### 1. Desanāhāravibhaṅgavaṇṇanā ^19-4-1-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-5]]
 
@@ -514,7 +514,7 @@ Tameva dvādasapadabhāvaṃ dīpetvāti sambandho. **Tadatthassā**ti chachakka
 
 Desanāhāravibhaṅgavaṇṇanā niṭṭhitā. ^19-196
 
-#### Vicayahāravibhaṅgavaṇṇanā ^19-4-2-0
+#### 2. Vicayahāravibhaṅgavaṇṇanā ^19-4-2-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-11]]
 
@@ -612,7 +612,7 @@ Asubhānupassanā kāyānupassanāsatipaṭṭhānanti āha **"satipaṭṭhāna
 
 Vicayahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-237
 
-#### Yuttihāravibhaṅgavaṇṇanā ^19-4-3-0
+#### 3. Yuttihāravibhaṅgavaṇṇanā ^19-4-3-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-18]]
 
@@ -666,7 +666,7 @@ Evaṃ yuttihāralakkhaṇaṃ āgamato yuttāyuttavicāraṃ dassetvā idāni �
 
 Yuttihāravibhaṅgavaṇṇanā niṭṭhitā. ^19-259
 
-#### Padaṭṭhānahāravibhaṅgavaṇṇanā ^19-4-4-0
+#### 4. Padaṭṭhānahāravibhaṅgavaṇṇanā ^19-4-4-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-22]]
 
@@ -684,7 +684,7 @@ Imasmiṃ ca ṭhāne pāḷiyaṃ pubbe yesaṃ dhammānaṃ padaṭṭhānaṃ
 
 Padaṭṭhānahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-266
 
-#### Lakkhaṇahāravibhaṅgavaṇṇanā ^19-4-5-0
+#### 5. Lakkhaṇahāravibhaṅgavaṇṇanā ^19-4-5-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-23]]
 
@@ -724,7 +724,7 @@ Tathā visesato kāye sāpekkhā chandāgatiṃ gacchatīti kāyo chandāgatiyā
 
 Lakkhaṇahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-283
 
-#### Catubyūhahāravibhaṅgavaṇṇanā ^19-4-6-0
+#### 6. Catubyūhahāravibhaṅgavaṇṇanā ^19-4-6-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-25]]
 
@@ -742,7 +742,7 @@ Apare pana **"idhā**ti kāmabhavo, **hura**nti arūpabhavo, **ubhayamantarenā*
 
 Catubyūhahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-290
 
-#### Āvaṭṭahāravibhaṅgavaṇṇanā ^19-4-7-0
+#### 7. Āvaṭṭahāravibhaṅgavaṇṇanā ^19-4-7-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-29]]
 
@@ -780,7 +780,7 @@ Kammapathabhāvaṃ pattānaṃ, appattānañca akusaladhammānaṃ "sabbapāpa"
 
 Āvaṭṭahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-304
 
-#### Vibhattihāravibhaṅgavaṇṇanā ^19-4-8-0
+#### 8. Vibhattihāravibhaṅgavaṇṇanā ^19-4-8-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-33]]
 
@@ -816,7 +816,7 @@ Yassa ca pubbe attho na saṃvaṇṇito, tattha kalyāṇamittatāya āyatanaga
 
 Vibhattihāravibhaṅgavaṇṇanā niṭṭhitā. ^19-319
 
-#### Parivattanahāravibhaṅgavaṇṇanā ^19-4-9-0
+#### 9. Parivattanahāravibhaṅgavaṇṇanā ^19-4-9-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-35]]
 
@@ -832,7 +832,7 @@ Vibhattihāravibhaṅgavaṇṇanā niṭṭhitā. ^19-319
 
 Parivattanahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-324
 
-#### Vevacanahāravibhaṅgavaṇṇanā ^19-4-10-0
+#### 10. Vevacanahāravibhaṅgavaṇṇanā ^19-4-10-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-37]]
 
@@ -864,7 +864,7 @@ Yathā akkhaṇavedhī puggalo sippanipphattiyā rattandhakāratimisāya acirakk
 
 Vevacanahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-337
 
-#### Paññattihāravibhaṅgavaṇṇanā ^19-4-11-0
+#### 11. Paññattihāravibhaṅgavaṇṇanā ^19-4-11-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-39]]
 
@@ -884,7 +884,7 @@ Vevacanahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-337
 
 Paññattihāravibhaṅgavaṇṇanā niṭṭhitā. ^19-344
 
-#### Otaraṇahāravibhaṅgavaṇṇanā ^19-4-12-0
+#### 12. Otaraṇahāravibhaṅgavaṇṇanā ^19-4-12-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-42]]
 
@@ -906,7 +906,7 @@ Paññākkhandhe saṅgaṇhanavasena sammāsaṅkappo viyāti yojanā. Adhicitt
 
 Otaraṇahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-352
 
-#### Sodhanahāravibhaṅgavaṇṇanā ^19-4-13-0
+#### 13. Sodhanahāravibhaṅgavaṇṇanā ^19-4-13-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-45]]
 
@@ -914,7 +914,7 @@ Otaraṇahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-352
 
 Sodhanahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-354
 
-#### Adhiṭṭhānahāravibhaṅgavaṇṇanā ^19-4-14-0
+#### 14. Adhiṭṭhānahāravibhaṅgavaṇṇanā ^19-4-14-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-46]]
 
@@ -952,7 +952,7 @@ Damathaṃ anupagacchanto duṭṭhasso **khaluṅkasso. Uttaridamathāyā**ti a
 
 Adhiṭṭhānahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-369
 
-#### Parikkhārahāravibhaṅgavaṇṇanā ^19-4-15-0
+#### 15. Parikkhārahāravibhaṅgavaṇṇanā ^19-4-15-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-49]]
 
@@ -966,7 +966,7 @@ Adhiṭṭhānahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-369
 
 Parikkhārahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-374
 
-#### Samāropanahāravibhaṅgavaṇṇanā ^19-4-16-0
+#### 16. Samāropanahāravibhaṅgavaṇṇanā ^19-4-16-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-50]]
 
@@ -984,7 +984,7 @@ Samāropanahāravibhaṅgavaṇṇanā niṭṭhitā. ^19-379
 
 Niṭṭhitā ca hāravibhaṅgavaṇṇanā. ^19-380
 
-#### Desanāhārasampātavaṇṇanā ^19-4-17-0
+#### 1. Desanāhārasampātavaṇṇanā ^19-4-17-0
 
 **"Eva"**ntiādi hārasampātadesanāya sambandhadassanaṃ. Tattha purimena upamādvayena suparikammakatamaṇikoṭṭimasadisī, suviracitajambunadābharaṇasadisī ca pāḷi. Tattha katanānāvaṇṇapupphūpahārasadisī, vividharaṃsijālāsamujjalabaddhanānāratanāvalisadisī ca hāravibhaṅgadesanāti dasseti. Pacchimena tassa paṇītamahārahe jaṭāhi saddhiṃ dukkaratarataṃ dīpeti. Yāyaṃ gāthā vuttāti yojanā. ^19-381
 
@@ -1018,7 +1018,7 @@ Yadipi desanāhārasampātapāḷiyaṃ **"tasmā rakkhitacittassā"**ti gāthā
 
 Desanāhārasampātavaṇṇanā niṭṭhitā. ^19-395
 
-#### Vicayahārasampātavaṇṇanā ^19-4-18-0
+#### 2. Vicayahārasampātavaṇṇanā ^19-4-18-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-53]]
 
@@ -1142,7 +1142,7 @@ Samādīyantīti **samādānāni,** kammāni samādānāni etesanti **kammasamā
 
 Vicayahārasampātavaṇṇanā niṭṭhitā. ^19-444
 
-#### Yuttihārasampātavaṇṇanā ^19-4-19-0
+#### 3. Yuttihārasampātavaṇṇanā ^19-4-19-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-65]]
 
@@ -1150,7 +1150,7 @@ Vicayahārasampātavaṇṇanā niṭṭhitā. ^19-444
 
 Yuttihārasampātavaṇṇanā niṭṭhitā. ^19-446
 
-#### Padaṭṭhānahārasampātādivaṇṇanā ^19-4-20-0
+#### 4. Padaṭṭhānahārasampātādivaṇṇanā ^19-4-20-0
 
 ![[1-SOURCES/Text/pi-khuddakanikaya.md#^19-66]]
 

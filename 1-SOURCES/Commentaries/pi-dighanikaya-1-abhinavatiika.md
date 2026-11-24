@@ -11,7 +11,7 @@ nikaya: Dīghanikāya
 layer: abhinavatiika
 root_text: 1-SOURCES/Text/pi-dighanikaya.md
 commentary: 1-SOURCES/Commentaries/pi-dighanikaya-atthakatha.md
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, s0104t.nrf.xml + s0105t.nrf.xml. Converted XML → segment JSON → volumes joined → commentary converter → block IDs, via the cscd-commentary-intake skill. Each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions); the printed number is kept. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, s0104t.nrf.xml + s0105t.nrf.xml. Converted XML → segment JSON → volumes joined → commentary converter → block IDs, via the cscd-commentary-intake skill. Each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions); the printed number is kept. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0104t.nrf.xml, s0105t.nrf.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0104t.nrf.xml"
 source_volumes:
@@ -866,7 +866,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Nidānakathāvaṇṇanā niṭṭhitā. ^1-371
 
-### Brahmajālasuttaṃ ^1-1-0
+### 1. Brahmajālasuttaṃ ^1-1-0
 
 #### Paribbājakakathāvaṇṇanā ^1-1-1-0
 
@@ -3142,7 +3142,7 @@ Sīlakkhandhavaggaabhinavaṭīkā ^1-1280
 
 (Dutiyo bhāgo) ^1-1281
 
-### Sāmaññaphalasuttavaṇṇanā ^1-2-0
+### 2. Sāmaññaphalasuttavaṇṇanā ^1-2-0
 
 #### Rājāmaccakathāvaṇṇanā ^1-2-1-0
 
@@ -4313,7 +4313,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Sāmaññaphalasuttavaṇṇanā niṭṭhitā. ^1-1749
 
-### Ambaṭṭhasuttavaṇṇanā ^1-3-0
+### 3. Ambaṭṭhasuttavaṇṇanā ^1-3-0
 
 #### Addhānagamanavaṇṇanā ^1-3-1-0
 
@@ -4952,7 +4952,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Ambaṭṭhasuttavaṇṇanā niṭṭhitā. ^1-1987
 
-### Soṇadaṇḍasuttavaṇṇanā ^1-4-0
+### 4. Soṇadaṇḍasuttavaṇṇanā ^1-4-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-300]]
 
@@ -5101,7 +5101,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Soṇadaṇḍasuttavaṇṇanā niṭṭhitā. ^1-2039
 
-### Kūṭadantasuttavaṇṇanā ^1-5-0
+### 5. Kūṭadantasuttavaṇṇanā ^1-5-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-323]]
 
@@ -5333,7 +5333,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Kūṭadantasuttavaṇṇanā niṭṭhitā. ^1-2117
 
-### Mahālisuttavaṇṇanā ^1-6-0
+### 6. Mahālisuttavaṇṇanā ^1-6-0
 
 #### Brāhmaṇadūtavatthuvaṇṇanā ^1-6-1-0
 
@@ -5432,7 +5432,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Mahālisuttavaṇṇanā niṭṭhitā. ^1-2145
 
-### Jāliyasuttavaṇṇanā ^1-7-0
+### 7. Jāliyasuttavaṇṇanā ^1-7-0
 
 #### Dvepabbajitavatthuvaṇṇanā ^1-7-1-0
 
@@ -5463,7 +5463,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Jāliyasuttavaṇṇanā niṭṭhitā. ^1-2156
 
-### Mahāsīhanādasuttavaṇṇanā ^1-8-0
+### 8. Mahāsīhanādasuttavaṇṇanā ^1-8-0
 
 #### Acelakassapavatthuvaṇṇanā ^1-8-1-0
 
@@ -5640,7 +5640,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Mahāsīhanādasuttavaṇṇanā niṭṭhitā. ^1-2212
 
-### Poṭṭhapādasuttavaṇṇanā ^1-9-0
+### 9. Poṭṭhapādasuttavaṇṇanā ^1-9-0
 
 #### Poṭṭhapādaparibbājakavatthuvaṇṇanā ^1-9-1-0
 
@@ -5869,7 +5869,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Poṭṭhapādasuttavaṇṇanā niṭṭhitā. ^1-2288
 
-### Subhasuttavaṇṇanā ^1-10-0
+### 10. Subhasuttavaṇṇanā ^1-10-0
 
 #### Subhamāṇavakavatthuvaṇṇanā ^1-10-1-0
 
@@ -5935,7 +5935,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Subhasuttavaṇṇanā niṭṭhitā. ^1-2303
 
-### Kevaṭṭasuttavaṇṇanā ^1-11-0
+### 11. Kevaṭṭasuttavaṇṇanā ^1-11-0
 
 #### Kevaṭṭagahapatiputtavatthuvaṇṇanā ^1-11-1-0
 
@@ -6031,7 +6031,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Kevaṭṭasuttavaṇṇanā niṭṭhitā. ^1-2328
 
-### Lohiccasuttavaṇṇanā ^1-12-0
+### 12. Lohiccasuttavaṇṇanā ^1-12-0
 
 #### Lohiccabrāhmaṇavatthuvaṇṇanā ^1-12-1-0
 
@@ -6092,7 +6092,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya paramasukhumagambhīra
 
 Lohiccasuttavaṇṇanā niṭṭhitā. ^1-2342
 
-### Tevijjasuttavaṇṇanā ^1-13-0
+### 13. Tevijjasuttavaṇṇanā ^1-13-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-518]]
 

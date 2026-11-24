@@ -126,7 +126,10 @@ B_OPEN, B_CLOSE = "\ue000", "\ue001"   # bold tag positions; clean() writes them
 BOLD_STATS = collections.Counter()
 
 
-def clean(s):
+HEAD_CSS = {"heading", "chapter", "title", "subhead", "subsubhead", "book", "nikaya", "sutta"}
+
+
+def clean(s, head=False):
     # CSCD writes double quotes as doubled single quotes; the tipitaka.org
     # exports, and this vault's root texts, use a straight '"'.
     # Single quotes ‘ ’ stay as printed.
@@ -144,6 +147,9 @@ def clean(s):
     # The number and its dot are two tags; a space CSCD leaves between them
     # (KN s0502a: <hi rend="paranum">8</hi> <hi rend="dot">.</hi>) is markup, not text.
     s = re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)
+    if head:
+        # a heading keeps its printed number as printed ("1.Sattisuttavaṇṇanā"): no space added
+        return s
     return re.sub(r"^(\d+(?:-\d+)*)\.(?=\S)", r"\1. ", s)
 
 
@@ -276,7 +282,7 @@ def main(src, dst, book=None, tree=False):
                 after_chapter = False
             buf = []
             render(child, buf)
-            content = clean("".join(buf))
+            content = clean("".join(buf), head=css in HEAD_CSS)
             if not content:
                 continue
             if css == "book" and title is None:

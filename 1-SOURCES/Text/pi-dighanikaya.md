@@ -8,7 +8,7 @@ verse_id_format: book-verse
 pitaka: sutta
 nikaya: Dīghanikāya
 layer: mula
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101m.mul, s0102m.mul, s0103m.mul), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py or tree mode) → block IDs, via the cscd-root-text-intake skill. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101m.mul, s0102m.mul, s0103m.mul), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py or tree mode) → block IDs, via the cscd-root-text-intake skill. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0101m.mul.xml, s0102m.mul.xml, s0103m.mul.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0101m.mul.xml"
 source_volumes:
@@ -32,7 +32,7 @@ Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
 
 ## Sīlakkhandhavaggapāḷi ^1-0
 
-### Brahmajālasuttaṃ ^1-1-0
+### 1. Brahmajālasuttaṃ ^1-1-0
 
 #### Paribbājakakathā ^1-1-1-0
 
@@ -416,7 +416,7 @@ Evaṃ vutte āyasmā ānando bhagavantaṃ etadavoca – "acchariyaṃ, bhante,
 Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti. Imasmiñca pana veyyākaraṇasmiṃ bhaññamāne dasasahassī [sahassī (katthaci)] lokadhātu akampitthāti.
 Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
-### Sāmaññaphalasuttaṃ ^1-2-0
+### 2. Sāmaññaphalasuttaṃ ^1-2-0
 
 #### Rājāmaccakathā ^1-2-1-0
 
@@ -705,7 +705,7 @@ Evaṃ vutte, rājā māgadho ajātasattu vedehiputto bhagavantaṃ etadavoca �
 Atha kho bhagavā acirapakkantassa rañño māgadhassa ajātasattussa vedehiputtassa bhikkhū āmantesi – "khatāyaṃ, bhikkhave, rājā. Upahatāyaṃ, bhikkhave, rājā. Sacāyaṃ, bhikkhave, rājā pitaraṃ dhammikaṃ dhammarājānaṃ jīvitā na voropessatha, imasmiññeva āsane virajaṃ vītamalaṃ dhammacakkhuṃ uppajjissathā"ti. Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Sāmaññaphalasuttaṃ niṭṭhitaṃ dutiyaṃ. ^1-253
 
-### Ambaṭṭhasuttaṃ ^1-3-0
+### 3. Ambaṭṭhasuttaṃ ^1-3-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kosalesu cārikaṃ caramāno mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi yena icchānaṅgalaṃ nāma kosalānaṃ brāhmaṇagāmo tadavasari. Tatra sudaṃ bhagavā icchānaṅgale viharati icchānaṅgalavanasaṇḍe. ^1-254
 
@@ -866,7 +866,7 @@ Ekamantaṃ nisinnassa kho brāhmaṇassa pokkharasātissa bhagavā anupubbiṃ 
 Atha kho brāhmaṇo pokkharasāti diṭṭhadhammo pattadhammo viditadhammo pariyogāḷhadhammo tiṇṇavicikiccho vigatakathaṃkatho vesārajjappatto aparappaccayo satthusāsane bhagavantaṃ etadavoca – "abhikkantaṃ, bho gotama, abhikkantaṃ, bho gotama. Seyyathāpi, bho gotama, nikkujjitaṃ vā ukkujjeyya, paṭicchannaṃ vā vivareyya, mūḷhassa vā maggaṃ ācikkheyya, andhakāre vā telapajjotaṃ dhāreyya, ‘cakkhumanto rūpāni dakkhantī’ti; evamevaṃ bhotā gotamena anekapariyāyena dhammo pakāsito. Esāhaṃ, bho gotama, saputto sabhariyo sapariso sāmacco bhavantaṃ gotamaṃ saraṇaṃ gacchāmi dhammañca bhikkhusaṅghañca. Upāsakaṃ maṃ bhavaṃ gotamo dhāretu ajjatagge pāṇupetaṃ saraṇaṃ gataṃ. Yathā ca bhavaṃ gotamo ukkaṭṭhāya aññāni upāsakakulāni upasaṅkamati, evameva bhavaṃ gotamo pokkharasātikulaṃ upasaṅkamatu. Tattha ye te māṇavakā vā māṇavikā vā bhavantaṃ gotamaṃ abhivādessanti vā paccuṭṭhissanti [paccuṭṭhassanti (pī.)] vā āsanaṃ vā udakaṃ vā dassanti cittaṃ vā pasādessanti, tesaṃ taṃ bhavissati dīgharattaṃ hitāya sukhāyā"ti. "Kalyāṇaṃ vuccati, brāhmaṇā"ti.
 Ambaṭṭhasuttaṃ niṭṭhitaṃ tatiyaṃ. ^1-299
 
-### Soṇadaṇḍasuttaṃ ^1-4-0
+### 4. Soṇadaṇḍasuttaṃ ^1-4-0
 
 #### Campeyyakabrāhmaṇagahapatikā ^1-4-1-0
 
@@ -972,7 +972,7 @@ Atha kho soṇadaṇḍo brāhmaṇo bhagavantaṃ bhuttāviṃ onītapattapā�
 Atha kho bhagavā soṇadaṇḍaṃ brāhmaṇaṃ dhammiyā kathāya sandassetvā samādapetvā samuttejetvā sampahaṃsetvā uṭṭhāyāsanā pakkāmīti.
 Soṇadaṇḍasuttaṃ niṭṭhitaṃ catutthaṃ. ^1-322
 
-### Kūṭadantasuttaṃ ^1-5-0
+### 5. Kūṭadantasuttaṃ ^1-5-0
 
 #### Khāṇumatakabrāhmaṇagahapatikā ^1-5-1-0
 
@@ -1139,7 +1139,7 @@ Atha kho bhagavā pubbaṇhasamayaṃ nivāsetvā pattacīvaramādāya saddhiṃ
 Atha kho kūṭadanto brāhmaṇo buddhappamukhaṃ bhikkhusaṅghaṃ paṇītena khādanīyena bhojanīyena sahatthā santappesi sampavāresi. Atha kho kūṭadanto brāhmaṇo bhagavantaṃ bhuttāviṃ onītapattapāṇiṃ aññataraṃ nīcaṃ āsanaṃ gahetvā ekamantaṃ nisīdi. Ekamantaṃ nisinnaṃ kho kūṭadantaṃ brāhmaṇaṃ bhagavā dhammiyā kathāya sandassetvā samādapetvā samuttejetvā sampahaṃsetvā uṭṭhāyāsanā pakkāmīti.
 Kūṭadantasuttaṃ niṭṭhitaṃ pañcamaṃ. ^1-358
 
-### Mahālisuttaṃ ^1-6-0
+### 6. Mahālisuttaṃ ^1-6-0
 
 #### Brāhmaṇadūtavatthu ^1-6-1-0
 
@@ -1196,7 +1196,7 @@ Ekamantaṃ nisinno kho oṭṭhaddho licchavī bhagavantaṃ etadavoca – "pur
 "‘Tena hāvuso, suṇātha sādhukaṃ manasi karotha bhāsissāmī"ti. ‘Evamāvuso’ti kho te dve pabbajitā mama paccassosuṃ. Ahaṃ etadavocaṃ – idhāvuso tathāgato loke uppajjati arahaṃ sammāsambuddho…pe… (yathā 190-212 anucchedesu evaṃ vitthāretabbaṃ). Evaṃ kho, āvuso, bhikkhu sīlasampanno hoti…pe… paṭhamaṃ jhānaṃ upasampajja viharati. Yo kho, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ nu kho tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti? Yo so, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā, ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti. Ahaṃ kho panetaṃ, āvuso, evaṃ jānāmi evaṃ passāmi. Atha ca panāhaṃ na vadāmi – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vā…pe… dutiyaṃ jhānaṃ…pe… tatiyaṃ jhānaṃ…pe… catutthaṃ jhānaṃ upasampajja viharati. Yo kho, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ nu kho tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti? Yo so, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti. Ahaṃ kho panetaṃ, āvuso, evaṃ jānāmi evaṃ passāmi. Atha ca panāhaṃ na vadāmi – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vā…pe… ñāṇadassanāya cittaṃ abhinīharati abhininnāmeti…pe… yo kho, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ nu kho tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti? Yo so, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ [na kallaṃ (sī. syā. kaṃ. ka.)] tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra"nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti. Ahaṃ kho panetaṃ, āvuso, evaṃ jānāmi evaṃ passāmi. Atha ca panāhaṃ na vadāmi – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vā…pe… nāparaṃ itthattāyāti pajānāti. Yo kho, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ nu kho tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti? Yo so, āvuso, bhikkhu evaṃ jānāti evaṃ passati na kallaṃ tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti. Ahaṃ kho panetaṃ, āvuso, evaṃ jānāmi evaṃ passāmi. Atha ca panāhaṃ na vadāmi – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vā"ti. Idamavoca bhagavā. Attamano oṭṭhaddho licchavī bhagavato bhāsitaṃ abhinandīti.
 Mahālisuttaṃ niṭṭhitaṃ chaṭṭhaṃ. ^1-377
 
-### Jāliyasuttaṃ ^1-7-0
+### 7. Jāliyasuttaṃ ^1-7-0
 
 #### Dvepabbajitavatthu ^1-7-1-0
 
@@ -1207,7 +1207,7 @@ Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kosambiyaṃ viharati ghositār�
 …Pe… nāparaṃ itthattāyāti pajānāti. Yo kho, āvuso, bhikkhu evaṃ jānāti evaṃ passati, kallaṃ nu kho tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti? Yo so, āvuso, bhikkhu evaṃ jānāti evaṃ passati, na kallaṃ tassetaṃ vacanāya – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vāti. Ahaṃ kho panetaṃ, āvuso, evaṃ jānāmi evaṃ passāmi. Atha ca panāhaṃ na vadāmi – ‘taṃ jīvaṃ taṃ sarīra’nti vā ‘aññaṃ jīvaṃ aññaṃ sarīra’nti vā"ti. Idamavoca bhagavā. Attamanā te dve pabbajitā bhagavato bhāsitaṃ abhinandunti.
 Jāliyasuttaṃ niṭṭhitaṃ sattamaṃ. ^1-380
 
-### Mahāsīhanādasuttaṃ ^1-8-0
+### 8. Mahāsīhanādasuttaṃ ^1-8-0
 
 #### Acelakassapavatthu ^1-8-1-0
 
@@ -1305,7 +1305,7 @@ Evaṃ vutte, acelo kassapo bhagavantaṃ etadavoca – "katamā pana sā, bho g
 Alattha kho acelo kassapo bhagavato santike pabbajjaṃ, alattha upasampadaṃ. Acirūpasampanno kho panāyasmā kassapo eko vūpakaṭṭho appamatto ātāpī pahitatto viharanto na cirasseva – yassatthāya kulaputtā sammadeva agārasmā anagāriyaṃ pabbajanti, tadanuttaraṃ – brahmacariyapariyosānaṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja vihāsi. ‘Khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyā’ti – abbhaññāsi. Aññataro kho panāyasmā kassapo arahataṃ ahosīti.
 Mahāsīhanādasuttaṃ niṭṭhitaṃ aṭṭhamaṃ. ^1-405
 
-### Poṭṭhapādasuttaṃ ^1-9-0
+### 9. Poṭṭhapādasuttaṃ ^1-9-0
 
 #### Poṭṭhapādaparibbājakavatthu ^1-9-1-0
 
@@ -1442,7 +1442,7 @@ Citto pana hatthisāriputto bhagavantaṃ etadavoca – "abhikkantaṃ, bhante; 
 Alattha kho citto hatthisāriputto bhagavato santike pabbajjaṃ, alattha upasampadaṃ. Acirūpasampanno kho panāyasmā citto hatthisāriputto eko vūpakaṭṭho appamatto ātāpī pahitatto viharanto na cirasseva – yassatthāya kulaputtā sammadeva agārasmā anagāriyaṃ pabbajanti, tadanuttaraṃ – brahmacariyapariyosānaṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja vihāsi. ‘Khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyā’ti – abbhaññāsi. Aññataro kho panāyasmā citto hatthisāriputto arahataṃ ahosīti.
 Poṭṭhapādasuttaṃ niṭṭhitaṃ navamaṃ. ^1-443
 
-### Subhasuttaṃ ^1-10-0
+### 10. Subhasuttaṃ ^1-10-0
 
 #### Subhamāṇavavatthu ^1-10-1-0
 
@@ -1547,7 +1547,7 @@ Atha kho subho māṇavo todeyyaputto yenāyasmā ānando tenupasaṅkami; upasa
 "Acchariyaṃ, bho ānanda, abbhutaṃ, bho ānanda! So cāyaṃ, bho ānanda, ariyo paññākkhandho paripuṇṇo, no aparipuṇṇo. Evaṃ paripuṇṇaṃ cāhaṃ, bho ānanda, ariyaṃ paññākkhandhaṃ ito bahiddhā aññesu samaṇabrāhmaṇesu na samanupassāmi. Natthi cevettha [na samanupassāmi…pe… natthi no kiñci (syā. ka.)] uttarikaraṇīyaṃ [uttariṃ karaṇīyanti (sī. syā. pī.) uttarikaraṇīyanti (ka.)]. Abhikkantaṃ, bho ānanda, abhikkantaṃ, bho ānanda! Seyyathāpi, bho ānanda, nikkujjitaṃ vā ukkujjeyya, paṭicchannaṃ vā vivareyya, mūḷhassa vā maggaṃ ācikkheyya, andhakāre vā telapajjotaṃ dhāreyya ‘cakkhumanto rūpāni dakkhantī’ti. Evamevaṃ bhotā ānandena anekapariyāyena dhammo pakāsito. Esāhaṃ, bho ānanda, taṃ bhavantaṃ gotamaṃ saraṇaṃ gacchāmi dhammañca bhikkhusaṅghañca. Upāsakaṃ maṃ bhavaṃ ānando dhāretu ajjatagge pāṇupetaṃ saraṇaṃ gata"nti.
 Subhasuttaṃ niṭṭhitaṃ dasamaṃ. ^1-480
 
-### Kevaṭṭasuttaṃ ^1-11-0
+### 11. Kevaṭṭasuttaṃ ^1-11-0
 
 #### Kevaṭṭagahapatiputtavatthu ^1-11-1-0
 
@@ -1624,7 +1624,7 @@ Viññāṇassa nirodhena, etthetaṃ uparujjhatī’ti. ^1-499
 Idamavoca bhagavā. Attamano kevaṭṭo gahapatiputto bhagavato bhāsitaṃ abhinandīti.
 Kevaṭṭasuttaṃ niṭṭhitaṃ ekādasamaṃ. ^1-500
 
-### Lohiccasuttaṃ ^1-12-0
+### 12. Lohiccasuttaṃ ^1-12-0
 
 #### Lohiccabrāhmaṇavatthu ^1-12-1-0
 
@@ -1673,7 +1673,7 @@ Evaṃ vutte, lohicco brāhmaṇo bhagavantaṃ etadavoca – "atthi pana, bho g
 Evaṃ vutte, lohicco brāhmaṇo bhagavantaṃ etadavoca – "seyyathāpi, bho gotama, puriso purisaṃ narakapapātaṃ patantaṃ kesesu gahetvā uddharitvā thale patiṭṭhapeyya, evamevāhaṃ bhotā gotamena narakapapātaṃ papatanto uddharitvā thale patiṭṭhāpito. Abhikkantaṃ, bho gotama, abhikkantaṃ, bho gotama, seyyathāpi, bho gotama, nikkujjitaṃ vā ukkujjeyya, paṭicchannaṃ vā vivareyya, mūḷhassa vā maggaṃ ācikkheyya, andhakāre vā telapajjotaṃ dhāreyya, ‘cakkhumanto rūpāni dakkhantī’ti. Evamevaṃ bhotā gotamena anekapariyāyena dhammo pakāsito. Esāhaṃ bhavantaṃ gotamaṃ saraṇaṃ gacchāmi dhammañca bhikkhusaṅghañca. Upāsakaṃ maṃ bhavaṃ gotamo dhāretu ajjatagge pāṇupetaṃ saraṇaṃ gata"nti.
 Lohiccasuttaṃ niṭṭhitaṃ dvādasamaṃ. ^1-517
 
-### Tevijjasuttaṃ ^1-13-0
+### 13. Tevijjasuttaṃ ^1-13-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kosalesu cārikaṃ caramāno mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi yena manasākaṭaṃ nāma kosalānaṃ brāhmaṇagāmo tadavasari. Tatra sudaṃ bhagavā manasākaṭe viharati uttarena manasākaṭassa aciravatiyā nadiyā tīre ambavane. ^1-518
 
@@ -1812,7 +1812,7 @@ Dīghanikāyo ^2-T2
 
 ## Mahāvaggapāḷi ^2-0
 
-### Mahāpadānasuttaṃ ^2-1-0
+### 1. Mahāpadānasuttaṃ ^2-1-0
 
 #### Pubbenivāsapaṭisaṃyuttakathā ^2-1-1-0
 
@@ -2149,7 +2149,7 @@ Adhicitte ca āyogo, etaṃ buddhānasāsana’nti. ^2-90
 Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Mahāpadānasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^2-94
 
-### Mahānidānasuttaṃ ^2-2-0
+### 2. Mahānidānasuttaṃ ^2-2-0
 
 #### Paṭiccasamuppādo ^2-2-1-0
 
@@ -2250,7 +2250,7 @@ Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kurūsu viharati kammāsadhamma�
 "Yato kho, ānanda, bhikkhu ime aṭṭha vimokkhe anulomampi samāpajjati, paṭilomampi samāpajjati, anulomapaṭilomampi samāpajjati, yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Āsavānañca khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati, ayaṃ vuccatānanda, bhikkhu ubhatobhāgavimutto. Imāya ca ānanda ubhatobhāgavimuttiyā aññā ubhatobhāgavimutti uttaritarā vā paṇītatarā vā natthī"ti. Idamavoca bhagavā. Attamano āyasmā ānando bhagavato bhāsitaṃ abhinandīti.
 Mahānidānasuttaṃ niṭṭhitaṃ dutiyaṃ. ^2-130
 
-### Mahāparinibbānasuttaṃ ^2-3-0
+### 3. Mahāparinibbānasuttaṃ ^2-3-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā rājagahe viharati gijjhakūṭe pabbate. Tena kho pana samayena rājā māgadho ajātasattu vedehiputto vajjī abhiyātukāmo hoti. So evamāha – "ahaṃ hime vajjī evaṃmahiddhike evaṃmahānubhāve ucchecchāmi [ucchejjāmi (syā. pī.), ucchijjāmi (ka.)] vajjī, vināsessāmi vajjī, anayabyasanaṃ āpādessāmi vajjī"ti [āpādessāmi vajjīti (sabbattha) a. ni. 7.22 passitabbaṃ]. ^2-131
 
@@ -2777,7 +2777,7 @@ Cattālīsa samā dantā, kesā lomā ca sabbaso;
 Devā hariṃsu ekekaṃ, cakkavāḷaparamparāti.
 Mahāparinibbānasuttaṃ niṭṭhitaṃ tatiyaṃ. ^2-240
 
-### Mahāsudassanasuttaṃ ^2-4-0
+### 4. Mahāsudassanasuttaṃ ^2-4-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kusinārāyaṃ viharati upavattane mallānaṃ sālavane antarena yamakasālānaṃ parinibbānasamaye. Atha kho āyasmā ānando yena bhagavā tenupasaṅkami; upasaṅkamitvā bhagavantaṃ abhivādetvā ekamantaṃ nisīdi. Ekamantaṃ nisinno kho āyasmā ānando bhagavantaṃ etadavoca – "mā, bhante, bhagavā imasmiṃ khuddakanagarake ujjaṅgalanagarake sākhānagarake parinibbāyi. Santi, bhante, aññāni mahānagarāni. Seyyathidaṃ – campā, rājagahaṃ, sāvatthi, sāketaṃ, kosambī, bārāṇasī; ettha bhagavā parinibbāyatu. Ettha bahū khattiyamahāsālā brāhmaṇamahāsālā gahapatimahāsālā tathāgate abhippasannā, te tathāgatassa sarīrapūjaṃ karissantī"ti. ^2-241
 
@@ -2899,7 +2899,7 @@ Paṭhamabhāṇavāro. ^2-259
 Uppajjitvā nirujjhanti, tesaṃ vūpasamo sukho"ti.
 Mahāsudassanasuttaṃ niṭṭhitaṃ catutthaṃ. ^2-272
 
-### Janavasabhasuttaṃ ^2-5-0
+### 5. Janavasabhasuttaṃ ^2-5-0
 
 #### Nātikiyādibyākaraṇaṃ ^2-5-1-0
 
@@ -2999,7 +2999,7 @@ Saṅkhātuṃ nopi sakkomi, musāvādassa ottappa"nti. ^2-290
 Imamatthaṃ janavasabho yakkho vessavaṇassa mahārājassa sayaṃ parisāyaṃ bhāsato sammukhā sutaṃ sammukhā paṭiggahitaṃ [paṭiggahetvā (sī. pī.)] bhagavato ārocesi. Imamatthaṃ bhagavā janavasabhassa yakkhassa sammukhā sutvā sammukhā paṭiggahetvā sāmañca abhiññāya āyasmato ānandassa ārocesi, imamatthamāyasmā ānando bhagavato sammukhā sutvā sammukhā paṭiggahetvā ārocesi bhikkhūnaṃ bhikkhunīnaṃ upāsakānaṃ upāsikānaṃ. Tayidaṃ brahmacariyaṃ iddhañceva phītañca vitthārikaṃ bāhujaññaṃ puthubhūtaṃ yāva devamanussehi suppakāsitanti.
 Janavasabhasuttaṃ niṭṭhitaṃ pañcamaṃ. ^2-292
 
-### Mahāgovindasuttaṃ ^2-6-0
+### 6. Mahāgovindasuttaṃ ^2-6-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā rājagahe viharati gijjhakūṭe pabbate. Atha kho pañcasikho gandhabbaputto abhikkantāya rattiyā abhikkantavaṇṇo kevalakappaṃ gijjhakūṭaṃ pabbataṃ obhāsetvā yena bhagavā tenupasaṅkami; upasaṅkamitvā bhagavantaṃ abhivādetvā ekamantaṃ aṭṭhāsi. Ekamantaṃ ṭhito kho pañcasikho gandhabbaputto bhagavantaṃ etadavoca – "yaṃ kho me, bhante, devānaṃ tāvatiṃsānaṃ sammukhā sutaṃ sammukhā paṭiggahitaṃ, ārocemi taṃ bhagavato"ti. "Ārocehi me tvaṃ, pañcasikhā"ti bhagavā avoca. ^2-293
 
@@ -3210,7 +3210,7 @@ Idaṃ kho pana me, pañcasikha, brahmacariyaṃ ekantanibbidāya virāgāya nir
 Idamavoca bhagavā. Attamano pañcasikho gandhabbaputto bhagavato bhāsitaṃ abhinanditvā anumoditvā bhagavantaṃ abhivādetvā padakkhiṇaṃ katvā tatthevantaradhāyīti.
 Mahāgovindasuttaṃ niṭṭhitaṃ chaṭṭhaṃ. ^2-330
 
-### Mahāsamayasuttaṃ ^2-7-0
+### 7. Mahāsamayasuttaṃ ^2-7-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā sakkesu viharati kapilavatthusmiṃ mahāvane mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi sabbeheva arahantehi; dasahi ca lokadhātūhi devatā yebhuyyena sannipatitā honti bhagavantaṃ dassanāya bhikkhusaṅghañca. Atha kho catunnaṃ suddhāvāsakāyikānaṃ devatānaṃ [devānaṃ (sī. syā. pī.)] etadahosi – "ayaṃ kho bhagavā sakkesu viharati kapilavatthusmiṃ mahāvane mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi sabbeheva arahantehi; dasahi ca lokadhātūhi devatā yebhuyyena sannipatitā honti bhagavantaṃ dassanāya bhikkhusaṅghañca. Yaṃnūna mayampi yena bhagavā tenupasaṅkameyyāma; upasaṅkamitvā bhagavato santike paccekaṃ gāthaṃ [paccekagāthaṃ (sī. syā. pī.), paccekagāthā (ka. sī.)] bhāseyyāmā"ti. ^2-331
 
@@ -3390,7 +3390,7 @@ Vītarāgehi pakkāmuṃ, nesaṃ lomāpi iñjayuṃ.
 Modanti saha bhūtehi, sāvakā te janesutā"ti.
 Mahāsamayasuttaṃ niṭṭhitaṃ sattamaṃ. ^2-343
 
-### Sakkapañhasuttaṃ ^2-8-0
+### 8. Sakkapañhasuttaṃ ^2-8-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā magadhesu viharati, pācīnato rājagahassa ambasaṇḍā nāma brāhmaṇagāmo, tassuttarato vediyake pabbate indasālaguhāyaṃ. Tena kho pana samayena sakkassa devānamindassa ussukkaṃ udapādi bhagavantaṃ dassanāya. Atha kho sakkassa devānamindassa etadahosi – "kahaṃ nu kho bhagavā etarahi viharati arahaṃ sammāsambuddho"ti? Addasā kho sakko devānamindo bhagavantaṃ magadhesu viharantaṃ pācīnato rājagahassa ambasaṇḍā nāma brāhmaṇagāmo, tassuttarato vediyake pabbate indasālaguhāyaṃ. Disvāna deve tāvatiṃse āmantesi – "ayaṃ, mārisā, bhagavā magadhesu viharati, pācīnato rājagahassa ambasaṇḍā nāma brāhmaṇagāmo, tassuttarato vediyake pabbate indasālaguhāyaṃ. Yadi pana, mārisā, mayaṃ taṃ bhagavantaṃ dassanāya upasaṅkameyyāma arahantaṃ sammāsambuddha"nti? "Evaṃ bhaddantavā"ti kho devā tāvatiṃsā sakkassa devānamindassa paccassosuṃ. ^2-344
 
@@ -3637,7 +3637,7 @@ Atha kho sakko devānamindo pāṇinā pathaviṃ parāmasitvā tikkhattuṃ ud�
 Imasmiñca pana veyyākaraṇasmiṃ bhaññamāne sakkassa devānamindassa virajaṃ vītamalaṃ dhammacakkhuṃ udapādi – "yaṃ kiñci samudayadhammaṃ, sabbaṃ taṃ nirodhadhamma"nti. Aññesañca asītiyā devatāsahassānaṃ, iti ye sakkena devānamindena ajjhiṭṭhapañhā puṭṭhā, te bhagavatā byākatā. Tasmā imassa veyyākaraṇassa sakkapañhātveva adhivacananti.
 Sakkapañhasuttaṃ niṭṭhitaṃ aṭṭhamaṃ. ^2-371
 
-### Mahāsatipaṭṭhānasuttaṃ ^2-9-0
+### 9. Mahāsatipaṭṭhānasuttaṃ ^2-9-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā kurūsu viharati kammāsadhammaṃ nāma kurūnaṃ nigamo. Tatra kho bhagavā bhikkhū āmantesi – "bhikkhavo"ti. "Bhaddante"ti [bhadanteti (sī. syā. pī.)] te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca – ^2-372
 
@@ -3825,7 +3825,7 @@ Dhammānupassanā niṭṭhitā. ^2-403
 "Ekāyano ayaṃ, bhikkhave, maggo sattānaṃ visuddhiyā sokaparidevānaṃ samatikkamāya dukkhadomanassānaṃ atthaṅgamāya ñāyassa adhigamāya nibbānassa sacchikiriyāya yadidaṃ cattāro satipaṭṭhānāti. Iti yaṃ taṃ vuttaṃ, idametaṃ paṭicca vutta"nti. Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Mahāsatipaṭṭhānasuttaṃ niṭṭhitaṃ navamaṃ. ^2-405
 
-### Pāyāsisuttaṃ ^2-10-0
+### 10. Pāyāsisuttaṃ ^2-10-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ āyasmā kumārakassapo kosalesu cārikaṃ caramāno mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi yena setabyā nāma kosalānaṃ nagaraṃ tadavasari. Tatra sudaṃ āyasmā kumārakassapo setabyāyaṃ viharati uttarena setabyaṃ siṃsapāvane [sīsapāvane (syā.)]. Tena kho pana samayena pāyāsi rājañño setabyaṃ ajjhāvasati sattussadaṃ satiṇakaṭṭhodakaṃ sadhaññaṃ rājabhoggaṃ raññā pasenadinā kosalena dinnaṃ rājadāyaṃ brahmadeyyaṃ. ^2-406
 
@@ -3972,7 +3972,7 @@ Dīghanikāyo ^3-T2
 
 ## Pāthikavaggapāḷi ^3-0
 
-### Pāthikasuttaṃ ^3-1-0
+### 1. Pāthikasuttaṃ ^3-1-0
 
 #### Sunakkhattavatthu ^3-1-1-0
 
@@ -4140,7 +4140,7 @@ Ke ca chave siṅgāle ke pana sīhanāde’ti.
 "Dukkaraṃ kho etaṃ, bhaggava, tayā aññadiṭṭhikena aññakhantikena aññarucikena aññatrāyogena aññatrācariyakena subhaṃ vimokkhaṃ upasampajja viharituṃ. Iṅgha tvaṃ, bhaggava, yo ca te ayaṃ mayi pasādo, tameva tvaṃ sādhukamanurakkhā"ti. "Sace taṃ, bhante, mayā dukkaraṃ aññadiṭṭhikena aññakhantikena aññarucikena aññatrāyogena aññatrācariyakena subhaṃ vimokkhaṃ upasampajja viharituṃ. Yo ca me ayaṃ, bhante, bhagavati pasādo, tamevāhaṃ sādhukamanurakkhissāmī"ti. Idamavoca bhagavā. Attamano bhaggavagotto paribbājako bhagavato bhāsitaṃ abhinandīti.
 Pāthikasuttaṃ [pāṭikasuttantaṃ (sī. syā. kaṃ. pī.)] niṭṭhitaṃ paṭhamaṃ. ^3-48
 
-### Udumbarikasuttaṃ ^3-2-0
+### 2. Udumbarikasuttaṃ ^3-2-0
 
 #### Nigrodhaparibbājakavatthu ^3-2-1-0
 
@@ -4256,7 +4256,7 @@ Evaṃ vutte, nigrodho paribbājako bhagavantaṃ etadavoca – "accayo maṃ, b
 Evaṃ vutte, te paribbājakā tuṇhībhūtā maṅkubhūtā pattakkhandhā adhomukhā pajjhāyantā appaṭibhānā nisīdiṃsu yathā taṃ mārena pariyuṭṭhitacittā. Atha kho bhagavato etadahosi – "sabbe pime moghapurisā phuṭṭhā pāpimatā. Yatra hi nāma ekassapi na evaṃ bhavissati – ‘handa mayaṃ aññāṇatthampi samaṇe gotame brahmacariyaṃ carāma, kiṃ karissati sattāho"’ti? Atha kho bhagavā udumbarikāya paribbājakārāme sīhanādaṃ naditvā vehāsaṃ abbhuggantvā gijjhakūṭe pabbate paccupaṭṭhāsi [paccuṭṭhāsi (sī. syā. pī.)]. Sandhāno pana gahapati tāvadeva rājagahaṃ pāvisīti.
 Udumbarikasuttaṃ niṭṭhitaṃ dutiyaṃ. ^3-79
 
-### Cakkavattisuttaṃ ^3-3-0
+### 3. Cakkavattisuttaṃ ^3-3-0
 
 #### Attadīpasaraṇatā ^3-3-1-0
 
@@ -4367,7 +4367,7 @@ Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā magadhesu viharati mātulāyaṃ
 "Nāhaṃ, bhikkhave, aññaṃ ekabalampi samanupassāmi yaṃ evaṃ duppasahaṃ, yathayidaṃ, bhikkhave, mārabalaṃ. Kusalānaṃ, bhikkhave, dhammānaṃ samādānahetu evamidaṃ puññaṃ pavaḍḍhatī"ti. Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Cakkavattisuttaṃ niṭṭhitaṃ tatiyaṃ. ^3-110
 
-### Aggaññasuttaṃ ^3-4-0
+### 4. Aggaññasuttaṃ ^3-4-0
 
 #### Vāseṭṭhabhāradvājā ^3-4-1-0
 
@@ -4481,7 +4481,7 @@ Vijjācaraṇasampanno, so seṭṭho devamānuse’ti.
 Idamavoca bhagavā. Attamanā vāseṭṭhabhāradvājā bhagavato bhāsitaṃ abhinandunti.
 Aggaññasuttaṃ niṭṭhitaṃ catutthaṃ. ^3-140
 
-### Sampasādanīyasuttaṃ ^3-5-0
+### 5. Sampasādanīyasuttaṃ ^3-5-0
 
 #### Sāriputtasīhanādo ^3-5-1-0
 
@@ -4588,7 +4588,7 @@ Evaṃ vutte, āyasmā udāyī bhagavantaṃ etadavoca – "acchariyaṃ, bhante
 Atha kho bhagavā āyasmantaṃ sāriputtaṃ āmantesi – "tasmā tiha tvaṃ, sāriputta, imaṃ dhammapariyāyaṃ abhikkhaṇaṃ bhāseyyāsi bhikkhūnaṃ bhikkhunīnaṃ upāsakānaṃ upāsikānaṃ. Yesampi hi, sāriputta, moghapurisānaṃ bhavissati tathāgate kaṅkhā vā vimati vā, tesamimaṃ dhammapariyāyaṃ sutvā tathāgate kaṅkhā vā vimati vā, sā pahīyissatī"ti. Iti hidaṃ āyasmā sāriputto bhagavato sammukhā sampasādaṃ pavedesi. Tasmā imassa veyyākaraṇassa sampasādanīyaṃ tveva adhivacananti.
 Sampasādanīyasuttaṃ niṭṭhitaṃ pañcamaṃ. ^3-163
 
-### Pāsādikasuttaṃ ^3-6-0
+### 6. Pāsādikasuttaṃ ^3-6-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā sakkesu viharati vedhaññā nāma sakyā, tesaṃ ambavane pāsāde. ^3-164
 
@@ -4719,7 +4719,7 @@ Paccayānuññātakāraṇaṃ ^3-181
 Tena kho pana samayena āyasmā upavāṇo bhagavato piṭṭhito ṭhito hoti bhagavantaṃ bījayamāno. Atha kho āyasmā upavāṇo bhagavantaṃ etadavoca – "acchariyaṃ, bhante, abbhutaṃ, bhante! Pāsādiko vatāyaṃ, bhante, dhammapariyāyo; supāsādiko vatāyaṃ bhante, dhammapariyāyo, ko nāmāyaṃ bhante dhammapariyāyo"ti? "Tasmātiha tvaṃ, upavāṇa, imaṃ dhammapariyāyaṃ ‘pāsādiko’ tveva naṃ dhārehī"ti. Idamavoca bhagavā. Attamano āyasmā upavāṇo bhagavato bhāsitaṃ abhinandīti.
 Pāsādikasuttaṃ niṭṭhitaṃ chaṭṭhaṃ. ^3-197
 
-### Lakkhaṇasuttaṃ ^3-7-0
+### 7. Lakkhaṇasuttaṃ ^3-7-0
 
 #### Dvattiṃsamahāpurisalakkhaṇāni ^3-7-1-0
 
@@ -5217,7 +5217,7 @@ Malakhilakalikilese panudehī"ti [tassovādakarā bahugihī ca, pabbajitā ca as
 Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Lakkhaṇasuttaṃ niṭṭhitaṃ sattamaṃ. ^3-241
 
-### Siṅgālasuttaṃ ^3-8-0
+### 8. Siṅgālasuttaṃ ^3-8-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā rājagahe viharati veḷuvane kalandakanivāpe. Tena kho pana samayena siṅgālako [sigālako (sī.)] gahapatiputto kālasseva uṭṭhāya rājagahā nikkhamitvā allavattho allakeso pañjaliko puthudisā [puthuddisā (sī. syā. pī.)] namassati – puratthimaṃ disaṃ dakkhiṇaṃ disaṃ pacchimaṃ disaṃ uttaraṃ disaṃ heṭṭhimaṃ disaṃ uparimaṃ disaṃ. ^3-242
 
@@ -5385,7 +5385,7 @@ Tasmā mahattaṃ papponti, pāsaṃsā ca bhavanti te"ti. ^3-273
 Evaṃ vutte, siṅgālako gahapatiputto bhagavantaṃ etadavoca – "abhikkantaṃ, bhante! Abhikkantaṃ, bhante! Seyyathāpi, bhante, nikkujjitaṃ vā ukkujjeyya, paṭicchannaṃ vā vivareyya, mūḷhassa vā maggaṃ ācikkheyya, andhakāre vā telapajjotaṃ dhāreyya ‘cakkhumanto rūpāni dakkhantī’ti. Evamevaṃ bhagavatā anekapariyāyena dhammo pakāsito. Esāhaṃ, bhante, bhagavantaṃ saraṇaṃ gacchāmi dhammañca bhikkhusaṃghañca. Upāsakaṃ maṃ bhagavā dhāretu, ajjatagge pāṇupetaṃ saraṇaṃ gata"nti.
 Siṅgālasuttaṃ [siṅgālovādasuttantaṃ (pī.)] niṭṭhitaṃ aṭṭhamaṃ. ^3-274
 
-### Āṭānāṭiyasuttaṃ ^3-9-0
+### 9. Āṭānāṭiyasuttaṃ ^3-9-0
 
 #### Paṭhamabhāṇavāro ^3-9-1-0
 
@@ -5679,7 +5679,7 @@ Dadhimukho maṇi māṇivaro dīgho, atho serīsako saha.
 "Uggaṇhātha, bhikkhave, āṭānāṭiyaṃ rakkhaṃ. Pariyāpuṇātha, bhikkhave, āṭānāṭiyaṃ rakkhaṃ. Dhāretha, bhikkhave, āṭānāṭiyaṃ rakkhaṃ. Atthasaṃhitā [atthasaṃhitāyaṃ (syā.)], bhikkhave, āṭānāṭiyā rakkhā bhikkhūnaṃ bhikkhunīnaṃ upāsakānaṃ upāsikānaṃ guttiyā rakkhāya avihiṃsāya phāsuvihārāyā"ti. Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.
 Āṭānāṭiyasuttaṃ niṭṭhitaṃ navamaṃ. ^3-295
 
-### Saṅgītisuttaṃ ^3-10-0
+### 10. Saṅgītisuttaṃ ^3-10-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā mallesu cārikaṃ caramāno mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi yena pāvā nāma mallānaṃ nagaraṃ tadavasari. Tatra sudaṃ bhagavā pāvāyaṃ viharati cundassa kammāraputtassa ambavane. ^3-296
 
@@ -6116,7 +6116,7 @@ Dasa **kasiṇāyatanāni.** Pathavīkasiṇameko sañjānāti, uddhaṃ adho ti
 Atha kho bhagavā uṭṭhahitvā āyasmantaṃ sāriputtaṃ āmantesi – ‘sādhu sādhu, sāriputta, sādhu kho tvaṃ, sāriputta, bhikkhūnaṃ saṅgītipariyāyaṃ abhāsī’ti. Idamavocāyasmā sāriputto, samanuñño satthā ahosi. Attamanā te bhikkhū āyasmato sāriputtassa bhāsitaṃ abhinandunti.
 Saṅgītisuttaṃ niṭṭhitaṃ dasamaṃ. ^3-349
 
-### Dasuttarasuttaṃ ^3-11-0
+### 11. Dasuttarasuttaṃ ^3-11-0
 
 Evaṃ me sutaṃ – ekaṃ samayaṃ bhagavā campāyaṃ viharati gaggarāya pokkharaṇiyā tīre mahatā bhikkhusaṅghena saddhiṃ pañcamattehi bhikkhusatehi. Tatra kho āyasmā sāriputto bhikkhū āmantesi – "āvuso bhikkhave"ti! "Āvuso"ti kho te bhikkhū āyasmato sāriputtassa paccassosuṃ. Āyasmā sāriputto etadavoca –
 "Dasuttaraṃ pavakkhāmi, dhammaṃ nibbānapattiyā;

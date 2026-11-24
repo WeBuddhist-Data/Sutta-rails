@@ -108,7 +108,7 @@ lines += [
     + (" → volumes joined" if len(fnames) > 1 else "")
     + ' → commentary converter → block IDs, via the cscd-commentary-intake skill. Each paragraph that opens with a printed'
       ' paragraph number links to those root paragraphs (transclusions); the printed number is kept. Variant readings'
-      ' inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."',
+      ' inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."',
     "source_filename: " + (fnames[0] if len(fnames) == 1 else "[" + ", ".join(fnames) + "]"),
 ]
 if len(fnames) == 1:

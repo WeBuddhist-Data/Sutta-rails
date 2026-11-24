@@ -219,10 +219,10 @@ if book_div is not None:
             section_heads.append(c)
             after = False
 promoted = {id(h) for h in section_heads if h.tag == "p"}
-xml_sutta_titles = [re.sub(r"^\d+\.\s*", "", "".join(h.itertext()).strip()) for h in (section_heads or chapter_heads)]
+xml_sutta_titles = [cscd_shape.printed_heading("".join(h.itertext())) for h in (section_heads or chapter_heads)]
 md_sutta_titles = [ID_RE.sub("", l)[4:].strip() for l in lines if l.startswith("### ")]
 if TREE:
-    xml_tree = [(tree_lv[id(e)], cscd_shape.strip_heading_number(cscd_shape.text_with_notes(e)))
+    xml_tree = [(tree_lv[id(e)], cscd_shape.printed_heading(cscd_shape.text_with_notes(e)))
                 for e in book_div.iter() if id(e) in tree_lv]
     md_tree = [(len(m.group(1)), m.group(2).strip()) for m in
                (re.match(r"^(#{2,}) (.*?)(?:\s+\^[\w-]+)?\s*$", l) for l in lines) if m]
@@ -242,7 +242,7 @@ md_sub = sum(1 for l in lines if re.match(r"^#{4,} ", l))
 if xml_sub != md_sub and not TREE:
     problems.append(f"subhead count md {md_sub} vs xml {xml_sub}")
 if vagga_shape:
-    xml_suttas = [re.sub(r"^\d+\.\s*", "", cscd_shape.text_with_notes(p)) for p in xbody.iter("p") if id(p) in sutta_ids]
+    xml_suttas = [cscd_shape.printed_heading(cscd_shape.text_with_notes(p)) for p in xbody.iter("p") if id(p) in sutta_ids]
     md_suttas = [ID_RE.sub("", l)[5:].strip() for l in lines if l.startswith("#### ")]
     if xml_suttas != md_suttas:
         problems.append(f"sutta (####) headings differ from XML (md {len(md_suttas)}, xml {len(xml_suttas)})")
@@ -261,13 +261,13 @@ def xml_words():
             out.append(" [" + "".join(el.itertext()).strip() + "]")
         elif el.tag == "hi" and el.get("rend") == "dot" and in_head[0]:
             out.append(el.text or "")   # "152<hi rend="dot">.</hi> …" in a heading: the number's dot, stripped below
-        elif el.tag == "hi" and el.get("rend") in ("paranum", "dot"):
+        elif el.tag == "hi" and el.get("rend") in ("paranum", "dot") and not in_head[0]:
             pass
         else:
             if el.text: out.append(el.text)
             for c in el: rend(c, False)
         tail = el.tail
-        if tail and el.tag == "hi" and el.get("rend") == "paranum" and tail.startswith("."):
+        if tail and el.tag == "hi" and el.get("rend") == "paranum" and tail.startswith(".") and not in_head[0]:
             tail = tail[1:]   # untagged dot after the number belongs to the number
         if not top and tail: out.append(tail)
 
@@ -289,7 +289,7 @@ def xml_words():
             if is_head:
                 seg = "".join(out[start:])
                 del out[start:]
-                out.append(cscd_shape.LEAD_NUM.sub("", seg) if TREE else re.sub(r"^\s*\d+(?:-\d+)*\.\s*", "", seg))
+                out.append(cscd_shape.printed_heading(seg))   # a heading keeps its printed number
             out.append("\n")
     joined = "".join(out).replace("‘‘", '"').replace("’’", '"')  # same as step 1
     return re.sub(r"\[\s+", "[", re.sub(r"\s+\]", "]", joined)).split()

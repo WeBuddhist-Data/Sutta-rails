@@ -49,7 +49,7 @@ verse_id_format: book-verse
 pitaka: sutta
 nikaya: <e.g. Dīghanikāya>
 layer: mula
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, <stem>.mul.xml (<nikāya>, <volume label>). Converted … via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, <stem>.mul.xml (<nikāya>, <volume label>). Converted … via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: <stem>.mul.xml
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/<stem>.mul.xml"
 other_ids:
@@ -62,7 +62,7 @@ Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
 
 ## Sīlakkhandhavaggapāḷi ^1-0
 
-### Brahmajālasuttaṃ ^1-1-0
+### 1. Brahmajālasuttaṃ ^1-1-0
 
 #### Paribbājakakathā ^1-1-1-0
 
@@ -72,15 +72,15 @@ Evaṃ me sutaṃ – … upagacchi [upagañchi (sī. syā. kaṃ. pī.)] saddhi
 Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 ```
 
-- Content ID on the **last** line of each block; the printed `N.` prefix is stripped from the text.
+- Content ID on the **last** line of each block; the printed `N.` prefix is stripped from the text (the ID carries it).
 - An unnumbered paragraph that the source sets apart (e.g. directly after a sub-heading) is its own block with `^<book>-U<k>`.
 
 **Volumes whose suttas sit inside vaggas** (Majjhimanikāya: `<div type="vagga">`, each sutta a numbered `<p rend="subhead">`) get one more heading level. `####` is the sutta, so a commentary's sutta *k* of vagga *v* is `^<book>-<v>-<k>-0`, the same as in the root:
 
 ```markdown
 ## Mūlapaṇṇāsapāḷi ^1-0
-### Mūlapariyāyavaggo ^1-1-0
-#### Sabbāsavasuttaṃ ^1-1-2-0
+### 1. Mūlapariyāyavaggo ^1-1-0
+#### 2. Sabbāsavasuttaṃ ^1-1-2-0
 ##### Dassanā pahātabbāsavā ^1-1-2-1-0
 ```
 - Library fields (`license`, `category_id`, `text_id`, `edition_id`, `toc_id`, `tag_ids`) are **not** written here — they are added at upload.
@@ -89,7 +89,7 @@ Brahmajālasuttaṃ niṭṭhitaṃ paṭhamaṃ. ^1-149
 
 ## Rules
 
-1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), the `N.` prefix and the chapter number on `###` headings stripped (and, in a vagga volume, the sutta number on `####` headings). A `<p rend="hangnum">` holds only a paragraph number (`456.`) and its text is the next paragraph, a gāthā; the two are joined into one line, as tipitaka.app shows them, so the gāthā block gets `^<book>-456`. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
+1. **Never edit wording.** The only text changes allowed are mechanical: page markers dropped, `<note>` variants rendered inline as `[…]`, CSCD's doubled quotes `‘‘ ’’` written as `"` (single `‘ ’` kept), and the `N.` prefix of a numbered paragraph stripped (its ID carries the number). Heading numbers are text and stay as printed. A `<p rend="hangnum">` holds only a paragraph number (`456.`) and its text is the next paragraph, a gāthā; the two are joined into one line, as tipitaka.app shows them, so the gāthā block gets `^<book>-456`. Bold (`<hi rend="bold">`) is kept as `**…**` exactly where the XML's tags are, as tipitaka.app shows it: spaces and punctuation inside a tag stay inside (`**‘jātaka’**nti`, `**passatā. ** Sabba`), and nothing is moved, merged or dropped. Some such spans do not render as bold in Obsidian; that is accepted so the file copies the source. `verify.py` must show an identical word stream (with `**` removed) and the same bold spans as the XML, in order and with exactly the same text (`bold_check.py`).
 2. **N is the printed paragraph number.** Never renumber, recompute, pad or invent. If the XML skips or repeats a number, the IDs do too (`x` suffix for a repeat, as `apply.py` assigns it).
    - A **printed range** (`225-240.`, CSCD Saṃyuttanikāya) is one paragraph, and its ID is the range as printed: `^3-225-240`.
    - A **gap the XML itself prints** (SN Mahāvagga, where one paragraph number covers a run of abbreviated suttas, so `270.` is followed by `280.`) stays a gap. `apply.py audit` lists each one as an ANOMALY, and `verify.py` confirms the IDs equal the XML's numbers. Record every gap in the report.

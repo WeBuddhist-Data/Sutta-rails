@@ -183,7 +183,7 @@ how = ("Converted XML → segment JSON → json-to-source-text (tipitaka_org_boo
 desc = (f"VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, {len(srcfiles)} volume file{'s' if len(srcfiles) > 1 else ''} ({stems}), {nikaya}{', ' + label if label else ''}. "
         f"{how}. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: "
         f"every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. "
-        f"Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings.")
+        f"Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML.")
 
 keep_before = ["language", "script", "file_type"]
 keep_mid = ["lang_tag", "verse_id_format", "pitaka", "nikaya", "layer"]

@@ -100,7 +100,18 @@ LEAD_NUM = re.compile(r"^\s*(?:\(\d+\)\s*)?\d+(?:-\d+)*\.\s*")   # "1. ", "1-10.
 
 
 def strip_heading_number(text):
+    """For matching a heading by name only: the written heading keeps its number."""
     return LEAD_NUM.sub("", text).strip()
+
+
+def printed_heading(text):
+    """A heading as printed, its number kept ("1. Rūpādivaggo", "(1) 1. Puggalavaggo",
+    "1.Sattisuttavaṇṇanā"): the form the converters write and the checks compare. A
+    heading's number cannot be read back from its block ID (^1-1-0 is a structural
+    path), so it stays in the text, as in the Vinaya files. A space between the number
+    and its dot is markup (two tags), not text."""
+    s = re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)
 
 
 def tree_levels(book_div):

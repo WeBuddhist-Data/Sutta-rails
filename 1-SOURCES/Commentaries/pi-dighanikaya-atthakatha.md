@@ -10,7 +10,7 @@ pitaka: sutta
 nikaya: Dīghanikāya
 layer: atthakatha
 root_text: 1-SOURCES/Text/pi-dighanikaya.md
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101a.att, s0102a.att, s0103a.att), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101a.att, s0102a.att, s0103a.att), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0101a.att.xml, s0102a.att.xml, s0103a.att.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0101a.att.xml"
 source_volumes:
@@ -379,7 +379,7 @@ Saṅgītipariyosāne cassa – "idaṃ mahākassapattherena dasabalassa sāsana
 "Satehi pañcahi katā, tena pañcasatāti ca;
 Thereheva katattā ca, therikāti pavuccatī"ti. ^1-146
 
-### Brahmajālasuttavaṇṇanā ^1-1-0
+### 1. Brahmajālasuttavaṇṇanā ^1-1-0
 
 #### Paribbājakakathāvaṇṇanā ^1-1-1-0
 
@@ -1440,7 +1440,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-522
 
 Brahmajālasuttavaṇṇanā niṭṭhitā. ^1-523
 
-### Sāmaññaphalasuttavaṇṇanā ^1-2-0
+### 2. Sāmaññaphalasuttavaṇṇanā ^1-2-0
 
 #### Rājāmaccakathāvaṇṇanā ^1-2-1-0
 
@@ -2345,7 +2345,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-838
 
 Sāmaññaphalasuttavaṇṇanā niṭṭhitā. ^1-839
 
-### Ambaṭṭhasuttavaṇṇanā ^1-3-0
+### 3. Ambaṭṭhasuttavaṇṇanā ^1-3-0
 
 #### Addhānagamanavaṇṇanā ^1-3-1-0
 
@@ -2695,7 +2695,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-954
 
 Ambaṭṭhasuttavaṇṇanā niṭṭhitā. ^1-955
 
-### Soṇadaṇḍasuttavaṇṇanā ^1-4-0
+### 4. Soṇadaṇḍasuttavaṇṇanā ^1-4-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-300]]
 
@@ -2839,7 +2839,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-999
 
 Soṇadaṇḍasuttavaṇṇanā niṭṭhitā. ^1-1000
 
-### Kūṭadantasuttavaṇṇanā ^1-5-0
+### 5. Kūṭadantasuttavaṇṇanā ^1-5-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-323]]
 
@@ -2987,7 +2987,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1038
 
 Kūṭadantasuttavaṇṇanā niṭṭhitā. ^1-1039
 
-### Mahālisuttavaṇṇanā ^1-6-0
+### 6. Mahālisuttavaṇṇanā ^1-6-0
 
 #### Brāhmaṇadūtavatthuvaṇṇanā ^1-6-1-0
 
@@ -3067,7 +3067,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1057
 
 Mahālisuttavaṇṇanā niṭṭhitā. ^1-1058
 
-### Jāliyasuttavaṇṇanā ^1-7-0
+### 7. Jāliyasuttavaṇṇanā ^1-7-0
 
 #### Dve pabbajitavatthuvaṇṇanā ^1-7-1-0
 
@@ -3090,7 +3090,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1064
 
 Jāliyasuttavaṇṇanā niṭṭhitā. ^1-1065
 
-### Mahāsīhanādasuttavaṇṇanā ^1-8-0
+### 8. Mahāsīhanādasuttavaṇṇanā ^1-8-0
 
 #### Acelakassapavatthuvaṇṇanā ^1-8-1-0
 
@@ -3239,7 +3239,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1108
 
 Mahāsīhanādasuttavaṇṇanā niṭṭhitā. ^1-1109
 
-### Poṭṭhapādasuttavaṇṇanā ^1-9-0
+### 9. Poṭṭhapādasuttavaṇṇanā ^1-9-0
 
 #### Poṭṭhapādaparibbājakavatthuvaṇṇanā ^1-9-1-0
 
@@ -3410,7 +3410,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1155
 
 Poṭṭhapādasuttavaṇṇanā niṭṭhitā. ^1-1156
 
-### Subhasuttavaṇṇanā ^1-10-0
+### 10. Subhasuttavaṇṇanā ^1-10-0
 
 #### Subhamāṇavakavatthuvaṇṇanā ^1-10-1-0
 
@@ -3476,7 +3476,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1169
 
 Subhasuttavaṇṇanā niṭṭhitā. ^1-1170
 
-### Kevaṭṭasuttavaṇṇanā ^1-11-0
+### 11. Kevaṭṭasuttavaṇṇanā ^1-11-0
 
 #### Kevaṭṭagahapatiputtavatthuvaṇṇanā ^1-11-1-0
 
@@ -3558,7 +3558,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1189
 
 Kevaṭṭasuttavaṇṇanā niṭṭhitā. ^1-1190
 
-### Lohiccasuttavaṇṇanā ^1-12-0
+### 12. Lohiccasuttavaṇṇanā ^1-12-0
 
 #### Lohiccabrāhmaṇavatthuvaṇṇanā ^1-12-1-0
 
@@ -3624,7 +3624,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^1-1202
 
 Lohiccasuttavaṇṇanā niṭṭhitā. ^1-1203
 
-### Tevijjasuttavaṇṇanā ^1-13-0
+### 13. Tevijjasuttavaṇṇanā ^1-13-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-518]]
 
@@ -3734,7 +3734,7 @@ Dīghanikāye ^2-T2
 
 ## Mahāvaggaṭṭhakathā ^2-0
 
-### Mahāpadānasuttavaṇṇanā ^2-1-0
+### 1. Mahāpadānasuttavaṇṇanā ^2-1-0
 
 #### Pubbenivāsapaṭisaṃyuttakathā ^2-1-1-0
 
@@ -4401,7 +4401,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-236
 
 Mahāpadānasuttavaṇṇanā niṭṭhitā. ^2-237
 
-### Mahānidānasuttavaṇṇanā ^2-2-0
+### 2. Mahānidānasuttavaṇṇanā ^2-2-0
 
 #### Nidānavaṇṇanā ^2-2-1-0
 
@@ -4716,7 +4716,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-350
 
 Mahānidānasuttavaṇṇanā niṭṭhitā. ^2-351
 
-### Mahāparinibbānasuttavaṇṇanā ^2-3-0
+### 3. Mahāparinibbānasuttavaṇṇanā ^2-3-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-131]]
 
@@ -5685,7 +5685,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-700
 
 Mahāparinibbānasuttavaṇṇanā niṭṭhitā. ^2-701
 
-### Mahāsudassanasuttavaṇṇanā ^2-4-0
+### 4. Mahāsudassanasuttavaṇṇanā ^2-4-0
 
 #### Kusāvatīrājadhānīvaṇṇanā ^2-4-1-0
 
@@ -5925,7 +5925,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-774
 
 Mahāsudassanasuttavaṇṇanā niṭṭhitā. ^2-775
 
-### Janavasabhasuttavaṇṇanā ^2-5-0
+### 5. Janavasabhasuttavaṇṇanā ^2-5-0
 
 #### Nātikiyādibyākaraṇavaṇṇanā ^2-5-1-0
 
@@ -6051,7 +6051,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-811
 
 Janavasabhasuttavaṇṇanā niṭṭhitā. ^2-812
 
-### Mahāgovindasuttavaṇṇanā ^2-6-0
+### 6. Mahāgovindasuttavaṇṇanā ^2-6-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-293]]
 
@@ -6360,7 +6360,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-916
 
 Mahāgovindasuttavaṇṇanā niṭṭhitā. ^2-917
 
-### Mahāsamayasuttavaṇṇanā ^2-7-0
+### 7. Mahāsamayasuttavaṇṇanā ^2-7-0
 
 #### Nidānavaṇṇanā ^2-7-1-0
 
@@ -6597,7 +6597,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-1014
 
 Mahāsamayasuttavaṇṇanā niṭṭhitā. ^2-1015
 
-### Sakkapañhasuttavaṇṇanā ^2-8-0
+### 8. Sakkapañhasuttavaṇṇanā ^2-8-0
 
 #### Nidānavaṇṇanā ^2-8-1-0
 
@@ -6994,7 +6994,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-1173
 
 Sakkapañhasuttavaṇṇanā niṭṭhitā. ^2-1174
 
-### Mahāsatipaṭṭhānasuttavaṇṇanā ^2-9-0
+### 9. Mahāsatipaṭṭhānasuttavaṇṇanā ^2-9-0
 
 #### Uddesavārakathāvaṇṇanā ^2-9-1-0
 
@@ -7601,7 +7601,7 @@ Iti sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāyaṃ ^2-1412
 
 Mahāsatipaṭṭhānasuttavaṇṇanā niṭṭhitā. ^2-1413
 
-### Pāyāsirājaññasuttavaṇṇanā ^2-10-0
+### 10. Pāyāsirājaññasuttavaṇṇanā ^2-10-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-406]]
 
@@ -7752,7 +7752,7 @@ Dīghanikāye ^3-T2
 
 ## Pāthikavaggaṭṭhakathā ^3-0
 
-### Pāthikasuttavaṇṇanā ^3-1-0
+### 1. Pāthikasuttavaṇṇanā ^3-1-0
 
 #### Sunakkhattavatthuvaṇṇanā ^3-1-1-0
 
@@ -7932,7 +7932,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-48
 
 Pāthikasuttavaṇṇanā niṭṭhitā. ^3-49
 
-### Udumbarikasuttavaṇṇanā ^3-2-0
+### 2. Udumbarikasuttavaṇṇanā ^3-2-0
 
 #### Nigrodhaparibbājakavatthuvaṇṇanā ^3-2-1-0
 
@@ -8078,7 +8078,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-89
 
 Udumbarikasuttavaṇṇanā niṭṭhitā. ^3-90
 
-### Cakkavattisuttavaṇṇanā ^3-3-0
+### 3. Cakkavattisuttavaṇṇanā ^3-3-0
 
 #### Attadīpasaraṇatāvaṇṇanā ^3-3-1-0
 
@@ -8245,7 +8245,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-142
 
 Cakkavattisuttavaṇṇanā niṭṭhitā. ^3-143
 
-### Aggaññasuttavaṇṇanā ^3-4-0
+### 4. Aggaññasuttavaṇṇanā ^3-4-0
 
 #### Vāseṭṭhabhāradvājavaṇṇanā ^3-4-1-0
 
@@ -8413,7 +8413,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-189
 
 Aggaññasuttavaṇṇanā niṭṭhitā. ^3-190
 
-### Sampasādanīyasuttavaṇṇanā ^3-5-0
+### 5. Sampasādanīyasuttavaṇṇanā ^3-5-0
 
 #### Sāriputtasīhanādavaṇṇanā ^3-5-1-0
 
@@ -8693,7 +8693,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-287
 
 Sampasādanīyasuttavaṇṇanā niṭṭhitā. ^3-288
 
-### Pāsādikasuttavaṇṇanā ^3-6-0
+### 6. Pāsādikasuttavaṇṇanā ^3-6-0
 
 #### Nigaṇṭhanāṭaputtakālaṅkiriyavaṇṇanā ^3-6-1-0
 
@@ -8844,7 +8844,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-326
 
 Pāsādikasuttavaṇṇanā niṭṭhitā. ^3-327
 
-### Lakkhaṇasuttavaṇṇanā ^3-7-0
+### 7. Lakkhaṇasuttavaṇṇanā ^3-7-0
 
 #### Dvattiṃsamahāpurisalakkhaṇavaṇṇanā ^3-7-1-0
 
@@ -9144,7 +9144,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-415
 
 Lakkhaṇasuttavaṇṇanā niṭṭhitā. ^3-416
 
-### Siṅgālasuttavaṇṇanā ^3-8-0
+### 8. Siṅgālasuttavaṇṇanā ^3-8-0
 
 #### Nidānavaṇṇanā ^3-8-1-0
 
@@ -9346,7 +9346,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-475
 
 Siṅgālasuttavaṇṇanā niṭṭhitā. ^3-476
 
-### Āṭānāṭiyasuttavaṇṇanā ^3-9-0
+### 9. Āṭānāṭiyasuttavaṇṇanā ^3-9-0
 
 #### Paṭhamabhāṇavāravaṇṇanā ^3-9-1-0
 
@@ -9451,7 +9451,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-515
 
 Āṭānāṭiyasuttavaṇṇanā niṭṭhitā. ^3-516
 
-### Saṅgītisuttavaṇṇanā ^3-10-0
+### 10. Saṅgītisuttavaṇṇanā ^3-10-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^3-296]]
 
@@ -10346,7 +10346,7 @@ Sumaṅgalavilāsiniyā dīghanikāyaṭṭhakathāya ^3-872
 
 Saṅgītisuttavaṇṇanā niṭṭhitā. ^3-873
 
-### Dasuttarasuttavaṇṇanā ^3-11-0
+### 11. Dasuttarasuttavaṇṇanā ^3-11-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^3-350]]
 

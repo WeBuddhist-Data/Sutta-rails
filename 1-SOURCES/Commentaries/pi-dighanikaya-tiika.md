@@ -11,7 +11,7 @@ nikaya: Dīghanikāya
 layer: tiika
 root_text: 1-SOURCES/Text/pi-dighanikaya.md
 commentary: 1-SOURCES/Commentaries/pi-dighanikaya-atthakatha.md
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101t.tik, s0102t.tik, s0103t.tik), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, 3 volume files (s0101t.tik, s0102t.tik, s0103t.tik), Dīghanikāya, all 3 volumes. Converted XML → segment JSON → commentary converter → block IDs, via the cscd-commentary-intake skill; each paragraph that opens with a printed paragraph number links to those root paragraphs (transclusions), and the printed number is kept. Each volume was built and verified on its own, then the volumes were joined in order with merge_volumes.py: every block and ID kept; a later volume's opening homage and nikāya line kept as plain text blocks ^<book>-T<k>. Variant readings inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: [s0101t.tik.xml, s0102t.tik.xml, s0103t.tik.xml]
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0101t.tik.xml"
 source_volumes:
@@ -259,7 +259,7 @@ Yañca vuttaṃ – "gāthābhāvato maṅgalasuttādīnaṃ (khu. pā. 5.1, 2, 
 
 Nidānakathāvaṇṇanā niṭṭhitā. ^1-102
 
-### Brahmajālasuttavaṇṇanā ^1-1-0
+### 1. Brahmajālasuttavaṇṇanā ^1-1-0
 
 #### Paribbājakakathāvaṇṇanā ^1-1-1-0
 
@@ -1450,7 +1450,7 @@ Pakaraṇanayavaṇṇanā niṭṭhitā. ^1-540
 
 Brahmajālasuttavaṇṇanā niṭṭhitā. ^1-541
 
-### Sāmaññaphalasuttavaṇṇanā ^1-2-0
+### 2. Sāmaññaphalasuttavaṇṇanā ^1-2-0
 
 #### Rājāmaccakathāvaṇṇanā ^1-2-1-0
 
@@ -2110,7 +2110,7 @@ Etthāha – yadi rañño kammantarāyābhāve tasmiṃyeva āsane dhammacakkhu 
 
 Sāmaññaphalasuttavaṇṇanāya līnatthappakāsanā. ^1-771
 
-### Ambaṭṭhasuttavaṇṇanā ^1-3-0
+### 3. Ambaṭṭhasuttavaṇṇanā ^1-3-0
 
 #### Addhānagamanavaṇṇanā ^1-3-1-0
 
@@ -2434,7 +2434,7 @@ Yasmā bhagavato kosohitaṃ sabbabuddhānaṃ āveṇikaṃ aññehi asādhāra
 
 Ambaṭṭhasuttavaṇṇanāya līnatthappakāsanā. ^1-873
 
-### Soṇadaṇḍasuttavaṇṇanā ^1-4-0
+### 4. Soṇadaṇḍasuttavaṇṇanā ^1-4-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-300]]
 
@@ -2538,7 +2538,7 @@ Yadi bhagavā dhammaratanavassaṃ vassi, atha kasmā so visesaṃ nādhigacchat
 
 Soṇadaṇḍasuttavaṇṇanāya līnatthappakāsanā. ^1-904
 
-### Kūṭadantasuttavaṇṇanā ^1-5-0
+### 5. Kūṭadantasuttavaṇṇanā ^1-5-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-323]]
 
@@ -2690,7 +2690,7 @@ Yasmā ayaṃ desanā iminā anukkamena imāni ñāṇāni nibbattentassa vasena
 
 Kūṭadantasuttavaṇṇanāya līnatthappakāsanā. ^1-950
 
-### Mahālisuttavaṇṇanā ^1-6-0
+### 6. Mahālisuttavaṇṇanā ^1-6-0
 
 #### Brāhmaṇadūtavatthuvaṇṇanā ^1-6-1-0
 
@@ -2777,7 +2777,7 @@ Vacībhedassa niyāmikā **vācā** kāyikakiriyāniyāmakassa **kammantassa upa
 
 Mahālisuttavaṇṇanāya līnatthappakāsanā. ^1-972
 
-### Jāliyasuttavaṇṇanā ^1-7-0
+### 7. Jāliyasuttavaṇṇanā ^1-7-0
 
 #### Dvepabbajitavatthuvaṇṇanā ^1-7-1-0
 
@@ -2802,7 +2802,7 @@ Upecca parassa vācāya ārambhanaṃ bādhanaṃ **upārambho,** dosadassanavas
 
 Jāliyasuttavaṇṇanāya līnatthappakāsanā. ^1-980
 
-### Mahāsīhanādasuttavaṇṇanā ^1-8-0
+### 8. Mahāsīhanādasuttavaṇṇanā ^1-8-0
 
 #### Acelakassapavatthuvaṇṇanā ^1-8-1-0
 
@@ -2950,7 +2950,7 @@ Apica usabhassa idanti āsabhaṃ, āsabhaṃ viyāti āsabhaṃ. Yathā hi nisa
 
 Mahāsīhanādasuttavaṇṇanāya līnatthappakāsanā. ^1-1023
 
-### Poṭṭhapādasuttavaṇṇanā ^1-9-0
+### 9. Poṭṭhapādasuttavaṇṇanā ^1-9-0
 
 #### Poṭṭhapādaparibbājakavatthuvaṇṇanā ^1-9-1-0
 
@@ -3151,7 +3151,7 @@ Yadi tathāgato paramatthasaccaṃ sammadeva abhisambujjhitvā ṭhitopi lokasam
 
 Poṭṭhapādasuttavaṇṇanāya līnatthappakāsanā. ^1-1087
 
-### Subhasuttavaṇṇanā ^1-10-0
+### 10. Subhasuttavaṇṇanā ^1-10-0
 
 #### Subhamāṇavakavatthuvaṇṇanā ^1-10-1-0
 
@@ -3209,7 +3209,7 @@ Brāhmaṇacārittassa bhāvitataṃ sandhāya, tathā pitaraṃ ukkaṃsento ca
 
 Subhasuttavaṇṇanāya līnatthappakāsanā. ^1-1098
 
-### Kevaṭṭasuttavaṇṇanā ^1-11-0
+### 11. Kevaṭṭasuttavaṇṇanā ^1-11-0
 
 #### Kevaṭṭagahapatiputtavatthuvaṇṇanā ^1-11-1-0
 
@@ -3284,7 +3284,7 @@ Evametissā desanāya mukhyapayojanaṃ dassetvā idāni anusaṅgikampi dassetu
 
 Kevaṭṭasuttavaṇṇanāya līnatthappakāsanā. ^1-1116
 
-### Lohiccasuttavaṇṇanā ^1-12-0
+### 12. Lohiccasuttavaṇṇanā ^1-12-0
 
 #### Lohiccabrāhmaṇavatthuvaṇṇanā ^1-12-1-0
 
@@ -3339,7 +3339,7 @@ Kevaṭṭasuttavaṇṇanāya līnatthappakāsanā. ^1-1116
 
 Lohiccasuttavaṇṇanāya līnatthappakāsanā. ^1-1128
 
-### Tevijjasuttavaṇṇanā ^1-13-0
+### 13. Tevijjasuttavaṇṇanā ^1-13-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-518]]
 
@@ -3466,7 +3466,7 @@ Dīghanikāye ^2-T2
 
 ## Mahāvaggaṭīkā ^2-0
 
-### Mahāpadānasuttavaṇṇanā ^2-1-0
+### 1. Mahāpadānasuttavaṇṇanā ^2-1-0
 
 #### Pubbenivāsapaṭisaṃyuttakathāvaṇṇanā ^2-1-1-0
 
@@ -4103,7 +4103,7 @@ Apica bhagavā bhikkhūnaṃ pātimokkhaṃ uddisanto pātimokkhakathāya ca sī
 
 Mahāpadānasuttavaṇṇanāya līnatthappakāsanā. ^2-232
 
-### Mahānidānasuttavaṇṇanā ^2-2-0
+### 2. Mahānidānasuttavaṇṇanā ^2-2-0
 
 #### Nidānavaṇṇanā ^2-2-1-0
 
@@ -4394,7 +4394,7 @@ Sobhanā pabhā subhā, subhāya kiṇṇā subhākiṇṇāti vattabbe ā-kāra
 
 Mahānidānasuttavaṇṇanāya līnatthappakāsanā. ^2-340
 
-### Mahāparinibbānasuttavaṇṇanā ^2-3-0
+### 3. Mahāparinibbānasuttavaṇṇanā ^2-3-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-131]]
 
@@ -5234,7 +5234,7 @@ Purimaṃ purimaṃ katassa gaṇhanayogyaṃ pacchimaṃ pacchimaṃ kārento *
 
 Mahāparinibbānasuttavaṇṇanāya līnatthappakāsanā. ^2-631
 
-### Mahāsudassanasuttavaṇṇanā ^2-4-0
+### 4. Mahāsudassanasuttavaṇṇanā ^2-4-0
 
 #### Kusāvatīrājadhānīvaṇṇanā ^2-4-1-0
 
@@ -5440,7 +5440,7 @@ Idāni yathāvuttāya rañño mahāsudassanassa bhogasampattiyā kammasarikkhata
 
 Mahāsudassanasuttavaṇṇanāya līnatthappakāsanā. ^2-691
 
-### Janavasabhasuttavaṇṇanā ^2-5-0
+### 5. Janavasabhasuttavaṇṇanā ^2-5-0
 
 #### Nātikiyādibyākaraṇavaṇṇanā ^2-5-1-0
 
@@ -5582,7 +5582,7 @@ Ettha ca yasmā nibbānādhigamāya paṭipannassa yogino bahūpakārā sammādi
 
 Janavasabhasuttavaṇṇanāya līnatthappakāsanā. ^2-735
 
-### Mahāgovindasuttavaṇṇanā ^2-6-0
+### 6. Mahāgovindasuttavaṇṇanā ^2-6-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-293]]
 
@@ -5806,7 +5806,7 @@ Nimmādaṃ milāpanaṃ khepananti āha **"nimmādetabbā pahātabbā"**ti. **B
 
 Mahāgovindasuttavaṇṇanāya līnatthappakāsanā. ^2-806
 
-### Mahāsamayasuttavaṇṇanā ^2-7-0
+### 7. Mahāsamayasuttavaṇṇanā ^2-7-0
 
 #### Nidānavaṇṇanā ^2-7-1-0
 
@@ -6027,7 +6027,7 @@ Idāni taṃ saddaṃ upamāya dassento **"yathā"**ti ādimāha. **Kañcī**ti 
 
 Mahāsamayasuttavaṇṇanāya līnatthappakāsanā. ^2-893
 
-### Sakkapañhasuttavaṇṇanā ^2-8-0
+### 8. Sakkapañhasuttavaṇṇanā ^2-8-0
 
 #### Nidānavaṇṇanā ^2-8-1-0
 
@@ -6402,7 +6402,7 @@ Pajaṃ mamaṃ rāhu pamuñca sūriya"nti. (saṃ. ni. 1.91); ^2-1034
 
 Sakkapañhasuttavaṇṇanāya līnatthappakāsanā. ^2-1037
 
-### Mahāsatipaṭṭhānasuttavaṇṇanā ^2-9-0
+### 9. Mahāsatipaṭṭhānasuttavaṇṇanā ^2-9-0
 
 #### Uddesavārakathāvaṇṇanā ^2-9-1-0
 
@@ -6929,7 +6929,7 @@ Appatarepi kāle sāsanassa niyyānikabhāvaṃ dassentoti yojanā. **Niyyātent
 
 Mahāsatipaṭṭhānasuttavaṇṇanāya līnatthappakāsanā. ^2-1251
 
-### Pāyāsirājaññasuttavaṇṇanā ^2-10-0
+### 10. Pāyāsirājaññasuttavaṇṇanā ^2-10-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^2-406]]
 
@@ -7099,7 +7099,7 @@ Dīghanikāye ^3-T2
 
 ## Pāthikavaggaṭīkā ^3-0
 
-### Pāthikasuttavaṇṇanā ^3-1-0
+### 1. Pāthikasuttavaṇṇanā ^3-1-0
 
 #### Sunakkhattavatthuvaṇṇanā ^3-1-1-0
 
@@ -7286,7 +7286,7 @@ Ohārinaṃ sithilaṃ duppamuñca"nti. (dha. pa. 346; jā. 1.2.102); ^3-42
 
 Pāthikasuttavaṇṇanāya līnatthappakāsanā. ^3-50
 
-### Udumbarikasuttavaṇṇanā ^3-2-0
+### 2. Udumbarikasuttavaṇṇanā ^3-2-0
 
 #### Nigrodhaparibbājakavatthuvaṇṇanā ^3-2-1-0
 
@@ -7426,7 +7426,7 @@ Ayaṃ pana viseso – issati usūyatīti **ussukī.** Saṭhanaṃ asantaguṇa
 
 Udumbarikasuttavaṇṇanāya līnatthappakāsanā. ^3-88
 
-### Cakkavattisuttavaṇṇanā ^3-3-0
+### 3. Cakkavattisuttavaṇṇanā ^3-3-0
 
 #### Attadīpasaraṇatāvaṇṇanā ^3-3-1-0
 
@@ -7590,7 +7590,7 @@ Sampannasīlassa avippaṭisārapāmojjapītipassaddhisukhasamādhiyathābhūta�
 
 Cakkavattisuttavaṇṇanāya līnatthappakāsanā. ^3-139
 
-### Aggaññasuttavaṇṇanā ^3-4-0
+### 4. Aggaññasuttavaṇṇanā ^3-4-0
 
 #### Vāseṭṭhabhāradvājavaṇṇanā ^3-4-1-0
 
@@ -7774,7 +7774,7 @@ Yesu kattikādinakkhattasamaññā, tānipi tārakarūpāni yevāti vuttaṃ **"
 
 Aggaññasuttavaṇṇanāya līnatthappakāsanā. ^3-191
 
-### Sampasādanīyasuttavaṇṇanā ^3-5-0
+### 5. Sampasādanīyasuttavaṇṇanā ^3-5-0
 
 #### Sāriputtasīhanādavaṇṇanā ^3-5-1-0
 
@@ -8050,7 +8050,7 @@ Idāni tattha nidassanaṃ dassento **"yathā mahārājā"**tiādimāha. Tattha 
 
 Sampasādanīyasuttavaṇṇanāya līnatthappakāsanā. ^3-289
 
-### Pāsādikasuttavaṇṇanā ^3-6-0
+### 6. Pāsādikasuttavaṇṇanā ^3-6-0
 
 #### Nigaṇṭhanāṭaputtakālaṅkiriyavaṇṇanā ^3-6-1-0
 
@@ -8193,7 +8193,7 @@ Satiṃ anussaratīti **satānusāri,** satiyānuvattanavasena pavattañāṇa�
 
 Pāsādikasuttavaṇṇanāya līnatthappakāsanā. ^3-325
 
-### Lakkhaṇasuttavaṇṇanā ^3-7-0
+### 7. Lakkhaṇasuttavaṇṇanā ^3-7-0
 
 #### Dvattiṃsamahāpurisalakkhaṇavaṇṇanā ^3-7-1-0
 
@@ -8499,7 +8499,7 @@ Ettha ca yasmā sabbesampi lakkhaṇānaṃ mahāpurisasantānagatapuññasambh�
 
 Lakkhaṇasuttavaṇṇanāya līnatthappakāsanā. ^3-416
 
-### Siṅgālasuttavaṇṇanā ^3-8-0
+### 8. Siṅgālasuttavaṇṇanā ^3-8-0
 
 #### Nidānavaṇṇanā ^3-8-1-0
 
@@ -8708,7 +8708,7 @@ Kulitthiyā saṃvihitabbakammantā nāma āhārasampādanavicārappakārāti ā
 
 Siṅgālasuttavaṇṇanāya līnatthappakāsanā. ^3-478
 
-### Āṭānāṭiyasuttavaṇṇanā ^3-9-0
+### 9. Āṭānāṭiyasuttavaṇṇanā ^3-9-0
 
 #### Paṭhamabhāṇavāravaṇṇanā ^3-9-1-0
 
@@ -8818,7 +8818,7 @@ Yasmā dharaṇīporakkhaṇito purāṇodakaṃ bhassayantaṃ heṭṭhā vu�
 
 Āṭānāṭiyasuttavaṇṇanāya līnatthappakāsanā. ^3-521
 
-### Saṅgītisuttavaṇṇanā ^3-10-0
+### 10. Saṅgītisuttavaṇṇanā ^3-10-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^3-296]]
 
@@ -9714,7 +9714,7 @@ Dasakavaṇṇanā niṭṭhitā. ^3-876
 
 Saṅgītisuttavaṇṇanāya līnatthappakāsanā. ^3-879
 
-### Dasuttarasuttavaṇṇanā ^3-11-0
+### 11. Dasuttarasuttavaṇṇanā ^3-11-0
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^3-350]]
 

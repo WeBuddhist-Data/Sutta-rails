@@ -35,7 +35,7 @@ verse_id_format: book-verse
 pitaka: sutta
 nikaya: {nikaya}
 layer: mula
-source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, {xml_name} ({nikaya}, {volume}). Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py) → block IDs, via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; chapter numbers stripped from headings."
+source_description: "VRI Chaṭṭha Saṅgāyana (CSCD) romanised XML, {xml_name} ({nikaya}, {volume}). Converted XML → segment JSON → json-to-source-text (tipitaka_org_book.py) → block IDs, via the cscd-root-text-intake skill. Variant readings kept inline in [ ]; bold kept as **…**; page markers dropped; printed heading numbers kept in the headings, as in the XML."
 source_filename: {xml_name}
 source: "https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/{xml_name}"
 other_ids:

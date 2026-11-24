@@ -8,7 +8,7 @@ file against the CSCD XML volume(s) it came from.
 2. Words: the file's word stream (frontmatter, transclusion lines, IDs, '#'
    markers and the h1's "(<layer>)" label removed) equals the XML's (notes as
    [..], doubled quotes as ", page markers dropped, numbers on headings
-   stripped).
+   kept as printed).
 3. Citations: every XML paragraph with a printed number (@n) is, in order, a
    block that opens with that number and is preceded by exactly the root links
    it cites (ranges expanded, truncated tails "65-6" = 65–66), except the
@@ -107,12 +107,13 @@ for x in xmls:
         s = re.sub(r"\s+", " ", s)
         s = re.sub(r"\s+\]", "]", re.sub(r"\[\s+", "[", s)).strip()
         s = re.sub(r"^(\d+(?:-\d+)*)\s+\.", r"\1.", s)   # "8 ." = the number's two tags (as the converter)
-        s = NUM_FIX.sub(r"\1. ", s)
         rend = el.get("rend") or ""
         reprinted = (lv is not None and el.tag == "p" and rend in HEADING_RENDS and id(el) not in lv
                      and not cscd_shape.part_label(cscd_shape.text_of(el)))
-        if (el.tag == "head" or rend in HEADING_RENDS) and not reprinted:
-            s = LEAD.sub("", s)
+        if not ((el.tag == "head" or rend in HEADING_RENDS) and not reprinted):
+            # a paragraph: the converter puts a space after a printed "N." (a heading keeps
+            # its number exactly as printed, so it is compared with the number, as it is)
+            s = NUM_FIX.sub(r"\1. ", s)
         xml_words += s.split()
         # a printed citation; an @n alone (the AN homage, n="0") prints nothing
         if rend == "chapter":                      # a section heading: "6. Ratanasuttavaṇṇanā"

@@ -10,7 +10,7 @@ from a fixed chapter > title > subhead scheme:
     Namo tassa …                      homage (plain line; ^T-1 later)
     # <nikāya> ^0                     the nikaya segment
     ## <book> ^1-0                    the book segment (book number set by prepare_ids.py)
-    ###… <heading> ^…-0               each heading at its own level, printed number stripped
+    ###… <heading> ^…-0               each heading at its own level, printed number kept
 
 Blocks, as in tipitaka_org_book.py: a paragraph opening with "N. " (or a printed
 range "N-M. ", or a number-only line) starts a block; the lines after it, up to
@@ -65,7 +65,7 @@ def main(src, dst):
             flush()
             num[0] = None
             opening[0] = False
-            out.append(f"{'#' * g['level']} {cscd_shape.strip_heading_number(text)} ^1-h-0\n")
+            out.append(f"{'#' * g['level']} {cscd_shape.printed_heading(text)} ^1-h-0\n")
             continue
         if text.startswith("Namo tassa"):
             # a second volume's printed opening inside one book (CSCD Therāpadāna part 2:
