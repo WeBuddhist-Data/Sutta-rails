@@ -8,7 +8,7 @@ Tool: `library-upload` (installed from rails-template today; it replaces
 `root-text-upload`, `commentary-upload`, `translation-upload`, `yigchung-upload`,
 which were removed). Environment: **prod** (`library-prod.webuddhist.com`).
 
-## Sent to prod — 14 of 16, each `ok` in `status` afterwards
+## Sent to prod — 15 of 16, each `ok` in `status` afterwards
 
 | Text | What | New id |
 |---|---|---|
@@ -25,6 +25,7 @@ which were removed). Environment: **prod** (`library-prod.webuddhist.com`).
 | pi-samyuttanikaya-atthakatha | TOC replaced | toc `T4dQDUFPigDAII93UbyPG` |
 | pi-anguttaranikaya-atthakatha | TOC replaced | toc `Z3xR8n6wUKBHKrNNQ4w26` |
 | pi-anguttaranikaya-tiika | TOC replaced | toc `7QnIRd2dBRIhxR5ILB6Xd` |
+| pi-samyuttanikaya-tiika | **re-segmented** (later the same day; `replace --dev`, the person confirmed they are a developer): segmentation deleted, content replaced (1,398,052 → 1,398,099 chars), 3,652 segments posted and read back, TOC re-synced; then its alignment to the SN root re-sent (5,609 pairs read back). Same ids for text and edition | toc `PIOYylxFp1dZpbjnpzmI9` |
 | pi-khuddakanikaya-tiika | **first upload** (later the same day): text, edition (262,214 chars, 718 segments), TOC, alignment to the KN root (589 pairs) | text `NFPMtNVBndTKqpcUR1A3z`, edition `FGydrYE3tDdaJU27t3H4l`, toc `GywCVGQiLmtvwu95mUI5H` |
 
 The TOC changes are the restored heading numbers, plus the TOC-structure fixes
@@ -62,7 +63,7 @@ prod allows, and clears `BCugzNrcUr4zYeus4QO8j` on dev (its id is in the dev
 ledger). Then push the KN root and the aṭṭhakathā to testing, and the
 aṭṭhakathā to prod.
 
-### pi-samyuttanikaya-tiika — needs re-segmentation (developer gate)
+### pi-samyuttanikaya-tiika — needed re-segmentation (done later the same day; see the table)
 
 Commit 1258207 turned the subhead "Sāratthappakāsiniyā saṃyuttanikāya-aṭṭhakathāya"
 into the first line of block `^5-574`. That inserts text on a segment boundary,
