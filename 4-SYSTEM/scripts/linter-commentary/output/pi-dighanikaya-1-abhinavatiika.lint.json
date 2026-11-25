@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "source": "1-SOURCES/Commentaries/pi-dighanikaya-1-abhinavatiika.md",
+  "validated_at": "2026-11-25T05:46:27.199493+00:00",
+  "notes": [
+    "bdrc_work_id: not set (optional)",
+    "wiki: not set (optional)",
+    "date: not set (optional)",
+    "translation_of: not set (optional)",
+    "commentary_of: 'O4D2mIIgVEMj82ljsKBth'",
+    "root_text: '1-SOURCES/Text/pi-dighanikaya.md'",
+    "source: source = 'https://raw.githubusercontent.com/VipassanaTech/tipitaka-xml/main/romn/s0104t.nrf.xml'",
+    "toc: 158 headers found"
+  ],
+  "warnings": [
+    "contributions: author/translator missing — ignored for now",
+    "alt_titles: missing — ignored for now"
+  ],
+  "text_input": {
+    "bdrc": null,
+    "wiki": null,
+    "date": null,
+    "title": {
+      "pi": "Sīlakkhandhavaggaabhinavaṭīkā"
+    },
+    "alt_titles": null,
+    "language": "pi",
+    "commentary_of": "O4D2mIIgVEMj82ljsKBth",
+    "category_id": "XfCwZpoJMtfO7s0laQkdK",
+    "license": "cc0",
+    "contributions": null,
+    "tag_ids": [
+      "296WZOr8MXWteSqBBI7pl"
+    ]
+  }
+}

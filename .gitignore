@@ -22,10 +22,6 @@ __pycache__/
 4-SYSTEM/ledgers/
 4-SYSTEM/reports/
 
-# Linter and parser output (rebuilt on every run)
-4-SYSTEM/scripts/linter-*/output/
-4-SYSTEM/scripts/parser-*/output/
-
 # Library API credentials (never commit)
 .env
 4-SYSTEM/scripts/.env
