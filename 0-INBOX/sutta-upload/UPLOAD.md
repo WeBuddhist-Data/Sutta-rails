@@ -8,7 +8,7 @@ Tool: `library-upload` (installed from rails-template today; it replaces
 `root-text-upload`, `commentary-upload`, `translation-upload`, `yigchung-upload`,
 which were removed). Environment: **prod** (`library-prod.webuddhist.com`).
 
-## Sent to prod — 13 of 16, each `ok` in `status` afterwards
+## Sent to prod — 14 of 16, each `ok` in `status` afterwards
 
 | Text | What | New id |
 |---|---|---|
@@ -25,6 +25,7 @@ which were removed). Environment: **prod** (`library-prod.webuddhist.com`).
 | pi-samyuttanikaya-atthakatha | TOC replaced | toc `T4dQDUFPigDAII93UbyPG` |
 | pi-anguttaranikaya-atthakatha | TOC replaced | toc `Z3xR8n6wUKBHKrNNQ4w26` |
 | pi-anguttaranikaya-tiika | TOC replaced | toc `7QnIRd2dBRIhxR5ILB6Xd` |
+| pi-khuddakanikaya-tiika | **first upload** (later the same day): text, edition (262,214 chars, 718 segments), TOC, alignment to the KN root (589 pairs) | text `NFPMtNVBndTKqpcUR1A3z`, edition `FGydrYE3tDdaJU27t3H4l`, toc `GywCVGQiLmtvwu95mUI5H` |
 
 The TOC changes are the restored heading numbers, plus the TOC-structure fixes
 committed on 2026-11-23 after the 2026-11-20 upload (1258207 DN/MN/SN, a822251 AN).
@@ -32,10 +33,11 @@ committed on 2026-11-23 after the 2026-11-20 upload (1258207 DN/MN/SN, a822251 A
 
 ## Not sent
 
-### pi-khuddakanikaya-atthakatha and pi-khuddakanikaya-tiika — skipped for now
+### pi-khuddakanikaya-atthakatha — held
 
-Both are ready (dry run clean: 51,596 segments / 40,933 alignment pairs and
-718 segments / 589 pairs), but were **not uploaded**, by decision:
+Ready (dry run clean: 51,596 segments, 40,933 alignment pairs), but **not
+uploaded**, by decision. (The KN ṭīkā, first skipped with it, was sent to
+prod later the same day — see the table above; it is small.)
 
 - They were to go to **dev first**. That needs the KN root on dev, and pushing
   it there failed half-way: the text was created (`BCugzNrcUr4zYeus4QO8j`), but
@@ -47,9 +49,18 @@ Both are ready (dry run clean: 51,596 segments / 40,933 alignment pairs and
   that timed out on dev. A timeout on prod would leave a half-made text there
   that `library-upload` cannot remove (it never deletes texts).
 
-To resume: a developer clears `BCugzNrcUr4zYeus4QO8j` on dev (its id is in the
-dev ledger) and checks dev's proxy/request limits against prod's; then push the
-KN root and both commentaries to dev, then the commentaries to prod.
+- **testing** was tried next and failed the same way: the KN root's text was
+  created (`XrgJ1v7nwrJhETWsQ8MUn`, testing `main-b4c3651`), the edition POST got
+  a 504 after about 60 s, and no edition appeared afterwards. Harmless there:
+  testing is replaced by its next refresh from prod. So dev and testing both
+  cut an edition POST off at about 60 s, while prod accepted the same 13.9 MB
+  edition; the aṭṭhakathā's is 30.5 MB.
+
+To resume: a backend developer raises the edition-POST timeout on dev and
+testing (nginx `proxy_read_timeout` or the backend's own limit), confirms what
+prod allows, and clears `BCugzNrcUr4zYeus4QO8j` on dev (its id is in the dev
+ledger). Then push the KN root and the aṭṭhakathā to testing, and the
+aṭṭhakathā to prod.
 
 ### pi-samyuttanikaya-tiika — needs re-segmentation (developer gate)
 
