@@ -40,7 +40,7 @@ tag_ids: [296WZOr8MXWteSqBBI7pl]
 category_id: XfCwZpoJMtfO7s0laQkdK
 text_id: ZV0nnyNrdAs5qCMr4u30C
 edition_id: uxeYZMNSAUqEK408gZ9W6
-toc_id: PORi6IAAg28JTldCKiRRA
+toc_id: 3QDGynHYhWMMbhLRsVovA
 ---
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
 

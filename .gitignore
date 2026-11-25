@@ -11,8 +11,20 @@
 .trash/
 .DS_Store
 
+# Python bytecode (created whenever a script runs)
+__pycache__/
+*.pyc
+
 # Claude Code worktrees (local only)
 .claude/worktrees/
+
+# library-upload: ids created per environment (local; keep a backup) and its reports
+4-SYSTEM/ledgers/
+4-SYSTEM/reports/
+
+# Linter and parser output (rebuilt on every run)
+4-SYSTEM/scripts/linter-*/output/
+4-SYSTEM/scripts/parser-*/output/
 
 # Library API credentials (never commit)
 .env

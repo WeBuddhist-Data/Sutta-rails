@@ -138,6 +138,24 @@ def _is_verse_shape(content_lines):
 INLINE_TAG_RE = re.compile(r"</?small>", re.IGNORECASE)
 
 
+def _strip_bold(text):
+    """Drop Markdown bold markers (**) from a line of edition content.
+
+    The library has no bold annotation yet, so bold would reach the reader as
+    literal asterisks; it is dropped here as the TOC drops it. The source file
+    keeps its **…** (e.g. copied from the CSCD XML's <hi rend="bold">). A space
+    that sat inside a bold tag next to one outside it ("passatā. ** Sabba")
+    would leave two spaces once the markers go: those collapse to one, and a
+    line never gains leading space it did not have. (Sutta-rails, 2026-11-25:
+    the same rule as the parser that made the live uploads.)"""
+    if "**" not in text:
+        return text
+    out = re.sub(r" {2,}", " ", text.replace("**", ""))
+    if not text[:1].isspace():
+        out = out.lstrip(" ")
+    return out
+
+
 def _strip_inline_tags(text):
     """Clean a heading title: drop inline gloss tags and footnote markers, turn
     space-like characters (U+00A0 …) into plain spaces and drop invisible ones."""
@@ -468,7 +486,7 @@ def _build_content_and_segmentation(blocks, doc_default, notes=None):
             def _err(msg, _ref=ref, _n=block_num, _line=i + 1):
                 tag_errors.append(f"block {_n} ({_ref}), line {_line}: {msg}")
 
-            text, runs, in_small, line_marks = _strip_yigchung(raw_line.rstrip(), in_small, _err)
+            text, runs, in_small, line_marks = _strip_yigchung(_strip_bold(raw_line.rstrip()), in_small, _err)
             if i == last_nonempty_idx:
                 ref_idx = text.rfind(ref)
                 if ref_idx != -1:

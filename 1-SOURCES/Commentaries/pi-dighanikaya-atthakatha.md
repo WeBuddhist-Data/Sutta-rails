@@ -27,7 +27,7 @@ category_id: XfCwZpoJMtfO7s0laQkdK
 commentary_of: O4D2mIIgVEMj82ljsKBth
 text_id: oA84xA2Nu7W0COntGWr0x
 edition_id: qkQOqL1N1MR22PJw0Y933
-toc_id: FEFq1SWO60mklCzv8WYv8
+toc_id: 1ehAGkTF09isQRToXN2Nh
 aligned_to_edition_id: zzEJt0lOkWnkepgn5UXDj
 ---
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1
@@ -3576,9 +3576,7 @@ Kevaṭṭasuttavaṇṇanā niṭṭhitā. ^1-1190
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-506]]
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-507]]
 
-504-407. **Rosikaṃ nhāpitaṃ āmantesī**ti rosikāti evaṃ itthiliṅgavasena laddhanāmaṃ nhāpitaṃ āmantesi. So kira bhagavato āgamanaṃ sutvā cintesi – "vihāraṃ gantvā diṭṭhaṃ nāmaṃ bhāro, gehaṃ pana āṇāpetvā passissāmi ceva yathāsatti ca āgantukabhikkhaṃ dassāmī"ti, tasmā evaṃ nhāpitaṃ āmantesi.[^ed-504] ^1-1193
-
-[^ed-504]: [Ed: the CSCD XML (s0101a.att.xml) prints this paragraph number as 504-407; the next paragraph is 508 and the ṭīkā and abhinavaṭīkā cite 504, so the range is 504–507. The links point to ^1-504–^1-507; the printed number is kept as in the source.]
+504-407. **Rosikaṃ nhāpitaṃ āmantesī**ti rosikāti evaṃ itthiliṅgavasena laddhanāmaṃ nhāpitaṃ āmantesi. So kira bhagavato āgamanaṃ sutvā cintesi – "vihāraṃ gantvā diṭṭhaṃ nāmaṃ bhāro, gehaṃ pana āṇāpetvā passissāmi ceva yathāsatti ca āgantukabhikkhaṃ dassāmī"ti, tasmā evaṃ nhāpitaṃ āmantesi.[^f1] ^1-1193
 
 ![[1-SOURCES/Text/pi-dighanikaya.md#^1-508]]
 
@@ -10570,3 +10568,5 @@ Lokamhi lokajeṭṭhassa, pavattati mahesinoti. ^3-956
 Sumaṅgalavilāsinī nāma ^3-957
 
 Dīghanikāyaṭṭhakathā niṭṭhitā. ^3-958
+
+[^f1]: [Ed: the CSCD XML (s0101a.att.xml) prints this paragraph number as 504-407; the next paragraph is 508 and the ṭīkā and abhinavaṭīkā cite 504, so the range is 504–507. The links point to ^1-504–^1-507; the printed number is kept as in the source.]

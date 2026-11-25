@@ -28,7 +28,7 @@ category_id: XfCwZpoJMtfO7s0laQkdK
 commentary_of: O4D2mIIgVEMj82ljsKBth
 text_id: ORdr2bUpQtertVv9eonn4
 edition_id: j9QKsjxhmLcZjCoBolxpH
-toc_id: ynQ6Qn6S48JtdkIYMUsq9
+toc_id: G3XZuGkM0BADsfNuCI2u6
 aligned_to_edition_id: zzEJt0lOkWnkepgn5UXDj
 ---
 Namo tassa bhagavato arahato sammāsambuddhassa ^T-1

@@ -32,6 +32,8 @@ ROMAN_RE = re.compile(r'^[IVXLCDM]+$')
 VERSE_X_RE = re.compile(r'\d+[xX]\d+')
 TRANSCLUSION_RE = re.compile(r'^\s*!\[\[.*?#\^.*?\]\]\s*$')
 _TRANS_REF_RE = re.compile(r'!\[\[.*?#\^([A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)\]\]')
+# A later volume's opening block in a joined file (merge_volumes.py): ^<book>-T<k>.
+_VOLUME_OPENING_RE = re.compile(r'^\d+-T\d+$')
 _WYLIE_RE = re.compile(r"'[a-zA-Z]")
 
 
@@ -140,6 +142,24 @@ def _is_verse_shape(content_lines):
 # Inline formatting used for interlinear glosses in the sources. The gloss
 # text stays in the edition; only the tags are dropped.
 INLINE_TAG_RE = re.compile(r"</?small>", re.IGNORECASE)
+
+
+def _strip_bold(text):
+    """Drop Markdown bold markers (**) from a line of edition content.
+
+    The library has no bold annotation yet, so bold would reach the reader as
+    literal asterisks; it is dropped here as the TOC drops it. The source file
+    keeps its **…** (e.g. copied from the CSCD XML's <hi rend="bold">). A space
+    that sat inside a bold tag next to one outside it ("passatā. ** Sabba")
+    would leave two spaces once the markers go: those collapse to one, and a
+    line never gains leading space it did not have. (Sutta-rails, 2026-11-25:
+    the same rule as the parser that made the live uploads.)"""
+    if "**" not in text:
+        return text
+    out = re.sub(r" {2,}", " ", text.replace("**", ""))
+    if not text[:1].isspace():
+        out = out.lstrip(" ")
+    return out
 
 
 def _strip_inline_tags(text):
@@ -470,7 +490,7 @@ def _build_content_and_segmentation(blocks, doc_default, notes=None):
             def _err(msg, _ref=ref, _n=block_num, _line=i + 1):
                 tag_errors.append(f"block {_n} ({_ref}), line {_line}: {msg}")
 
-            text, runs, in_small, line_marks = _strip_yigchung(raw_line.rstrip(), in_small, _err)
+            text, runs, in_small, line_marks = _strip_yigchung(_strip_bold(raw_line.rstrip()), in_small, _err)
             if i == last_nonempty_idx:
                 ref_idx = text.rfind(ref)
                 if ref_idx != -1:
@@ -506,12 +526,12 @@ def _build_content_and_segmentation(blocks, doc_default, notes=None):
                 f"segment; the parts may each need their own block ID",
                 file=sys.stderr,
             )
-        # Verse wins: several lines with no gap is a verse wherever it sits,
-        # front matter or colophon included. Otherwise the ID decides.
-        if _is_verse_shape(content_lines):
-            seg_type = "verse"
-        else:
-            seg_type = _infer_segment_type(ref_no_caret, doc_default)
+        # The ID decides the type, as in the Abhidhamma and Vinaya vaults:
+        # commentary blocks are paragraphs, verses (gāthās) included. The
+        # shared parser's "verse wins" rule (any multi-line block is a verse)
+        # is not used here (Sutta-rails, decided 2026-11-20 to match
+        # vinaya-rails; the live uploads were typed this way).
+        seg_type = _infer_segment_type(ref_no_caret, doc_default)
         seg_list.append({"lines": line_spans, "type": seg_type, "reference": ref_no_caret})
 
     if tag_errors:
@@ -774,6 +794,17 @@ def build_alignment(source_path):
         # own transclusion to be aligned.
         if block["is_header"]:
             active_targets = list(dict.fromkeys(trans_refs)) if trans_refs else []
+            prev_trans_only = False
+            continue
+
+        # A volume's opening lines in a file joined from several volumes
+        # (merge_volumes.py: its homage and nikāya line, ^<book>-T<k>) start a
+        # new volume. They are never aligned, and they end the current scope,
+        # so the next volume's blocks before its first transclusion group stay
+        # unaligned, exactly as they were when each volume was its own file
+        # (Sutta-rails, 2026-11-20; the live uploads were aligned this way).
+        if block["ref"] and _VOLUME_OPENING_RE.match(block["ref"].lstrip("^")):
+            active_targets = []
             prev_trans_only = False
             continue
 
